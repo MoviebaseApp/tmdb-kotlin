@@ -10,10 +10,21 @@ group = "app.moviebase"
 version = Versions.versionName
 
 kotlin {
-    jvm()
+    jvm {
+
+    }
     js {
         browser()
-        nodejs()
+        nodejs {
+            val compilations = compilations as NamedDomainObjectContainer<org.jetbrains.kotlin.gradle.plugin.mpp.KotlinJsCompilation>
+            val main by compilations.getting {
+                compileKotlinTask.kotlinOptions {
+                    moduleKind = "commonjs"
+                    sourceMap = true
+                    metaInfo = true
+                }
+            }
+        }
     }
     iosArm64()
     iosX64()
@@ -33,6 +44,8 @@ kotlin {
     sourceSets {
         val commonMain by getting {
             dependencies {
+                implementation(kotlin("stdlib-common"))
+
                 implementation(Libs.Kotlin.coroutines)
                 implementation(Libs.Kotlin.kotlinSerialization)
                 implementation(Libs.Kotlin.kotlinxDateTime)
@@ -73,19 +86,31 @@ kotlin {
         }
         val iosMain by creating {
             dependsOn(commonMain)
+            kotlin.srcDir("src/iosMain/kotlin")
 
         }
         val iosArm64Main by getting {
             dependsOn(iosMain)
-//            kotlin.srcDir("src/iosMain/kotlin")
 
         }
         val iosX64Main by getting {
             dependsOn(iosMain)
-//                        kotlin.srcDir("src/iosMain/kotlin")
 
         }
     }
+}
+
+kotlin {
+    explicitApi()
+    targets.all {
+        compilations.all {
+            kotlinOptions.allWarningsAsErrors = true
+        }
+    }
+}
+
+val emptySourcesJar by tasks.registering(Jar::class) {
+    archiveClassifier.set("sources")
 }
 
 val javadocJar by tasks.registering(Jar::class) {
@@ -110,14 +135,14 @@ afterEvaluate {
         }
         publications.withType<MavenPublication>().configureEach {
             groupId = "app.moviebase"
-            artifactId = "tmdb-kotlin"
+            artifactId = "tmdb-api"
             version = Versions.versionName
             artifact(javadocJar.get())
 
             pom {
                 name.set("Multiplatform TMDB API")
                 description.set("A Kotlin Multiplatform library to access the TMDB API.")
-                url.set("https://github.com/MoviebaseApp/tmdb-kotlin")
+                url.set("https://github.com/MoviebaseApp/tmdb-api")
                 inceptionYear.set("2021")
 
                 developers {
@@ -135,15 +160,19 @@ afterEvaluate {
                 }
                 issueManagement {
                     system.set("GitHub Issues")
-                    url.set("https://github.com/MoviebaseApp/tmdb-kotlin/issues")
+                    url.set("https://github.com/MoviebaseApp/tmdb-api/issues")
                 }
                 scm {
-                    connection.set("scm:git:https://github.com/MoviebaseApp/tmdb-kotlin.git")
-                    developerConnection.set("scm:git:git@github.com:MoviebaseApp/tmdb-kotlin.git")
-                    url.set("https://github.com/MoviebaseApp/tmdb-kotlin")
+                    connection.set("scm:git:https://github.com/MoviebaseApp/tmdb-api.git")
+                    developerConnection.set("scm:git:git@github.com:MoviebaseApp/tmdb-api.git")
+                    url.set("https://github.com/MoviebaseApp/tmdb-api")
                 }
             }
         }
+//        publications.getByName("kotlinMultiplatform") {
+//            artifact(emptySourcesJar.get())
+//        }
+
     }
 
     signing {
@@ -159,6 +188,8 @@ afterEvaluate {
 //    tasks.withType<Sign>().configureEach {
 //        onlyIf { isReleaseBuild }
 //    }
+
+
 
 }
 val isReleaseBuild: Boolean

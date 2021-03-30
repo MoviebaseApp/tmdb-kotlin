@@ -1,6 +1,6 @@
 package app.moviebase.tmdb
 
-class TmdbApi {
+public class TmdbApi {
 
 
 }

@@ -5,6 +5,6 @@ pluginManagement {
         mavenCentral()
     }
 }
-rootProject.name = "tmdb-kotlin"
+rootProject.name = "tmdb-api"
 
-include(":library")
+include(":tmdb-api")
