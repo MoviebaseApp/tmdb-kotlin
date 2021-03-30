@@ -1,4 +1,4 @@
 package app.moviebase.tmdb
 
-class Api {
+class TmdbApi {
 }
