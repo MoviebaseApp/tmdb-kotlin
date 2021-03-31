@@ -107,15 +107,6 @@ kotlin {
     }
 }
 
-kotlin {
-    explicitApi()
-    targets.all {
-        compilations.all {
-            kotlinOptions.allWarningsAsErrors = true
-        }
-    }
-}
-
 android {
     compileSdkVersion(Versions.compileSdk)
     sourceSets["main"].manifest.srcFile("src/androidMain/AndroidManifest.xml")
