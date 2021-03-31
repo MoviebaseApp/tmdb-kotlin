@@ -1,7 +1,7 @@
 object Versions {
     val versionMajor = 0
     val versionMinor = 1
-    val versionPatch = 3
+    val versionPatch = 4
 
     val versionCode = versionMajor * 1000 + versionMinor * 100 + versionPatch * 10
     val versionName = "$versionMajor.$versionMinor.$versionPatch"

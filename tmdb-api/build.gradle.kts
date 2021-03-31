@@ -2,7 +2,7 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
     kotlin("multiplatform")
-//    kotlin("plugin.serialization")
+    kotlin("plugin.serialization")
     id("com.android.library")
     id("org.jetbrains.dokka")
     id("maven-publish")
@@ -15,48 +15,36 @@ version = Versions.versionName
 kotlin {
     jvm()
     android {
-        publishAllLibraryVariants()
+        publishLibraryVariants("release", "debug")
     }
     js {
         browser()
-//        nodejs {
-//            val compilations = compilations as NamedDomainObjectContainer<org.jetbrains.kotlin.gradle.plugin.mpp.KotlinJsCompilation>
-//            val main by compilations.getting {
-//                compileKotlinTask.kotlinOptions {
-//                    moduleKind = "commonjs"
-//                    sourceMap = true
-//                    metaInfo = true
-//                }
-//            }
-//        }
+        nodejs {
+            val compilations = compilations as NamedDomainObjectContainer<org.jetbrains.kotlin.gradle.plugin.mpp.KotlinJsCompilation>
+            val main by compilations.getting {
+                compileKotlinTask.kotlinOptions {
+                    moduleKind = "commonjs"
+                    sourceMap = true
+                    metaInfo = true
+                }
+            }
+        }
     }
     iosArm64()
     iosX64()
 
-//    val publicationsFromMainHost = listOf(jvm(), js(), iosArm64(), iosX64()).map { it.name } + "kotlinMultiplatform"
-//    publishing {
-//        publications {
-//            matching { it.name in publicationsFromMainHost }.all {
-//                val targetPublication = this@all
-//                tasks.withType<AbstractPublishToMaven>()
-//                    .matching { it.publication == targetPublication }
-//                    .configureEach { onlyIf { findProperty("isMainHost") == "true" } }
-//            }
-//        }
-//    }
-
     sourceSets {
         val commonMain by getting {
             dependencies {
-//                implementation(Libs.Kotlin.coroutines)
-//                implementation(Libs.Kotlin.kotlinSerialization)
-//                implementation(Libs.Kotlin.kotlinxDateTime)
-//                api(Libs.Kotlin.kotlinIo)
-//
-//                implementation(Libs.Util.ktorCore)
-//                implementation(Libs.Util.ktorJson)
-//                implementation(Libs.Util.ktorLogging)
-//                implementation(Libs.Util.ktorSerialization)
+                implementation(Libs.Kotlin.coroutines)
+                implementation(Libs.Kotlin.kotlinSerialization)
+                implementation(Libs.Kotlin.kotlinxDateTime)
+                api(Libs.Kotlin.kotlinIo)
+
+                implementation(Libs.Util.ktorCore)
+                implementation(Libs.Util.ktorJson)
+                implementation(Libs.Util.ktorLogging)
+                implementation(Libs.Util.ktorSerialization)
             }
         }
         val commonTest by getting {
@@ -72,8 +60,8 @@ kotlin {
             dependencies {
                 implementation(kotlin("test-junit5"))
 
-//                implementation(Libs.Testing.jupiter)
-//                runtimeOnly(Libs.Testing.jupiterEngine)
+                implementation(Libs.Testing.jupiter)
+                runtimeOnly(Libs.Testing.jupiterEngine)
             }
         }
         val androidMain by getting {
@@ -83,6 +71,8 @@ kotlin {
             dependencies {
                 implementation(kotlin("test"))
                 implementation(kotlin("test-junit"))
+
+                implementation(Libs.Util.ktorAndroid)
 
                 implementation(Libs.Testing.jupiter)
                 runtimeOnly(Libs.Testing.jupiterEngine)
@@ -102,6 +92,9 @@ kotlin {
             dependsOn(commonMain)
             kotlin.srcDir("src/iosMain/kotlin")
 
+            dependencies {
+                implementation(Libs.Util.ktorIos)
+            }
         }
         val iosArm64Main by getting {
             dependsOn(iosMain)
@@ -153,7 +146,7 @@ val javadocJar by tasks.registering(Jar::class) {
 }
 
 afterEvaluate {
-    publishing {
+    extensions.findByType<PublishingExtension>()?.apply {
         repositories {
             maven {
                 name = "sonatype"
@@ -169,46 +162,39 @@ afterEvaluate {
             }
         }
 
-        publications {
-            filterIsInstance<MavenPublication>().forEach { publication ->
-                publication.groupId = "app.moviebase"
-                publication.artifactId = "tmdb-api"
-                publication.version = Versions.versionName
-                publication.artifact(javadocJar.get())
+        publications.withType<MavenPublication>().configureEach {
+            artifact(javadocJar.get())
+            pom {
+                name.set("Multiplatform TMDB API")
+                description.set("A Kotlin Multiplatform library to access the TMDB API.")
+                url.set("https://github.com/MoviebaseApp/tmdb-api")
+                inceptionYear.set("2021")
 
-                publication.pom {
-                    name.set("Multiplatform TMDB API")
-                    description.set("A Kotlin Multiplatform library to access the TMDB API.")
+                developers {
+                    developer {
+                        id.set("chrisnkrueger")
+                        name.set("Christian Krüger")
+                        email.set("christian.krueger@moviebase.app")
+                    }
+                }
+                licenses {
+                    license {
+                        name.set("The Apache Software License, Version 2.0")
+                        url.set("http://www.apache.org/licenses/LICENSE-2.0.txt")
+                    }
+                }
+                issueManagement {
+                    system.set("GitHub Issues")
+                    url.set("https://github.com/MoviebaseApp/tmdb-api/issues")
+                }
+                scm {
+                    connection.set("scm:git:https://github.com/MoviebaseApp/tmdb-api.git")
+                    developerConnection.set("scm:git:git@github.com:MoviebaseApp/tmdb-api.git")
                     url.set("https://github.com/MoviebaseApp/tmdb-api")
-                    inceptionYear.set("2021")
-
-                    developers {
-                        developer {
-                            id.set("chrisnkrueger")
-                            name.set("Christian Krüger")
-                            email.set("christian.krueger@moviebase.app")
-                        }
-                    }
-                    licenses {
-                        license {
-                            name.set("The Apache Software License, Version 2.0")
-                            url.set("http://www.apache.org/licenses/LICENSE-2.0.txt")
-                        }
-                    }
-                    issueManagement {
-                        system.set("GitHub Issues")
-                        url.set("https://github.com/MoviebaseApp/tmdb-api/issues")
-                    }
-                    scm {
-                        connection.set("scm:git:https://github.com/MoviebaseApp/tmdb-api.git")
-                        developerConnection.set("scm:git:git@github.com:MoviebaseApp/tmdb-api.git")
-                        url.set("https://github.com/MoviebaseApp/tmdb-api")
-                    }
                 }
             }
         }
     }
-
     signing {
         sign(publishing.publications)
     }
