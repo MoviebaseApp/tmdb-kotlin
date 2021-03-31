@@ -1,7 +1,9 @@
 package app.moviebase.tmdb.model
 
 import app.moviebase.tmdb.remote.LocalDateSerializer
+import app.moviebase.tmdb.remote.LocalDateTimeSerializer
 import kotlinx.datetime.LocalDate
+import kotlinx.datetime.LocalDateTime
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
@@ -32,3 +34,68 @@ data class TmdbMovieDetail(
     @SerialName("release_dates") val releaseDates: TmdbResult<TmdbReleaseDates>? = null,
     @SerialName("watch/providers") val watchProviders: TmdbProviderResult? = null,
 ) : TmdbAnyMedia
+
+
+@Serializable
+enum class TmdbMovieStatus(val value: String) {
+    @SerialName("Rumored")
+    RUMORED("Rumored"),
+
+    @SerialName("Planned")
+    PLANNED("Planned"),
+
+    @SerialName("In Production")
+    IN_PRODUCTION("In Production"),
+
+    @SerialName("Post Production")
+    POST_PRODUCTION("Post Production"),
+
+    @SerialName("Released")
+    RELEASED("Released"),
+
+    @SerialName("Canceled")
+    CANCELED("Canceled");
+
+    companion object {
+        fun find(value: String?) = values().find { it.value == value }
+    }
+}
+
+@Serializable
+data class TmdbReleaseDates(
+    @SerialName("iso_3166_1") val iso3166: String,
+    @SerialName("release_dates") val releaseDates: List<TmdbReleaseDate>
+)
+
+@Serializable
+data class TmdbReleaseDate(
+    @SerialName("iso_639_1") val iso639: String? = null,
+    @SerialName("release_date") @Serializable(LocalDateTimeSerializer::class) val releaseDate: LocalDateTime?,
+    val certification: String? = null,
+    val type: TmdbReleaseType
+)
+
+@Serializable
+enum class TmdbReleaseType(val value: Int) {
+    @SerialName("1")
+    PREMIERE(1),
+
+    @SerialName("2")
+    THEATRICAL_LIMITED(2),
+
+    @SerialName("3")
+    THEATRICAL(3),
+
+    @SerialName("4")
+    DIGITAL(4),
+
+    @SerialName("5")
+    PHYSICAL(5),
+
+    @SerialName("6")
+    TV(6);
+
+    companion object {
+        fun find(value: Int?) = values().find { it.value == value }
+    }
+}

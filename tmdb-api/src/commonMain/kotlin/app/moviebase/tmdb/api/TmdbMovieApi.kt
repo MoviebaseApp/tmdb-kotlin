@@ -1,19 +1,16 @@
 package app.moviebase.tmdb.api
 
-import app.moviebase.tmdb.model.AppendResponse
-import app.moviebase.tmdb.model.TmdbMovieDetail
-import app.moviebase.tmdb.model.TmdbProviderResult
-import app.moviebase.tmdb.model.TmdbTranslations
+import app.moviebase.tmdb.model.*
 import io.ktor.client.*
 import io.ktor.client.request.*
 
 class TmdbMovieApi(private val client: HttpClient) {
 
-    suspend fun getDetails(id: Int, language: String, appendResponses: Iterable<AppendResponse>): TmdbMovieDetail = client.get {
+    suspend fun getDetails(id: Int, language: String, appendResponses: Iterable<AppendResponse>? = null): TmdbMovieDetail = client.get {
         endPoint("movie", id.toString())
 
         parameterLanguage(language)
-        parameterAppendResponses(appendResponses)
+        appendResponses?.let { parameterAppendResponses(it) }
     }
 
     suspend fun getTranslations(id: Int): TmdbTranslations = client.get {
@@ -22,6 +19,10 @@ class TmdbMovieApi(private val client: HttpClient) {
 
     suspend fun getWatchProviders(id: Int): TmdbProviderResult = client.get {
         endPoint("movie", id.toString(), "watch", "providers")
+    }
+
+    suspend fun getExternalIds(id: Int): TmdbExternalIds = client.get {
+        endPoint("movie", id.toString(), "external_ids")
     }
 
 }

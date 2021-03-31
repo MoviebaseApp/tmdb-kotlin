@@ -8,11 +8,11 @@ import io.ktor.client.request.*
 
 class TmdbSeasonApi(private val client: HttpClient) {
 
-    suspend fun getDetails(id: Int, seasonNumber: Int, language: String, appendResponses: Iterable<AppendResponse>): TmdbSeason = client.get {
-        endPoint("tv", id.toString(), "season", seasonNumber.toString())
+    suspend fun getDetails(showId: Int, seasonNumber: Int, language: String, appendResponses: Iterable<AppendResponse>? = null): TmdbSeason = client.get {
+        endPoint("tv", showId.toString(), "season", seasonNumber.toString())
 
         parameterLanguage(language)
-        parameterAppendResponses(appendResponses)
+        appendResponses?.let { parameterAppendResponses(it) }
     }
 
     suspend fun getTranslations(id: Int, seasonNumber: Int): TmdbTranslations = client.get {

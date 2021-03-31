@@ -1,4 +1,4 @@
-<img alt="TMDb" src="doc/images/blue_square.svg" width="300">
+<img alt="TMDb" src="doc/images/blue_short.svg" width="300">
 
 
 [![Maven Central](https://img.shields.io/maven-central/v/app.moviebase/tmdb-api?label=Maven%20Central)](https://search.maven.org/artifact/app.moviebase/tmdb-api)
@@ -56,3 +56,5 @@ val movieDetail = tmdb.movie.getDetails(
 )
 ```
 
+## Reporting Issues and Support
+For issues, feature requests, and discussion please use [GitHub Issues][issues]. 
