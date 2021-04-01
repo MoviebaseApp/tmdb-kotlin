@@ -8,6 +8,57 @@ import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
 @Serializable
+enum class TmdbReleaseType(val value: Int) {
+    @SerialName("1")
+    PREMIERE(1),
+
+    @SerialName("2")
+    THEATRICAL_LIMITED(2),
+
+    @SerialName("3")
+    THEATRICAL(3),
+
+    @SerialName("4")
+    DIGITAL(4),
+
+    @SerialName("5")
+    PHYSICAL(5),
+
+    @SerialName("6")
+    TV(6);
+
+    companion object {
+        fun find(value: Int?) = values().find { it.value == value }
+    }
+}
+
+@Serializable
+enum class TmdbMovieStatus(val value: String) {
+    @SerialName("Rumored")
+    RUMORED("Rumored"),
+
+    @SerialName("Planned")
+    PLANNED("Planned"),
+
+    @SerialName("In Production")
+    IN_PRODUCTION("In Production"),
+
+    @SerialName("Post Production")
+    POST_PRODUCTION("Post Production"),
+
+    @SerialName("Released")
+    RELEASED("Released"),
+
+    @SerialName("Canceled")
+    CANCELED("Canceled");
+
+    companion object {
+        fun find(value: String?) = values().find { it.value == value }
+    }
+}
+
+
+@Serializable
 data class TmdbMovie(
     override val id: Int,
     val title: String,
@@ -37,31 +88,6 @@ data class TmdbMovieDetail(
 
 
 @Serializable
-enum class TmdbMovieStatus(val value: String) {
-    @SerialName("Rumored")
-    RUMORED("Rumored"),
-
-    @SerialName("Planned")
-    PLANNED("Planned"),
-
-    @SerialName("In Production")
-    IN_PRODUCTION("In Production"),
-
-    @SerialName("Post Production")
-    POST_PRODUCTION("Post Production"),
-
-    @SerialName("Released")
-    RELEASED("Released"),
-
-    @SerialName("Canceled")
-    CANCELED("Canceled");
-
-    companion object {
-        fun find(value: String?) = values().find { it.value == value }
-    }
-}
-
-@Serializable
 data class TmdbReleaseDates(
     @SerialName("iso_3166_1") val iso3166: String,
     @SerialName("release_dates") val releaseDates: List<TmdbReleaseDate>
@@ -76,26 +102,23 @@ data class TmdbReleaseDate(
 )
 
 @Serializable
-enum class TmdbReleaseType(val value: Int) {
-    @SerialName("1")
-    PREMIERE(1),
+data class TmdbCountry(
+    @SerialName("iso_3166_1") val iso3166: String,
+    val name: String
+)
 
-    @SerialName("2")
-    THEATRICAL_LIMITED(2),
+@Serializable
+data class TmdbBelongsToCollection(
+    @SerialName("id") val id: Int,
+    @SerialName("name") val name: String,
+    @SerialName("backdrop_path") val backdropPath: String? = null,
+    @SerialName("parts") val parts: List<TmdbMovie>,
+)
 
-    @SerialName("3")
-    THEATRICAL(3),
-
-    @SerialName("4")
-    DIGITAL(4),
-
-    @SerialName("5")
-    PHYSICAL(5),
-
-    @SerialName("6")
-    TV(6);
-
-    companion object {
-        fun find(value: Int?) = values().find { it.value == value }
-    }
-}
+@Serializable
+data class TmdbReview(
+    @SerialName("id") val id: String,
+    val author: String,
+    val content: String,
+    val url: String,
+)

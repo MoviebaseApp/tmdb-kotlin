@@ -47,9 +47,22 @@ enum class AppendResponse(val value: String) {
 
 }
 
+object TmdbStatusCode {
+    const val SUCCESS_ADDED = 1
+    const val SUCCESS_UPDATED = 12
+    const val SUCCESS_DELETED = 13
+    const val RESOURCE_NOT_FOUND = 34
+}
+
+
 @Serializable
 data class TmdbResult<T>(
     val results: List<T>
+)
+
+@Serializable
+data class TmdbStatusResult(
+    @SerialName("status_code") val statusCode: Int
 )
 
 interface TmdbAnyMedia {
@@ -73,7 +86,14 @@ data class TmdbTranslation(
 
 @Serializable
 data class TmdbGenre(
-    val id: Int
+    val id: Int,
+    val name: String,
+)
+
+@Serializable
+data class TmdbKeyword(
+    val id: Int,
+    val name: String,
 )
 
 @Serializable
@@ -85,6 +105,23 @@ data class TmdbExternalIds(
     @SerialName("instagram_id") val instagram: String? = null,
     @SerialName("twitter_id") val twitter: String? = null,
 )
+
+
+@Serializable
+enum class TmdbVideoType(val value: String) {
+    @SerialName("Trailer")
+    TRAILER("Trailer"),
+
+    @SerialName("Teaser")
+    TEASER("Teaser"),
+
+    @SerialName("Clip")
+    CLIP("Clip"),
+
+    @SerialName("Featurette")
+    FEATURETTE("Featurette");
+}
+
 
 @Serializable
 data class TmdbVideo(
@@ -110,3 +147,15 @@ data class TmdbImage(
     @SerialName("aspect_ratio") val aspectRation: Double,
 )
 
+@Serializable
+data class TmdbLogoImage(
+    @SerialName("file_path") val filePath: String?
+)
+
+@Serializable
+data class TmdbCompany(
+    @SerialName("id") val id: Int,
+    @SerialName("logo_path") val logoPath: String? = null,
+    @SerialName("name") val name: String,
+    @SerialName("origin_country") val originCountry: String
+)

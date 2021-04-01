@@ -5,6 +5,10 @@ import app.moviebase.tmdb.model.TmdbWebConfig
 import io.ktor.client.request.*
 import io.ktor.http.*
 
+fun HttpRequestBuilder.json() {
+    contentType(ContentType.Application.Json)
+}
+
 fun HttpRequestBuilder.endPoint(vararg paths: String) {
     url {
         takeFrom(TmdbWebConfig.BASE_URL)

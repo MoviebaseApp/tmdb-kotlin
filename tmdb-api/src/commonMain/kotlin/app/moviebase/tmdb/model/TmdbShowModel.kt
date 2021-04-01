@@ -108,7 +108,7 @@ data class TmdbSeason(
     @SerialName("season_number") val seasonNumber: Int,
     val episodes: List<TmdbEpisode>? = null,
 
-) {
+    ) {
 
     val numberOfEpisodes get() = episodeCount ?: episodes?.size ?: 0
 
@@ -116,7 +116,7 @@ data class TmdbSeason(
 
 @Serializable
 data class TmdbSeasonDetail(
-    val id: Int,
+    @SerialName("id") override val id: Int,
     @SerialName("air_date") @Serializable(LocalDateSerializer::class) val airDate: LocalDate? = null,
     @SerialName("episode_count") val episodeCount: Int? = null,
     val name: String,
@@ -127,26 +127,44 @@ data class TmdbSeasonDetail(
     @SerialName("external_ids") val externalIds: TmdbExternalIds,
     @SerialName("videos") val videos: TmdbResult<TmdbVideo>,
     @SerialName("images") val images: TmdbResult<TmdbImages>,
-) {
+) : TmdbAnyMedia {
 
     val numberOfEpisodes get() = episodeCount ?: episodes?.size ?: 0
 
 }
 
-
 @Serializable
 data class TmdbEpisode(
-    override val id: Int,
+    @SerialName("id") override val id: Int,
     @SerialName("episode_number") val episodeNumber: Int,
     @SerialName("season_number") val seasonNumber: Int,
     @SerialName("air_date") @Serializable(LocalDateSerializer::class) val airDate: LocalDate? = null,
-    val name: String? = null,
+    @SerialName("name") val name: String? = null,
     @SerialName("vote_average") val voteAverage: Float? = null,
+    @SerialName("vote_count") val voteCount: Int? = null,
     @SerialName("still_path") val stillPath: String? = null,
 ) : TmdbAnyMedia
 
+
 @Serializable
-data class TmdbNetwork(
-    val id: Int,
-    val name: String
+data class TmdbEpisodeDetail(
+    @SerialName("id") override val id: Int,
+    @SerialName("overview") val overview: String,
+    @SerialName("episode_number") val episodeNumber: Int,
+    @SerialName("season_number") val seasonNumber: Int,
+    @SerialName("air_date") @Serializable(LocalDateSerializer::class) val airDate: LocalDate? = null,
+    @SerialName("name") val name: String? = null,
+    @SerialName("vote_average") val voteAverage: Float? = null,
+    @SerialName("vote_count") val voteCount: Int? = null,
+    @SerialName("still_path") val stillPath: String? = null,
+    @SerialName("images") val images: TmdbResult<TmdbImages>,
+    @SerialName("crew") val crew: List<TmdbCrew>,
+    @SerialName("guest_stars") val guestStars: List<TmdbCast>,
+    @SerialName("external_ids") val externalIds: TmdbExternalIds,
+) : TmdbAnyMedia
+
+@Serializable
+data class TmdbContentRating(
+    @SerialName("iso_3166_1") val iso3166: String,
+    @SerialName("rating") val rating: String
 )
