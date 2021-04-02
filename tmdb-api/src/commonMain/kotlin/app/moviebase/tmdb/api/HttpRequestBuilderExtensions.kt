@@ -9,10 +9,17 @@ fun HttpRequestBuilder.json() {
     contentType(ContentType.Application.Json)
 }
 
-fun HttpRequestBuilder.endPoint(vararg paths: String) {
+fun HttpRequestBuilder.endPointV3(vararg paths: String) {
     url {
-        takeFrom(TmdbWebConfig.BASE_URL)
+        takeFrom(TmdbWebConfig.BASE_URL_TMDB)
         path(TmdbWebConfig.VERSION_PATH_V3, *paths)
+    }
+}
+
+fun HttpRequestBuilder.endPointV4(vararg paths: String) {
+    url {
+        takeFrom(TmdbWebConfig.BASE_URL_TMDB)
+        path(TmdbWebConfig.VERSION_PATH_V4, *paths)
     }
 }
 
@@ -24,6 +31,10 @@ fun HttpRequestBuilder.parameters(parameters: Map<String, Any?>) {
 
 fun HttpRequestBuilder.parameterLanguage(language: String) {
     parameter("language", language)
+}
+
+fun HttpRequestBuilder.parameterPage(page: Int) {
+    parameter("page", page)
 }
 
 fun HttpRequestBuilder.parameterAppendResponses(appendResponses: Iterable<AppendResponse>) {

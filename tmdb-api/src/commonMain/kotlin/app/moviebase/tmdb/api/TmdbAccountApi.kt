@@ -9,12 +9,12 @@ import io.ktor.client.request.*
 class TmdbAccountApi(private val client: HttpClient) {
 
     suspend fun getDetails(sessionId: String): AccountDetails = client.get {
-        endPoint("account")
+        endPointV3("account")
         parameter("session_id", sessionId)
     }
 
     suspend fun markFavorite(accountId: String, requestBody: TmdbFavoriteRequestBody): AccountDetails = client.post {
-        endPoint("account", accountId, "favorite")
+        endPointV3("account", accountId, "favorite")
         parameter("account_id", accountId)
         json()
 
@@ -22,7 +22,7 @@ class TmdbAccountApi(private val client: HttpClient) {
     }
 
     suspend fun markWatchlist(accountId: String, requestBody: TmdbWatchlistRequestBody): AccountDetails = client.post {
-        endPoint("account", accountId, "favorite")
+        endPointV3("account", accountId, "favorite")
         parameter("account_id", accountId)
         json()
 

@@ -1,6 +1,5 @@
 package app.moviebase.tmdb.model
 
-import app.moviebase.tmdb.image.TmdbImageType
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
@@ -48,6 +47,12 @@ enum class AppendResponse(val value: String) {
 
 }
 
+enum class TmdbSortOrder(val value: String) {
+    ASC("asc"), DESC("desc")
+}
+
+fun TmdbSortOrder?.getValueOrDefault() = this?.value ?: TmdbSortOrder.DESC?.value
+
 object TmdbStatusCode {
     const val SUCCESS_ADDED = 1
     const val SUCCESS_UPDATED = 12
@@ -60,6 +65,15 @@ object TmdbStatusCode {
 data class TmdbResult<T>(
     val results: List<T>
 )
+
+@Serializable
+data class TmdbPageResult<T>(
+    @SerialName("page") val page: Int,
+    @SerialName("results") val results: List<T> = emptyList(),
+    @SerialName("total_results") val totalResults: Int,
+    @SerialName("total_pages") val totalPages: Int,
+)
+
 
 @Serializable
 data class TmdbStatusResult(
@@ -134,7 +148,6 @@ data class TmdbVideo(
     @SerialName("site") val site: String,
     @SerialName("type") val type: String,
 )
-
 
 
 @Serializable

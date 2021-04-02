@@ -62,9 +62,7 @@ Most of the library follows the possibilities and naming at the official [TMDb d
 For getting a movie or another media content just create a new instance and choose your section
 
 ```kotlin
-import app.moviebase.tmdb.*
-
-val tmdb = Tmdb("apiKey")
+val tmdb = TmdbV3("apiKey")
 val movieDetail = tmdb.movie.getDetails(
     id = 12,
     language = "EN",

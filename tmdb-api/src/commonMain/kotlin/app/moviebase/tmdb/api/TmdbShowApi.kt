@@ -10,18 +10,18 @@ import io.ktor.client.request.*
 class TmdbShowApi(private val client: HttpClient) {
 
     suspend fun getDetails(id: Int, language: String, appendResponses: Iterable<AppendResponse>): TmdbShowDetail = client.get {
-        endPoint("tv", id.toString())
+        endPointV3("tv", id.toString())
 
         parameterLanguage(language)
         parameterAppendResponses(appendResponses)
     }
 
     suspend fun getTranslations(id: Int): TmdbTranslations = client.get {
-        endPoint("tv", id.toString(), "translations")
+        endPointV3("tv", id.toString(), "translations")
     }
 
     suspend fun getWatchProviders(id: Int): TmdbProviderResult = client.get {
-        endPoint("tv", id.toString(), "watch", "providers")
+        endPointV3("tv", id.toString(), "watch", "providers")
     }
 
 }
