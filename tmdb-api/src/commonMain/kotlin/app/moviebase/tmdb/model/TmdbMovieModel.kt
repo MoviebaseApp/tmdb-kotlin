@@ -1,5 +1,6 @@
 package app.moviebase.tmdb.model
 
+import app.moviebase.tmdb.image.TmdbImage
 import app.moviebase.tmdb.remote.LocalDateSerializer
 import app.moviebase.tmdb.remote.LocalDateTimeSerializer
 import kotlinx.datetime.LocalDate
@@ -63,11 +64,17 @@ data class TmdbMovie(
     override val id: Int,
     val title: String,
     @SerialName("poster_path") val posterPath: String?,
+    @SerialName("backdrop_path") val backdropPath: String?,
     @SerialName("genre_ids") val genresIds: List<Int>,
     @SerialName("vote_average") val voteAverage: Float,
     val popularity: Float,
     @SerialName("release_date") @Serializable(LocalDateSerializer::class) val releaseDate: LocalDate? = null,
-) : TmdbAnyMedia
+) : TmdbAnyMedia {
+
+    val posterImage get(): TmdbImage? = TmdbImage.poster(posterPath)
+    val backdropImage get(): TmdbImage? = TmdbImage.backdrop(backdropPath)
+
+}
 
 @Serializable
 data class TmdbMovieDetail(
@@ -84,7 +91,12 @@ data class TmdbMovieDetail(
     @SerialName("release_date") @Serializable(LocalDateSerializer::class) val releaseDate: LocalDate?,
     @SerialName("release_dates") val releaseDates: TmdbResult<TmdbReleaseDates>? = null,
     @SerialName("watch/providers") val watchProviders: TmdbProviderResult? = null,
-) : TmdbAnyMedia
+) : TmdbAnyMedia {
+
+    val posterImage get(): TmdbImage? = TmdbImage.poster(posterPath)
+    val backdropImage get(): TmdbImage? = TmdbImage.backdrop(backdropPath)
+
+}
 
 
 @Serializable

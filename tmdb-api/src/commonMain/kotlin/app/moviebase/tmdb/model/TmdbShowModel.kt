@@ -1,5 +1,6 @@
 package app.moviebase.tmdb.model
 
+import app.moviebase.tmdb.image.TmdbImage
 import app.moviebase.tmdb.remote.LocalDateSerializer
 import kotlinx.datetime.LocalDate
 import kotlinx.serialization.SerialName
@@ -72,7 +73,12 @@ data class TmdbShow(
     @SerialName("poster_path") val posterPath: String?,
     @SerialName("backdrop_path") val backdropPath: String?,
     @SerialName("first_air_date") @Serializable(LocalDateSerializer::class) val firstAirDate: LocalDate?,
-) : TmdbAnyMedia
+) : TmdbAnyMedia {
+
+    val posterImage get(): TmdbImage? = TmdbImage.poster(posterPath)
+    val backdropImage get(): TmdbImage? = TmdbImage.backdrop(backdropPath)
+
+}
 
 @Serializable
 data class TmdbShowDetail(
@@ -95,7 +101,12 @@ data class TmdbShowDetail(
     @SerialName("vote_average") val voteAverage: Float,
     @SerialName("external_ids") val externalIds: TmdbExternalIds,
     @SerialName("watch/providers") val watchProviders: TmdbProviderResult? = null,
-) : TmdbAnyMedia
+) : TmdbAnyMedia {
+
+    val posterImage get(): TmdbImage? = TmdbImage.poster(posterPath)
+    val backdropImage get(): TmdbImage? = TmdbImage.backdrop(backdropPath)
+
+}
 
 
 @Serializable
@@ -107,10 +118,10 @@ data class TmdbSeason(
     @SerialName("poster_path") val posterPath: String?,
     @SerialName("season_number") val seasonNumber: Int,
     val episodes: List<TmdbEpisode>? = null,
-
-    ) {
+) {
 
     val numberOfEpisodes get() = episodeCount ?: episodes?.size ?: 0
+    val posterImage get(): TmdbImage? = TmdbImage.poster(posterPath)
 
 }
 
@@ -130,6 +141,7 @@ data class TmdbSeasonDetail(
 ) : TmdbAnyMedia {
 
     val numberOfEpisodes get() = episodeCount ?: episodes?.size ?: 0
+    val posterImage get(): TmdbImage? = TmdbImage.poster(posterPath)
 
 }
 
@@ -143,7 +155,11 @@ data class TmdbEpisode(
     @SerialName("vote_average") val voteAverage: Float? = null,
     @SerialName("vote_count") val voteCount: Int? = null,
     @SerialName("still_path") val stillPath: String? = null,
-) : TmdbAnyMedia
+) : TmdbAnyMedia {
+
+    val posterImage get(): TmdbImage? = TmdbImage.poster(stillPath)
+
+}
 
 
 @Serializable
@@ -161,7 +177,11 @@ data class TmdbEpisodeDetail(
     @SerialName("crew") val crew: List<TmdbCrew>,
     @SerialName("guest_stars") val guestStars: List<TmdbCast>,
     @SerialName("external_ids") val externalIds: TmdbExternalIds,
-) : TmdbAnyMedia
+) : TmdbAnyMedia {
+
+    val posterImage get(): TmdbImage? = TmdbImage.poster(stillPath)
+
+}
 
 @Serializable
 data class TmdbContentRating(

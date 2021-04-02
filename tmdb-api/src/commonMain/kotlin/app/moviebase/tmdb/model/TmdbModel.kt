@@ -1,5 +1,6 @@
 package app.moviebase.tmdb.model
 
+import app.moviebase.tmdb.image.TmdbImageType
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
@@ -134,15 +135,17 @@ data class TmdbVideo(
     @SerialName("type") val type: String,
 )
 
+
+
 @Serializable
 data class TmdbImages(
     @SerialName("id") val id: Int,
-    @SerialName("posters") val posters: List<TmdbImage>,
-    @SerialName("backdrops") val backdrops: List<TmdbImage>,
+    @SerialName("posters") val posters: List<TmdbFileImage>,
+    @SerialName("backdrops") val backdrops: List<TmdbFileImage>,
 )
 
 @Serializable
-data class TmdbImage(
+data class TmdbFileImage(
     @SerialName("file_path") val filePath: String,
     @SerialName("aspect_ratio") val aspectRation: Double,
 )

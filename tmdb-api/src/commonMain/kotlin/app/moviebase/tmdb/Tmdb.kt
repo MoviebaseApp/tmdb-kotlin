@@ -1,7 +1,6 @@
 package app.moviebase.tmdb
 
 import app.moviebase.tmdb.api.*
-import app.moviebase.tmdb.model.TmdbUrlParameter
 import app.moviebase.tmdb.remote.buildHttpClient
 import io.ktor.client.request.*
 

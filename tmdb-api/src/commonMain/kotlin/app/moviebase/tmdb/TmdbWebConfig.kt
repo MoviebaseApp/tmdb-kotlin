@@ -1,4 +1,4 @@
-package app.moviebase.tmdb.model
+package app.moviebase.tmdb
 
 object TmdbWebConfig {
 

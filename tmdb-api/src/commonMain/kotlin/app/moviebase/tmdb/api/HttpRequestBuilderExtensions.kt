@@ -1,7 +1,7 @@
 package app.moviebase.tmdb.api
 
 import app.moviebase.tmdb.model.AppendResponse
-import app.moviebase.tmdb.model.TmdbWebConfig
+import app.moviebase.tmdb.TmdbWebConfig
 import io.ktor.client.request.*
 import io.ktor.http.*
 
