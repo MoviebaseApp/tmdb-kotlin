@@ -109,7 +109,7 @@ data class TmdbGenre(
 data class TmdbKeyword(
     val id: Int,
     val name: String,
-): TmdbSearchable
+) : TmdbSearchable
 
 @Serializable
 data class TmdbExternalIds(
@@ -137,16 +137,18 @@ enum class TmdbVideoType(val value: String) {
     FEATURETTE("Featurette");
 }
 
-
+/**
+ *
+ */
 @Serializable
 data class TmdbVideo(
     @SerialName("id") val id: Int,
-    @SerialName("iso_639_1") val iso639: String,
-    @SerialName("iso_3166_1") val iso3166: String,
-    @SerialName("key") val key: String,
-    @SerialName("name") val name: String,
-    @SerialName("site") val site: String,
-    @SerialName("type") val type: String,
+    @SerialName("iso_639_1") val iso639: String? = null,
+    @SerialName("iso_3166_1") val iso3166: String? = null,
+    @SerialName("key") val key: String? = null,
+    @SerialName("name") val name: String? = null,
+    @SerialName("size") val size: Int? = null, // 360, 480, 720, 1080
+    @SerialName("type") val type: TmdbVideoType? = null,
 )
 
 

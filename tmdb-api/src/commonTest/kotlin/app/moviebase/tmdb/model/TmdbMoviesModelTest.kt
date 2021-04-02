@@ -7,7 +7,6 @@ import kotlinx.datetime.LocalDate
 import kotlin.test.Test
 import kotlin.test.assertEquals
 
-// this is an example how the tests looks like
 class TmdbMoviesModelTest {
 
     val movie = TmdbMovie(
