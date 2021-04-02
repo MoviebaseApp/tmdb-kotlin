@@ -7,11 +7,11 @@
 
 TMDb API
 ===========================
-This is a lightweight library to access the [TMDb API](https://developers.themoviedb.org/3) for mobile, desktop and web applications. Written in Kotlin Multiplatform.
+This is a library to access the [TMDb API](https://developers.themoviedb.org/3) for mobile, desktop and web applications. Written in Kotlin Multiplatform.
 
 ## Adding to your project
 
-The library published to Maven Central.
+The library is published to Maven Central.
 
 ### Gradle
 
@@ -55,32 +55,45 @@ Add a dependency to the `<dependencies>` element.
 
 
 ## Usage
-Most of the library follows the possibilities and naming at the official [TMDb documentation site](https://developers.themoviedb.org/3/getting-started).
+Most of the library follows the possibilities and naming at the official [TMDb documentation](https://developers.themoviedb.org/3/getting-started).
 
 
 ### Get information
-For getting a movie or another media content just create a new instance and choose your section
+For getting basic information about a movie or other media content.
 
 ```kotlin
 val tmdb = Tmdb3("apiKey")
 val movieDetail = tmdb.movies.getDetails(
-    id = 12,
-    language = "EN",
+    movieId = 12,
+    language = "DE",
     appendResponses = listOf(AppendResponse.MOVIE_CREDITS)
+)
+```
+
+### Search
+Search for TV shows by a query.
+
+```kotlin
+val tmdb = Tmdb3("apiKey")
+val showPageResult = tmdb.search.findShows(
+    query = "The Expanse",
+    page = 1,
+    language = "DE",
+    region = "US",
+    includeAdult = false
 )
 ```
 
 ### Build image URL
 
-You can easily build a image URL via the poster file path and size key.  
+You can build an image URL via the poster file path and size key. More information on the [TMDb images site](https://developers.themoviedb.org/3/getting-started/images).
 
 ```kotlin
 val url = TmdbImageUrlBuilder.build("w154", "nBNZadXqJSdt05SHLqgT0HuC5Gm.jpg")
 ```
 
-Or create by a image and the best matched width/height.
+Or create the URL by an image class and the best matched width/height.
 
 ```kotlin
-val movie: TmdbMovie
 val url = TmdbImageUrlBuilder.build(image = movie.posterImage, width = 200,height = 300)
 ```
