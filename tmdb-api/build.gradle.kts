@@ -51,6 +51,9 @@ kotlin {
             dependencies {
                 implementation(kotlin("test-common"))
                 implementation(kotlin("test-annotations-common"))
+
+                implementation(Libs.Testing.ktorClientMock)
+
             }
         }
         val jvmMain by getting {
@@ -65,14 +68,14 @@ kotlin {
             }
         }
         val androidMain by getting {
-
+            dependencies {
+                implementation(Libs.Util.ktorAndroid)
+            }
         }
         val androidTest by getting {
             dependencies {
                 implementation(kotlin("test"))
                 implementation(kotlin("test-junit"))
-
-                implementation(Libs.Util.ktorAndroid)
 
                 implementation(Libs.Testing.jupiter)
                 runtimeOnly(Libs.Testing.jupiterEngine)

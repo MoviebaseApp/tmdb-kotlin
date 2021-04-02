@@ -156,6 +156,7 @@ object Libs {
 
     object Testing {
         val coroutinesTest = "org.jetbrains.kotlinx:kotlinx-coroutines-test:${Versions.coroutines}"
+        val ktorClientMock = "io.ktor:ktor-client-mock:${Versions.ktor}"
         val truth = "com.google.truth:truth:1.1.2"
         val junit = "junit:junit:4.13.2"
         val jupiter = "org.junit.jupiter:junit-jupiter-api:${Versions.junitJupiter}"
