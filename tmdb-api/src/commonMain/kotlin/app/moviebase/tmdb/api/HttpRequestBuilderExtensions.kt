@@ -29,14 +29,18 @@ fun HttpRequestBuilder.parameters(parameters: Map<String, Any?>) {
     }
 }
 
-fun HttpRequestBuilder.parameterLanguage(language: String) {
-    parameter("language", language)
+fun HttpRequestBuilder.parameterLanguage(language: String?) {
+    language?.let { parameter("language", it) }
+}
+
+fun HttpRequestBuilder.parameterRegion(region: String?) {
+    region?.let { parameter("region", it) }
 }
 
 fun HttpRequestBuilder.parameterPage(page: Int) {
     parameter("page", page)
 }
 
-fun HttpRequestBuilder.parameterAppendResponses(appendResponses: Iterable<AppendResponse>) {
-    parameter("append_to_response", AppendResponse.build(appendResponses))
+fun HttpRequestBuilder.parameterAppendResponses(appendResponses: Iterable<AppendResponse>?) {
+    appendResponses?.let { parameter("append_to_response", AppendResponse.build(it)) }
 }

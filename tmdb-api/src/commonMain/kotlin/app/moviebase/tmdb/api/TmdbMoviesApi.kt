@@ -6,23 +6,33 @@ import io.ktor.client.request.*
 
 class TmdbMoviesApi(private val client: HttpClient) {
 
-    suspend fun getDetails(id: Int, language: String, appendResponses: Iterable<AppendResponse>? = null): TmdbMovieDetail = client.get {
-        endPointV3("movie", id.toString())
-
+    /**
+     * Get the primary information about a movie.
+     */
+    suspend fun getDetails(
+        movieId: Int,
+        language: String? = null,
+        appendResponses: Iterable<AppendResponse>? = null
+    ): TmdbMovieDetail = client.get {
+        endPointMovie(movieId)
         parameterLanguage(language)
-        appendResponses?.let { parameterAppendResponses(it) }
+        parameterAppendResponses(appendResponses)
     }
 
-    suspend fun getTranslations(id: Int): TmdbTranslations = client.get {
-        endPointV3("movie", id.toString(), "translations")
+    suspend fun getExternalIds(movieId: Int): TmdbExternalIds = client.get {
+        endPointMovie(movieId, "external_ids")
     }
 
-    suspend fun getWatchProviders(id: Int): TmdbProviderResult = client.get {
-        endPointV3("movie", id.toString(), "watch", "providers")
+    suspend fun getTranslations(movieId: Int): TmdbTranslations = client.get {
+        endPointMovie(movieId, "translations")
     }
 
-    suspend fun getExternalIds(id: Int): TmdbExternalIds = client.get {
-        endPointV3("movie", id.toString(), "external_ids")
+    suspend fun getWatchProviders(movieId: Int): TmdbProviderResult = client.get {
+        endPointMovie(movieId, "watch", "providers")
+    }
+
+    private fun HttpRequestBuilder.endPointMovie(movieId: Int, vararg paths: String) {
+        endPointV3("movie", movieId.toString(), *paths)
     }
 
 }

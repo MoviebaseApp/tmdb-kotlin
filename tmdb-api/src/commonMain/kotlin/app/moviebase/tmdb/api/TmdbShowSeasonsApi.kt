@@ -1,22 +1,39 @@
 package app.moviebase.tmdb.api
 
-import app.moviebase.tmdb.model.AppendResponse
-import app.moviebase.tmdb.model.TmdbSeason
-import app.moviebase.tmdb.model.TmdbTranslations
+import app.moviebase.tmdb.model.*
 import io.ktor.client.*
 import io.ktor.client.request.*
 
 class TmdbShowSeasonsApi(private val client: HttpClient) {
 
-    suspend fun getDetails(showId: Int, seasonNumber: Int, language: String, appendResponses: Iterable<AppendResponse>? = null): TmdbSeason = client.get {
-        endPointV3("tv", showId.toString(), "season", seasonNumber.toString())
-
+    suspend fun getDetails(
+        showId: Int,
+        seasonNumber: Int,
+        language: String? = null,
+        appendResponses: Iterable<AppendResponse>? = null,
+        includeImageLanguages: String? = null
+    ): TmdbSeason = client.get {
+        endPointSeason(showId, seasonNumber)
         parameterLanguage(language)
-        appendResponses?.let { parameterAppendResponses(it) }
+        parameterAppendResponses(appendResponses)
+        includeImageLanguages?.let { parameter("include_image_language", it) }
     }
 
-    suspend fun getTranslations(id: Int, seasonNumber: Int): TmdbTranslations = client.get {
-        endPointV3("tv", id.toString(), "season", seasonNumber.toString(), "translations")
+    suspend fun getVideos(showId: Int, seasonNumber: Int, language: String? = null): TmdbResult<TmdbVideo> = client.get {
+        endPointSeason(showId, seasonNumber, "videos")
+        parameterLanguage(language)
+    }
+
+    suspend fun getTranslations(showId: Int, seasonNumber: Int): TmdbTranslations = client.get {
+        endPointSeason(showId, seasonNumber, "translations")
+    }
+
+    suspend fun getExternalIds(showId: Int, seasonNumber: Int): TmdbExternalIds = client.get {
+        endPointSeason(showId, seasonNumber, "external_ids")
+    }
+
+    private fun HttpRequestBuilder.endPointSeason(showId: Int, seasonNumber: Int, vararg paths: String) {
+        endPointV3("tv", showId.toString(), "season", seasonNumber.toString(), *paths)
     }
 
 }

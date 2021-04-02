@@ -1,8 +1,11 @@
 package app.moviebase.tmdb.model
 
 enum class TmdbListSortBy(val value: String) {
-    CREATED_AT("created_at"),
+    POPULARITY("popularity"),
     RELEASE_DATE(" release_date"),
-    TITLE(" title"),
-    VOTE_AVERAGE("vote_average");
+    REVENUE("revenue"),
+    PRIMARY_RELEASE_DATE("primary_release_date"),
+    ORIGINAL_TITLE("original_title"),
+    VOTE_AVERAGE("vote_average"),
+    VOTE_COUNT("vote_count"),
 }

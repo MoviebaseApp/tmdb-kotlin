@@ -69,7 +69,7 @@ data class TmdbMovie(
     @SerialName("vote_average") val voteAverage: Float,
     val popularity: Float,
     @SerialName("release_date") @Serializable(LocalDateSerializer::class) val releaseDate: LocalDate? = null,
-) : TmdbAnyMedia {
+) : TmdbAnyMedia, TmdbSearchable {
 
     val posterImage get(): TmdbImage? = TmdbImage.poster(posterPath)
     val backdropImage get(): TmdbImage? = TmdbImage.backdrop(backdropPath)
@@ -78,7 +78,7 @@ data class TmdbMovie(
 
 @Serializable
 data class TmdbMovieDetail(
-    override val id: Int,
+    val id: Int,
     val title: String,
     @SerialName("imdb_id") val imdbId: String? = null,
     val runtime: Int? = null,
@@ -91,7 +91,7 @@ data class TmdbMovieDetail(
     @SerialName("release_date") @Serializable(LocalDateSerializer::class) val releaseDate: LocalDate?,
     @SerialName("release_dates") val releaseDates: TmdbResult<TmdbReleaseDates>? = null,
     @SerialName("watch/providers") val watchProviders: TmdbProviderResult? = null,
-) : TmdbAnyMedia {
+)  {
 
     val posterImage get(): TmdbImage? = TmdbImage.poster(posterPath)
     val backdropImage get(): TmdbImage? = TmdbImage.backdrop(backdropPath)
@@ -125,7 +125,7 @@ data class TmdbBelongsToCollection(
     @SerialName("name") val name: String,
     @SerialName("backdrop_path") val backdropPath: String? = null,
     @SerialName("parts") val parts: List<TmdbMovie>,
-)
+): TmdbSearchable
 
 @Serializable
 data class TmdbReview(

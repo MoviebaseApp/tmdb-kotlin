@@ -109,7 +109,7 @@ data class TmdbGenre(
 data class TmdbKeyword(
     val id: Int,
     val name: String,
-)
+): TmdbSearchable
 
 @Serializable
 data class TmdbExternalIds(
@@ -168,10 +168,13 @@ data class TmdbLogoImage(
     @SerialName("file_path") val filePath: String?
 )
 
-@Serializable
-data class TmdbCompany(
-    @SerialName("id") val id: Int,
-    @SerialName("logo_path") val logoPath: String? = null,
-    @SerialName("name") val name: String,
-    @SerialName("origin_country") val originCountry: String
-)
+enum class TmdbRequestMediaType(val value: String) {
+    ALL("all"),
+    MOVIE("movie"),
+    TV("tv"),
+    PERSON("person"),
+}
+
+enum class TmdbTimeWindow(val value: String) {
+    DAY("day"), WEEK("week")
+}
