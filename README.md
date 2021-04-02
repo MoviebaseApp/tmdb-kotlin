@@ -27,7 +27,7 @@ To use the library in a single-platform project, add a dependency.
 
 ```kotlin
 dependencies {
-    implementation("app.moviebase:tmdb-api:0.1.3")
+    implementation("app.moviebase:tmdb-api:0.2.0")
 }
 ```
 
@@ -36,7 +36,7 @@ In Kotlin Multiplatform projects, add the dependency to your commonMain source-s
 ```kotlin
 commonMain {
     dependencies {
-        implementation("app.moviebase:tmdb-api:0.1.3")
+        implementation("app.moviebase:tmdb-api:0.2.0")
     }
 }
 ``` 
@@ -49,7 +49,7 @@ Add a dependency to the `<dependencies>` element.
 <dependency>
     <groupId>app.moviebase</groupId>
     <artifactId>tmdb-api</artifactId>
-    <version>0.1.3</version>
+    <version>0.2.0</version>
 </dependency>
 ```
 
@@ -62,8 +62,8 @@ Most of the library follows the possibilities and naming at the official [TMDb d
 For getting a movie or another media content just create a new instance and choose your section
 
 ```kotlin
-val tmdb = TmdbV3("apiKey")
-val movieDetail = tmdb.movie.getDetails(
+val tmdb = Tmdb3("apiKey")
+val movieDetail = tmdb.movies.getDetails(
     id = 12,
     language = "EN",
     appendResponses = listOf(AppendResponse.MOVIE_CREDITS)
@@ -81,6 +81,6 @@ val url = TmdbImageUrlBuilder.build("w154", "nBNZadXqJSdt05SHLqgT0HuC5Gm.jpg")
 Or create by a image and the best matched width/height.
 
 ```kotlin
-val movie: TmdbMovie = TmdbMovie(...)
+val movie: TmdbMovie
 val url = TmdbImageUrlBuilder.build(image = movie.posterImage, width = 200,height = 300)
 ```

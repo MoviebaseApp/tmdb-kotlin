@@ -1,7 +1,7 @@
 object Versions {
     val versionMajor = 0
-    val versionMinor = 1
-    val versionPatch = 4
+    val versionMinor = 2
+    val versionPatch = 0
 
     val versionCode = versionMajor * 1000 + versionMinor * 100 + versionPatch * 10
     val versionName = "$versionMajor.$versionMinor.$versionPatch"
@@ -18,7 +18,7 @@ object Versions {
     val nexus = "1.0.0"
 
     // Kotlin
-    val kotlin = "1.4.31"
+    val kotlin = "1.4.32"
     val coroutines = "1.4.3"
     val kotlinxDatetime = "0.1.1"
     val ktor = "1.5.2"

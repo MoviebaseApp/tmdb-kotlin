@@ -156,7 +156,7 @@ afterEvaluate {
         publications.withType<MavenPublication>().configureEach {
             artifact(javadocJar.get())
             pom {
-                name.set("Multiplatform TMDB API")
+                name.set("Kotlin Multiplatform TMDB API")
                 description.set("A Kotlin Multiplatform library to access the TMDB API.")
                 url.set("https://github.com/MoviebaseApp/tmdb-api")
                 inceptionYear.set("2021")
