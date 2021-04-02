@@ -141,21 +141,6 @@ val javadocJar by tasks.registering(Jar::class) {
 
 afterEvaluate {
     extensions.findByType<PublishingExtension>()?.apply {
-        repositories {
-            maven {
-                name = "sonatype"
-                if (Versions.versionName.endsWith("-SNAPSHOT"))
-                    setUrl("https://s01.oss.sonatype.org/content/repositories/snapshots/")
-                else
-                    setUrl("https://s01.oss.sonatype.org/service/local/")
-
-                credentials {
-                    username = findProperty("SONATYPE_USER") as String?
-                    password = findProperty("SONATYPE_PASSWORD") as String?
-                }
-            }
-        }
-
         publications.withType<MavenPublication>().configureEach {
             artifact(javadocJar.get())
             pom {
