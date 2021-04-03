@@ -98,3 +98,8 @@ Or create the URL by an image class and the best matched width/height.
 ```kotlin
 val url = TmdbImageUrlBuilder.build(image = movie.posterImage, width = 200,height = 300)
 ```
+
+<br/>
+---
+
+*This library uses the TMDb but is not endorsed or certified by TMDb. These services are licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0).*
