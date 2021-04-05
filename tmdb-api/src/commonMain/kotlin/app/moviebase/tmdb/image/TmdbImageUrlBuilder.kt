@@ -13,12 +13,12 @@ object TmdbImageUrlBuilder {
      * And finally the poster path returned by the query, in this case “/nBNZadXqJSdt05SHLqgT0HuC5Gm.jpg”
      *
      *
-     * Example poster: http://image.tmdb.org/t/p/w185/nBNZadXqJSdt05SHLqgT0HuC5Gm.jpg
+     * Example poster: https://image.tmdb.org/t/p/w185/nBNZadXqJSdt05SHLqgT0HuC5Gm.jpg
      * Example logo: https://image.tmdb.org/t/p/h60/ifhbNuuVnlwYy5oXA5VIb2YR8AZ.png
      *
      * Note: Also build for person profile path. Sizes are "w45", "w185", "h632", "original"
      */
-    fun build(sizeKey: String, imagePath: String): String {
+    fun build(imagePath: String, sizeKey: String): String {
         var url = TmdbWebConfig.BASE_URL_TMDB_IMAGE + sizeKey
         if (!imagePath.startsWith("/"))
             url += "/"
@@ -26,9 +26,13 @@ object TmdbImageUrlBuilder {
         return url + imagePath
     }
 
+    fun build(imagePath: String, type: TmdbImageType, width: Int, height: Int): String {
+        val sizeKey = TmdbImageSize.getSizeKey(type, width, height)
+        return build(imagePath, sizeKey)
+    }
+
     fun build(image: TmdbImage, width: Int, height: Int): String {
-        val sizeKey = TmdbImageSize.getSizeKey(image.type, width, height)
-        return build(sizeKey, image.path)
+        return build(image.path, image.type, width, height)
     }
 
     /**
