@@ -13,4 +13,5 @@ object TmdbWebConfig {
 
 object TmdbUrlParameter {
     const val API_KEY = "api_key"
+    const val ACCESS_TOKEN = "access_token"
 }
