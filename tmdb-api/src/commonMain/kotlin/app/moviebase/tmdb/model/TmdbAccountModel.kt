@@ -4,7 +4,7 @@ import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
 @Serializable
-data class AccountDetails(
+data class TmdbAccountDetails(
     val id: String,
     @SerialName("username") val userName: String,
     val name: String,

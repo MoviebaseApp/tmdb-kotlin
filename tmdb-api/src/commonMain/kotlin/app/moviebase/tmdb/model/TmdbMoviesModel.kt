@@ -59,22 +59,8 @@ enum class TmdbMovieStatus(val value: String) {
 }
 
 
-@Serializable
-data class TmdbMovie(
-    override val id: Int,
-    val title: String,
-    @SerialName("poster_path") val posterPath: String?,
-    @SerialName("backdrop_path") val backdropPath: String?,
-    @SerialName("genre_ids") val genresIds: List<Int>,
-    @SerialName("vote_average") val voteAverage: Float,
-    val popularity: Float,
-    @SerialName("release_date") @Serializable(LocalDateSerializer::class) val releaseDate: LocalDate? = null,
-) : TmdbAnyMedia, TmdbSearchable {
 
-    val posterImage get(): TmdbImage? = TmdbImage.poster(posterPath)
-    val backdropImage get(): TmdbImage? = TmdbImage.backdrop(backdropPath)
 
-}
 
 @Serializable
 data class TmdbMovieDetail(

@@ -41,10 +41,10 @@ kotlin {
                 implementation(Libs.Kotlin.kotlinxDateTime)
                 api(Libs.Kotlin.kotlinIo)
 
-                implementation(Libs.Util.ktorCore)
-                implementation(Libs.Util.ktorJson)
-                implementation(Libs.Util.ktorLogging)
-                implementation(Libs.Util.ktorSerialization)
+                implementation(Libs.Data.ktorCore)
+                implementation(Libs.Data.ktorJson)
+                implementation(Libs.Data.ktorLogging)
+                implementation(Libs.Data.ktorSerialization)
             }
         }
         val commonTest by getting {
@@ -69,7 +69,7 @@ kotlin {
         }
         val androidMain by getting {
             dependencies {
-                implementation(Libs.Util.ktorAndroid)
+                implementation(Libs.Data.ktorAndroid)
             }
         }
         val androidTest by getting {
@@ -96,7 +96,7 @@ kotlin {
             kotlin.srcDir("src/iosMain/kotlin")
 
             dependencies {
-                implementation(Libs.Util.ktorIos)
+                implementation(Libs.Data.ktorIos)
             }
         }
         val iosArm64Main by getting {

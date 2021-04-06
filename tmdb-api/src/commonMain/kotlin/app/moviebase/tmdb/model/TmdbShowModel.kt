@@ -62,23 +62,7 @@ enum class TmdbShowType(val value: String) {
     }
 }
 
-@Serializable
-data class TmdbShow(
-    @SerialName("id") override val id: Int,
-    @SerialName("name") val name: String,
-    @SerialName("genre_ids") val genresIds: List<Int>,
-    @SerialName("vote_average") val voteAverage: Float,
-    @SerialName("vote_count") val voteCount: Int,
-    @SerialName("popularity") val popularity: Float,
-    @SerialName("poster_path") val posterPath: String?,
-    @SerialName("backdrop_path") val backdropPath: String?,
-    @SerialName("first_air_date") @Serializable(LocalDateSerializer::class) val firstAirDate: LocalDate?,
-) : TmdbAnyMedia, TmdbSearchable {
 
-    val posterImage get(): TmdbImage? = TmdbImage.poster(posterPath)
-    val backdropImage get(): TmdbImage? = TmdbImage.backdrop(backdropPath)
-
-}
 
 @Serializable
 data class TmdbShowDetail(

@@ -134,15 +134,19 @@ object Libs {
         val glideRecyclerView = "com.github.bumptech.glide:recyclerview-integration:4.12.0"
     }
 
-    object Util {
-        val kodein = "org.kodein.di:kodein-di:${Versions.kodein}"
+    object Data {
+        val tmdbApi = "app.moviebase:tmdb-api:0.2.0"
+
         val ktorCore = "io.ktor:ktor-client-core:${Versions.ktor}"
         val ktorJson = "io.ktor:ktor-client-json:${Versions.ktor}"
         val ktorLogging = "io.ktor:ktor-client-logging:${Versions.ktor}"
         val ktorSerialization = "io.ktor:ktor-client-serialization:${Versions.ktor}"
         val ktorAndroid = "io.ktor:ktor-client-android:${Versions.ktor}"
         val ktorIos = "io.ktor:ktor-client-ios:${Versions.ktor}"
+    }
 
+    object Util {
+        val kodein = "org.kodein.di:kodein-di:${Versions.kodein}"
         val timber = "com.jakewharton.timber:timber:4.7.1"
         val dagger = "com.google.dagger:dagger-android-support:${Versions.dagger}"
         val daggerProcessor = "com.google.dagger:dagger-android-processor:${Versions.dagger}"
