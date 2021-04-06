@@ -37,14 +37,17 @@ class Tmdb4AccountApi(private val client: HttpClient) {
         sortBy: TmdbListSortBy? = null,
         sortOrder: TmdbSortOrder = TmdbSortOrder.DESC,
     ): TmdbPageResult<T> = client.get {
-        endPointV4("account", accountId, mediaType.value, "favorites")
+        endPointAccount(accountId, mediaType.value, "favorites")
         sortBy?.let { parameterSortBy(it, sortOrder) }
         parameterPage(page)
     }
 
-
     private fun HttpRequestBuilder.parameterSortBy(sortBy: TmdbListSortBy, sortOrder: TmdbSortOrder) {
         parameter("sort_by", sortBy.value + sortOrder.value)
+    }
+
+    private fun HttpRequestBuilder.endPointAccount(accountId: String, vararg paths: String) {
+        endPointV4("account", accountId, *paths)
     }
 
 }
