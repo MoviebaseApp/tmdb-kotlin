@@ -1,6 +1,6 @@
 object Versions {
     val versionMajor = 0
-    val versionMinor = 2
+    val versionMinor = 3
     val versionPatch = 0
 
     val versionCode = versionMajor * 1000 + versionMinor * 100 + versionPatch * 10
