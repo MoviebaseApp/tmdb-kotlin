@@ -3,7 +3,6 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 plugins {
     kotlin("multiplatform")
     kotlin("plugin.serialization")
-    id("com.android.library")
     id("org.jetbrains.dokka")
     id("maven-publish")
     id("signing")
@@ -14,9 +13,6 @@ version = Versions.versionName
 
 kotlin {
     jvm()
-    android {
-        publishLibraryVariants("release", "debug")
-    }
     js {
         browser()
         nodejs {
@@ -67,20 +63,6 @@ kotlin {
                 runtimeOnly(Libs.Testing.jupiterEngine)
             }
         }
-        val androidMain by getting {
-            dependencies {
-                implementation(Libs.Data.ktorAndroid)
-            }
-        }
-        val androidTest by getting {
-            dependencies {
-                implementation(kotlin("test"))
-                implementation(kotlin("test-junit"))
-
-                implementation(Libs.Testing.jupiter)
-                runtimeOnly(Libs.Testing.jupiterEngine)
-            }
-        }
         val jsMain by getting {
             dependencies {
 
@@ -107,19 +89,6 @@ kotlin {
             dependsOn(iosMain)
 
         }
-    }
-}
-
-android {
-    compileSdkVersion(Versions.compileSdk)
-    sourceSets["main"].manifest.srcFile("src/androidMain/AndroidManifest.xml")
-    defaultConfig {
-        minSdkVersion(Versions.minSdk)
-        targetSdkVersion(Versions.targetSdk)
-    }
-    compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
     }
 }
 
