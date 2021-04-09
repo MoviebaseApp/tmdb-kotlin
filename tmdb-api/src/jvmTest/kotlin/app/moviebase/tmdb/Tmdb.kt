@@ -5,6 +5,8 @@ import java.io.FileInputStream
 import java.nio.file.Paths
 import java.util.*
 import app.moviebase.tmdb.Tmdb4
+import kotlin.apply
+import kotlin.io.use
 
 val properties by lazy {
     Properties().apply {

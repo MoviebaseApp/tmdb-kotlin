@@ -12,30 +12,7 @@ group = "app.moviebase"
 version = Versions.versionName
 
 kotlin {
-    jvm {
-        compilations {
-            val main by getting
-            val integrationTest by compilations.creating {
-                defaultSourceSet {
-                    dependencies {
-                        // Compile against the main compilation's compile classpath and outputs:
-                        implementation(main.compileDependencyFiles + main.output.classesDirs)
-                    }
-                }
-
-                // Create a test task to run the tests produced by this compilation:
-                tasks.register<Test>("integrationTest") {
-                    useJUnitPlatform()
-
-                    // Run the tests with the classpath containing the compile dependencies (including 'main'),
-                    // runtime dependencies, and the outputs of this compilation:
-                    classpath = compileDependencyFiles + runtimeDependencyFiles + output.allOutputs
-                    // Run only the tests from this compilation's outputs:
-                    testClassesDirs = output.classesDirs
-                }
-            }
-        }
-    }
+    jvm()
     js {
         browser()
         nodejs()
@@ -72,22 +49,12 @@ kotlin {
             dependencies {
                 implementation(kotlin("test-junit5"))
 
-                implementation(Libs.Kotlin.coroutines)
-                implementation(Libs.Testing.jupiter)
-                runtimeOnly(Libs.Testing.jupiterEngine)
-                implementation(Libs.Testing.truth)
-                implementation(Libs.Testing.ktorClientMock)
-            }
-        }
-        val jvmIntegrationTest by getting {
-            dependencies {
-                implementation(kotlin("test-junit5"))
-
                 implementation(Libs.Data.ktorJava)
                 implementation(Libs.Kotlin.coroutines)
                 implementation(Libs.Testing.jupiter)
                 runtimeOnly(Libs.Testing.jupiterEngine)
                 implementation(Libs.Testing.truth)
+                implementation(Libs.Testing.ktorClientMock)
             }
         }
         val jsMain by getting {

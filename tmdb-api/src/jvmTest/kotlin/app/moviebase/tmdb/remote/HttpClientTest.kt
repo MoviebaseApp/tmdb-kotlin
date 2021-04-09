@@ -25,7 +25,7 @@ fun mockHttpClient(
             val url = request.url.toString().decodeURLPart()
 
             val fileName = jsonFiles[url] ?: error("Unhandled url $url")
-            val resource = Resource("./src/commonTest/resources/$fileName")
+            val resource = Resource("./src/jvmTest/resources/tmdb$version/$fileName")
 
             val content = resource.readText()
             respond(content = content, headers = headers)

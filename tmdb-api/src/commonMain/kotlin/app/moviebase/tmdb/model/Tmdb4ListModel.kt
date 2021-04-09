@@ -22,7 +22,7 @@ data class Tmdb4UpdateListRequest(
 
 @Serializable
 data class Tmdb4List(
-    @SerialName("poster_path") val posterPath: String,
+    @SerialName("poster_path") val posterPath: String? = null,
     val id: Int,
     @SerialName("backdrop_path") val backdropPath: String,
     @SerialName("total_results") val totalResults: Int,

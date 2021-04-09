@@ -3,14 +3,13 @@ package app.moviebase.tmdb.api
 import app.moviebase.tmdb.remote.mockHttpClient
 import kotlinx.coroutines.runBlocking
 import org.junit.jupiter.api.Test
-import io.ktor.client.*
 
 // this is an example how the tests looks like
 class TmdbAccountApiTest {
 
     val client = mockHttpClient(
         3,
-        "account?session_id=sessionId" to "movie_details.json"
+        "account?session_id=sessionId" to "tmdb3/movie_details.json"
     )
 
     val classToTest = TmdbAccountApi(client)
