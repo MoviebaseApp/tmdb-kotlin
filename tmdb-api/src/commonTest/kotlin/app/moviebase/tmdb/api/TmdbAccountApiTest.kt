@@ -15,7 +15,7 @@ class TmdbAccountApiTest {
     val classToTest = TmdbAccountApi(client)
 
     @Test
-    fun testGetAccountDetails() = runBlock {
+    fun testGetAccountDetails() = runBlocking {
 //        val accountDetails = classToTest.getDetails("sessionId")
 
     }

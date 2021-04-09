@@ -49,6 +49,7 @@ kotlin {
                 implementation(kotlin("test-annotations-common"))
 
                 implementation(Libs.Kotlin.coroutines)
+                implementation(Libs.Testing.coroutinesTest)
                 implementation(Libs.Testing.ktorClientMock)
 
             }
