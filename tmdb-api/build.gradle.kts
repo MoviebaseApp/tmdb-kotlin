@@ -48,6 +48,7 @@ kotlin {
                 implementation(kotlin("test-common"))
                 implementation(kotlin("test-annotations-common"))
 
+                implementation(Libs.Kotlin.coroutines)
                 implementation(Libs.Testing.ktorClientMock)
 
             }
@@ -81,13 +82,26 @@ kotlin {
                 implementation(Libs.Data.ktorIos)
             }
         }
+        val iosTest by creating {
+            dependsOn(commonTest)
+            kotlin.srcDir("src/iosTest/kotlin")
+            dependencies {
+                implementation(Libs.Data.ktorIos)
+            }
+        }
         val iosArm64Main by getting {
             dependsOn(iosMain)
 
         }
         val iosX64Main by getting {
             dependsOn(iosMain)
+        }
+        val iosArm64Test by getting {
+            dependsOn(iosTest)
 
+        }
+        val iosX64Test by getting {
+            dependsOn(iosTest)
         }
     }
 }

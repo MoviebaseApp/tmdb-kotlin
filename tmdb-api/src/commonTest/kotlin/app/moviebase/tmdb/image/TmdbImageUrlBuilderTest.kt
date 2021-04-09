@@ -1,7 +1,6 @@
 package app.moviebase.tmdb.image
 
 import app.moviebase.tmdb.model.TmdbVideo
-import kotlinx.coroutines.runBlocking
 import kotlin.test.Test
 import kotlin.test.assertEquals
 
