@@ -12,19 +12,33 @@ group = "app.moviebase"
 version = Versions.versionName
 
 kotlin {
-    jvm()
-    js {
-        browser()
-        nodejs {
-            val compilations = compilations as NamedDomainObjectContainer<org.jetbrains.kotlin.gradle.plugin.mpp.KotlinJsCompilation>
-            val main by compilations.getting {
-                compileKotlinTask.kotlinOptions {
-                    moduleKind = "commonjs"
-                    sourceMap = true
-                    metaInfo = true
+    jvm {
+        compilations {
+            val main by getting
+            val integrationTest by compilations.creating {
+                defaultSourceSet {
+                    dependencies {
+                        // Compile against the main compilation's compile classpath and outputs:
+                        implementation(main.compileDependencyFiles + main.output.classesDirs)
+                    }
+                }
+
+                // Create a test task to run the tests produced by this compilation:
+                tasks.register<Test>("integrationTest") {
+                    useJUnitPlatform()
+
+                    // Run the tests with the classpath containing the compile dependencies (including 'main'),
+                    // runtime dependencies, and the outputs of this compilation:
+                    classpath = compileDependencyFiles + runtimeDependencyFiles + output.allOutputs
+                    // Run only the tests from this compilation's outputs:
+                    testClassesDirs = output.classesDirs
                 }
             }
         }
+    }
+    js {
+        browser()
+        nodejs()
     }
     iosArm64()
     iosX64()
@@ -47,22 +61,33 @@ kotlin {
             dependencies {
                 implementation(kotlin("test-common"))
                 implementation(kotlin("test-annotations-common"))
-
-                implementation(Libs.Kotlin.coroutines)
-                implementation(Libs.Testing.coroutinesTest)
-                implementation(Libs.Testing.ktorClientMock)
-
             }
         }
         val jvmMain by getting {
-
+            dependencies {
+                implementation(Libs.Data.ktorJava)
+            }
         }
         val jvmTest by getting {
             dependencies {
                 implementation(kotlin("test-junit5"))
 
+                implementation(Libs.Kotlin.coroutines)
                 implementation(Libs.Testing.jupiter)
                 runtimeOnly(Libs.Testing.jupiterEngine)
+                implementation(Libs.Testing.truth)
+                implementation(Libs.Testing.ktorClientMock)
+            }
+        }
+        val jvmIntegrationTest by getting {
+            dependencies {
+                implementation(kotlin("test-junit5"))
+
+                implementation(Libs.Data.ktorJava)
+                implementation(Libs.Kotlin.coroutines)
+                implementation(Libs.Testing.jupiter)
+                runtimeOnly(Libs.Testing.jupiterEngine)
+                implementation(Libs.Testing.truth)
             }
         }
         val jsMain by getting {

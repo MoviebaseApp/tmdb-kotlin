@@ -2,9 +2,10 @@ package app.moviebase.tmdb.model
 
 import app.moviebase.tmdb.image.TmdbImage
 import app.moviebase.tmdb.image.TmdbImageType
+import com.google.common.truth.Truth
+import com.google.common.truth.Truth.assertThat
 import kotlinx.datetime.LocalDate
 import kotlin.test.Test
-import kotlin.test.assertEquals
 
 class TmdbMoviesModelTest {
 
@@ -28,14 +29,14 @@ class TmdbMoviesModelTest {
     fun testMovieGetPosterImage() {
         val image = movie.posterImage
 
-        assertEquals(image, TmdbImage("/IfB9hy4JH1eH6HEfIgIGORXi5h.jpg", TmdbImageType.POSTER))
+        assertThat(image).isEqualTo(TmdbImage("/IfB9hy4JH1eH6HEfIgIGORXi5h.jpg", TmdbImageType.POSTER))
     }
 
     @Test
     fun testMovieGetBackdropImage() {
         val image = movie.backdropImage
 
-        assertEquals(image, TmdbImage("/3FHrAeYMogXd6K1e5tUzQAiS7GE.jpg", TmdbImageType.BACKDROP))
+        assertThat(image).isEqualTo(TmdbImage("/3FHrAeYMogXd6K1e5tUzQAiS7GE.jpg", TmdbImageType.BACKDROP))
     }
 
 }

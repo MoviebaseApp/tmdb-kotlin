@@ -141,6 +141,7 @@ object Libs {
         val ktorLogging = "io.ktor:ktor-client-logging:${Versions.ktor}"
         val ktorSerialization = "io.ktor:ktor-client-serialization:${Versions.ktor}"
         val ktorAndroid = "io.ktor:ktor-client-android:${Versions.ktor}"
+        val ktorJava = "io.ktor:ktor-client-java:${Versions.ktor}"
         val ktorIos = "io.ktor:ktor-client-ios:${Versions.ktor}"
     }
 

@@ -12,13 +12,11 @@ class Tmdb4(tmdbApiKey: String) {
 
     private val client = buildHttpClient {
         it.header(TmdbUrlParameter.API_KEY, tmdbApiKey)
-        it.header(TmdbUrlParameter.ACCESS_TOKEN, tmdbApiKey)
     }
 
     private val authClient = buildHttpClient {
         it.header(TmdbUrlParameter.API_KEY, tmdbApiKey)
-        it.header(TmdbUrlParameter.ACCESS_TOKEN, tmdbApiKey)
-        it.header("Authorization", "Bearer $authenticationToken")
+//        it.header("Authorization", "Bearer $authenticationToken")
 
     }
 

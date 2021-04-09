@@ -2,7 +2,8 @@ package app.moviebase.tmdb.api
 
 import app.moviebase.tmdb.remote.mockHttpClient
 import kotlinx.coroutines.runBlocking
-import kotlin.test.Test
+import org.junit.jupiter.api.Test
+import io.ktor.client.*
 
 // this is an example how the tests looks like
 class TmdbAccountApiTest {
@@ -15,10 +16,12 @@ class TmdbAccountApiTest {
     val classToTest = TmdbAccountApi(client)
 
     @Test
-    fun testGetAccountDetails() = runBlocking {
+    fun `it can get account details`() = runBlocking {
+
 //        val accountDetails = classToTest.getDetails("sessionId")
 
     }
+
 
 }
 

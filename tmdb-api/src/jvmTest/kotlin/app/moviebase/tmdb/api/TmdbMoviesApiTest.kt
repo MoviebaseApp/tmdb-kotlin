@@ -2,9 +2,10 @@ package app.moviebase.tmdb.api
 
 import app.moviebase.tmdb.model.AppendResponse
 import app.moviebase.tmdb.remote.mockHttpClient
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.runBlocking
-import kotlin.test.Test
-import kotlin.test.assertEquals
+import org.junit.jupiter.api.Test
+
 
 class TmdbMoviesApiTest {
 
@@ -15,15 +16,16 @@ class TmdbMoviesApiTest {
 
     val classToTest = TmdbMoviesApi(client)
 
+
     @Test
-    fun testMovieDetails() = runBlocking {
+    fun `it can fetch movie details`() = runBlocking {
         val movieDetails = classToTest.getDetails(
             movieId = 10140,
             language = "en-US",
             appendResponses = listOf(AppendResponse.RELEASES_DATES, AppendResponse.WATCH_PROVIDERS)
         )
 
-        assertEquals(10140, movieDetails.id)
+        assertThat(movieDetails.id).isEqualTo(10140)
     }
 
 }

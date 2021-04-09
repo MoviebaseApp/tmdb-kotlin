@@ -1,8 +1,9 @@
 package app.moviebase.tmdb.image
 
 import app.moviebase.tmdb.model.TmdbVideo
-import kotlin.test.Test
-import kotlin.test.assertEquals
+import com.google.common.truth.Truth.assertThat
+import org.junit.jupiter.api.Test
+
 
 class TmdbImageUrlBuilderTest {
 
@@ -10,14 +11,14 @@ class TmdbImageUrlBuilderTest {
     fun testBuildUrlByImagePath() {
         val imageUrl = TmdbImageUrlBuilder.build("/nBNZadXqJSdt05SHLqgT0HuC5Gm.jpg", "w185")
 
-        assertEquals(imageUrl, "https://image.tmdb.org/t/p/w185/nBNZadXqJSdt05SHLqgT0HuC5Gm.jpg")
+        assertThat(imageUrl).isEqualTo("https://image.tmdb.org/t/p/w185/nBNZadXqJSdt05SHLqgT0HuC5Gm.jpg")
     }
 
     @Test
     fun testBuildUrlByImagePathWithoutSlash() {
         val imageUrl = TmdbImageUrlBuilder.build("nBNZadXqJSdt05SHLqgT0HuC5Gm.jpg", "w185")
 
-        assertEquals(imageUrl, "https://image.tmdb.org/t/p/w185/nBNZadXqJSdt05SHLqgT0HuC5Gm.jpg")
+        assertThat(imageUrl).isEqualTo("https://image.tmdb.org/t/p/w185/nBNZadXqJSdt05SHLqgT0HuC5Gm.jpg")
     }
 
     @Test
@@ -25,14 +26,14 @@ class TmdbImageUrlBuilderTest {
         val tmdbImage = TmdbImage("/nBNZadXqJSdt05SHLqgT0HuC5Gm.jpg", TmdbImageType.POSTER)
         val imageUrl = TmdbImageUrlBuilder.build(tmdbImage, 185, 0)
 
-        assertEquals(imageUrl, "https://image.tmdb.org/t/p/w185/nBNZadXqJSdt05SHLqgT0HuC5Gm.jpg")
+        assertThat(imageUrl).isEqualTo("https://image.tmdb.org/t/p/w185/nBNZadXqJSdt05SHLqgT0HuC5Gm.jpg")
     }
 
     @Test
     fun testBuildYouTubeUrlByImagePath() {
         val imageUrl = TmdbImageUrlBuilder.buildYoutube("sdfjkds", "default")
 
-        assertEquals(imageUrl, "https://img.youtube.com/vi/sdfjkds/default.jpg")
+        assertThat(imageUrl).isEqualTo("https://img.youtube.com/vi/sdfjkds/default.jpg")
     }
 
     @Test
@@ -40,7 +41,7 @@ class TmdbImageUrlBuilderTest {
         val tmdbVideo = TmdbVideo(id = 45, key = "sdfjkds")
         val imageUrl = TmdbImageUrlBuilder.buildYoutube(tmdbVideo, 320)
 
-        assertEquals(imageUrl, "https://img.youtube.com/vi/sdfjkds/mqdefault.jpg")
+        assertThat(imageUrl).isEqualTo("https://img.youtube.com/vi/sdfjkds/mqdefault.jpg")
     }
 
 }
