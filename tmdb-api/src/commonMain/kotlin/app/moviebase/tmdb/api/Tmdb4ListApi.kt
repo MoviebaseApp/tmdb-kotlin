@@ -10,8 +10,17 @@ class Tmdb4ListApi(private val client: HttpClient) {
      * This method will retrieve a list by id.
      * Private lists can only be accessed by their owners and therefore require a valid user access token.
      */
-    suspend fun getList(listId: String): Tmdb4List = client.get {
+    suspend fun getList(
+        listId: Int,
+        page: Int,
+        language: String? = null,
+        sortBy: TmdbListSortBy? = null,
+        sortOrder: TmdbSortOrder = TmdbSortOrder.DESC
+    ): Tmdb4List = client.get {
         endPointList(listId)
+        parameterPage(page)
+        parameterLanguage(language)
+        sortBy?.let { parameterSortBy(it, sortOrder) }
     }
 
     /**
@@ -28,7 +37,7 @@ class Tmdb4ListApi(private val client: HttpClient) {
      * This method will let you update the details of a list.
      * You must be the owner of the list and therefore have a valid user access token in order to edit it.
      */
-    suspend fun update(listId: String, request: Tmdb4UpdateListRequest): TmdbStatusResult = client.put {
+    suspend fun update(listId: Int, request: Tmdb4UpdateListRequest): TmdbStatusResult = client.put {
         endPointList(listId)
         json()
         body = request
@@ -38,7 +47,7 @@ class Tmdb4ListApi(private val client: HttpClient) {
      * This method lets you clear all of the items from a list in a single request. This action cannot be reversed so use it with caution.
      * You must be the owner of the list and therefore have a valid user access token in order to clear a list.
      */
-    suspend fun clear(listId: String): TmdbStatusResult = client.get {
+    suspend fun clear(listId: Int): TmdbStatusResult = client.get {
         endPointList(listId, "clear")
     }
 
@@ -46,7 +55,7 @@ class Tmdb4ListApi(private val client: HttpClient) {
      * This method will delete a list by id. This action is not reversible so take care when issuing it.
      * You must be the owner of the list and therefore have a valid user access token in order to delete it.
      */
-    suspend fun delete(listId: String): TmdbStatusResult = client.delete {
+    suspend fun delete(listId: Int): TmdbStatusResult = client.delete {
         endPointList(listId)
     }
 
@@ -55,7 +64,7 @@ class Tmdb4ListApi(private val client: HttpClient) {
      * The results of this query will return a results array. Each result includes a success field. If a result is false this will usually indicate that the item already exists on the list. It may also indicate that the item could not be found.
      * You must be the owner of the list and therefore have a valid user access token in order to add items to a list.
      */
-    suspend fun addItems(listId: String, items: Tmdb4ItemsRequest): TmdbStatusResult = client.post {
+    suspend fun addItems(listId: Int, items: Tmdb4ItemsRequest): TmdbStatusResult = client.post {
         endPointList(listId, "items")
 
         json()
@@ -66,7 +75,7 @@ class Tmdb4ListApi(private val client: HttpClient) {
      * This method will let you update an individual item on a list. Currently, only adding a comment is suported.
      * You must be the owner of the list and therefore have a valid user access token in order to edit items.
      */
-    suspend fun updateItems(listId: String, items: Tmdb4UpdateItemsRequest): TmdbStatusResult = client.put {
+    suspend fun updateItems(listId: Int, items: Tmdb4UpdateItemsRequest): TmdbStatusResult = client.put {
         endPointList(listId, "items")
 
         json()
@@ -77,7 +86,7 @@ class Tmdb4ListApi(private val client: HttpClient) {
      * This method will let you remove items from a list. You can remove multiple items at a time.
      * You must be the owner of the list and therefore have a valid user access token in order to delete items from it.
      */
-    suspend fun removeItems(listId: String, items: Tmdb4ItemsRequest): TmdbStatusResult = client.delete {
+    suspend fun removeItems(listId: Int, items: Tmdb4ItemsRequest): TmdbStatusResult = client.delete {
         endPointList(listId, "items")
 
         json()
@@ -88,14 +97,18 @@ class Tmdb4ListApi(private val client: HttpClient) {
      * This method lets you quickly check if the item is already added to the list.
      * You must be the owner of the list and therefore have a valid user access token in order to check an item status.
      */
-    suspend fun checkItemStatus(listId: String, mediaId: Int, mediaType: TmdbMediaType): Tmdb4ItemStatus = client.get {
+    suspend fun checkItemStatus(listId: Int, mediaId: Int, mediaType: TmdbMediaType): Tmdb4ItemStatus = client.get {
         endPointList(listId, "item_status")
         parameter("media_id", mediaId.toString())
         parameter("media_type", mediaType.value)
     }
 
-    private fun HttpRequestBuilder.endPointList(listId: String, vararg paths: String) {
-        endPointV4("list", listId, *paths)
+    private fun HttpRequestBuilder.endPointList(listId: Int, vararg paths: String) {
+        endPointV4("list", listId.toString(), *paths)
+    }
+
+    private fun HttpRequestBuilder.parameterSortBy(sortBy: TmdbListSortBy, sortOrder: TmdbSortOrder) {
+        parameter("sort_by", sortBy.value + sortOrder.value)
     }
 
 }

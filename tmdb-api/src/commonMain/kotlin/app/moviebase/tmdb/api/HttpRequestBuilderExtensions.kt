@@ -38,6 +38,7 @@ fun HttpRequestBuilder.parameterRegion(region: String?) {
 }
 
 fun HttpRequestBuilder.parameterPage(page: Int) {
+    require(page > 1) { "invalid page size: $page" }
     parameter("page", page)
 }
 
