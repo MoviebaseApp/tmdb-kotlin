@@ -12,7 +12,7 @@ class TmdbMoviesApiTest {
     val client = mockHttpClient(
         version = 3,
         responses = mapOf(
-            "movie/10140?language=en-US&append_to_response=release_dates,watch/providers" to "tmdb3/movie_details.json"
+            "movie/10140?language=en-US&append_to_response=release_dates,watch/providers" to "movie_details_10140.json"
         )
     )
 

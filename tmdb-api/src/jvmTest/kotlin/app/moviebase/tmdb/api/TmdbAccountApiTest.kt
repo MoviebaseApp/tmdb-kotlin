@@ -10,7 +10,7 @@ class TmdbAccountApiTest {
     val client = mockHttpClient(
         version = 3,
         responses = mapOf(
-            "account?session_id=sessionId" to "tmdb3/movie_details.json"
+            "account?session_id=sessionId" to "tmdb3/movie_details_10140.json"
         )
     )
 
