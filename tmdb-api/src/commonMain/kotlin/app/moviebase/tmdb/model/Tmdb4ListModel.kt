@@ -24,7 +24,7 @@ data class Tmdb4UpdateListRequest(
 data class Tmdb4List(
     @SerialName("poster_path") val posterPath: String? = null,
     val id: Int,
-    @SerialName("backdrop_path") val backdropPath: String,
+    @SerialName("backdrop_path") val backdropPath: String? = null,
     @SerialName("total_results") val totalResults: Int,
     val public: Boolean,
     val revenue: String,

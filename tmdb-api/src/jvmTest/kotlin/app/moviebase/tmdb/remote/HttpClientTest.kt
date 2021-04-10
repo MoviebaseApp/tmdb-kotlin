@@ -8,11 +8,11 @@ import io.ktor.http.*
 
 fun mockHttpClient(
     version: Int,
-    vararg responses: Pair<String, String>
+    responses: Map<String, String>
 ) = HttpClient(MockEngine) {
     val jsonFiles = mutableMapOf<String, String>()
-    responses.forEach {
-        jsonFiles["https://api.themoviedb.org/$version/${it.first}"] = it.second
+    responses.entries.forEach {
+        jsonFiles["https://api.themoviedb.org/$version/${it.key}"] = it.value
     }
     val headers = headersOf("Content-Type" to listOf(ContentType.Application.Json.toString()))
 

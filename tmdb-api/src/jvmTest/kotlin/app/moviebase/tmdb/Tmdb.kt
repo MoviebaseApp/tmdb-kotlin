@@ -1,12 +1,8 @@
-package app.moviebase.tmdb.api
+package app.moviebase.tmdb
 
-import app.moviebase.tmdb.Tmdb3
 import java.io.FileInputStream
 import java.nio.file.Paths
 import java.util.*
-import app.moviebase.tmdb.Tmdb4
-import kotlin.apply
-import kotlin.io.use
 
 val properties by lazy {
     Properties().apply {

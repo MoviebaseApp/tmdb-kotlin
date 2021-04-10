@@ -8,15 +8,16 @@ import io.ktor.client.request.*
 
 class Tmdb4(tmdbApiKey: String) {
 
-    var authenticationToken: String? = null
+    var accessToken: String? = null
 
     private val client = buildHttpClient {
-        it.header(TmdbUrlParameter.API_KEY, tmdbApiKey)
+        it.parameter(TmdbUrlParameter.API_KEY, tmdbApiKey)
     }
 
     private val authClient = buildHttpClient {
-        it.header(TmdbUrlParameter.API_KEY, tmdbApiKey)
-//        it.header("Authorization", "Bearer $authenticationToken")
+        it.parameter(TmdbUrlParameter.API_KEY, tmdbApiKey)
+//        it.header(TmdbUrlParameter.ACCESS_TOKEN, tmdbApiKey)
+//        it.header("Authorization", "Bearer accessToken")
 
     }
 

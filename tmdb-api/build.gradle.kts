@@ -42,14 +42,12 @@ kotlin {
         }
         val jvmMain by getting {
             dependencies {
-                implementation(Libs.Data.ktorJava)
             }
         }
         val jvmTest by getting {
             dependencies {
                 implementation(kotlin("test-junit5"))
 
-                implementation(Libs.Data.ktorJava)
                 implementation(Libs.Kotlin.coroutines)
                 implementation(Libs.Testing.jupiter)
                 runtimeOnly(Libs.Testing.jupiterEngine)

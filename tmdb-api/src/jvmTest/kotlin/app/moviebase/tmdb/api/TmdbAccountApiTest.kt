@@ -8,8 +8,10 @@ import org.junit.jupiter.api.Test
 class TmdbAccountApiTest {
 
     val client = mockHttpClient(
-        3,
-        "account?session_id=sessionId" to "tmdb3/movie_details.json"
+        version = 3,
+        responses = mapOf(
+            "account?session_id=sessionId" to "tmdb3/movie_details.json"
+        )
     )
 
     val classToTest = TmdbAccountApi(client)
