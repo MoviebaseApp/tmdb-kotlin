@@ -1,27 +1,7 @@
 package app.moviebase.tmdb.model
 
-import app.moviebase.tmdb.image.TmdbImage
-import app.moviebase.tmdb.remote.LocalDateSerializer
-import kotlinx.datetime.LocalDate
-import kotlinx.serialization.Polymorphic
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
-
-@Serializable
-enum class TmdbMediaType(val value: String) {
-    @SerialName("movie")
-    MOVIE("movie"),
-
-    @SerialName("tv")
-    SHOW("tv"),
-
-    @SerialName("season")
-    SEASON("season"),
-
-    @SerialName("episode")
-    EPISODE("episode")
-}
-
 
 @Serializable
 enum class TmdbExternalSource(val value: String) {
@@ -37,6 +17,7 @@ enum class AppendResponse(val value: String) {
     RELEASES_DATES("release_dates"),
     REVIEWS("reviews"),
     CREDITS("credits"),
+    AGGREGATE_CREDITS("aggregate_credits"),
     IMAGES("images"),
     TAGGED_IMAGES("tagged_images"),
     EXTERNAL_IDS("external_ids"),
@@ -88,65 +69,6 @@ data class TmdbStatusResult(
     @SerialName("status_code") val statusCode: Int,
 )
 
-interface TmdbAnyMedia {
-    val id: Int
-}
-
-@Polymorphic
-@Serializable
-sealed class TmdbMediaListItem : TmdbAnyMedia {
-
-}
-
-@Serializable
-@SerialName("movie")
-data class TmdbMovie(
-    @SerialName("poster_path") val posterPath: String?,
-    @SerialName("adult") val adult: Boolean = false,
-    @SerialName("overview") val overview: String,
-    @SerialName("release_date") @Serializable(LocalDateSerializer::class) val releaseDate: LocalDate? = null,
-    @SerialName("genre_ids") val genresIds: List<Int>,
-    @SerialName("id") override val id: Int,
-    @SerialName("original_title") val originalTitle: String,
-    @SerialName("original_language") val originalLanguage: String,
-    @SerialName("title") val title: String,
-    @SerialName("backdrop_path") val backdropPath: String?,
-    @SerialName("popularity")  val popularity: Float,
-    @SerialName("vote_count") val voteCount: Int,
-    @SerialName("video") val video: Boolean,
-    @SerialName("vote_average") val voteAverage: Float,
-) : TmdbMediaListItem(), TmdbSearchable {
-
-    val posterImage get(): TmdbImage? = TmdbImage.poster(posterPath)
-    val backdropImage get(): TmdbImage? = TmdbImage.backdrop(backdropPath)
-
-}
-
-@Serializable
-@SerialName("tv")
-data class TmdbShow(
-    @SerialName("poster_path") val posterPath: String?,
-    @SerialName("popularity") val popularity: Float,
-    @SerialName("id") override val id: Int,
-    @SerialName("backdrop_path") val backdropPath: String?,
-    @SerialName("vote_average") val voteAverage: Float,
-    @SerialName("overview") val overview: String,
-    @SerialName("first_air_date") @Serializable(LocalDateSerializer::class) val firstAirDate: LocalDate?,
-    @SerialName("origin_country") val originCountry: List<String>,
-    @SerialName("genre_ids") val genresIds: List<Int>,
-    @SerialName("original_language") val originalLanguage: String,
-    @SerialName("vote_count") val voteCount: Int,
-    @SerialName("name") val name: String,
-    @SerialName("original_name") val originalName: String,
-) : TmdbMediaListItem(), TmdbSearchable {
-
-    val posterImage get(): TmdbImage? = TmdbImage.poster(posterPath)
-    val backdropImage get(): TmdbImage? = TmdbImage.backdrop(backdropPath)
-
-}
-
-
-
 @Serializable
 data class TmdbTranslations(
     val id: Int,
@@ -178,7 +100,7 @@ data class TmdbKeyword(
 data class TmdbExternalIds(
     @SerialName("imdb_id") val imdbId: String? = null,
     @SerialName("tvdb_id") val tvdbId: Int? = null,
-    @SerialName("id") val id: Int,
+    @SerialName("id") val id: Int? = null, // it is is used in append responses
     @SerialName("facebook_id") val facebook: String? = null,
     @SerialName("instagram_id") val instagram: String? = null,
     @SerialName("twitter_id") val twitter: String? = null,

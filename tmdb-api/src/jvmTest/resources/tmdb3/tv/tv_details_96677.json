@@ -1,0 +1,2465 @@
+{
+  "backdrop_path": "/dVHeJXUzHJJGadB2wvpuAn6fsdN.jpg",
+  "created_by": [
+    {
+      "id": 1287248,
+      "credit_id": "5dfc96e39824c80013dd32a6",
+      "name": "George Kay",
+      "gender": 2,
+      "profile_path": null
+    },
+    {
+      "id": 1409018,
+      "credit_id": "607679de2faf4d0058de94d6",
+      "name": "Marie Roussin",
+      "gender": 0,
+      "profile_path": null
+    },
+    {
+      "id": 1449284,
+      "credit_id": "607679e2d4b9d90058ce9cc6",
+      "name": "Florent Meyer",
+      "gender": 0,
+      "profile_path": null
+    },
+    {
+      "id": 1618156,
+      "credit_id": "607678a41da7a600773de76c",
+      "name": "François Uzan",
+      "gender": 0,
+      "profile_path": null
+    },
+    {
+      "id": 3051535,
+      "credit_id": "607679ff8ddc3400798faba1",
+      "name": "Tigran Rosine",
+      "gender": 0,
+      "profile_path": null
+    }
+  ],
+  "episode_run_time": [
+    48
+  ],
+  "first_air_date": "2021-01-08",
+  "genres": [
+    {
+      "id": 80,
+      "name": "Crime"
+    },
+    {
+      "id": 18,
+      "name": "Drama"
+    },
+    {
+      "id": 9648,
+      "name": "Mystery"
+    }
+  ],
+  "homepage": "https://www.netflix.com/title/80994082",
+  "id": 96677,
+  "in_production": true,
+  "languages": [
+    "fr"
+  ],
+  "last_air_date": "2021-01-08",
+  "last_episode_to_air": {
+    "air_date": "2021-01-08",
+    "episode_number": 5,
+    "id": 2614992,
+    "name": "Chapter 5",
+    "overview": "En route to Étretat with Claire and Raoul, Assane encounters an unwelcome figure. In a bind, Assane sends a message to Capt. Laugier.",
+    "production_code": "",
+    "season_number": 1,
+    "still_path": "/eAnPhMtxJCdvrDfzTz8VGuMBCyS.jpg",
+    "vote_average": 8.3,
+    "vote_count": 9
+  },
+  "name": "Lupin",
+  "next_episode_to_air": null,
+  "networks": [
+    {
+      "name": "Netflix",
+      "id": 213,
+      "logo_path": "/wwemzKWzjKYJFfCeiB57q3r4Bcm.png",
+      "origin_country": ""
+    }
+  ],
+  "number_of_episodes": 5,
+  "number_of_seasons": 1,
+  "origin_country": [
+    "FR"
+  ],
+  "original_language": "fr",
+  "original_name": "Lupin",
+  "overview": "Inspired by the adventures of Arsène Lupin, gentleman thief Assane Diop sets out to avenge his father for an injustice inflicted by a wealthy family.",
+  "popularity": 183.04,
+  "poster_path": "/mevKJG6otv3FJEhsmp40ravG3tW.jpg",
+  "production_companies": [
+    {
+      "id": 9,
+      "logo_path": "/nda3dTUYdDrJ6rZqBpYvY865aDv.png",
+      "name": "Gaumont",
+      "origin_country": "FR"
+    }
+  ],
+  "production_countries": [
+    {
+      "iso_3166_1": "FR",
+      "name": "France"
+    }
+  ],
+  "seasons": [
+    {
+      "air_date": "2021-01-08",
+      "episode_count": 5,
+      "id": 157243,
+      "name": "Season 1",
+      "overview": "Inspired by the adventures of Arsène Lupin, gentleman thief Assane Diop sets out to avenge his father for an injustice inflicted by a wealthy family.",
+      "poster_path": "/5Hke4jkFgD0loC6QBY7ym235Hq.jpg",
+      "season_number": 1
+    }
+  ],
+  "spoken_languages": [
+    {
+      "english_name": "French",
+      "iso_639_1": "fr",
+      "name": "Français"
+    }
+  ],
+  "status": "Returning Series",
+  "tagline": "",
+  "type": "Scripted",
+  "vote_average": 7.9,
+  "vote_count": 742,
+  "external_ids": {
+    "imdb_id": "tt2531336",
+    "freebase_mid": null,
+    "freebase_id": null,
+    "tvdb_id": 375921,
+    "tvrage_id": null,
+    "facebook_id": null,
+    "instagram_id": null,
+    "twitter_id": null
+  },
+  "videos": {
+    "results": [
+      {
+        "id": "5f6dbe399f37b000365d22ad",
+        "iso_639_1": "en",
+        "iso_3166_1": "US",
+        "key": "Y3tVDKuORi8",
+        "name": "Lupin | Official Teaser | Netflix",
+        "site": "YouTube",
+        "size": 1080,
+        "type": "Teaser"
+      },
+      {
+        "id": "5fcba4ff0b7316004007bd09",
+        "iso_639_1": "en",
+        "iso_3166_1": "US",
+        "key": "ga0iTWXCGa0",
+        "name": "Lupin | Official Trailer | Netflix",
+        "site": "YouTube",
+        "size": 1080,
+        "type": "Trailer"
+      }
+    ]
+  },
+  "credits": {
+    "cast": [
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 78423,
+        "known_for_department": "Acting",
+        "name": "Omar Sy",
+        "original_name": "Omar Sy",
+        "popularity": 3.808,
+        "profile_path": "/o34IwFPlOvE00yJA2E4nvp5RQB7.jpg",
+        "character": "Assane Diop",
+        "credit_id": "60752e2cca8354006fbfa83e",
+        "order": 500
+      }
+    ],
+    "crew": [
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 24767,
+        "known_for_department": "Writing",
+        "name": "Maurice Leblanc",
+        "original_name": "Maurice Leblanc",
+        "popularity": 0.604,
+        "profile_path": "/zG7PxV1AL150f4HUXE1CnkK4L3v.jpg",
+        "credit_id": "60130ae246f3540041ba45a0",
+        "department": "Writing",
+        "job": "Characters"
+      },
+      {
+        "adult": false,
+        "gender": 1,
+        "id": 935703,
+        "known_for_department": "Production",
+        "name": "Sidonie Dumas",
+        "original_name": "Sidonie Dumas",
+        "popularity": 0.972,
+        "profile_path": "/qijvlubKz2o1npBxI9J4hxdCnNb.jpg",
+        "credit_id": "60130b00c3c891003d40f1eb",
+        "department": "Production",
+        "job": "Producer"
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 968710,
+        "known_for_department": "Production",
+        "name": "Christophe Riandee",
+        "original_name": "Christophe Riandee",
+        "popularity": 0.6,
+        "profile_path": null,
+        "credit_id": "60130b0d3e09f3003c3dec59",
+        "department": "Production",
+        "job": "Producer"
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 2705674,
+        "known_for_department": "Production",
+        "name": "Nathan Franck",
+        "original_name": "Nathan Franck",
+        "popularity": 0.6,
+        "profile_path": null,
+        "credit_id": "60130b28aafebd003d18bee6",
+        "department": "Production",
+        "job": "Producer"
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 1953711,
+        "known_for_department": "Production",
+        "name": "Isabelle Degeorges",
+        "original_name": "Isabelle Degeorges",
+        "popularity": 0.6,
+        "profile_path": null,
+        "credit_id": "60130b33dd83fa003d9e8462",
+        "department": "Production",
+        "job": "Producer"
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 78423,
+        "known_for_department": "Acting",
+        "name": "Omar Sy",
+        "original_name": "Omar Sy",
+        "popularity": 3.808,
+        "profile_path": "/o34IwFPlOvE00yJA2E4nvp5RQB7.jpg",
+        "credit_id": "6013891802842000402e2071",
+        "department": "Writing",
+        "job": "Creative Producer"
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 119198,
+        "known_for_department": "Production",
+        "name": "Michaël Laguens",
+        "original_name": "Michaël Laguens",
+        "popularity": 0.62,
+        "profile_path": null,
+        "credit_id": "6074f864c39266003f62e553",
+        "department": "Production",
+        "job": "Casting Director"
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 1021803,
+        "known_for_department": "Production",
+        "name": "Catherine Chevron",
+        "original_name": "Catherine Chevron",
+        "popularity": 0.6,
+        "profile_path": null,
+        "credit_id": "6074f86e2faf4d0078a704b4",
+        "department": "Production",
+        "job": "Casting Director"
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 2313438,
+        "known_for_department": "Acting",
+        "name": "Martin Jaubert",
+        "original_name": "Martin Jaubert",
+        "popularity": 0.6,
+        "profile_path": null,
+        "credit_id": "6074f8e518864b00439b225f",
+        "department": "Production",
+        "job": "Production Executive"
+      }
+    ]
+  },
+  "aggregate_credits": {
+    "cast": [
+      {
+        "adult": false,
+        "gender": 1,
+        "id": 2280476,
+        "known_for_department": "Acting",
+        "name": "Shirine Boutella",
+        "original_name": "Shirine Boutella",
+        "popularity": 0.693,
+        "profile_path": "/8h1fGDUaSOdKZUDPsO35v4trVWI.jpg",
+        "roles": [
+          {
+            "credit_id": "6005e625e942ee003fe65b7a",
+            "character": "Lieutenant Sofia Belkacem",
+            "episode_count": 5
+          }
+        ],
+        "total_episode_count": 5,
+        "order": 48
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 1173028,
+        "known_for_department": "Acting",
+        "name": "Vincent Londez",
+        "original_name": "Vincent Londez",
+        "popularity": 0.6,
+        "profile_path": "/sVVveDFGIU9Llk5scvrHr9UQgPY.jpg",
+        "roles": [
+          {
+            "credit_id": "6074f58e2a09bc006e497a56",
+            "character": "Captain Romain Laugier",
+            "episode_count": 5
+          }
+        ],
+        "total_episode_count": 5,
+        "order": 55
+      },
+      {
+        "adult": false,
+        "gender": 1,
+        "id": 4390,
+        "known_for_department": "Acting",
+        "name": "Ludivine Sagnier",
+        "original_name": "Ludivine Sagnier",
+        "popularity": 4.101,
+        "profile_path": "/hHYq2MfSF9R26pVNJBjVUZPCvMM.jpg",
+        "roles": [
+          {
+            "credit_id": "6074f391c39266006f8bd191",
+            "character": "Claire",
+            "episode_count": 5
+          }
+        ],
+        "total_episode_count": 5,
+        "order": 55
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 146720,
+        "known_for_department": "Acting",
+        "name": "Hervé Pierre",
+        "original_name": "Hervé Pierre",
+        "popularity": 0.655,
+        "profile_path": "/zrorzRqdKqbZVNws404U13Ypxf.jpg",
+        "roles": [
+          {
+            "credit_id": "6074f46c78570e006e363872",
+            "character": "Mr. Hubert Pellegrini",
+            "episode_count": 5
+          }
+        ],
+        "total_episode_count": 5,
+        "order": 55
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 1372661,
+        "known_for_department": "Acting",
+        "name": "Soufiane Guerrab",
+        "original_name": "Soufiane Guerrab",
+        "popularity": 2.658,
+        "profile_path": "/hJIMDd7l4pK28aT8tPbJ6KoKxfz.jpg",
+        "roles": [
+          {
+            "credit_id": "6074f584d8f44e0059e8bf93",
+            "character": "Youssef Guedira",
+            "episode_count": 5
+          }
+        ],
+        "total_episode_count": 5,
+        "order": 55
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 3050132,
+        "known_for_department": "Acting",
+        "name": "Etan Simon",
+        "original_name": "Etan Simon",
+        "popularity": 0.6,
+        "profile_path": null,
+        "roles": [
+          {
+            "credit_id": "6074f8041da7a600589ca3f2",
+            "character": "Raoul",
+            "episode_count": 5
+          }
+        ],
+        "total_episode_count": 5,
+        "order": 62
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 78423,
+        "known_for_department": "Acting",
+        "name": "Omar Sy",
+        "original_name": "Omar Sy",
+        "popularity": 3.808,
+        "profile_path": "/o34IwFPlOvE00yJA2E4nvp5RQB7.jpg",
+        "roles": [
+          {
+            "credit_id": "60752e2cca8354006fbfa83e",
+            "character": "Assane Diop",
+            "episode_count": 5
+          }
+        ],
+        "total_episode_count": 5,
+        "order": 500
+      },
+      {
+        "adult": false,
+        "gender": 1,
+        "id": 53429,
+        "known_for_department": "Acting",
+        "name": "Clotilde Hesme",
+        "original_name": "Clotilde Hesme",
+        "popularity": 0.692,
+        "profile_path": "/8EpC9doloj6JRmDzZWFuNcjok95.jpg",
+        "roles": [
+          {
+            "credit_id": "6074f4591b1f3c006ea7f8c4",
+            "character": "Juliette Pellegrini",
+            "episode_count": 4
+          }
+        ],
+        "total_episode_count": 4,
+        "order": 55
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 586916,
+        "known_for_department": "Acting",
+        "name": "Antoine Gouy",
+        "original_name": "Antoine Gouy",
+        "popularity": 0.98,
+        "profile_path": "/g0KnDyYzYHNY3TQgcX3B26ILnTu.jpg",
+        "roles": [
+          {
+            "credit_id": "6074f4822a09bc00295a41df",
+            "character": "Benjamin Ferel",
+            "episode_count": 4
+          }
+        ],
+        "total_episode_count": 4,
+        "order": 55
+      },
+      {
+        "adult": false,
+        "gender": 1,
+        "id": 24485,
+        "known_for_department": "Acting",
+        "name": "Nicole Garcia",
+        "original_name": "Nicole Garcia",
+        "popularity": 1.617,
+        "profile_path": "/miV8I6kNb0rMjSn6bADw5ms08Il.jpg",
+        "roles": [
+          {
+            "credit_id": "6074f4602a09bc006e49771a",
+            "character": "Mrs. Anne Pellegrini",
+            "episode_count": 3
+          }
+        ],
+        "total_episode_count": 3,
+        "order": 38
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 1457800,
+        "known_for_department": "Acting",
+        "name": "Johann Dionnet",
+        "original_name": "Johann Dionnet",
+        "popularity": 0.6,
+        "profile_path": "/wJHARDUZRpJNWjfGL6dMMEs6j44.jpg",
+        "roles": [
+          {
+            "credit_id": "6074f6293f483300571476d4",
+            "character": "Young Gabriel Dumont",
+            "episode_count": 3
+          }
+        ],
+        "total_episode_count": 3,
+        "order": 39
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 3050131,
+        "known_for_department": "Acting",
+        "name": "Mamadou Haïdara",
+        "original_name": "Mamadou Haïdara",
+        "popularity": 0.6,
+        "profile_path": null,
+        "roles": [
+          {
+            "credit_id": "6074f7d42a09bc00404a4dcf",
+            "character": "Young Assane Diop",
+            "episode_count": 3
+          }
+        ],
+        "total_episode_count": 3,
+        "order": 49
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 586731,
+        "known_for_department": "Acting",
+        "name": "Adama Niane",
+        "original_name": "Adama Niane",
+        "popularity": 0.84,
+        "profile_path": "/r1mvrT2AXJwUFPBEzGPs1O1UdB7.jpg",
+        "roles": [
+          {
+            "credit_id": "6074f6f41b1f3c00293de0d3",
+            "character": "Léonard",
+            "episode_count": 3
+          }
+        ],
+        "total_episode_count": 3,
+        "order": 55
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 1826574,
+        "known_for_department": "Acting",
+        "name": "Vincent Garanger",
+        "original_name": "Vincent Garanger",
+        "popularity": 0.6,
+        "profile_path": null,
+        "roles": [
+          {
+            "credit_id": "60767ae38ddc340040ae387c",
+            "character": "Gabriel Dumont",
+            "episode_count": 3
+          }
+        ],
+        "total_episode_count": 3,
+        "order": 55
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 2128717,
+        "known_for_department": "Acting",
+        "name": "Fargass Assandé",
+        "original_name": "Fargass Assandé",
+        "popularity": 0.6,
+        "profile_path": null,
+        "roles": [
+          {
+            "credit_id": "6074f4c0fb834600578f3f34",
+            "character": "Babakar Diop",
+            "episode_count": 2
+          }
+        ],
+        "total_episode_count": 2,
+        "order": 26
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 1360310,
+        "known_for_department": "Acting",
+        "name": "Moussa Sylla",
+        "original_name": "Moussa Sylla",
+        "popularity": 1.38,
+        "profile_path": null,
+        "roles": [
+          {
+            "credit_id": "607517828ddc3400798dd8e1",
+            "character": "Lieutenant Barreto",
+            "episode_count": 2
+          }
+        ],
+        "total_episode_count": 2,
+        "order": 38
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 1507666,
+        "known_for_department": "Acting",
+        "name": "Éric Paul",
+        "original_name": "Éric Paul",
+        "popularity": 0.6,
+        "profile_path": null,
+        "roles": [
+          {
+            "credit_id": "607517c52a09bc00295a8762",
+            "character": "Mr. Philippe Bouchard",
+            "episode_count": 2
+          }
+        ],
+        "total_episode_count": 2,
+        "order": 40
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 1981383,
+        "known_for_department": "Acting",
+        "name": "Jocelyne Vignon",
+        "original_name": "Jocelyne Vignon",
+        "popularity": 0.6,
+        "profile_path": "/AgvAD7K9bHYktQwfYcLNwTeKZCZ.jpg",
+        "roles": [
+          {
+            "credit_id": "6074f6a5d4b9d90027d1e74e",
+            "character": "Aminata",
+            "episode_count": 2
+          }
+        ],
+        "total_episode_count": 2,
+        "order": 49
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 1493331,
+        "known_for_department": "Acting",
+        "name": "Xavier Lemaître",
+        "original_name": "Xavier Lemaître",
+        "popularity": 0.802,
+        "profile_path": "/48FFd6ARgXdYahnGjQxAvAV2nTY.jpg",
+        "roles": [
+          {
+            "credit_id": "6074f67e7776f000298159dd",
+            "character": "Thibault Du Quenoy",
+            "episode_count": 2
+          }
+        ],
+        "total_episode_count": 2,
+        "order": 49
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 310646,
+        "known_for_department": "Acting",
+        "name": "Christian Gazio",
+        "original_name": "Christian Gazio",
+        "popularity": 0.746,
+        "profile_path": "/dsAEs0p2RE7k8hen3VOXjV4rzhM.jpg",
+        "roles": [
+          {
+            "credit_id": "60767c8d3f483300408c815b",
+            "character": "Van Driver",
+            "episode_count": 2
+          }
+        ],
+        "total_episode_count": 2,
+        "order": 49
+      },
+      {
+        "adult": false,
+        "gender": 1,
+        "id": 2490550,
+        "known_for_department": "Acting",
+        "name": "Marie Barraud",
+        "original_name": "Marie Barraud",
+        "popularity": 0.6,
+        "profile_path": null,
+        "roles": [
+          {
+            "credit_id": "60767b06fb834600579148f6",
+            "character": "Hélène Dumont",
+            "episode_count": 2
+          }
+        ],
+        "total_episode_count": 2,
+        "order": 49
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 2218461,
+        "known_for_department": "Acting",
+        "name": "Kamel Guenfoud",
+        "original_name": "Kamel Guenfoud",
+        "popularity": 0.706,
+        "profile_path": "/2No4vnSwvQuGaNYoIq3ipJWTh5L.jpg",
+        "roles": [
+          {
+            "credit_id": "6074f4edfb8346006f8a6db2",
+            "character": "Kevin",
+            "episode_count": 1
+          }
+        ],
+        "total_episode_count": 1,
+        "order": 8
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 136170,
+        "known_for_department": "Acting",
+        "name": "Grégoire Colin",
+        "original_name": "Grégoire Colin",
+        "popularity": 2.209,
+        "profile_path": "/jtolsceVVsMT1wWi8m8pdtaUE4f.jpg",
+        "roles": [
+          {
+            "credit_id": "6074f518875d1a002aa97d9c",
+            "character": "Vincent Morville",
+            "episode_count": 1
+          }
+        ],
+        "total_episode_count": 1,
+        "order": 9
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 1058064,
+        "known_for_department": "Acting",
+        "name": "Arthur Choisnet",
+        "original_name": "Arthur Choisnet",
+        "popularity": 0.6,
+        "profile_path": "/56tzwcW4vm4A0dZp4WQ8O2Qjrlc.jpg",
+        "roles": [
+          {
+            "credit_id": "6074f527ca835400580c7267",
+            "character": "Rudy",
+            "episode_count": 1
+          }
+        ],
+        "total_episode_count": 1,
+        "order": 10
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 1912234,
+        "known_for_department": "Acting",
+        "name": "Saïd Benchnafa",
+        "original_name": "Saïd Benchnafa",
+        "popularity": 0.92,
+        "profile_path": "/dSdxCP8UT9kEqZ4Rk9YlvWCrWOy.jpg",
+        "roles": [
+          {
+            "credit_id": "6074f5b81b1f3c0040cdcd95",
+            "character": "Bogdan",
+            "episode_count": 1
+          }
+        ],
+        "total_episode_count": 1,
+        "order": 13
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 1457841,
+        "known_for_department": "Acting",
+        "name": "Mohamed Nouar",
+        "original_name": "Mohamed Nouar",
+        "popularity": 0.6,
+        "profile_path": null,
+        "roles": [
+          {
+            "credit_id": "6074f6b01da7a6003f15a71f",
+            "character": "Ibrahim",
+            "episode_count": 1
+          }
+        ],
+        "total_episode_count": 1,
+        "order": 17
+      },
+      {
+        "adult": false,
+        "gender": 1,
+        "id": 3050128,
+        "known_for_department": "Acting",
+        "name": "Charlotte Saliou",
+        "original_name": "Charlotte Saliou",
+        "popularity": 0.6,
+        "profile_path": null,
+        "roles": [
+          {
+            "credit_id": "6074f6d6fb8346002a54c5a1",
+            "character": "Louvre Museum Guide",
+            "episode_count": 1
+          }
+        ],
+        "total_episode_count": 1,
+        "order": 18
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 2535180,
+        "known_for_department": "Acting",
+        "name": "Ary Gabison",
+        "original_name": "Ary Gabison",
+        "popularity": 0.6,
+        "profile_path": null,
+        "roles": [
+          {
+            "credit_id": "6074f738ca8354006fbf487f",
+            "character": "Louvre Barrier Security Guard",
+            "episode_count": 1
+          }
+        ],
+        "total_episode_count": 1,
+        "order": 20
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 3050130,
+        "known_for_department": "Acting",
+        "name": "Martin Trouvé-Dugény",
+        "original_name": "Martin Trouvé-Dugény",
+        "popularity": 0.6,
+        "profile_path": null,
+        "roles": [
+          {
+            "credit_id": "6074f779f925320040fe2d08",
+            "character": "Thomas in Control Room",
+            "episode_count": 1
+          }
+        ],
+        "total_episode_count": 1,
+        "order": 21
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 2198186,
+        "known_for_department": "Acting",
+        "name": "Xavier Gojo",
+        "original_name": "Xavier Gojo",
+        "popularity": 0.6,
+        "profile_path": "/v0lvWqNhDX8F7nl7twoBPlCm2e0.jpg",
+        "roles": [
+          {
+            "credit_id": "6074f7b1d8f44e0059e8c662",
+            "character": "Ferrari Police Officer",
+            "episode_count": 1
+          }
+        ],
+        "total_episode_count": 1,
+        "order": 22
+      },
+      {
+        "adult": false,
+        "gender": 1,
+        "id": 3050133,
+        "known_for_department": "Acting",
+        "name": "Léa Bonneau",
+        "original_name": "Léa Bonneau",
+        "popularity": 0.6,
+        "profile_path": null,
+        "roles": [
+          {
+            "credit_id": "6074f837ca83540029fa6dc7",
+            "character": "Young Juliette Pellegrini",
+            "episode_count": 1
+          }
+        ],
+        "total_episode_count": 1,
+        "order": 25
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 2008341,
+        "known_for_department": "Acting",
+        "name": "Linda Massoz",
+        "original_name": "Linda Massoz",
+        "popularity": 2.462,
+        "profile_path": "/smFFKDIJnmFLae3HzqNfGYMtHBK.jpg",
+        "roles": [
+          {
+            "credit_id": "607517d718864b005ba4e122",
+            "character": "Prison Nurse",
+            "episode_count": 1
+          }
+        ],
+        "total_episode_count": 1,
+        "order": 28
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 2052158,
+        "known_for_department": "Acting",
+        "name": "Karim Lasmi",
+        "original_name": "Karim Lasmi",
+        "popularity": 0.6,
+        "profile_path": null,
+        "roles": [
+          {
+            "credit_id": "6075180e7776f0003f5e7909",
+            "character": "Mirko",
+            "episode_count": 1
+          }
+        ],
+        "total_episode_count": 1,
+        "order": 29
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 79551,
+        "known_for_department": "Acting",
+        "name": "François Créton",
+        "original_name": "François Créton",
+        "popularity": 0.6,
+        "profile_path": "/MZqRzRqflgE6rGW1F9SH2DyYCz.jpg",
+        "roles": [
+          {
+            "credit_id": "607518292faf4d0078a7486e",
+            "character": "Etienne Comet",
+            "episode_count": 1
+          }
+        ],
+        "total_episode_count": 1,
+        "order": 30
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 2284342,
+        "known_for_department": "Acting",
+        "name": "Athaya Mokonzi",
+        "original_name": "Athaya Mokonzi",
+        "popularity": 0.6,
+        "profile_path": null,
+        "roles": [
+          {
+            "credit_id": "607518698ddc340057cfd101",
+            "character": "Djibril Traoré",
+            "episode_count": 1
+          }
+        ],
+        "total_episode_count": 1,
+        "order": 31
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 238416,
+        "known_for_department": "Acting",
+        "name": "Laurent Maurel",
+        "original_name": "Laurent Maurel",
+        "popularity": 0.6,
+        "profile_path": "/vEbQJ8VNUyUwy10okhZ8mXjsg9o.jpg",
+        "roles": [
+          {
+            "credit_id": "607518b0fb8346006f8ab1ce",
+            "character": "Guedira's Colleague",
+            "episode_count": 1
+          }
+        ],
+        "total_episode_count": 1,
+        "order": 32
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 3050225,
+        "known_for_department": "Acting",
+        "name": "Lazare Mohamed",
+        "original_name": "Lazare Mohamed",
+        "popularity": 0.6,
+        "profile_path": null,
+        "roles": [
+          {
+            "credit_id": "607518d318864b005ba4e356",
+            "character": "José",
+            "episode_count": 1
+          }
+        ],
+        "total_episode_count": 1,
+        "order": 33
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 3050227,
+        "known_for_department": "Acting",
+        "name": "Denis Mathieu",
+        "original_name": "Denis Mathieu",
+        "popularity": 0.6,
+        "profile_path": null,
+        "roles": [
+          {
+            "credit_id": "60751945f925320040fe713a",
+            "character": "Inmate 1",
+            "episode_count": 1
+          }
+        ],
+        "total_episode_count": 1,
+        "order": 34
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 1670780,
+        "known_for_department": "Acting",
+        "name": "Étienne Ménard",
+        "original_name": "Étienne Ménard",
+        "popularity": 0.6,
+        "profile_path": null,
+        "roles": [
+          {
+            "credit_id": "60751979ca8354006fbf8bdc",
+            "character": "Inmate 2",
+            "episode_count": 1
+          }
+        ],
+        "total_episode_count": 1,
+        "order": 35
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 3050228,
+        "known_for_department": "Acting",
+        "name": "Mehdi Fettah",
+        "original_name": "Mehdi Fettah",
+        "popularity": 0.6,
+        "profile_path": null,
+        "roles": [
+          {
+            "credit_id": "607519c88ddc340057cfd450",
+            "character": "Paramedic",
+            "episode_count": 1
+          }
+        ],
+        "total_episode_count": 1,
+        "order": 36
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 3050229,
+        "known_for_department": "Acting",
+        "name": "Adrian Valli Capitant de Villebonne",
+        "original_name": "Adrian Valli Capitant de Villebonne",
+        "popularity": 0.6,
+        "profile_path": null,
+        "roles": [
+          {
+            "credit_id": "60751a34ca8354006fbf8cfa",
+            "character": "Young Benjamin Ferel",
+            "episode_count": 1
+          }
+        ],
+        "total_episode_count": 1,
+        "order": 37
+      },
+      {
+        "adult": false,
+        "gender": 1,
+        "id": 3051551,
+        "known_for_department": "Acting",
+        "name": "Véronique Viel",
+        "original_name": "Véronique Viel",
+        "popularity": 0.6,
+        "profile_path": null,
+        "roles": [
+          {
+            "credit_id": "60767b6a3103250040bd0c01",
+            "character": "The Mayor",
+            "episode_count": 1
+          }
+        ],
+        "total_episode_count": 1,
+        "order": 40
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 3003368,
+        "known_for_department": "Acting",
+        "name": "Jean-Marc Lallement",
+        "original_name": "Jean-Marc Lallement",
+        "popularity": 0.6,
+        "profile_path": "/YFVccRPx7yPbAcDE3DXm2AEvA6.jpg",
+        "roles": [
+          {
+            "credit_id": "60767b923f483300408c7f82",
+            "character": "Deputy Mayor",
+            "episode_count": 1
+          }
+        ],
+        "total_episode_count": 1,
+        "order": 41
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 3051557,
+        "known_for_department": "Acting",
+        "name": "Léo Boucry",
+        "original_name": "Léo Boucry",
+        "popularity": 0.6,
+        "profile_path": null,
+        "roles": [
+          {
+            "credit_id": "60767bb09638640041b94032",
+            "character": "Teen 1",
+            "episode_count": 1
+          }
+        ],
+        "total_episode_count": 1,
+        "order": 42
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 2633675,
+        "known_for_department": "Acting",
+        "name": "Guillaume Auvert",
+        "original_name": "Guillaume Auvert",
+        "popularity": 0.6,
+        "profile_path": null,
+        "roles": [
+          {
+            "credit_id": "60767bca310325002a9b8b40",
+            "character": "Teen 2",
+            "episode_count": 1
+          }
+        ],
+        "total_episode_count": 1,
+        "order": 43
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 3051560,
+        "known_for_department": "Acting",
+        "name": "Melvin Habib",
+        "original_name": "Melvin Habib",
+        "popularity": 0.6,
+        "profile_path": null,
+        "roles": [
+          {
+            "credit_id": "60767bd43f48330079682b27",
+            "character": "Teen 3",
+            "episode_count": 1
+          }
+        ],
+        "total_episode_count": 1,
+        "order": 44
+      },
+      {
+        "adult": false,
+        "gender": 1,
+        "id": 1375874,
+        "known_for_department": "Acting",
+        "name": "Bénédicte-Lala Ernoult",
+        "original_name": "Bénédicte-Lala Ernoult",
+        "popularity": 0.6,
+        "profile_path": "/buMdLq8eWUrAwVagcjAaCLowdUk.jpg",
+        "roles": [
+          {
+            "credit_id": "60767c611da7a600773ded67",
+            "character": "City Employee",
+            "episode_count": 1
+          }
+        ],
+        "total_episode_count": 1,
+        "order": 45
+      },
+      {
+        "adult": false,
+        "gender": 1,
+        "id": 3051569,
+        "known_for_department": "Acting",
+        "name": "Ludmilla Makowski",
+        "original_name": "Ludmilla Makowski",
+        "popularity": 0.6,
+        "profile_path": null,
+        "roles": [
+          {
+            "credit_id": "60767cb43f48330057167fe3",
+            "character": "Young Claire",
+            "episode_count": 1
+          }
+        ],
+        "total_episode_count": 1,
+        "order": 48
+      },
+      {
+        "adult": false,
+        "gender": 1,
+        "id": 7282,
+        "known_for_department": "Acting",
+        "name": "Anne Benoît",
+        "original_name": "Anne Benoît",
+        "popularity": 1.4,
+        "profile_path": "/2k8OfvyrzvxrSsSd3ye7b9xySwp.jpg",
+        "roles": [
+          {
+            "credit_id": "6077f46d2faf4d0078aaec86",
+            "character": "Fabienne Beriot",
+            "episode_count": 1
+          }
+        ],
+        "total_episode_count": 1,
+        "order": 48
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 3053053,
+        "known_for_department": "Acting",
+        "name": "Charles Dupisre",
+        "original_name": "Charles Dupisre",
+        "popularity": 0.0,
+        "profile_path": null,
+        "roles": [
+          {
+            "credit_id": "6077f5132faf4d004196a16c",
+            "character": "PTS Officer",
+            "episode_count": 1
+          }
+        ],
+        "total_episode_count": 1,
+        "order": 49
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 3053054,
+        "known_for_department": "Acting",
+        "name": "Azzeddine Ahmed-Chaouch",
+        "original_name": "Azzeddine Ahmed-Chaouch",
+        "popularity": 0.0,
+        "profile_path": null,
+        "roles": [
+          {
+            "credit_id": "6077f548746457006e8d7742",
+            "character": "Thomas Gendre",
+            "episode_count": 1
+          }
+        ],
+        "total_episode_count": 1,
+        "order": 50
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 3053055,
+        "known_for_department": "Acting",
+        "name": "Jean-Pierre Cormarie",
+        "original_name": "Jean-Pierre Cormarie",
+        "popularity": 0.0,
+        "profile_path": null,
+        "roles": [
+          {
+            "credit_id": "6077f5abb09bde0057d93330",
+            "character": "Pellegrini's Bodyguard",
+            "episode_count": 1
+          }
+        ],
+        "total_episode_count": 1,
+        "order": 51
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 570809,
+        "known_for_department": "Acting",
+        "name": "Abel Jafri",
+        "original_name": "Abel Jafri",
+        "popularity": 1.4,
+        "profile_path": "/nZ476kQTZZMjb7sDJZCV9otlWM6.jpg",
+        "roles": [
+          {
+            "credit_id": "6077f66eab68490029c5ecb8",
+            "character": "Vigile Accueil Journal",
+            "episode_count": 1
+          }
+        ],
+        "total_episode_count": 1,
+        "order": 52
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 2199028,
+        "known_for_department": "Acting",
+        "name": "Kévin Poncet",
+        "original_name": "Kévin Poncet",
+        "popularity": 0.6,
+        "profile_path": null,
+        "roles": [
+          {
+            "credit_id": "6077f6b2fbe36f0029a79c50",
+            "character": "TV Journalist",
+            "episode_count": 1
+          }
+        ],
+        "total_episode_count": 1,
+        "order": 53
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 1196396,
+        "known_for_department": "Acting",
+        "name": "Olivier Ho Hio Hen",
+        "original_name": "Olivier Ho Hio Hen",
+        "popularity": 0.6,
+        "profile_path": null,
+        "roles": [
+          {
+            "credit_id": "6077f719fbe36f0042891d42",
+            "character": "Malaysian Man Pellegrini",
+            "episode_count": 1
+          }
+        ],
+        "total_episode_count": 1,
+        "order": 54
+      },
+      {
+        "adult": false,
+        "gender": 1,
+        "id": 3054134,
+        "known_for_department": "Acting",
+        "name": "Valérie de Dietrich",
+        "original_name": "Valérie de Dietrich",
+        "popularity": 0.0,
+        "profile_path": null,
+        "roles": [
+          {
+            "credit_id": "6078efd7fbe36f00428a4d22",
+            "character": "Tania Fabre",
+            "episode_count": 1
+          }
+        ],
+        "total_episode_count": 1,
+        "order": 55
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 1759733,
+        "known_for_department": "Acting",
+        "name": "Bérengère Dautun",
+        "original_name": "Bérengère Dautun",
+        "popularity": 0.6,
+        "profile_path": null,
+        "roles": [
+          {
+            "credit_id": "6078f04a66f2d20040af225a",
+            "character": "Agathe Van Der Muelen",
+            "episode_count": 1
+          }
+        ],
+        "total_episode_count": 1,
+        "order": 56
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 1966764,
+        "known_for_department": "Acting",
+        "name": "Pierre Rousselet",
+        "original_name": "Pierre Rousselet",
+        "popularity": 0.6,
+        "profile_path": null,
+        "roles": [
+          {
+            "credit_id": "6078f06f43d9b1006ea7bdba",
+            "character": "2006 Police Officer 1",
+            "episode_count": 1
+          }
+        ],
+        "total_episode_count": 1,
+        "order": 57
+      },
+      {
+        "adult": false,
+        "gender": 1,
+        "id": 3054138,
+        "known_for_department": "Acting",
+        "name": "Caroline Borderieux",
+        "original_name": "Caroline Borderieux",
+        "popularity": 0.0,
+        "profile_path": null,
+        "roles": [
+          {
+            "credit_id": "6078f0ac2faf4d002ab12059",
+            "character": "2006 Police Officer 2",
+            "episode_count": 1
+          }
+        ],
+        "total_episode_count": 1,
+        "order": 58
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 1580321,
+        "known_for_department": "Acting",
+        "name": "Cédric Meusburger",
+        "original_name": "Cédric Meusburger",
+        "popularity": 0.6,
+        "profile_path": null,
+        "roles": [
+          {
+            "credit_id": "6078f1001b1f3c0040d2fc11",
+            "character": "Train Conducter",
+            "episode_count": 1
+          }
+        ],
+        "total_episode_count": 1,
+        "order": 59
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 1680994,
+        "known_for_department": "Acting",
+        "name": "David Forgit",
+        "original_name": "David Forgit",
+        "popularity": 0.6,
+        "profile_path": "/vfcPb7nc9grSGahDfEViiIAjavb.jpg",
+        "roles": [
+          {
+            "credit_id": "6078f113b0422800404bb4ee",
+            "character": "Le Havre Police Officer 1",
+            "episode_count": 1
+          }
+        ],
+        "total_episode_count": 1,
+        "order": 60
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 1306965,
+        "known_for_department": "Acting",
+        "name": "Vincent Furic",
+        "original_name": "Vincent Furic",
+        "popularity": 1.016,
+        "profile_path": null,
+        "roles": [
+          {
+            "credit_id": "6078f124d8f44e0059efcc50",
+            "character": "Le Havre Police Officer 2",
+            "episode_count": 1
+          }
+        ],
+        "total_episode_count": 1,
+        "order": 61
+      }
+    ],
+    "crew": [
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 1550381,
+        "known_for_department": "Camera",
+        "name": "Christophe Nuyens",
+        "original_name": "Christophe Nuyens",
+        "popularity": 0.6,
+        "profile_path": null,
+        "jobs": [
+          {
+            "credit_id": "6074f8a765686e00296f5bec",
+            "job": "Director of Photography",
+            "episode_count": 5
+          }
+        ],
+        "department": "Camera",
+        "total_episode_count": 5
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 2116848,
+        "known_for_department": "Camera",
+        "name": "Martial Schmeltz",
+        "original_name": "Martial Schmeltz",
+        "popularity": 0.6,
+        "profile_path": null,
+        "jobs": [
+          {
+            "credit_id": "6074f8c0ca835400408ea813",
+            "job": "Second Unit Director of Photography",
+            "episode_count": 2
+          }
+        ],
+        "department": "Camera",
+        "total_episode_count": 2
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 2210443,
+        "known_for_department": "Camera",
+        "name": "Thomas Lerebour",
+        "original_name": "Thomas Lerebour",
+        "popularity": 0.6,
+        "profile_path": null,
+        "jobs": [
+          {
+            "credit_id": "6074f8c718864b00439b220c",
+            "job": "Second Unit Director of Photography",
+            "episode_count": 2
+          }
+        ],
+        "department": "Camera",
+        "total_episode_count": 2
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 18865,
+        "known_for_department": "Directing",
+        "name": "Louis Leterrier",
+        "original_name": "Louis Leterrier",
+        "popularity": 1.286,
+        "profile_path": "/pJl1hNtZOIxrdzQjwGlicWWGSXg.jpg",
+        "jobs": [
+          {
+            "credit_id": "6077f747746457006e8d781d",
+            "job": "Drone Pilot",
+            "episode_count": 2
+          }
+        ],
+        "department": "Camera",
+        "total_episode_count": 2
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 18865,
+        "known_for_department": "Directing",
+        "name": "Louis Leterrier",
+        "original_name": "Louis Leterrier",
+        "popularity": 1.286,
+        "profile_path": "/pJl1hNtZOIxrdzQjwGlicWWGSXg.jpg",
+        "jobs": [
+          {
+            "credit_id": "6005e750cb3084003ce05931",
+            "job": "Director",
+            "episode_count": 3
+          }
+        ],
+        "department": "Directing",
+        "total_episode_count": 3
+      },
+      {
+        "adult": false,
+        "gender": 1,
+        "id": 1172230,
+        "known_for_department": "Directing",
+        "name": "Marcela Said",
+        "original_name": "Marcela Said",
+        "popularity": 0.694,
+        "profile_path": "/eEanNvPYVpDVdmyzhkhIPiJ8AP1.jpg",
+        "jobs": [
+          {
+            "credit_id": "6005e7bb223e20003dbe38ca",
+            "job": "Director",
+            "episode_count": 2
+          }
+        ],
+        "department": "Directing",
+        "total_episode_count": 2
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 1021803,
+        "known_for_department": "Production",
+        "name": "Catherine Chevron",
+        "original_name": "Catherine Chevron",
+        "popularity": 0.6,
+        "profile_path": null,
+        "jobs": [
+          {
+            "credit_id": "6074f86e2faf4d0078a704b4",
+            "job": "Casting Director",
+            "episode_count": 5
+          }
+        ],
+        "department": "Production",
+        "total_episode_count": 5
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 1953711,
+        "known_for_department": "Production",
+        "name": "Isabelle Degeorges",
+        "original_name": "Isabelle Degeorges",
+        "popularity": 0.6,
+        "profile_path": null,
+        "jobs": [
+          {
+            "credit_id": "5f053e7edd25890039a1df84",
+            "job": "Executive Producer",
+            "episode_count": 0
+          },
+          {
+            "credit_id": "60130b33dd83fa003d9e8462",
+            "job": "Producer",
+            "episode_count": 5
+          }
+        ],
+        "department": "Production",
+        "total_episode_count": 5
+      },
+      {
+        "adult": false,
+        "gender": 1,
+        "id": 935703,
+        "known_for_department": "Production",
+        "name": "Sidonie Dumas",
+        "original_name": "Sidonie Dumas",
+        "popularity": 0.6,
+        "profile_path": "/qijvlubKz2o1npBxI9J4hxdCnNb.jpg",
+        "jobs": [
+          {
+            "credit_id": "60130b00c3c891003d40f1eb",
+            "job": "Producer",
+            "episode_count": 5
+          }
+        ],
+        "department": "Production",
+        "total_episode_count": 5
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 119198,
+        "known_for_department": "Production",
+        "name": "Michaël Laguens",
+        "original_name": "Michaël Laguens",
+        "popularity": 0.6,
+        "profile_path": null,
+        "jobs": [
+          {
+            "credit_id": "5f053e925e12000036e23978",
+            "job": "Casting",
+            "episode_count": 0
+          },
+          {
+            "credit_id": "6074f864c39266003f62e553",
+            "job": "Casting Director",
+            "episode_count": 5
+          }
+        ],
+        "department": "Production",
+        "total_episode_count": 5
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 2313438,
+        "known_for_department": "Acting",
+        "name": "Martin Jaubert",
+        "original_name": "Martin Jaubert",
+        "popularity": 0.6,
+        "profile_path": null,
+        "jobs": [
+          {
+            "credit_id": "6074f8e518864b00439b225f",
+            "job": "Production Executive",
+            "episode_count": 5
+          }
+        ],
+        "department": "Production",
+        "total_episode_count": 5
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 968710,
+        "known_for_department": "Production",
+        "name": "Christophe Riandee",
+        "original_name": "Christophe Riandee",
+        "popularity": 0.6,
+        "profile_path": null,
+        "jobs": [
+          {
+            "credit_id": "60130b0d3e09f3003c3dec59",
+            "job": "Producer",
+            "episode_count": 5
+          }
+        ],
+        "department": "Production",
+        "total_episode_count": 5
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 2705674,
+        "known_for_department": "Production",
+        "name": "Nathan Franck",
+        "original_name": "Nathan Franck",
+        "popularity": 0.6,
+        "profile_path": null,
+        "jobs": [
+          {
+            "credit_id": "60130b28aafebd003d18bee6",
+            "job": "Producer",
+            "episode_count": 5
+          }
+        ],
+        "department": "Production",
+        "total_episode_count": 5
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 2573476,
+        "known_for_department": "Sound",
+        "name": "Thomas Lascar",
+        "original_name": "Thomas Lascar",
+        "popularity": 0.6,
+        "profile_path": null,
+        "jobs": [
+          {
+            "credit_id": "5f053ea70c271000378172e4",
+            "job": "Sound Mixer",
+            "episode_count": 0
+          }
+        ],
+        "department": "Sound",
+        "total_episode_count": 0
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 1287248,
+        "known_for_department": "Creator",
+        "name": "George Kay",
+        "original_name": "George Kay",
+        "popularity": 0.6,
+        "profile_path": null,
+        "jobs": [
+          {
+            "credit_id": "60767722d8f44e00417730b5",
+            "job": "Story",
+            "episode_count": 5
+          },
+          {
+            "credit_id": "607678873103250040bd073e",
+            "job": "Screenplay",
+            "episode_count": 4
+          },
+          {
+            "credit_id": "60767851d4b9d90027d3e31e",
+            "job": "Dialogue",
+            "episode_count": 4
+          },
+          {
+            "credit_id": "60767849b76cbb0079f9dcb5",
+            "job": "Adaptation",
+            "episode_count": 4
+          }
+        ],
+        "department": "Writing",
+        "total_episode_count": 17
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 1618156,
+        "known_for_department": "Writing",
+        "name": "François Uzan",
+        "original_name": "François Uzan",
+        "popularity": 0.98,
+        "profile_path": null,
+        "jobs": [
+          {
+            "credit_id": "6076785a9638640057355155",
+            "job": "Adaptation",
+            "episode_count": 4
+          },
+          {
+            "credit_id": "6076773419ab5900297cb895",
+            "job": "Story",
+            "episode_count": 5
+          },
+          {
+            "credit_id": "607677491b1f3c0057b632ef",
+            "job": "Screenplay",
+            "episode_count": 4
+          },
+          {
+            "credit_id": "60767860fbe36f0029a5cda0",
+            "job": "Dialogue",
+            "episode_count": 4
+          }
+        ],
+        "department": "Writing",
+        "total_episode_count": 17
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 2185863,
+        "known_for_department": "Creator",
+        "name": "Eliane Montane",
+        "original_name": "Eliane Montane",
+        "popularity": 0.6,
+        "profile_path": null,
+        "jobs": [
+          {
+            "credit_id": "6076778f19ab59006ed7a4ee",
+            "job": "Story",
+            "episode_count": 5
+          },
+          {
+            "credit_id": "6077f33cfbe36f00587950a2",
+            "job": "Screenplay",
+            "episode_count": 1
+          }
+        ],
+        "department": "Writing",
+        "total_episode_count": 6
+      },
+      {
+        "adult": false,
+        "gender": 0,
+        "id": 2557040,
+        "known_for_department": "Creator",
+        "name": "Anne Cissé",
+        "original_name": "Anne Cissé",
+        "popularity": 0.6,
+        "profile_path": null,
+        "jobs": [
+          {
+            "credit_id": "607677a518864b002cebf4ea",
+            "job": "Story",
+            "episode_count": 5
+          }
+        ],
+        "department": "Writing",
+        "total_episode_count": 5
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 78423,
+        "known_for_department": "Acting",
+        "name": "Omar Sy",
+        "original_name": "Omar Sy",
+        "popularity": 3.808,
+        "profile_path": "/o34IwFPlOvE00yJA2E4nvp5RQB7.jpg",
+        "jobs": [
+          {
+            "credit_id": "6013891802842000402e2071",
+            "job": "Creative Producer",
+            "episode_count": 5
+          }
+        ],
+        "department": "Writing",
+        "total_episode_count": 5
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 24767,
+        "known_for_department": "Writing",
+        "name": "Maurice Leblanc",
+        "original_name": "Maurice Leblanc",
+        "popularity": 0.604,
+        "profile_path": "/zG7PxV1AL150f4HUXE1CnkK4L3v.jpg",
+        "jobs": [
+          {
+            "credit_id": "60130ae246f3540041ba45a0",
+            "job": "Characters",
+            "episode_count": 5
+          }
+        ],
+        "department": "Writing",
+        "total_episode_count": 5
+      }
+    ]
+  },
+  "reviews": {
+    "page": 1,
+    "results": [],
+    "total_pages": 0,
+    "total_results": 0
+  },
+  "content_ratings": {
+    "results": [
+      {
+        "iso_3166_1": "US",
+        "rating": "TV-MA"
+      },
+      {
+        "iso_3166_1": "DE",
+        "rating": "12"
+      },
+      {
+        "iso_3166_1": "KR",
+        "rating": "15"
+      },
+      {
+        "iso_3166_1": "BR",
+        "rating": "16"
+      },
+      {
+        "iso_3166_1": "NL",
+        "rating": "12"
+      },
+      {
+        "iso_3166_1": "PT",
+        "rating": "12AP"
+      },
+      {
+        "iso_3166_1": "HU",
+        "rating": "16"
+      },
+      {
+        "iso_3166_1": "ES",
+        "rating": "12"
+      }
+    ]
+  },
+  "watch/providers": {
+    "results": {
+      "AR": {
+        "link": "https://www.themoviedb.org/tv/96677-lupin/watch?locale=AR",
+        "flatrate": [
+          {
+            "display_priority": 0,
+            "logo_path": "/9A1JSVmSxsyaBK4SUFsYVqbAYfW.jpg",
+            "provider_id": 8,
+            "provider_name": "Netflix"
+          }
+        ]
+      },
+      "AT": {
+        "link": "https://www.themoviedb.org/tv/96677-lupin/watch?locale=AT",
+        "flatrate": [
+          {
+            "display_priority": 0,
+            "logo_path": "/9A1JSVmSxsyaBK4SUFsYVqbAYfW.jpg",
+            "provider_id": 8,
+            "provider_name": "Netflix"
+          }
+        ]
+      },
+      "AU": {
+        "link": "https://www.themoviedb.org/tv/96677-lupin/watch?locale=AU",
+        "flatrate": [
+          {
+            "display_priority": 0,
+            "logo_path": "/9A1JSVmSxsyaBK4SUFsYVqbAYfW.jpg",
+            "provider_id": 8,
+            "provider_name": "Netflix"
+          }
+        ]
+      },
+      "BE": {
+        "link": "https://www.themoviedb.org/tv/96677-lupin/watch?locale=BE",
+        "flatrate": [
+          {
+            "display_priority": 0,
+            "logo_path": "/9A1JSVmSxsyaBK4SUFsYVqbAYfW.jpg",
+            "provider_id": 8,
+            "provider_name": "Netflix"
+          }
+        ]
+      },
+      "BR": {
+        "link": "https://www.themoviedb.org/tv/96677-lupin/watch?locale=BR",
+        "flatrate": [
+          {
+            "display_priority": 0,
+            "logo_path": "/9A1JSVmSxsyaBK4SUFsYVqbAYfW.jpg",
+            "provider_id": 8,
+            "provider_name": "Netflix"
+          }
+        ]
+      },
+      "CA": {
+        "link": "https://www.themoviedb.org/tv/96677-lupin/watch?locale=CA",
+        "flatrate": [
+          {
+            "display_priority": 0,
+            "logo_path": "/9A1JSVmSxsyaBK4SUFsYVqbAYfW.jpg",
+            "provider_id": 8,
+            "provider_name": "Netflix"
+          }
+        ]
+      },
+      "CH": {
+        "link": "https://www.themoviedb.org/tv/96677-lupin/watch?locale=CH",
+        "flatrate": [
+          {
+            "display_priority": 0,
+            "logo_path": "/9A1JSVmSxsyaBK4SUFsYVqbAYfW.jpg",
+            "provider_id": 8,
+            "provider_name": "Netflix"
+          }
+        ]
+      },
+      "CL": {
+        "link": "https://www.themoviedb.org/tv/96677-lupin/watch?locale=CL",
+        "flatrate": [
+          {
+            "display_priority": 0,
+            "logo_path": "/9A1JSVmSxsyaBK4SUFsYVqbAYfW.jpg",
+            "provider_id": 8,
+            "provider_name": "Netflix"
+          }
+        ]
+      },
+      "CO": {
+        "link": "https://www.themoviedb.org/tv/96677-lupin/watch?locale=CO",
+        "flatrate": [
+          {
+            "display_priority": 0,
+            "logo_path": "/9A1JSVmSxsyaBK4SUFsYVqbAYfW.jpg",
+            "provider_id": 8,
+            "provider_name": "Netflix"
+          }
+        ]
+      },
+      "CZ": {
+        "link": "https://www.themoviedb.org/tv/96677-lupin/watch?locale=CZ",
+        "flatrate": [
+          {
+            "display_priority": 0,
+            "logo_path": "/9A1JSVmSxsyaBK4SUFsYVqbAYfW.jpg",
+            "provider_id": 8,
+            "provider_name": "Netflix"
+          }
+        ]
+      },
+      "DE": {
+        "link": "https://www.themoviedb.org/tv/96677-lupin/watch?locale=DE",
+        "flatrate": [
+          {
+            "display_priority": 0,
+            "logo_path": "/9A1JSVmSxsyaBK4SUFsYVqbAYfW.jpg",
+            "provider_id": 8,
+            "provider_name": "Netflix"
+          }
+        ]
+      },
+      "DK": {
+        "link": "https://www.themoviedb.org/tv/96677-lupin/watch?locale=DK",
+        "flatrate": [
+          {
+            "display_priority": 0,
+            "logo_path": "/9A1JSVmSxsyaBK4SUFsYVqbAYfW.jpg",
+            "provider_id": 8,
+            "provider_name": "Netflix"
+          }
+        ]
+      },
+      "EC": {
+        "link": "https://www.themoviedb.org/tv/96677-lupin/watch?locale=EC",
+        "flatrate": [
+          {
+            "display_priority": 0,
+            "logo_path": "/9A1JSVmSxsyaBK4SUFsYVqbAYfW.jpg",
+            "provider_id": 8,
+            "provider_name": "Netflix"
+          }
+        ]
+      },
+      "EE": {
+        "link": "https://www.themoviedb.org/tv/96677-lupin/watch?locale=EE",
+        "flatrate": [
+          {
+            "display_priority": 0,
+            "logo_path": "/9A1JSVmSxsyaBK4SUFsYVqbAYfW.jpg",
+            "provider_id": 8,
+            "provider_name": "Netflix"
+          }
+        ]
+      },
+      "ES": {
+        "link": "https://www.themoviedb.org/tv/96677-lupin/watch?locale=ES",
+        "flatrate": [
+          {
+            "display_priority": 0,
+            "logo_path": "/9A1JSVmSxsyaBK4SUFsYVqbAYfW.jpg",
+            "provider_id": 8,
+            "provider_name": "Netflix"
+          }
+        ]
+      },
+      "FI": {
+        "link": "https://www.themoviedb.org/tv/96677-lupin/watch?locale=FI",
+        "flatrate": [
+          {
+            "display_priority": 0,
+            "logo_path": "/9A1JSVmSxsyaBK4SUFsYVqbAYfW.jpg",
+            "provider_id": 8,
+            "provider_name": "Netflix"
+          }
+        ]
+      },
+      "FR": {
+        "link": "https://www.themoviedb.org/tv/96677-lupin/watch?locale=FR",
+        "flatrate": [
+          {
+            "display_priority": 0,
+            "logo_path": "/9A1JSVmSxsyaBK4SUFsYVqbAYfW.jpg",
+            "provider_id": 8,
+            "provider_name": "Netflix"
+          }
+        ]
+      },
+      "GB": {
+        "link": "https://www.themoviedb.org/tv/96677-lupin/watch?locale=GB",
+        "flatrate": [
+          {
+            "display_priority": 0,
+            "logo_path": "/9A1JSVmSxsyaBK4SUFsYVqbAYfW.jpg",
+            "provider_id": 8,
+            "provider_name": "Netflix"
+          }
+        ]
+      },
+      "GR": {
+        "link": "https://www.themoviedb.org/tv/96677-lupin/watch?locale=GR",
+        "flatrate": [
+          {
+            "display_priority": 0,
+            "logo_path": "/9A1JSVmSxsyaBK4SUFsYVqbAYfW.jpg",
+            "provider_id": 8,
+            "provider_name": "Netflix"
+          }
+        ]
+      },
+      "HU": {
+        "link": "https://www.themoviedb.org/tv/96677-lupin/watch?locale=HU",
+        "flatrate": [
+          {
+            "display_priority": 0,
+            "logo_path": "/9A1JSVmSxsyaBK4SUFsYVqbAYfW.jpg",
+            "provider_id": 8,
+            "provider_name": "Netflix"
+          }
+        ]
+      },
+      "ID": {
+        "link": "https://www.themoviedb.org/tv/96677-lupin/watch?locale=ID",
+        "flatrate": [
+          {
+            "display_priority": 0,
+            "logo_path": "/9A1JSVmSxsyaBK4SUFsYVqbAYfW.jpg",
+            "provider_id": 8,
+            "provider_name": "Netflix"
+          }
+        ]
+      },
+      "IE": {
+        "link": "https://www.themoviedb.org/tv/96677-lupin/watch?locale=IE",
+        "flatrate": [
+          {
+            "display_priority": 0,
+            "logo_path": "/9A1JSVmSxsyaBK4SUFsYVqbAYfW.jpg",
+            "provider_id": 8,
+            "provider_name": "Netflix"
+          }
+        ]
+      },
+      "IN": {
+        "link": "https://www.themoviedb.org/tv/96677-lupin/watch?locale=IN",
+        "flatrate": [
+          {
+            "display_priority": 0,
+            "logo_path": "/9A1JSVmSxsyaBK4SUFsYVqbAYfW.jpg",
+            "provider_id": 8,
+            "provider_name": "Netflix"
+          }
+        ]
+      },
+      "IT": {
+        "link": "https://www.themoviedb.org/tv/96677-lupin/watch?locale=IT",
+        "flatrate": [
+          {
+            "display_priority": 0,
+            "logo_path": "/9A1JSVmSxsyaBK4SUFsYVqbAYfW.jpg",
+            "provider_id": 8,
+            "provider_name": "Netflix"
+          }
+        ]
+      },
+      "JP": {
+        "link": "https://www.themoviedb.org/tv/96677-lupin/watch?locale=JP",
+        "flatrate": [
+          {
+            "display_priority": 0,
+            "logo_path": "/9A1JSVmSxsyaBK4SUFsYVqbAYfW.jpg",
+            "provider_id": 8,
+            "provider_name": "Netflix"
+          }
+        ]
+      },
+      "KR": {
+        "link": "https://www.themoviedb.org/tv/96677-lupin/watch?locale=KR",
+        "flatrate": [
+          {
+            "display_priority": 0,
+            "logo_path": "/9A1JSVmSxsyaBK4SUFsYVqbAYfW.jpg",
+            "provider_id": 8,
+            "provider_name": "Netflix"
+          }
+        ]
+      },
+      "LT": {
+        "link": "https://www.themoviedb.org/tv/96677-lupin/watch?locale=LT",
+        "flatrate": [
+          {
+            "display_priority": 0,
+            "logo_path": "/9A1JSVmSxsyaBK4SUFsYVqbAYfW.jpg",
+            "provider_id": 8,
+            "provider_name": "Netflix"
+          }
+        ]
+      },
+      "LV": {
+        "link": "https://www.themoviedb.org/tv/96677-lupin/watch?locale=LV",
+        "flatrate": [
+          {
+            "display_priority": 0,
+            "logo_path": "/9A1JSVmSxsyaBK4SUFsYVqbAYfW.jpg",
+            "provider_id": 8,
+            "provider_name": "Netflix"
+          }
+        ]
+      },
+      "MX": {
+        "link": "https://www.themoviedb.org/tv/96677-lupin/watch?locale=MX",
+        "flatrate": [
+          {
+            "display_priority": 0,
+            "logo_path": "/9A1JSVmSxsyaBK4SUFsYVqbAYfW.jpg",
+            "provider_id": 8,
+            "provider_name": "Netflix"
+          }
+        ]
+      },
+      "MY": {
+        "link": "https://www.themoviedb.org/tv/96677-lupin/watch?locale=MY",
+        "flatrate": [
+          {
+            "display_priority": 0,
+            "logo_path": "/9A1JSVmSxsyaBK4SUFsYVqbAYfW.jpg",
+            "provider_id": 8,
+            "provider_name": "Netflix"
+          }
+        ]
+      },
+      "NL": {
+        "link": "https://www.themoviedb.org/tv/96677-lupin/watch?locale=NL",
+        "flatrate": [
+          {
+            "display_priority": 0,
+            "logo_path": "/9A1JSVmSxsyaBK4SUFsYVqbAYfW.jpg",
+            "provider_id": 8,
+            "provider_name": "Netflix"
+          }
+        ]
+      },
+      "NO": {
+        "link": "https://www.themoviedb.org/tv/96677-lupin/watch?locale=NO",
+        "flatrate": [
+          {
+            "display_priority": 0,
+            "logo_path": "/9A1JSVmSxsyaBK4SUFsYVqbAYfW.jpg",
+            "provider_id": 8,
+            "provider_name": "Netflix"
+          }
+        ]
+      },
+      "NZ": {
+        "link": "https://www.themoviedb.org/tv/96677-lupin/watch?locale=NZ",
+        "flatrate": [
+          {
+            "display_priority": 0,
+            "logo_path": "/9A1JSVmSxsyaBK4SUFsYVqbAYfW.jpg",
+            "provider_id": 8,
+            "provider_name": "Netflix"
+          }
+        ]
+      },
+      "PE": {
+        "link": "https://www.themoviedb.org/tv/96677-lupin/watch?locale=PE",
+        "flatrate": [
+          {
+            "display_priority": 0,
+            "logo_path": "/9A1JSVmSxsyaBK4SUFsYVqbAYfW.jpg",
+            "provider_id": 8,
+            "provider_name": "Netflix"
+          }
+        ]
+      },
+      "PH": {
+        "link": "https://www.themoviedb.org/tv/96677-lupin/watch?locale=PH",
+        "flatrate": [
+          {
+            "display_priority": 0,
+            "logo_path": "/9A1JSVmSxsyaBK4SUFsYVqbAYfW.jpg",
+            "provider_id": 8,
+            "provider_name": "Netflix"
+          }
+        ]
+      },
+      "PL": {
+        "link": "https://www.themoviedb.org/tv/96677-lupin/watch?locale=PL",
+        "flatrate": [
+          {
+            "display_priority": 0,
+            "logo_path": "/9A1JSVmSxsyaBK4SUFsYVqbAYfW.jpg",
+            "provider_id": 8,
+            "provider_name": "Netflix"
+          }
+        ]
+      },
+      "PT": {
+        "link": "https://www.themoviedb.org/tv/96677-lupin/watch?locale=PT",
+        "flatrate": [
+          {
+            "display_priority": 0,
+            "logo_path": "/9A1JSVmSxsyaBK4SUFsYVqbAYfW.jpg",
+            "provider_id": 8,
+            "provider_name": "Netflix"
+          }
+        ]
+      },
+      "RO": {
+        "link": "https://www.themoviedb.org/tv/96677-lupin/watch?locale=RO",
+        "flatrate": [
+          {
+            "display_priority": 0,
+            "logo_path": "/9A1JSVmSxsyaBK4SUFsYVqbAYfW.jpg",
+            "provider_id": 8,
+            "provider_name": "Netflix"
+          }
+        ]
+      },
+      "RU": {
+        "link": "https://www.themoviedb.org/tv/96677-lupin/watch?locale=RU",
+        "flatrate": [
+          {
+            "display_priority": 0,
+            "logo_path": "/9A1JSVmSxsyaBK4SUFsYVqbAYfW.jpg",
+            "provider_id": 8,
+            "provider_name": "Netflix"
+          }
+        ]
+      },
+      "SE": {
+        "link": "https://www.themoviedb.org/tv/96677-lupin/watch?locale=SE",
+        "flatrate": [
+          {
+            "display_priority": 0,
+            "logo_path": "/9A1JSVmSxsyaBK4SUFsYVqbAYfW.jpg",
+            "provider_id": 8,
+            "provider_name": "Netflix"
+          }
+        ]
+      },
+      "SG": {
+        "link": "https://www.themoviedb.org/tv/96677-lupin/watch?locale=SG",
+        "flatrate": [
+          {
+            "display_priority": 0,
+            "logo_path": "/9A1JSVmSxsyaBK4SUFsYVqbAYfW.jpg",
+            "provider_id": 8,
+            "provider_name": "Netflix"
+          }
+        ]
+      },
+      "TH": {
+        "link": "https://www.themoviedb.org/tv/96677-lupin/watch?locale=TH",
+        "flatrate": [
+          {
+            "display_priority": 0,
+            "logo_path": "/9A1JSVmSxsyaBK4SUFsYVqbAYfW.jpg",
+            "provider_id": 8,
+            "provider_name": "Netflix"
+          }
+        ]
+      },
+      "TR": {
+        "link": "https://www.themoviedb.org/tv/96677-lupin/watch?locale=TR",
+        "flatrate": [
+          {
+            "display_priority": 0,
+            "logo_path": "/9A1JSVmSxsyaBK4SUFsYVqbAYfW.jpg",
+            "provider_id": 8,
+            "provider_name": "Netflix"
+          }
+        ]
+      },
+      "US": {
+        "link": "https://www.themoviedb.org/tv/96677-lupin/watch?locale=US",
+        "flatrate": [
+          {
+            "display_priority": 0,
+            "logo_path": "/9A1JSVmSxsyaBK4SUFsYVqbAYfW.jpg",
+            "provider_id": 8,
+            "provider_name": "Netflix"
+          }
+        ]
+      },
+      "VE": {
+        "link": "https://www.themoviedb.org/tv/96677-lupin/watch?locale=VE",
+        "flatrate": [
+          {
+            "display_priority": 0,
+            "logo_path": "/9A1JSVmSxsyaBK4SUFsYVqbAYfW.jpg",
+            "provider_id": 8,
+            "provider_name": "Netflix"
+          }
+        ]
+      },
+      "ZA": {
+        "link": "https://www.themoviedb.org/tv/96677-lupin/watch?locale=ZA",
+        "flatrate": [
+          {
+            "display_priority": 0,
+            "logo_path": "/9A1JSVmSxsyaBK4SUFsYVqbAYfW.jpg",
+            "provider_id": 8,
+            "provider_name": "Netflix"
+          }
+        ]
+      }
+    }
+  }
+}

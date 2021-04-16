@@ -58,10 +58,6 @@ enum class TmdbMovieStatus(val value: String) {
     }
 }
 
-
-
-
-
 @Serializable
 data class TmdbMovieDetail(
     val id: Int,
@@ -77,7 +73,9 @@ data class TmdbMovieDetail(
     @SerialName("release_date") @Serializable(LocalDateSerializer::class) val releaseDate: LocalDate?,
     @SerialName("release_dates") val releaseDates: TmdbResult<TmdbReleaseDates>? = null,
     @SerialName("watch/providers") val watchProviders: TmdbProviderResult? = null,
-)  {
+    @SerialName("credits") val credits: TmdbCredits? = null,
+    @SerialName("videos") val videos: TmdbResult<TmdbVideo>? = null,
+) {
 
     val posterImage get(): TmdbImage? = TmdbImage.poster(posterPath)
     val backdropImage get(): TmdbImage? = TmdbImage.backdrop(backdropPath)
@@ -111,7 +109,7 @@ data class TmdbBelongsToCollection(
     @SerialName("name") val name: String,
     @SerialName("backdrop_path") val backdropPath: String? = null,
     @SerialName("parts") val parts: List<TmdbMovie>,
-): TmdbSearchable
+) : TmdbSearchable
 
 @Serializable
 data class TmdbReview(

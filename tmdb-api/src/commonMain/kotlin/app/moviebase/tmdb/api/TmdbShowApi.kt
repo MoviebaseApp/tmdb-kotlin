@@ -1,9 +1,6 @@
 package app.moviebase.tmdb.api
 
-import app.moviebase.tmdb.model.AppendResponse
-import app.moviebase.tmdb.model.TmdbProviderResult
-import app.moviebase.tmdb.model.TmdbShowDetail
-import app.moviebase.tmdb.model.TmdbTranslations
+import app.moviebase.tmdb.model.*
 import io.ktor.client.*
 import io.ktor.client.request.*
 
@@ -21,6 +18,14 @@ class TmdbShowApi(private val client: HttpClient) {
 
     suspend fun getTranslations(showId: Int): TmdbTranslations = client.get {
         endPointShow(showId, "translations")
+    }
+
+    suspend fun getAggregateCredits(
+        showId: Int,
+        language: String? = null,
+    ): TmdbAggregateCredits = client.get {
+        endPointShow(showId, "aggregate_credits")
+        parameterLanguage(language)
     }
 
     suspend fun getWatchProviders(showId: Int): TmdbProviderResult = client.get {
