@@ -127,7 +127,7 @@ enum class TmdbVideoType(val value: String) {
  */
 @Serializable
 data class TmdbVideo(
-    @SerialName("id") val id: Int,
+    @SerialName("id") val id: String,
     @SerialName("iso_639_1") val iso639: String? = null,
     @SerialName("iso_3166_1") val iso3166: String? = null,
     @SerialName("key") val key: String? = null,

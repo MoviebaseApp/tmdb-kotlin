@@ -38,7 +38,7 @@ class TmdbImageUrlBuilderTest {
 
     @Test
     fun testBuildYouTubeUrlByTmdbVideo() {
-        val tmdbVideo = TmdbVideo(id = 45, key = "sdfjkds")
+        val tmdbVideo = TmdbVideo(id = "45", key = "sdfjkds")
         val imageUrl = TmdbImageUrlBuilder.buildYoutube(tmdbVideo, 320)
 
         assertThat(imageUrl).isEqualTo("https://img.youtube.com/vi/sdfjkds/mqdefault.jpg")
