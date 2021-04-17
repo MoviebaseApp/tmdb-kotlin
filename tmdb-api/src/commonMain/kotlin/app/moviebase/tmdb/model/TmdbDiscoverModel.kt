@@ -25,11 +25,11 @@ enum class TmdbDiscoverSeparator(val value: String) {
 sealed class TmdbDiscoverTimeRange {
 
     data class BetweenYears(
-        private val firstYear: Int,
-        private val lastYear: Int
+        private val from: Int,
+        private val to: Int
     ) : TmdbDiscoverTimeRange() {
-        val firstDayOfYear: String get() = LocalDate(firstYear, 1, 1).toString()
-        val lastDayOfYear: String get() = LocalDate(lastYear, 12, 31).toString()
+        val firstDayOfYear: String get() = LocalDate(from, 1, 1).toString()
+        val lastDayOfYear: String get() = LocalDate(to, 12, 31).toString()
     }
 
     data class OneYear(

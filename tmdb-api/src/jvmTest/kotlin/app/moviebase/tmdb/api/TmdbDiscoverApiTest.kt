@@ -1,10 +1,7 @@
 package app.moviebase.tmdb.api
 
 import app.moviebase.tmdb.discover.DiscoverCategory
-import app.moviebase.tmdb.model.TmdbMediaListItem
-import app.moviebase.tmdb.model.TmdbMediaType
-import app.moviebase.tmdb.model.TmdbPageResult
-import app.moviebase.tmdb.model.TmdbWatchProviderId
+import app.moviebase.tmdb.model.*
 import app.moviebase.tmdb.remote.currentLocalDate
 import app.moviebase.tmdb.remote.mockHttpClient
 import app.moviebase.tmdb.remote.plusDays
@@ -37,6 +34,25 @@ class TmdbDiscoverApiTest {
     )
 
     val classToTest = TmdbDiscoverApi(client)
+
+
+    @Test
+    fun `it can discover by discover class`() = runBlocking {
+        val discover = TmdbDiscover.Movie(
+            sortBy = TmdbDiscoverMovieSortBy.POPULARITY,
+            sortOrder = TmdbSortOrder.DESC,
+            voteAverageGte = 5,
+            voteCountGte = 200,
+            releaseDate = TmdbDiscoverTimeRange.BetweenYears(from = 2020, to = 2021)
+        )
+
+        val result = classToTest.discoverMovie(
+            page = 1,
+            region = "DE",
+            language = "de",
+            discover = discover
+        )
+    }
 
     @Test
     fun `it can discover movies on dvd`() = runBlocking {
@@ -87,11 +103,15 @@ class TmdbDiscoverApiTest {
 
     @Test
     fun `it can discover movies on streaming provider netflix`() = runBlocking {
+        val discoverCategory = DiscoverCategory.OnStreaming.Netflix(
+            mediaType = TmdbMediaType.MOVIE,
+            watchRegion = "DE"
+        )
         val result = classToTest.discoverByCategory(
             page = 1,
             region = "DE",
             language = "de",
-            category = DiscoverCategory.OnStreaming.Netflix(TmdbMediaType.MOVIE, "DE")
+            category = discoverCategory
         )
 
         assertThat(result.results).isNotEmpty()
