@@ -18,6 +18,4 @@ data class TmdbFindResults(
     @SerialName("tv_results") val showResults: List<TmdbShow> = emptyList()
 )
 
-interface TmdbSearchable {
-
-}
+interface TmdbSearchable
