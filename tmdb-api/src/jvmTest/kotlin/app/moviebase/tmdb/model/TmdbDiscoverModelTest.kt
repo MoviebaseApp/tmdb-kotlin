@@ -29,7 +29,7 @@ class TmdbDiscoverModelTest {
 
         @Test
         fun `it has watch providers separated by and`() {
-            val discover = TmdbDiscover.Movie(withWatchProviders = listOf(8,9,350))
+            val discover = TmdbDiscover.Movie(withWatchProviders = listOf(8,9,350), withWatchProvidersType = TmdbDiscoverSeparator.AND)
 
             val parameters = discover.buildParameters()
 

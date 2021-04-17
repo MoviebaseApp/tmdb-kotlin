@@ -31,7 +31,7 @@ class TmdbDiscoverApiTest {
                     to "discover/discover_tv_network_netflix.json",
             "discover/movie?page=1&language=de&region=DE&with_watch_providers=8&watch_region=DE&sort_by=popularity.desc"
                     to "discover/discover_movie_watch_provider_netflix_DE.json",
-            "discover/movie?page=1&language=de&region=DE&with_watch_providers=8|9|119|337|350&watch_region=DE&sort_by=popularity.desc"
+            "discover/tv?page=1&language=de&region=DE&with_watch_providers=8|9|119|337|350&watch_region=DE&sort_by=popularity.desc"
                     to "discover/discover_tv_watch_providers.json",
         )
     )
@@ -96,17 +96,17 @@ class TmdbDiscoverApiTest {
 
         assertThat(result.results).isNotEmpty()
         val item = result.results.first()
-        assertThat(item.id).isEqualTo(793723)
+        assertThat(item.id).isEqualTo(616180)
     }
 
     @Test
-    fun `it can discover movies on streaming providers`() = runBlocking {
+    fun `it can discover shows on streaming providers`() = runBlocking {
         val result: TmdbPageResult<out TmdbMediaListItem> = classToTest.discoverByCategory(
             page = 1,
             region = "DE",
             language = "de",
             category = DiscoverCategory.OnStreaming(
-                TmdbMediaType.MOVIE,
+                TmdbMediaType.SHOW,
                 "DE",
                 listOf(
                     TmdbWatchProviderId.NETFLIX,
