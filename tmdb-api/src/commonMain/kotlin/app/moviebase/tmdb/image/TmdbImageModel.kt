@@ -15,6 +15,7 @@ data class TmdbImage(
 
         fun poster(path: String?) = build(path, TmdbImageType.POSTER)
         fun backdrop(path: String?) = build(path, TmdbImageType.BACKDROP)
+        fun profile(path: String?) = build(path, TmdbImageType.PROFILE)
 
     }
 

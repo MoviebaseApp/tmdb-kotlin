@@ -36,6 +36,11 @@ interface TmdbPosterMedia {
     val posterImage get(): TmdbImage? = TmdbImage.poster(posterPath)
 }
 
+interface TmdbProfileMedia {
+    val profilePath: String?
+    val profileImage get(): TmdbImage? = TmdbImage.profile(profilePath)
+}
+
 /**
  * This item is a movie or show which can be listed.
  */
