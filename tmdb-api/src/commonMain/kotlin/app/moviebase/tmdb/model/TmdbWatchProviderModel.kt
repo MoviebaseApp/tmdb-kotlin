@@ -3,7 +3,7 @@ package app.moviebase.tmdb.model
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
-object TmdbProviderId {
+object TmdbWatchProviderId {
     const val NETFLIX = 8
     const val AMAZON_PRIME_VIDEO = 9
     const val AMAZON_PRIME_VIDEO_2 = 119 // duplicate provider ID available
@@ -11,6 +11,24 @@ object TmdbProviderId {
     const val APPLE_ITUNES = 2
     const val APPLE_TV_PLUS = 350
     const val DISNEY_PLUS = 337
+}
+
+@Serializable
+enum class TmdbWatchMonetizationType(val value: String) {
+    @SerialName("flatrate")
+    FLATRATE("flatrate"),
+
+    @SerialName("free")
+    FREE("free"),
+
+    @SerialName("ads")
+    ADS("ads"),
+
+    @SerialName("rent")
+    RENT("rent"),
+
+    @SerialName("buy")
+    BUY("buy"),
 }
 
 @Serializable

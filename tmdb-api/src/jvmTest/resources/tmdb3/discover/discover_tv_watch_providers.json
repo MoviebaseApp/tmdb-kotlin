@@ -1,0 +1,416 @@
+{
+  "page": 1,
+  "results": [
+    {
+      "backdrop_path": "/b0WmHGc8LHTdGCVzxRb3IBMur57.jpg",
+      "first_air_date": "2021-03-19",
+      "genre_ids": [
+        10765,
+        10759,
+        18,
+        10768
+      ],
+      "id": 88396,
+      "name": "The Falcon and the Winter Soldier",
+      "origin_country": [
+        "US"
+      ],
+      "original_language": "en",
+      "original_name": "The Falcon and the Winter Soldier",
+      "overview": "Sam Wilson aka Falcon und Bucky Barnes aka Winter Soldier waren beide auf unterschiedliche Weise Freunde von Steve Rogers, dem Captain America. Nachdem dieser seine Rolle als heldenhaftes Vorbild der amerikanischen Nation nicht mehr ausführen kann, liegt es an den beiden, sein Schild hochzuhalten – im wahrsten Sinn des Wortes. An Herausforderungen mangelt es für die ungleichen Verbündeten nicht: Der aus Sokovian stammende Helmut Zemo sinnt nach dem Tod seiner Familie im Kampf zwischen Avengers und Ultron in seiner Heimat weiterhin auf die Auslöschung aller Superhelden.",
+      "popularity": 5109.433,
+      "poster_path": "/6kbAMLteGO8yyewYau6bJ683sw7.jpg",
+      "vote_average": 7.9,
+      "vote_count": 3996
+    },
+    {
+      "backdrop_path": "/mZjZgY6ObiKtVuKVDrnS9VnuNlE.jpg",
+      "first_air_date": "2017-09-25",
+      "genre_ids": [
+        18
+      ],
+      "id": 71712,
+      "name": "The Good Doctor",
+      "origin_country": [
+        "US"
+      ],
+      "original_language": "en",
+      "original_name": "The Good Doctor",
+      "overview": "Im Fokus der amerikanischen Krankenhausserie steht der junge Chirurg Shaun Murphy am angesehenen San Jose St. Bonaventure Hospital. Murphy unterscheidet sich nicht nur aufgrund seines Alters von seinen Kollegen – er ist ein Autist, der aufgrund des Savant-Syndroms (auch Inselbegabung genannt) als Genie gilt.",
+      "popularity": 1797.126,
+      "poster_path": "/z1K4mJwISETia59rrnMdXxzoSrZ.jpg",
+      "vote_average": 8.6,
+      "vote_count": 7833
+    },
+    {
+      "backdrop_path": "/z59kJfcElR9eHO9rJbWp4qWMuee.jpg",
+      "first_air_date": "2014-10-07",
+      "genre_ids": [
+        18,
+        10765
+      ],
+      "id": 60735,
+      "name": "The Flash",
+      "origin_country": [
+        "US"
+      ],
+      "original_language": "en",
+      "original_name": "The Flash",
+      "overview": "Barry Allen ist ein junger kriminaltechnischer Ermittler, der nach Starling kommt, um eine Reihe von Überfällen zu untersuchen, die mit einer Tragödie in seiner Vergangenheit zusammenhängen könnten. Dabei triftt er auf den maskierten Helden Arrow und wird selbst zum kostümierten Kämpfer für das Gute",
+      "popularity": 1397.641,
+      "poster_path": "/wHa6KOJAoNTFLFtp7wguUJKSnju.jpg",
+      "vote_average": 7.7,
+      "vote_count": 7361
+    },
+    {
+      "backdrop_path": "/qZtAf4Z1lazGQoYVXiHOrvLr5lI.jpg",
+      "first_air_date": "2017-01-26",
+      "genre_ids": [
+        9648,
+        18,
+        80
+      ],
+      "id": 69050,
+      "name": "Riverdale",
+      "origin_country": [
+        "US"
+      ],
+      "original_language": "en",
+      "original_name": "Riverdale",
+      "overview": "Archie und seine Clique müssen nicht nur Sex, Liebe, Schule und Familie meistern, sondern werden in Riverdale ganz nebenbei auch noch in ein dunkles Geheimnis verwickelt.",
+      "popularity": 968.271,
+      "poster_path": "/pHcNHYPg0c2vg7qay6wjJoApUgS.jpg",
+      "vote_average": 8.6,
+      "vote_count": 10995
+    },
+    {
+      "backdrop_path": "/edmk8xjGBsYVIf4QtLY9WMaMcXZ.jpg",
+      "first_air_date": "2005-03-27",
+      "genre_ids": [
+        18
+      ],
+      "id": 1416,
+      "name": "Grey's Anatomy",
+      "origin_country": [
+        "US"
+      ],
+      "original_language": "en",
+      "original_name": "Grey's Anatomy",
+      "overview": "Die Serie erzählt die Geschichte von fünf jungen Assistenzärzten des fiktiven Krankenhauses Seattle Grace Hospital in Seattle. Im Mittelpunkt steht die junge Ärztin Meredith Grey, die zusammen mit ihren Kollegen Cristina Yang, Isobel \"Izzie\" Stevens, George O'Malley und Alex Karev ihre Ausbildung in der Chirurgie absolviert. Im Kern der Handlung stehen die verschiedenen Beziehungen der Assistenzärzte untereinander und mit ihren Stationsoberärzten.",
+      "popularity": 957.083,
+      "poster_path": "/clnyhPqj1SNgpAdeSS6a6fwE6Bo.jpg",
+      "vote_average": 8.2,
+      "vote_count": 5856
+    },
+    {
+      "backdrop_path": "/6UH52Fmau8RPsMAbQbjwN3wJSCj.jpg",
+      "first_air_date": "2021-03-26",
+      "genre_ids": [
+        16,
+        10759,
+        18
+      ],
+      "id": 95557,
+      "name": "Invincible",
+      "origin_country": [
+        "US"
+      ],
+      "original_language": "en",
+      "original_name": "Invincible",
+      "overview": "Mark Grayson ist ein ganz normaler Teenager. Bis auf die Tatsache, dass sein Vater der mächtigste Superheld des Planeten ist. Kurz nach seinem 17. Geburtstag entwickelt Mark seine eigenen Fähigkeiten und wird von seinem Vater ausgebildet.",
+      "popularity": 1225.805,
+      "poster_path": "/yDWJYRAwMNKbIYT8ZB33qy84uzO.jpg",
+      "vote_average": 8.9,
+      "vote_count": 638
+    },
+    {
+      "backdrop_path": "/pLG4ihU1d2XkQbASQDjsFu9U7d9.jpg",
+      "first_air_date": "2021-03-24",
+      "genre_ids": [
+        18,
+        80,
+        9648
+      ],
+      "id": 120168,
+      "name": "Wer hat Sara ermordet?",
+      "origin_country": [
+        "MX"
+      ],
+      "original_language": "es",
+      "original_name": "¿Quién mató a Sara?",
+      "overview": "Álex giert nach Rache und will unbedingt beweisen, dass ihm der Mord an seiner Schwester angehängt wurde. Dabei bringt er viel mehr als die wahren Schuldigen ans Licht.",
+      "popularity": 749.801,
+      "poster_path": "/jnit57q25N5VvVrK4pj4Uj8BLe7.jpg",
+      "vote_average": 7.8,
+      "vote_count": 314
+    },
+    {
+      "backdrop_path": "/ta5oblpMlEcIPIS2YGcq9XEkWK2.jpg",
+      "first_air_date": "2016-01-25",
+      "genre_ids": [
+        80,
+        10765
+      ],
+      "id": 63174,
+      "name": "Lucifer",
+      "origin_country": [
+        "US"
+      ],
+      "original_language": "en",
+      "original_name": "Lucifer",
+      "overview": "Lucifer, der charmante, charismatische und höllisch gut aussehende allererste gefallene Engel, der, nach einer zunehmend langweiligen und trostlosen Zeit in der Hölle in Los Angeles Unterschlupf sucht. Dort setzt er fortan seine Gabe zur Beeinflussung Anderer ein, um Bösewichte zu bestrafen. Doch je länger er der Unterwelt fern bleibt desto stärker wächst die Gefahr, dass das größte Übel der Menschheit entkommen könnte.",
+      "popularity": 796.616,
+      "poster_path": "/vkGnVBSNpayJ1oCfyVaMvhrim95.jpg",
+      "vote_average": 8.5,
+      "vote_count": 8236
+    },
+    {
+      "backdrop_path": "/uro2Khv7JxlzXtLb8tCIbRhkb9E.jpg",
+      "first_air_date": "2010-10-31",
+      "genre_ids": [
+        10759,
+        18,
+        10765
+      ],
+      "id": 1402,
+      "name": "The Walking Dead",
+      "origin_country": [
+        "US"
+      ],
+      "original_language": "en",
+      "original_name": "The Walking Dead",
+      "overview": "The Walking Dead spielt bislang in der Metropolregion von Atlanta, im Südosten der Vereinigten Staaten, und erzählt vom Kampf einer kleinen Gruppe Überlebender nach einer weltweiten Zombie-Apokalypse. Unter Führung des Sheriffs Rick Grimes ist die Gruppe auf der Suche nach einer dauerhaften und vor allem sicheren Bleibe. Dabei stellen die fast überall präsenten Untoten eine permanent vorhandene Bedrohung dar, die jederzeit ohne Vorwarnung zuschlagen kann. Im Laufe der Zeit wird die Gruppe daher zwangsläufig immer kleiner, da manche Mitglieder den Zombies zum Opfer fallen, andere die Gruppe verlassen oder sich für den Tod entscheiden.",
+      "popularity": 773.84,
+      "poster_path": "/reKs8y4mPwPkZG99ZpbKRhBPKsX.jpg",
+      "vote_average": 8.1,
+      "vote_count": 10544
+    },
+    {
+      "backdrop_path": "/57vVjteucIF3bGnZj6PmaoJRScw.jpg",
+      "first_air_date": "2021-01-15",
+      "genre_ids": [
+        10765,
+        9648,
+        18
+      ],
+      "id": 85271,
+      "name": "WandaVision",
+      "origin_country": [
+        "US"
+      ],
+      "original_language": "en",
+      "original_name": "WandaVision",
+      "overview": "Wanda Maximoff aka Scarlett Witch hat ihren Lebensgefährten Android Vision verloren – und schafft sich mit ihren Kräften und in Realitätsflucht eine eigene, an amerikanische Sitcoms angelehnte Fantasie-Welt, in der sie mit ihm lebt – ein psychisch alles andere als gesunder Zustand …  Letztendlich wird sie sich aus dem Geflecht ihrer eigenen Gedanken und verzerrten Realitäten befreien müssen. Aber gibt es jemand, der sie für seine Zwecke manipuliert? Wer kann Wanda helfen, in die Realität zurückzufinden?",
+      "popularity": 701.776,
+      "poster_path": "/frobUz2X5Pc8OiVZU8Oo5K3NKMM.jpg",
+      "vote_average": 8.4,
+      "vote_count": 8122
+    },
+    {
+      "backdrop_path": "/y0A3EFeGJhzKS4Zyy3LilbwDFvV.jpg",
+      "first_air_date": "2020-07-30",
+      "genre_ids": [
+        10759,
+        16,
+        10762,
+        10765
+      ],
+      "id": 100617,
+      "name": "Transformers: War for Cybertron: Siege",
+      "origin_country": [
+        "US"
+      ],
+      "original_language": "en",
+      "original_name": "Transformers: War for Cybertron: Siege",
+      "overview": "",
+      "popularity": 514.49,
+      "poster_path": "/14B6I4FxCMiDoPOwzj27EcqqY6i.jpg",
+      "vote_average": 7.7,
+      "vote_count": 180
+    },
+    {
+      "backdrop_path": "/58PON1OrnBiX6CqEHgeWKVwrCn6.jpg",
+      "first_air_date": "2015-08-23",
+      "genre_ids": [
+        10759,
+        18
+      ],
+      "id": 62286,
+      "name": "Fear the Walking Dead",
+      "origin_country": [
+        "US"
+      ],
+      "original_language": "en",
+      "original_name": "Fear the Walking Dead",
+      "overview": "Das offizielle Spin-off zu \"The Walking Dead\" ist in Los Angeles angesiedelt und erzählt mit neuen Figuren neue Geschichten im selben Serienuniversum.",
+      "popularity": 475.144,
+      "poster_path": "/aOdTWn8dXlS0tA5xl0ZBr8Ws15R.jpg",
+      "vote_average": 7.6,
+      "vote_count": 3370
+    },
+    {
+      "backdrop_path": "/gL8myjGc2qrmqVosyGm5CWTir9A.jpg",
+      "first_air_date": "2018-05-02",
+      "genre_ids": [
+        10759,
+        18
+      ],
+      "id": 77169,
+      "name": "Cobra Kai",
+      "origin_country": [
+        "US"
+      ],
+      "original_language": "en",
+      "original_name": "Cobra Kai",
+      "overview": "Jahrzehnte nach dem Turnier, das ihr Leben veränderte, flammt die Rivalität zwischen Johnny und Daniel in dieser Fortsetzung der „Karate Kid“-Filme erneut auf.",
+      "popularity": 412.138,
+      "poster_path": "/eTMMU2rKpZRbo9ERytyhwatwAjz.jpg",
+      "vote_average": 8.2,
+      "vote_count": 2937
+    },
+    {
+      "backdrop_path": "/aq2yEMgRQBPfRkrO0Repo2qhUAT.jpg",
+      "first_air_date": "2013-03-03",
+      "genre_ids": [
+        10759,
+        18
+      ],
+      "id": 44217,
+      "name": "Vikings",
+      "origin_country": [
+        "CA"
+      ],
+      "original_language": "en",
+      "original_name": "Vikings",
+      "overview": "Inspiriert von den überlieferten Sagen des legendären Wikingerkönigs Ragnar Lothbrok entführt die gefeierte Hitserie in den eisigen Norden des europäischen Kontinents im 8. Jahrhundert: Krieger Ragnar glaubt, dass jenseits des wilden Ozeans im unerforschten Westen ein neues Land mit reichen Schätzen auf die Wikingerhorden wartet. Für seine Überzeugungen setzt er alles auf eine Karte, lässt ein neues Schiff bauen und macht sich in den packenden neun Episoden der ersten Staffel auf, um Geschichte zu schreiben.",
+      "popularity": 396.498,
+      "poster_path": "/oktTNFM8PzdseiK1X0E0XhB6LvP.jpg",
+      "vote_average": 8,
+      "vote_count": 4342
+    },
+    {
+      "backdrop_path": "/k7T9xRyzP41wBVNyNeLmh8Ch7gD.jpg",
+      "first_air_date": "2009-09-10",
+      "genre_ids": [
+        18,
+        10765
+      ],
+      "id": 18165,
+      "name": "Vampire Diaries",
+      "origin_country": [
+        "US"
+      ],
+      "original_language": "en",
+      "original_name": "The Vampire Diaries",
+      "overview": "Die Highschool-Schülerin Elena Gilbert hat ihre Eltern bei einem Autounfall verloren. Ihre Tante Jenna Sommers, die jüngere Schwester der Mutter, ist nach Mystic Falls gekommen, um sich um sie und ihren jüngeren Bruder Jeremy zu kümmern. Als der neue Mitschüler Stefan Salvatore auf der Bildfläche erscheint, weckt er sofort Elenas Interesse. Sie ahnt nicht, dass es sich bei Stefan um einen bereits jahrhundertealten Vampir handelt. Als dann noch Stefans älterer Bruder Damon auftaucht, der von Elena ebenfalls angezogen ist, überschlagen sich die Ereignisse. Stefan wird misstrauisch, denn er weiß, dass Damon nichts Gutes im Sinn hat. Elena wird in eine Welt hineingeworfen, von deren Existenz sie bislang nichts geahnt hat.",
+      "popularity": 386.013,
+      "poster_path": "/kLEha9zVVv8acGFKTX4gjvSR2Q0.jpg",
+      "vote_average": 8.3,
+      "vote_count": 5668
+    },
+    {
+      "backdrop_path": "/1qOA3kMtQO8bjnW8M2smjA8tp10.jpg",
+      "first_air_date": "2018-10-05",
+      "genre_ids": [
+        80,
+        9648,
+        18
+      ],
+      "id": 76669,
+      "name": "Élite",
+      "origin_country": [
+        "ES"
+      ],
+      "original_language": "es",
+      "original_name": "Élite",
+      "overview": "Als drei Schüler aus der Arbeiterklasse ein Stipendium für die exklusivste Schule Spaniens erhalten, führt die Kluft zwischen Arm und Reich zu einer Tragödie.",
+      "popularity": 376.347,
+      "poster_path": "/g4iITTkAd0l1bVRk5gDSU6wfue6.jpg",
+      "vote_average": 8.2,
+      "vote_count": 6275
+    },
+    {
+      "backdrop_path": "/oUVXcoUCe0lf3jvJSRpViyebBpc.jpg",
+      "first_air_date": "2017-07-05",
+      "genre_ids": [
+        80,
+        18
+      ],
+      "id": 71694,
+      "name": "Snowfall",
+      "origin_country": [
+        "US"
+      ],
+      "original_language": "en",
+      "original_name": "Snowfall",
+      "overview": "In den frühen 1980er Jahren überschwemmt eine regelrechte Kokain-Epidemie die Entertainment-Metropole Los Angeles. Dies hinterlässt auch bei den Einwohnern seine Spuren, die sich auf einem von Gewalt gezeichneten Kollisionskurs befinden: Franklin Saint, ein junger Unternehmer der Straße, der nach Macht dürstet; der mexikanische Wrestler Gustavo Zapata, der zudem in einen Machtkampf in einer kriminellen Familie verstrickt ist; der CIA-Agent Teddy McDonald, der versucht vor einer düsteren Vergangenheit zu fliehen und Luica Villanueva, die selbstsüchtige Tochter eines mexikanischen Drogenbarons.",
+      "popularity": 524.906,
+      "poster_path": "/orvFrLzqSeW5qTFpfJEbPfHRPWg.jpg",
+      "vote_average": 8.1,
+      "vote_count": 138
+    },
+    {
+      "backdrop_path": "/wAEWZm2pSopAbqE5dQWE0ET8aR5.jpg",
+      "first_air_date": "2021-01-08",
+      "genre_ids": [
+        99
+      ],
+      "id": 114695,
+      "name": "Marvel Studios: Legends",
+      "origin_country": [
+        "US"
+      ],
+      "original_language": "en",
+      "original_name": "Marvel Studios: Legends",
+      "overview": "Marvel Studios LEGENDS bringt ein spannendes Wiedersehen mit den verschiedenen Helden und Schurken und stimmt ein auf deren neue Abenteuer in den mit Spannung erwarteten Streaming-Serien auf Disney+.",
+      "popularity": 371.443,
+      "poster_path": "/EpDuYIK81YtCUT3gH2JDpyj8Qk.jpg",
+      "vote_average": 7.7,
+      "vote_count": 378
+    },
+    {
+      "backdrop_path": "/9RqliZcoDEjSEISeA0LY9meAiNv.jpg",
+      "first_air_date": "2015-10-19",
+      "genre_ids": [
+        10759,
+        16,
+        10762
+      ],
+      "id": 65334,
+      "name": "Miraculous - Geschichten von Ladybug und Cat Noir",
+      "origin_country": [
+        "FR"
+      ],
+      "original_language": "fr",
+      "original_name": "Miraculous, les aventures de Ladybug et Chat Noir",
+      "overview": "Marinette und Adrien sind zwei Schüler – fast – wie andere auch. Bei der kleinsten Bedrohung von Paris werden sie zu Ladybug und Cat Noir. Ihre Mission: Die Akumas des mysteriösen Hawk Moth fangen, der die Pariser in Super-Bösewichte verwandelt. Obwohl die beiden Helden ein Team bilden, wissen sie wenig voneinander: Marinette weiß nicht, dass sich hinter Cat Noir Adrien verbirgt, der Junge, in den sie heimlich verliebt ist; und Adrien, dessen Herzen für Ladybug schlägt, ignoriert, dass sich hinter dem Kostüm der Superheldin das nette und zerstreute Mädchen aus seiner Klasse verbirgt … (Text: Disney Channel)",
+      "popularity": 332.25,
+      "poster_path": "/3qoYEeRUlWbWbLZr1GTxVz92l9W.jpg",
+      "vote_average": 7.8,
+      "vote_count": 2397
+    },
+    {
+      "backdrop_path": "/hTExot1sfn7dHZjGrk0Aiwpntxt.jpg",
+      "first_air_date": "2014-03-19",
+      "genre_ids": [
+        10765,
+        18,
+        10759
+      ],
+      "id": 48866,
+      "name": "The 100",
+      "origin_country": [
+        "US"
+      ],
+      "original_language": "en",
+      "original_name": "The 100",
+      "overview": "Vor 97 Jahren wurde der Planet Erde bei einer nuklearen Katastrophe fast vollständig zerstört und die gesamte Menschheit ausgelöscht – bis auf 400 Bewohner internationaler Raumstationen. Nun wurde bereits die dritte Generation geboren, was die Mitgliederzahl auf 2.700 anwachsen lässt und somit zur Ressourcenknappheit führt. Drakonische Maßnahmen sind die Folge, und so werden 100 jugendliche Sträflinge zurück auf die Erde verbannt um zu testen, ob diese mittlerweile wieder bewohnbar ist …",
+      "popularity": 337.138,
+      "poster_path": "/wHIMMLFsk32wIzDmawWkYVbxFCS.jpg",
+      "vote_average": 7.9,
+      "vote_count": 5990
+    }
+  ],
+  "total_pages": 144,
+  "total_results": 2866
+}
