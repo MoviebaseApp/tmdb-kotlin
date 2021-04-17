@@ -20,6 +20,8 @@ class TmdbDiscoverApiTest {
     val client = mockHttpClient(
         version = 3,
         responses = mapOf(
+            "discover/movie?page=1&language=de&region=DE&vote_count.gte=200&release_date.lte=2021-12-31&vote_average.gte=5&sort_by=popularity.desc&release_date.gte=2020-01-01"
+                    to "discover/discover_movie.json",
             "discover/movie?page=1&language=de&region=DE&with_release_type=5&sort_by=release_date.desc"
                     to "discover/discover_movie_on_dvd.json",
             "discover/movie?page=1&language=de&region=DE&release_date.lte=$lastDate&sort_by=popularity.desc&release_date.gte=$firstDate"
@@ -52,6 +54,10 @@ class TmdbDiscoverApiTest {
             language = "de",
             discover = discover
         )
+
+        assertThat(result.results).isNotEmpty()
+        val item = result.results.first()
+        assertThat(item.id).isEqualTo(616180)
     }
 
     @Test
