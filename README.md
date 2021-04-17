@@ -28,7 +28,7 @@ To use the library in a single-platform project, add a dependency.
 
 ```kotlin
 dependencies {
-    implementation("app.moviebase:tmdb-api:0.3.0")
+    implementation("app.moviebase:tmdb-api:0.4.0")
 }
 ```
 
@@ -37,7 +37,7 @@ In Kotlin Multiplatform projects, add the dependency to your commonMain source-s
 ```kotlin
 commonMain {
     dependencies {
-        implementation("app.moviebase:tmdb-api:0.3.0")
+        implementation("app.moviebase:tmdb-api:0.4.0")
     }
 }
 ``` 
@@ -50,7 +50,7 @@ Add a dependency to the `<dependencies>` element.
 <dependency>
     <groupId>app.moviebase</groupId>
     <artifactId>tmdb-api</artifactId>
-    <version>0.3.0</version>
+    <version>0.4.0</version>
 </dependency>
 ```
 
@@ -85,6 +85,43 @@ val showPageResult = tmdb.search.findShows(
 )
 ```
 
+
+### Discover
+Discover a movie or TV show by the discover parameter class.
+
+```kotlin
+val discover = TmdbDiscover.Movie(
+    sortBy = TmdbDiscoverMovieSortBy.POPULARITY,
+    sortOrder = TmdbSortOrder.DESC,
+    voteAverageGte = 5,
+    voteCountGte = 200,
+    releaseDate = TmdbDiscoverTimeRange.BetweenYears(from = 2020, to = 2021)
+)
+
+val discoverPageResult = tmdb.discover.discoverMovie(
+    page = 1,
+    region = "DE",
+    language = "de",
+    discover = discover
+)
+```
+
+Alternatively, use predefined discover categories like upcoming, networks or on streaming.
+
+```kotlin
+val discoverCategory = DiscoverCategory.OnStreaming.Netflix(
+    mediaType = TmdbMediaType.MOVIE,
+    watchRegion = "DE"
+)
+
+val result = tmdb.discover.discoverByCategory(
+    page = 1,
+    region = "DE",
+    language = "de",
+    category = discoverCategory
+)
+```
+
 ### Build image URL
 
 You can build an image URL via the poster file path and size key. More information on the [TMDb images site](https://developers.themoviedb.org/3/getting-started/images).
@@ -93,10 +130,16 @@ You can build an image URL via the poster file path and size key. More informati
 val url = TmdbImageUrlBuilder.build("nBNZadXqJSdt05SHLqgT0HuC5Gm.jpg", "w154")
 ```
 
-Or create the URL by an image class and the best matched width/height.
+Or create the URL by an image class with the best matched width/height.
 
 ```kotlin
 val url = TmdbImageUrlBuilder.build(image = movie.posterImage, width = 200, height = 300)
+```
+
+For creating the poster URL by the movie item.
+
+```kotlin
+val url = TmdbImageUrlBuilder.buildPoster(item = movie, width = 200)
 ```
 
 <br/>
