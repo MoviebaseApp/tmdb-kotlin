@@ -1,14 +1,28 @@
-<a href="https://www.themoviedb.org"><img alt="TMDb" src="doc/images/blue_short.svg" width="400"></a>
+[Website](https://www.themoviedb.org) |
+[Forum](https://www.themoviedb.org/talk/category/5047958519c29526b50017d6) |
+[Documentation](https://www.themoviedb.org/documentation/api) |
+[TMDb 3 API](https://developers.themoviedb.org/3)
+
+
+<a href="https://www.themoviedb.org"><img alt="TMDb" src="doc/images/blue_short.svg" width="600"></a>
+
+***Get movie and TV show content from TMDb in a fast and simple way.***
 
 [![Maven Central](https://img.shields.io/maven-central/v/app.moviebase/tmdb-api?label=Maven%20Central)](https://search.maven.org/artifact/app.moviebase/tmdb-api)
 [![Build Status](https://app.bitrise.io/app/0e5dcdc490429c81/status.svg?token=dRSlP2lXiMSQ8keWh-o8mQ&branch=master)](https://app.bitrise.io/app/0e5dcdc490429c81)
+[![Issues](https://img.shields.io/github/issues/MoviebaseApp/tmdb-api/total)](http://kotlinlang.org)
 [![Kotlin](https://img.shields.io/badge/kotlin-1.4.32-blue.svg?logo=kotlin)](http://kotlinlang.org)
 [![GitHub License](https://img.shields.io/badge/license-Apache%20License%202.0-blue.svg?style=flat)](http://www.apache.org/licenses/LICENSE-2.0)
 
+<hr>
 
-TMDb API
-===========================
-This is a library to access the [TMDb API](https://developers.themoviedb.org/3) for mobile, desktop and web applications. Written in Kotlin Multiplatform.
+
+# TMDb API
+This library gives the access to [TMDb API](https://www.themoviedb.org/documentation/api) version 3 and 4 for mobile, desktop and web applications. 
+It supports Swift, Kotlin and JavaScript by setting up as a Kotlin Multiplatform project.
+
+*Mainly used and supported by [Moviebase](https://www.moviebase.app).*
+
 
 ## Adding to your project
 
@@ -56,7 +70,9 @@ Add a dependency to the `<dependencies>` element.
 
 
 ## Usage
-Most of the library follows the possibilities and naming at the official [TMDb documentation](https://developers.themoviedb.org/3/getting-started).
+Most of the library follows the possibilities and naming at the official [TMDb documentation](https://www.themoviedb.org/documentation/api).
+
+The endpoints are described in [Version 3](https://developers.themoviedb.org/3) and [Version 4](https://developers.themoviedb.org/4).
 
 
 ### Get information
@@ -142,6 +158,8 @@ For creating the poster URL by the movie item.
 val url = TmdbImageUrlBuilder.buildPoster(item = movie, width = 200)
 ```
 
-<br/>
+<br>
+
+<hr>
 
 *This library uses the TMDb but is not endorsed or certified by TMDb. These services are licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0).*
