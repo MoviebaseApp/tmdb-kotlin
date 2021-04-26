@@ -14,8 +14,8 @@ version = Versions.versionName
 kotlin {
     jvm()
     js {
-//        browser()
-//        nodejs()
+        browser()
+        nodejs()
     }
     iosArm64()
     iosX64()
