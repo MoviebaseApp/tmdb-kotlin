@@ -8,16 +8,20 @@ import io.ktor.client.request.*
 
 class Tmdb4(tmdbApiKey: String) {
 
+    var authenticateToken: String? = null
     var accessToken: String? = null
+    var requestToken: String? = null
 
     private val client = buildHttpClient {
         it.parameter(TmdbUrlParameter.API_KEY, tmdbApiKey)
+        requireNotNull(accessToken) { "access token token not set for request account endpoints" }
+        it.header("Authorization", "Bearer $accessToken")
     }
 
     private val authClient = buildHttpClient {
         it.parameter(TmdbUrlParameter.API_KEY, tmdbApiKey)
-//        it.header(TmdbUrlParameter.ACCESS_TOKEN, tmdbApiKey)
-//        it.header("Authorization", "Bearer accessToken")
+        requireNotNull(authenticateToken) { "authentication token not set for request auth endpoints" }
+        it.header("Authorization", "Bearer $authenticateToken")
 
     }
 

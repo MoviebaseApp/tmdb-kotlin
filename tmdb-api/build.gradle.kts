@@ -14,8 +14,8 @@ version = Versions.versionName
 kotlin {
     jvm()
     js {
-        browser()
-        nodejs()
+//        browser()
+//        nodejs()
     }
     iosArm64()
     iosX64()
@@ -32,6 +32,7 @@ kotlin {
                 implementation(Libs.Data.ktorJson)
                 implementation(Libs.Data.ktorLogging)
                 implementation(Libs.Data.ktorSerialization)
+                implementation(Libs.Data.ktorAuth)
             }
         }
         val commonTest by getting {

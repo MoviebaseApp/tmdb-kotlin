@@ -17,3 +17,10 @@ data class TmdbSession(
     val success: Boolean,
     @SerialName("session_id") val sessionId: String
 )
+
+@Serializable
+data class TmdbGuestSession(
+    val success: Boolean,
+    @SerialName("expires_at") @Serializable(LocalDateSerializer::class) val expiredAt: LocalDate?,
+    @SerialName("guest_session_id") val guestSessionId: String
+)

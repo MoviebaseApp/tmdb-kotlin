@@ -2,15 +2,25 @@ package app.moviebase.tmdb
 
 import app.moviebase.tmdb.api.*
 import app.moviebase.tmdb.remote.buildHttpClient
+import app.moviebase.tmdb.remote.interceptRequest
+import io.ktor.client.*
 import io.ktor.client.request.*
 
-class Tmdb3(tmdbApiKey: String) {
+class Tmdb3(private val tmdbApiKey: String) {
 
-    private val client = buildHttpClient {
-        it.header(TmdbUrlParameter.API_KEY, tmdbApiKey)
+    var sessionId: String? = null
+
+    private val client: HttpClient = buildHttpClient {
+        it.parameter(TmdbUrlParameter.API_KEY, tmdbApiKey)
     }
 
-    val account = TmdbAccountApi(client)
+    private val clientWithSession: HttpClient = buildHttpClient {
+        it.parameter(TmdbUrlParameter.API_KEY, tmdbApiKey)
+        requireNotNull(sessionId) { "session id is not set in Tmdb3 instance" }
+        it.parameter(TmdbUrlParameter.SESSION_ID, sessionId)
+    }
+
+    val account = TmdbAccountApi(clientWithSession)
     val authentication = TmdbAuthenticationApi(client)
     val certifications = TmdbCertificationsApi(client)
     val changes = TmdbChangesApi(client)

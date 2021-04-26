@@ -1,7 +1,7 @@
 object Versions {
     val versionMajor = 0
-    val versionMinor = 5
-    val versionPatch = 0
+    val versionMinor = 4
+    val versionPatch = 2
 
     val versionName = "$versionMajor.$versionMinor.$versionPatch"
 
@@ -10,7 +10,7 @@ object Versions {
     val nexus = "1.0.0"
 
     // Kotlin
-    val kotlin = "1.5.0-RC"
+    val kotlin = "1.4.32"
     val coroutines = "1.4.3"
     val kotlinxDatetime = "0.1.1"
     val ktor = "1.5.3"
@@ -40,6 +40,7 @@ object Libs {
         val ktorLogging = "io.ktor:ktor-client-logging:${Versions.ktor}"
         val ktorSerialization = "io.ktor:ktor-client-serialization:${Versions.ktor}"
         val ktorIos = "io.ktor:ktor-client-ios:${Versions.ktor}"
+        val ktorAuth = "io.ktor:ktor-client-auth:${Versions.ktor}"
     }
 
     object Testing {

@@ -3,10 +3,11 @@ package app.moviebase.tmdb.api
 import app.moviebase.tmdb.model.TmdbAccountDetails
 import app.moviebase.tmdb.model.TmdbFavoriteRequestBody
 import app.moviebase.tmdb.model.TmdbWatchlistRequestBody
+import app.moviebase.tmdb.remote.interceptRequest
 import io.ktor.client.*
 import io.ktor.client.request.*
 
-class TmdbAccountApi(private val client: HttpClient) {
+class TmdbAccountApi internal constructor(private val client: HttpClient) {
 
     suspend fun getDetails(sessionId: String): TmdbAccountDetails = client.get {
         endPointV3("account")
