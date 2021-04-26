@@ -25,7 +25,7 @@ nexusPublishing {
             snapshotRepositoryUrl.set(uri("https://s01.oss.sonatype.org/content/repositories/snapshots/"))
             username.set(findProperty("SONATYPE_USER") as String?)
             password.set(findProperty("SONATYPE_PASSWORD") as String?)
-            stagingProfileId.set(findProperty("SONATYPE_STAGING_PROFILE_ID") as String?)
+            stagingProfileId.set(findProperty("SONATYPE_STAGING_PROFILE_ID_MOVIEBASE") as String?)
         }
     }
 }
