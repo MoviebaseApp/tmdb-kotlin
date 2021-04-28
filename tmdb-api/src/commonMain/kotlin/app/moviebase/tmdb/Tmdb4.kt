@@ -6,9 +6,11 @@ import app.moviebase.tmdb.api.Tmdb4ListApi
 import app.moviebase.tmdb.remote.buildHttpClient
 import io.ktor.client.request.*
 
-class Tmdb4(tmdbApiKey: String) {
+class Tmdb4(
+    tmdbApiKey: String,
+    authenticationToken: String? = null
+) {
 
-    var authenticateToken: String? = null
     var accessToken: String? = null
     var requestToken: String? = null
 
@@ -20,8 +22,8 @@ class Tmdb4(tmdbApiKey: String) {
 
     private val authClient = buildHttpClient {
         it.parameter(TmdbUrlParameter.API_KEY, tmdbApiKey)
-        requireNotNull(authenticateToken) { "authentication token not set for request auth endpoints" }
-        it.header("Authorization", "Bearer $authenticateToken")
+        requireNotNull(authenticationToken) { "authentication token not set for request auth endpoints" }
+        it.header("Authorization", "Bearer $authenticationToken")
 
     }
 

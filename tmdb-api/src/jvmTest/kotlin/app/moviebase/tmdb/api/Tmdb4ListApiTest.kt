@@ -11,14 +11,13 @@ class Tmdb4ListApiTest {
     val client = mockHttpClient(
         version = 4,
         responses = mapOf(
-            "list/82963?page=1" to "list_82963.json",
-            "list/932?page=1" to "list_932.json",
-            "list/3321?page=1" to "list_3321.json",
+            "list/82963?page=1" to "list/list_82963.json",
+            "list/932?page=1" to "list/list_932.json",
+            "list/3321?page=1" to "list/list_3321.json",
         )
     )
 
     val classToTest = Tmdb4ListApi(client)
-
 
     @Test
     fun `it can fetch list page 1`() = runBlocking {
