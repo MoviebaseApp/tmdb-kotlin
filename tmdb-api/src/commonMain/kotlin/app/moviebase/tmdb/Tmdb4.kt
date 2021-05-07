@@ -16,8 +16,9 @@ class Tmdb4(
 
     private val client = buildHttpClient {
         it.parameter(TmdbUrlParameter.API_KEY, tmdbApiKey)
-        requireNotNull(accessToken) { "access token token not set for request account endpoints" }
-        it.header("Authorization", "Bearer $accessToken")
+        accessToken?.let { token ->
+            it.header("Authorization", "Bearer $token")
+        }
     }
 
     private val authClient = buildHttpClient {
