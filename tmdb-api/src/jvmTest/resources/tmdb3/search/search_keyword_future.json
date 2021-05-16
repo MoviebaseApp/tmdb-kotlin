@@ -1,0 +1,47 @@
+{
+  "page": 1,
+  "results": [
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "id": 797559,
+      "name": "Future Collection",
+      "original_language": "en",
+      "original_name": "Future Collection",
+      "overview": "The adventures of Los Angeles future bounty hunter John Tucker.",
+      "poster_path": null
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "id": 802549,
+      "name": "Future Amazones Series",
+      "original_language": "en",
+      "original_name": "Future Amazones Series",
+      "overview": "Future Amazones Series",
+      "poster_path": null
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/AqQotqj7XOI6GjB28nhMMa8YzOT.jpg",
+      "id": 264,
+      "name": "Back to the Future Collection",
+      "original_language": "en",
+      "original_name": "Back to the Future Collection",
+      "overview": "An American science fiction–comedy film series that follows the adventures of a high school student, Marty McFly and an eccentric scientist, Dr Emmett L. Brown as they use a DeLorean time machine to time travel to different periods in the history of Hill Valley, California.",
+      "poster_path": "/78z0WMBzBWOnCsXWulihPJKCToL.jpg"
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "id": 47627,
+      "name": "Trancers Collection",
+      "original_language": "en",
+      "original_name": "Trancers Collection",
+      "overview": "Future cop Jack Deth hunting zombie-like \"Trancers\" across time...",
+      "poster_path": "/stnjgKag1xyzAjVHCxEZWduoRTU.jpg"
+    }
+  ],
+  "total_pages": 1,
+  "total_results": 4
+}

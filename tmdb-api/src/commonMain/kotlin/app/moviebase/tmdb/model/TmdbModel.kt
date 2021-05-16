@@ -94,7 +94,7 @@ data class TmdbGenre(
 data class TmdbKeyword(
     val id: Int,
     val name: String,
-) : TmdbSearchable
+)
 
 @Serializable
 data class TmdbExternalIds(

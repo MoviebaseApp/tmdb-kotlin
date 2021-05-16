@@ -1,0 +1,57 @@
+{
+  "page": 1,
+  "results": [
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "id": 257378,
+      "name": "Fast Getaway Collection",
+      "original_language": "en",
+      "original_name": "Fast Getaway Collection",
+      "overview": "A lighthearted tail about a gang of bank robbers who fall out and split up. The brains of the gang is a boy who, with his father, successfully continue their crime spree",
+      "poster_path": "/rEdJ01FX0tcbYsehpIjb2dMAYjR.jpg"
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "id": 751810,
+      "name": "Eine fast perfekte... Trilogie",
+      "original_language": "de",
+      "original_name": "Eine fast perfekte... Trilogie",
+      "overview": "",
+      "poster_path": "/yfQ2BwGvpIzdDPgqafsA9AvLMqh.jpg"
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/gC9BUFiROWtaMsluGYziZ6lR4OJ.jpg",
+      "id": 9485,
+      "name": "The Fast and the Furious Collection",
+      "original_language": "en",
+      "original_name": "The Fast and the Furious Collection",
+      "overview": "An action film series centered on illegal street racing and heists.",
+      "poster_path": "/zQdytnqfsWKJlqazqfMBL2L7aql.jpg"
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/vg4KEWT3ry6TS08r6b6FWCl4X90.jpg",
+      "id": 781201,
+      "name": "The Fast and the Fierce Collection",
+      "original_language": "en",
+      "original_name": "The Fast and the Fierce Collection",
+      "overview": "",
+      "poster_path": null
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/6z4EsgrhSODPA4pkYXN4cUM2659.jpg",
+      "id": 546080,
+      "name": "Too Fast to Race Collection",
+      "original_language": "en",
+      "original_name": "Too Fast to Race Collection",
+      "overview": "A loving look at the Group B Rally Cars of the 1980s. The group was dropped from official competition by the WRC. Disgruntled fans deemed it because the cars were \"too fast to race.\"",
+      "poster_path": "/wg1MikYlXdNiNBjxmSiMKeCLCM5.jpg"
+    }
+  ],
+  "total_pages": 1,
+  "total_results": 5
+}
