@@ -1,7 +1,7 @@
 object Versions {
     val versionMajor = 0
-    val versionMinor = 4
-    val versionPatch = 5
+    val versionMinor = 5
+    val versionPatch = 0
 
     val versionName = "$versionMajor.$versionMinor.$versionPatch"
 
@@ -11,10 +11,10 @@ object Versions {
 
     // Kotlin
     val kotlin = "1.5.0"
-    val coroutines = "1.5.0-RC"
+    val coroutines = "1.4.3"
     val kotlinxDatetime = "0.2.0"
     val ktor = "1.5.4"
-    val serialization = "1.2.0"
+    val serialization = "1.2.1"
     val kotlinIo = "0.1.16"
 
     // Testing
