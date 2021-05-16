@@ -10,15 +10,17 @@ object Versions {
     val nexus = "1.0.0"
 
     // Kotlin
-    val kotlin = "1.5.0"
+    val kotlin = "1.4.32"
     val coroutines = "1.4.3"
-    val kotlinxDatetime = "0.2.0"
-    val ktor = "1.5.4"
-    val serialization = "1.2.1"
+    val kotlinxDatetime = "0.1.1"
+    val serialization = "1.1.0"
     val kotlinIo = "0.1.16"
 
     // Testing
     val junitJupiter = "5.7.0"
+
+    // Data
+    val ktor = "1.5.3"
 }
 
 object Libs {
