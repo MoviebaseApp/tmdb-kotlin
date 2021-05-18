@@ -19,15 +19,15 @@
 
 
 # TMDb API
-This library gives the access to [TMDb API](https://www.themoviedb.org/documentation/api) version 3 and 4 for mobile, desktop and web applications. 
-It supports Swift, Kotlin and JavaScript by setting up as a Kotlin Multiplatform project.
+This library gives access to [TMDb API](https://www.themoviedb.org/documentation/api) version 3 and 4 for mobile, desktop, and web applications. 
+It supports Swift, Kotlin, and JavaScript by setting up as a Kotlin Multiplatform project.
 
-*Mainly used and supported by [Moviebase](https://www.moviebase.app).*
+*This library is mainly used and supported by [Moviebase](https://www.moviebase.app).*
 
 
 ## Adding to your project
 
-The library is published to Maven Central.
+The library is available on Maven Central.
 
 ### Gradle
 
@@ -73,7 +73,7 @@ Add a dependency to the `<dependencies>` element.
 ## Usage
 Most of the library follows the possibilities and naming at the official [TMDb documentation](https://www.themoviedb.org/documentation/api).
 
-The endpoints are described in [Version 3](https://developers.themoviedb.org/3) and [Version 4](https://developers.themoviedb.org/4).
+The documentation of the endpoints can be found in [Version 3](https://developers.themoviedb.org/3) and [Version 4](https://developers.themoviedb.org/4).
 
 
 ### Get information
