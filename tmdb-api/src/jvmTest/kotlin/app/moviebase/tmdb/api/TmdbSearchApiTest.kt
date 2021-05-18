@@ -11,6 +11,7 @@ class TmdbSearchApiTest {
         version = 3,
         responses = mapOf(
             "search/tv?query=Lupin&include_adult=false&page=1&region=US&language=en" to "search/search_tv_lupin.json",
+            "search/tv?query=S.W.A.T.&include_adult=false&page=1&region=US&language=en" to "search/search_tv_SWAT.json",
             "search/movie?query=Star+Wars&include_adult=false&page=1&region=US&language=en" to "search/search_movie_star_wars.json",
             "search/person?query=ka&include_adult=false&page=1&region=US&language=en" to "search/search_person_ka.json",
             "search/company?query=fox&page=1" to "search/search_company_fox.json",
@@ -31,6 +32,18 @@ class TmdbSearchApiTest {
         assertThat(pageResult.results).isNotEmpty()
         val show = pageResult.results.first()
         assertThat(show.id).isEqualTo(96677)
+    }
+
+    @Test
+    fun `it can search shows by query SWAT`() = runBlocking {
+        val pageResult = classToTest.findShows("S.W.A.T.", 1, "en", "US",false)
+
+        assertThat(pageResult.page).isEqualTo(1)
+        assertThat(pageResult.totalPages).isEqualTo(1)
+        assertThat(pageResult.totalResults).isEqualTo(4)
+        assertThat(pageResult.results).isNotEmpty()
+        val show = pageResult.results.first()
+        assertThat(show.id).isEqualTo(71790)
     }
 
     @Test

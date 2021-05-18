@@ -1,0 +1,82 @@
+{
+  "page": 1,
+  "results": [
+    {
+      "backdrop_path": "/AuY5Wuiwgc2CeuzM0I2poSe4E0x.jpg",
+      "first_air_date": "2017-11-02",
+      "genre_ids": [
+        10759,
+        80,
+        18
+      ],
+      "id": 71790,
+      "name": "S.W.A.T.",
+      "origin_country": [
+        "US"
+      ],
+      "original_language": "en",
+      "original_name": "S.W.A.T.",
+      "overview": "A locally born and bred S.W.A.T. lieutenant is torn between loyalty to the streets and duty to his fellow officers when he's tasked to run a highly-trained unit that's the last stop for solving crimes in Los Angeles.",
+      "popularity": 131.564,
+      "poster_path": "/ushSkKB8aeLsyyW2c7S7CCmEmRA.jpg",
+      "vote_average": 7.8,
+      "vote_count": 485
+    },
+    {
+      "backdrop_path": "/aBghYiHMpEEZDRlJ4OYY708ULTu.jpg",
+      "first_air_date": "1975-02-24",
+      "genre_ids": [
+        10759,
+        18
+      ],
+      "id": 11129,
+      "name": "S.W.A.T.",
+      "origin_country": [
+        "US"
+      ],
+      "original_language": "en",
+      "original_name": "S.W.A.T.",
+      "overview": "S.W.A.T. is an American action/crime drama series about the adventures of a Special Weapons And Tactics team operating in an unidentified California city. A spin-off of The Rookies, the series aired on ABC from February 1975 to April 1976.\n\nLike The Rookies, S.W.A.T. was produced by Aaron Spelling and Leonard Goldberg.",
+      "popularity": 10.029,
+      "poster_path": "/u3DbvKamBWkchckwioak3PvN8j1.jpg",
+      "vote_average": 6.9,
+      "vote_count": 45
+    },
+    {
+      "backdrop_path": null,
+      "first_air_date": "2006-09-11",
+      "genre_ids": [],
+      "id": 29194,
+      "name": "S.W.A.T. USA",
+      "origin_country": [
+        "US"
+      ],
+      "original_language": "en",
+      "original_name": "S.W.A.T. USA",
+      "overview": "",
+      "popularity": 0.6,
+      "poster_path": null,
+      "vote_average": 0,
+      "vote_count": 0
+    },
+    {
+      "backdrop_path": null,
+      "first_air_date": "2006-01-04",
+      "genre_ids": [],
+      "id": 30096,
+      "name": "Texas S.W.A.T.",
+      "origin_country": [
+        "US"
+      ],
+      "original_language": "en",
+      "original_name": "Texas S.W.A.T.",
+      "overview": "",
+      "popularity": 0.6,
+      "poster_path": null,
+      "vote_average": 0,
+      "vote_count": 0
+    }
+  ],
+  "total_pages": 1,
+  "total_results": 4
+}
