@@ -38,6 +38,4 @@ class TmdbPeopleApi(private val client: HttpClient) {
     private fun HttpRequestBuilder.endPointPerson(personId: Int, vararg paths: String) {
         endPointV3("person", personId.toString(), *paths)
     }
-
-
 }

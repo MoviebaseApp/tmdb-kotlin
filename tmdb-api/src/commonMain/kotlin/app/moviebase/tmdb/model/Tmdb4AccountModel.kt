@@ -31,3 +31,11 @@ data class Tmdb4ListMeta(
     val adult: Boolean get() = adultInt == 1
 
 }
+
+@Serializable
+data class TmdbListMetaPageResult(
+    @SerialName("page") override val page: Int,
+    @SerialName("results") override val results: List<Tmdb4ListMeta> = emptyList(),
+    @SerialName("total_results") override val totalResults: Int,
+    @SerialName("total_pages") override val totalPages: Int,
+) : TmdbPageResult<Tmdb4ListMeta>

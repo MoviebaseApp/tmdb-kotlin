@@ -13,7 +13,7 @@ class TmdbSearchApi(private val client: HttpClient) {
         language: String? = null,
         region: String? = null,
         includeAdult: Boolean = false
-    ): TmdbPageResult<TmdbMovie> = client.get {
+    ): TmdbMoviePageResult = client.get {
         endSearch(TmdbSearchType.MOVIE)
 
         parameterQuery(query)
@@ -29,7 +29,7 @@ class TmdbSearchApi(private val client: HttpClient) {
         language: String? = null,
         region: String? = null,
         includeAdult: Boolean? = null
-    ): TmdbPageResult<TmdbShow> = client.get {
+    ): TmdbShowPageResult = client.get {
         endSearch(TmdbSearchType.TV)
 
         parameterQuery(query)
@@ -45,7 +45,7 @@ class TmdbSearchApi(private val client: HttpClient) {
         language: String? = null,
         region: String? = null,
         includeAdult: Boolean = false
-    ): TmdbPageResult<TmdbPerson> = client.get {
+    ): TmdbPersonPageResult = client.get {
         endSearch(TmdbSearchType.PERSON)
 
         parameterQuery(query)
@@ -58,7 +58,7 @@ class TmdbSearchApi(private val client: HttpClient) {
     suspend fun findCompanies(
         query: String,
         page: Int
-    ): TmdbPageResult<TmdbCompany> = client.get {
+    ): TmdbCompanyPageResult = client.get {
         endSearch(TmdbSearchType.COMPANY)
 
         parameterQuery(query)
@@ -69,7 +69,7 @@ class TmdbSearchApi(private val client: HttpClient) {
         query: String,
         page: Int,
         language: String? = null,
-    ): TmdbPageResult<TmdbCollection> = client.get {
+    ): TmdbCollectionPageResult = client.get {
         endSearch(TmdbSearchType.COLLECTION)
 
         parameterQuery(query)
@@ -80,7 +80,7 @@ class TmdbSearchApi(private val client: HttpClient) {
     suspend fun findKeywords(
         query: String,
         page: Int
-    ): TmdbPageResult<TmdbKeywordDetail> = client.get {
+    ): TmdbKeywordPageResult = client.get {
         endSearch(TmdbSearchType.KEYWORD)
 
         parameterQuery(query)

@@ -8,6 +8,7 @@ object Versions {
     // Plugins
     val dokka = "1.4.30"
     val nexus = "1.0.0"
+    val swiftpackage = "2.0.3"
 
     // Kotlin
     val kotlin = "1.4.32"
@@ -23,9 +24,12 @@ object Versions {
     val ktor = "1.5.3"
 }
 
-object Libs {
-
+object Plugins {
     val dokka = "org.jetbrains.dokka:dokka-gradle-plugin:${Versions.dokka}"
+    val swiftpackage = "com.chromaticnoise.multiplatform-swiftpackage"
+}
+
+object Libs {
 
     object Kotlin {
         val kotlin = "org.jetbrains.kotlin:kotlin-stdlib-jdk8:${Versions.kotlin}"

@@ -79,6 +79,14 @@ data class TmdbPerson(
 ) : TmdbAnyPerson, TmdbSearchable
 
 @Serializable
+data class TmdbPersonPageResult(
+    @SerialName("page") override val page: Int,
+    @SerialName("results") override val results: List<TmdbPerson> = emptyList(),
+    @SerialName("total_results") override val totalResults: Int,
+    @SerialName("total_pages") override val totalPages: Int,
+) : TmdbPageResult<TmdbPerson>
+
+@Serializable
 data class TmdbPersonDetail(
     @SerialName("also_known_as") val alsoKnownAs: List<String>,
     @SerialName("known_for_department") val knownForDepartment: String,
@@ -93,7 +101,7 @@ data class TmdbPersonDetail(
     @SerialName("popularity") override val popularity: Float,
     @SerialName("place_of_birth") val placeOfBirth: String,
     @SerialName("external_ids") val externalIds: TmdbExternalIds? = null,
-    @SerialName("tagged_images") val taggedImages: TmdbPageResult<TmdbTaggedImage>? = null,
+    @SerialName("tagged_images") val taggedImages: TmdbImagePageResult? = null,
     @SerialName("movie_credits") val movieCredits: TmdbPersonMovieCredits? = null,
     @SerialName("tv_credits") val tvCredits: TmdbPersonShowCredits? = null,
 ): TmdbAnyPerson
@@ -177,6 +185,14 @@ data class TmdbJob(
 data class TmdbTaggedImage(
     val media: TmdbTaggedMedia
 )
+
+@Serializable
+data class TmdbImagePageResult(
+    @SerialName("page") override val page: Int,
+    @SerialName("results") override val results: List<TmdbTaggedImage> = emptyList(),
+    @SerialName("total_results") override val totalResults: Int,
+    @SerialName("total_pages") override val totalPages: Int,
+) : TmdbPageResult<TmdbTaggedImage>
 
 @Serializable
 data class TmdbTaggedMedia(

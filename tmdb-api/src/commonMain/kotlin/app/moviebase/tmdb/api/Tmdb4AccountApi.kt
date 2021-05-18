@@ -9,7 +9,7 @@ class Tmdb4AccountApi(private val client: HttpClient) {
     /**
      * Get all of the lists you've created.
      */
-    suspend fun getLists(accountId: String, page: Int): TmdbPageResult<Tmdb4ListMeta> = client.get {
+    suspend fun getLists(accountId: String, page: Int): TmdbListMetaPageResult = client.get {
         endPointAccount(accountId, "lists")
         parameterPage(page)
     }
@@ -24,7 +24,11 @@ class Tmdb4AccountApi(private val client: HttpClient) {
         page: Int,
         sortBy: TmdbListSortBy? = null,
         sortOrder: TmdbSortOrder = TmdbSortOrder.DESC,
-    ): TmdbPageResult<TmdbMovie> = getFavorites(TmdbRequestMediaType.MOVIE, accountId, page, sortBy, sortOrder)
+    ): TmdbMoviePageResult = client.get {
+        endPointAccount(accountId, TmdbRequestMediaType.MOVIE.value, "favorites")
+        sortBy?.let { parameterSortBy(it, sortOrder) }
+        parameterPage(page)
+    }
 
     /**
      * Get the list of TV shows you have marked as a favorite.
@@ -36,16 +40,8 @@ class Tmdb4AccountApi(private val client: HttpClient) {
         page: Int,
         sortBy: TmdbListSortBy? = null,
         sortOrder: TmdbSortOrder = TmdbSortOrder.DESC,
-    ): TmdbPageResult<TmdbShow> = getFavorites(TmdbRequestMediaType.TV, accountId, page, sortBy, sortOrder)
-
-    suspend fun <T : TmdbMediaListItem> getFavorites(
-        mediaType: TmdbRequestMediaType,
-        accountId: String,
-        page: Int,
-        sortBy: TmdbListSortBy? = null,
-        sortOrder: TmdbSortOrder = TmdbSortOrder.DESC,
-    ): TmdbPageResult<T> = client.get {
-        endPointAccount(accountId, mediaType.value, "favorites")
+    ): TmdbShowPageResult  = client.get {
+        endPointAccountList(accountId, TmdbRequestMediaType.TV, "favorites")
         sortBy?.let { parameterSortBy(it, sortOrder) }
         parameterPage(page)
     }
@@ -55,23 +51,19 @@ class Tmdb4AccountApi(private val client: HttpClient) {
         page: Int,
         sortBy: TmdbListSortBy? = null,
         sortOrder: TmdbSortOrder = TmdbSortOrder.DESC,
-    ): TmdbPageResult<TmdbMovie> = getRecommendations(TmdbRequestMediaType.MOVIE, accountId, page, sortBy, sortOrder)
+    ): TmdbMoviePageResult = client.get {
+        endPointAccountList(accountId, TmdbRequestMediaType.MOVIE, "recommendations")
+        sortBy?.let { parameterSortBy(it, sortOrder) }
+        parameterPage(page)
+    }
 
     suspend fun getShowRecommendation(
         accountId: String,
         page: Int,
         sortBy: TmdbListSortBy? = null,
         sortOrder: TmdbSortOrder = TmdbSortOrder.DESC,
-    ): TmdbPageResult<TmdbShow> = getRecommendations(TmdbRequestMediaType.TV, accountId, page, sortBy, sortOrder)
-
-    suspend fun <T : TmdbMediaListItem> getRecommendations(
-        mediaType: TmdbRequestMediaType,
-        accountId: String,
-        page: Int,
-        sortBy: TmdbListSortBy? = null,
-        sortOrder: TmdbSortOrder = TmdbSortOrder.DESC,
-    ): TmdbPageResult<T> = client.get {
-        endPointAccount(accountId, mediaType.value, "recommendations")
+    ): TmdbShowPageResult = client.get {
+        endPointAccount(accountId, TmdbRequestMediaType.TV.value, "recommendations")
         sortBy?.let { parameterSortBy(it, sortOrder) }
         parameterPage(page)
     }
@@ -81,29 +73,29 @@ class Tmdb4AccountApi(private val client: HttpClient) {
         page: Int,
         sortBy: TmdbListSortBy? = null,
         sortOrder: TmdbSortOrder = TmdbSortOrder.DESC,
-    ): TmdbPageResult<TmdbMovie> = getWatchlist(TmdbRequestMediaType.MOVIE, accountId, page, sortBy, sortOrder)
+    ): TmdbMoviePageResult = client.get {
+        endPointAccountList(accountId, TmdbRequestMediaType.MOVIE, "watchlist")
+        sortBy?.let { parameterSortBy(it, sortOrder) }
+        parameterPage(page)
+    }
 
     suspend fun getShowWatchlist(
         accountId: String,
         page: Int,
         sortBy: TmdbListSortBy? = null,
         sortOrder: TmdbSortOrder = TmdbSortOrder.DESC,
-    ): TmdbPageResult<TmdbShow> = getWatchlist(TmdbRequestMediaType.TV, accountId, page, sortBy, sortOrder)
-
-    suspend fun <T : TmdbMediaListItem> getWatchlist(
-        mediaType: TmdbRequestMediaType,
-        accountId: String,
-        page: Int,
-        sortBy: TmdbListSortBy? = null,
-        sortOrder: TmdbSortOrder = TmdbSortOrder.DESC,
-    ): TmdbPageResult<T> = client.get {
-        endPointAccount(accountId, mediaType.value, "watchlist")
+    ): TmdbShowPageResult = client.get {
+        endPointAccountList(accountId, TmdbRequestMediaType.TV, "watchlist")
         sortBy?.let { parameterSortBy(it, sortOrder) }
         parameterPage(page)
     }
 
     private fun HttpRequestBuilder.parameterSortBy(sortBy: TmdbListSortBy, sortOrder: TmdbSortOrder) {
         parameter("sort_by", sortBy.value + sortOrder.value)
+    }
+
+    private fun HttpRequestBuilder.endPointAccountList(accountId: String, type: TmdbRequestMediaType, list: String) {
+        endPointV4("account", accountId, type.value, list)
     }
 
     private fun HttpRequestBuilder.endPointAccount(accountId: String, vararg paths: String) {
