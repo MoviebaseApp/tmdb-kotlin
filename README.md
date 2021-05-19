@@ -11,23 +11,23 @@
 [![Maven Central](https://img.shields.io/maven-central/v/app.moviebase/tmdb-api?label=Maven%20Central)](https://search.maven.org/artifact/app.moviebase/tmdb-api)
 [![Build Status](https://app.bitrise.io/app/0e5dcdc490429c81/status.svg?token=dRSlP2lXiMSQ8keWh-o8mQ&branch=master)](https://app.bitrise.io/app/0e5dcdc490429c81)
 [![Issues](https://img.shields.io/github/issues/MoviebaseApp/tmdb-api/total)](http://kotlinlang.org)
-[![Kotlin](https://img.shields.io/badge/kotlin-1.5.0-blue.svg?logo=kotlin)](http://kotlinlang.org)
-[![Gradle](https://img.shields.io/badge/Gradle-7-green?style=flat)](https://gradle.org)
+[![Kotlin](https://img.shields.io/badge/kotlin-1.4.32-blue.svg?logo=kotlin)](http://kotlinlang.org)
+[![Gradle](https://img.shields.io/badge/Gradle-6-green?style=flat)](https://gradle.org)
 [![GitHub License](https://img.shields.io/badge/license-Apache%20License%202.0-blue.svg?style=flat)](http://www.apache.org/licenses/LICENSE-2.0)
 
 <hr>
 
 
 # TMDb API
-This library gives the access to [TMDb API](https://www.themoviedb.org/documentation/api) version 3 and 4 for mobile, desktop and web applications. 
-It supports Swift, Kotlin and JavaScript by setting up as a Kotlin Multiplatform project.
+This library gives access to [TMDb API](https://www.themoviedb.org/documentation/api) version 3 and 4 for mobile, desktop, and web applications. 
+It supports Swift, Kotlin, and JavaScript by setting up as a Kotlin Multiplatform project.
 
-*Mainly used and supported by [Moviebase](https://www.moviebase.app).*
+*This library is mainly used and supported by [Moviebase](https://www.moviebase.app).*
 
 
 ## Adding to your project
 
-The library is published to Maven Central.
+The library is available on Maven Central.
 
 ### Gradle
 
@@ -43,7 +43,7 @@ To use the library in a single-platform project, add a dependency.
 
 ```kotlin
 dependencies {
-    implementation("app.moviebase:tmdb-api:0.4.5")
+    implementation("app.moviebase:tmdb-api:0.5.0")
 }
 ```
 
@@ -52,7 +52,7 @@ In Kotlin Multiplatform projects, add the dependency to your commonMain source-s
 ```kotlin
 commonMain {
     dependencies {
-        implementation("app.moviebase:tmdb-api:0.4.5")
+        implementation("app.moviebase:tmdb-api:0.5.0")
     }
 }
 ``` 
@@ -65,7 +65,7 @@ Add a dependency to the `<dependencies>` element.
 <dependency>
     <groupId>app.moviebase</groupId>
     <artifactId>tmdb-api</artifactId>
-    <version>0.4.5</version>
+    <version>0.5.0</version>
 </dependency>
 ```
 
@@ -73,7 +73,7 @@ Add a dependency to the `<dependencies>` element.
 ## Usage
 Most of the library follows the possibilities and naming at the official [TMDb documentation](https://www.themoviedb.org/documentation/api).
 
-The endpoints are described in [Version 3](https://developers.themoviedb.org/3) and [Version 4](https://developers.themoviedb.org/4).
+The documentation of the endpoints can be found in [Version 3](https://developers.themoviedb.org/3) and [Version 4](https://developers.themoviedb.org/4).
 
 
 ### Get information

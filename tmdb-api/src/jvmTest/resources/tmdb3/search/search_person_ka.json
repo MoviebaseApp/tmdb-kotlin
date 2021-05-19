@@ -1,0 +1,859 @@
+{
+  "page": 1,
+  "results": [
+    {
+      "adult": false,
+      "gender": 2,
+      "id": 1194168,
+      "known_for": [
+        {
+          "adult": false,
+          "backdrop_path": "/sNtRc8pq28UBjzcl0ty556UbDoO.jpg",
+          "genre_ids": [
+            28,
+            80,
+            53
+          ],
+          "id": 72387,
+          "media_type": "movie",
+          "original_language": "en",
+          "original_title": "Safe",
+          "overview": "After a former elite agent rescues a 12-year-old Chinese girl who's been abducted, they find themselves in the middle of a standoff between Triads, the Russian Mafia and high-level corrupt New York City politicians and police.",
+          "poster_path": "/kOCpkoMUVae9UIf85gO71SyjLbW.jpg",
+          "release_date": "2012-04-16",
+          "title": "Safe",
+          "video": false,
+          "vote_average": 6.4,
+          "vote_count": 1751
+        },
+        {
+          "adult": false,
+          "backdrop_path": "/A1ERUEcDEvtD38mq3v9ReFI1YEp.jpg",
+          "genre_ids": [
+            80,
+            28,
+            53
+          ],
+          "id": 49526,
+          "media_type": "movie",
+          "original_language": "en",
+          "original_title": "Premium Rush",
+          "overview": "In Manhattan, a bike messenger picks up an envelope that attracts the interest of a dirty cop, who pursues the cyclist throughout the city.",
+          "poster_path": "/haP8R490QeEzAJgRHuutIuG8KOG.jpg",
+          "release_date": "2012-08-24",
+          "title": "Premium Rush",
+          "video": false,
+          "vote_average": 6.3,
+          "vote_count": 1589
+        },
+        {
+          "adult": false,
+          "backdrop_path": "/aHhR1Q5yOaCLCEDtyDXtiRNeyf6.jpg",
+          "genre_ids": [
+            18,
+            53,
+            9648
+          ],
+          "id": 14462,
+          "media_type": "movie",
+          "original_language": "en",
+          "original_title": "The Manchurian Candidate",
+          "overview": "Years after his squad was ambushed during the Gulf War, Major Ben Marco finds himself having terrible nightmares. He begins to doubt that his fellow squad-mate Sergeant Raymond Shaw, now a vice-presidential candidate, is the hero he remembers him being. As Marco's doubts deepen, Shaw's political power grows, and, when Marco finds a mysterious implant embedded in his back, the memory of what really happened begins to return.",
+          "poster_path": "/4xEWtEbKK2EXMZ8UPff8hDCSiVW.jpg",
+          "release_date": "2004-07-30",
+          "title": "The Manchurian Candidate",
+          "video": false,
+          "vote_average": 6.4,
+          "vote_count": 1060
+        }
+      ],
+      "known_for_department": "Acting",
+      "name": "Shing Ka",
+      "popularity": 1.96,
+      "profile_path": "/tXF001tM7N2gbqwsUdimMGXWVO4.jpg"
+    },
+    {
+      "adult": false,
+      "gender": 0,
+      "id": 1486313,
+      "known_for": [
+        {
+          "adult": false,
+          "backdrop_path": "/8iEDUU82DsesD1nHO6E2hi3JfqC.jpg",
+          "genre_ids": [
+            18,
+            53,
+            10749
+          ],
+          "id": 286089,
+          "media_type": "movie",
+          "original_language": "en",
+          "original_title": "Ta lai zi hu zhi ming shi",
+          "overview": "HK businessman Kiu doesn't have time to woo a girl. On a trip to Saigon, he offers financial help to poor girl Shun's (very troubled !) family if she'll come and live with him. With a sense of duty but no love, she agrees, too timid to even tell boyfriend Lik just after losing her virginity to him. Love fails to blossom between Shun and Kiu in HK, and Kiu starts to drink heavily. Sandy, Kiu's luscious secretary takes advantage and gets it off with him in the gym and digusts Shun in the process. Shun gets drunk and is picked up in a bar, nearly raped, and rescued then befriended by a fellow Vietnamese, a photographer, in what is clearly a setup. Turns out Sandy is behind this ruse as well, to get Shun out of the way and have Kiu all to herself. But things don't go according to anyone's plan. Will Shun give up Kiu and his money to go back to Lik ? Will Sandy hold her nerve and push ahead ? Will the guys Sandy paid to set up Shun have their way with Sandy instead ?",
+          "poster_path": "/mB7wgB5TiusPW4CgiLgtM7CO6HB.jpg",
+          "release_date": "1992-11-19",
+          "title": "Vietnamese Lady",
+          "video": false,
+          "vote_average": 0,
+          "vote_count": 0
+        },
+        {
+          "adult": false,
+          "genre_ids": [],
+          "id": 386052,
+          "media_type": "movie",
+          "original_language": "cn",
+          "original_title": "凶宅胭脂",
+          "overview": "Erotic horror film about a man who fights eviction against both bad guys and demons.",
+          "poster_path": "/6mQrvZFaxn0648j6WS1omw4gnfg.jpg",
+          "release_date": "1998-01-01",
+          "title": "Beauty of the Haunted House",
+          "video": false,
+          "vote_average": 0,
+          "vote_count": 0
+        }
+      ],
+      "known_for_department": "Directing",
+      "name": "Ka Ka",
+      "popularity": 0.6,
+      "profile_path": null
+    },
+    {
+      "adult": false,
+      "gender": 2,
+      "id": 1240871,
+      "known_for": [
+        {
+          "adult": false,
+          "backdrop_path": "/ekP6EVxL81lZ4ivcqPsoZ72rY0h.jpg",
+          "genre_ids": [
+            28,
+            18,
+            36
+          ],
+          "id": 449924,
+          "media_type": "movie",
+          "original_language": "cn",
+          "original_title": "葉問4",
+          "overview": "Following the death of his wife, Ip Man travels to San Francisco to ease tensions between the local kung fu masters and his star student, Bruce Lee, while searching for a better future for his son.",
+          "poster_path": "/b5cz6BoyHrgBnhfDHOW5hXRWbln.jpg",
+          "release_date": "2019-12-19",
+          "title": "Ip Man 4: The Finale",
+          "video": false,
+          "vote_average": 7.2,
+          "vote_count": 1303
+        },
+        {
+          "first_air_date": "2015-07-13",
+          "genre_ids": [],
+          "id": 96577,
+          "media_type": "tv",
+          "name": "Ghost of Relativity",
+          "origin_country": [],
+          "original_language": "zh",
+          "original_name": "鬼同你OT",
+          "overview": "Keung Yung has had a crush on her co-worker Michael Chiu Wai Kan for over ten years, but she is too afraid to confess her feelings. One night while talking on the phone with her other co-worker Shun Suk Mui, Yung is electrocuted to death because of her bootlegged phone. Regretful of not being able to fulfill her romantic wishes in life, she uses Suk Mui, who is the only person that can see her due to their final phone conversation, to pursue Michael.",
+          "poster_path": "/3zBXcvA0C5vU3TMvKUeLrIPcHm2.jpg",
+          "vote_average": 6,
+          "vote_count": 2
+        },
+        {
+          "backdrop_path": "/5DURhMuW4nLS1ns8jKT6TOiZYBv.jpg",
+          "first_air_date": "2014-06-30",
+          "genre_ids": [
+            80,
+            18
+          ],
+          "id": 82494,
+          "media_type": "tv",
+          "name": "Ghost Dragon of Cold Mountain",
+          "origin_country": [
+            "HK"
+          ],
+          "original_language": "cn",
+          "original_name": "寒山潛龍",
+          "overview": "During the Northern Song dynasty, the Phecda Bureau is considered the most powerful of all government offices. Led by Fung Nam-Tin, his elite group is in charge of all criminal cases nationwide. The bureau's commander, Chu Cheung-Sing, is greatly valued by Nam-Tin, but due to one particular robbery case, they go their separate ways. Along with his wife Tao Fa, Cheung-Sing vanishes for nearly ten years until the case draws to a close. Now past his working prime, Nam Tim orders three officers to summon Cheung-Sing back to the bureau. Meanwhile, the Jin dynasty has long coveted the Song land, and is ready to launch an invasion.",
+          "poster_path": "/46WZhEJyjeL0GBp3b5V9XoHqkzC.jpg",
+          "vote_average": 8,
+          "vote_count": 1
+        }
+      ],
+      "known_for_department": "Acting",
+      "name": "Ngo Ka-nin",
+      "popularity": 1.96,
+      "profile_path": "/cvFz4MA8jN7GXbfaIgjho1XYPCJ.jpg"
+    },
+    {
+      "adult": false,
+      "gender": 0,
+      "id": 1173742,
+      "known_for": [
+        {
+          "adult": false,
+          "backdrop_path": "/pBmKsaazMeBYSbnrgAUnM7m87ag.jpg",
+          "genre_ids": [
+            28
+          ],
+          "id": 75839,
+          "media_type": "movie",
+          "original_language": "zh",
+          "original_title": "Shen tui tie shan gong",
+          "overview": "As China and Russia's governments are talking peace, traitorous agents on both sides seek war. Enter John Liu as a special agent sent to identify who the Russian traitor is, and who his contact is within the walls of the Forbidden City.",
+          "poster_path": "/iyqZJV3zJ1F8UTC5rRHcWwBuMZR.jpg",
+          "release_date": "1977-01-01",
+          "title": "Snuff Bottle Connection",
+          "video": false,
+          "vote_average": 5.7,
+          "vote_count": 12
+        }
+      ],
+      "known_for_department": "Acting",
+      "name": "Wong Ka-Ka",
+      "popularity": 0.6,
+      "profile_path": null
+    },
+    {
+      "adult": false,
+      "gender": 0,
+      "id": 1893909,
+      "known_for": [
+        {
+          "adult": false,
+          "backdrop_path": "/9mVgtyhmkQtsJkq5Fu4OhuU0155.jpg",
+          "genre_ids": [
+            18,
+            80,
+            53
+          ],
+          "id": 393717,
+          "media_type": "movie",
+          "original_language": "fr",
+          "original_title": "Braqueurs",
+          "overview": "One of the members of a gang of thieves commits a serious mistake that force them to work for a ruthless gang of drug dealers, endangering the future of the team, their lives and those of their families.",
+          "poster_path": "/zq4QUvbPS2bf6mesCPW04awrBoJ.jpg",
+          "release_date": "2016-05-04",
+          "title": "The Crew",
+          "video": false,
+          "vote_average": 6.2,
+          "vote_count": 200
+        }
+      ],
+      "known_for_department": "Acting",
+      "name": "Olive Ka",
+      "popularity": 0.84,
+      "profile_path": "/yvMBEDx33NYB2GgVxrQULine7m7.jpg"
+    },
+    {
+      "adult": false,
+      "gender": 2,
+      "id": 1457960,
+      "known_for": [
+        {
+          "adult": false,
+          "backdrop_path": "/qP2X0AbU3fsnl24ezw7HOyVKk3R.jpg",
+          "genre_ids": [
+            18,
+            27,
+            35
+          ],
+          "id": 105397,
+          "media_type": "movie",
+          "original_language": "cn",
+          "original_title": "滅門慘案 II 借種",
+          "overview": "Another gruesome case involving a woman who's a sole survivor of a brutal massacre. A local constable questions the woman about her whereabouts and what might have happened the night before. As he gets the young woman to talk, she spins a tale of debauchery, madness and people so vile that you wished that they'll never see daylight again. Why is this woman so reluctant to talk? Who else might be involved in this ghastly murder? How will this bumbling cop get any solid leads or useful clues from this shell shocked woman?",
+          "poster_path": "/cYmzXBl5WWifG9Cxs1MKRPQlywY.jpg",
+          "release_date": "1994-01-01",
+          "title": "Daughter of Darkness 2",
+          "video": false,
+          "vote_average": 4.6,
+          "vote_count": 7
+        },
+        {
+          "adult": false,
+          "backdrop_path": "/kyrAT0kuED6n2RhuBUuENpNgimp.jpg",
+          "genre_ids": [
+            27
+          ],
+          "id": 105814,
+          "media_type": "movie",
+          "original_language": "cn",
+          "original_title": "孽欲追击档案之邪杀",
+          "overview": "Stunningly sexy Pan Dang plays a Hong Kong woman who's traveling in search of her twin sister, who disappeared leaving nothing more than a native doll, the eponymous imp. Along the way she hooks up with a mobile film crew. They discover that something isn't quite right with the boarding house in which they're staying.",
+          "poster_path": "/9eqRRc4bNiLk9JFZ5xbioGBGHHR.jpg",
+          "release_date": "1996-01-01",
+          "title": "The Imp",
+          "video": false,
+          "vote_average": 4,
+          "vote_count": 2
+        },
+        {
+          "adult": false,
+          "genre_ids": [
+            28,
+            35,
+            80,
+            18
+          ],
+          "id": 481253,
+          "media_type": "movie",
+          "original_language": "cn",
+          "original_title": "Jian ren shi jia",
+          "overview": "Mad mix of comedy and action as a family of thugs and Triads can't see eye to eye and so end up going fist to fist.",
+          "poster_path": "/rKeECPnLaKRDVbHo3WZLpjguLg2.jpg",
+          "release_date": "1994-03-26",
+          "title": "Hong Kong Adam's Family",
+          "video": false,
+          "vote_average": 0,
+          "vote_count": 0
+        }
+      ],
+      "known_for_department": "Acting",
+      "name": "Ka-Kui Ho",
+      "popularity": 1.532,
+      "profile_path": null
+    },
+    {
+      "adult": false,
+      "gender": 0,
+      "id": 1124576,
+      "known_for": [
+        {
+          "adult": false,
+          "genre_ids": [],
+          "id": 146668,
+          "media_type": "movie",
+          "original_language": "ta",
+          "original_title": "கிருஷ்ணவேணி பஞ்சாலை",
+          "overview": "Krishnaveni Panjaalai is an Indian Tamil Romance film written and directed by debutant Dhanapal Padmanabhan, the film has Hemachandran, Nandana, M. S. Bhaskar, Rajiv Krishna and Bala Singh among others in lead roles. The film is set in the backdrop of the 1980s and is about the lives of workers in a cotton mill.",
+          "release_date": "2012-06-08",
+          "title": "Krishnaveni Panjaalai",
+          "video": false,
+          "vote_average": 0,
+          "vote_count": 0
+        }
+      ],
+      "known_for_department": "Production",
+      "name": "Ka. Pandiyarajan",
+      "popularity": 0.6,
+      "profile_path": null
+    },
+    {
+      "adult": false,
+      "gender": 2,
+      "id": 2718963,
+      "known_for": [
+        {
+          "adult": false,
+          "backdrop_path": null,
+          "genre_ids": [],
+          "id": 726378,
+          "media_type": "movie",
+          "original_language": "ru",
+          "original_title": "哈森与加米拉",
+          "overview": "",
+          "poster_path": "/4iM1rQ6f4Wiil5SawCi9fLPHGd1.jpg",
+          "release_date": "1955-01-01",
+          "title": "哈森与加米拉",
+          "video": false,
+          "vote_average": 0,
+          "vote_count": 0
+        }
+      ],
+      "known_for_department": "Acting",
+      "name": "Shengbai Ka",
+      "popularity": 0.6,
+      "profile_path": null
+    },
+    {
+      "adult": false,
+      "gender": 2,
+      "id": 1135396,
+      "known_for": [
+        {
+          "adult": false,
+          "backdrop_path": "/llK85OsavDY81MGFpF1iojTaQXb.jpg",
+          "genre_ids": [
+            35
+          ],
+          "id": 183846,
+          "media_type": "movie",
+          "original_language": "cn",
+          "original_title": "吉星拱照",
+          "overview": "Lam Bo Sun, the richest man in Hong Kong, is expected to marry the ditziest of socialites in a matter of weeks. On a whim, he leaves everything behind and gets a job as a lowly busboy at a noodle restaurant, and finds the girl of his dreams.",
+          "poster_path": "/xHbfplhwbvggsDZzyknxcI6vHfI.jpg",
+          "release_date": "1990-01-18",
+          "title": "The Fun, the Luck & the Tycoon",
+          "video": false,
+          "vote_average": 6.3,
+          "vote_count": 6
+        },
+        {
+          "adult": false,
+          "backdrop_path": "/6kjW8OR8JtS2NRMafN3sHRWkcnK.jpg",
+          "genre_ids": [
+            35
+          ],
+          "id": 56123,
+          "media_type": "movie",
+          "original_language": "cn",
+          "original_title": "豪門夜宴",
+          "overview": "Developer Tsang Siu-Chi (Eric Tsang) and his agent (Jacky Cheung) have bought two of a group of four properties. Rival developer, Boss Hung (Sammo Hung) has secured the other two properties. Both aim to buy all four so they can knock them down and build hotels.",
+          "poster_path": "/brEMFRhFRXmkVzKJWhQIsby8dQc.jpg",
+          "release_date": "1991-11-30",
+          "title": "The Banquet",
+          "video": false,
+          "vote_average": 4.4,
+          "vote_count": 5
+        },
+        {
+          "adult": false,
+          "backdrop_path": "/3jq5KOkZpdOHtbVDBI3c2peINNb.jpg",
+          "genre_ids": [],
+          "id": 157205,
+          "media_type": "movie",
+          "original_language": "cn",
+          "original_title": "籠民",
+          "overview": "This film is about the life of socially deprived people who lives in caged housing in Hong Kong.  Given the very tough topic of social deprivation, extreme poverty and shockingly appalling living conditions, I expected \"Cageman\" to be very tough to watch. This turns out not to be the case. Instead, \"Cageman\" is a warm, positive and loving film about friendship. People in the caged housing live as harmonious as possible, supporting each other by their limited means.",
+          "poster_path": "/kQZaaMJOdrXe4MGd9L5BqUURu5j.jpg",
+          "release_date": "1992-11-18",
+          "title": "Cageman",
+          "video": false,
+          "vote_average": 5.7,
+          "vote_count": 3
+        }
+      ],
+      "known_for_department": "Acting",
+      "name": "Wong Ka-Kui",
+      "popularity": 1.4,
+      "profile_path": "/s8GI3g3WzMpbxpHHhYiyJ7Xml3J.jpg"
+    },
+    {
+      "adult": false,
+      "gender": 2,
+      "id": 58052,
+      "known_for": [
+        {
+          "adult": false,
+          "backdrop_path": "/tgPlyey5lR9RkJhzt5tKzQSSVOh.jpg",
+          "genre_ids": [
+            28,
+            18,
+            80
+          ],
+          "id": 110410,
+          "media_type": "movie",
+          "original_language": "cn",
+          "original_title": "毒戰",
+          "overview": "The taciturn police commander Zhang leads an undercover drugs team and in his continuous battle against the ubiquitous drug barons, takes up arms against his arch enemy, Timmy Choi. When he gets hold of Choi, he makes a deal with him: in exchange for his life (in China you can get the death penalty for producing only 50 grams of drugs) the young criminal will help the police infiltrate a sizeable drug network.",
+          "poster_path": "/2ndg350jismgWwag7RrDHb6zGo4.jpg",
+          "release_date": "2012-11-15",
+          "title": "Drug War",
+          "video": false,
+          "vote_average": 6.8,
+          "vote_count": 168
+        },
+        {
+          "adult": false,
+          "backdrop_path": "/hQQYobrobIgnT6trUV0E3ofdBEY.jpg",
+          "genre_ids": [
+            28,
+            80,
+            53
+          ],
+          "id": 14016,
+          "media_type": "movie",
+          "original_language": "zh",
+          "original_title": "神探",
+          "overview": "A rookie cop teams up with a former detective with a supernatural gift to hunt down a serial killer.",
+          "poster_path": "/7hS1Q06GRHTPyHIIWgeT8VF1xF0.jpg",
+          "release_date": "2007-11-29",
+          "title": "Mad Detective",
+          "video": false,
+          "vote_average": 7,
+          "vote_count": 109
+        },
+        {
+          "adult": false,
+          "backdrop_path": "/2FO2YXMDTeLr6bQfSwAAtWOW7KW.jpg",
+          "genre_ids": [
+            53,
+            28
+          ],
+          "id": 18899,
+          "media_type": "movie",
+          "original_language": "cn",
+          "original_title": "復仇",
+          "overview": "A French chef swears revenge after a violent attack on his daughter's family in Macau, during which her husband and her two children are murdered. To help him find the killers, he hires three local hit-men working for the mafia.",
+          "poster_path": "/iEi7kOABrTvhwBi3np9wTwNKWNn.jpg",
+          "release_date": "2009-05-20",
+          "title": "Vengeance",
+          "video": false,
+          "vote_average": 6.5,
+          "vote_count": 109
+        }
+      ],
+      "known_for_department": "Writing",
+      "name": "Wai Ka-Fai",
+      "popularity": 1.442,
+      "profile_path": "/iuk9eYNkeIzbHdVdZlaGL1tLxS2.jpg"
+    },
+    {
+      "adult": false,
+      "gender": 1,
+      "id": 2150255,
+      "known_for": [
+        {
+          "adult": false,
+          "backdrop_path": "/hoV6CdYnwsyAUufe11cmIKCSzMb.jpg",
+          "genre_ids": [
+            10402,
+            10770
+          ],
+          "id": 127036,
+          "media_type": "movie",
+          "original_language": "pt",
+          "original_title": "Especial: Ivete, Gil e Caetano",
+          "overview": "Year-end special brought together three interpreters of Brazilian popular music - Gilberto Gil, Caetano Veloso and Ivete Sangalo - to honour the Brazilian woman.",
+          "poster_path": "/8rwNREDX8DThiIAzfu1weaUh2ko.jpg",
+          "release_date": "2011-12-23",
+          "title": "Especial: Ivete, Gil e Caetano",
+          "video": false,
+          "vote_average": 10,
+          "vote_count": 1
+        },
+        {
+          "backdrop_path": "/dzzcp9VvmdiI8RsDB9jXM6robls.jpg",
+          "first_air_date": "2009-03-23",
+          "genre_ids": [
+            35,
+            10751
+          ],
+          "id": 112245,
+          "media_type": "tv",
+          "name": "As the Bell Rings",
+          "origin_country": [
+            "BR"
+          ],
+          "original_language": "pt",
+          "original_name": "Quando Toca o Sino",
+          "overview": "With different characters you can find in any group of friends, the show entertains teenagers and tells us about the main events in their lives: the development of their personalities, their crushes, their finances, the sports competitions and their academic performance.",
+          "poster_path": "/A5RK268GNHZ7eB3eBvqS7QfKZ6r.jpg",
+          "vote_average": 0,
+          "vote_count": 0
+        }
+      ],
+      "known_for_department": "Acting",
+      "name": "Karol Ka",
+      "popularity": 0.6,
+      "profile_path": "/y7ASv8DYcArKcF5jyyM9wT7gwb3.jpg"
+    },
+    {
+      "adult": false,
+      "gender": 2,
+      "id": 1196051,
+      "known_for": [
+        {
+          "adult": false,
+          "backdrop_path": "/5KwIMLRVOfwVmYId7IEkhF5vssp.jpg",
+          "genre_ids": [
+            28,
+            35,
+            10749
+          ],
+          "id": 21733,
+          "media_type": "movie",
+          "original_language": "cn",
+          "original_title": "飛龍猛將",
+          "overview": "A hot-shot lawyer is hired by a Hong Kong chemical plant to dispose of opposition to their polluting ways. But when he falls for a beautiful woman out to stop the plant, he is torn in a conflict of interest and asks his trusty friends Samo and Biao to help out at least until they discover the true purpose of the plant.",
+          "poster_path": "/tnOTGbMzST5Z87PYyDnJhvy1hYM.jpg",
+          "release_date": "1988-02-11",
+          "title": "Dragons Forever",
+          "video": false,
+          "vote_average": 7.2,
+          "vote_count": 159
+        },
+        {
+          "adult": false,
+          "backdrop_path": "/3MyLWv8UMZ7GDJMXzl7z3JZSL2B.jpg",
+          "genre_ids": [
+            28,
+            12,
+            35,
+            80
+          ],
+          "id": 25539,
+          "media_type": "movie",
+          "original_language": "cn",
+          "original_title": "奇謀妙計五福星",
+          "overview": "Five friends are released from prison and do their best to stay out trouble. While trying to mind their own business (and run their 5-Star Cleaning Service), they are caught up in a war between rival Triad gangs fighting for control of the counterfeit currency market.",
+          "poster_path": "/ngFYme3fGnwkssHkPXZr3peI6iW.jpg",
+          "release_date": "1983-07-07",
+          "title": "Winners & Sinners",
+          "video": false,
+          "vote_average": 6.8,
+          "vote_count": 107
+        },
+        {
+          "adult": false,
+          "backdrop_path": "/26kpnsUCvhcdy5pe5tKXUD4CbjD.jpg",
+          "genre_ids": [
+            18,
+            28
+          ],
+          "id": 48773,
+          "media_type": "movie",
+          "original_language": "cn",
+          "original_title": "死亡塔",
+          "overview": "In this dark tale of revenge, Bruce Lee \"returns\" as Billy Lo, whose best friend Chin Ku dies of a sudden illness. But suspicion of foul play arises when a gang tries to steal Ku's coffin at the funeral using a helicopter. When Lo's younger brother Lo hears about the incident, he leaves his Buddhist master to investigate the truth. His trail soon leads him to the Castle of Death, the last place Chin Ku was seen alive. There, he meets and befriends an unlikely ally--a cruel and merciless martial arts expert  who is also the tower's master. But when the master dies under mysterious circumstances, Lo ends up dueling with someone far more terrifying.",
+          "poster_path": "/ZVvnxJ9cVjiZgODQOZo9QNqbat.jpg",
+          "release_date": "1981-03-21",
+          "title": "Game Of Death II",
+          "video": false,
+          "vote_average": 5.7,
+          "vote_count": 107
+        }
+      ],
+      "known_for_department": "Acting",
+      "name": "Ka Lee",
+      "popularity": 0.6,
+      "profile_path": null
+    },
+    {
+      "adult": false,
+      "gender": 0,
+      "id": 2172947,
+      "known_for": [
+        {
+          "adult": false,
+          "backdrop_path": "/pXVUdTl0gAyqTT96TkTf8EaazSX.jpg",
+          "genre_ids": [
+            10402,
+            10749
+          ],
+          "id": 321187,
+          "media_type": "movie",
+          "original_language": "pt",
+          "original_title": "High School Musical: O Desafio",
+          "overview": "A new school year begins; students are invited to the first music competition, but only one band can win.",
+          "poster_path": "/qtVnd3rZrImYh71EE2Sjr2N8Lui.jpg",
+          "release_date": "2010-02-05",
+          "title": "High School Musical: The Challenge",
+          "video": false,
+          "vote_average": 4.5,
+          "vote_count": 18
+        }
+      ],
+      "known_for_department": "Acting",
+      "name": "Karol Ka",
+      "popularity": 0.6,
+      "profile_path": null
+    },
+    {
+      "adult": false,
+      "gender": 0,
+      "id": 1914073,
+      "known_for": [
+        {
+          "adult": false,
+          "genre_ids": [
+            18,
+            28,
+            80
+          ],
+          "id": 484120,
+          "media_type": "movie",
+          "original_language": "cn",
+          "original_title": "殺手自由人",
+          "overview": "Hitman Chi-ho (Chin Siu-ho) kills the son of the head of triad in Korea. So the head of the triad puts a death notice to kill Chi-ho. However, when Chi-ho killed the son of the triad head, there is a witness -- Anna, a young girl who seems to be in love with Chi-ho because of his eyes. During the investigation of the case, the cops follow Anna and her friend Ruby to find if there is anything about the murder. One day, Chi-ho visits Anna and they find love for one another. However, at the same time the killers from the triads are come and trouble ensues.",
+          "poster_path": "/58y1t74b4TsMbVOBxiBMeex7NLG.jpg",
+          "release_date": "1999-06-05",
+          "title": "Hitman's Call",
+          "video": false,
+          "vote_average": 0,
+          "vote_count": 0
+        }
+      ],
+      "known_for_department": "Acting",
+      "name": "Ka Fu",
+      "popularity": 0.6,
+      "profile_path": null
+    },
+    {
+      "adult": false,
+      "gender": 0,
+      "id": 1377481,
+      "known_for": [
+        {
+          "adult": false,
+          "genre_ids": [
+            14,
+            28
+          ],
+          "id": 84275,
+          "media_type": "movie",
+          "original_language": "cn",
+          "original_title": "李三腳威震地獄門",
+          "overview": "Everyone's favorite martial artist \"\"Bruce\"\" winds up fighting for his life and soul in hell against an evil Warlord intent on making him mincemeat - and he has recruited some of the 1970s most iconic B-movie characters to help dispatch the great one. But when that won't do the trick, he uses monsters, mummies and beautiful women to get the little dragon at any cost.",
+          "poster_path": "/khvhCVdKJ1Mph7h7HATKoNlfG3T.jpg",
+          "release_date": "1977-03-25",
+          "title": "The Dragon Lives Again",
+          "video": false,
+          "vote_average": 6.5,
+          "vote_count": 4
+        }
+      ],
+      "known_for_department": "Acting",
+      "name": "Ka Wa",
+      "popularity": 0.6,
+      "profile_path": null
+    },
+    {
+      "adult": false,
+      "gender": 0,
+      "id": 1771857,
+      "known_for": [
+        {
+          "backdrop_path": "/e8nDMirfguD3uMxTUxJ6Z5Mpd5l.jpg",
+          "first_air_date": "2015-06-17",
+          "genre_ids": [
+            35,
+            18
+          ],
+          "id": 66649,
+          "media_type": "tv",
+          "name": "Nina",
+          "origin_country": [
+            "FR"
+          ],
+          "original_language": "fr",
+          "original_name": "Nina",
+          "overview": "At the age of 39, Nina finds herself a trainee nurse under the orders of Léo, a 15-year-younger \"girl\" with a difficult temperament, and Dr. Proust, who likes to scare her ... Not easy ! Especially for all, Nina is the wife of the boss, Costa Antonakis, his ex with whom nothing is really settled despite their divorce. But after healing Lily, their daughter, for ten years, nothing scares Nina! With years spent in hospitals in contact with doctors such as nurses and health-care aides, Nina, the daughter of a great internist and a renowned obstetrician, runs the risk of disappointing them to trace her own path in the hospital universe to which she can not really escape ... Listening and care as a profession of faith, the desire to live and love as a prescription ...",
+          "poster_path": "/qoYkQRQgEaIPbLlRrf052z51BXI.jpg",
+          "vote_average": 7,
+          "vote_count": 3
+        }
+      ],
+      "known_for_department": "Acting",
+      "name": "Ana Ka",
+      "popularity": 0.6,
+      "profile_path": null
+    },
+    {
+      "adult": false,
+      "gender": 0,
+      "id": 589750,
+      "known_for": [
+        {
+          "adult": false,
+          "genre_ids": [
+            18
+          ],
+          "id": 80608,
+          "media_type": "movie",
+          "original_language": "ko",
+          "original_title": "마고",
+          "overview": "Mago is one of the largest Korean film productions. Many artists, poets and musicians contributed to tell the zen story of creation. 825 Nude Korean actors were used to tell the story beginning with paradise and progressing into man's destruction.",
+          "poster_path": "/hPqNQeV3uE8gRSc5FeW8aERk21P.jpg",
+          "release_date": "2002-06-13",
+          "title": "Naked Paradise",
+          "video": false,
+          "vote_average": 0,
+          "vote_count": 0
+        }
+      ],
+      "known_for_department": "Acting",
+      "name": "Ae Ka",
+      "popularity": 0.6,
+      "profile_path": null
+    },
+    {
+      "adult": false,
+      "gender": 0,
+      "id": 1300331,
+      "known_for": [
+        {
+          "adult": false,
+          "genre_ids": [
+            18
+          ],
+          "id": 258884,
+          "media_type": "movie",
+          "original_language": "en",
+          "original_title": "新世界の夜明け",
+          "overview": "Coco, a Beijing modern girl wants to spend a romantic and fancy Christmas vacation in Osaka. However the place where she gets in is Shinsekai ( \"New World\" in English, is an old neighbourhood located next to south Osaka city's downtown \"Minami \" area, as known as one of the most poorest and dangerous area in Osaka.)When she arrives there, she starts feeling regret and frustrated by the encounters and the landscapes which are far beyond her expectation. Suddenly she is involved in an incident surrounds a Chinese family there, meanwhile she starts fascinated by Shinsekai through her wondering. In this short and unusual Christmas vacation, Coco discovers a \"Japan \" she never knows and a \"China\" that she is not familiar with.",
+          "release_date": "2011-10-29",
+          "title": "New World",
+          "video": false,
+          "vote_average": 8,
+          "vote_count": 2
+        }
+      ],
+      "known_for_department": "Acting",
+      "name": "Shi Ka",
+      "popularity": 0.6,
+      "profile_path": null
+    },
+    {
+      "adult": false,
+      "gender": 0,
+      "id": 1782713,
+      "known_for": [
+        {
+          "adult": false,
+          "backdrop_path": "/ehtMTb2IzDl1coSvfuKDfSA3cjt.jpg",
+          "genre_ids": [
+            16,
+            80
+          ],
+          "id": 437220,
+          "media_type": "movie",
+          "original_language": "zh",
+          "original_title": "大世界",
+          "overview": "Three parties pursue the million dollars that driver Xiao Zhang stole to help out his girlfriend.",
+          "poster_path": "/hDgqrlBmyFlD2MBu2Zave6S4Z80.jpg",
+          "release_date": "2018-01-12",
+          "title": "Have a Nice Day",
+          "video": false,
+          "vote_average": 5.3,
+          "vote_count": 26
+        }
+      ],
+      "known_for_department": "Acting",
+      "name": "Cao Ka",
+      "popularity": 0.6,
+      "profile_path": null
+    },
+    {
+      "adult": false,
+      "gender": 0,
+      "id": 1929552,
+      "known_for": [
+        {
+          "adult": false,
+          "backdrop_path": "/dVmWNBFsbkpFqamtsS7wqAH0918.jpg",
+          "genre_ids": [
+            10749,
+            28
+          ],
+          "id": 161604,
+          "media_type": "movie",
+          "original_language": "cn",
+          "original_title": "浪漫殺手自由人",
+          "overview": "A triad assassin is sent to kill a female witness to a murder only to fall in love with her instead.",
+          "poster_path": "/jjgNngYECWnIsF7BycPhFEcRGWe.jpg",
+          "release_date": "1990-05-17",
+          "title": "Killer's Romance",
+          "video": false,
+          "vote_average": 2.4,
+          "vote_count": 4
+        }
+      ],
+      "known_for_department": "Acting",
+      "name": "Ka Man",
+      "popularity": 0.6,
+      "profile_path": null
+    }
+  ],
+  "total_pages": 500,
+  "total_results": 10000
+}

@@ -6,6 +6,7 @@ plugins {
     id("org.jetbrains.dokka")
     id("maven-publish")
     id("signing")
+//    id(Plugins.swiftpackage) version Versions.swiftpackage
 }
 
 group = "app.moviebase"

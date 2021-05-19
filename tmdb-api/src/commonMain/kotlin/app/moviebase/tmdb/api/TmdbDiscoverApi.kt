@@ -35,7 +35,7 @@ class TmdbDiscoverApi(private val client: HttpClient) {
         language: String? = null,
         region: String? = null,
         discover: TmdbDiscover.Movie
-    ): TmdbPageResult<TmdbMovie> = discoverMovie(
+    ): TmdbMoviePageResult = discoverMovie(
         page = page,
         language = language,
         region = region,
@@ -47,7 +47,7 @@ class TmdbDiscoverApi(private val client: HttpClient) {
         language: String? = null,
         region: String? = null,
         parameters: Map<String, Any?>
-    ): TmdbPageResult<TmdbMovie> = client.get {
+    ): TmdbMoviePageResult = client.get {
         endPointV3("discover", "movie")
         parameterPage(page)
         parameterLanguage(language)
@@ -60,7 +60,7 @@ class TmdbDiscoverApi(private val client: HttpClient) {
         language: String? = null,
         region: String? = null,
         discover: TmdbDiscover.Show
-    ): TmdbPageResult<TmdbShow> = discoverShow(
+    ): TmdbShowPageResult = discoverShow(
         page = page,
         language = language,
         region = region,
@@ -72,7 +72,7 @@ class TmdbDiscoverApi(private val client: HttpClient) {
         language: String? = null,
         region: String? = null,
         parameters: Map<String, Any?>
-    ): TmdbPageResult<TmdbShow> = client.get {
+    ): TmdbShowPageResult = client.get {
         endPointV3("discover", "tv")
         parameterPage(page)
         parameterLanguage(language)

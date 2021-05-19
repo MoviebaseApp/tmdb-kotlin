@@ -11,23 +11,20 @@ class TmdbTrendingApi(private val client: HttpClient) {
         page: Int,
         language: String? = null,
         region: String? = null,
-    ): TmdbPageResult<TmdbMovie> = getTrending(TmdbRequestMediaType.MOVIE, timeWindow, page, language, region)
+    ): TmdbMoviePageResult = client.get {
+        endPointV4("trending", TmdbRequestMediaType.MOVIE.value, timeWindow.value)
+        parameterLanguage(language)
+        parameterRegion(region)
+        parameterPage(page)
+    }
 
     suspend fun getTrendingShows(
         timeWindow: TmdbTimeWindow,
         page: Int,
         language: String? = null,
         region: String? = null,
-    ): TmdbPageResult<TmdbShow> = getTrending(TmdbRequestMediaType.TV, timeWindow, page, language, region)
-
-    suspend fun <T : TmdbAnyMedia> getTrending(
-        mediaType: TmdbRequestMediaType,
-        timeWindow: TmdbTimeWindow,
-        page: Int,
-        language: String? = null,
-        region: String? = null,
-    ): TmdbPageResult<T> = client.get {
-        endPointV4("trending", mediaType.value, timeWindow.value)
+    ): TmdbShowPageResult = client.get {
+        endPointV4("trending", TmdbRequestMediaType.TV.value, timeWindow.value)
         parameterLanguage(language)
         parameterRegion(region)
         parameterPage(page)

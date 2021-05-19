@@ -62,5 +62,4 @@ class TmdbPeopleApiTest {
         assertThat(showCredits.cast).isNotNull()
         assertThat(showCredits.crew).isNotNull()
     }
-
 }

@@ -1,29 +1,35 @@
 object Versions {
     val versionMajor = 0
-    val versionMinor = 4
-    val versionPatch = 5
+    val versionMinor = 5
+    val versionPatch = 0
 
     val versionName = "$versionMajor.$versionMinor.$versionPatch"
 
     // Plugins
     val dokka = "1.4.30"
     val nexus = "1.0.0"
+    val swiftpackage = "2.0.3"
 
     // Kotlin
-    val kotlin = "1.5.0"
-    val coroutines = "1.5.0-RC"
-    val kotlinxDatetime = "0.2.0"
-    val ktor = "1.5.4"
-    val serialization = "1.2.0"
+    val kotlin = "1.4.32"
+    val coroutines = "1.4.3"
+    val kotlinxDatetime = "0.1.1"
+    val serialization = "1.1.0"
     val kotlinIo = "0.1.16"
 
     // Testing
     val junitJupiter = "5.7.0"
+
+    // Data
+    val ktor = "1.5.3"
+}
+
+object Plugins {
+    val dokka = "org.jetbrains.dokka:dokka-gradle-plugin:${Versions.dokka}"
+    val swiftpackage = "com.chromaticnoise.multiplatform-swiftpackage"
 }
 
 object Libs {
-
-    val dokka = "org.jetbrains.dokka:dokka-gradle-plugin:${Versions.dokka}"
 
     object Kotlin {
         val kotlin = "org.jetbrains.kotlin:kotlin-stdlib-jdk8:${Versions.kotlin}"

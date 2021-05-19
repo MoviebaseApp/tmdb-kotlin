@@ -51,14 +51,12 @@ data class TmdbResult<T>(
     val results: List<T>
 )
 
-@Serializable
-data class TmdbPageResult<T>(
-    @SerialName("page") val page: Int,
-    @SerialName("results") val results: List<T> = emptyList(),
-    @SerialName("total_results") val totalResults: Int,
-    @SerialName("total_pages") val totalPages: Int,
-)
-
+interface TmdbPageResult<T> {
+    val page: Int
+    val results: List<T>
+    val totalResults: Int
+    val totalPages: Int
+}
 
 @Serializable
 data class TmdbStatusResult(
@@ -94,7 +92,7 @@ data class TmdbGenre(
 data class TmdbKeyword(
     val id: Int,
     val name: String,
-) : TmdbSearchable
+)
 
 @Serializable
 data class TmdbExternalIds(

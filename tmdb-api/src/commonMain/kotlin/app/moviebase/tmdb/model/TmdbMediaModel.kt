@@ -75,6 +75,14 @@ data class TmdbMovie(
 ) : TmdbMediaListItem(), TmdbSearchable
 
 @Serializable
+data class TmdbMoviePageResult(
+    @SerialName("page") override val page: Int,
+    @SerialName("results") override val results: List<TmdbMovie> = emptyList(),
+    @SerialName("total_results") override val totalResults: Int,
+    @SerialName("total_pages") override val totalPages: Int,
+) : TmdbPageResult<TmdbMovie>
+
+@Serializable
 @SerialName("tv")
 data class TmdbShow(
     @SerialName("poster_path") override val posterPath: String?,
@@ -91,3 +99,12 @@ data class TmdbShow(
     @SerialName("name") val name: String,
     @SerialName("original_name") val originalName: String,
 ) : TmdbMediaListItem(), TmdbSearchable
+
+@Serializable
+data class TmdbShowPageResult(
+    @SerialName("page") override val page: Int,
+    @SerialName("results") override val results: List<TmdbShow> = emptyList(),
+    @SerialName("total_results") override val totalResults: Int,
+    @SerialName("total_pages") override val totalPages: Int,
+) : TmdbPageResult<TmdbShow>
+

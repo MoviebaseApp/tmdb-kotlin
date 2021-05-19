@@ -109,7 +109,7 @@ data class TmdbBelongsToCollection(
     @SerialName("name") val name: String,
     @SerialName("backdrop_path") val backdropPath: String? = null,
     @SerialName("parts") val parts: List<TmdbMovie>,
-) : TmdbSearchable
+)
 
 @Serializable
 data class TmdbReview(

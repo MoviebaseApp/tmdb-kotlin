@@ -13,15 +13,31 @@ class TmdbSearchApi(private val client: HttpClient) {
         language: String? = null,
         region: String? = null,
         includeAdult: Boolean = false
-    ): TmdbPageResult<TmdbMovie> = find(TmdbSearchType.TV, query, page, language, region, includeAdult)
+    ): TmdbMoviePageResult = client.get {
+        endSearch(TmdbSearchType.MOVIE)
+
+        parameterQuery(query)
+        parameterIncludeAdult(includeAdult)
+        parameterPage(page)
+        parameterRegion(region)
+        parameterLanguage(language)
+    }
 
     suspend fun findShows(
         query: String,
         page: Int,
         language: String? = null,
         region: String? = null,
-        includeAdult: Boolean = false
-    ): TmdbPageResult<TmdbShow> = find(TmdbSearchType.TV, query, page, language, region, includeAdult)
+        includeAdult: Boolean? = null
+    ): TmdbShowPageResult = client.get {
+        endSearch(TmdbSearchType.TV)
+
+        parameterQuery(query)
+        parameterIncludeAdult(includeAdult)
+        parameterPage(page)
+        parameterRegion(region)
+        parameterLanguage(language)
+    }
 
     suspend fun findPeople(
         query: String,
@@ -29,39 +45,58 @@ class TmdbSearchApi(private val client: HttpClient) {
         language: String? = null,
         region: String? = null,
         includeAdult: Boolean = false
-    ): TmdbPageResult<TmdbPerson> = find(TmdbSearchType.PERSON, query, page, language, region, includeAdult)
+    ): TmdbPersonPageResult = client.get {
+        endSearch(TmdbSearchType.PERSON)
+
+        parameterQuery(query)
+        parameterIncludeAdult(includeAdult)
+        parameterPage(page)
+        parameterRegion(region)
+        parameterLanguage(language)
+    }
 
     suspend fun findCompanies(
         query: String,
         page: Int
-    ): TmdbPageResult<TmdbCompany> = find(TmdbSearchType.COMPANY, query, page)
+    ): TmdbCompanyPageResult = client.get {
+        endSearch(TmdbSearchType.COMPANY)
+
+        parameterQuery(query)
+        parameterPage(page)
+    }
 
     suspend fun findCollections(
         query: String,
         page: Int,
         language: String? = null,
-    ): TmdbPageResult<TmdbBelongsToCollection> = find(TmdbSearchType.COLLECTION, query, page, language)
+    ): TmdbCollectionPageResult = client.get {
+        endSearch(TmdbSearchType.COLLECTION)
+
+        parameterQuery(query)
+        parameterPage(page)
+        parameterLanguage(language)
+    }
 
     suspend fun findKeywords(
         query: String,
         page: Int
-    ): TmdbPageResult<TmdbKeyword> = find(TmdbSearchType.KEYWORD, query, page)
+    ): TmdbKeywordPageResult = client.get {
+        endSearch(TmdbSearchType.KEYWORD)
 
-    suspend fun <T : TmdbSearchable> find(
-        searchType: TmdbSearchType,
-        query: String,
-        page: Int,
-        language: String? = null,
-        region: String? = null,
-        includeAdult: Boolean? = null
-    ): TmdbPageResult<T> = client.get {
-        endPointV3("search", searchType.value)
-
-        parameter("query", query)
-        includeAdult?.let { parameter("include_adult", it) }
+        parameterQuery(query)
         parameterPage(page)
-        parameterRegion(region)
-        parameterLanguage(language)
+    }
+
+    private fun HttpRequestBuilder.endSearch(searchType: TmdbSearchType) {
+        endPointV3("search", searchType.value)
+    }
+
+    private fun HttpRequestBuilder.parameterIncludeAdult(includeAdult: Boolean?) {
+        includeAdult?.let { parameter("include_adult", it) }
+    }
+
+    private fun HttpRequestBuilder.parameterQuery(query: String) {
+        parameter("query", query)
     }
 
 }

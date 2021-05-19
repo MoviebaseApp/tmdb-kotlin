@@ -18,6 +18,14 @@ data class TmdbCompany(
 ): TmdbSearchable
 
 @Serializable
+data class TmdbCompanyPageResult(
+    @SerialName("page") override val page: Int,
+    @SerialName("results") override val results: List<TmdbCompany> = emptyList(),
+    @SerialName("total_results") override val totalResults: Int,
+    @SerialName("total_pages") override val totalPages: Int,
+) : TmdbPageResult<TmdbCompany>
+
+@Serializable
 data class TmdbCompanyDetail(
     @SerialName("id") val id: Int,
     @SerialName("headquarters") val headquarters: String,
