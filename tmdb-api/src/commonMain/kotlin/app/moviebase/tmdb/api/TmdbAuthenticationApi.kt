@@ -3,6 +3,7 @@ package app.moviebase.tmdb.api
 import app.moviebase.tmdb.model.TmdbGuestSession
 import app.moviebase.tmdb.model.TmdbRequestToken
 import app.moviebase.tmdb.model.TmdbSession
+import app.moviebase.tmdb.remote.endPointV3
 import io.ktor.client.*
 import io.ktor.client.request.*
 

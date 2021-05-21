@@ -3,7 +3,8 @@ package app.moviebase.tmdb.api
 import app.moviebase.tmdb.model.TmdbAccountDetails
 import app.moviebase.tmdb.model.TmdbFavoriteRequestBody
 import app.moviebase.tmdb.model.TmdbWatchlistRequestBody
-import app.moviebase.tmdb.remote.interceptRequest
+import app.moviebase.tmdb.remote.endPointV3
+import app.moviebase.tmdb.remote.json
 import io.ktor.client.*
 import io.ktor.client.request.*
 

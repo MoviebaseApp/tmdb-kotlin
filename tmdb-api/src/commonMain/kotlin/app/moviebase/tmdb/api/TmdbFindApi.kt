@@ -1,7 +1,7 @@
 package app.moviebase.tmdb.api
 
-import app.moviebase.tmdb.api.endPointV3
-import app.moviebase.tmdb.api.parameterLanguage
+import app.moviebase.tmdb.remote.endPointV3
+import app.moviebase.tmdb.remote.parameterLanguage
 import app.moviebase.tmdb.model.TmdbExternalSource
 import app.moviebase.tmdb.model.TmdbFindResults
 import io.ktor.client.*

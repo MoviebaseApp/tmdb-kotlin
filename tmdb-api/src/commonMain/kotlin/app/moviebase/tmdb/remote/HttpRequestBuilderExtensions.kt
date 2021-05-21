@@ -1,4 +1,4 @@
-package app.moviebase.tmdb.api
+package app.moviebase.tmdb.remote
 
 import app.moviebase.tmdb.model.AppendResponse
 import app.moviebase.tmdb.TmdbWebConfig

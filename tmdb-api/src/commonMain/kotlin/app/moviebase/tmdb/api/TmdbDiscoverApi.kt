@@ -3,6 +3,7 @@ package app.moviebase.tmdb.api
 import app.moviebase.tmdb.discover.DiscoverCategory
 import app.moviebase.tmdb.discover.DiscoverFactory
 import app.moviebase.tmdb.model.*
+import app.moviebase.tmdb.remote.*
 import io.ktor.client.*
 import io.ktor.client.request.*
 

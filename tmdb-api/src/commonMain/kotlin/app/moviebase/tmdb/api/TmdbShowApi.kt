@@ -1,6 +1,9 @@
 package app.moviebase.tmdb.api
 
 import app.moviebase.tmdb.model.*
+import app.moviebase.tmdb.remote.endPointV3
+import app.moviebase.tmdb.remote.parameterAppendResponses
+import app.moviebase.tmdb.remote.parameterLanguage
 import io.ktor.client.*
 import io.ktor.client.request.*
 
