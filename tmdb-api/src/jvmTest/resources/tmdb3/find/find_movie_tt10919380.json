@@ -1,0 +1,29 @@
+{
+  "movie_results": [
+    {
+      "backdrop_path": "/eShw0LB5CkoEfYtpUcXPD85oz5Q.jpg",
+      "title": "Freaky",
+      "genre_ids": [
+        27,
+        53,
+        35,
+        14
+      ],
+      "original_language": "en",
+      "original_title": "Freaky",
+      "poster_path": "/8xC6QSyxrpm0D5A6iyHNemEWBVe.jpg",
+      "video": false,
+      "vote_average": 6.9,
+      "overview": "A mystical, ancient dagger causes a notorious serial killer to magically switch bodies with a 17-year-old girl.",
+      "id": 551804,
+      "vote_count": 706,
+      "release_date": "2020-11-12",
+      "adult": false,
+      "popularity": 48.084
+    }
+  ],
+  "person_results": [],
+  "tv_results": [],
+  "tv_episode_results": [],
+  "tv_season_results": []
+}

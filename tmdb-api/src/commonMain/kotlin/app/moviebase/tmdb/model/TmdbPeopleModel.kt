@@ -32,6 +32,9 @@ enum class TmdbGender(val value: Int) {
 
     @SerialName("2")
     MALE(2),
+
+    @SerialName("3")
+    NON_BINARY(3),
 }
 
 @Serializable
@@ -72,8 +75,11 @@ data class TmdbAggregateCredits(
 
 @Serializable
 data class TmdbPerson(
-    @SerialName("name") override val name: String,
+    @SerialName("adult") val adult: Boolean,
+    @SerialName("gender") val gender: TmdbGender,
     @SerialName("id") override val id: Int,
+    @SerialName("known_for_department") val knownForDepartment: String,
+    @SerialName("name") override val name: String,
     @SerialName("profile_path") override val profilePath: String? = null,
     @SerialName("popularity") override val popularity: Float,
 ) : TmdbAnyPerson, TmdbSearchable

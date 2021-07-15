@@ -15,7 +15,8 @@ enum class TmdbSearchType(val value: String) {
 @Serializable
 data class TmdbFindResults(
     @SerialName("movie_results") val movieResults: List<TmdbMovie> = emptyList(),
-    @SerialName("tv_results") val showResults: List<TmdbShow> = emptyList()
+    @SerialName("tv_results") val showResults: List<TmdbShow> = emptyList(),
+    @SerialName("person_results") val personResults: List<TmdbPerson> = emptyList(),
 )
 
 interface TmdbSearchable
