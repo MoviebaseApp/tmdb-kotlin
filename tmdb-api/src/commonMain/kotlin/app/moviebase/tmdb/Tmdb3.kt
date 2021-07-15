@@ -1,27 +1,19 @@
 package app.moviebase.tmdb
 
 import app.moviebase.tmdb.api.*
+import app.moviebase.tmdb.remote.TmdbHttpClientFactory
+import app.moviebase.tmdb.remote.TmdbSessionProvider
 import app.moviebase.tmdb.remote.TmdbLogLevel
-import app.moviebase.tmdb.remote.buildHttpClient
 import io.ktor.client.*
-import io.ktor.client.request.*
 
 class Tmdb3(
-    private val tmdbApiKey: String,
-    logLevel: TmdbLogLevel = TmdbLogLevel.NONE
+    tmdbApiKey: String,
+    logLevel: TmdbLogLevel = TmdbLogLevel.NONE,
+    tmdbSessionProvider: TmdbSessionProvider? = null
 ) {
 
-    var sessionId: String? = null
-
-    private val client: HttpClient = buildHttpClient(logLevel) {
-        it.parameter(TmdbUrlParameter.API_KEY, tmdbApiKey)
-    }
-
-    private val clientWithSession: HttpClient = buildHttpClient(logLevel) {
-        it.parameter(TmdbUrlParameter.API_KEY, tmdbApiKey)
-        requireNotNull(sessionId) { "session id is not set in Tmdb3 instance" }
-        it.parameter(TmdbUrlParameter.SESSION_ID, sessionId)
-    }
+    private val client: HttpClient = TmdbHttpClientFactory.create(tmdbApiKey, logLevel)
+    private val clientWithSession: HttpClient = TmdbHttpClientFactory.createWithSession(tmdbApiKey, logLevel, tmdbSessionProvider)
 
     val account = TmdbAccountApi(clientWithSession)
     val authentication = TmdbAuthenticationApi(client)
@@ -49,3 +41,4 @@ class Tmdb3(
     val showEpisodeGroups = TmdbShowEpisodeGroupsApi(client)
 
 }
+
