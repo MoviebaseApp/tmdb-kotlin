@@ -59,6 +59,13 @@ object TmdbImageSize {
         TmdbImageType.LOGO -> getLogoSizeKey(width, height)
     }
 
+    fun getLargestSizeKey(type: TmdbImageType, width: Int) = when (type) {
+        TmdbImageType.POSTER -> getPosterSizeKey(if (width < 500) 500 else 780)
+        TmdbImageType.BACKDROP -> getBackdropSizeKey(if (width < 780) 780 else 1280)
+        TmdbImageType.PROFILE -> getProfileSizeKey(200, 632)
+        TmdbImageType.LOGO -> getLogoSizeKey(if (width < 300) 300 else 500, 500)
+    }
+
     fun getLogoSizeKey(width: Int, height: Int): String = when {
         width <= 45 -> LOGO_W45
         height <= 60 -> LOGO_H60
@@ -94,6 +101,7 @@ object TmdbImageSize {
         width <= 1280 -> BACKDROP_W1280
         else -> ORIGINAL
     }
+
 
 }
 
