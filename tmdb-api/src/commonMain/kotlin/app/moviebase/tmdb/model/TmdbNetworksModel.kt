@@ -34,6 +34,7 @@ object TmdbNetworkId {
     const val ADULT_SWIM = 80
     const val TNT = 41
     const val HULU = 453
+    const val YOUTUBE_PREMIUM = 1436
 }
 
 @Serializable
