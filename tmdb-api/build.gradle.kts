@@ -104,7 +104,7 @@ tasks.withType<KotlinCompile> {
 tasks.withType<Test>().configureEach {
     useJUnitPlatform()
     testLogging {
-        events("passed", "skipped", "failed")
+        events("failed")
         showStandardStreams = true
     }
 }
@@ -151,5 +151,4 @@ afterEvaluate {
     signing {
         sign(publishing.publications)
     }
-
 }

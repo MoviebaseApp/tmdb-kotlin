@@ -39,6 +39,10 @@ class TmdbMoviesApiTest {
 
         assertThat(movieDetails.id).isEqualTo(10140)
         assertThat(movieDetails.videos).isNotNull()
+        assertThat(movieDetails.popularity).isEqualTo(26.301f)
+        assertThat(movieDetails.voteAverage).isEqualTo(6.4f)
+        assertThat(movieDetails.voteCount).isEqualTo(4305)
+        assertThat(movieDetails.overview).isEqualTo("This time around Edmund and Lucy Pevensie, along with their pesky cousin Eustace Scrubb find themselves swallowed into a painting and on to a fantastic Narnian ship headed for the very edges of the world.")
         val tmdbVideo = movieDetails.videos?.results?.first()
         assertThat(tmdbVideo).isNotNull()
         assertThat(tmdbVideo?.id).isEqualTo("54b36eb9c3a3680939006425")
