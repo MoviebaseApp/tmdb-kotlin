@@ -33,8 +33,23 @@ object TmdbImageUrlBuilder {
         return build(imagePath, sizeKey)
     }
 
+    fun build(image: TmdbImage, sizeKey: String): String {
+        return build(image.path, sizeKey)
+    }
+
     fun build(image: TmdbImage, width: Int, height: Int): String {
         return build(image.path, image.type, width, height)
+    }
+
+    /**
+     * Builds fallback URLs with the largest sizes, which should everytime available on TMDB.
+     */
+    fun buildAlternativeUrls(image: TmdbImage, width: Int): List<String> {
+        val sizeKey = TmdbImageSize.getLargestSizeKey(image.type, width)
+        val largestUrl = build(image, sizeKey)
+        val originalUrl = build(image, TmdbImageSize.ORIGINAL)
+
+        return listOf(largestUrl, originalUrl)
     }
 
     fun buildPoster(image: TmdbPosterMedia, width: Int): String? {

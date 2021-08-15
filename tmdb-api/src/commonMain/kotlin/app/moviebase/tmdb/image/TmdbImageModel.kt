@@ -101,8 +101,6 @@ object TmdbImageSize {
         width <= 1280 -> BACKDROP_W1280
         else -> ORIGINAL
     }
-
-
 }
 
 object YoutubeImageSize {
