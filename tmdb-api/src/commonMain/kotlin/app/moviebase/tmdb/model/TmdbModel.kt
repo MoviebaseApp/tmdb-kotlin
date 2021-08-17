@@ -117,7 +117,10 @@ enum class TmdbVideoType(val value: String) {
     CLIP("Clip"),
 
     @SerialName("Featurette")
-    FEATURETTE("Featurette");
+    FEATURETTE("Featurette"),
+
+    @SerialName("Opening Credits")
+    OPENING_CREDITS("Opening Credits");
 }
 
 /**
