@@ -74,9 +74,18 @@ object TmdbImageUrlBuilder {
         return TmdbWebConfig.BASE_URL_YOUTUBE_IMAGE + "/" + youtubeKey + "/" + imageFileSize + ".jpg"
     }
 
-    fun buildYoutube(video: TmdbVideo, width: Int): String? {
+    fun buildYoutube(youtubeKey: String, width: Int): String {
         val imageFileSize = YoutubeImageSize.getYoutubeSizeKey(width)
+        return buildYoutube(youtubeKey, imageFileSize)
+    }
+
+    fun buildYoutube(video: TmdbVideo, width: Int): String? {
         val key = video.key ?: return null
-        return buildYoutube(key, imageFileSize)
+        return buildYoutube(key, width)
+    }
+
+    fun buildYoutubeAlternativeUrls(youtubeKey: String): List<String> {
+        val url = buildYoutube(youtubeKey, YoutubeImageSize.SIZE_HQDEFAULT)
+        return listOf(url)
     }
 }
