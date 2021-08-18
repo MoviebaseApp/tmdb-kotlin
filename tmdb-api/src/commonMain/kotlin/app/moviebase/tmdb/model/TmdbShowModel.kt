@@ -1,6 +1,5 @@
 package app.moviebase.tmdb.model
 
-import app.moviebase.tmdb.image.TmdbImage
 import app.moviebase.tmdb.remote.LocalDateSerializer
 import kotlinx.datetime.LocalDate
 import kotlinx.serialization.SerialName
@@ -63,7 +62,6 @@ enum class TmdbShowType(val value: String) {
 }
 
 
-
 @Serializable
 data class TmdbShowDetail(
     @SerialName("id") override val id: Int,
@@ -87,7 +85,7 @@ data class TmdbShowDetail(
     val languages: List<String>,
     @SerialName("origin_country") val originCountry: List<String>,
     @SerialName("original_language") val originalLanguage: String,
-    @SerialName("original_name") val originName: String,
+    @SerialName("original_name") val originalName: String,
     val overview: String,
     val tagline: String,
     @SerialName("vote_average") val voteAverage: Float,
@@ -97,7 +95,11 @@ data class TmdbShowDetail(
     @SerialName("credits") val credits: TmdbCredits? = null,
     @SerialName("aggregate_credits") val aggregateCredits: TmdbAggregateCredits? = null,
     @SerialName("videos") val videos: TmdbResult<TmdbVideo>? = null,
-): TmdbAnyMedia, TmdbBackdropMedia, TmdbPosterMedia
+    @SerialName("content_ratings") val contentRatings: TmdbResult<TmdbContentRating>? = null,
+) : TmdbAnyMedia, TmdbBackdropMedia, TmdbPosterMedia
+
+fun TmdbResult<TmdbContentRating>.getContentRating(country: String): String? =
+    results.firstOrNull { it.iso3166 == country }?.rating
 
 @Serializable
 data class TmdbSeason(
@@ -108,7 +110,7 @@ data class TmdbSeason(
     @SerialName("poster_path") override val posterPath: String?,
     @SerialName("season_number") val seasonNumber: Int,
     val episodes: List<TmdbEpisode>? = null,
-): TmdbAnyMedia, TmdbPosterMedia {
+) : TmdbAnyMedia, TmdbPosterMedia {
 
     val numberOfEpisodes get() = episodeCount ?: episodes?.size ?: 0
 }
@@ -126,7 +128,7 @@ data class TmdbSeasonDetail(
     @SerialName("external_ids") val externalIds: TmdbExternalIds,
     @SerialName("videos") val videos: TmdbResult<TmdbVideo>,
     @SerialName("images") val images: TmdbResult<TmdbImages>,
-): TmdbAnyMedia, TmdbPosterMedia  {
+) : TmdbAnyMedia, TmdbPosterMedia {
 
     val numberOfEpisodes get() = episodeCount ?: episodes?.size ?: 0
 
@@ -164,7 +166,7 @@ data class TmdbEpisodeDetail(
     @SerialName("crew") val crew: List<TmdbCrew>,
     @SerialName("guest_stars") val guestStars: List<TmdbCast>,
     @SerialName("external_ids") val externalIds: TmdbExternalIds,
-): TmdbAnyMedia, TmdbBackdropMedia  {
+) : TmdbAnyMedia, TmdbBackdropMedia {
     override val backdropPath: String? get() = stillPath
 }
 

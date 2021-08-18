@@ -69,9 +69,9 @@ class TmdbMoviesApiTest {
             )
         )
 
-        val certification = movieDetails.getCertification("FR")
-        val releaseDate = movieDetails.getReleaseDate("FR")
-        val releaseDates = movieDetails.getReleaseDatesBy("FR")
+        val certification = movieDetails.releaseDates?.getCertification("FR")
+        val releaseDate = movieDetails.releaseDates?.getReleaseDateBy("FR")
+        val releaseDates = movieDetails.releaseDates?.getReleaseDatesBy("FR")
 
         assertThat(certification).isEqualTo("U")
         assertThat(releaseDates).hasSize(5)

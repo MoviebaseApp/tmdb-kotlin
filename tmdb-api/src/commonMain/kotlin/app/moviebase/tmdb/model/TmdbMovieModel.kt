@@ -70,6 +70,7 @@ data class TmdbMovieDetail(
     val title: String,
     val runtime: Int? = null,
     @SerialName("original_title") val originalTitle: String,
+    @SerialName("original_language") val originalLanguage: String,
     val overview: String,
     @SerialName("poster_path") val posterPath: String?,
     @SerialName("vote_average") val voteAverage: Float,
@@ -92,18 +93,17 @@ data class TmdbMovieDetail(
 
 }
 
-fun TmdbMovieDetail.getCertification(country: String): String? =
+fun TmdbResult<TmdbReleaseDates>.getCertification(country: String): String? =
     getReleaseDatesBy(country)
         ?.sortedBy { it.type }
         ?.find { !it.certification.isNullOrBlank() }
         ?.certification
 
-fun TmdbMovieDetail.getReleaseDate(country: String): TmdbReleaseDate? =
+fun TmdbResult<TmdbReleaseDates>.getReleaseDateBy(country: String): TmdbReleaseDate? =
     getReleaseDatesBy(country)?.minByOrNull { it.type }
 
-fun TmdbMovieDetail.getReleaseDatesBy(country: String): List<TmdbReleaseDate>? =
-    releaseDates?.results?.find { it.iso3166 == country }?.releaseDates
-
+fun TmdbResult<TmdbReleaseDates>.getReleaseDatesBy(country: String): List<TmdbReleaseDate>? =
+    results.find { it.iso3166 == country }?.releaseDates
 
 @Serializable
 data class TmdbReleaseDates(
