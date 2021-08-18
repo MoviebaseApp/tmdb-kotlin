@@ -92,6 +92,18 @@ data class TmdbMovieDetail(
 
 }
 
+fun TmdbMovieDetail.getCertification(country: String): String? =
+    getReleaseDatesBy(country)
+        ?.sortedBy { it.type }
+        ?.find { !it.certification.isNullOrBlank() }
+        ?.certification
+
+fun TmdbMovieDetail.getReleaseDate(country: String): TmdbReleaseDate? =
+    getReleaseDatesBy(country)?.minByOrNull { it.type }
+
+fun TmdbMovieDetail.getReleaseDatesBy(country: String): List<TmdbReleaseDate>? =
+    releaseDates?.results?.find { it.iso3166 == country }?.releaseDates
+
 
 @Serializable
 data class TmdbReleaseDates(
