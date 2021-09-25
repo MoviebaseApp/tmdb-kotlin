@@ -83,6 +83,8 @@ data class TmdbMovieDetail(
     @SerialName("release_date") @Serializable(LocalDateSerializer::class) val releaseDate: LocalDate?,
     val revenue: Long,
     @SerialName("release_dates") val releaseDates: TmdbResult<TmdbReleaseDates>? = null,
+    @SerialName("production_companies") val productionCompanies: List<TmdbCompany>? = null,
+    @SerialName("production_countries") val productionCountries: List<TmdbCountry>? = null,
     @SerialName("watch/providers") val watchProviders: TmdbProviderResult? = null,
     @SerialName("credits") val credits: TmdbCredits? = null,
     @SerialName("videos") val videos: TmdbResult<TmdbVideo>? = null,
