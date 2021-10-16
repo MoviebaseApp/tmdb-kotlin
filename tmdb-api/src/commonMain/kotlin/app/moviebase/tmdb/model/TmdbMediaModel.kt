@@ -91,7 +91,7 @@ data class TmdbShow(
     @SerialName("backdrop_path") override val backdropPath: String?,
     @SerialName("vote_average") override val voteAverage: Float,
     @SerialName("overview") override val overview: String,
-    @SerialName("first_air_date") @Serializable(LocalDateSerializer::class) val firstAirDate: LocalDate?,
+    @SerialName("first_air_date") @Serializable(LocalDateSerializer::class) val firstAirDate: LocalDate? = null,
     @SerialName("origin_country") val originCountry: List<String>,
     @SerialName("genre_ids") override val genresIds: List<Int>,
     @SerialName("original_language") override val originalLanguage: String,
