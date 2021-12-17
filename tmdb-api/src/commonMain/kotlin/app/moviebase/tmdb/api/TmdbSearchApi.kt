@@ -4,7 +4,9 @@ import app.moviebase.tmdb.model.*
 import app.moviebase.tmdb.remote.endPointV3
 import app.moviebase.tmdb.remote.parameterLanguage
 import app.moviebase.tmdb.remote.parameterPage
+import app.moviebase.tmdb.remote.parameterPrimaryReleaseYear
 import app.moviebase.tmdb.remote.parameterRegion
+import app.moviebase.tmdb.remote.parameterYear
 import io.ktor.client.*
 import io.ktor.client.request.*
 
@@ -16,7 +18,9 @@ class TmdbSearchApi(private val client: HttpClient) {
         page: Int,
         language: String? = null,
         region: String? = null,
-        includeAdult: Boolean = false
+        includeAdult: Boolean = false,
+        year: Int? = null,
+        primaryReleaseYear: Int? = null,
     ): TmdbMoviePageResult = client.get {
         endSearch(TmdbSearchType.MOVIE)
 
@@ -25,6 +29,8 @@ class TmdbSearchApi(private val client: HttpClient) {
         parameterPage(page)
         parameterRegion(region)
         parameterLanguage(language)
+        parameterYear(year)
+        parameterPrimaryReleaseYear(primaryReleaseYear)
     }
 
     suspend fun findShows(

@@ -42,6 +42,14 @@ fun HttpRequestBuilder.parameterPage(page: Int) {
     parameter("page", page)
 }
 
+fun HttpRequestBuilder.parameterYear(year: Int?) {
+    year?.let { parameter("year", it) }
+}
+
+fun HttpRequestBuilder.parameterPrimaryReleaseYear(year: Int?) {
+    year?.let { parameter("primary_release_year", it) }
+}
+
 fun HttpRequestBuilder.parameterAppendResponses(appendResponses: Iterable<AppendResponse>?) {
     appendResponses?.let { parameter("append_to_response", AppendResponse.build(it)) }
 }

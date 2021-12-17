@@ -13,6 +13,8 @@ class TmdbSearchApiTest {
             "search/tv?query=Lupin&include_adult=false&page=1&region=US&language=en" to "search/search_tv_lupin.json",
             "search/tv?query=S.W.A.T.&include_adult=false&page=1&region=US&language=en" to "search/search_tv_SWAT.json",
             "search/movie?query=Star+Wars&include_adult=false&page=1&region=US&language=en" to "search/search_movie_star_wars.json",
+            "search/movie?query=Star+Wars&include_adult=false&page=1&region=US&language=en&year=1977" to "search/search_movie_star_wars_1977.json",
+            "search/movie?query=Star+Wars&include_adult=false&page=1&region=US&language=en&primary_release_year=1977" to "search/search_movie_star_wars_1977.json",
             "search/person?query=ka&include_adult=false&page=1&region=US&language=en" to "search/search_person_ka.json",
             "search/company?query=fox&page=1" to "search/search_company_fox.json",
             "search/collection?query=fast&page=1&language=en" to "search/search_collection_fast.json",
@@ -44,6 +46,32 @@ class TmdbSearchApiTest {
         assertThat(pageResult.results).isNotEmpty()
         val show = pageResult.results.first()
         assertThat(show.id).isEqualTo(71790)
+    }
+
+    @Test
+    fun `it can search movies by query Star Wars with primary release year`() = runBlocking {
+        val pageResult = classToTest.findMovies("Star Wars", 1, "en", "US",false, primaryReleaseYear = 1977)
+
+        assertThat(pageResult.page).isEqualTo(1)
+        assertThat(pageResult.totalPages).isEqualTo(1)
+        assertThat(pageResult.totalResults).isEqualTo(2)
+        assertThat(pageResult.results).isNotEmpty()
+        val movie = pageResult.results.first()
+        assertThat(movie.id).isEqualTo(11)
+        assertThat(movie.title).isEqualTo("Star Wars")
+    }
+
+    @Test
+    fun `it can search movies by query Star Wars on year 1977`() = runBlocking {
+        val pageResult = classToTest.findMovies("Star Wars", 1, "en", "US",false, year = 1977)
+
+        assertThat(pageResult.page).isEqualTo(1)
+        assertThat(pageResult.totalPages).isEqualTo(1)
+        assertThat(pageResult.totalResults).isEqualTo(2)
+        assertThat(pageResult.results).isNotEmpty()
+        val movie = pageResult.results.first()
+        assertThat(movie.id).isEqualTo(11)
+        assertThat(movie.title).isEqualTo("Star Wars")
     }
 
     @Test

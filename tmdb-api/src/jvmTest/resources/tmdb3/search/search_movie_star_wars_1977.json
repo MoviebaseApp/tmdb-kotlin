@@ -1,0 +1,46 @@
+{
+  "page": 1,
+  "results": [
+    {
+      "adult": false,
+      "backdrop_path": "/iPnH51khswDrYij6XIBHKlAznW.jpg",
+      "genre_ids": [
+        12,
+        28,
+        878
+      ],
+      "id": 11,
+      "original_language": "en",
+      "original_title": "Star Wars",
+      "overview": "Princess Leia is captured and held hostage by the evil Imperial forces in their effort to take over the galactic Empire. Venturesome Luke Skywalker and dashing captain Han Solo team together with the loveable robot duo R2-D2 and C-3PO to rescue the beautiful princess and restore peace and justice in the Empire.",
+      "popularity": 51.311,
+      "poster_path": "/6FfCtAuVAW8XJjZ7eWeLibRLWTw.jpg",
+      "release_date": "1977-05-25",
+      "title": "Star Wars",
+      "video": false,
+      "vote_average": 8.2,
+      "vote_count": 16384
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/oxWdpHHrdGaB3ZK4JpBnEQ8msrp.jpg",
+      "genre_ids": [
+        99,
+        10770
+      ],
+      "id": 72694,
+      "original_language": "en",
+      "original_title": "The Making of Star Wars",
+      "overview": "Learn the incredible behind-the-scenes story of how the original Star Wars  movie was brought to the big screen in this fascinating documentary hosted by C-3PO and R2-D2 which includes interviews with George Lucas and appearances by Mark Hamill, Harrison Ford and Carrie Fisher.",
+      "popularity": 5.723,
+      "poster_path": "/SUuNG1l918uBNMZZRDrUQMvwzt.jpg",
+      "release_date": "1977-09-16",
+      "title": "The Making of Star Wars",
+      "video": false,
+      "vote_average": 7.2,
+      "vote_count": 29
+    }
+  ],
+  "total_pages": 1,
+  "total_results": 2
+}
