@@ -2,6 +2,7 @@ package app.moviebase.tmdb.api
 
 import app.moviebase.tmdb.model.*
 import app.moviebase.tmdb.remote.endPointV3
+import app.moviebase.tmdb.remote.parameterFirstAirDateYear
 import app.moviebase.tmdb.remote.parameterLanguage
 import app.moviebase.tmdb.remote.parameterPage
 import app.moviebase.tmdb.remote.parameterPrimaryReleaseYear
@@ -38,7 +39,8 @@ class TmdbSearchApi(private val client: HttpClient) {
         page: Int,
         language: String? = null,
         region: String? = null,
-        includeAdult: Boolean? = null
+        includeAdult: Boolean? = null,
+        firstAirDateYear: Int? = null,
     ): TmdbShowPageResult = client.get {
         endSearch(TmdbSearchType.TV)
 
@@ -47,6 +49,7 @@ class TmdbSearchApi(private val client: HttpClient) {
         parameterPage(page)
         parameterRegion(region)
         parameterLanguage(language)
+        parameterFirstAirDateYear(firstAirDateYear)
     }
 
     suspend fun findPeople(
