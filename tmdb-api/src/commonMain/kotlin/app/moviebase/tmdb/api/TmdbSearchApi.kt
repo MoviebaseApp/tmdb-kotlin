@@ -2,12 +2,9 @@ package app.moviebase.tmdb.api
 
 import app.moviebase.tmdb.model.*
 import app.moviebase.tmdb.remote.endPointV3
-import app.moviebase.tmdb.remote.parameterFirstAirDateYear
 import app.moviebase.tmdb.remote.parameterLanguage
 import app.moviebase.tmdb.remote.parameterPage
-import app.moviebase.tmdb.remote.parameterPrimaryReleaseYear
 import app.moviebase.tmdb.remote.parameterRegion
-import app.moviebase.tmdb.remote.parameterYear
 import io.ktor.client.*
 import io.ktor.client.request.*
 
@@ -112,4 +109,15 @@ class TmdbSearchApi(private val client: HttpClient) {
         parameter("query", query)
     }
 
+    private fun HttpRequestBuilder.parameterFirstAirDateYear(year: Int?) {
+        year?.let { parameter("first_air_date_year", it) }
+    }
+
+    private fun HttpRequestBuilder.parameterYear(year: Int?) {
+        year?.let { parameter("year", it) }
+    }
+
+    private fun HttpRequestBuilder.parameterPrimaryReleaseYear(year: Int?) {
+        year?.let { parameter("primary_release_year", it) }
+    }
 }
