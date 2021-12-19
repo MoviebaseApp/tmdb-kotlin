@@ -120,7 +120,10 @@ enum class TmdbVideoType(val value: String) {
     FEATURETTE("Featurette"),
 
     @SerialName("Opening Credits")
-    OPENING_CREDITS("Opening Credits");
+    OPENING_CREDITS("Opening Credits"),
+
+    @SerialName("Behind the Scenes")
+    BEHIND_THE_SCENES("Behind the Scenes");
 }
 
 /**
