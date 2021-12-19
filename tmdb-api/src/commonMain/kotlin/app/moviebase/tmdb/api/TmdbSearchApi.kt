@@ -16,7 +16,9 @@ class TmdbSearchApi(private val client: HttpClient) {
         page: Int,
         language: String? = null,
         region: String? = null,
-        includeAdult: Boolean = false
+        includeAdult: Boolean = false,
+        year: Int? = null,
+        primaryReleaseYear: Int? = null,
     ): TmdbMoviePageResult = client.get {
         endSearch(TmdbSearchType.MOVIE)
 
@@ -25,6 +27,8 @@ class TmdbSearchApi(private val client: HttpClient) {
         parameterPage(page)
         parameterRegion(region)
         parameterLanguage(language)
+        parameterYear(year)
+        parameterPrimaryReleaseYear(primaryReleaseYear)
     }
 
     suspend fun findShows(
@@ -32,7 +36,8 @@ class TmdbSearchApi(private val client: HttpClient) {
         page: Int,
         language: String? = null,
         region: String? = null,
-        includeAdult: Boolean? = null
+        includeAdult: Boolean? = null,
+        firstAirDateYear: Int? = null,
     ): TmdbShowPageResult = client.get {
         endSearch(TmdbSearchType.TV)
 
@@ -41,6 +46,7 @@ class TmdbSearchApi(private val client: HttpClient) {
         parameterPage(page)
         parameterRegion(region)
         parameterLanguage(language)
+        parameterFirstAirDateYear(firstAirDateYear)
     }
 
     suspend fun findPeople(
@@ -103,4 +109,15 @@ class TmdbSearchApi(private val client: HttpClient) {
         parameter("query", query)
     }
 
+    private fun HttpRequestBuilder.parameterFirstAirDateYear(year: Int?) {
+        year?.let { parameter("first_air_date_year", it) }
+    }
+
+    private fun HttpRequestBuilder.parameterYear(year: Int?) {
+        year?.let { parameter("year", it) }
+    }
+
+    private fun HttpRequestBuilder.parameterPrimaryReleaseYear(year: Int?) {
+        year?.let { parameter("primary_release_year", it) }
+    }
 }
