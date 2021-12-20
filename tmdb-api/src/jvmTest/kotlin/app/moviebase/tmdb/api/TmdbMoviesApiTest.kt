@@ -14,6 +14,7 @@ class TmdbMoviesApiTest {
         responses = mapOf(
             "movie/10140?language=en-US&append_to_response=images,external_ids,videos,release_dates,credits,reviews,content_ratings,watch/providers"
                     to "movie/movie_details_10140.json",
+            "movie/10140/images?language=en" to "movie/movie_images_10140.json",
             "movie/607?language=en-US&append_to_response=external_ids,videos,release_dates,credits,reviews,content_ratings,watch/providers"
                     to "movie/movie_details_607.json"
         )
@@ -21,6 +22,14 @@ class TmdbMoviesApiTest {
 
     val classToTest = TmdbMoviesApi(client)
 
+    @Test
+    fun `It should return images from movie`() = runBlocking {
+        val images = classToTest.getImages(movieId = 10140, language = "en")
+
+        assertThat(images.id).isEqualTo(10140)
+        assertThat(images.backdrops.size).isEqualTo(2)
+        assertThat(images.posters.size).isEqualTo(14)
+    }
 
     @Test
     fun `it can fetch movie details`() = runBlocking {
