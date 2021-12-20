@@ -28,7 +28,7 @@
   "original_language": "en",
   "original_title": "The Chronicles of Narnia: The Voyage of the Dawn Treader",
   "overview": "This time around Edmund and Lucy Pevensie, along with their pesky cousin Eustace Scrubb find themselves swallowed into a painting and on to a fantastic Narnian ship headed for the very edges of the world.",
-  "popularity": 26.301,
+  "popularity": 48.581,
   "poster_path": "/pP27zlm9yeKrCeDZLFLP2HKELot.jpg",
   "production_companies": [
     {
@@ -69,7 +69,160 @@
   "title": "The Chronicles of Narnia: The Voyage of the Dawn Treader",
   "video": false,
   "vote_average": 6.4,
-  "vote_count": 4305,
+  "vote_count": 4534,
+  "images": {
+    "backdrops": [
+      {
+        "aspect_ratio": 1.778,
+        "height": 720,
+        "iso_639_1": "en",
+        "file_path": "/5eghVL3JrtJBJlRy2dbQ5y4TbqI.jpg",
+        "vote_average": 0.0,
+        "vote_count": 0,
+        "width": 1280
+      },
+      {
+        "aspect_ratio": 1.778,
+        "height": 2160,
+        "iso_639_1": "en",
+        "file_path": "/AhTNmGhPzVGj9g5oz5VlFP3IhlR.jpg",
+        "vote_average": 0.0,
+        "vote_count": 0,
+        "width": 3840
+      }
+    ],
+    "logos": [
+
+    ],
+    "posters": [
+      {
+        "aspect_ratio": 0.667,
+        "height": 1500,
+        "iso_639_1": "en",
+        "file_path": "/pP27zlm9yeKrCeDZLFLP2HKELot.jpg",
+        "vote_average": 5.318,
+        "vote_count": 3,
+        "width": 1000
+      },
+      {
+        "aspect_ratio": 0.667,
+        "height": 1500,
+        "iso_639_1": "en",
+        "file_path": "/jTBpCaSyvcxrCk3NtyPY92X46X7.jpg",
+        "vote_average": 5.246,
+        "vote_count": 2,
+        "width": 1000
+      },
+      {
+        "aspect_ratio": 0.75,
+        "height": 1733,
+        "iso_639_1": "en",
+        "file_path": "/6OF9slx2HsS5L6Q1PW8RBOhpK9Q.jpg",
+        "vote_average": 5.18,
+        "vote_count": 3,
+        "width": 1300
+      },
+      {
+        "aspect_ratio": 0.667,
+        "height": 2100,
+        "iso_639_1": "en",
+        "file_path": "/yR9wV898swkWKci43iycsWjIbDI.jpg",
+        "vote_average": 5.172,
+        "vote_count": 1,
+        "width": 1400
+      },
+      {
+        "aspect_ratio": 0.667,
+        "height": 1200,
+        "iso_639_1": "en",
+        "file_path": "/879GMEZ4Is0FiSkuT6xu8fn5zuO.jpg",
+        "vote_average": 5.172,
+        "vote_count": 1,
+        "width": 800
+      },
+      {
+        "aspect_ratio": 0.667,
+        "height": 2562,
+        "iso_639_1": "en",
+        "file_path": "/fwr9D6goR9G39LkiFC6IbmwxbfH.jpg",
+        "vote_average": 5.172,
+        "vote_count": 1,
+        "width": 1708
+      },
+      {
+        "aspect_ratio": 0.667,
+        "height": 3000,
+        "iso_639_1": "en",
+        "file_path": "/nlpnhcfiZn84j1yqvhnP7uXVi8q.jpg",
+        "vote_average": 5.172,
+        "vote_count": 1,
+        "width": 2000
+      },
+      {
+        "aspect_ratio": 0.676,
+        "height": 944,
+        "iso_639_1": "en",
+        "file_path": "/iWty64vgQlQK8Irj6XLNFDJnd8u.jpg",
+        "vote_average": 5.172,
+        "vote_count": 1,
+        "width": 638
+      },
+      {
+        "aspect_ratio": 0.675,
+        "height": 1481,
+        "iso_639_1": "en",
+        "file_path": "/hQ0v97lsrRD2ZZ0F8C7hm40M5vz.jpg",
+        "vote_average": 5.172,
+        "vote_count": 1,
+        "width": 1000
+      },
+      {
+        "aspect_ratio": 0.667,
+        "height": 3000,
+        "iso_639_1": "en",
+        "file_path": "/lqdwZ8yBuVltv3dK1pxzUmCEezv.jpg",
+        "vote_average": 5.172,
+        "vote_count": 1,
+        "width": 2000
+      },
+      {
+        "aspect_ratio": 0.667,
+        "height": 1500,
+        "iso_639_1": "en",
+        "file_path": "/A0QoMxs5FfKvWRyIcyBFAk2YFaI.jpg",
+        "vote_average": 5.118,
+        "vote_count": 4,
+        "width": 1000
+      },
+      {
+        "aspect_ratio": 0.667,
+        "height": 1500,
+        "iso_639_1": "en",
+        "file_path": "/sznkJNy32SMwEdp7AUAD0Db1YYl.jpg",
+        "vote_average": 5.118,
+        "vote_count": 4,
+        "width": 1000
+      },
+      {
+        "aspect_ratio": 0.667,
+        "height": 1500,
+        "iso_639_1": "en",
+        "file_path": "/MrdryGFlPttF56g0h5AU4Hrv7V.jpg",
+        "vote_average": 0.0,
+        "vote_count": 0,
+        "width": 1000
+      },
+      {
+        "aspect_ratio": 0.675,
+        "height": 1500,
+        "iso_639_1": "en",
+        "file_path": "/u7oEtkzh2TcnAWcl6fG2OmLdQHW.jpg",
+        "vote_average": 0.0,
+        "vote_count": 0,
+        "width": 1012
+      }
+    ]
+  },
   "external_ids": {
     "imdb_id": "tt0980970",
     "facebook_id": null,
@@ -79,27 +232,29 @@
   "videos": {
     "results": [
       {
-        "id": "54b36eb9c3a3680939006425",
         "iso_639_1": "en",
         "iso_3166_1": "US",
-        "key": "hrJQDPpIK6I",
         "name": "The Chronicles of Narnia: The Voyage of the Dawn Treader Official Trailer [HD]",
+        "key": "hrJQDPpIK6I",
+        "published_at": "2010-06-16 23:26:16 UTC",
         "site": "YouTube",
         "size": 1080,
-        "type": "Trailer"
+        "type": "Trailer",
+        "official": false,
+        "id": "54b36eb9c3a3680939006425"
       }
     ]
   },
   "release_dates": {
     "results": [
       {
-        "iso_3166_1": "GR",
+        "iso_3166_1": "KR",
         "release_dates": [
           {
-            "certification": "G",
+            "certification": "ALL",
             "iso_639_1": "",
             "note": "",
-            "release_date": "2010-12-09T00:00:00.000Z",
+            "release_date": "2010-12-08T00:00:00.000Z",
             "type": 3
           }
         ]
@@ -117,10 +272,34 @@
         ]
       },
       {
-        "iso_3166_1": "BR",
+        "iso_3166_1": "CZ",
         "release_dates": [
           {
-            "certification": "12",
+            "certification": "",
+            "iso_639_1": "",
+            "note": "",
+            "release_date": "2011-04-11T00:00:00.000Z",
+            "type": 3
+          }
+        ]
+      },
+      {
+        "iso_3166_1": "FI",
+        "release_dates": [
+          {
+            "certification": "K-11",
+            "iso_639_1": "",
+            "note": "",
+            "release_date": "2010-12-25T00:00:00.000Z",
+            "type": 3
+          }
+        ]
+      },
+      {
+        "iso_3166_1": "IT",
+        "release_dates": [
+          {
+            "certification": "",
             "iso_639_1": "",
             "note": "",
             "release_date": "2010-12-10T00:00:00.000Z",
@@ -129,13 +308,142 @@
         ]
       },
       {
-        "iso_3166_1": "GB",
+        "iso_3166_1": "US",
         "release_dates": [
           {
             "certification": "PG",
             "iso_639_1": "",
             "note": "",
             "release_date": "2010-12-10T00:00:00.000Z",
+            "type": 3
+          }
+        ]
+      },
+      {
+        "iso_3166_1": "NL",
+        "release_dates": [
+          {
+            "certification": "9",
+            "iso_639_1": "",
+            "note": "",
+            "release_date": "2010-12-09T00:00:00.000Z",
+            "type": 3
+          },
+          {
+            "certification": "9",
+            "iso_639_1": "",
+            "note": "DVD",
+            "release_date": "2011-11-02T00:00:00.000Z",
+            "type": 5
+          },
+          {
+            "certification": "9",
+            "iso_639_1": "",
+            "note": "Blu ray",
+            "release_date": "2011-12-14T00:00:00.000Z",
+            "type": 5
+          },
+          {
+            "certification": "9",
+            "iso_639_1": "",
+            "note": "RTL 4",
+            "release_date": "2014-02-20T00:00:00.000Z",
+            "type": 6
+          }
+        ]
+      },
+      {
+        "iso_3166_1": "NO",
+        "release_dates": [
+          {
+            "certification": "11 år",
+            "iso_639_1": "",
+            "note": "",
+            "release_date": "2010-12-25T00:00:00.000Z",
+            "type": 3
+          }
+        ]
+      },
+      {
+        "iso_3166_1": "SK",
+        "release_dates": [
+          {
+            "certification": "",
+            "iso_639_1": "",
+            "note": "",
+            "release_date": "2011-04-11T00:00:00.000Z",
+            "type": 3
+          }
+        ]
+      },
+      {
+        "iso_3166_1": "RU",
+        "release_dates": [
+          {
+            "certification": "12+",
+            "iso_639_1": "",
+            "note": "",
+            "release_date": "2010-12-09T00:00:00.000Z",
+            "type": 3
+          }
+        ]
+      },
+      {
+        "iso_3166_1": "AU",
+        "release_dates": [
+          {
+            "certification": "PG",
+            "iso_639_1": "",
+            "note": "",
+            "release_date": "2010-12-02T00:00:00.000Z",
+            "type": 3
+          }
+        ]
+      },
+      {
+        "iso_3166_1": "GR",
+        "release_dates": [
+          {
+            "certification": "G",
+            "iso_639_1": "",
+            "note": "",
+            "release_date": "2010-12-09T00:00:00.000Z",
+            "type": 3
+          }
+        ]
+      },
+      {
+        "iso_3166_1": "TH",
+        "release_dates": [
+          {
+            "certification": "",
+            "iso_639_1": "",
+            "note": "",
+            "release_date": "2010-12-09T00:00:00.000Z",
+            "type": 3
+          }
+        ]
+      },
+      {
+        "iso_3166_1": "ES",
+        "release_dates": [
+          {
+            "certification": "APTA",
+            "iso_639_1": "",
+            "note": "",
+            "release_date": "2010-12-03T00:00:00.000Z",
+            "type": 3
+          }
+        ]
+      },
+      {
+        "iso_3166_1": "PT",
+        "release_dates": [
+          {
+            "certification": "M/6",
+            "iso_639_1": "",
+            "note": "",
+            "release_date": "2010-12-08T00:00:00.000Z",
             "type": 3
           }
         ]
@@ -165,7 +473,19 @@
         ]
       },
       {
-        "iso_3166_1": "US",
+        "iso_3166_1": "MX",
+        "release_dates": [
+          {
+            "certification": "A",
+            "iso_639_1": "",
+            "note": "",
+            "release_date": "2010-12-10T00:00:00.000Z",
+            "type": 3
+          }
+        ]
+      },
+      {
+        "iso_3166_1": "GB",
         "release_dates": [
           {
             "certification": "PG",
@@ -177,58 +497,13 @@
         ]
       },
       {
-        "iso_3166_1": "IT",
+        "iso_3166_1": "BR",
         "release_dates": [
           {
-            "certification": "",
+            "certification": "12",
             "iso_639_1": "",
             "note": "",
             "release_date": "2010-12-10T00:00:00.000Z",
-            "type": 3
-          }
-        ]
-      },
-      {
-        "iso_3166_1": "NL",
-        "release_dates": [
-          {
-            "certification": "9",
-            "iso_639_1": "",
-            "note": "",
-            "release_date": "2010-12-09T00:00:00.000Z",
-            "type": 3
-          },
-          {
-            "certification": "9",
-            "iso_639_1": "",
-            "note": "Blu ray",
-            "release_date": "2011-12-14T00:00:00.000Z",
-            "type": 5
-          },
-          {
-            "certification": "9",
-            "iso_639_1": "",
-            "note": "DVD",
-            "release_date": "2011-11-02T00:00:00.000Z",
-            "type": 5
-          },
-          {
-            "certification": "9",
-            "iso_639_1": "",
-            "note": "RTL 4",
-            "release_date": "2014-02-20T00:00:00.000Z",
-            "type": 6
-          }
-        ]
-      },
-      {
-        "iso_3166_1": "AU",
-        "release_dates": [
-          {
-            "certification": "PG",
-            "iso_639_1": "",
-            "note": "",
-            "release_date": "2010-12-02T00:00:00.000Z",
             "type": 3
           }
         ]
@@ -246,37 +521,13 @@
         ]
       },
       {
-        "iso_3166_1": "TT",
+        "iso_3166_1": "DE",
         "release_dates": [
           {
-            "certification": "All Ages",
+            "certification": "6",
             "iso_639_1": "",
             "note": "",
-            "release_date": "2010-12-08T00:00:00.000Z",
-            "type": 3
-          }
-        ]
-      },
-      {
-        "iso_3166_1": "SK",
-        "release_dates": [
-          {
-            "certification": "",
-            "iso_639_1": "",
-            "note": "",
-            "release_date": "2011-04-11T00:00:00.000Z",
-            "type": 3
-          }
-        ]
-      },
-      {
-        "iso_3166_1": "NO",
-        "release_dates": [
-          {
-            "certification": "11 år",
-            "iso_639_1": "",
-            "note": "",
-            "release_date": "2010-12-25T00:00:00.000Z",
+            "release_date": "2010-12-15T00:00:00.000Z",
             "type": 3
           }
         ]
@@ -313,85 +564,13 @@
         ]
       },
       {
-        "iso_3166_1": "FI",
+        "iso_3166_1": "TT",
         "release_dates": [
           {
-            "certification": "K-11",
-            "iso_639_1": "",
-            "note": "",
-            "release_date": "2010-12-25T00:00:00.000Z",
-            "type": 3
-          }
-        ]
-      },
-      {
-        "iso_3166_1": "RU",
-        "release_dates": [
-          {
-            "certification": "12+",
-            "iso_639_1": "",
-            "note": "",
-            "release_date": "2010-12-09T00:00:00.000Z",
-            "type": 3
-          }
-        ]
-      },
-      {
-        "iso_3166_1": "KR",
-        "release_dates": [
-          {
-            "certification": "ALL",
+            "certification": "All Ages",
             "iso_639_1": "",
             "note": "",
             "release_date": "2010-12-08T00:00:00.000Z",
-            "type": 3
-          }
-        ]
-      },
-      {
-        "iso_3166_1": "CZ",
-        "release_dates": [
-          {
-            "certification": "",
-            "iso_639_1": "",
-            "note": "",
-            "release_date": "2011-04-11T00:00:00.000Z",
-            "type": 3
-          }
-        ]
-      },
-      {
-        "iso_3166_1": "PT",
-        "release_dates": [
-          {
-            "certification": "M/6",
-            "iso_639_1": "",
-            "note": "",
-            "release_date": "2010-12-08T00:00:00.000Z",
-            "type": 3
-          }
-        ]
-      },
-      {
-        "iso_3166_1": "ES",
-        "release_dates": [
-          {
-            "certification": "APTA",
-            "iso_639_1": "",
-            "note": "",
-            "release_date": "2010-12-03T00:00:00.000Z",
-            "type": 3
-          }
-        ]
-      },
-      {
-        "iso_3166_1": "DE",
-        "release_dates": [
-          {
-            "certification": "6",
-            "iso_639_1": "",
-            "note": "",
-            "release_date": "2010-12-15T00:00:00.000Z",
             "type": 3
           }
         ]
@@ -407,7 +586,7 @@
         "known_for_department": "Acting",
         "name": "Georgie Henley",
         "original_name": "Georgie Henley",
-        "popularity": 2.32,
+        "popularity": 4.304,
         "profile_path": "/6qUwxWeFkgMAwCxkYGn7ISxWAZI.jpg",
         "cast_id": 6,
         "character": "Lucy Pevensie",
@@ -421,7 +600,7 @@
         "known_for_department": "Acting",
         "name": "Skandar Keynes",
         "original_name": "Skandar Keynes",
-        "popularity": 3.526,
+        "popularity": 4.605,
         "profile_path": "/pIdgY16c6AzmCD31pXlCR9SjLlM.jpg",
         "cast_id": 5,
         "character": "Edmund Prevensie",
@@ -435,7 +614,7 @@
         "known_for_department": "Acting",
         "name": "Ben Barnes",
         "original_name": "Ben Barnes",
-        "popularity": 4.107,
+        "popularity": 8.674,
         "profile_path": "/yzw4fvNWQ57ThzCb8ZqxT71mj2E.jpg",
         "cast_id": 15,
         "character": "Caspian",
@@ -449,8 +628,8 @@
         "known_for_department": "Acting",
         "name": "Will Poulter",
         "original_name": "Will Poulter",
-        "popularity": 5.585,
-        "profile_path": "/gbRgcFBUJ3e3CxubAv3Y5EVVare.jpg",
+        "popularity": 11.859,
+        "profile_path": "/c2OLzJOjLX8ER3t3GQ1iTt3defa.jpg",
         "cast_id": 18,
         "character": "Eustace Scrubb",
         "credit_id": "52fe43349251416c75007621",
@@ -463,7 +642,7 @@
         "known_for_department": "Acting",
         "name": "Gary Sweet",
         "original_name": "Gary Sweet",
-        "popularity": 0.717,
+        "popularity": 2.189,
         "profile_path": "/gbU6LpVgAwh6ez3h6QlkOLMGNmj.jpg",
         "cast_id": 9,
         "character": "Drinian",
@@ -477,7 +656,7 @@
         "known_for_department": "Acting",
         "name": "Terry Norris",
         "original_name": "Terry Norris",
-        "popularity": 0.98,
+        "popularity": 1.092,
         "profile_path": "/zjgd0jKSkFx4GDXlYMjP1c7PPwv.jpg",
         "cast_id": 121,
         "character": "Lord Bern",
@@ -491,7 +670,7 @@
         "known_for_department": "Acting",
         "name": "Bruce Spence",
         "original_name": "Bruce Spence",
-        "popularity": 4.528,
+        "popularity": 6.673,
         "profile_path": "/kuaIudFTIBahGAdCamThG13jPp7.jpg",
         "cast_id": 44,
         "character": "Lord Rhoop",
@@ -505,7 +684,7 @@
         "known_for_department": "Acting",
         "name": "Bille Brown",
         "original_name": "Bille Brown",
-        "popularity": 0.6,
+        "popularity": 0.989,
         "profile_path": "/4O3LhMHWKxcwCtV7hJ24SUNVD5P.jpg",
         "cast_id": 45,
         "character": "Coriakin",
@@ -519,7 +698,7 @@
         "known_for_department": "Acting",
         "name": "Laura Brent",
         "original_name": "Laura Brent",
-        "popularity": 2.804,
+        "popularity": 1.367,
         "profile_path": "/iJ1m7piqcYNimoosSHR1Yha1BMB.jpg",
         "cast_id": 46,
         "character": "Liliandil",
@@ -533,7 +712,7 @@
         "known_for_department": "Acting",
         "name": "Colin Moody",
         "original_name": "Colin Moody",
-        "popularity": 0.84,
+        "popularity": 1.024,
         "profile_path": "/gWkLVy9mY68LCGASgThWQSPC9hF.jpg",
         "cast_id": 14,
         "character": "Auctioneer",
@@ -547,8 +726,8 @@
         "known_for_department": "Acting",
         "name": "Tilda Swinton",
         "original_name": "Tilda Swinton",
-        "popularity": 9.135,
-        "profile_path": "/vJwKUaxQHuMxwr8FOg5OjpEwGMb.jpg",
+        "popularity": 12.437,
+        "profile_path": "/gWbX3a7V2MgRMRzekfITNcb27xV.jpg",
         "cast_id": 11,
         "character": "The White Witch",
         "credit_id": "52fe43339251416c75007607",
@@ -561,7 +740,7 @@
         "known_for_department": "Acting",
         "name": "Anna Popplewell",
         "original_name": "Anna Popplewell",
-        "popularity": 2.586,
+        "popularity": 8.584,
         "profile_path": "/fs5uYzzseA94fKC9sr0iWuCULup.jpg",
         "cast_id": 47,
         "character": "Susan Pevensie",
@@ -575,7 +754,7 @@
         "known_for_department": "Acting",
         "name": "William Moseley",
         "original_name": "William Moseley",
-        "popularity": 2.233,
+        "popularity": 2.224,
         "profile_path": "/wPahfIdOR6ohIgmgVrCb3RPApAU.jpg",
         "cast_id": 48,
         "character": "Peter Pevensie",
@@ -589,7 +768,7 @@
         "known_for_department": "Acting",
         "name": "Shane Rangi",
         "original_name": "Shane Rangi",
-        "popularity": 1.38,
+        "popularity": 1.62,
         "profile_path": "/xcTJWYsKtJNMGRENqXKUzhKHw4x.jpg",
         "cast_id": 13,
         "character": "Tavros",
@@ -603,7 +782,7 @@
         "known_for_department": "Acting",
         "name": "Arthur Angel",
         "original_name": "Arthur Angel",
-        "popularity": 1.158,
+        "popularity": 1.052,
         "profile_path": "/ds27HdKDhJaXdKnmT1iftzCPfaO.jpg",
         "cast_id": 10,
         "character": "Rhince",
@@ -617,7 +796,7 @@
         "known_for_department": "Acting",
         "name": "Arabella Morton",
         "original_name": "Arabella Morton",
-        "popularity": 0.6,
+        "popularity": 0.98,
         "profile_path": "/k7UMcCKxV8tmHVWYFrAv9NEfNkQ.jpg",
         "cast_id": 56,
         "character": "Gael",
@@ -631,7 +810,7 @@
         "known_for_department": "Acting",
         "name": "Rachel Blakely",
         "original_name": "Rachel Blakely",
-        "popularity": 1.62,
+        "popularity": 1.009,
         "profile_path": "/epImdOK7cKenm2KA0uOw1Luhug4.jpg",
         "cast_id": 102,
         "character": "Gael's Mum",
@@ -645,7 +824,7 @@
         "known_for_department": "Acting",
         "name": "Steven Rooke",
         "original_name": "Steven Rooke",
-        "popularity": 0.6,
+        "popularity": 1.159,
         "profile_path": "/cZu1vjlTLHho5H8nilfCTqUXsHi.jpg",
         "cast_id": 103,
         "character": "Faun",
@@ -682,13 +861,13 @@
       },
       {
         "adult": false,
-        "gender": 0,
+        "gender": 2,
         "id": 1673348,
         "known_for_department": "Acting",
         "name": "Jared Robinsen",
         "original_name": "Jared Robinsen",
-        "popularity": 0.677,
-        "profile_path": "/jGad5iEKVXUMmvZ4Yvo3BzLtZam.jpg",
+        "popularity": 0.6,
+        "profile_path": null,
         "cast_id": 105,
         "character": "Intake Officer",
         "credit_id": "5e1a15b766a0d3001411310e",
@@ -701,7 +880,7 @@
         "known_for_department": "Acting",
         "name": "Roy Billing",
         "original_name": "Roy Billing",
-        "popularity": 1.048,
+        "popularity": 1.694,
         "profile_path": "/aG6gpPbgG2pp9usJgQRRMFUV3BB.jpg",
         "cast_id": 59,
         "character": "Chief Dufflepud",
@@ -757,8 +936,8 @@
         "known_for_department": "Acting",
         "name": "Nathaniel Parker",
         "original_name": "Nathaniel Parker",
-        "popularity": 2.006,
-        "profile_path": "/gnAqDpkOHT0mqoBmyiKptnSM3wL.jpg",
+        "popularity": 6.195,
+        "profile_path": "/mtJ0EXQ7rJaRb3DiAAOPGlFLOzi.jpg",
         "cast_id": 107,
         "character": "Caspian's Father",
         "credit_id": "5e1a1606efea7a0012c1b7e3",
@@ -785,7 +964,7 @@
         "known_for_department": "Acting",
         "name": "Mirko Grillini",
         "original_name": "Mirko Grillini",
-        "popularity": 1.265,
+        "popularity": 1.062,
         "profile_path": "/4YxpSCAT3vHNUFeB10MHrs4O7sw.jpg",
         "cast_id": 109,
         "character": "Telmarine Sailor",
@@ -813,7 +992,7 @@
         "known_for_department": "Acting",
         "name": "Laurence Coy",
         "original_name": "Laurence Coy",
-        "popularity": 0.6,
+        "popularity": 0.98,
         "profile_path": "/yyj9ICjRD2d9E6f4DNnwcx9UdWb.jpg",
         "cast_id": 111,
         "character": "Photographer",
@@ -827,7 +1006,7 @@
         "known_for_department": "Production",
         "name": "Douglas Gresham",
         "original_name": "Douglas Gresham",
-        "popularity": 0.6,
+        "popularity": 0.776,
         "profile_path": "/iUZBZAtMW1GZnZQU4mmhOAyKoXc.jpg",
         "cast_id": 112,
         "character": "Slaver #1",
@@ -841,7 +1020,7 @@
         "known_for_department": "Acting",
         "name": "Michael Maguire",
         "original_name": "Michael Maguire",
-        "popularity": 0.98,
+        "popularity": 1.38,
         "profile_path": "/txEVGhy1VlR9oPvJMuBrL37WHGu.jpg",
         "cast_id": 113,
         "character": "Slaver #2",
@@ -883,7 +1062,7 @@
         "known_for_department": "Acting",
         "name": "Lucas Ross",
         "original_name": "Lucas Ross",
-        "popularity": 1.38,
+        "popularity": 0.6,
         "profile_path": null,
         "cast_id": 116,
         "character": "Handsome Soldier",
@@ -897,8 +1076,8 @@
         "known_for_department": "Acting",
         "name": "Megan Peta Hill",
         "original_name": "Megan Peta Hill",
-        "popularity": 2.767,
-        "profile_path": "/cg6k3a5mtaZyR9gqFVUrHqlxvt8.jpg",
+        "popularity": 3.156,
+        "profile_path": "/1ZUxkw817g62QhjMg5SxNLplnM6.jpg",
         "cast_id": 117,
         "character": "Pretty Young Nurse",
         "credit_id": "5e1a169a66a0d30012112960",
@@ -939,8 +1118,8 @@
         "known_for_department": "Acting",
         "name": "Liam Neeson",
         "original_name": "Liam Neeson",
-        "popularity": 21.924,
-        "profile_path": "/jrf9LaTFWfLA5DBhFWENFsWh4Y9.jpg",
+        "popularity": 22.078,
+        "profile_path": "/bboldwqSC6tdw2iL6631c98l2Mn.jpg",
         "cast_id": 49,
         "character": "Aslan (voice)",
         "credit_id": "547e3f6b9251411f4e0051c4",
@@ -953,7 +1132,7 @@
         "known_for_department": "Acting",
         "name": "Simon Pegg",
         "original_name": "Simon Pegg",
-        "popularity": 7.939,
+        "popularity": 6.59,
         "profile_path": "/nOWKXxgADG98RjKyfQ7oSDfns6J.jpg",
         "cast_id": 8,
         "character": "Reepicheep (Voice)",
@@ -969,7 +1148,7 @@
         "known_for_department": "Art",
         "name": "Mark Robins",
         "original_name": "Mark Robins",
-        "popularity": 0.6,
+        "popularity": 2.023,
         "profile_path": null,
         "credit_id": "52fe43349251416c750076b1",
         "department": "Art",
@@ -982,7 +1161,7 @@
         "known_for_department": "Editing",
         "name": "Rick Shaine",
         "original_name": "Rick Shaine",
-        "popularity": 0.6,
+        "popularity": 1.658,
         "profile_path": null,
         "credit_id": "52fe43349251416c75007681",
         "department": "Editing",
@@ -995,8 +1174,8 @@
         "known_for_department": "Production",
         "name": "Mark Johnson",
         "original_name": "Mark Johnson",
-        "popularity": 1.332,
-        "profile_path": null,
+        "popularity": 3.604,
+        "profile_path": "/gLuXkOQjqB81aHMGJ2OtYzEpHQu.jpg",
         "credit_id": "52fe43349251416c75007645",
         "department": "Production",
         "job": "Producer"
@@ -1008,7 +1187,7 @@
         "known_for_department": "Production",
         "name": "Andrew Adamson",
         "original_name": "Andrew Adamson",
-        "popularity": 1.8,
+        "popularity": 2.563,
         "profile_path": "/qqIAVKAe5LHRbPyZUlptsqlo4Kb.jpg",
         "credit_id": "52fe43349251416c7500763f",
         "department": "Production",
@@ -1021,7 +1200,7 @@
         "known_for_department": "Writing",
         "name": "C. S. Lewis",
         "original_name": "C. S. Lewis",
-        "popularity": 1.39,
+        "popularity": 0.98,
         "profile_path": null,
         "credit_id": "52fe43349251416c75007627",
         "department": "Writing",
@@ -1034,7 +1213,7 @@
         "known_for_department": "Production",
         "name": "Philip Steuer",
         "original_name": "Philip Steuer",
-        "popularity": 0.6,
+        "popularity": 1.38,
         "profile_path": null,
         "credit_id": "52fe43349251416c75007651",
         "department": "Production",
@@ -1047,7 +1226,7 @@
         "known_for_department": "Production",
         "name": "Douglas Gresham",
         "original_name": "Douglas Gresham",
-        "popularity": 0.6,
+        "popularity": 0.776,
         "profile_path": "/iUZBZAtMW1GZnZQU4mmhOAyKoXc.jpg",
         "credit_id": "52fe43349251416c7500765d",
         "department": "Production",
@@ -1073,7 +1252,7 @@
         "known_for_department": "Writing",
         "name": "Christopher Markus",
         "original_name": "Christopher Markus",
-        "popularity": 1.25,
+        "popularity": 4.243,
         "profile_path": "/7ooPNp0gnURxYkSSKF2etH7wpZP.jpg",
         "credit_id": "52fe43349251416c7500762d",
         "department": "Writing",
@@ -1086,7 +1265,7 @@
         "known_for_department": "Writing",
         "name": "Stephen McFeely",
         "original_name": "Stephen McFeely",
-        "popularity": 2.201,
+        "popularity": 5.453,
         "profile_path": "/hkn9D5L8TguJUmv8fXy5sHyMEtq.jpg",
         "credit_id": "52fe43349251416c75007633",
         "department": "Writing",
@@ -1099,7 +1278,7 @@
         "known_for_department": "Sound",
         "name": "David Arnold",
         "original_name": "David Arnold",
-        "popularity": 0.6,
+        "popularity": 0.98,
         "profile_path": null,
         "credit_id": "52fe43349251416c75007675",
         "department": "Sound",
@@ -1112,7 +1291,7 @@
         "known_for_department": "Sound",
         "name": "David Arnold",
         "original_name": "David Arnold",
-        "popularity": 0.6,
+        "popularity": 0.98,
         "profile_path": null,
         "credit_id": "5e1a1013ea4263001241b345",
         "department": "Sound",
@@ -1125,7 +1304,7 @@
         "known_for_department": "Art",
         "name": "Marco Niro",
         "original_name": "Marco Niro",
-        "popularity": 1.048,
+        "popularity": 0.6,
         "profile_path": null,
         "credit_id": "52fe43349251416c750076ab",
         "department": "Art",
@@ -1138,7 +1317,7 @@
         "known_for_department": "Production",
         "name": "Christine King",
         "original_name": "Christine King",
-        "popularity": 0.98,
+        "popularity": 1.019,
         "profile_path": null,
         "credit_id": "52fe43349251416c7500768d",
         "department": "Production",
@@ -1151,7 +1330,7 @@
         "known_for_department": "Camera",
         "name": "Dante Spinotti",
         "original_name": "Dante Spinotti",
-        "popularity": 1.009,
+        "popularity": 1.382,
         "profile_path": "/7Ts0bNMarg8t5tUS0fKZthhvCYF.jpg",
         "credit_id": "5775b3b5925141674a000ccd",
         "department": "Camera",
@@ -1164,7 +1343,7 @@
         "known_for_department": "Camera",
         "name": "Dante Spinotti",
         "original_name": "Dante Spinotti",
-        "popularity": 1.009,
+        "popularity": 1.382,
         "profile_path": "/7Ts0bNMarg8t5tUS0fKZthhvCYF.jpg",
         "credit_id": "5e1a102766a0d3001411269c",
         "department": "Crew",
@@ -1177,7 +1356,7 @@
         "known_for_department": "Production",
         "name": "Nina Gold",
         "original_name": "Nina Gold",
-        "popularity": 1.264,
+        "popularity": 1.4,
         "profile_path": null,
         "credit_id": "52fe43349251416c75007687",
         "department": "Production",
@@ -1190,7 +1369,7 @@
         "known_for_department": "Art",
         "name": "Barry Robison",
         "original_name": "Barry Robison",
-        "popularity": 0.6,
+        "popularity": 1.4,
         "profile_path": null,
         "credit_id": "52fe43349251416c75007693",
         "department": "Art",
@@ -1203,7 +1382,7 @@
         "known_for_department": "Art",
         "name": "Ian Gracie",
         "original_name": "Ian Gracie",
-        "popularity": 0.6,
+        "popularity": 1.38,
         "profile_path": null,
         "credit_id": "52fe43349251416c75007699",
         "department": "Art",
@@ -1216,7 +1395,7 @@
         "known_for_department": "Directing",
         "name": "Michael Apted",
         "original_name": "Michael Apted",
-        "popularity": 1.167,
+        "popularity": 1.309,
         "profile_path": "/8ZLhPKz9CDZdbvFCIBAJMfd9IxE.jpg",
         "credit_id": "52fe43349251416c7500761d",
         "department": "Directing",
@@ -1255,7 +1434,7 @@
         "known_for_department": "Writing",
         "name": "Michael Petroni",
         "original_name": "Michael Petroni",
-        "popularity": 1.027,
+        "popularity": 2.043,
         "profile_path": null,
         "credit_id": "52fe43349251416c75007639",
         "department": "Writing",
@@ -1268,7 +1447,7 @@
         "known_for_department": "Production",
         "name": "Cary Granat",
         "original_name": "Cary Granat",
-        "popularity": 0.6,
+        "popularity": 1.4,
         "profile_path": null,
         "credit_id": "5e1a0f80626208001390a382",
         "department": "Production",
@@ -1281,7 +1460,7 @@
         "known_for_department": "Crew",
         "name": "Allan Poppleton",
         "original_name": "Allan Poppleton",
-        "popularity": 1.397,
+        "popularity": 1.62,
         "profile_path": "/AbcWe1Fe7hUWINyUjur7FkqiQ1f.jpg",
         "credit_id": "601dd38267dcc90040d46fc2",
         "department": "Crew",
@@ -1294,7 +1473,7 @@
         "known_for_department": "Crew",
         "name": "Allan Poppleton",
         "original_name": "Allan Poppleton",
-        "popularity": 1.397,
+        "popularity": 1.62,
         "profile_path": "/AbcWe1Fe7hUWINyUjur7FkqiQ1f.jpg",
         "credit_id": "601dd376fd6300003e227f10",
         "department": "Crew",
@@ -1307,7 +1486,7 @@
         "known_for_department": "Production",
         "name": "Douglas Jones",
         "original_name": "Douglas Jones",
-        "popularity": 0.98,
+        "popularity": 0.6,
         "profile_path": null,
         "credit_id": "5e1a11ab66a0d30014112bbc",
         "department": "Production",
@@ -1320,7 +1499,7 @@
         "known_for_department": "Production",
         "name": "Tom Williams",
         "original_name": "Tom Williams",
-        "popularity": 0.6,
+        "popularity": 1.4,
         "profile_path": null,
         "credit_id": "5e1a1217626208001390aa67",
         "department": "Production",
@@ -1359,7 +1538,7 @@
         "known_for_department": "Crew",
         "name": "Jessie Thiele",
         "original_name": "Jessie Thiele",
-        "popularity": 0.6,
+        "popularity": 0.919,
         "profile_path": null,
         "credit_id": "52fe43349251416c7500766f",
         "department": "Crew",
@@ -1372,7 +1551,7 @@
         "known_for_department": "Crew",
         "name": "Jessie Thiele",
         "original_name": "Jessie Thiele",
-        "popularity": 0.6,
+        "popularity": 0.919,
         "profile_path": null,
         "credit_id": "5e1a0ff3fe63fa00138a9e1e",
         "department": "Production",
@@ -1385,7 +1564,7 @@
         "known_for_department": "Art",
         "name": "Karen Murphy",
         "original_name": "Karen Murphy",
-        "popularity": 0.6,
+        "popularity": 0.652,
         "profile_path": null,
         "credit_id": "52fe43349251416c750076a5",
         "department": "Art",
@@ -1411,7 +1590,7 @@
         "known_for_department": "Production",
         "name": "Ben Parkinson",
         "original_name": "Ben Parkinson",
-        "popularity": 0.695,
+        "popularity": 1.4,
         "profile_path": null,
         "credit_id": "56ec5a85c3a36822560034c5",
         "department": "Production",
@@ -1424,7 +1603,7 @@
         "known_for_department": "Visual Effects",
         "name": "Jonathan Fawkner",
         "original_name": "Jonathan Fawkner",
-        "popularity": 0.6,
+        "popularity": 1.4,
         "profile_path": null,
         "credit_id": "5ce4656a0e0a265cdecac269",
         "department": "Visual Effects",
@@ -1437,7 +1616,7 @@
         "known_for_department": "Visual Effects",
         "name": "Monica Hada",
         "original_name": "Monica Hada",
-        "popularity": 0.6,
+        "popularity": 0.648,
         "profile_path": null,
         "credit_id": "5e1a119cefea7a0012c1b172",
         "department": "Crew",
@@ -1463,7 +1642,7 @@
         "known_for_department": "Production",
         "name": "Jennifer Cornwell",
         "original_name": "Jennifer Cornwell",
-        "popularity": 1.38,
+        "popularity": 1.473,
         "profile_path": null,
         "credit_id": "5e1a116defea7a0012c1b100",
         "department": "Production",
@@ -1476,7 +1655,7 @@
         "known_for_department": "Directing",
         "name": "John Mahaffie",
         "original_name": "John Mahaffie",
-        "popularity": 0.624,
+        "popularity": 1.176,
         "profile_path": null,
         "credit_id": "5e1a131223d27800169af752",
         "department": "Directing",
@@ -1515,7 +1694,7 @@
         "known_for_department": "Crew",
         "name": "Sean Button",
         "original_name": "Sean Button",
-        "popularity": 0.6,
+        "popularity": 1.4,
         "profile_path": null,
         "credit_id": "5537ecdf9251416518006edd",
         "department": "Crew",
@@ -1541,7 +1720,7 @@
         "known_for_department": "Visual Effects",
         "name": "Daniel Fotheringham",
         "original_name": "Daniel Fotheringham",
-        "popularity": 0.6,
+        "popularity": 0.694,
         "profile_path": null,
         "credit_id": "553155f0925141529800054b",
         "department": "Visual Effects",
@@ -1554,7 +1733,7 @@
         "known_for_department": "Visual Effects",
         "name": "Gabriele Zucchelli",
         "original_name": "Gabriele Zucchelli",
-        "popularity": 0.6,
+        "popularity": 0.98,
         "profile_path": null,
         "credit_id": "555ff3b39251417e5f003f46",
         "department": "Visual Effects",
@@ -1567,7 +1746,7 @@
         "known_for_department": "Directing",
         "name": "Victoria Sullivan",
         "original_name": "Victoria Sullivan",
-        "popularity": 0.609,
+        "popularity": 0.6,
         "profile_path": null,
         "credit_id": "5e1a143eea4263001241be8c",
         "department": "Directing",
@@ -1580,7 +1759,7 @@
         "known_for_department": "Production",
         "name": "Brendan Campbell",
         "original_name": "Brendan Campbell",
-        "popularity": 0.6,
+        "popularity": 1.094,
         "profile_path": null,
         "credit_id": "5e1a129cfe63fa00138aa6c1",
         "department": "Directing",
@@ -1593,7 +1772,7 @@
         "known_for_department": "Production",
         "name": "David Cain",
         "original_name": "David Cain",
-        "popularity": 0.706,
+        "popularity": 1.4,
         "profile_path": null,
         "credit_id": "5e1a1277ea4263001641b7e4",
         "department": "Directing",
@@ -1606,7 +1785,7 @@
         "known_for_department": "Production",
         "name": "Richard E. Chapla Jr.",
         "original_name": "Richard E. Chapla Jr.",
-        "popularity": 0.6,
+        "popularity": 1.094,
         "profile_path": null,
         "credit_id": "5e1a10e3fe63fa00138aa047",
         "department": "Production",
@@ -1619,7 +1798,7 @@
         "known_for_department": "Production",
         "name": "Brendon 'Moose' Boyd",
         "original_name": "Brendon 'Moose' Boyd",
-        "popularity": 0.6,
+        "popularity": 0.98,
         "profile_path": null,
         "credit_id": "5e1a10aa23d27800129af5eb",
         "department": "Production",
@@ -1632,7 +1811,7 @@
         "known_for_department": "Production",
         "name": "Haroon Saleem",
         "original_name": "Haroon Saleem",
-        "popularity": 0.6,
+        "popularity": 1.164,
         "profile_path": null,
         "credit_id": "5e1a0fd323d27800169af149",
         "department": "Production",
@@ -1658,7 +1837,7 @@
         "known_for_department": "Directing",
         "name": "Jeff Okabayashi",
         "original_name": "Jeff Okabayashi",
-        "popularity": 0.6,
+        "popularity": 3.496,
         "profile_path": null,
         "credit_id": "5e1a136766a0d30014112e0c",
         "department": "Directing",
@@ -1671,7 +1850,7 @@
         "known_for_department": "Directing",
         "name": "Joshua Watkins",
         "original_name": "Joshua Watkins",
-        "popularity": 1.38,
+        "popularity": 0.6,
         "profile_path": null,
         "credit_id": "5e1a13a523d27800129af935",
         "department": "Directing",
@@ -1684,7 +1863,7 @@
         "known_for_department": "Production",
         "name": "Micheal Flaherty",
         "original_name": "Micheal Flaherty",
-        "popularity": 0.6,
+        "popularity": 0.652,
         "profile_path": null,
         "credit_id": "5e1a0f6466a0d300141123cf",
         "department": "Production",
@@ -1736,7 +1915,7 @@
         "known_for_department": "Crew",
         "name": "Jaesung Oh",
         "original_name": "Jaesung Oh",
-        "popularity": 0.6,
+        "popularity": 0.98,
         "profile_path": null,
         "credit_id": "5e1a135423d27800149af42b",
         "department": "Directing",
@@ -1749,7 +1928,7 @@
         "known_for_department": "Directing",
         "name": "Bish Bishop",
         "original_name": "Bish Bishop",
-        "popularity": 0.6,
+        "popularity": 0.98,
         "profile_path": null,
         "credit_id": "5e1a1263fe63fa00178aa0b0",
         "department": "Directing",
@@ -1866,7 +2045,7 @@
         "known_for_department": "Editing",
         "name": "Alex Anstey",
         "original_name": "Alex Anstey",
-        "popularity": 0.6,
+        "popularity": 0.98,
         "profile_path": null,
         "credit_id": "5e1a141a66a0d300161123a3",
         "department": "Editing",
@@ -1983,7 +2162,7 @@
         "known_for_department": "Lighting",
         "name": "Charlie Nott",
         "original_name": "Charlie Nott",
-        "popularity": 0.6,
+        "popularity": 0.98,
         "profile_path": null,
         "credit_id": "5ec4d3c43d3557001eebf9a7",
         "department": "Lighting",
@@ -2083,7 +2262,7 @@
         "content": "In the immortal words of Col. Kurtz, \"The horror...the horror.\" Marlon Brando wasn't speaking of this film, of course, but rather the horrors of the Vietnam War. The sentiment remains applicable.\r\n\r\nWhen I write reviews, I do try to give at least a modicum of context, be it a history of the film itself, predecessors to its place in cinema history, or my general feelings on the type of film. In this case, I've just referenced Francis Ford Coppola's classic take on Joseph Conrad's \"Heart of Darkness,\" Apocalypse Now. What does that have to do with Dawn Treader? Nothing, and I couldn't be happier. Why? Because it's distracted my mind with thoughts of a far, far better film. Allow me my few moments of happiness before I have to rifle through the dark filing cabinet of my mind to marshal my thoughts on this atrocity.\\\r\n\r\nWhat went so wrong here, you may ask? We'll start with the history of this franchise. I do not have the highest opinion of this series. We started out with the most famous of C. S. Lewis' Narnia cycle, The Lion, The Witch, and the Wardrobe. I don't know...perhaps if we hadn't been in the middle of such a fantasy film renaissance, I would have found it more palatable. Instead, coming on the heels of Peter Jackson's generation-defining Lord of the Rings trilogy, and the high class and quality of the Harry Potter franchise, that weak take on a book series that didn't thrill me as a child struck me as a cheap, childish appetizer compared to the magnificent feasts audiences had already been served, their stories facile, their acting (aside from a typically great Tilda Swinton) either poor or phoned-in (Paging Mr. Neeson, your paycheck is waiting for you). SHREK co-director Andrew Adamson was the helmer of both Wardrobe and Caspian, and I had hoped those film's failings were due perhaps to his inexperience as a director of live-action. The first film of course wore its Christian allegory on its sleeve (Lewis, for all his writings, never managed to find the definition of \"subtle\"), and it found favor with the churchgoing crowd, whose turnout afforded it a huge box office windfall. The second film was more of a straight actioner (in the vein of Star Wars Episode I, which is to say the supposed action was mired in a swamp of facile and achingly dull political machinations), and didn't find purchase with the same demographic, and box office returns were disappointingly low. Disney, who had financed the films, saw the writing on the wall, and dropped the series. That should have been the end of it.\r\n\r\nUntil 20th Century Fox stepped in. Now, let's remember: Fox doesn't have the best track record with adapting beloved fantasy series into films (a moment of silence for the tragedies that were The Dark is Rising and Eregon, please). Hiring Michael Apted as the director seemed to be bucking the trend of shoveling out crap. Apted isn't really known as an action, fantasy, or epic film director, but he showed promise with the last Pierce Brosnan/James Bond film, The World is Not Enough (I'll not blame him for Denise Richards'...nuclear physicist...sigh). Still, director in place, 20th Century Fox and Walden Media cobbled together another Narnia adventure, and the results were predictably terrible.\r\n\r\nHonestly, I wish I hadn't expected a poor film going in. Because this film not only met but exceeded my expectations of terrible, and it's not because I was pre-judging it. It's because it was simply that bad. The plot is nonsensical, randomly shunting characters from one loosely-connected vignette to the next, with hokey dialogue and dire predictions of eeeevil standing in for actual menace or intrigue. It's a shaggy dog road trip story, waterlogged on a boat, and I found myself half an hour in wishing desperately that the characters would all get scurvy and die.\r\n\r\nThe plot's so thinly-sketched that I may as well not even try to recount it here, but it has something to do with two of the kids from previous films being once again pulled into Narnia at absolute random, with no thematic or plot reason for any of the nonsense in the first place. Once there, our cast is rounded out with their exceptionally annoying cousin, and despite no one knowing quite what's going on, they stumble upon the titular character of the second film, Prince Caspian, and join him on his completely random quest to recover seven old friends of his long-dead father who disappeared for some reason, and no one knows why. So they fight an island made of evil. Good wins, evil is defeated, the end. Please, let it be the end.\r\n\r\nListen: I love fantasy. I love science fiction, I love horror, I love all of the outré genres, the fantastic, the unreal. It fascinates me, and I love wrapping myself in the trappings of the genre like a favored blanket, letting their comforting warmth wash over me in waves of escapism and nostalgia. But this half-assed bunch of hokum had me rolling my eyes, with the stilted dialogue and the hastily-sketched characters and the nonsensical plot and the ARGH it's too much.\r\n\r\nThe icing on this crap cake was the ham-handed, in-no-uncertain-terms Christian allegory with which the film beat the audience over the head with all the grace, power, and strength of an industrial-size sledgehammer. Yes, the evil was SIN. And Aslan is JESUS. Who exists as a lion in an alternate universe or something, apparently. Who pulls children into this alternate universe at random for...no apparent reason whatsoever (the film explicitly states that it's \"to know Him (Aslan i.e. Jesus, in case you didn't already pick up on that) better,\" but if that's the case, why just these four kids? What's the thematic point of this? Why were the elder kids now judged worthy of not having watery allegory poured down their throats again? What did these kids learn at the end of this film that made them better people?\r\n\r\nARGH again. I cannot even begin to catalogue the problems with this series, from either the internal \"logic\" of the series or the external logic of the human brain. Doing so only hurts my head.\r\n\r\nRemember how I said the second film in the series lacked the ham-fisted Christian allegory of the first? Well, 20th Century Fox apparently recognized the church-going demographic was what made the first film such a success, and had them ramp up the religious content from \"allegory\" to \"explicit yelling at the audience and rubbing its nose in it like it's a puppy who peed on the carpet.\" This sentiment struck me as wholly insincere, a manufactured \"message\" shoehorned in by a film studio who wanted nothing more than to reap the box office rewards of the first film which felt, though unsubtle, genuine in its intentions.\r\n\r\nI've seen films more poorly shot, more poorly acted, more poorly assembled. But this boring, useless, preachy slog with no purpose or point had me at the absolute end of my rope. Rare is it that I sit in a darkened theater constantly looking at my watch, biding my time, aching for the dross on the screen to end so that I simply don't have to endure it anymore. But that's exactly what happened with this film.\r\n\r\nBefore anyone jumps on the obvious point of attack, let me say in no uncertain terms that I am Christian. But (and this is an exceptionally important point) just because a the message of a particular film/book/song/etc. is Christian doesn't make the work inherently good. Nor does criticism of the work in some way equal an anti-Christian sentiment. I often feel that works perceived as \"Christian\" get a free pass on quality because of their message, but quality doesn't work like that. Lowering one's standards results only in mediocre pablum like this continuing to be passed off for media conglomerates to make a quick, insincere buck. Do me a favor. If you've enjoyed these films, fine. I whole-heartedly disagree, but I'm certainly not going to tell you you're wrong for enjoying them. But I beg of you: Don't shut off the critical area of your brain just because something agrees with your worldview. Doing so is a disservice not only to yourself, but everyone else like you who has to suffer through trash like this.",
         "created_at": "2013-07-21T18:29:33.556Z",
         "id": "51ec288d19c29551e2117035",
-        "updated_at": "2013-07-22T14:22:44.117Z",
+        "updated_at": "2021-06-23T15:57:21.965Z",
         "url": "https://www.themoviedb.org/review/51ec288d19c29551e2117035"
       },
       {
@@ -2097,7 +2276,7 @@
         "content": "Growing up in the Canada in the 70's and 80's, I fondly recall vastly enjoying an animated version of Lewis' 'The Lion, the Witch and the Wardrobe' that was presented by Kraft on CTV. Now as a father of a son, I want to see with him the contemporary versions of the books I adored in my youth, though at present I greatly prefer the craftsmanship of cinema pre-1970.\r\n\r\nIt never bothers me in the slightest, to the ire of my more obsessive-compulsive cinephilic friends, seeing films of series with complete disregard to their order (one of my friends nearly had a heart attack, when he discovered I had watched 'Spider-Man 3' without having previously watched films 1 and 2--don't even get me started about the 'Harry Potter' series...), so, especially curious about how one of my favourite contemporary directors, Michael Apted, would do in the realm of big-budget, CGI-intensive fantasy filmmaking (I expected a fish-out-of-water, like Lord Richard Attenborough helming 'A Chorus Line'), I gave this a shot.\r\n\r\nI enjoyed this more than 'Harry Potter' films I have seen, though it does stretch things from the literary works, but unfortunately, that seems to be the way things are, since film became less about artistry and more about business (just see at Toys R Us how many possible toys you can purchase, and similar commercial off-shoots, and I don't even consider this series a major player in this sort of area, because of its Christian undertones, which really doesn't mesh perfectly with selling tons of toys, though of course the realms aren't mutually exclusive, not by any stretch of the imagination). I think that Apted did a decent job, especially considering that yes, he is a fine director, but this isn't really his cup of tea. I distinctly feel that if these films are your comfort food, you won't be disappointed. I look forward to checking out the series' two preceding entries, and, though they left an opportunity for more films, which I believe wouldn't be from Lewis' works at all, it was a nice summation at its conclusion.\r\n\r\nFinally, it was great to see (or at the very least, hear) Tilda Swinton, Liam Neeson and Simon Pegg, they seem to be thrown in everything these days. I heartily salute their agents--they must have the very best in the business.",
         "created_at": "2016-04-12T04:10:13.695Z",
         "id": "570c752592514144920001c4",
-        "updated_at": "2016-04-12T12:46:12.328Z",
+        "updated_at": "2021-06-23T15:57:46.761Z",
         "url": "https://www.themoviedb.org/review/570c752592514144920001c4"
       },
       {
@@ -2111,7 +2290,7 @@
         "content": "I wouldn't class this as a good or bad film, it's in a weird sorta in-between to me.\r\n\r\n<em>'The Chronicles of Narnia: The Voyage of the Dawn Treader'</em> is, comparatively, bad. It loses the vibe and all the intrigue that the first film has, as it continues the downward trajectory set by the other sequel. However, it's still just about got a decent adventure feel to it.\r\n\r\nOnly two of the youngsters reprise their roles 'properly', those being Georgie Henley (Lucy) and Skandar Keynes (Edmund). I'd always prefer a cast to remain the same, but if I'm honest this doesn't miss William Moseley (Peter) and Anna Popplewell (Susan) all that much. That argument is helped by the arrival of a young Will Poulter as Eustace. He's great.\r\n\r\nPlot-wise is where it gets meh. I didn't care for it, even if I did like its swashbuckling nature. I can see many finding enjoyment with it, but for me it doesn't quite come out positively unfortunately - it's sluggish. The ship set also feels rather cheap.\r\n\r\nNot at all a bad film; one that was interestingly made without the involvement of Disney, Walden Media joined up with Fox instead. I just couldn't find enough entertainment in it.",
         "created_at": "2020-11-04T15:00:51.184Z",
         "id": "5fa2c2236782590035a0d722",
-        "updated_at": "2020-11-04T17:09:03.167Z",
+        "updated_at": "2021-06-23T15:58:47.075Z",
         "url": "https://www.themoviedb.org/review/5fa2c2236782590035a0d722"
       }
     ],
@@ -2122,20 +2301,6 @@
     "results": {
       "AR": {
         "link": "https://www.themoviedb.org/movie/10140-the-chronicles-of-narnia-the-voyage-of-the-dawn-treader/watch?locale=AR",
-        "rent": [
-          {
-            "display_priority": 3,
-            "logo_path": "/p3Z12gKq2qvJaUOMeKNU2mzKVI9.jpg",
-            "provider_id": 3,
-            "provider_name": "Google Play Movies"
-          },
-          {
-            "display_priority": 8,
-            "logo_path": "/mzu37NQphDvqN2BHKM0Rwq9Es3r.jpg",
-            "provider_id": 167,
-            "provider_name": "Claro video"
-          }
-        ],
         "buy": [
           {
             "display_priority": 3,
@@ -2151,54 +2316,18 @@
             "provider_id": 337,
             "provider_name": "Disney Plus"
           }
-        ]
-      },
-      "AT": {
-        "link": "https://www.themoviedb.org/movie/10140-the-chronicles-of-narnia-the-voyage-of-the-dawn-treader/watch?locale=AT",
+        ],
         "rent": [
-          {
-            "display_priority": 2,
-            "logo_path": "/q6tl6Ib6X5FT80RMlcDbexIo4St.jpg",
-            "provider_id": 2,
-            "provider_name": "Apple iTunes"
-          },
           {
             "display_priority": 3,
             "logo_path": "/p3Z12gKq2qvJaUOMeKNU2mzKVI9.jpg",
             "provider_id": 3,
             "provider_name": "Google Play Movies"
-          },
-          {
-            "display_priority": 8,
-            "logo_path": "/pZgeSWpfvD59x6sY6stT5c6uc2h.jpg",
-            "provider_id": 130,
-            "provider_name": "Sky Store"
-          },
-          {
-            "display_priority": 10,
-            "logo_path": "/sVBEF7q7LqjHAWSnKwDbzmr2EMY.jpg",
-            "provider_id": 10,
-            "provider_name": "Amazon Video"
-          },
-          {
-            "display_priority": 11,
-            "logo_path": "/vjKeS7Y9fNyqNtvp2ROCc71iu1u.jpg",
-            "provider_id": 40,
-            "provider_name": "Chili"
-          },
-          {
-            "display_priority": 18,
-            "logo_path": "/wuViyDkbFp4r7VqI0efPW5hFfQj.jpg",
-            "provider_id": 35,
-            "provider_name": "Rakuten TV"
-          },
-          {
-            "display_priority": 35,
-            "logo_path": "/paq2o2dIfQnxcERsVoq7Ys8KYz8.jpg",
-            "provider_id": 68,
-            "provider_name": "Microsoft Store"
           }
-        ],
+        ]
+      },
+      "AT": {
+        "link": "https://www.themoviedb.org/movie/10140-the-chronicles-of-narnia-the-voyage-of-the-dawn-treader/watch?locale=AT",
         "flatrate": [
           {
             "display_priority": 1,
@@ -2208,13 +2337,13 @@
           },
           {
             "display_priority": 7,
-            "logo_path": "/12H7kZk3kjUCXdUVkdJaSv4xyzH.jpg",
+            "logo_path": "/4cmSPgiqSEYjEepLj7fB7PJRE4D.jpg",
             "provider_id": 30,
             "provider_name": "Sky Ticket"
           },
           {
             "display_priority": 8,
-            "logo_path": "/zLX0ExkHc8xJ9W4u9JgnldDQLKv.jpg",
+            "logo_path": "/iWEiQXKaRtHqelZKtgUjyrYoWa6.jpg",
             "provider_id": 29,
             "provider_name": "Sky Go"
           },
@@ -2225,6 +2354,44 @@
             "provider_name": "Sky X"
           }
         ],
+        "rent": [
+          {
+            "display_priority": 2,
+            "logo_path": "/q6tl6Ib6X5FT80RMlcDbexIo4St.jpg",
+            "provider_id": 2,
+            "provider_name": "Apple iTunes"
+          },
+          {
+            "display_priority": 3,
+            "logo_path": "/p3Z12gKq2qvJaUOMeKNU2mzKVI9.jpg",
+            "provider_id": 3,
+            "provider_name": "Google Play Movies"
+          },
+          {
+            "display_priority": 8,
+            "logo_path": "/pZgeSWpfvD59x6sY6stT5c6uc2h.jpg",
+            "provider_id": 130,
+            "provider_name": "Sky Store"
+          },
+          {
+            "display_priority": 10,
+            "logo_path": "/wuViyDkbFp4r7VqI0efPW5hFfQj.jpg",
+            "provider_id": 35,
+            "provider_name": "Rakuten TV"
+          },
+          {
+            "display_priority": 11,
+            "logo_path": "/sVBEF7q7LqjHAWSnKwDbzmr2EMY.jpg",
+            "provider_id": 10,
+            "provider_name": "Amazon Video"
+          },
+          {
+            "display_priority": 11,
+            "logo_path": "/vjKeS7Y9fNyqNtvp2ROCc71iu1u.jpg",
+            "provider_id": 40,
+            "provider_name": "Chili"
+          }
+        ],
         "buy": [
           {
             "display_priority": 2,
@@ -2246,6 +2413,12 @@
           },
           {
             "display_priority": 10,
+            "logo_path": "/wuViyDkbFp4r7VqI0efPW5hFfQj.jpg",
+            "provider_id": 35,
+            "provider_name": "Rakuten TV"
+          },
+          {
+            "display_priority": 11,
             "logo_path": "/sVBEF7q7LqjHAWSnKwDbzmr2EMY.jpg",
             "provider_id": 10,
             "provider_name": "Amazon Video"
@@ -2255,24 +2428,32 @@
             "logo_path": "/vjKeS7Y9fNyqNtvp2ROCc71iu1u.jpg",
             "provider_id": 40,
             "provider_name": "Chili"
-          },
-          {
-            "display_priority": 18,
-            "logo_path": "/wuViyDkbFp4r7VqI0efPW5hFfQj.jpg",
-            "provider_id": 35,
-            "provider_name": "Rakuten TV"
-          },
-          {
-            "display_priority": 35,
-            "logo_path": "/paq2o2dIfQnxcERsVoq7Ys8KYz8.jpg",
-            "provider_id": 68,
-            "provider_name": "Microsoft Store"
           }
         ]
       },
       "AU": {
         "link": "https://www.themoviedb.org/movie/10140-the-chronicles-of-narnia-the-voyage-of-the-dawn-treader/watch?locale=AU",
+        "flatrate": [
+          {
+            "display_priority": 1,
+            "logo_path": "/dgPueyEdOwpQ10fjuhL2WYFQwQs.jpg",
+            "provider_id": 337,
+            "provider_name": "Disney Plus"
+          }
+        ],
         "buy": [
+          {
+            "display_priority": 0,
+            "logo_path": "/43Ykyf69e9Ca3jmTtefhINkw6PN.jpg",
+            "provider_id": 436,
+            "provider_name": "Fetch TV"
+          },
+          {
+            "display_priority": 2,
+            "logo_path": "/q6tl6Ib6X5FT80RMlcDbexIo4St.jpg",
+            "provider_id": 2,
+            "provider_name": "Apple iTunes"
+          },
           {
             "display_priority": 3,
             "logo_path": "/p3Z12gKq2qvJaUOMeKNU2mzKVI9.jpg",
@@ -2280,25 +2461,19 @@
             "provider_name": "Google Play Movies"
           },
           {
-            "display_priority": 10,
+            "display_priority": 11,
             "logo_path": "/sVBEF7q7LqjHAWSnKwDbzmr2EMY.jpg",
             "provider_id": 10,
             "provider_name": "Amazon Video"
           },
           {
-            "display_priority": 12,
+            "display_priority": 13,
             "logo_path": "/vDCcryHD32b0yMeSCgBhuYavsmx.jpg",
             "provider_id": 192,
             "provider_name": "YouTube"
           },
           {
-            "display_priority": 33,
-            "logo_path": "/43Ykyf69e9Ca3jmTtefhINkw6PN.jpg",
-            "provider_id": 436,
-            "provider_name": "Fetch TV"
-          },
-          {
-            "display_priority": 35,
+            "display_priority": 47,
             "logo_path": "/paq2o2dIfQnxcERsVoq7Ys8KYz8.jpg",
             "provider_id": 68,
             "provider_name": "Microsoft Store"
@@ -2306,55 +2481,45 @@
         ],
         "rent": [
           {
+            "display_priority": 0,
+            "logo_path": "/43Ykyf69e9Ca3jmTtefhINkw6PN.jpg",
+            "provider_id": 436,
+            "provider_name": "Fetch TV"
+          },
+          {
+            "display_priority": 2,
+            "logo_path": "/q6tl6Ib6X5FT80RMlcDbexIo4St.jpg",
+            "provider_id": 2,
+            "provider_name": "Apple iTunes"
+          },
+          {
             "display_priority": 3,
             "logo_path": "/p3Z12gKq2qvJaUOMeKNU2mzKVI9.jpg",
             "provider_id": 3,
             "provider_name": "Google Play Movies"
           },
           {
-            "display_priority": 10,
+            "display_priority": 11,
             "logo_path": "/sVBEF7q7LqjHAWSnKwDbzmr2EMY.jpg",
             "provider_id": 10,
             "provider_name": "Amazon Video"
           },
           {
-            "display_priority": 12,
+            "display_priority": 13,
             "logo_path": "/vDCcryHD32b0yMeSCgBhuYavsmx.jpg",
             "provider_id": 192,
             "provider_name": "YouTube"
           },
           {
-            "display_priority": 33,
-            "logo_path": "/43Ykyf69e9Ca3jmTtefhINkw6PN.jpg",
-            "provider_id": 436,
-            "provider_name": "Fetch TV"
-          },
-          {
-            "display_priority": 35,
+            "display_priority": 47,
             "logo_path": "/paq2o2dIfQnxcERsVoq7Ys8KYz8.jpg",
             "provider_id": 68,
             "provider_name": "Microsoft Store"
-          }
-        ],
-        "flatrate": [
-          {
-            "display_priority": 1,
-            "logo_path": "/dgPueyEdOwpQ10fjuhL2WYFQwQs.jpg",
-            "provider_id": 337,
-            "provider_name": "Disney Plus"
           }
         ]
       },
       "BE": {
         "link": "https://www.themoviedb.org/movie/10140-the-chronicles-of-narnia-the-voyage-of-the-dawn-treader/watch?locale=BE",
-        "flatrate": [
-          {
-            "display_priority": 1,
-            "logo_path": "/dgPueyEdOwpQ10fjuhL2WYFQwQs.jpg",
-            "provider_id": 337,
-            "provider_name": "Disney Plus"
-          }
-        ],
         "buy": [
           {
             "display_priority": 2,
@@ -2369,10 +2534,18 @@
             "provider_name": "Google Play Movies"
           },
           {
-            "display_priority": 18,
+            "display_priority": 10,
             "logo_path": "/wuViyDkbFp4r7VqI0efPW5hFfQj.jpg",
             "provider_id": 35,
             "provider_name": "Rakuten TV"
+          }
+        ],
+        "flatrate": [
+          {
+            "display_priority": 1,
+            "logo_path": "/dgPueyEdOwpQ10fjuhL2WYFQwQs.jpg",
+            "provider_id": 337,
+            "provider_name": "Disney Plus"
           }
         ],
         "rent": [
@@ -2389,10 +2562,40 @@
             "provider_name": "Google Play Movies"
           },
           {
-            "display_priority": 18,
+            "display_priority": 10,
             "logo_path": "/wuViyDkbFp4r7VqI0efPW5hFfQj.jpg",
             "provider_id": 35,
             "provider_name": "Rakuten TV"
+          }
+        ]
+      },
+      "BG": {
+        "link": "https://www.themoviedb.org/movie/10140-the-chronicles-of-narnia-the-voyage-of-the-dawn-treader/watch?locale=BG",
+        "buy": [
+          {
+            "display_priority": 2,
+            "logo_path": "/q6tl6Ib6X5FT80RMlcDbexIo4St.jpg",
+            "provider_id": 2,
+            "provider_name": "Apple iTunes"
+          }
+        ],
+        "rent": [
+          {
+            "display_priority": 2,
+            "logo_path": "/q6tl6Ib6X5FT80RMlcDbexIo4St.jpg",
+            "provider_id": 2,
+            "provider_name": "Apple iTunes"
+          }
+        ]
+      },
+      "BO": {
+        "link": "https://www.themoviedb.org/movie/10140-the-chronicles-of-narnia-the-voyage-of-the-dawn-treader/watch?locale=BO",
+        "flatrate": [
+          {
+            "display_priority": 1,
+            "logo_path": "/dgPueyEdOwpQ10fjuhL2WYFQwQs.jpg",
+            "provider_id": 337,
+            "provider_name": "Disney Plus"
           }
         ]
       },
@@ -2404,12 +2607,24 @@
             "logo_path": "/dgPueyEdOwpQ10fjuhL2WYFQwQs.jpg",
             "provider_id": 337,
             "provider_name": "Disney Plus"
+          },
+          {
+            "display_priority": 32,
+            "logo_path": "/dNAz0MMIPiqCD2axGIktXSFWmkz.jpg",
+            "provider_id": 484,
+            "provider_name": "NOW"
           }
         ]
       },
       "CA": {
         "link": "https://www.themoviedb.org/movie/10140-the-chronicles-of-narnia-the-voyage-of-the-dawn-treader/watch?locale=CA",
-        "rent": [
+        "buy": [
+          {
+            "display_priority": 2,
+            "logo_path": "/q6tl6Ib6X5FT80RMlcDbexIo4St.jpg",
+            "provider_id": 2,
+            "provider_name": "Apple iTunes"
+          },
           {
             "display_priority": 3,
             "logo_path": "/p3Z12gKq2qvJaUOMeKNU2mzKVI9.jpg",
@@ -2417,7 +2632,7 @@
             "provider_name": "Google Play Movies"
           },
           {
-            "display_priority": 10,
+            "display_priority": 11,
             "logo_path": "/sVBEF7q7LqjHAWSnKwDbzmr2EMY.jpg",
             "provider_id": 10,
             "provider_name": "Amazon Video"
@@ -2429,22 +2644,16 @@
             "provider_name": "Cineplex"
           },
           {
-            "display_priority": 12,
+            "display_priority": 13,
             "logo_path": "/vDCcryHD32b0yMeSCgBhuYavsmx.jpg",
             "provider_id": 192,
             "provider_name": "YouTube"
           },
           {
-            "display_priority": 35,
+            "display_priority": 47,
             "logo_path": "/paq2o2dIfQnxcERsVoq7Ys8KYz8.jpg",
             "provider_id": 68,
             "provider_name": "Microsoft Store"
-          },
-          {
-            "display_priority": 54,
-            "logo_path": "/mK7Au1go2M5MqyZ8CjkpJPM6Apb.jpg",
-            "provider_id": 492,
-            "provider_name": "ILLICO"
           }
         ],
         "flatrate": [
@@ -2455,41 +2664,6 @@
             "provider_name": "Disney Plus"
           }
         ],
-        "buy": [
-          {
-            "display_priority": 3,
-            "logo_path": "/p3Z12gKq2qvJaUOMeKNU2mzKVI9.jpg",
-            "provider_id": 3,
-            "provider_name": "Google Play Movies"
-          },
-          {
-            "display_priority": 10,
-            "logo_path": "/sVBEF7q7LqjHAWSnKwDbzmr2EMY.jpg",
-            "provider_id": 10,
-            "provider_name": "Amazon Video"
-          },
-          {
-            "display_priority": 12,
-            "logo_path": "/vDCcryHD32b0yMeSCgBhuYavsmx.jpg",
-            "provider_id": 192,
-            "provider_name": "YouTube"
-          },
-          {
-            "display_priority": 12,
-            "logo_path": "/xEWgUq2tJyggisxbJ3fNOV9Inj2.jpg",
-            "provider_id": 140,
-            "provider_name": "Cineplex"
-          },
-          {
-            "display_priority": 35,
-            "logo_path": "/paq2o2dIfQnxcERsVoq7Ys8KYz8.jpg",
-            "provider_id": 68,
-            "provider_name": "Microsoft Store"
-          }
-        ]
-      },
-      "CH": {
-        "link": "https://www.themoviedb.org/movie/10140-the-chronicles-of-narnia-the-voyage-of-the-dawn-treader/watch?locale=CH",
         "rent": [
           {
             "display_priority": 2,
@@ -2504,10 +2678,63 @@
             "provider_name": "Google Play Movies"
           },
           {
+            "display_priority": 11,
+            "logo_path": "/sVBEF7q7LqjHAWSnKwDbzmr2EMY.jpg",
+            "provider_id": 10,
+            "provider_name": "Amazon Video"
+          },
+          {
+            "display_priority": 12,
+            "logo_path": "/xEWgUq2tJyggisxbJ3fNOV9Inj2.jpg",
+            "provider_id": 140,
+            "provider_name": "Cineplex"
+          },
+          {
+            "display_priority": 13,
+            "logo_path": "/vDCcryHD32b0yMeSCgBhuYavsmx.jpg",
+            "provider_id": 192,
+            "provider_name": "YouTube"
+          },
+          {
+            "display_priority": 47,
+            "logo_path": "/paq2o2dIfQnxcERsVoq7Ys8KYz8.jpg",
+            "provider_id": 68,
+            "provider_name": "Microsoft Store"
+          },
+          {
+            "display_priority": 57,
+            "logo_path": "/mK7Au1go2M5MqyZ8CjkpJPM6Apb.jpg",
+            "provider_id": 492,
+            "provider_name": "ILLICO"
+          }
+        ]
+      },
+      "CH": {
+        "link": "https://www.themoviedb.org/movie/10140-the-chronicles-of-narnia-the-voyage-of-the-dawn-treader/watch?locale=CH",
+        "buy": [
+          {
+            "display_priority": 2,
+            "logo_path": "/q6tl6Ib6X5FT80RMlcDbexIo4St.jpg",
+            "provider_id": 2,
+            "provider_name": "Apple iTunes"
+          },
+          {
             "display_priority": 3,
             "logo_path": "/dSBzj4T9P7PMUr015gnV7meT2LR.jpg",
             "provider_id": 150,
             "provider_name": "SwissCom"
+          },
+          {
+            "display_priority": 3,
+            "logo_path": "/p3Z12gKq2qvJaUOMeKNU2mzKVI9.jpg",
+            "provider_id": 3,
+            "provider_name": "Google Play Movies"
+          },
+          {
+            "display_priority": 8,
+            "logo_path": "/pZgeSWpfvD59x6sY6stT5c6uc2h.jpg",
+            "provider_id": 130,
+            "provider_name": "Sky Store"
           },
           {
             "display_priority": 8,
@@ -2516,13 +2743,13 @@
             "provider_name": "Hollystar"
           },
           {
-            "display_priority": 18,
+            "display_priority": 10,
             "logo_path": "/wuViyDkbFp4r7VqI0efPW5hFfQj.jpg",
             "provider_id": 35,
             "provider_name": "Rakuten TV"
           },
           {
-            "display_priority": 35,
+            "display_priority": 47,
             "logo_path": "/paq2o2dIfQnxcERsVoq7Ys8KYz8.jpg",
             "provider_id": 68,
             "provider_name": "Microsoft Store"
@@ -2534,6 +2761,12 @@
             "logo_path": "/dgPueyEdOwpQ10fjuhL2WYFQwQs.jpg",
             "provider_id": 337,
             "provider_name": "Disney Plus"
+          },
+          {
+            "display_priority": 3,
+            "logo_path": "/dSBzj4T9P7PMUr015gnV7meT2LR.jpg",
+            "provider_id": 150,
+            "provider_name": "SwissCom"
           },
           {
             "display_priority": 7,
@@ -2542,18 +2775,12 @@
             "provider_name": "Sky"
           }
         ],
-        "buy": [
+        "rent": [
           {
             "display_priority": 2,
             "logo_path": "/q6tl6Ib6X5FT80RMlcDbexIo4St.jpg",
             "provider_id": 2,
             "provider_name": "Apple iTunes"
-          },
-          {
-            "display_priority": 3,
-            "logo_path": "/p3Z12gKq2qvJaUOMeKNU2mzKVI9.jpg",
-            "provider_id": 3,
-            "provider_name": "Google Play Movies"
           },
           {
             "display_priority": 3,
@@ -2562,19 +2789,31 @@
             "provider_name": "SwissCom"
           },
           {
+            "display_priority": 3,
+            "logo_path": "/p3Z12gKq2qvJaUOMeKNU2mzKVI9.jpg",
+            "provider_id": 3,
+            "provider_name": "Google Play Movies"
+          },
+          {
+            "display_priority": 8,
+            "logo_path": "/pZgeSWpfvD59x6sY6stT5c6uc2h.jpg",
+            "provider_id": 130,
+            "provider_name": "Sky Store"
+          },
+          {
             "display_priority": 8,
             "logo_path": "/567LmXMmafb8e2jGOmpHDZNl2r8.jpg",
             "provider_id": 164,
             "provider_name": "Hollystar"
           },
           {
-            "display_priority": 18,
+            "display_priority": 10,
             "logo_path": "/wuViyDkbFp4r7VqI0efPW5hFfQj.jpg",
             "provider_id": 35,
             "provider_name": "Rakuten TV"
           },
           {
-            "display_priority": 35,
+            "display_priority": 47,
             "logo_path": "/paq2o2dIfQnxcERsVoq7Ys8KYz8.jpg",
             "provider_id": 68,
             "provider_name": "Microsoft Store"
@@ -2583,7 +2822,7 @@
       },
       "CL": {
         "link": "https://www.themoviedb.org/movie/10140-the-chronicles-of-narnia-the-voyage-of-the-dawn-treader/watch?locale=CL",
-        "rent": [
+        "buy": [
           {
             "display_priority": 3,
             "logo_path": "/p3Z12gKq2qvJaUOMeKNU2mzKVI9.jpg",
@@ -2591,7 +2830,34 @@
             "provider_name": "Google Play Movies"
           }
         ],
+        "flatrate": [
+          {
+            "display_priority": 1,
+            "logo_path": "/dgPueyEdOwpQ10fjuhL2WYFQwQs.jpg",
+            "provider_id": 337,
+            "provider_name": "Disney Plus"
+          }
+        ],
+        "rent": [
+          {
+            "display_priority": 3,
+            "logo_path": "/p3Z12gKq2qvJaUOMeKNU2mzKVI9.jpg",
+            "provider_id": 3,
+            "provider_name": "Google Play Movies"
+          }
+        ]
+      },
+      "CO": {
+        "link": "https://www.themoviedb.org/movie/10140-the-chronicles-of-narnia-the-voyage-of-the-dawn-treader/watch?locale=CO",
         "buy": [
+          {
+            "display_priority": 3,
+            "logo_path": "/p3Z12gKq2qvJaUOMeKNU2mzKVI9.jpg",
+            "provider_id": 3,
+            "provider_name": "Google Play Movies"
+          }
+        ],
+        "rent": [
           {
             "display_priority": 3,
             "logo_path": "/p3Z12gKq2qvJaUOMeKNU2mzKVI9.jpg",
@@ -2608,36 +2874,20 @@
           }
         ]
       },
-      "CO": {
-        "link": "https://www.themoviedb.org/movie/10140-the-chronicles-of-narnia-the-voyage-of-the-dawn-treader/watch?locale=CO",
+      "CR": {
+        "link": "https://www.themoviedb.org/movie/10140-the-chronicles-of-narnia-the-voyage-of-the-dawn-treader/watch?locale=CR",
         "flatrate": [
           {
             "display_priority": 1,
             "logo_path": "/dgPueyEdOwpQ10fjuhL2WYFQwQs.jpg",
             "provider_id": 337,
             "provider_name": "Disney Plus"
-          }
-        ],
-        "buy": [
-          {
-            "display_priority": 3,
-            "logo_path": "/p3Z12gKq2qvJaUOMeKNU2mzKVI9.jpg",
-            "provider_id": 3,
-            "provider_name": "Google Play Movies"
-          }
-        ],
-        "rent": [
-          {
-            "display_priority": 3,
-            "logo_path": "/p3Z12gKq2qvJaUOMeKNU2mzKVI9.jpg",
-            "provider_id": 3,
-            "provider_name": "Google Play Movies"
           }
         ]
       },
       "CZ": {
         "link": "https://www.themoviedb.org/movie/10140-the-chronicles-of-narnia-the-voyage-of-the-dawn-treader/watch?locale=CZ",
-        "rent": [
+        "buy": [
           {
             "display_priority": 2,
             "logo_path": "/q6tl6Ib6X5FT80RMlcDbexIo4St.jpg",
@@ -2649,20 +2899,20 @@
             "logo_path": "/p3Z12gKq2qvJaUOMeKNU2mzKVI9.jpg",
             "provider_id": 3,
             "provider_name": "Google Play Movies"
+          }
+        ],
+        "rent": [
+          {
+            "display_priority": 2,
+            "logo_path": "/q6tl6Ib6X5FT80RMlcDbexIo4St.jpg",
+            "provider_id": 2,
+            "provider_name": "Apple iTunes"
           },
           {
             "display_priority": 3,
             "logo_path": "/oWdLYAsfb61wUUkGKdLifBbJinI.jpg",
             "provider_id": 308,
             "provider_name": "O2 TV"
-          }
-        ],
-        "buy": [
-          {
-            "display_priority": 2,
-            "logo_path": "/q6tl6Ib6X5FT80RMlcDbexIo4St.jpg",
-            "provider_id": 2,
-            "provider_name": "Apple iTunes"
           },
           {
             "display_priority": 3,
@@ -2695,6 +2945,12 @@
           },
           {
             "display_priority": 10,
+            "logo_path": "/wuViyDkbFp4r7VqI0efPW5hFfQj.jpg",
+            "provider_id": 35,
+            "provider_name": "Rakuten TV"
+          },
+          {
+            "display_priority": 11,
             "logo_path": "/sVBEF7q7LqjHAWSnKwDbzmr2EMY.jpg",
             "provider_id": 10,
             "provider_name": "Amazon Video"
@@ -2706,28 +2962,42 @@
             "provider_name": "Chili"
           },
           {
-            "display_priority": 12,
+            "display_priority": 13,
             "logo_path": "/vDCcryHD32b0yMeSCgBhuYavsmx.jpg",
             "provider_id": 192,
             "provider_name": "YouTube"
           },
           {
-            "display_priority": 18,
-            "logo_path": "/wuViyDkbFp4r7VqI0efPW5hFfQj.jpg",
-            "provider_id": 35,
-            "provider_name": "Rakuten TV"
-          },
-          {
-            "display_priority": 27,
+            "display_priority": 28,
             "logo_path": "/6QfNLK9toSu2bvsWN7A0sEsTz3j.jpg",
             "provider_id": 178,
             "provider_name": "EntertainTV"
           },
           {
-            "display_priority": 35,
+            "display_priority": 47,
             "logo_path": "/paq2o2dIfQnxcERsVoq7Ys8KYz8.jpg",
             "provider_id": 68,
             "provider_name": "Microsoft Store"
+          }
+        ],
+        "flatrate": [
+          {
+            "display_priority": 1,
+            "logo_path": "/dgPueyEdOwpQ10fjuhL2WYFQwQs.jpg",
+            "provider_id": 337,
+            "provider_name": "Disney Plus"
+          },
+          {
+            "display_priority": 7,
+            "logo_path": "/4cmSPgiqSEYjEepLj7fB7PJRE4D.jpg",
+            "provider_id": 30,
+            "provider_name": "Sky Ticket"
+          },
+          {
+            "display_priority": 8,
+            "logo_path": "/iWEiQXKaRtHqelZKtgUjyrYoWa6.jpg",
+            "provider_id": 29,
+            "provider_name": "Sky Go"
           }
         ],
         "buy": [
@@ -2751,6 +3021,12 @@
           },
           {
             "display_priority": 10,
+            "logo_path": "/wuViyDkbFp4r7VqI0efPW5hFfQj.jpg",
+            "provider_id": 35,
+            "provider_name": "Rakuten TV"
+          },
+          {
+            "display_priority": 11,
             "logo_path": "/sVBEF7q7LqjHAWSnKwDbzmr2EMY.jpg",
             "provider_id": 10,
             "provider_name": "Amazon Video"
@@ -2762,62 +3038,34 @@
             "provider_name": "Chili"
           },
           {
-            "display_priority": 12,
+            "display_priority": 13,
             "logo_path": "/vDCcryHD32b0yMeSCgBhuYavsmx.jpg",
             "provider_id": 192,
             "provider_name": "YouTube"
           },
           {
-            "display_priority": 18,
-            "logo_path": "/wuViyDkbFp4r7VqI0efPW5hFfQj.jpg",
-            "provider_id": 35,
-            "provider_name": "Rakuten TV"
-          },
-          {
-            "display_priority": 27,
+            "display_priority": 28,
             "logo_path": "/6QfNLK9toSu2bvsWN7A0sEsTz3j.jpg",
             "provider_id": 178,
             "provider_name": "EntertainTV"
           },
           {
-            "display_priority": 35,
+            "display_priority": 47,
             "logo_path": "/paq2o2dIfQnxcERsVoq7Ys8KYz8.jpg",
             "provider_id": 68,
             "provider_name": "Microsoft Store"
-          }
-        ],
-        "flatrate": [
-          {
-            "display_priority": 1,
-            "logo_path": "/dgPueyEdOwpQ10fjuhL2WYFQwQs.jpg",
-            "provider_id": 337,
-            "provider_name": "Disney Plus"
-          },
-          {
-            "display_priority": 7,
-            "logo_path": "/12H7kZk3kjUCXdUVkdJaSv4xyzH.jpg",
-            "provider_id": 30,
-            "provider_name": "Sky Ticket"
-          },
-          {
-            "display_priority": 8,
-            "logo_path": "/zLX0ExkHc8xJ9W4u9JgnldDQLKv.jpg",
-            "provider_id": 29,
-            "provider_name": "Sky Go"
           }
         ]
       },
       "DK": {
         "link": "https://www.themoviedb.org/movie/10140-the-chronicles-of-narnia-the-voyage-of-the-dawn-treader/watch?locale=DK",
-        "flatrate": [
+        "buy": [
           {
-            "display_priority": 1,
-            "logo_path": "/dgPueyEdOwpQ10fjuhL2WYFQwQs.jpg",
-            "provider_id": 337,
-            "provider_name": "Disney Plus"
-          }
-        ],
-        "rent": [
+            "display_priority": 2,
+            "logo_path": "/q6tl6Ib6X5FT80RMlcDbexIo4St.jpg",
+            "provider_id": 2,
+            "provider_name": "Apple iTunes"
+          },
           {
             "display_priority": 3,
             "logo_path": "/p3Z12gKq2qvJaUOMeKNU2mzKVI9.jpg",
@@ -2825,59 +3073,30 @@
             "provider_name": "Google Play Movies"
           },
           {
-            "display_priority": 5,
+            "display_priority": 4,
             "logo_path": "/okuStqHQL2ImgtNxNM40La91u3A.jpg",
             "provider_id": 76,
             "provider_name": "Viaplay"
           },
           {
-            "display_priority": 18,
+            "display_priority": 10,
             "logo_path": "/wuViyDkbFp4r7VqI0efPW5hFfQj.jpg",
             "provider_id": 35,
             "provider_name": "Rakuten TV"
           },
           {
-            "display_priority": 19,
+            "display_priority": 21,
             "logo_path": "/oEntjkQyz84qo1C4FZK9jW1qznl.jpg",
             "provider_id": 423,
             "provider_name": "Blockbuster"
           },
           {
-            "display_priority": 35,
-            "logo_path": "/paq2o2dIfQnxcERsVoq7Ys8KYz8.jpg",
-            "provider_id": 68,
-            "provider_name": "Microsoft Store"
+            "display_priority": 22,
+            "logo_path": "/yEbC1a22QZul3KGjeZ1OZjcN4u6.jpg",
+            "provider_id": 426,
+            "provider_name": "SF Anytime"
           }
         ],
-        "buy": [
-          {
-            "display_priority": 3,
-            "logo_path": "/p3Z12gKq2qvJaUOMeKNU2mzKVI9.jpg",
-            "provider_id": 3,
-            "provider_name": "Google Play Movies"
-          },
-          {
-            "display_priority": 18,
-            "logo_path": "/wuViyDkbFp4r7VqI0efPW5hFfQj.jpg",
-            "provider_id": 35,
-            "provider_name": "Rakuten TV"
-          },
-          {
-            "display_priority": 19,
-            "logo_path": "/oEntjkQyz84qo1C4FZK9jW1qznl.jpg",
-            "provider_id": 423,
-            "provider_name": "Blockbuster"
-          },
-          {
-            "display_priority": 35,
-            "logo_path": "/paq2o2dIfQnxcERsVoq7Ys8KYz8.jpg",
-            "provider_id": 68,
-            "provider_name": "Microsoft Store"
-          }
-        ]
-      },
-      "EC": {
-        "link": "https://www.themoviedb.org/movie/10140-the-chronicles-of-narnia-the-voyage-of-the-dawn-treader/watch?locale=EC",
         "flatrate": [
           {
             "display_priority": 1,
@@ -2888,13 +3107,56 @@
         ],
         "rent": [
           {
+            "display_priority": 2,
+            "logo_path": "/q6tl6Ib6X5FT80RMlcDbexIo4St.jpg",
+            "provider_id": 2,
+            "provider_name": "Apple iTunes"
+          },
+          {
+            "display_priority": 3,
+            "logo_path": "/p3Z12gKq2qvJaUOMeKNU2mzKVI9.jpg",
+            "provider_id": 3,
+            "provider_name": "Google Play Movies"
+          },
+          {
+            "display_priority": 4,
+            "logo_path": "/okuStqHQL2ImgtNxNM40La91u3A.jpg",
+            "provider_id": 76,
+            "provider_name": "Viaplay"
+          },
+          {
+            "display_priority": 10,
+            "logo_path": "/wuViyDkbFp4r7VqI0efPW5hFfQj.jpg",
+            "provider_id": 35,
+            "provider_name": "Rakuten TV"
+          },
+          {
+            "display_priority": 21,
+            "logo_path": "/oEntjkQyz84qo1C4FZK9jW1qznl.jpg",
+            "provider_id": 423,
+            "provider_name": "Blockbuster"
+          }
+        ]
+      },
+      "EC": {
+        "link": "https://www.themoviedb.org/movie/10140-the-chronicles-of-narnia-the-voyage-of-the-dawn-treader/watch?locale=EC",
+        "buy": [
+          {
             "display_priority": 3,
             "logo_path": "/p3Z12gKq2qvJaUOMeKNU2mzKVI9.jpg",
             "provider_id": 3,
             "provider_name": "Google Play Movies"
           }
         ],
-        "buy": [
+        "flatrate": [
+          {
+            "display_priority": 1,
+            "logo_path": "/dgPueyEdOwpQ10fjuhL2WYFQwQs.jpg",
+            "provider_id": 337,
+            "provider_name": "Disney Plus"
+          }
+        ],
+        "rent": [
           {
             "display_priority": 3,
             "logo_path": "/p3Z12gKq2qvJaUOMeKNU2mzKVI9.jpg",
@@ -2905,7 +3167,13 @@
       },
       "EE": {
         "link": "https://www.themoviedb.org/movie/10140-the-chronicles-of-narnia-the-voyage-of-the-dawn-treader/watch?locale=EE",
-        "buy": [
+        "rent": [
+          {
+            "display_priority": 2,
+            "logo_path": "/q6tl6Ib6X5FT80RMlcDbexIo4St.jpg",
+            "provider_id": 2,
+            "provider_name": "Apple iTunes"
+          },
           {
             "display_priority": 3,
             "logo_path": "/p3Z12gKq2qvJaUOMeKNU2mzKVI9.jpg",
@@ -2913,7 +3181,13 @@
             "provider_name": "Google Play Movies"
           }
         ],
-        "rent": [
+        "buy": [
+          {
+            "display_priority": 2,
+            "logo_path": "/q6tl6Ib6X5FT80RMlcDbexIo4St.jpg",
+            "provider_id": 2,
+            "provider_name": "Apple iTunes"
+          },
           {
             "display_priority": 3,
             "logo_path": "/p3Z12gKq2qvJaUOMeKNU2mzKVI9.jpg",
@@ -2946,13 +3220,19 @@
             "provider_name": "Google Play Movies"
           },
           {
-            "display_priority": 18,
+            "display_priority": 10,
             "logo_path": "/wuViyDkbFp4r7VqI0efPW5hFfQj.jpg",
             "provider_id": 35,
             "provider_name": "Rakuten TV"
           },
           {
-            "display_priority": 35,
+            "display_priority": 11,
+            "logo_path": "/sVBEF7q7LqjHAWSnKwDbzmr2EMY.jpg",
+            "provider_id": 10,
+            "provider_name": "Amazon Video"
+          },
+          {
+            "display_priority": 47,
             "logo_path": "/paq2o2dIfQnxcERsVoq7Ys8KYz8.jpg",
             "provider_id": 68,
             "provider_name": "Microsoft Store"
@@ -2972,13 +3252,19 @@
             "provider_name": "Google Play Movies"
           },
           {
-            "display_priority": 18,
+            "display_priority": 10,
             "logo_path": "/wuViyDkbFp4r7VqI0efPW5hFfQj.jpg",
             "provider_id": 35,
             "provider_name": "Rakuten TV"
           },
           {
-            "display_priority": 35,
+            "display_priority": 11,
+            "logo_path": "/sVBEF7q7LqjHAWSnKwDbzmr2EMY.jpg",
+            "provider_id": 10,
+            "provider_name": "Amazon Video"
+          },
+          {
+            "display_priority": 47,
             "logo_path": "/paq2o2dIfQnxcERsVoq7Ys8KYz8.jpg",
             "provider_id": 68,
             "provider_name": "Microsoft Store"
@@ -3001,19 +3287,31 @@
             "provider_name": "Google Play Movies"
           },
           {
-            "display_priority": 18,
+            "display_priority": 4,
+            "logo_path": "/okuStqHQL2ImgtNxNM40La91u3A.jpg",
+            "provider_id": 76,
+            "provider_name": "Viaplay"
+          },
+          {
+            "display_priority": 10,
             "logo_path": "/wuViyDkbFp4r7VqI0efPW5hFfQj.jpg",
             "provider_id": 35,
             "provider_name": "Rakuten TV"
           },
           {
-            "display_priority": 19,
+            "display_priority": 21,
             "logo_path": "/oEntjkQyz84qo1C4FZK9jW1qznl.jpg",
             "provider_id": 423,
             "provider_name": "Blockbuster"
           },
           {
-            "display_priority": 35,
+            "display_priority": 22,
+            "logo_path": "/yEbC1a22QZul3KGjeZ1OZjcN4u6.jpg",
+            "provider_id": 426,
+            "provider_name": "SF Anytime"
+          },
+          {
+            "display_priority": 47,
             "logo_path": "/paq2o2dIfQnxcERsVoq7Ys8KYz8.jpg",
             "provider_id": 68,
             "provider_name": "Microsoft Store"
@@ -3033,25 +3331,31 @@
             "provider_name": "Google Play Movies"
           },
           {
-            "display_priority": 5,
+            "display_priority": 4,
             "logo_path": "/okuStqHQL2ImgtNxNM40La91u3A.jpg",
             "provider_id": 76,
             "provider_name": "Viaplay"
           },
           {
-            "display_priority": 18,
+            "display_priority": 10,
             "logo_path": "/wuViyDkbFp4r7VqI0efPW5hFfQj.jpg",
             "provider_id": 35,
             "provider_name": "Rakuten TV"
           },
           {
-            "display_priority": 19,
+            "display_priority": 21,
             "logo_path": "/oEntjkQyz84qo1C4FZK9jW1qznl.jpg",
             "provider_id": 423,
             "provider_name": "Blockbuster"
           },
           {
-            "display_priority": 35,
+            "display_priority": 36,
+            "logo_path": "/4DrvzomVasfWYZ1FN2YwFzANcNx.jpg",
+            "provider_id": 553,
+            "provider_name": "Telia Play"
+          },
+          {
+            "display_priority": 47,
             "logo_path": "/paq2o2dIfQnxcERsVoq7Ys8KYz8.jpg",
             "provider_id": 68,
             "provider_name": "Microsoft Store"
@@ -3090,22 +3394,28 @@
             "provider_name": "Google Play Movies"
           },
           {
-            "display_priority": 11,
+            "display_priority": 10,
             "logo_path": "/bqgpWEtokIEOF5nsliXca2BQMEn.jpg",
             "provider_id": 61,
             "provider_name": "Orange VOD"
           },
           {
-            "display_priority": 12,
-            "logo_path": "/vDCcryHD32b0yMeSCgBhuYavsmx.jpg",
-            "provider_id": 192,
-            "provider_name": "YouTube"
-          },
-          {
-            "display_priority": 18,
+            "display_priority": 10,
             "logo_path": "/wuViyDkbFp4r7VqI0efPW5hFfQj.jpg",
             "provider_id": 35,
             "provider_name": "Rakuten TV"
+          },
+          {
+            "display_priority": 11,
+            "logo_path": "/sVBEF7q7LqjHAWSnKwDbzmr2EMY.jpg",
+            "provider_id": 10,
+            "provider_name": "Amazon Video"
+          },
+          {
+            "display_priority": 13,
+            "logo_path": "/vDCcryHD32b0yMeSCgBhuYavsmx.jpg",
+            "provider_id": 192,
+            "provider_name": "YouTube"
           },
           {
             "display_priority": 18,
@@ -3114,7 +3424,7 @@
             "provider_name": "Canal VOD"
           },
           {
-            "display_priority": 35,
+            "display_priority": 47,
             "logo_path": "/paq2o2dIfQnxcERsVoq7Ys8KYz8.jpg",
             "provider_id": 68,
             "provider_name": "Microsoft Store"
@@ -3134,13 +3444,25 @@
             "provider_name": "Google Play Movies"
           },
           {
-            "display_priority": 11,
+            "display_priority": 10,
             "logo_path": "/bqgpWEtokIEOF5nsliXca2BQMEn.jpg",
             "provider_id": 61,
             "provider_name": "Orange VOD"
           },
           {
-            "display_priority": 12,
+            "display_priority": 10,
+            "logo_path": "/wuViyDkbFp4r7VqI0efPW5hFfQj.jpg",
+            "provider_id": 35,
+            "provider_name": "Rakuten TV"
+          },
+          {
+            "display_priority": 11,
+            "logo_path": "/sVBEF7q7LqjHAWSnKwDbzmr2EMY.jpg",
+            "provider_id": 10,
+            "provider_name": "Amazon Video"
+          },
+          {
+            "display_priority": 13,
             "logo_path": "/vDCcryHD32b0yMeSCgBhuYavsmx.jpg",
             "provider_id": 192,
             "provider_name": "YouTube"
@@ -3150,12 +3472,6 @@
             "logo_path": "/74cM9bbEjdUt7tRtCMv7rnRDKkm.jpg",
             "provider_id": 58,
             "provider_name": "Canal VOD"
-          },
-          {
-            "display_priority": 18,
-            "logo_path": "/wuViyDkbFp4r7VqI0efPW5hFfQj.jpg",
-            "provider_id": 35,
-            "provider_name": "Rakuten TV"
           },
           {
             "display_priority": 19,
@@ -3164,7 +3480,7 @@
             "provider_name": "Bbox VOD"
           },
           {
-            "display_priority": 35,
+            "display_priority": 47,
             "logo_path": "/paq2o2dIfQnxcERsVoq7Ys8KYz8.jpg",
             "provider_id": 68,
             "provider_name": "Microsoft Store"
@@ -3173,7 +3489,13 @@
       },
       "GB": {
         "link": "https://www.themoviedb.org/movie/10140-the-chronicles-of-narnia-the-voyage-of-the-dawn-treader/watch?locale=GB",
-        "rent": [
+        "buy": [
+          {
+            "display_priority": 2,
+            "logo_path": "/q6tl6Ib6X5FT80RMlcDbexIo4St.jpg",
+            "provider_id": 2,
+            "provider_name": "Apple iTunes"
+          },
           {
             "display_priority": 3,
             "logo_path": "/p3Z12gKq2qvJaUOMeKNU2mzKVI9.jpg",
@@ -3188,6 +3510,12 @@
           },
           {
             "display_priority": 10,
+            "logo_path": "/wuViyDkbFp4r7VqI0efPW5hFfQj.jpg",
+            "provider_id": 35,
+            "provider_name": "Rakuten TV"
+          },
+          {
+            "display_priority": 11,
             "logo_path": "/sVBEF7q7LqjHAWSnKwDbzmr2EMY.jpg",
             "provider_id": 10,
             "provider_name": "Amazon Video"
@@ -3199,25 +3527,25 @@
             "provider_name": "Chili"
           },
           {
-            "display_priority": 12,
+            "display_priority": 13,
             "logo_path": "/vDCcryHD32b0yMeSCgBhuYavsmx.jpg",
             "provider_id": 192,
             "provider_name": "YouTube"
           },
           {
-            "display_priority": 18,
-            "logo_path": "/wuViyDkbFp4r7VqI0efPW5hFfQj.jpg",
-            "provider_id": 35,
-            "provider_name": "Rakuten TV"
-          },
-          {
-            "display_priority": 35,
+            "display_priority": 47,
             "logo_path": "/paq2o2dIfQnxcERsVoq7Ys8KYz8.jpg",
             "provider_id": 68,
             "provider_name": "Microsoft Store"
           }
         ],
-        "buy": [
+        "rent": [
+          {
+            "display_priority": 2,
+            "logo_path": "/q6tl6Ib6X5FT80RMlcDbexIo4St.jpg",
+            "provider_id": 2,
+            "provider_name": "Apple iTunes"
+          },
           {
             "display_priority": 3,
             "logo_path": "/p3Z12gKq2qvJaUOMeKNU2mzKVI9.jpg",
@@ -3232,9 +3560,9 @@
           },
           {
             "display_priority": 10,
-            "logo_path": "/sVBEF7q7LqjHAWSnKwDbzmr2EMY.jpg",
-            "provider_id": 10,
-            "provider_name": "Amazon Video"
+            "logo_path": "/wuViyDkbFp4r7VqI0efPW5hFfQj.jpg",
+            "provider_id": 35,
+            "provider_name": "Rakuten TV"
           },
           {
             "display_priority": 11,
@@ -3243,19 +3571,19 @@
             "provider_name": "Chili"
           },
           {
-            "display_priority": 12,
+            "display_priority": 11,
+            "logo_path": "/sVBEF7q7LqjHAWSnKwDbzmr2EMY.jpg",
+            "provider_id": 10,
+            "provider_name": "Amazon Video"
+          },
+          {
+            "display_priority": 13,
             "logo_path": "/vDCcryHD32b0yMeSCgBhuYavsmx.jpg",
             "provider_id": 192,
             "provider_name": "YouTube"
           },
           {
-            "display_priority": 18,
-            "logo_path": "/wuViyDkbFp4r7VqI0efPW5hFfQj.jpg",
-            "provider_id": 35,
-            "provider_name": "Rakuten TV"
-          },
-          {
-            "display_priority": 35,
+            "display_priority": 47,
             "logo_path": "/paq2o2dIfQnxcERsVoq7Ys8KYz8.jpg",
             "provider_id": 68,
             "provider_name": "Microsoft Store"
@@ -3267,12 +3595,24 @@
             "logo_path": "/dgPueyEdOwpQ10fjuhL2WYFQwQs.jpg",
             "provider_id": 337,
             "provider_name": "Disney Plus"
+          },
+          {
+            "display_priority": 63,
+            "logo_path": "/2OTvHZ5EjTd55bC0LF8KzQlkzgJ.jpg",
+            "provider_id": 594,
+            "provider_name": "Virgin TV Go"
           }
         ]
       },
       "GR": {
         "link": "https://www.themoviedb.org/movie/10140-the-chronicles-of-narnia-the-voyage-of-the-dawn-treader/watch?locale=GR",
-        "buy": [
+        "rent": [
+          {
+            "display_priority": 2,
+            "logo_path": "/q6tl6Ib6X5FT80RMlcDbexIo4St.jpg",
+            "provider_id": 2,
+            "provider_name": "Apple iTunes"
+          },
           {
             "display_priority": 3,
             "logo_path": "/p3Z12gKq2qvJaUOMeKNU2mzKVI9.jpg",
@@ -3280,12 +3620,67 @@
             "provider_name": "Google Play Movies"
           }
         ],
-        "rent": [
+        "buy": [
+          {
+            "display_priority": 2,
+            "logo_path": "/q6tl6Ib6X5FT80RMlcDbexIo4St.jpg",
+            "provider_id": 2,
+            "provider_name": "Apple iTunes"
+          },
           {
             "display_priority": 3,
             "logo_path": "/p3Z12gKq2qvJaUOMeKNU2mzKVI9.jpg",
             "provider_id": 3,
             "provider_name": "Google Play Movies"
+          }
+        ]
+      },
+      "GT": {
+        "link": "https://www.themoviedb.org/movie/10140-the-chronicles-of-narnia-the-voyage-of-the-dawn-treader/watch?locale=GT",
+        "flatrate": [
+          {
+            "display_priority": 1,
+            "logo_path": "/dgPueyEdOwpQ10fjuhL2WYFQwQs.jpg",
+            "provider_id": 337,
+            "provider_name": "Disney Plus"
+          }
+        ]
+      },
+      "HK": {
+        "link": "https://www.themoviedb.org/movie/10140-the-chronicles-of-narnia-the-voyage-of-the-dawn-treader/watch?locale=HK",
+        "buy": [
+          {
+            "display_priority": 2,
+            "logo_path": "/q6tl6Ib6X5FT80RMlcDbexIo4St.jpg",
+            "provider_id": 2,
+            "provider_name": "Apple iTunes"
+          }
+        ],
+        "rent": [
+          {
+            "display_priority": 2,
+            "logo_path": "/q6tl6Ib6X5FT80RMlcDbexIo4St.jpg",
+            "provider_id": 2,
+            "provider_name": "Apple iTunes"
+          }
+        ],
+        "flatrate": [
+          {
+            "display_priority": 1,
+            "logo_path": "/dgPueyEdOwpQ10fjuhL2WYFQwQs.jpg",
+            "provider_id": 337,
+            "provider_name": "Disney Plus"
+          }
+        ]
+      },
+      "HN": {
+        "link": "https://www.themoviedb.org/movie/10140-the-chronicles-of-narnia-the-voyage-of-the-dawn-treader/watch?locale=HN",
+        "flatrate": [
+          {
+            "display_priority": 1,
+            "logo_path": "/dgPueyEdOwpQ10fjuhL2WYFQwQs.jpg",
+            "provider_id": 337,
+            "provider_name": "Disney Plus"
           }
         ]
       },
@@ -3293,13 +3688,19 @@
         "link": "https://www.themoviedb.org/movie/10140-the-chronicles-of-narnia-the-voyage-of-the-dawn-treader/watch?locale=HU",
         "rent": [
           {
+            "display_priority": 2,
+            "logo_path": "/q6tl6Ib6X5FT80RMlcDbexIo4St.jpg",
+            "provider_id": 2,
+            "provider_name": "Apple iTunes"
+          },
+          {
             "display_priority": 3,
             "logo_path": "/p3Z12gKq2qvJaUOMeKNU2mzKVI9.jpg",
             "provider_id": 3,
             "provider_name": "Google Play Movies"
           },
           {
-            "display_priority": 12,
+            "display_priority": 13,
             "logo_path": "/vDCcryHD32b0yMeSCgBhuYavsmx.jpg",
             "provider_id": 192,
             "provider_name": "YouTube"
@@ -3307,13 +3708,19 @@
         ],
         "buy": [
           {
+            "display_priority": 2,
+            "logo_path": "/q6tl6Ib6X5FT80RMlcDbexIo4St.jpg",
+            "provider_id": 2,
+            "provider_name": "Apple iTunes"
+          },
+          {
             "display_priority": 3,
             "logo_path": "/p3Z12gKq2qvJaUOMeKNU2mzKVI9.jpg",
             "provider_id": 3,
             "provider_name": "Google Play Movies"
           },
           {
-            "display_priority": 12,
+            "display_priority": 13,
             "logo_path": "/vDCcryHD32b0yMeSCgBhuYavsmx.jpg",
             "provider_id": 192,
             "provider_name": "YouTube"
@@ -3322,14 +3729,6 @@
       },
       "ID": {
         "link": "https://www.themoviedb.org/movie/10140-the-chronicles-of-narnia-the-voyage-of-the-dawn-treader/watch?locale=ID",
-        "flatrate": [
-          {
-            "display_priority": 47,
-            "logo_path": "/eApzJtzOngfBlEC3lCjuAtzsOTf.jpg",
-            "provider_id": 122,
-            "provider_name": "Hotstar"
-          }
-        ],
         "buy": [
           {
             "display_priority": 2,
@@ -3342,6 +3741,14 @@
             "logo_path": "/p3Z12gKq2qvJaUOMeKNU2mzKVI9.jpg",
             "provider_id": 3,
             "provider_name": "Google Play Movies"
+          }
+        ],
+        "flatrate": [
+          {
+            "display_priority": 0,
+            "logo_path": "/eApzJtzOngfBlEC3lCjuAtzsOTf.jpg",
+            "provider_id": 122,
+            "provider_name": "Hotstar"
           }
         ]
       },
@@ -3349,31 +3756,11 @@
         "link": "https://www.themoviedb.org/movie/10140-the-chronicles-of-narnia-the-voyage-of-the-dawn-treader/watch?locale=IE",
         "rent": [
           {
-            "display_priority": 3,
-            "logo_path": "/p3Z12gKq2qvJaUOMeKNU2mzKVI9.jpg",
-            "provider_id": 3,
-            "provider_name": "Google Play Movies"
+            "display_priority": 2,
+            "logo_path": "/q6tl6Ib6X5FT80RMlcDbexIo4St.jpg",
+            "provider_id": 2,
+            "provider_name": "Apple iTunes"
           },
-          {
-            "display_priority": 8,
-            "logo_path": "/pZgeSWpfvD59x6sY6stT5c6uc2h.jpg",
-            "provider_id": 130,
-            "provider_name": "Sky Store"
-          },
-          {
-            "display_priority": 18,
-            "logo_path": "/wuViyDkbFp4r7VqI0efPW5hFfQj.jpg",
-            "provider_id": 35,
-            "provider_name": "Rakuten TV"
-          },
-          {
-            "display_priority": 35,
-            "logo_path": "/paq2o2dIfQnxcERsVoq7Ys8KYz8.jpg",
-            "provider_id": 68,
-            "provider_name": "Microsoft Store"
-          }
-        ],
-        "buy": [
           {
             "display_priority": 3,
             "logo_path": "/p3Z12gKq2qvJaUOMeKNU2mzKVI9.jpg",
@@ -3387,13 +3774,13 @@
             "provider_name": "Sky Store"
           },
           {
-            "display_priority": 18,
+            "display_priority": 10,
             "logo_path": "/wuViyDkbFp4r7VqI0efPW5hFfQj.jpg",
             "provider_id": 35,
             "provider_name": "Rakuten TV"
           },
           {
-            "display_priority": 35,
+            "display_priority": 47,
             "logo_path": "/paq2o2dIfQnxcERsVoq7Ys8KYz8.jpg",
             "provider_id": 68,
             "provider_name": "Microsoft Store"
@@ -3405,29 +3792,49 @@
             "logo_path": "/dgPueyEdOwpQ10fjuhL2WYFQwQs.jpg",
             "provider_id": 337,
             "provider_name": "Disney Plus"
+          }
+        ],
+        "buy": [
+          {
+            "display_priority": 2,
+            "logo_path": "/q6tl6Ib6X5FT80RMlcDbexIo4St.jpg",
+            "provider_id": 2,
+            "provider_name": "Apple iTunes"
+          },
+          {
+            "display_priority": 3,
+            "logo_path": "/p3Z12gKq2qvJaUOMeKNU2mzKVI9.jpg",
+            "provider_id": 3,
+            "provider_name": "Google Play Movies"
+          },
+          {
+            "display_priority": 8,
+            "logo_path": "/pZgeSWpfvD59x6sY6stT5c6uc2h.jpg",
+            "provider_id": 130,
+            "provider_name": "Sky Store"
+          },
+          {
+            "display_priority": 10,
+            "logo_path": "/wuViyDkbFp4r7VqI0efPW5hFfQj.jpg",
+            "provider_id": 35,
+            "provider_name": "Rakuten TV"
+          },
+          {
+            "display_priority": 47,
+            "logo_path": "/paq2o2dIfQnxcERsVoq7Ys8KYz8.jpg",
+            "provider_id": 68,
+            "provider_name": "Microsoft Store"
           }
         ]
       },
       "IN": {
         "link": "https://www.themoviedb.org/movie/10140-the-chronicles-of-narnia-the-voyage-of-the-dawn-treader/watch?locale=IN",
-        "rent": [
+        "flatrate": [
           {
-            "display_priority": 2,
-            "logo_path": "/q6tl6Ib6X5FT80RMlcDbexIo4St.jpg",
-            "provider_id": 2,
-            "provider_name": "Apple iTunes"
-          },
-          {
-            "display_priority": 3,
-            "logo_path": "/p3Z12gKq2qvJaUOMeKNU2mzKVI9.jpg",
-            "provider_id": 3,
-            "provider_name": "Google Play Movies"
-          },
-          {
-            "display_priority": 12,
-            "logo_path": "/vDCcryHD32b0yMeSCgBhuYavsmx.jpg",
-            "provider_id": 192,
-            "provider_name": "YouTube"
+            "display_priority": 0,
+            "logo_path": "/eApzJtzOngfBlEC3lCjuAtzsOTf.jpg",
+            "provider_id": 122,
+            "provider_name": "Hotstar"
           }
         ],
         "buy": [
@@ -3444,23 +3851,79 @@
             "provider_name": "Google Play Movies"
           },
           {
-            "display_priority": 12,
+            "display_priority": 13,
             "logo_path": "/vDCcryHD32b0yMeSCgBhuYavsmx.jpg",
             "provider_id": 192,
             "provider_name": "YouTube"
           }
         ],
-        "flatrate": [
+        "rent": [
           {
-            "display_priority": 47,
-            "logo_path": "/eApzJtzOngfBlEC3lCjuAtzsOTf.jpg",
-            "provider_id": 122,
-            "provider_name": "Hotstar"
+            "display_priority": 2,
+            "logo_path": "/q6tl6Ib6X5FT80RMlcDbexIo4St.jpg",
+            "provider_id": 2,
+            "provider_name": "Apple iTunes"
+          },
+          {
+            "display_priority": 3,
+            "logo_path": "/p3Z12gKq2qvJaUOMeKNU2mzKVI9.jpg",
+            "provider_id": 3,
+            "provider_name": "Google Play Movies"
+          },
+          {
+            "display_priority": 13,
+            "logo_path": "/vDCcryHD32b0yMeSCgBhuYavsmx.jpg",
+            "provider_id": 192,
+            "provider_name": "YouTube"
           }
         ]
       },
       "IT": {
         "link": "https://www.themoviedb.org/movie/10140-the-chronicles-of-narnia-the-voyage-of-the-dawn-treader/watch?locale=IT",
+        "buy": [
+          {
+            "display_priority": 2,
+            "logo_path": "/q6tl6Ib6X5FT80RMlcDbexIo4St.jpg",
+            "provider_id": 2,
+            "provider_name": "Apple iTunes"
+          },
+          {
+            "display_priority": 3,
+            "logo_path": "/p3Z12gKq2qvJaUOMeKNU2mzKVI9.jpg",
+            "provider_id": 3,
+            "provider_name": "Google Play Movies"
+          },
+          {
+            "display_priority": 10,
+            "logo_path": "/wuViyDkbFp4r7VqI0efPW5hFfQj.jpg",
+            "provider_id": 35,
+            "provider_name": "Rakuten TV"
+          },
+          {
+            "display_priority": 11,
+            "logo_path": "/vjKeS7Y9fNyqNtvp2ROCc71iu1u.jpg",
+            "provider_id": 40,
+            "provider_name": "Chili"
+          },
+          {
+            "display_priority": 11,
+            "logo_path": "/sVBEF7q7LqjHAWSnKwDbzmr2EMY.jpg",
+            "provider_id": 10,
+            "provider_name": "Amazon Video"
+          },
+          {
+            "display_priority": 13,
+            "logo_path": "/mn4yGYhpzVMKr9WFvcxmZK9RK86.jpg",
+            "provider_id": 109,
+            "provider_name": "Timvision"
+          },
+          {
+            "display_priority": 47,
+            "logo_path": "/paq2o2dIfQnxcERsVoq7Ys8KYz8.jpg",
+            "provider_id": 68,
+            "provider_name": "Microsoft Store"
+          }
+        ],
         "flatrate": [
           {
             "display_priority": 1,
@@ -3483,69 +3946,37 @@
             "provider_name": "Google Play Movies"
           },
           {
+            "display_priority": 10,
+            "logo_path": "/wuViyDkbFp4r7VqI0efPW5hFfQj.jpg",
+            "provider_id": 35,
+            "provider_name": "Rakuten TV"
+          },
+          {
+            "display_priority": 10,
+            "logo_path": "/wQmZmDQmBjlWtLYQGiCvZxxYGIW.jpg",
+            "provider_id": 359,
+            "provider_name": "Mediaset Play"
+          },
+          {
             "display_priority": 11,
             "logo_path": "/vjKeS7Y9fNyqNtvp2ROCc71iu1u.jpg",
             "provider_id": 40,
             "provider_name": "Chili"
           },
           {
-            "display_priority": 12,
-            "logo_path": "/mn4yGYhpzVMKr9WFvcxmZK9RK86.jpg",
-            "provider_id": 109,
-            "provider_name": "Timvision"
+            "display_priority": 11,
+            "logo_path": "/sVBEF7q7LqjHAWSnKwDbzmr2EMY.jpg",
+            "provider_id": 10,
+            "provider_name": "Amazon Video"
           },
           {
             "display_priority": 13,
-            "logo_path": "/cbwQoqHtOFJGU8EJoaRyU6BHdeB.jpg",
-            "provider_id": 110,
-            "provider_name": "Infinity"
-          },
-          {
-            "display_priority": 18,
-            "logo_path": "/wuViyDkbFp4r7VqI0efPW5hFfQj.jpg",
-            "provider_id": 35,
-            "provider_name": "Rakuten TV"
-          },
-          {
-            "display_priority": 35,
-            "logo_path": "/paq2o2dIfQnxcERsVoq7Ys8KYz8.jpg",
-            "provider_id": 68,
-            "provider_name": "Microsoft Store"
-          }
-        ],
-        "buy": [
-          {
-            "display_priority": 2,
-            "logo_path": "/q6tl6Ib6X5FT80RMlcDbexIo4St.jpg",
-            "provider_id": 2,
-            "provider_name": "Apple iTunes"
-          },
-          {
-            "display_priority": 3,
-            "logo_path": "/p3Z12gKq2qvJaUOMeKNU2mzKVI9.jpg",
-            "provider_id": 3,
-            "provider_name": "Google Play Movies"
-          },
-          {
-            "display_priority": 11,
-            "logo_path": "/vjKeS7Y9fNyqNtvp2ROCc71iu1u.jpg",
-            "provider_id": 40,
-            "provider_name": "Chili"
-          },
-          {
-            "display_priority": 12,
             "logo_path": "/mn4yGYhpzVMKr9WFvcxmZK9RK86.jpg",
             "provider_id": 109,
             "provider_name": "Timvision"
           },
           {
-            "display_priority": 18,
-            "logo_path": "/wuViyDkbFp4r7VqI0efPW5hFfQj.jpg",
-            "provider_id": 35,
-            "provider_name": "Rakuten TV"
-          },
-          {
-            "display_priority": 35,
+            "display_priority": 47,
             "logo_path": "/paq2o2dIfQnxcERsVoq7Ys8KYz8.jpg",
             "provider_id": 68,
             "provider_name": "Microsoft Store"
@@ -3554,7 +3985,41 @@
       },
       "JP": {
         "link": "https://www.themoviedb.org/movie/10140-the-chronicles-of-narnia-the-voyage-of-the-dawn-treader/watch?locale=JP",
+        "flatrate": [
+          {
+            "display_priority": 1,
+            "logo_path": "/dgPueyEdOwpQ10fjuhL2WYFQwQs.jpg",
+            "provider_id": 337,
+            "provider_name": "Disney Plus"
+          }
+        ],
+        "buy": [
+          {
+            "display_priority": 2,
+            "logo_path": "/q6tl6Ib6X5FT80RMlcDbexIo4St.jpg",
+            "provider_id": 2,
+            "provider_name": "Apple iTunes"
+          },
+          {
+            "display_priority": 3,
+            "logo_path": "/p3Z12gKq2qvJaUOMeKNU2mzKVI9.jpg",
+            "provider_id": 3,
+            "provider_name": "Google Play Movies"
+          },
+          {
+            "display_priority": 11,
+            "logo_path": "/sVBEF7q7LqjHAWSnKwDbzmr2EMY.jpg",
+            "provider_id": 10,
+            "provider_name": "Amazon Video"
+          }
+        ],
         "rent": [
+          {
+            "display_priority": 2,
+            "logo_path": "/q6tl6Ib6X5FT80RMlcDbexIo4St.jpg",
+            "provider_id": 2,
+            "provider_name": "Apple iTunes"
+          },
           {
             "display_priority": 2,
             "logo_path": "/1MXP8yzNAuVHQAT0sqBIFI9Fc2M.jpg",
@@ -3568,36 +4033,10 @@
             "provider_name": "Google Play Movies"
           },
           {
-            "display_priority": 10,
+            "display_priority": 11,
             "logo_path": "/sVBEF7q7LqjHAWSnKwDbzmr2EMY.jpg",
             "provider_id": 10,
             "provider_name": "Amazon Video"
-          },
-          {
-            "display_priority": 35,
-            "logo_path": "/paq2o2dIfQnxcERsVoq7Ys8KYz8.jpg",
-            "provider_id": 68,
-            "provider_name": "Microsoft Store"
-          }
-        ],
-        "buy": [
-          {
-            "display_priority": 3,
-            "logo_path": "/p3Z12gKq2qvJaUOMeKNU2mzKVI9.jpg",
-            "provider_id": 3,
-            "provider_name": "Google Play Movies"
-          },
-          {
-            "display_priority": 10,
-            "logo_path": "/sVBEF7q7LqjHAWSnKwDbzmr2EMY.jpg",
-            "provider_id": 10,
-            "provider_name": "Amazon Video"
-          },
-          {
-            "display_priority": 35,
-            "logo_path": "/paq2o2dIfQnxcERsVoq7Ys8KYz8.jpg",
-            "provider_id": 68,
-            "provider_name": "Microsoft Store"
           }
         ]
       },
@@ -3605,36 +4044,24 @@
         "link": "https://www.themoviedb.org/movie/10140-the-chronicles-of-narnia-the-voyage-of-the-dawn-treader/watch?locale=KR",
         "buy": [
           {
-            "display_priority": 2,
+            "display_priority": 3,
             "logo_path": "/8N0DNa4BO3lH24KWv1EjJh4TxoD.jpg",
             "provider_id": 356,
             "provider_name": "wavve"
           },
           {
-            "display_priority": 3,
-            "logo_path": "/p3Z12gKq2qvJaUOMeKNU2mzKVI9.jpg",
-            "provider_id": 3,
-            "provider_name": "Google Play Movies"
-          },
-          {
-            "display_priority": 4,
+            "display_priority": 6,
             "logo_path": "/gvykO994iHcqL1Cgpii4RJCtDud.jpg",
             "provider_id": 96,
             "provider_name": "Naver Store"
           }
         ],
-        "rent": [
+        "flatrate": [
           {
-            "display_priority": 2,
-            "logo_path": "/8N0DNa4BO3lH24KWv1EjJh4TxoD.jpg",
-            "provider_id": 356,
-            "provider_name": "wavve"
-          },
-          {
-            "display_priority": 4,
-            "logo_path": "/gvykO994iHcqL1Cgpii4RJCtDud.jpg",
-            "provider_id": 96,
-            "provider_name": "Naver Store"
+            "display_priority": 1,
+            "logo_path": "/dgPueyEdOwpQ10fjuhL2WYFQwQs.jpg",
+            "provider_id": 337,
+            "provider_name": "Disney Plus"
           }
         ]
       },
@@ -3642,6 +4069,12 @@
         "link": "https://www.themoviedb.org/movie/10140-the-chronicles-of-narnia-the-voyage-of-the-dawn-treader/watch?locale=LT",
         "buy": [
           {
+            "display_priority": 2,
+            "logo_path": "/q6tl6Ib6X5FT80RMlcDbexIo4St.jpg",
+            "provider_id": 2,
+            "provider_name": "Apple iTunes"
+          },
+          {
             "display_priority": 3,
             "logo_path": "/p3Z12gKq2qvJaUOMeKNU2mzKVI9.jpg",
             "provider_id": 3,
@@ -3650,18 +4083,16 @@
         ],
         "rent": [
           {
+            "display_priority": 2,
+            "logo_path": "/q6tl6Ib6X5FT80RMlcDbexIo4St.jpg",
+            "provider_id": 2,
+            "provider_name": "Apple iTunes"
+          },
+          {
             "display_priority": 3,
             "logo_path": "/p3Z12gKq2qvJaUOMeKNU2mzKVI9.jpg",
             "provider_id": 3,
             "provider_name": "Google Play Movies"
-          }
-        ],
-        "flatrate": [
-          {
-            "display_priority": 18,
-            "logo_path": "/4DrvzomVasfWYZ1FN2YwFzANcNx.jpg",
-            "provider_id": 553,
-            "provider_name": "Telia Play"
           }
         ]
       },
@@ -3669,6 +4100,12 @@
         "link": "https://www.themoviedb.org/movie/10140-the-chronicles-of-narnia-the-voyage-of-the-dawn-treader/watch?locale=LV",
         "buy": [
           {
+            "display_priority": 2,
+            "logo_path": "/q6tl6Ib6X5FT80RMlcDbexIo4St.jpg",
+            "provider_id": 2,
+            "provider_name": "Apple iTunes"
+          },
+          {
             "display_priority": 3,
             "logo_path": "/p3Z12gKq2qvJaUOMeKNU2mzKVI9.jpg",
             "provider_id": 3,
@@ -3676,6 +4113,12 @@
           }
         ],
         "rent": [
+          {
+            "display_priority": 2,
+            "logo_path": "/q6tl6Ib6X5FT80RMlcDbexIo4St.jpg",
+            "provider_id": 2,
+            "provider_name": "Apple iTunes"
+          },
           {
             "display_priority": 3,
             "logo_path": "/p3Z12gKq2qvJaUOMeKNU2mzKVI9.jpg",
@@ -3697,6 +4140,14 @@
       },
       "MY": {
         "link": "https://www.themoviedb.org/movie/10140-the-chronicles-of-narnia-the-voyage-of-the-dawn-treader/watch?locale=MY",
+        "buy": [
+          {
+            "display_priority": 2,
+            "logo_path": "/q6tl6Ib6X5FT80RMlcDbexIo4St.jpg",
+            "provider_id": 2,
+            "provider_name": "Apple iTunes"
+          }
+        ],
         "rent": [
           {
             "display_priority": 2,
@@ -3705,12 +4156,12 @@
             "provider_name": "Apple iTunes"
           }
         ],
-        "buy": [
+        "flatrate": [
           {
-            "display_priority": 2,
-            "logo_path": "/q6tl6Ib6X5FT80RMlcDbexIo4St.jpg",
-            "provider_id": 2,
-            "provider_name": "Apple iTunes"
+            "display_priority": 0,
+            "logo_path": "/eApzJtzOngfBlEC3lCjuAtzsOTf.jpg",
+            "provider_id": 122,
+            "provider_name": "Hotstar"
           }
         ]
       },
@@ -3718,31 +4169,11 @@
         "link": "https://www.themoviedb.org/movie/10140-the-chronicles-of-narnia-the-voyage-of-the-dawn-treader/watch?locale=NL",
         "buy": [
           {
-            "display_priority": 3,
-            "logo_path": "/p3Z12gKq2qvJaUOMeKNU2mzKVI9.jpg",
-            "provider_id": 3,
-            "provider_name": "Google Play Movies"
+            "display_priority": 2,
+            "logo_path": "/q6tl6Ib6X5FT80RMlcDbexIo4St.jpg",
+            "provider_id": 2,
+            "provider_name": "Apple iTunes"
           },
-          {
-            "display_priority": 6,
-            "logo_path": "/j7qnV5qyzWDB0uOdhe5PzQh71Th.jpg",
-            "provider_id": 71,
-            "provider_name": "Pathé Thuis"
-          },
-          {
-            "display_priority": 18,
-            "logo_path": "/wuViyDkbFp4r7VqI0efPW5hFfQj.jpg",
-            "provider_id": 35,
-            "provider_name": "Rakuten TV"
-          },
-          {
-            "display_priority": 35,
-            "logo_path": "/paq2o2dIfQnxcERsVoq7Ys8KYz8.jpg",
-            "provider_id": 68,
-            "provider_name": "Microsoft Store"
-          }
-        ],
-        "rent": [
           {
             "display_priority": 3,
             "logo_path": "/p3Z12gKq2qvJaUOMeKNU2mzKVI9.jpg",
@@ -3750,19 +4181,13 @@
             "provider_name": "Google Play Movies"
           },
           {
-            "display_priority": 6,
-            "logo_path": "/j7qnV5qyzWDB0uOdhe5PzQh71Th.jpg",
-            "provider_id": 71,
-            "provider_name": "Pathé Thuis"
-          },
-          {
-            "display_priority": 18,
+            "display_priority": 10,
             "logo_path": "/wuViyDkbFp4r7VqI0efPW5hFfQj.jpg",
             "provider_id": 35,
             "provider_name": "Rakuten TV"
           },
           {
-            "display_priority": 35,
+            "display_priority": 47,
             "logo_path": "/paq2o2dIfQnxcERsVoq7Ys8KYz8.jpg",
             "provider_id": 68,
             "provider_name": "Microsoft Store"
@@ -3776,68 +4201,74 @@
             "provider_name": "Disney Plus"
           },
           {
-            "display_priority": 35,
+            "display_priority": 34,
             "logo_path": "/9sOKDL0W3HeUFAY8kCJGz9kadhC.jpg",
             "provider_id": 563,
             "provider_name": "KPN"
+          }
+        ],
+        "rent": [
+          {
+            "display_priority": 2,
+            "logo_path": "/q6tl6Ib6X5FT80RMlcDbexIo4St.jpg",
+            "provider_id": 2,
+            "provider_name": "Apple iTunes"
+          },
+          {
+            "display_priority": 3,
+            "logo_path": "/p3Z12gKq2qvJaUOMeKNU2mzKVI9.jpg",
+            "provider_id": 3,
+            "provider_name": "Google Play Movies"
+          },
+          {
+            "display_priority": 10,
+            "logo_path": "/wuViyDkbFp4r7VqI0efPW5hFfQj.jpg",
+            "provider_id": 35,
+            "provider_name": "Rakuten TV"
+          },
+          {
+            "display_priority": 47,
+            "logo_path": "/paq2o2dIfQnxcERsVoq7Ys8KYz8.jpg",
+            "provider_id": 68,
+            "provider_name": "Microsoft Store"
           }
         ]
       },
       "NO": {
         "link": "https://www.themoviedb.org/movie/10140-the-chronicles-of-narnia-the-voyage-of-the-dawn-treader/watch?locale=NO",
-        "buy": [
-          {
-            "display_priority": 3,
-            "logo_path": "/p3Z12gKq2qvJaUOMeKNU2mzKVI9.jpg",
-            "provider_id": 3,
-            "provider_name": "Google Play Movies"
-          },
-          {
-            "display_priority": 18,
-            "logo_path": "/wuViyDkbFp4r7VqI0efPW5hFfQj.jpg",
-            "provider_id": 35,
-            "provider_name": "Rakuten TV"
-          },
-          {
-            "display_priority": 19,
-            "logo_path": "/oEntjkQyz84qo1C4FZK9jW1qznl.jpg",
-            "provider_id": 423,
-            "provider_name": "Blockbuster"
-          },
-          {
-            "display_priority": 35,
-            "logo_path": "/paq2o2dIfQnxcERsVoq7Ys8KYz8.jpg",
-            "provider_id": 68,
-            "provider_name": "Microsoft Store"
-          }
-        ],
         "rent": [
           {
+            "display_priority": 2,
+            "logo_path": "/q6tl6Ib6X5FT80RMlcDbexIo4St.jpg",
+            "provider_id": 2,
+            "provider_name": "Apple iTunes"
+          },
+          {
             "display_priority": 3,
             "logo_path": "/p3Z12gKq2qvJaUOMeKNU2mzKVI9.jpg",
             "provider_id": 3,
             "provider_name": "Google Play Movies"
           },
           {
-            "display_priority": 5,
+            "display_priority": 4,
             "logo_path": "/okuStqHQL2ImgtNxNM40La91u3A.jpg",
             "provider_id": 76,
             "provider_name": "Viaplay"
           },
           {
-            "display_priority": 18,
+            "display_priority": 10,
             "logo_path": "/wuViyDkbFp4r7VqI0efPW5hFfQj.jpg",
             "provider_id": 35,
             "provider_name": "Rakuten TV"
           },
           {
-            "display_priority": 19,
+            "display_priority": 21,
             "logo_path": "/oEntjkQyz84qo1C4FZK9jW1qznl.jpg",
             "provider_id": 423,
             "provider_name": "Blockbuster"
           },
           {
-            "display_priority": 35,
+            "display_priority": 47,
             "logo_path": "/paq2o2dIfQnxcERsVoq7Ys8KYz8.jpg",
             "provider_id": 68,
             "provider_name": "Microsoft Store"
@@ -3849,20 +4280,21 @@
             "logo_path": "/dgPueyEdOwpQ10fjuhL2WYFQwQs.jpg",
             "provider_id": 337,
             "provider_name": "Disney Plus"
-          }
-        ]
-      },
-      "NZ": {
-        "link": "https://www.themoviedb.org/movie/10140-the-chronicles-of-narnia-the-voyage-of-the-dawn-treader/watch?locale=NZ",
-        "flatrate": [
+          },
           {
-            "display_priority": 1,
-            "logo_path": "/dgPueyEdOwpQ10fjuhL2WYFQwQs.jpg",
-            "provider_id": 337,
-            "provider_name": "Disney Plus"
+            "display_priority": 35,
+            "logo_path": "/2SZVMASyXPKC7sEBHgmTjCMySNG.jpg",
+            "provider_id": 578,
+            "provider_name": "Strim"
           }
         ],
         "buy": [
+          {
+            "display_priority": 2,
+            "logo_path": "/q6tl6Ib6X5FT80RMlcDbexIo4St.jpg",
+            "provider_id": 2,
+            "provider_name": "Apple iTunes"
+          },
           {
             "display_priority": 3,
             "logo_path": "/p3Z12gKq2qvJaUOMeKNU2mzKVI9.jpg",
@@ -3870,7 +4302,54 @@
             "provider_name": "Google Play Movies"
           },
           {
-            "display_priority": 35,
+            "display_priority": 4,
+            "logo_path": "/okuStqHQL2ImgtNxNM40La91u3A.jpg",
+            "provider_id": 76,
+            "provider_name": "Viaplay"
+          },
+          {
+            "display_priority": 10,
+            "logo_path": "/wuViyDkbFp4r7VqI0efPW5hFfQj.jpg",
+            "provider_id": 35,
+            "provider_name": "Rakuten TV"
+          },
+          {
+            "display_priority": 21,
+            "logo_path": "/oEntjkQyz84qo1C4FZK9jW1qznl.jpg",
+            "provider_id": 423,
+            "provider_name": "Blockbuster"
+          },
+          {
+            "display_priority": 22,
+            "logo_path": "/yEbC1a22QZul3KGjeZ1OZjcN4u6.jpg",
+            "provider_id": 426,
+            "provider_name": "SF Anytime"
+          },
+          {
+            "display_priority": 47,
+            "logo_path": "/paq2o2dIfQnxcERsVoq7Ys8KYz8.jpg",
+            "provider_id": 68,
+            "provider_name": "Microsoft Store"
+          }
+        ]
+      },
+      "NZ": {
+        "link": "https://www.themoviedb.org/movie/10140-the-chronicles-of-narnia-the-voyage-of-the-dawn-treader/watch?locale=NZ",
+        "buy": [
+          {
+            "display_priority": 2,
+            "logo_path": "/q6tl6Ib6X5FT80RMlcDbexIo4St.jpg",
+            "provider_id": 2,
+            "provider_name": "Apple iTunes"
+          },
+          {
+            "display_priority": 3,
+            "logo_path": "/p3Z12gKq2qvJaUOMeKNU2mzKVI9.jpg",
+            "provider_id": 3,
+            "provider_name": "Google Play Movies"
+          },
+          {
+            "display_priority": 47,
             "logo_path": "/paq2o2dIfQnxcERsVoq7Ys8KYz8.jpg",
             "provider_id": 68,
             "provider_name": "Microsoft Store"
@@ -3878,16 +4357,30 @@
         ],
         "rent": [
           {
+            "display_priority": 2,
+            "logo_path": "/q6tl6Ib6X5FT80RMlcDbexIo4St.jpg",
+            "provider_id": 2,
+            "provider_name": "Apple iTunes"
+          },
+          {
             "display_priority": 3,
             "logo_path": "/p3Z12gKq2qvJaUOMeKNU2mzKVI9.jpg",
             "provider_id": 3,
             "provider_name": "Google Play Movies"
           },
           {
-            "display_priority": 35,
+            "display_priority": 47,
             "logo_path": "/paq2o2dIfQnxcERsVoq7Ys8KYz8.jpg",
             "provider_id": 68,
             "provider_name": "Microsoft Store"
+          }
+        ],
+        "flatrate": [
+          {
+            "display_priority": 1,
+            "logo_path": "/dgPueyEdOwpQ10fjuhL2WYFQwQs.jpg",
+            "provider_id": 337,
+            "provider_name": "Disney Plus"
           }
         ]
       },
@@ -3920,7 +4413,13 @@
       },
       "PH": {
         "link": "https://www.themoviedb.org/movie/10140-the-chronicles-of-narnia-the-voyage-of-the-dawn-treader/watch?locale=PH",
-        "buy": [
+        "rent": [
+          {
+            "display_priority": 2,
+            "logo_path": "/q6tl6Ib6X5FT80RMlcDbexIo4St.jpg",
+            "provider_id": 2,
+            "provider_name": "Apple iTunes"
+          },
           {
             "display_priority": 3,
             "logo_path": "/p3Z12gKq2qvJaUOMeKNU2mzKVI9.jpg",
@@ -3928,7 +4427,13 @@
             "provider_name": "Google Play Movies"
           }
         ],
-        "rent": [
+        "buy": [
+          {
+            "display_priority": 2,
+            "logo_path": "/q6tl6Ib6X5FT80RMlcDbexIo4St.jpg",
+            "provider_id": 2,
+            "provider_name": "Apple iTunes"
+          },
           {
             "display_priority": 3,
             "logo_path": "/p3Z12gKq2qvJaUOMeKNU2mzKVI9.jpg",
@@ -3939,6 +4444,14 @@
       },
       "PL": {
         "link": "https://www.themoviedb.org/movie/10140-the-chronicles-of-narnia-the-voyage-of-the-dawn-treader/watch?locale=PL",
+        "flatrate": [
+          {
+            "display_priority": 1,
+            "logo_path": "/49zBTsyFqE0u2hO8NxlyVmjFZDH.jpg",
+            "provider_id": 250,
+            "provider_name": "Horizon"
+          }
+        ],
         "rent": [
           {
             "display_priority": 2,
@@ -3959,7 +4472,7 @@
             "provider_name": "Chili"
           },
           {
-            "display_priority": 12,
+            "display_priority": 13,
             "logo_path": "/vDCcryHD32b0yMeSCgBhuYavsmx.jpg",
             "provider_id": 192,
             "provider_name": "YouTube"
@@ -3985,7 +4498,7 @@
             "provider_name": "Chili"
           },
           {
-            "display_priority": 12,
+            "display_priority": 13,
             "logo_path": "/vDCcryHD32b0yMeSCgBhuYavsmx.jpg",
             "provider_id": 192,
             "provider_name": "YouTube"
@@ -3994,6 +4507,58 @@
       },
       "PT": {
         "link": "https://www.themoviedb.org/movie/10140-the-chronicles-of-narnia-the-voyage-of-the-dawn-treader/watch?locale=PT",
+        "buy": [
+          {
+            "display_priority": 2,
+            "logo_path": "/q6tl6Ib6X5FT80RMlcDbexIo4St.jpg",
+            "provider_id": 2,
+            "provider_name": "Apple iTunes"
+          },
+          {
+            "display_priority": 3,
+            "logo_path": "/p3Z12gKq2qvJaUOMeKNU2mzKVI9.jpg",
+            "provider_id": 3,
+            "provider_name": "Google Play Movies"
+          },
+          {
+            "display_priority": 10,
+            "logo_path": "/wuViyDkbFp4r7VqI0efPW5hFfQj.jpg",
+            "provider_id": 35,
+            "provider_name": "Rakuten TV"
+          },
+          {
+            "display_priority": 13,
+            "logo_path": "/vDCcryHD32b0yMeSCgBhuYavsmx.jpg",
+            "provider_id": 192,
+            "provider_name": "YouTube"
+          }
+        ],
+        "rent": [
+          {
+            "display_priority": 2,
+            "logo_path": "/q6tl6Ib6X5FT80RMlcDbexIo4St.jpg",
+            "provider_id": 2,
+            "provider_name": "Apple iTunes"
+          },
+          {
+            "display_priority": 3,
+            "logo_path": "/p3Z12gKq2qvJaUOMeKNU2mzKVI9.jpg",
+            "provider_id": 3,
+            "provider_name": "Google Play Movies"
+          },
+          {
+            "display_priority": 10,
+            "logo_path": "/wuViyDkbFp4r7VqI0efPW5hFfQj.jpg",
+            "provider_id": 35,
+            "provider_name": "Rakuten TV"
+          },
+          {
+            "display_priority": 13,
+            "logo_path": "/vDCcryHD32b0yMeSCgBhuYavsmx.jpg",
+            "provider_id": 192,
+            "provider_name": "YouTube"
+          }
+        ],
         "flatrate": [
           {
             "display_priority": 1,
@@ -4001,88 +4566,65 @@
             "provider_id": 337,
             "provider_name": "Disney Plus"
           }
-        ],
-        "rent": [
+        ]
+      },
+      "PY": {
+        "link": "https://www.themoviedb.org/movie/10140-the-chronicles-of-narnia-the-voyage-of-the-dawn-treader/watch?locale=PY",
+        "flatrate": [
           {
-            "display_priority": 3,
-            "logo_path": "/p3Z12gKq2qvJaUOMeKNU2mzKVI9.jpg",
-            "provider_id": 3,
-            "provider_name": "Google Play Movies"
-          },
-          {
-            "display_priority": 12,
-            "logo_path": "/vDCcryHD32b0yMeSCgBhuYavsmx.jpg",
-            "provider_id": 192,
-            "provider_name": "YouTube"
-          },
-          {
-            "display_priority": 18,
-            "logo_path": "/wuViyDkbFp4r7VqI0efPW5hFfQj.jpg",
-            "provider_id": 35,
-            "provider_name": "Rakuten TV"
+            "display_priority": 1,
+            "logo_path": "/dgPueyEdOwpQ10fjuhL2WYFQwQs.jpg",
+            "provider_id": 337,
+            "provider_name": "Disney Plus"
           }
-        ],
-        "buy": [
+        ]
+      },
+      "RO": {
+        "link": "https://www.themoviedb.org/movie/10140-the-chronicles-of-narnia-the-voyage-of-the-dawn-treader/watch?locale=RO",
+        "flatrate": [
           {
-            "display_priority": 3,
-            "logo_path": "/p3Z12gKq2qvJaUOMeKNU2mzKVI9.jpg",
-            "provider_id": 3,
-            "provider_name": "Google Play Movies"
-          },
-          {
-            "display_priority": 12,
-            "logo_path": "/vDCcryHD32b0yMeSCgBhuYavsmx.jpg",
-            "provider_id": 192,
-            "provider_name": "YouTube"
-          },
-          {
-            "display_priority": 18,
-            "logo_path": "/wuViyDkbFp4r7VqI0efPW5hFfQj.jpg",
-            "provider_id": 35,
-            "provider_name": "Rakuten TV"
+            "display_priority": 1,
+            "logo_path": "/49zBTsyFqE0u2hO8NxlyVmjFZDH.jpg",
+            "provider_id": 250,
+            "provider_name": "Horizon"
           }
         ]
       },
       "RU": {
         "link": "https://www.themoviedb.org/movie/10140-the-chronicles-of-narnia-the-voyage-of-the-dawn-treader/watch?locale=RU",
+        "buy": [
+          {
+            "display_priority": 2,
+            "logo_path": "/q6tl6Ib6X5FT80RMlcDbexIo4St.jpg",
+            "provider_id": 2,
+            "provider_name": "Apple iTunes"
+          },
+          {
+            "display_priority": 3,
+            "logo_path": "/p3Z12gKq2qvJaUOMeKNU2mzKVI9.jpg",
+            "provider_id": 3,
+            "provider_name": "Google Play Movies"
+          },
+          {
+            "display_priority": 16,
+            "logo_path": "/4AWMLvjQUQNmU3CkpLp7FSSIyZX.jpg",
+            "provider_id": 501,
+            "provider_name": "Wink"
+          },
+          {
+            "display_priority": 30,
+            "logo_path": "/hH99ng4jQdmt6qFzoie8SyoUiR8.jpg",
+            "provider_id": 117,
+            "provider_name": "Kinopoisk"
+          }
+        ],
         "rent": [
           {
             "display_priority": 2,
-            "logo_path": "/2DpMZHxP9jzu3v70bph1UD3LLv3.jpg",
-            "provider_id": 113,
-            "provider_name": "Ivi"
+            "logo_path": "/q6tl6Ib6X5FT80RMlcDbexIo4St.jpg",
+            "provider_id": 2,
+            "provider_name": "Apple iTunes"
           },
-          {
-            "display_priority": 3,
-            "logo_path": "/p3Z12gKq2qvJaUOMeKNU2mzKVI9.jpg",
-            "provider_id": 3,
-            "provider_name": "Google Play Movies"
-          },
-          {
-            "display_priority": 17,
-            "logo_path": "/4AWMLvjQUQNmU3CkpLp7FSSIyZX.jpg",
-            "provider_id": 501,
-            "provider_name": "Wink"
-          }
-        ],
-        "buy": [
-          {
-            "display_priority": 3,
-            "logo_path": "/p3Z12gKq2qvJaUOMeKNU2mzKVI9.jpg",
-            "provider_id": 3,
-            "provider_name": "Google Play Movies"
-          },
-          {
-            "display_priority": 17,
-            "logo_path": "/4AWMLvjQUQNmU3CkpLp7FSSIyZX.jpg",
-            "provider_id": 501,
-            "provider_name": "Wink"
-          }
-        ]
-      },
-      "SE": {
-        "link": "https://www.themoviedb.org/movie/10140-the-chronicles-of-narnia-the-voyage-of-the-dawn-treader/watch?locale=SE",
-        "rent": [
           {
             "display_priority": 3,
             "logo_path": "/p3Z12gKq2qvJaUOMeKNU2mzKVI9.jpg",
@@ -4091,29 +4633,40 @@
           },
           {
             "display_priority": 5,
-            "logo_path": "/okuStqHQL2ImgtNxNM40La91u3A.jpg",
-            "provider_id": 76,
-            "provider_name": "Viaplay"
+            "logo_path": "/2DpMZHxP9jzu3v70bph1UD3LLv3.jpg",
+            "provider_id": 113,
+            "provider_name": "Ivi"
           },
           {
-            "display_priority": 18,
-            "logo_path": "/wuViyDkbFp4r7VqI0efPW5hFfQj.jpg",
-            "provider_id": 35,
-            "provider_name": "Rakuten TV"
-          },
-          {
-            "display_priority": 19,
-            "logo_path": "/oEntjkQyz84qo1C4FZK9jW1qznl.jpg",
-            "provider_id": 423,
-            "provider_name": "Blockbuster"
-          },
-          {
-            "display_priority": 35,
-            "logo_path": "/paq2o2dIfQnxcERsVoq7Ys8KYz8.jpg",
-            "provider_id": 68,
-            "provider_name": "Microsoft Store"
+            "display_priority": 16,
+            "logo_path": "/4AWMLvjQUQNmU3CkpLp7FSSIyZX.jpg",
+            "provider_id": 501,
+            "provider_name": "Wink"
           }
         ],
+        "flatrate": [
+          {
+            "display_priority": 5,
+            "logo_path": "/2DpMZHxP9jzu3v70bph1UD3LLv3.jpg",
+            "provider_id": 113,
+            "provider_name": "Ivi"
+          },
+          {
+            "display_priority": 16,
+            "logo_path": "/4AWMLvjQUQNmU3CkpLp7FSSIyZX.jpg",
+            "provider_id": 501,
+            "provider_name": "Wink"
+          },
+          {
+            "display_priority": 30,
+            "logo_path": "/hH99ng4jQdmt6qFzoie8SyoUiR8.jpg",
+            "provider_id": 117,
+            "provider_name": "Kinopoisk"
+          }
+        ]
+      },
+      "SE": {
+        "link": "https://www.themoviedb.org/movie/10140-the-chronicles-of-narnia-the-voyage-of-the-dawn-treader/watch?locale=SE",
         "flatrate": [
           {
             "display_priority": 1,
@@ -4122,7 +4675,13 @@
             "provider_name": "Disney Plus"
           }
         ],
-        "buy": [
+        "rent": [
+          {
+            "display_priority": 2,
+            "logo_path": "/q6tl6Ib6X5FT80RMlcDbexIo4St.jpg",
+            "provider_id": 2,
+            "provider_name": "Apple iTunes"
+          },
           {
             "display_priority": 3,
             "logo_path": "/p3Z12gKq2qvJaUOMeKNU2mzKVI9.jpg",
@@ -4130,19 +4689,69 @@
             "provider_name": "Google Play Movies"
           },
           {
-            "display_priority": 18,
+            "display_priority": 4,
+            "logo_path": "/okuStqHQL2ImgtNxNM40La91u3A.jpg",
+            "provider_id": 76,
+            "provider_name": "Viaplay"
+          },
+          {
+            "display_priority": 10,
             "logo_path": "/wuViyDkbFp4r7VqI0efPW5hFfQj.jpg",
             "provider_id": 35,
             "provider_name": "Rakuten TV"
           },
           {
-            "display_priority": 19,
+            "display_priority": 21,
             "logo_path": "/oEntjkQyz84qo1C4FZK9jW1qznl.jpg",
             "provider_id": 423,
             "provider_name": "Blockbuster"
           },
           {
-            "display_priority": 35,
+            "display_priority": 47,
+            "logo_path": "/paq2o2dIfQnxcERsVoq7Ys8KYz8.jpg",
+            "provider_id": 68,
+            "provider_name": "Microsoft Store"
+          }
+        ],
+        "buy": [
+          {
+            "display_priority": 2,
+            "logo_path": "/q6tl6Ib6X5FT80RMlcDbexIo4St.jpg",
+            "provider_id": 2,
+            "provider_name": "Apple iTunes"
+          },
+          {
+            "display_priority": 3,
+            "logo_path": "/p3Z12gKq2qvJaUOMeKNU2mzKVI9.jpg",
+            "provider_id": 3,
+            "provider_name": "Google Play Movies"
+          },
+          {
+            "display_priority": 4,
+            "logo_path": "/okuStqHQL2ImgtNxNM40La91u3A.jpg",
+            "provider_id": 76,
+            "provider_name": "Viaplay"
+          },
+          {
+            "display_priority": 10,
+            "logo_path": "/wuViyDkbFp4r7VqI0efPW5hFfQj.jpg",
+            "provider_id": 35,
+            "provider_name": "Rakuten TV"
+          },
+          {
+            "display_priority": 21,
+            "logo_path": "/oEntjkQyz84qo1C4FZK9jW1qznl.jpg",
+            "provider_id": 423,
+            "provider_name": "Blockbuster"
+          },
+          {
+            "display_priority": 22,
+            "logo_path": "/yEbC1a22QZul3KGjeZ1OZjcN4u6.jpg",
+            "provider_id": 426,
+            "provider_name": "SF Anytime"
+          },
+          {
+            "display_priority": 47,
             "logo_path": "/paq2o2dIfQnxcERsVoq7Ys8KYz8.jpg",
             "provider_id": 68,
             "provider_name": "Microsoft Store"
@@ -4151,6 +4760,20 @@
       },
       "SG": {
         "link": "https://www.themoviedb.org/movie/10140-the-chronicles-of-narnia-the-voyage-of-the-dawn-treader/watch?locale=SG",
+        "rent": [
+          {
+            "display_priority": 2,
+            "logo_path": "/q6tl6Ib6X5FT80RMlcDbexIo4St.jpg",
+            "provider_id": 2,
+            "provider_name": "Apple iTunes"
+          },
+          {
+            "display_priority": 3,
+            "logo_path": "/p3Z12gKq2qvJaUOMeKNU2mzKVI9.jpg",
+            "provider_id": 3,
+            "provider_name": "Google Play Movies"
+          }
+        ],
         "flatrate": [
           {
             "display_priority": 1,
@@ -4161,13 +4784,11 @@
         ],
         "buy": [
           {
-            "display_priority": 3,
-            "logo_path": "/p3Z12gKq2qvJaUOMeKNU2mzKVI9.jpg",
-            "provider_id": 3,
-            "provider_name": "Google Play Movies"
-          }
-        ],
-        "rent": [
+            "display_priority": 2,
+            "logo_path": "/q6tl6Ib6X5FT80RMlcDbexIo4St.jpg",
+            "provider_id": 2,
+            "provider_name": "Apple iTunes"
+          },
           {
             "display_priority": 3,
             "logo_path": "/p3Z12gKq2qvJaUOMeKNU2mzKVI9.jpg",
@@ -4178,7 +4799,13 @@
       },
       "TH": {
         "link": "https://www.themoviedb.org/movie/10140-the-chronicles-of-narnia-the-voyage-of-the-dawn-treader/watch?locale=TH",
-        "rent": [
+        "buy": [
+          {
+            "display_priority": 2,
+            "logo_path": "/q6tl6Ib6X5FT80RMlcDbexIo4St.jpg",
+            "provider_id": 2,
+            "provider_name": "Apple iTunes"
+          },
           {
             "display_priority": 3,
             "logo_path": "/p3Z12gKq2qvJaUOMeKNU2mzKVI9.jpg",
@@ -4186,18 +4813,32 @@
             "provider_name": "Google Play Movies"
           }
         ],
-        "buy": [
+        "rent": [
+          {
+            "display_priority": 2,
+            "logo_path": "/q6tl6Ib6X5FT80RMlcDbexIo4St.jpg",
+            "provider_id": 2,
+            "provider_name": "Apple iTunes"
+          },
           {
             "display_priority": 3,
             "logo_path": "/p3Z12gKq2qvJaUOMeKNU2mzKVI9.jpg",
             "provider_id": 3,
             "provider_name": "Google Play Movies"
+          }
+        ],
+        "flatrate": [
+          {
+            "display_priority": 0,
+            "logo_path": "/eApzJtzOngfBlEC3lCjuAtzsOTf.jpg",
+            "provider_id": 122,
+            "provider_name": "Hotstar"
           }
         ]
       },
       "TR": {
         "link": "https://www.themoviedb.org/movie/10140-the-chronicles-of-narnia-the-voyage-of-the-dawn-treader/watch?locale=TR",
-        "rent": [
+        "buy": [
           {
             "display_priority": 3,
             "logo_path": "/p3Z12gKq2qvJaUOMeKNU2mzKVI9.jpg",
@@ -4205,67 +4846,44 @@
             "provider_name": "Google Play Movies"
           }
         ],
-        "buy": [
+        "rent": [
           {
             "display_priority": 3,
             "logo_path": "/p3Z12gKq2qvJaUOMeKNU2mzKVI9.jpg",
             "provider_id": 3,
             "provider_name": "Google Play Movies"
+          }
+        ]
+      },
+      "TW": {
+        "link": "https://www.themoviedb.org/movie/10140-the-chronicles-of-narnia-the-voyage-of-the-dawn-treader/watch?locale=TW",
+        "flatrate": [
+          {
+            "display_priority": 1,
+            "logo_path": "/dgPueyEdOwpQ10fjuhL2WYFQwQs.jpg",
+            "provider_id": 337,
+            "provider_name": "Disney Plus"
+          }
+        ],
+        "rent": [
+          {
+            "display_priority": 2,
+            "logo_path": "/q6tl6Ib6X5FT80RMlcDbexIo4St.jpg",
+            "provider_id": 2,
+            "provider_name": "Apple iTunes"
+          }
+        ],
+        "buy": [
+          {
+            "display_priority": 2,
+            "logo_path": "/q6tl6Ib6X5FT80RMlcDbexIo4St.jpg",
+            "provider_id": 2,
+            "provider_name": "Apple iTunes"
           }
         ]
       },
       "US": {
         "link": "https://www.themoviedb.org/movie/10140-the-chronicles-of-narnia-the-voyage-of-the-dawn-treader/watch?locale=US",
-        "buy": [
-          {
-            "display_priority": 3,
-            "logo_path": "/p3Z12gKq2qvJaUOMeKNU2mzKVI9.jpg",
-            "provider_id": 3,
-            "provider_name": "Google Play Movies"
-          },
-          {
-            "display_priority": 10,
-            "logo_path": "/sVBEF7q7LqjHAWSnKwDbzmr2EMY.jpg",
-            "provider_id": 10,
-            "provider_name": "Amazon Video"
-          },
-          {
-            "display_priority": 12,
-            "logo_path": "/vDCcryHD32b0yMeSCgBhuYavsmx.jpg",
-            "provider_id": 192,
-            "provider_name": "YouTube"
-          },
-          {
-            "display_priority": 18,
-            "logo_path": "/eqr1RvnDiHcM7UxmaZOIjdTmyx3.jpg",
-            "provider_id": 105,
-            "provider_name": "FandangoNOW"
-          },
-          {
-            "display_priority": 24,
-            "logo_path": "/pgaPsqgFh2grkcr7ROkoBajHJnf.jpg",
-            "provider_id": 7,
-            "provider_name": "Vudu"
-          },
-          {
-            "display_priority": 35,
-            "logo_path": "/paq2o2dIfQnxcERsVoq7Ys8KYz8.jpg",
-            "provider_id": 68,
-            "provider_name": "Microsoft Store"
-          },
-          {
-            "display_priority": 37,
-            "logo_path": "/nSr2IQSwc5C2QrttIWen8s06ofe.jpg",
-            "provider_id": 279,
-            "provider_name": "Redbox"
-          },
-          {
-            "display_priority": 41,
-            "logo_path": "/qZdEeINwQotbr1Rq15dL5G2BaAh.jpg",
-            "provider_id": 358,
-            "provider_name": "DIRECTV"
-          }
-        ],
         "flatrate": [
           {
             "display_priority": 1,
@@ -4276,65 +4894,119 @@
         ],
         "rent": [
           {
+            "display_priority": 2,
+            "logo_path": "/q6tl6Ib6X5FT80RMlcDbexIo4St.jpg",
+            "provider_id": 2,
+            "provider_name": "Apple iTunes"
+          },
+          {
             "display_priority": 3,
             "logo_path": "/p3Z12gKq2qvJaUOMeKNU2mzKVI9.jpg",
             "provider_id": 3,
             "provider_name": "Google Play Movies"
           },
           {
-            "display_priority": 10,
+            "display_priority": 11,
             "logo_path": "/sVBEF7q7LqjHAWSnKwDbzmr2EMY.jpg",
             "provider_id": 10,
             "provider_name": "Amazon Video"
           },
           {
-            "display_priority": 12,
+            "display_priority": 13,
             "logo_path": "/vDCcryHD32b0yMeSCgBhuYavsmx.jpg",
             "provider_id": 192,
             "provider_name": "YouTube"
           },
           {
-            "display_priority": 18,
-            "logo_path": "/eqr1RvnDiHcM7UxmaZOIjdTmyx3.jpg",
-            "provider_id": 105,
-            "provider_name": "FandangoNOW"
-          },
-          {
-            "display_priority": 24,
-            "logo_path": "/pgaPsqgFh2grkcr7ROkoBajHJnf.jpg",
+            "display_priority": 36,
+            "logo_path": "/hBdCQamqj7J2VPZNbqf0wiLBous.jpg",
             "provider_id": 7,
             "provider_name": "Vudu"
           },
           {
-            "display_priority": 35,
+            "display_priority": 47,
             "logo_path": "/paq2o2dIfQnxcERsVoq7Ys8KYz8.jpg",
             "provider_id": 68,
             "provider_name": "Microsoft Store"
           },
           {
-            "display_priority": 37,
+            "display_priority": 49,
             "logo_path": "/nSr2IQSwc5C2QrttIWen8s06ofe.jpg",
             "provider_id": 279,
             "provider_name": "Redbox"
           },
           {
-            "display_priority": 41,
+            "display_priority": 53,
             "logo_path": "/qZdEeINwQotbr1Rq15dL5G2BaAh.jpg",
             "provider_id": 358,
             "provider_name": "DIRECTV"
+          },
+          {
+            "display_priority": 133,
+            "logo_path": "/p1e92kLeYHalxC9GClqNJ75lBDG.jpg",
+            "provider_id": 352,
+            "provider_name": "AMC on Demand"
+          }
+        ],
+        "buy": [
+          {
+            "display_priority": 2,
+            "logo_path": "/q6tl6Ib6X5FT80RMlcDbexIo4St.jpg",
+            "provider_id": 2,
+            "provider_name": "Apple iTunes"
+          },
+          {
+            "display_priority": 3,
+            "logo_path": "/p3Z12gKq2qvJaUOMeKNU2mzKVI9.jpg",
+            "provider_id": 3,
+            "provider_name": "Google Play Movies"
+          },
+          {
+            "display_priority": 11,
+            "logo_path": "/sVBEF7q7LqjHAWSnKwDbzmr2EMY.jpg",
+            "provider_id": 10,
+            "provider_name": "Amazon Video"
+          },
+          {
+            "display_priority": 13,
+            "logo_path": "/vDCcryHD32b0yMeSCgBhuYavsmx.jpg",
+            "provider_id": 192,
+            "provider_name": "YouTube"
+          },
+          {
+            "display_priority": 36,
+            "logo_path": "/hBdCQamqj7J2VPZNbqf0wiLBous.jpg",
+            "provider_id": 7,
+            "provider_name": "Vudu"
+          },
+          {
+            "display_priority": 47,
+            "logo_path": "/paq2o2dIfQnxcERsVoq7Ys8KYz8.jpg",
+            "provider_id": 68,
+            "provider_name": "Microsoft Store"
+          },
+          {
+            "display_priority": 49,
+            "logo_path": "/nSr2IQSwc5C2QrttIWen8s06ofe.jpg",
+            "provider_id": 279,
+            "provider_name": "Redbox"
+          },
+          {
+            "display_priority": 53,
+            "logo_path": "/qZdEeINwQotbr1Rq15dL5G2BaAh.jpg",
+            "provider_id": 358,
+            "provider_name": "DIRECTV"
+          },
+          {
+            "display_priority": 133,
+            "logo_path": "/p1e92kLeYHalxC9GClqNJ75lBDG.jpg",
+            "provider_id": 352,
+            "provider_name": "AMC on Demand"
           }
         ]
       },
       "VE": {
         "link": "https://www.themoviedb.org/movie/10140-the-chronicles-of-narnia-the-voyage-of-the-dawn-treader/watch?locale=VE",
-        "buy": [
-          {
-            "display_priority": 3,
-            "logo_path": "/p3Z12gKq2qvJaUOMeKNU2mzKVI9.jpg",
-            "provider_id": 3,
-            "provider_name": "Google Play Movies"
-          }
-        ],
         "flatrate": [
           {
             "display_priority": 1,
@@ -4344,6 +5016,14 @@
           }
         ],
         "rent": [
+          {
+            "display_priority": 3,
+            "logo_path": "/p3Z12gKq2qvJaUOMeKNU2mzKVI9.jpg",
+            "provider_id": 3,
+            "provider_name": "Google Play Movies"
+          }
+        ],
+        "buy": [
           {
             "display_priority": 3,
             "logo_path": "/p3Z12gKq2qvJaUOMeKNU2mzKVI9.jpg",
@@ -4356,6 +5036,12 @@
         "link": "https://www.themoviedb.org/movie/10140-the-chronicles-of-narnia-the-voyage-of-the-dawn-treader/watch?locale=ZA",
         "rent": [
           {
+            "display_priority": 2,
+            "logo_path": "/q6tl6Ib6X5FT80RMlcDbexIo4St.jpg",
+            "provider_id": 2,
+            "provider_name": "Apple iTunes"
+          },
+          {
             "display_priority": 3,
             "logo_path": "/p3Z12gKq2qvJaUOMeKNU2mzKVI9.jpg",
             "provider_id": 3,
@@ -4363,6 +5049,12 @@
           }
         ],
         "buy": [
+          {
+            "display_priority": 2,
+            "logo_path": "/q6tl6Ib6X5FT80RMlcDbexIo4St.jpg",
+            "provider_id": 2,
+            "provider_name": "Apple iTunes"
+          },
           {
             "display_priority": 3,
             "logo_path": "/p3Z12gKq2qvJaUOMeKNU2mzKVI9.jpg",
