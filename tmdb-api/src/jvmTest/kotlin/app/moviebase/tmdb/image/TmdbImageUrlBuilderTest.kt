@@ -1,6 +1,7 @@
 package app.moviebase.tmdb.image
 
 import app.moviebase.tmdb.model.TmdbVideo
+import app.moviebase.tmdb.model.TmdbVideoSite
 import com.google.common.truth.Truth.assertThat
 import org.junit.jupiter.api.Test
 
@@ -38,7 +39,7 @@ class TmdbImageUrlBuilderTest {
 
     @Test
     fun testBuildYouTubeUrlByTmdbVideo() {
-        val tmdbVideo = TmdbVideo(id = "45", key = "sdfjkds")
+        val tmdbVideo = TmdbVideo(id = "45", key = "sdfjkds", site = TmdbVideoSite.YOUTUBE)
         val imageUrl = TmdbImageUrlBuilder.buildYoutube(tmdbVideo, 320)
 
         assertThat(imageUrl).isEqualTo("https://img.youtube.com/vi/sdfjkds/mqdefault.jpg")
