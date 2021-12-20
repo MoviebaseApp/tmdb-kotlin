@@ -12,7 +12,7 @@ class TmdbMoviesApiTest {
     val client = mockHttpClient(
         version = 3,
         responses = mapOf(
-            "movie/10140?language=en-US&append_to_response=external_ids,videos,release_dates,credits,reviews,content_ratings,watch/providers"
+            "movie/10140?language=en-US&append_to_response=images,external_ids,videos,release_dates,credits,reviews,content_ratings,watch/providers"
                     to "movie/movie_details_10140.json",
             "movie/607?language=en-US&append_to_response=external_ids,videos,release_dates,credits,reviews,content_ratings,watch/providers"
                     to "movie/movie_details_607.json"
@@ -28,6 +28,7 @@ class TmdbMoviesApiTest {
             movieId = 10140,
             language = "en-US",
             appendResponses = listOf(
+                AppendResponse.IMAGES,
                 AppendResponse.EXTERNAL_IDS,
                 AppendResponse.VIDEOS,
                 AppendResponse.RELEASES_DATES,
@@ -39,6 +40,7 @@ class TmdbMoviesApiTest {
         )
 
         assertThat(movieDetails.id).isEqualTo(10140)
+        assertThat(movieDetails.images).isNotNull()
         assertThat(movieDetails.videos).isNotNull()
         assertThat(movieDetails.popularity).isEqualTo(48.581f)
         assertThat(movieDetails.voteAverage).isEqualTo(6.4f)
