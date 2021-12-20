@@ -143,7 +143,7 @@ data class TmdbVideo(
 
 @Serializable
 data class TmdbImages(
-    @SerialName("id") val id: Int,
+    @SerialName("id") val id: Int? = null,
     @SerialName("posters") val posters: List<TmdbFileImage>,
     @SerialName("backdrops") val backdrops: List<TmdbFileImage>,
 )
