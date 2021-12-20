@@ -22,6 +22,16 @@ class TmdbMoviesApi(private val client: HttpClient) {
         parameterAppendResponses(appendResponses)
     }
 
+    suspend fun getImages(
+        movieId: Int,
+        language: String? = null,
+        includeImageLanguage: String? = null,
+    ): TmdbImages = client.get {
+        endPointMovie(movieId, "images")
+        parameterLanguage(language)
+        parameterIncludeImageLanguage(includeImageLanguage)
+    }
+
     suspend fun getExternalIds(movieId: Int): TmdbExternalIds = client.get {
         endPointMovie(movieId, "external_ids")
     }
@@ -38,4 +48,7 @@ class TmdbMoviesApi(private val client: HttpClient) {
         endPointV3("movie", movieId.toString(), *paths)
     }
 
+    fun HttpRequestBuilder.parameterIncludeImageLanguage(language: String?) {
+        language?.let { parameter("include_image_language", it) }
+    }
 }
