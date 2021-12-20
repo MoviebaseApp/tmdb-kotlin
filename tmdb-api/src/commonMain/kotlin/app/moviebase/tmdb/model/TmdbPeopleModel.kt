@@ -97,7 +97,7 @@ data class TmdbPersonDetail(
     @SerialName("also_known_as") val alsoKnownAs: List<String>,
     @SerialName("known_for_department") val knownForDepartment: String,
     @SerialName("biography") val biography: String,
-    @SerialName("birthday") val birthday: String,
+    @SerialName("birthday") val birthday: String? = null,
     @SerialName("deathday") val deathday: String? = null,
     @SerialName("homepage") val homepage: String? = null,
     @SerialName("id") override val id: Int,
