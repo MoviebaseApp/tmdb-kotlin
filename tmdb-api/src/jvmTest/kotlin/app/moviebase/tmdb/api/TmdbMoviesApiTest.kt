@@ -12,8 +12,9 @@ class TmdbMoviesApiTest {
     val client = mockHttpClient(
         version = 3,
         responses = mapOf(
-            "movie/10140?language=en-US&append_to_response=external_ids,videos,release_dates,credits,reviews,content_ratings,watch/providers"
+            "movie/10140?language=en-US&append_to_response=images,external_ids,videos,release_dates,credits,reviews,content_ratings,watch/providers"
                     to "movie/movie_details_10140.json",
+            "movie/10140/images?language=en" to "movie/movie_images_10140.json",
             "movie/607?language=en-US&append_to_response=external_ids,videos,release_dates,credits,reviews,content_ratings,watch/providers"
                     to "movie/movie_details_607.json"
         )
@@ -21,6 +22,14 @@ class TmdbMoviesApiTest {
 
     val classToTest = TmdbMoviesApi(client)
 
+    @Test
+    fun `It should return images from movie`() = runBlocking {
+        val images = classToTest.getImages(movieId = 10140, language = "en")
+
+        assertThat(images.id).isEqualTo(10140)
+        assertThat(images.backdrops.size).isEqualTo(2)
+        assertThat(images.posters.size).isEqualTo(14)
+    }
 
     @Test
     fun `it can fetch movie details`() = runBlocking {
@@ -28,6 +37,7 @@ class TmdbMoviesApiTest {
             movieId = 10140,
             language = "en-US",
             appendResponses = listOf(
+                AppendResponse.IMAGES,
                 AppendResponse.EXTERNAL_IDS,
                 AppendResponse.VIDEOS,
                 AppendResponse.RELEASES_DATES,
@@ -39,10 +49,11 @@ class TmdbMoviesApiTest {
         )
 
         assertThat(movieDetails.id).isEqualTo(10140)
+        assertThat(movieDetails.images).isNotNull()
         assertThat(movieDetails.videos).isNotNull()
-        assertThat(movieDetails.popularity).isEqualTo(26.301f)
+        assertThat(movieDetails.popularity).isEqualTo(48.581f)
         assertThat(movieDetails.voteAverage).isEqualTo(6.4f)
-        assertThat(movieDetails.voteCount).isEqualTo(4305)
+        assertThat(movieDetails.voteCount).isEqualTo(4534)
         assertThat(movieDetails.overview).isEqualTo("This time around Edmund and Lucy Pevensie, along with their pesky cousin Eustace Scrubb find themselves swallowed into a painting and on to a fantastic Narnian ship headed for the very edges of the world.")
 
         val tmdbVideo = movieDetails.videos?.results?.first()

@@ -88,6 +88,7 @@ data class TmdbMovieDetail(
     @SerialName("watch/providers") val watchProviders: TmdbProviderResult? = null,
     @SerialName("credits") val credits: TmdbCredits? = null,
     @SerialName("videos") val videos: TmdbResult<TmdbVideo>? = null,
+    @SerialName("images") val images: TmdbImages? = null,
 ) {
 
     val posterImage get(): TmdbImage? = TmdbImage.poster(posterPath)
