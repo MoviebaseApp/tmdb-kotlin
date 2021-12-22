@@ -126,6 +126,15 @@ enum class TmdbVideoType(val value: String) {
     BEHIND_THE_SCENES("Behind the Scenes");
 }
 
+@Serializable
+enum class TmdbVideoSite(val value: String) {
+    @SerialName("YouTube")
+    YOUTUBE("YouTube"),
+
+    @SerialName("Vimeo")
+    VIMEO("Vimeo"),
+}
+
 /**
  *
  */
@@ -134,7 +143,8 @@ data class TmdbVideo(
     @SerialName("id") val id: String,
     @SerialName("iso_639_1") val iso639: String? = null,
     @SerialName("iso_3166_1") val iso3166: String? = null,
-    @SerialName("key") val key: String? = null,
+    @SerialName("key") val key: String,
+    @SerialName("site") val site: TmdbVideoSite,
     @SerialName("name") val name: String? = null,
     @SerialName("size") val size: Int? = null, // 360, 480, 720, 1080
     @SerialName("type") val type: TmdbVideoType? = null,

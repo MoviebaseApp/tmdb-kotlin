@@ -159,6 +159,18 @@ For creating the poster URL by the movie item.
 val url = TmdbImageUrlBuilder.buildPoster(item = movie, width = 200)
 ```
 
+### Build video URL
+
+You can build a video URL by the key value into `TmdbVideo`. TMDb API currently support videos from YouTube and Vimeo
+
+```kotlin
+val youtubeTmdbVideo = TmdbVideo(id = "123", key = "qwerasdf", site = TmdbVideoSite.YOUTUBE)
+val url = TmdbImageUrlBuilder.build(youtubeTmdbVideo) // It will return `https://www.youtube.com/watch?v=qwerasdf`
+
+val vimeoTmdbVideo = TmdbVideo(id = "123", key = "qwerasdf", site = TmdbVideoSite.VIMEO)
+val url = TmdbImageUrlBuilder.build(vimeoTmdbVideo) // It will return `https://vimeo.com/qwerasdf`
+```
+
 <br>
 
 <hr>
