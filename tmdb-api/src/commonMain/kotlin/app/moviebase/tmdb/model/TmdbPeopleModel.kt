@@ -78,7 +78,7 @@ data class TmdbPerson(
     @SerialName("adult") val adult: Boolean,
     @SerialName("gender") val gender: TmdbGender,
     @SerialName("id") override val id: Int,
-    @SerialName("known_for_department") val knownForDepartment: String,
+    @SerialName("known_for_department") val knownForDepartment: String? = null,
     @SerialName("name") override val name: String,
     @SerialName("profile_path") override val profilePath: String? = null,
     @SerialName("popularity") override val popularity: Float,
@@ -95,7 +95,7 @@ data class TmdbPersonPageResult(
 @Serializable
 data class TmdbPersonDetail(
     @SerialName("also_known_as") val alsoKnownAs: List<String>,
-    @SerialName("known_for_department") val knownForDepartment: String,
+    @SerialName("known_for_department") val knownForDepartment: String? = null,
     @SerialName("biography") val biography: String,
     @SerialName("birthday") val birthday: String? = null,
     @SerialName("deathday") val deathday: String? = null,
@@ -117,7 +117,7 @@ data class TmdbCrew(
     @SerialName("adult") val adult: Boolean,
     @SerialName("gender") val gender: TmdbGender,
     @SerialName("id") override val id: Int,
-    @SerialName("known_for_department") val knownForDepartment: String,
+    @SerialName("known_for_department") val knownForDepartment: String? = null,
     @SerialName("name") override val name: String,
     @SerialName("original_name") val originalName: String,
     @SerialName("popularity") override val popularity: Float, // has e. g. 0.6
@@ -132,7 +132,7 @@ data class TmdbCast(
     @SerialName("adult") val adult: Boolean,
     @SerialName("gender") val gender: TmdbGender,
     @SerialName("id") override val id: Int,
-    @SerialName("known_for_department") val knownForDepartment: String,
+    @SerialName("known_for_department") val knownForDepartment: String? = null,
     @SerialName("name") override val name: String,
     @SerialName("original_name") val originalName: String,
     @SerialName("popularity") override val popularity: Float, // has e. g. 2.32
@@ -148,7 +148,7 @@ data class TmdbAggregateCast(
     @SerialName("adult") val adult: Boolean,
     @SerialName("gender") val gender: TmdbGender,
     @SerialName("id") val id: Int,
-    @SerialName("known_for_department") val knownForDepartment: String,
+    @SerialName("known_for_department") val knownForDepartment: String? = null,
     @SerialName("name") val name: String,
     @SerialName("original_name") val originalName: String,
     @SerialName("popularity") val popularity: Float, // has e. g. 2.32
@@ -163,7 +163,7 @@ data class TmdbAggregateCrew(
     @SerialName("adult") val adult: Boolean,
     @SerialName("gender") val gender: TmdbGender,
     @SerialName("id") override val id: Int,
-    @SerialName("known_for_department") val knownForDepartment: String,
+    @SerialName("known_for_department") val knownForDepartment: String? = null,
     @SerialName("name") override val name: String,
     @SerialName("original_name") val originalName: String,
     @SerialName("popularity") override val popularity: Float, // has e. g. 0.6
