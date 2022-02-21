@@ -6,6 +6,7 @@ import app.moviebase.tmdb.remote.parameterLanguage
 import app.moviebase.tmdb.remote.parameterPage
 import app.moviebase.tmdb.remote.parameterRegion
 import io.ktor.client.*
+import io.ktor.client.call.*
 import io.ktor.client.request.*
 
 class TmdbTrendingApi(private val client: HttpClient) {
@@ -20,7 +21,7 @@ class TmdbTrendingApi(private val client: HttpClient) {
         parameterLanguage(language)
         parameterRegion(region)
         parameterPage(page)
-    }
+    }.body()
 
     suspend fun getTrendingShows(
         timeWindow: TmdbTimeWindow,
@@ -32,6 +33,6 @@ class TmdbTrendingApi(private val client: HttpClient) {
         parameterLanguage(language)
         parameterRegion(region)
         parameterPage(page)
-    }
+    }.body()
 
 }

@@ -2,9 +2,9 @@ package app.moviebase.tmdb.remote
 
 import io.ktor.client.*
 import io.ktor.client.engine.mock.*
-import io.ktor.client.features.json.*
-import io.ktor.client.features.json.serializer.*
+import io.ktor.client.plugins.*
 import io.ktor.http.*
+import io.ktor.serialization.kotlinx.json.*
 
 fun mockHttpClient(
     version: Int,
@@ -16,8 +16,8 @@ fun mockHttpClient(
     }
     val headers = headersOf("Content-Type" to listOf(ContentType.Application.Json.toString()))
 
-    install(JsonFeature) {
-        serializer = KotlinxSerializer(buildJson())
+    install(ContentNegotiation) {
+        json(buildJson())
     }
 
     engine {

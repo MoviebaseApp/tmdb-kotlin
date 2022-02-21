@@ -6,6 +6,7 @@ import app.moviebase.tmdb.remote.json
 import app.moviebase.tmdb.remote.parameterLanguage
 import app.moviebase.tmdb.remote.parameterPage
 import io.ktor.client.*
+import io.ktor.client.call.*
 import io.ktor.client.request.*
 
 class Tmdb4ListApi(private val client: HttpClient) {
@@ -25,7 +26,7 @@ class Tmdb4ListApi(private val client: HttpClient) {
         parameterPage(page)
         parameterLanguage(language)
         sortBy?.let { parameterSortBy(it, sortOrder) }
-    }
+    }.body()
 
     /**
      * This method will create a new list.
@@ -34,8 +35,8 @@ class Tmdb4ListApi(private val client: HttpClient) {
     suspend fun create(request: Tmdb4CreateListRequest): TmdbStatusResult = client.post {
         endPointV4("list")
         json()
-        body = request
-    }
+        setBody(request)
+    }.body()
 
     /**
      * This method will let you update the details of a list.
@@ -44,8 +45,8 @@ class Tmdb4ListApi(private val client: HttpClient) {
     suspend fun update(listId: Int, request: Tmdb4UpdateListRequest): TmdbStatusResult = client.put {
         endPointList(listId)
         json()
-        body = request
-    }
+        setBody(request)
+    }.body()
 
     /**
      * This method lets you clear all of the items from a list in a single request. This action cannot be reversed so use it with caution.
@@ -53,7 +54,7 @@ class Tmdb4ListApi(private val client: HttpClient) {
      */
     suspend fun clear(listId: Int): TmdbStatusResult = client.get {
         endPointList(listId, "clear")
-    }
+    }.body()
 
     /**
      * This method will delete a list by id. This action is not reversible so take care when issuing it.
@@ -61,7 +62,7 @@ class Tmdb4ListApi(private val client: HttpClient) {
      */
     suspend fun delete(listId: Int): TmdbStatusResult = client.delete {
         endPointList(listId)
-    }
+    }.body()
 
     /**
      * This method will let you add items to a list. We support essentially an unlimited number of items to be posted at a time. Both movie and TV series are support.
@@ -72,8 +73,8 @@ class Tmdb4ListApi(private val client: HttpClient) {
         endPointList(listId, "items")
 
         json()
-        body = items
-    }
+        setBody(items)
+    }.body()
 
     /**
      * This method will let you update an individual item on a list. Currently, only adding a comment is suported.
@@ -83,8 +84,8 @@ class Tmdb4ListApi(private val client: HttpClient) {
         endPointList(listId, "items")
 
         json()
-        body = items
-    }
+        setBody(items)
+    }.body()
 
     /**
      * This method will let you remove items from a list. You can remove multiple items at a time.
@@ -94,8 +95,8 @@ class Tmdb4ListApi(private val client: HttpClient) {
         endPointList(listId, "items")
 
         json()
-        body = items
-    }
+        setBody(items)
+    }.body()
 
     /**
      * This method lets you quickly check if the item is already added to the list.
@@ -105,7 +106,7 @@ class Tmdb4ListApi(private val client: HttpClient) {
         endPointList(listId, "item_status")
         parameter("media_id", mediaId.toString())
         parameter("media_type", mediaType.value)
-    }
+    }.body()
 
     private fun HttpRequestBuilder.endPointList(listId: Int, vararg paths: String) {
         endPointV4("list", listId.toString(), *paths)

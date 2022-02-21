@@ -8,6 +8,7 @@ import app.moviebase.tmdb.remote.endPointV3
 import app.moviebase.tmdb.remote.parameterAppendResponses
 import app.moviebase.tmdb.remote.parameterLanguage
 import io.ktor.client.*
+import io.ktor.client.call.*
 import io.ktor.client.request.*
 
 class TmdbPeopleApi(private val client: HttpClient) {
@@ -20,7 +21,7 @@ class TmdbPeopleApi(private val client: HttpClient) {
         endPointPerson(personId)
         parameterLanguage(language)
         parameterAppendResponses(appendResponses)
-    }
+    }.body()
 
     suspend fun getShowCredits(
         personId: Int,
@@ -28,7 +29,7 @@ class TmdbPeopleApi(private val client: HttpClient) {
     ): TmdbPersonShowCredits = client.get {
         endPointPerson(personId, "tv_credits")
         parameterLanguage(language)
-    }
+    }.body()
 
     suspend fun getMovieCredits(
         personId: Int,
@@ -36,7 +37,7 @@ class TmdbPeopleApi(private val client: HttpClient) {
     ): TmdbPersonMovieCredits = client.get {
         endPointPerson(personId, "movie_credits")
         parameterLanguage(language)
-    }
+    }.body()
 
     private fun HttpRequestBuilder.endPointPerson(personId: Int, vararg paths: String) {
         endPointV3("person", personId.toString(), *paths)

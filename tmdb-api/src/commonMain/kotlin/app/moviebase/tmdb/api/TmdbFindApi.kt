@@ -5,6 +5,7 @@ import app.moviebase.tmdb.remote.parameterLanguage
 import app.moviebase.tmdb.model.TmdbExternalSource
 import app.moviebase.tmdb.model.TmdbFindResults
 import io.ktor.client.*
+import io.ktor.client.call.*
 import io.ktor.client.request.*
 
 class TmdbFindApi internal constructor(private val client: HttpClient) {
@@ -14,5 +15,5 @@ class TmdbFindApi internal constructor(private val client: HttpClient) {
 
         parameterLanguage(language)
         parameter("external_source", externalSource.value)
-    }
+    }.body()
 }
