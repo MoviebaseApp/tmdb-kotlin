@@ -4,10 +4,9 @@ import app.moviebase.tmdb.model.TmdbMediaListItem
 import app.moviebase.tmdb.model.TmdbMovie
 import app.moviebase.tmdb.model.TmdbShow
 import io.ktor.client.*
-import io.ktor.client.features.*
-import io.ktor.client.features.json.*
-import io.ktor.client.features.json.serializer.*
-import io.ktor.client.features.logging.*
+import io.ktor.client.plugins.*
+import io.ktor.client.plugins.logging.*
+import io.ktor.serialization.kotlinx.json.*
 import kotlinx.serialization.json.Json
 import kotlinx.serialization.modules.SerializersModule
 
@@ -15,13 +14,13 @@ internal fun buildHttpClient(logLevel: TmdbLogLevel = TmdbLogLevel.NONE, interce
     val json = buildJson()
 
     val httpClient = HttpClient {
-        install(Logging) {
+        Logging {
             logger = Logger.DEFAULT
             level = logLevel.ktorLogLevel
         }
 
-        install(JsonFeature) {
-            serializer = KotlinxSerializer(json)
+        install(ContentNegotiation) {
+            json(json)
         }
 
         install(HttpTimeout) {

@@ -33,6 +33,7 @@ kotlin {
                 implementation(Libs.Data.ktorJson)
                 implementation(Libs.Data.ktorLogging)
                 implementation(Libs.Data.ktorSerialization)
+                implementation(Libs.Data.ktorContentNegotiation)
                 implementation(Libs.Data.ktorAuth)
             }
         }
@@ -72,14 +73,14 @@ kotlin {
             kotlin.srcDir("src/iosMain/kotlin")
 
             dependencies {
-                implementation(Libs.Data.ktorIos)
+                implementation(Libs.Data.ktorDarwin)
             }
         }
         val iosTest by creating {
             dependsOn(commonTest)
             kotlin.srcDir("src/iosTest/kotlin")
             dependencies {
-                implementation(Libs.Data.ktorIos)
+                implementation(Libs.Data.ktorDarwin)
             }
         }
         val iosArm64Main by getting {

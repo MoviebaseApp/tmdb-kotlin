@@ -5,6 +5,7 @@ import app.moviebase.tmdb.discover.DiscoverFactory
 import app.moviebase.tmdb.model.*
 import app.moviebase.tmdb.remote.*
 import io.ktor.client.*
+import io.ktor.client.call.*
 import io.ktor.client.request.*
 
 class TmdbDiscoverApi(private val client: HttpClient) {
@@ -54,7 +55,7 @@ class TmdbDiscoverApi(private val client: HttpClient) {
         parameterLanguage(language)
         parameterRegion(region)
         parameters(parameters)
-    }
+    }.body()
 
     suspend fun discoverShow(
         page: Int,
@@ -79,6 +80,6 @@ class TmdbDiscoverApi(private val client: HttpClient) {
         parameterLanguage(language)
         parameterRegion(region)
         parameters(parameters)
-    }
+    }.body()
 
 }

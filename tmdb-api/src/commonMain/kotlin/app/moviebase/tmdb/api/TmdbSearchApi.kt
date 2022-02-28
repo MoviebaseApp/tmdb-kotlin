@@ -6,6 +6,7 @@ import app.moviebase.tmdb.remote.parameterLanguage
 import app.moviebase.tmdb.remote.parameterPage
 import app.moviebase.tmdb.remote.parameterRegion
 import io.ktor.client.*
+import io.ktor.client.call.*
 import io.ktor.client.request.*
 
 
@@ -29,7 +30,7 @@ class TmdbSearchApi(private val client: HttpClient) {
         parameterLanguage(language)
         parameterYear(year)
         parameterPrimaryReleaseYear(primaryReleaseYear)
-    }
+    }.body()
 
     suspend fun findShows(
         query: String,
@@ -47,7 +48,7 @@ class TmdbSearchApi(private val client: HttpClient) {
         parameterRegion(region)
         parameterLanguage(language)
         parameterFirstAirDateYear(firstAirDateYear)
-    }
+    }.body()
 
     suspend fun findPeople(
         query: String,
@@ -63,7 +64,7 @@ class TmdbSearchApi(private val client: HttpClient) {
         parameterPage(page)
         parameterRegion(region)
         parameterLanguage(language)
-    }
+    }.body()
 
     suspend fun findCompanies(
         query: String,
@@ -73,7 +74,7 @@ class TmdbSearchApi(private val client: HttpClient) {
 
         parameterQuery(query)
         parameterPage(page)
-    }
+    }.body()
 
     suspend fun findCollections(
         query: String,
@@ -85,7 +86,7 @@ class TmdbSearchApi(private val client: HttpClient) {
         parameterQuery(query)
         parameterPage(page)
         parameterLanguage(language)
-    }
+    }.body()
 
     suspend fun findKeywords(
         query: String,
@@ -95,7 +96,7 @@ class TmdbSearchApi(private val client: HttpClient) {
 
         parameterQuery(query)
         parameterPage(page)
-    }
+    }.body()
 
     private fun HttpRequestBuilder.endSearch(searchType: TmdbSearchType) {
         endPointV3("search", searchType.value)
