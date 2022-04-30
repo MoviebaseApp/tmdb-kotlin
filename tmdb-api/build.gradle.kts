@@ -7,7 +7,6 @@ plugins {
     id("org.jetbrains.dokka")
     id("maven-publish")
     id("signing")
-//    id(Plugins.swiftpackage) version Versions.swiftpackage
     id("com.github.ben-manes.versions") version Versions.benManesVersions
 }
 
@@ -20,8 +19,6 @@ kotlin {
         browser()
         nodejs()
     }
-    iosArm64()
-    iosX64()
 
     sourceSets {
         val commonMain by getting {
@@ -45,10 +42,7 @@ kotlin {
                 implementation(kotlin("test-annotations-common"))
             }
         }
-        val jvmMain by getting {
-            dependencies {
-            }
-        }
+        val jvmMain by getting
         val jvmTest by getting {
             dependencies {
                 implementation(kotlin("test-junit5"))
@@ -60,43 +54,7 @@ kotlin {
                 implementation(Libs.Testing.ktorClientMock)
             }
         }
-        val jsMain by getting {
-            dependencies {
-
-            }
-        }
-        val jsTest by getting {
-            dependencies {
-                implementation(kotlin("test-js"))
-            }
-        }
-        val iosMain by creating {
-            dependsOn(commonMain)
-            kotlin.srcDir("src/iosMain/kotlin")
-
-            dependencies {
-                implementation(Libs.Data.ktorDarwin)
-            }
-        }
-        val iosTest by creating {
-            dependsOn(commonTest)
-            kotlin.srcDir("src/iosTest/kotlin")
-            dependencies {
-                implementation(Libs.Data.ktorDarwin)
-            }
-        }
-        val iosArm64Main by getting {
-            dependsOn(iosMain)
-        }
-        val iosX64Main by getting {
-            dependsOn(iosMain)
-        }
-        val iosArm64Test by getting {
-            dependsOn(iosTest)
-        }
-        val iosX64Test by getting {
-            dependsOn(iosTest)
-        }
+        val jsMain by getting
     }
 }
 
