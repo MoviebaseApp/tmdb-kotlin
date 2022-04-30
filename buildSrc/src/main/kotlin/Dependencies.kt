@@ -2,7 +2,7 @@ object Versions {
 
     val versionMajor = 0
     val versionMinor = 6
-    val versionPatch = 4
+    val versionPatch = 5
 
     val versionName = "$versionMajor.$versionMinor.$versionPatch"
 
@@ -23,7 +23,7 @@ object Versions {
     val ktor = "2.0.0"
 
     // Testing
-    val junitJupiter = "5.8.0-RC1"
+    val junitJupiter = "5.8.0"
     val truth = "1.1.3"
     val junit = "4.13.2"
     val mockito = "3.12.4"
