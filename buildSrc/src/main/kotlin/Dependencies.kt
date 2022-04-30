@@ -9,6 +9,7 @@ object Versions {
     // Plugins
     val dokka = "1.4.30"
     val nexus = "1.0.0"
+    val benManesVersions = "0.42.0"
     val swiftpackage = "2.0.3"
 
     // Kotlin

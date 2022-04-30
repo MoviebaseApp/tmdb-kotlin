@@ -1,4 +1,5 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
+import com.github.benmanes.gradle.versions.updates.DependencyUpdatesTask
 
 plugins {
     kotlin("multiplatform")
@@ -7,6 +8,7 @@ plugins {
     id("maven-publish")
     id("signing")
 //    id(Plugins.swiftpackage) version Versions.swiftpackage
+    id("com.github.ben-manes.versions") version Versions.benManesVersions
 }
 
 group = "app.moviebase"
@@ -108,6 +110,19 @@ tasks.withType<Test>().configureEach {
         events("failed")
         showStandardStreams = true
     }
+}
+
+tasks.withType<DependencyUpdatesTask> {
+    rejectVersionIf {
+        isNonStable(candidate.version)
+    }
+}
+
+fun isNonStable(version: String): Boolean {
+    val stableKeyword = listOf("RELEASE", "FINAL", "GA").any { version.toUpperCase().contains(it) }
+    val regex = "^[0-9,.v-]+(-r)?$".toRegex()
+    val isStable = stableKeyword || regex.matches(version)
+    return isStable.not()
 }
 
 val javadocJar by tasks.registering(Jar::class) {
