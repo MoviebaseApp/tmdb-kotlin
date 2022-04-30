@@ -20,7 +20,7 @@ object Versions {
     val kotlinIo = "0.1.16"
 
     // Data
-    val ktor = "2.0.1"
+    val ktor = "2.0.0"
 
     // Testing
     val junitJupiter = "5.8.0-RC1"
