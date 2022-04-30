@@ -15,22 +15,34 @@ class TmdbDiscoverApi(private val client: HttpClient) {
         language: String? = null,
         region: String? = null,
         category: DiscoverCategory
-    ): TmdbPageResult<out TmdbMediaListItem> {
-        return when (val discover = DiscoverFactory.createByCategory(category)) {
+    ): TmdbPageResult<out TmdbMediaListItem> =
+        discover(
+            page = page,
+            language = language,
+            region = region,
+            tmdbDiscover = DiscoverFactory.createByCategory(category)
+        )
+
+    suspend fun discover(
+        page: Int,
+        language: String? = null,
+        region: String? = null,
+        tmdbDiscover: TmdbDiscover
+    ): TmdbPageResult<out TmdbMediaListItem> =
+        when (tmdbDiscover) {
             is TmdbDiscover.Movie -> discoverMovie(
                 page = page,
                 language = language,
                 region = region,
-                discover = discover
+                discover = tmdbDiscover
             )
             is TmdbDiscover.Show -> discoverShow(
                 page = page,
                 language = language,
                 region = region,
-                discover = discover
+                discover = tmdbDiscover
             )
         }
-    }
 
     suspend fun discoverMovie(
         page: Int,
@@ -81,5 +93,4 @@ class TmdbDiscoverApi(private val client: HttpClient) {
         parameterRegion(region)
         parameters(parameters)
     }.body()
-
 }
