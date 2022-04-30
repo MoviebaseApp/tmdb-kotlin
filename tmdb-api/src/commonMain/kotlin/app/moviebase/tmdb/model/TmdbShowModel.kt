@@ -54,7 +54,10 @@ enum class TmdbShowType(val value: String) {
     SHOW("Show"),
 
     @SerialName("Miniseries")
-    MINISERIES("Miniseries");
+    MINISERIES("Miniseries"),
+
+    @SerialName("Video")
+    VIDEO("Video");
 
     companion object {
         fun find(value: String?) = values().find { it.value == value }
@@ -83,7 +86,7 @@ data class TmdbShowDetail(
     val seasons: List<TmdbSeason>,
     val networks: List<TmdbNetwork>,
     val status: TmdbShowStatus,
-    val type: TmdbShowType,
+    val type: TmdbShowType? = null,
     val languages: List<String>,
     @SerialName("origin_country") val originCountry: List<String>,
     @SerialName("original_language") val originalLanguage: String,
