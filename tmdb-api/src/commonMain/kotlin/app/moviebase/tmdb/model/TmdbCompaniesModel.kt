@@ -6,6 +6,14 @@ import kotlinx.serialization.Serializable
 
 object TmdbCompanyId {
     const val NETFLIX_INTERNATIONAL_PICTURES = 145174
+    const val WALT_DISNEY_PICTURES = 2
+    const val NEW_LINE_CINEMA = 12
+    const val CENTURY_STUDIOS = 127928
+    const val UNIVERSAL = 33
+    const val PARAMOUNT_PICTURES = 107355
+    const val WARNER_BROS_PICTURES = 174
+    const val COLUMBIA_PICTURES = 5
+    const val TRISTAR_PICTURES = 559
 }
 
 
