@@ -119,6 +119,9 @@ enum class TmdbVideoType(val value: String) {
     @SerialName("Featurette")
     FEATURETTE("Featurette"),
 
+    @SerialName("Bloopers")
+    BLOOPERS("Bloopers"),
+
     @SerialName("Opening Credits")
     OPENING_CREDITS("Opening Credits"),
 
@@ -144,7 +147,7 @@ data class TmdbVideo(
     @SerialName("iso_639_1") val iso639: String? = null,
     @SerialName("iso_3166_1") val iso3166: String? = null,
     @SerialName("key") val key: String,
-    @SerialName("site") val site: TmdbVideoSite,
+    @SerialName("site") val site: TmdbVideoSite? = null,
     @SerialName("name") val name: String? = null,
     @SerialName("size") val size: Int? = null, // 360, 480, 720, 1080
     @SerialName("type") val type: TmdbVideoType? = null,

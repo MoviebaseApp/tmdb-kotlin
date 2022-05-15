@@ -5,6 +5,7 @@ import app.moviebase.tmdb.model.TmdbMovie
 import app.moviebase.tmdb.model.TmdbShow
 import io.ktor.client.*
 import io.ktor.client.plugins.*
+import io.ktor.client.plugins.cache.*
 import io.ktor.client.plugins.contentnegotiation.*
 import io.ktor.client.plugins.logging.*
 import io.ktor.serialization.kotlinx.json.*
@@ -23,6 +24,10 @@ internal fun buildHttpClient(logLevel: TmdbLogLevel = TmdbLogLevel.NONE, interce
         install(ContentNegotiation) {
             json(json)
         }
+
+        // TODO: handle validation https://ktor.io/docs/response-validation.html
+
+        install(HttpCache)
 
         install(HttpTimeout) {
             requestTimeoutMillis = 60_000

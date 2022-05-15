@@ -24,10 +24,10 @@ class Tmdb4(
     }
 
     private val authClient = buildHttpClient(logLevel) {
+        // TODO: Install Auth client https://ktor.io/docs/auth.html
         it.parameter(TmdbUrlParameter.API_KEY, tmdbApiKey)
         requireNotNull(authenticationToken) { "authentication token not set for request auth endpoints" }
         it.header("Authorization", "Bearer $authenticationToken")
-
     }
 
     val account = Tmdb4AccountApi(client)
