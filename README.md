@@ -52,7 +52,7 @@ In Kotlin Multiplatform projects, add the dependency to your commonMain source-s
 ```kotlin
 commonMain {
     dependencies {
-        implementation("app.moviebase:tmdb-api:0.6.5")
+        implementation("app.moviebase:tmdb-api:0.6.7")
     }
 }
 ``` 
@@ -65,7 +65,7 @@ Add a dependency to the `<dependencies>` element.
 <dependency>
     <groupId>app.moviebase</groupId>
     <artifactId>tmdb-api</artifactId>
-    <version>0.6.5</version>
+    <version>0.6.7</version>
 </dependency>
 ```
 

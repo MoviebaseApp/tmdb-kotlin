@@ -1,7 +1,7 @@
 object Versions {
     val versionMajor = 0
     val versionMinor = 6
-    val versionPatch = 6
+    val versionPatch = 7
 
     val versionName = "$versionMajor.$versionMinor.$versionPatch"
 
