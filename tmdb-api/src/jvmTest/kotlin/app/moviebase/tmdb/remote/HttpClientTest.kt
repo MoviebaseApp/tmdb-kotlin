@@ -6,6 +6,7 @@ import io.ktor.client.plugins.*
 import io.ktor.client.plugins.contentnegotiation.*
 import io.ktor.http.*
 import io.ktor.serialization.kotlinx.json.*
+import java.io.File
 
 fun mockHttpClient(
     version: Int,
@@ -26,7 +27,7 @@ fun mockHttpClient(
             val url = request.url.toString().decodeURLPart()
 
             val fileName = jsonFiles[url] ?: error("Unhandled url $url")
-            val resource = Resource("./src/jvmTest/resources/tmdb$version/$fileName")
+            val resource = File("./src/jvmTest/resources/tmdb$version/$fileName")
 
             val content = resource.readText()
             respond(content = content, headers = headers)

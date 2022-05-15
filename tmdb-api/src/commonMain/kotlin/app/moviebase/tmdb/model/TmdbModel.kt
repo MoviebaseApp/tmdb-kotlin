@@ -135,7 +135,7 @@ enum class TmdbVideoSite(val value: String) {
     YOUTUBE("YouTube"),
 
     @SerialName("Vimeo")
-    VIMEO("Vimeo"),
+    VIMEO("Vimeo");
 }
 
 /**
