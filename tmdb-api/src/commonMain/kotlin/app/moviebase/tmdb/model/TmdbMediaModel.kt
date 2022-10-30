@@ -41,14 +41,17 @@ interface TmdbProfileMedia {
     val profileImage get(): TmdbImage? = TmdbImage.profile(profilePath)
 }
 
+interface TmdbRatingItem {
+    val voteAverage: Float?
+    val voteCount: Int?
+}
+
 /**
  * This item is a movie or show which can be listed.
  */
 @Polymorphic
 @Serializable
-sealed class TmdbMediaListItem : TmdbAnyMedia, TmdbBackdropMedia, TmdbPosterMedia {
-    abstract val voteAverage: Float
-    abstract val voteCount: Int
+sealed class TmdbMediaListItem : TmdbAnyMedia, TmdbBackdropMedia, TmdbPosterMedia, TmdbRatingItem {
     abstract val overview: String
     abstract val genresIds: List<Int>
     abstract val popularity: Float

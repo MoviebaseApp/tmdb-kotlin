@@ -73,8 +73,8 @@ data class TmdbMovieDetail(
     @SerialName("original_language") val originalLanguage: String,
     val overview: String,
     @SerialName("poster_path") val posterPath: String?,
-    @SerialName("vote_average") val voteAverage: Float,
-    @SerialName("vote_count") val voteCount: Int,
+    @SerialName("vote_average") override val voteAverage: Float,
+    @SerialName("vote_count") override val voteCount: Int,
     @SerialName("external_ids") val externalIds: TmdbExternalIds? = null,
     val status: TmdbMovieStatus,
     val tagline: String,
@@ -89,7 +89,7 @@ data class TmdbMovieDetail(
     @SerialName("credits") val credits: TmdbCredits? = null,
     @SerialName("videos") val videos: TmdbResult<TmdbVideo>? = null,
     @SerialName("images") val images: TmdbImages? = null,
-) {
+): TmdbRatingItem {
 
     val posterImage get(): TmdbImage? = TmdbImage.poster(posterPath)
     val backdropImage get(): TmdbImage? = TmdbImage.backdrop(backdropPath)

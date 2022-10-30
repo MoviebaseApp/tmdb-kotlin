@@ -93,15 +93,15 @@ data class TmdbShowDetail(
     @SerialName("original_name") val originalName: String,
     val overview: String,
     val tagline: String,
-    @SerialName("vote_average") val voteAverage: Float,
-    @SerialName("vote_count") val voteCount: Int,
+    @SerialName("vote_average") override val voteAverage: Float,
+    @SerialName("vote_count") override val voteCount: Int,
     @SerialName("external_ids") val externalIds: TmdbExternalIds? = null,
     @SerialName("watch/providers") val watchProviders: TmdbProviderResult? = null,
     @SerialName("credits") val credits: TmdbCredits? = null,
     @SerialName("aggregate_credits") val aggregateCredits: TmdbAggregateCredits? = null,
     @SerialName("videos") val videos: TmdbResult<TmdbVideo>? = null,
     @SerialName("content_ratings") val contentRatings: TmdbResult<TmdbContentRating>? = null,
-) : TmdbAnyMedia, TmdbBackdropMedia, TmdbPosterMedia
+) : TmdbAnyMedia, TmdbBackdropMedia, TmdbPosterMedia, TmdbRatingItem
 
 fun TmdbResult<TmdbContentRating>.getContentRating(country: String): String? =
     results.firstOrNull { it.iso3166 == country }?.rating
@@ -164,14 +164,14 @@ data class TmdbEpisodeDetail(
     @SerialName("season_number") val seasonNumber: Int,
     @SerialName("air_date") @Serializable(LocalDateSerializer::class) val airDate: LocalDate? = null,
     @SerialName("name") val name: String? = null,
-    @SerialName("vote_average") val voteAverage: Float? = null,
-    @SerialName("vote_count") val voteCount: Int? = null,
+    @SerialName("vote_average") override val voteAverage: Float? = null,
+    @SerialName("vote_count") override val voteCount: Int? = null,
     @SerialName("still_path") val stillPath: String? = null,
     @SerialName("images") val images: TmdbResult<TmdbImages>,
     @SerialName("crew") val crew: List<TmdbCrew>,
     @SerialName("guest_stars") val guestStars: List<TmdbCast>,
     @SerialName("external_ids") val externalIds: TmdbExternalIds,
-) : TmdbAnyMedia, TmdbBackdropMedia {
+) : TmdbAnyMedia, TmdbBackdropMedia, TmdbRatingItem {
     override val backdropPath: String? get() = stillPath
 }
 

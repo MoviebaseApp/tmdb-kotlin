@@ -1,8 +1,8 @@
 package app.moviebase.tmdb.api
 
 import app.moviebase.tmdb.model.AppendResponse
+import app.moviebase.tmdb.model.TmdbEpisodeDetail
 import app.moviebase.tmdb.model.TmdbExternalIds
-import app.moviebase.tmdb.model.TmdbSeason
 import app.moviebase.tmdb.remote.endPointV3
 import app.moviebase.tmdb.remote.parameterAppendResponses
 import app.moviebase.tmdb.remote.parameterLanguage
@@ -19,7 +19,7 @@ class TmdbShowEpisodesApi(private val client: HttpClient) {
         language: String? = null,
         appendResponses: Iterable<AppendResponse>? = null,
         includeImageLanguages: String? = null
-    ): TmdbSeason = client.get {
+    ): TmdbEpisodeDetail = client.get {
         endPointEpisode(showId, seasonNumber, episodeNumber)
         parameterLanguage(language)
         parameterAppendResponses(appendResponses)
@@ -33,5 +33,4 @@ class TmdbShowEpisodesApi(private val client: HttpClient) {
     private fun HttpRequestBuilder.endPointEpisode(showId: Int, seasonNumber: Int, episodeNumber: Int, vararg paths: String) {
         endPointV3("tv", showId.toString(), "season", seasonNumber.toString(), "episode", episodeNumber.toString(), *paths)
     }
-
 }
