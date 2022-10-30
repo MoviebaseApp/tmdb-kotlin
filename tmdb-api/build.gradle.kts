@@ -36,16 +36,24 @@ kotlin {
                 implementation(Libs.Data.ktorAuth)
             }
         }
+
         val commonTest by getting {
             dependencies {
                 implementation(kotlin("test-common"))
                 implementation(kotlin("test-annotations-common"))
             }
         }
-        val jvmMain by getting
+
+        val jvmMain by getting {
+            dependencies {
+                implementation(Libs.Data.ktorOkhttp)
+            }
+        }
+
         val jvmTest by getting {
             dependencies {
                 implementation(kotlin("test-junit5"))
+                implementation(Libs.Data.ktorOkhttp)
 
                 implementation(Libs.Kotlin.coroutines)
                 implementation(Libs.Testing.jupiter)
@@ -54,12 +62,15 @@ kotlin {
                 implementation(Libs.Testing.ktorClientMock)
             }
         }
-        val jsMain by getting
+
+        val jsMain by getting {
+
+        }
     }
 }
 
 tasks.withType<KotlinCompile> {
-    kotlinOptions.jvmTarget = "1.8"
+    kotlinOptions.jvmTarget = JavaVersion.VERSION_11.toString()
     kotlinOptions.freeCompilerArgs += "-Xjvm-default=all"
 }
 tasks.withType<Test>().configureEach {
