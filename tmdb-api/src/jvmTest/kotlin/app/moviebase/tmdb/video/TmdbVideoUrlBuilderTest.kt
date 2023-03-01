@@ -2,6 +2,7 @@ package app.moviebase.tmdb.video
 
 import app.moviebase.tmdb.model.TmdbVideo
 import app.moviebase.tmdb.model.TmdbVideoSite
+import app.moviebase.tmdb.url.TmdbUrlBuilder
 import com.google.common.truth.Truth.assertThat
 import org.junit.Test
 
@@ -11,7 +12,7 @@ internal class TmdbVideoUrlBuilderTest {
     fun `Should return a proper YouTube url`() {
         val tmdbVideo = TmdbVideo(id = "123", key = "qwerasdf", site = TmdbVideoSite.YOUTUBE)
 
-        val videoUrl = TmdbVideoUrlBuilder.build(tmdbVideo)
+        val videoUrl = TmdbUrlBuilder.buildVideo(tmdbVideo)
 
         assertThat(videoUrl).isEqualTo("https://www.youtube.com/watch?v=qwerasdf")
     }
@@ -20,7 +21,7 @@ internal class TmdbVideoUrlBuilderTest {
     fun `Should return a proper Vimeo url`() {
         val tmdbVideo = TmdbVideo(id = "123", key = "qwerasdf", site = TmdbVideoSite.VIMEO)
 
-        val videoUrl = TmdbVideoUrlBuilder.build(tmdbVideo)
+        val videoUrl = TmdbUrlBuilder.buildVideo(tmdbVideo)
 
         assertThat(videoUrl).isEqualTo("https://vimeo.com/qwerasdf")
     }
