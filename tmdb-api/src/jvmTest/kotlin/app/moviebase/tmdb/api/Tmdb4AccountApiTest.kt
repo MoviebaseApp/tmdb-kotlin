@@ -20,7 +20,4 @@ class Tmdb4AccountApiTest {
         val results = classToTest.getLists("343563", 1)
 
     }
-
-
 }
-

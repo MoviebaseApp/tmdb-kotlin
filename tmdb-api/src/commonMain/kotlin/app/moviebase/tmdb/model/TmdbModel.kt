@@ -146,7 +146,7 @@ data class TmdbVideo(
     @SerialName("id") val id: String,
     @SerialName("iso_639_1") val iso639: String? = null,
     @SerialName("iso_3166_1") val iso3166: String? = null,
-    @SerialName("key") val key: String,
+    @SerialName("key") val key: String? = null,
     @SerialName("site") val site: TmdbVideoSite? = null,
     @SerialName("name") val name: String? = null,
     @SerialName("size") val size: Int? = null, // 360, 480, 720, 1080
