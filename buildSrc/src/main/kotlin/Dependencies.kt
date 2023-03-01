@@ -1,6 +1,6 @@
 object Versions {
     val versionMajor = 0
-    val versionMinor = 7
+    val versionMinor = 8
     val versionPatch = 0
 
     val versionName = "$versionMajor.$versionMinor.$versionPatch"
@@ -8,22 +8,22 @@ object Versions {
     // Plugins
     val dokka = "1.4.30"
     val nexus = "1.0.0"
-    val benManesVersions = "0.42.0"
+    val benManesVersions = "0.46.0"
 
     // Kotlin
-    val kotlin = "1.7.20"
+    val kotlin = "1.8.10"
     val coroutines = "1.6.4"
     val kotlinxDatetime = "0.4.0"
-    val ktor = "2.1.3"
-    val serialization = "1.4.1"
+    val ktor = "2.2.4"
+    val serialization = "1.5.0"
     val kotlinIo = "0.1.16"
 
     // Testing
-    val junitJupiter = "5.9.1"
+    val junitJupiter = "5.9.2"
     val truth = "1.1.3"
     val junit = "4.13.2"
-    val mockito = "3.12.4"
-    val mockitoKotlin = "3.2.0"
+    val mockito = "5.1.1"
+    val mockitoKotlin = "4.1.0"
 }
 
 object Plugins {

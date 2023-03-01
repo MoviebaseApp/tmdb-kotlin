@@ -15,7 +15,7 @@ version = Versions.versionName
 
 kotlin {
     jvm()
-    js {
+    js(IR) {
         browser()
         nodejs()
     }
