@@ -49,6 +49,11 @@ class TmdbShowsApiTest {
         assertThat(tmdbVideo).isNotNull()
         assertThat(tmdbVideo?.id).isEqualTo("5f6dbe399f37b000365d22ad")
         assertThat(tmdbVideo?.type).isEqualTo(TmdbVideoType.TEASER)
+
+        val network = showDetails.networks?.first()
+        assertThat(network).isNotNull()
+        assertThat(network?.name).isEqualTo("Netflix")
+        assertThat(network?.logoPath).isEqualTo("/wwemzKWzjKYJFfCeiB57q3r4Bcm.png")
     }
 
     @Test
