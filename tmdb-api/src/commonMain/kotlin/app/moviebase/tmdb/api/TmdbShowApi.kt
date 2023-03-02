@@ -4,6 +4,7 @@ import app.moviebase.tmdb.model.*
 import app.moviebase.tmdb.remote.endPointV3
 import app.moviebase.tmdb.remote.parameterAppendResponses
 import app.moviebase.tmdb.remote.parameterLanguage
+import app.moviebase.tmdb.remote.parameterPage
 import io.ktor.client.*
 import io.ktor.client.call.*
 import io.ktor.client.request.*
@@ -29,6 +30,16 @@ class TmdbShowApi(private val client: HttpClient) {
         language: String? = null,
     ): TmdbAggregateCredits = client.get {
         endPointShow(showId, "aggregate_credits")
+        parameterLanguage(language)
+    }.body()
+
+    suspend fun getRecommendations(
+        showId: Int,
+        page: Int,
+        language: String? = null,
+    ): TmdbShowPageResult = client.get {
+        endPointShow(showId, "recommendations")
+        parameterPage(page)
         parameterLanguage(language)
     }.body()
 

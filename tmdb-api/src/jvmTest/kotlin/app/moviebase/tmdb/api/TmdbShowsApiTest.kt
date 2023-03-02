@@ -16,6 +16,7 @@ class TmdbShowsApiTest {
             "tv/96677?language=en-US&append_to_response=external_ids,videos,credits,aggregate_credits,reviews,content_ratings,watch/providers"
                     to "tv/tv_details_96677.json",
             "tv/96677/aggregate_credits?language=en-US" to "tv/tv_aggregate_credits_96677.json",
+            "tv/96677/recommendations?page=1&language=en-US" to "tv/tv_recommendations_96677.json"
         )
     )
 
@@ -65,6 +66,18 @@ class TmdbShowsApiTest {
 
         assertThat(aggregateCredits.cast).isNotEmpty()
         assertThat(aggregateCredits.crew).isNotEmpty()
+    }
+
+    @Test
+    fun `it can fetch recommendations`() = runBlocking {
+        val recommendations = classToTest.getRecommendations(
+            showId = 96677,
+            page = 1,
+            language = "en-US",
+        )
+
+        assertThat(recommendations.results).isNotEmpty()
+        assertThat(recommendations.page).isEqualTo(1)
     }
 
 }
