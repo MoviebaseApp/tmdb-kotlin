@@ -1,0 +1,475 @@
+{
+  "page": 1,
+  "results": [
+    {
+      "adult": false,
+      "backdrop_path": "/1i1N0AVRb54H6ZFPDTwbo9MLxSF.jpg",
+      "id": 85271,
+      "name": "WandaVision",
+      "original_language": "en",
+      "original_name": "WandaVision",
+      "overview": "Wanda Maximoff and Vision—two super-powered beings living idealized suburban lives—begin to suspect that everything is not as it seems.",
+      "poster_path": "/frobUz2X5Pc8OiVZU8Oo5K3NKMM.jpg",
+      "media_type": "tv",
+      "genre_ids": [
+        10765,
+        9648,
+        18
+      ],
+      "popularity": 84.845,
+      "first_air_date": "2021-01-15",
+      "vote_average": 8.289,
+      "vote_count": 10886,
+      "origin_country": [
+        "US"
+      ]
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/p7PLOCD4bqLV4sJmeLrwvkufHt3.jpg",
+      "id": 84958,
+      "name": "Loki",
+      "original_language": "en",
+      "original_name": "Loki",
+      "overview": "After stealing the Tesseract during the events of “Avengers: Endgame,” an alternate version of Loki is brought to the mysterious Time Variance Authority, a bureaucratic organization that exists outside of time and space and monitors the timeline. They give Loki a choice: face being erased from existence due to being a “time variant” or help fix the timeline and stop a greater threat.",
+      "poster_path": "/kEl2t3OhXc3Zb9FBh1AuYzRTgZp.jpg",
+      "media_type": "tv",
+      "genre_ids": [
+        18,
+        10765
+      ],
+      "popularity": 143.103,
+      "first_air_date": "2021-06-09",
+      "vote_average": 8.171,
+      "vote_count": 9680,
+      "origin_country": [
+        "US"
+      ]
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/gFZriCkpJYsApPZEF3jhxL4yLzG.jpg",
+      "id": 71446,
+      "name": "Money Heist",
+      "original_language": "es",
+      "original_name": "La Casa de Papel",
+      "overview": "To carry out the biggest heist in history, a mysterious man called The Professor recruits a band of eight robbers who have a single characteristic: none of them has anything to lose. Five months of seclusion - memorizing every step, every detail, every probability - culminate in eleven days locked up in the National Coinage and Stamp Factory of Spain, surrounded by police forces and with dozens of hostages in their power, to find out whether their suicide wager will lead to everything or nothing.",
+      "poster_path": "/reEMJA1uzscCbkpeRJeTT2bjqUp.jpg",
+      "media_type": "tv",
+      "genre_ids": [
+        80,
+        18
+      ],
+      "popularity": 134.621,
+      "first_air_date": "2017-05-02",
+      "vote_average": 8.3,
+      "vote_count": 17377,
+      "origin_country": [
+        "ES"
+      ]
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/xYTnihl7qffiLSZ6yLMSpBkPdXC.jpg",
+      "id": 93405,
+      "name": "Squid Game",
+      "original_language": "ko",
+      "original_name": "오징어 게임",
+      "overview": "Hundreds of cash-strapped players accept a strange invitation to compete in children's games—with high stakes. But, a tempting prize awaits the victor.",
+      "poster_path": "/dDlEmu3EZ0Pgg93K2SVNLCjCSvE.jpg",
+      "media_type": "tv",
+      "genre_ids": [
+        10759,
+        9648,
+        18
+      ],
+      "popularity": 274.507,
+      "first_air_date": "2021-09-17",
+      "vote_average": 7.837,
+      "vote_count": 12390,
+      "origin_country": [
+        "KR"
+      ]
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/34OGjFEbHj0E3lE2w0iTUVq0CBz.jpg",
+      "id": 87739,
+      "name": "The Queen's Gambit",
+      "original_language": "en",
+      "original_name": "The Queen's Gambit",
+      "overview": "In a Kentucky orphanage in the 1950s, a young girl discovers an astonishing talent for chess while struggling with addiction.",
+      "poster_path": "/zU0htwkhNvBQdVSIKB9s6hgVeFK.jpg",
+      "media_type": "tv",
+      "genre_ids": [
+        18
+      ],
+      "popularity": 58.731,
+      "first_air_date": "2020-10-23",
+      "vote_average": 8.567,
+      "vote_count": 3397,
+      "origin_country": [
+        "US"
+      ]
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/xZUZ9i6vVayjyhR1vRo9Bjku4h.jpg",
+      "id": 63174,
+      "name": "Lucifer",
+      "original_language": "en",
+      "original_name": "Lucifer",
+      "overview": "Bored and unhappy as the Lord of Hell, Lucifer Morningstar abandoned his throne and retired to Los Angeles, where he has teamed up with LAPD detective Chloe Decker to take down criminals. But the longer he's away from the underworld, the greater the threat that the worst of humanity could escape.",
+      "poster_path": "/ekZobS8isE6mA53RAiGDG93hBxL.jpg",
+      "media_type": "tv",
+      "genre_ids": [
+        80,
+        10765
+      ],
+      "popularity": 600.055,
+      "first_air_date": "2016-01-25",
+      "vote_average": 8.497,
+      "vote_count": 13236,
+      "origin_country": [
+        "US"
+      ]
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/eO8h4fwdjWodPr3awVr5wqMN3Ut.jpg",
+      "id": 88396,
+      "name": "The Falcon and the Winter Soldier",
+      "original_language": "en",
+      "original_name": "The Falcon and the Winter Soldier",
+      "overview": "Following the events of “Avengers: Endgame”, the Falcon, Sam Wilson and the Winter Soldier, Bucky Barnes team up in a global adventure that tests their abilities, and their patience.",
+      "poster_path": "/6kbAMLteGO8yyewYau6bJ683sw7.jpg",
+      "media_type": "tv",
+      "genre_ids": [
+        10759,
+        18
+      ],
+      "popularity": 71.151,
+      "first_air_date": "2021-03-19",
+      "vote_average": 7.723,
+      "vote_count": 7685,
+      "origin_country": [
+        "US"
+      ]
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/2OMB0ynKlyIenMJWI2Dy9IWT4c.jpg",
+      "id": 1399,
+      "name": "Game of Thrones",
+      "original_language": "en",
+      "original_name": "Game of Thrones",
+      "overview": "Seven noble families fight for control of the mythical land of Westeros. Friction between the houses leads to full-scale war. All while a very ancient evil awakens in the farthest north. Amidst the war, a neglected military order of misfits, the Night's Watch, is all that stands between the realms of men and icy horrors beyond.",
+      "poster_path": "/7WUHnWGx5OO145IRxPDUkQSh4C7.jpg",
+      "media_type": "tv",
+      "genre_ids": [
+        10765,
+        18,
+        10759
+      ],
+      "popularity": 535.381,
+      "first_air_date": "2011-04-17",
+      "vote_average": 8.435,
+      "vote_count": 20665,
+      "origin_country": [
+        "US"
+      ]
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/6Lw54zxm6BAEKJeGlabyzzR5Juu.jpg",
+      "id": 82856,
+      "name": "The Mandalorian",
+      "original_language": "en",
+      "original_name": "The Mandalorian",
+      "overview": "After the fall of the Galactic Empire, lawlessness has spread throughout the galaxy. A lone gunfighter makes his way through the outer reaches, earning his keep as a bounty hunter.",
+      "poster_path": "/eU1i6eHXlzMOlEq0ku1Rzq7Y4wA.jpg",
+      "media_type": "tv",
+      "genre_ids": [
+        10765,
+        10759,
+        18
+      ],
+      "popularity": 522.236,
+      "first_air_date": "2019-11-12",
+      "vote_average": 8.475,
+      "vote_count": 8397,
+      "origin_country": [
+        "US"
+      ]
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/8V1XPEDLtJoxOWlE6gYzn2sQaMp.jpg",
+      "id": 60574,
+      "name": "Peaky Blinders",
+      "original_language": "en",
+      "original_name": "Peaky Blinders",
+      "overview": "A gangster family epic set in 1919 Birmingham, England and centered on a gang who sew razor blades in the peaks of their caps, and their fierce boss Tommy Shelby, who means to move up in the world.",
+      "poster_path": "/vUUqzWa2LnHIVqkaKVlVGkVcZIW.jpg",
+      "media_type": "tv",
+      "genre_ids": [
+        18,
+        80
+      ],
+      "popularity": 494.385,
+      "first_air_date": "2013-09-12",
+      "vote_average": 8.545,
+      "vote_count": 8188,
+      "origin_country": [
+        "GB"
+      ]
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/h8dzXytAPFkAHv1kZAN1SshXI68.jpg",
+      "id": 79680,
+      "name": "Snowpiercer",
+      "original_language": "en",
+      "original_name": "Snowpiercer",
+      "overview": "More than seven years after the world has become a frozen wasteland, the remnants of humanity inhabit a gigantic, perpetually-moving train that circles the globe as class warfare, social injustice and the politics of survival play out.",
+      "poster_path": "/3s6ZyZKurx6wDJZMXSsbUsgjWCI.jpg",
+      "media_type": "tv",
+      "genre_ids": [
+        10765
+      ],
+      "popularity": 55.396,
+      "first_air_date": "2020-05-17",
+      "vote_average": 7.433,
+      "vote_count": 1013,
+      "origin_country": [
+        "US"
+      ]
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/6UH52Fmau8RPsMAbQbjwN3wJSCj.jpg",
+      "id": 95557,
+      "name": "Invincible",
+      "original_language": "en",
+      "original_name": "Invincible",
+      "overview": "Mark Grayson is a normal teenager except for the fact that his father is the most powerful superhero on the planet. Shortly after his seventeenth birthday, Mark begins to develop powers of his own and enters into his father’s tutelage.",
+      "poster_path": "/yDWJYRAwMNKbIYT8ZB33qy84uzO.jpg",
+      "media_type": "tv",
+      "genre_ids": [
+        16,
+        10765,
+        10759,
+        18
+      ],
+      "popularity": 68.341,
+      "first_air_date": "2021-03-25",
+      "vote_average": 8.705,
+      "vote_count": 3403,
+      "origin_country": [
+        "US"
+      ]
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/56v2KjBlU4XaOv9rVYEQypROD7P.jpg",
+      "id": 66732,
+      "name": "Stranger Things",
+      "original_language": "en",
+      "original_name": "Stranger Things",
+      "overview": "When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces, and one strange little girl.",
+      "poster_path": "/49WJfeN0moxb9IPfGn8AIqMGskD.jpg",
+      "media_type": "tv",
+      "genre_ids": [
+        18,
+        10765,
+        9648
+      ],
+      "popularity": 301.697,
+      "first_air_date": "2016-07-15",
+      "vote_average": 8.6,
+      "vote_count": 15185,
+      "origin_country": [
+        "US"
+      ]
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/mGVrXeIjyecj6TKmwPVpHlscEmw.jpg",
+      "id": 76479,
+      "name": "The Boys",
+      "original_language": "en",
+      "original_name": "The Boys",
+      "overview": "A group of vigilantes known informally as “The Boys” set out to take down corrupt superheroes with no more than blue-collar grit and a willingness to fight dirty.",
+      "poster_path": "/stTEycfG9928HYGEISBFaG1ngjM.jpg",
+      "media_type": "tv",
+      "genre_ids": [
+        10765,
+        10759
+      ],
+      "popularity": 232.124,
+      "first_air_date": "2019-07-25",
+      "vote_average": 8.47,
+      "vote_count": 8072,
+      "origin_country": [
+        "US"
+      ]
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/1DmAeDIAN6nvVpgTqiurDPUwuj7.jpg",
+      "id": 97175,
+      "name": "Fate: The Winx Saga",
+      "original_language": "en",
+      "original_name": "Fate: The Winx Saga",
+      "overview": "The coming-of-age journey of five fairies attending Alfea, a magical boarding school in the Otherworld where they must learn to master their powers while navigating love, rivalries, and the monsters that threaten their very existence.",
+      "poster_path": "/oHj6guMrLfQcBzo3uxwBJc8Y736.jpg",
+      "media_type": "tv",
+      "genre_ids": [
+        10765,
+        18
+      ],
+      "popularity": 60.801,
+      "first_air_date": "2021-01-22",
+      "vote_average": 8.251,
+      "vote_count": 1218,
+      "origin_country": [
+        "GB"
+      ]
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/tl0mg7lOnS6tP8ngH0QwgMLQdpV.jpg",
+      "id": 76669,
+      "name": "Elite",
+      "original_language": "es",
+      "original_name": "Élite",
+      "overview": "When three working class kids enroll in the most exclusive school in Spain, the clash between the wealthy and the poor students leads to tragedy.",
+      "poster_path": "/3NTAbAiao4JLzFQw6YxP1YZppM8.jpg",
+      "media_type": "tv",
+      "genre_ids": [
+        80,
+        9648,
+        18
+      ],
+      "popularity": 202.977,
+      "first_air_date": "2018-10-05",
+      "vote_average": 8.091,
+      "vote_count": 8668,
+      "origin_country": [
+        "ES"
+      ]
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/eDCDAXdY6so6xgGX4fuBDjLnoN6.jpg",
+      "id": 81356,
+      "name": "Sex Education",
+      "original_language": "en",
+      "original_name": "Sex Education",
+      "overview": "Inexperienced Otis channels his sex therapist mom when he teams up with rebellious Maeve to set up an underground sex therapy clinic at school.",
+      "poster_path": "/8j12tohv1NBZNmpU93f47sAKBbw.jpg",
+      "media_type": "tv",
+      "genre_ids": [
+        35,
+        18
+      ],
+      "popularity": 159.277,
+      "first_air_date": "2019-01-11",
+      "vote_average": 8.325,
+      "vote_count": 6323,
+      "origin_country": [
+        "GB"
+      ]
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/iHSwvRVsRyxpX7FE7GbviaDvgGZ.jpg",
+      "id": 119051,
+      "name": "Wednesday",
+      "original_language": "en",
+      "original_name": "Wednesday",
+      "overview": "Wednesday Addams is sent to Nevermore Academy, a bizarre boarding school where she attempts to master her psychic powers, stop a monstrous killing spree of the town citizens, and solve the supernatural mystery that affected her family 25 years ago — all while navigating her new relationships.",
+      "poster_path": "/9PFonBhy4cQy7Jz20NpMygczOkv.jpg",
+      "media_type": "tv",
+      "genre_ids": [
+        10765,
+        9648,
+        35
+      ],
+      "popularity": 1009.142,
+      "first_air_date": "2022-11-23",
+      "vote_average": 8.639,
+      "vote_count": 6537,
+      "origin_country": [
+        "US"
+      ]
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/or0E36KfzJYZwqXeiCfm1JgepKF.jpg",
+      "id": 37680,
+      "name": "Suits",
+      "original_language": "en",
+      "original_name": "Suits",
+      "overview": "While running from a drug deal gone bad, Mike Ross, a brilliant young college-dropout, slips into a job interview with one of New York City's best legal closers, Harvey Specter. Tired of cookie-cutter law school grads, Harvey takes a gamble by hiring Mike on the spot after he recognizes his raw talent and photographic memory.",
+      "poster_path": "/vQiryp6LioFxQThywxbC6TuoDjy.jpg",
+      "media_type": "tv",
+      "genre_ids": [
+        18
+      ],
+      "popularity": 469.316,
+      "first_air_date": "2011-06-23",
+      "vote_average": 8.202,
+      "vote_count": 4106,
+      "origin_country": [
+        "US"
+      ]
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/jBJWaqoSCiARWtfV0GlqHrcdidd.jpg",
+      "id": 71912,
+      "name": "The Witcher",
+      "original_language": "en",
+      "original_name": "The Witcher",
+      "overview": "Geralt of Rivia, a mutated monster-hunter for hire, journeys toward his destiny in a turbulent world where people often prove more wicked than beasts.",
+      "poster_path": "/7vjaCdMw15FEbXyLQTVa04URsPm.jpg",
+      "media_type": "tv",
+      "genre_ids": [
+        18,
+        10759,
+        10765
+      ],
+      "popularity": 121.14,
+      "first_air_date": "2019-12-20",
+      "vote_average": 8.185,
+      "vote_count": 4515,
+      "origin_country": [
+        "US"
+      ]
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/m7FqiUOvsSk7Ulg2oRMfFGcLeT9.jpg",
+      "id": 91239,
+      "name": "Bridgerton",
+      "original_language": "en",
+      "original_name": "Bridgerton",
+      "overview": "Wealth, lust, and betrayal set in the backdrop of Regency era England, seen through the eyes of the powerful Bridgerton family.",
+      "poster_path": "/luoKpgVwi1E5nQsi7W0UuKHu2Rq.jpg",
+      "media_type": "tv",
+      "genre_ids": [
+        18
+      ],
+      "popularity": 63.648,
+      "first_air_date": "2020-12-25",
+      "vote_average": 8.159,
+      "vote_count": 1873,
+      "origin_country": [
+        "US"
+      ]
+    }
+  ],
+  "total_pages": 2,
+  "total_results": 40
+}
