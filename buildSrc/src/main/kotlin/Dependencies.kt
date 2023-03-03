@@ -2,11 +2,12 @@ object Versions {
     val versionMajor = 0
     val versionMinor = 8
     val versionPatch = 0
+    val useSnapshot = false
 
-    val versionName = "$versionMajor.$versionMinor.$versionPatch"
+    val versionName = "$versionMajor.$versionMinor.$versionPatch" + if(useSnapshot) "-SNAPSHOT" else ""
 
     // Plugins
-    val dokka = "1.4.30"
+    val dokka = "1.7.20"
     val nexus = "1.0.0"
     val benManesVersions = "0.46.0"
 
@@ -16,7 +17,6 @@ object Versions {
     val kotlinxDatetime = "0.4.0"
     val ktor = "2.2.4"
     val serialization = "1.5.0"
-    val kotlinIo = "0.1.16"
 
     // Testing
     val junitJupiter = "5.9.2"
@@ -36,7 +36,6 @@ object Libs {
         val kotlin = "org.jetbrains.kotlin:kotlin-stdlib-jdk8:${Versions.kotlin}"
         val kotlinSerialization = "org.jetbrains.kotlinx:kotlinx-serialization-json:${Versions.serialization}"
         val kotlinxDateTime = "org.jetbrains.kotlinx:kotlinx-datetime:${Versions.kotlinxDatetime}"
-        val kotlinIo = "org.jetbrains.kotlinx:kotlinx-io:${Versions.kotlinIo}"
         val coroutines = "org.jetbrains.kotlinx:kotlinx-coroutines-core:${Versions.coroutines}-native-mt"
     }
 

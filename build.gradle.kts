@@ -8,6 +8,7 @@ buildscript {
         google()
         mavenCentral()
     }
+
     dependencies {
         classpath(kotlin("gradle-plugin", Versions.kotlin))
         classpath(kotlin("serialization", Versions.kotlin))
