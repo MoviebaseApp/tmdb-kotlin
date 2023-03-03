@@ -8,8 +8,11 @@ import io.ktor.client.request.*
 
 class TmdbConfigurationApi(private val client: HttpClient) {
 
+    /**
+     * Get the system wide configuration information.
+     * @see [Documentation] (https://developers.themoviedb.org/3/configuration/get-api-configuration)
+     */
     suspend fun getApiConfiguration(): TmdbConfiguration = client.get {
         endPointV3("configuration")
     }.body()
-
 }

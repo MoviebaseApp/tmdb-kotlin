@@ -6,7 +6,7 @@ import kotlinx.serialization.Serializable
 @Serializable
 data class TmdbConfiguration(
     @SerialName("images") val images: TmdbImagesConfiguration,
-    @SerialName("change_keys") val changeKeys: List<String>,
+    @SerialName("change_keys") val changeKeys: List<String> = emptyList(),
 )
 
 @Serializable
