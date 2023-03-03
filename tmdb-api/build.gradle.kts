@@ -146,3 +146,9 @@ afterEvaluate {
 tasks.withType<Sign>().configureEach {
     onlyIf { !project.version.toString().endsWith("SNAPSHOT") }
 }
+
+// Workaround for optimization publishing issue, see https://youtrack.jetbrains.com/issue/KT-46466
+val signingTasks = tasks.withType<Sign>()
+tasks.withType<AbstractPublishToMaven>().configureEach {
+    dependsOn(signingTasks)
+}
