@@ -3,6 +3,7 @@ package app.moviebase.tmdb.api
 import app.moviebase.tmdb.model.*
 import app.moviebase.tmdb.remote.endPointV3
 import app.moviebase.tmdb.remote.parameterAppendResponses
+import app.moviebase.tmdb.remote.parameterIncludeImageLanguage
 import app.moviebase.tmdb.remote.parameterLanguage
 import io.ktor.client.*
 import io.ktor.client.call.*
@@ -47,9 +48,5 @@ class TmdbMoviesApi(private val client: HttpClient) {
 
     private fun HttpRequestBuilder.endPointMovie(movieId: Int, vararg paths: String) {
         endPointV3("movie", movieId.toString(), *paths)
-    }
-
-    fun HttpRequestBuilder.parameterIncludeImageLanguage(language: String?) {
-        language?.let { parameter("include_image_language", it) }
     }
 }
