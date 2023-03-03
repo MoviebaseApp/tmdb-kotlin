@@ -23,7 +23,7 @@ class TmdbMoviesApiTest {
     val classToTest = TmdbMoviesApi(client)
 
     @Test
-    fun `It should return images from movie`() = runBlocking {
+    fun `it should return images from movie`() = runBlocking {
         val images = classToTest.getImages(movieId = 10140, language = "en")
 
         assertThat(images.id).isEqualTo(10140)
@@ -60,8 +60,6 @@ class TmdbMoviesApiTest {
         assertThat(tmdbVideo).isNotNull()
         assertThat(tmdbVideo?.id).isEqualTo("54b36eb9c3a3680939006425")
         assertThat(tmdbVideo?.type).isEqualTo(TmdbVideoType.TRAILER)
-
-
     }
 
     @Test

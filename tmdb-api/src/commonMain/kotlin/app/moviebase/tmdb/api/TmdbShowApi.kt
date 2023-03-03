@@ -3,6 +3,7 @@ package app.moviebase.tmdb.api
 import app.moviebase.tmdb.model.*
 import app.moviebase.tmdb.remote.endPointV3
 import app.moviebase.tmdb.remote.parameterAppendResponses
+import app.moviebase.tmdb.remote.parameterIncludeImageLanguage
 import app.moviebase.tmdb.remote.parameterLanguage
 import app.moviebase.tmdb.remote.parameterPage
 import io.ktor.client.*
@@ -23,6 +24,22 @@ class TmdbShowApi(private val client: HttpClient) {
 
     suspend fun getTranslations(showId: Int): TmdbTranslations = client.get {
         endPointShow(showId, "translations")
+    }.body()
+
+    /**
+     * Get the primary TV show details by id.
+     * @see [Documentation] (https://developers.themoviedb.org/3/tv/get-tv-details)
+     *
+     * @param includeImageLanguage If you want to include a fallback language, should be a comma seperated value like 'en,null'
+     */
+    suspend fun getImages(
+        showId: Int,
+        language: String? = null,
+        includeImageLanguage: String? = null,
+    ): TmdbImages = client.get {
+        endPointShow(showId, "images")
+        parameterLanguage(language)
+        parameterIncludeImageLanguage(includeImageLanguage)
     }.body()
 
     suspend fun getAggregateCredits(
@@ -50,5 +67,4 @@ class TmdbShowApi(private val client: HttpClient) {
     private fun HttpRequestBuilder.endPointShow(showId: Int, vararg paths: String) {
         endPointV3("tv", showId.toString(), *paths)
     }
-
 }

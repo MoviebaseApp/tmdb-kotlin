@@ -33,6 +33,10 @@ fun HttpRequestBuilder.parameterLanguage(language: String?) {
     language?.let { parameter("language", it) }
 }
 
+fun HttpRequestBuilder.parameterIncludeImageLanguage(language: String?) {
+    language?.let { parameter("include_image_language", it) }
+}
+
 fun HttpRequestBuilder.parameterRegion(region: String?) {
     region?.let { parameter("region", it) }
 }
