@@ -26,7 +26,6 @@ kotlin {
                 implementation(Libs.Kotlin.coroutines)
                 implementation(Libs.Kotlin.kotlinSerialization)
                 implementation(Libs.Kotlin.kotlinxDateTime)
-                api(Libs.Kotlin.kotlinIo)
 
                 implementation(Libs.Data.ktorCore)
                 implementation(Libs.Data.ktorJson)
@@ -73,6 +72,7 @@ tasks.withType<KotlinCompile> {
     kotlinOptions.jvmTarget = JavaVersion.VERSION_11.toString()
     kotlinOptions.freeCompilerArgs += "-Xjvm-default=all"
 }
+
 tasks.withType<Test>().configureEach {
     useJUnitPlatform()
     testLogging {
@@ -94,46 +94,55 @@ fun isNonStable(version: String): Boolean {
     return isStable.not()
 }
 
+// Adding empty javadoc
 val javadocJar by tasks.registering(Jar::class) {
     archiveClassifier.set("javadoc")
 }
 
 afterEvaluate {
-    extensions.findByType<PublishingExtension>()?.apply {
-        publications.withType<MavenPublication>().configureEach {
-            artifact(javadocJar.get())
-            pom {
-                name.set("Kotlin Multiplatform TMDB API")
-                description.set("A Kotlin Multiplatform library to access the TMDB API.")
-                url.set("https://github.com/MoviebaseApp/tmdb-api")
-                inceptionYear.set("2021")
-
-                developers {
-                    developer {
-                        id.set("chrisnkrueger")
-                        name.set("Christian Krüger")
-                        email.set("christian.krueger@moviebase.app")
-                    }
-                }
-                licenses {
-                    license {
-                        name.set("The Apache Software License, Version 2.0")
-                        url.set("http://www.apache.org/licenses/LICENSE-2.0.txt")
-                    }
-                }
-                issueManagement {
-                    system.set("GitHub Issues")
-                    url.set("https://github.com/MoviebaseApp/tmdb-api/issues")
-                }
-                scm {
-                    connection.set("scm:git:https://github.com/MoviebaseApp/tmdb-api.git")
-                    developerConnection.set("scm:git:git@github.com:MoviebaseApp/tmdb-api.git")
+    publishing {
+        publications {
+            withType<MavenPublication> {
+                artifact(javadocJar.get())
+                pom {
+                    name.set("Kotlin Multiplatform TMDB API")
+                    description.set("A Kotlin Multiplatform library to access the TMDB API.")
                     url.set("https://github.com/MoviebaseApp/tmdb-api")
+                    inceptionYear.set("2021")
+
+                    developers {
+                        developer {
+                            id.set("chrisnkrueger")
+                            name.set("Christian Krüger")
+                            email.set("christian.krueger@moviebase.app")
+                        }
+                    }
+                    licenses {
+                        license {
+                            name.set("The Apache Software License, Version 2.0")
+                            url.set("http://www.apache.org/licenses/LICENSE-2.0.txt")
+                        }
+                    }
+                    issueManagement {
+                        system.set("GitHub Issues")
+                        url.set("https://github.com/MoviebaseApp/tmdb-api/issues")
+                    }
+                    scm {
+                        connection.set("scm:git:https://github.com/MoviebaseApp/tmdb-api.git")
+                        developerConnection.set("scm:git:git@github.com:MoviebaseApp/tmdb-api.git")
+                        url.set("https://github.com/MoviebaseApp/tmdb-api")
+                    }
                 }
             }
         }
     }
+
     signing {
         sign(publishing.publications)
     }
+}
+
+// skip signing for SNAPSHOT builds
+tasks.withType<Sign>().configureEach {
+    onlyIf { !project.version.toString().endsWith("SNAPSHOT") }
 }
