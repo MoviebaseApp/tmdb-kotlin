@@ -164,11 +164,11 @@ data class TmdbImages(
 @Serializable
 data class TmdbFileImage(
     @SerialName("file_path") val filePath: String,
-    @SerialName("aspect_ratio") val aspectRation: Double,
+    @SerialName("aspect_ratio") val aspectRation: Float,
     @SerialName("height") val height: Int,
     @SerialName("width") val width: Int,
     @SerialName("iso_639_1") val iso639: String? = null,
-    @SerialName("vote_average") val voteAverage: Double? = null,
+    @SerialName("vote_average") val voteAverage: Float? = null,
     @SerialName("vote_count") val voteCount: Int? = null,
 )
 

@@ -57,12 +57,11 @@ class TmdbShowsApiTest {
             assertThat(tmdbVideo?.id).isEqualTo("5f6dbe399f37b000365d22ad")
             assertThat(tmdbVideo?.type).isEqualTo(TmdbVideoType.TEASER)
 
-            val network = showDetails.networks?.first()
+            val network = showDetails.networks.first()
             assertThat(network).isNotNull()
-            assertThat(network?.name).isEqualTo("Netflix")
-            assertThat(network?.logoPath).isEqualTo("/wwemzKWzjKYJFfCeiB57q3r4Bcm.png")
+            assertThat(network.name).isEqualTo("Netflix")
+            assertThat(network.logoPath).isEqualTo("/wwemzKWzjKYJFfCeiB57q3r4Bcm.png")
         }
-
 
         @Test
         fun `with images only`() = runBlocking {
@@ -119,10 +118,10 @@ class TmdbShowsApiTest {
         val poster = images.posters.first()
         assertThat(poster.height).isEqualTo(1500)
         assertThat(poster.width).isEqualTo(1000)
-        assertThat(poster.aspectRation).isEqualTo(0.667)
+        assertThat(poster.aspectRation).isEqualTo(0.667f)
         assertThat(poster.iso639).isEqualTo("en")
         assertThat(poster.filePath).isEqualTo("/sOUWRai0215iUSMackrZx3Y1j05.jpg")
-        assertThat(poster.voteAverage).isEqualTo(5.312)
+        assertThat(poster.voteAverage).isEqualTo(5.312f)
         assertThat(poster.voteCount).isEqualTo(1)
     }
 }
