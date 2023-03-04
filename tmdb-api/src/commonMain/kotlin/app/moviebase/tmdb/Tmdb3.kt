@@ -2,18 +2,27 @@ package app.moviebase.tmdb
 
 import app.moviebase.tmdb.api.*
 import app.moviebase.tmdb.remote.TmdbHttpClientFactory
-import app.moviebase.tmdb.remote.TmdbSessionProvider
 import app.moviebase.tmdb.remote.TmdbLogLevel
+import app.moviebase.tmdb.remote.TmdbSessionProvider
 import io.ktor.client.*
 
 class Tmdb3(
     tmdbApiKey: String,
     logLevel: TmdbLogLevel = TmdbLogLevel.NONE,
-    tmdbSessionProvider: TmdbSessionProvider? = null
+    tmdbSessionProvider: TmdbSessionProvider? = null,
+    httpClientConfigBlock: (HttpClientConfig<*>.() -> Unit)? = null,
 ) {
-
-    private val client: HttpClient = TmdbHttpClientFactory.create(tmdbApiKey, logLevel)
-    private val clientWithSession: HttpClient = TmdbHttpClientFactory.createWithSession(tmdbApiKey, logLevel, tmdbSessionProvider)
+    private val client: HttpClient = TmdbHttpClientFactory.create(
+        tmdbApiKey = tmdbApiKey,
+        logLevel = logLevel,
+        httpClientConfigBlock = httpClientConfigBlock,
+    )
+    private val clientWithSession: HttpClient = TmdbHttpClientFactory.createWithSession(
+        tmdbApiKey = tmdbApiKey,
+        logLevel = logLevel,
+        tmdbSessionProvider = tmdbSessionProvider,
+        httpClientConfigBlock = httpClientConfigBlock,
+    )
 
     val account = TmdbAccountApi(clientWithSession)
     val authentication = TmdbAuthenticationApi(client)
