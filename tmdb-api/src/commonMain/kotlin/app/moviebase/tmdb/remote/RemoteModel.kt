@@ -12,7 +12,10 @@ import io.ktor.serialization.kotlinx.json.*
 import kotlinx.serialization.json.Json
 import kotlinx.serialization.modules.SerializersModule
 
-internal fun buildHttpClient(logLevel: TmdbLogLevel = TmdbLogLevel.NONE, interceptor: RequestInterceptor): HttpClient {
+internal fun buildHttpClient(
+    logLevel: TmdbLogLevel = TmdbLogLevel.NONE,
+    httpClientConfigBlock: (HttpClientConfig<*>.() -> Unit)? = null,
+): HttpClient {
     val json = buildJson()
 
     val httpClient = HttpClient {
@@ -35,8 +38,9 @@ internal fun buildHttpClient(logLevel: TmdbLogLevel = TmdbLogLevel.NONE, interce
             socketTimeoutMillis = 60_000
         }
 
+        // Allow the provided block to customize the config
+        httpClientConfigBlock?.invoke(this)
     }
-    httpClient.interceptRequest(interceptor = interceptor)
     return httpClient
 }
 
