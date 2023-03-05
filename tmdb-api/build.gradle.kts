@@ -7,7 +7,7 @@ plugins {
     id("org.jetbrains.dokka")
     id("maven-publish")
     id("signing")
-    id("com.github.ben-manes.versions") version Versions.benManesVersions
+    id("com.github.ben-manes.versions") version 0.46.0
 }
 
 group = "app.moviebase"
