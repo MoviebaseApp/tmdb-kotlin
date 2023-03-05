@@ -1,15 +1,11 @@
 version: 2
 updates:
-   - package-ecosystem: "github-actions"
-      directory: "/"
-      schedule:
-        interval: "weekly"
-      reviewers:
-      - "chrisnkrueger"
-   - package-ecosystem: gradle
-     directory: "/"
-     schedule:
-       interval: "daily"
-     open-pull-requests-limit: 10  
-     reviewers:
-     - "chrisnkrueger"
+  - package-ecosystem: "gradle"
+    directory: "/"
+    schedule:
+      interval: "daily"
+      time: "02:00"
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
