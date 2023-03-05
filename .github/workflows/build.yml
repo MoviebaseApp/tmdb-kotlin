@@ -2,14 +2,15 @@ name: Build
 
 on:
   push:
-    branches: [ "master" ]
+    branches: [ "main" ]
   pull_request:
-    branches: [ "master" ]
+    branches: [ "main" ]
 
 jobs:
+
   build:
     runs-on: ubuntu-latest
-    timeout-minutes: 45
+    timeout-minutes: 30
 
     steps:
       - name: Checkout
@@ -21,16 +22,17 @@ jobs:
       - name: Set up JDK 17
         uses: actions/setup-java@v3
         with:
-          java-version: '17'
           distribution: 'zulu'
+          java-version: 17
 
       - name: Setup Gradle
         uses: gradle/gradle-build-action@v2
-        with:
-          gradle-home-cache-cleanup: true
+
+      - name: Grant execute permission for gradlew
+        run: chmod +x gradlew
 
       - name: Run Tests
-        uses: ./gradlew cleanTest jvmTest --parallel
+        run: ./gradlew jvmTest --parallel
 
       - name: Upload reports
         if: always()
@@ -47,4 +49,3 @@ jobs:
           name: test-results
           path: |
             **/build/test-results/*
-
