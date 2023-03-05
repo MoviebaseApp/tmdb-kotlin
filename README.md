@@ -139,6 +139,19 @@ val result = tmdb.discover.discoverByCategory(
 )
 ```
 
+### Authentication
+Build up your authentication URL, which you can open in the web view.
+
+```kotlin
+// Returns "https://www.themoviedb.org/authenticate/[request_token]?redirect_to=auth://yourApp"
+val url = tmdb.authentication.requestAuthorizationUrl("auth://yourApp")
+```
+After opening the URL, TMDB version 3 returns the following URL:
+```kotlin
+yourApp://auth/login?request_token=[request_token]&approved=true
+```
+
+
 ### Build image URL
 
 You can build an image URL via the poster file path and size key. More information on the [TMDb images site](https://developers.themoviedb.org/3/getting-started/images).

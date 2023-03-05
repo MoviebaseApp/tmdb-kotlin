@@ -38,7 +38,7 @@ fun Tmdb3(block: TmdbClientConfig.() -> Unit): Tmdb3 {
 
 class Tmdb3 internal constructor(private val config: TmdbClientConfig) {
 
-    constructor(tmdbApiKey: String) : this(TmdbClientConfig.buildDefault(tmdbApiKey))
+    constructor(tmdbApiKey: String) : this(TmdbClientConfig.withKey(tmdbApiKey))
 
     init {
         requireNotNull(config.tmdbApiKey) {
@@ -51,8 +51,15 @@ class Tmdb3 internal constructor(private val config: TmdbClientConfig) {
             interceptRequest {
                 it.parameter(TmdbUrlParameter.API_KEY, config.tmdbApiKey)
 
-                config.tmdbCredentials?.sessionIdProvider?.invoke()?.let { sessionId ->
-                    it.parameter(TmdbUrlParameter.SESSION_ID, sessionId)
+                val pathSegments = it.url.pathSegments.toSet()
+                if (pathSegments.contains("account") || pathSegments.contains("authentication")) {
+                    config.tmdbAuthCredentials?.sessionIdProvider?.invoke()?.let { sessionId ->
+                        it.parameter(TmdbUrlParameter.SESSION_ID, sessionId)
+                    }
+                }
+
+                config.tmdbAuthCredentials?.guestSessionIdProvider?.invoke()?.let { sessionId ->
+                    it.parameter(TmdbUrlParameter.GUEST_SESSION_ID, sessionId)
                 }
             }
         }

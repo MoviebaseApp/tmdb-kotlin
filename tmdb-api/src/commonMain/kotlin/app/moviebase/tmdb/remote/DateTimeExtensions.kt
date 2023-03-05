@@ -15,7 +15,8 @@ internal fun String.tryLocalDate(): LocalDate? = try {
 }
 
 internal fun String.tryLocalDateTime(): LocalDateTime? = try {
-    if (isBlank()) null else toInstant().toLocalDateTime(TimeZone.UTC)
+    toInstant()
+    if (isBlank()) null else toLocalDateTime()
 } catch (t: Throwable) {
     null
 }

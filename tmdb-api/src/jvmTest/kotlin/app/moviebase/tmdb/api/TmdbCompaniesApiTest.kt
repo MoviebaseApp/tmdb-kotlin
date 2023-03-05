@@ -25,7 +25,4 @@ class TmdbCompaniesApiTest {
         assertThat(companyDetail.name).isEqualTo("Netflix International Pictures")
         assertThat(companyDetail.logoPath).isNull()
     }
-
-
 }
-

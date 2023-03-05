@@ -12,9 +12,10 @@ import org.junit.jupiter.api.assertThrows
 // TODO: Enable test when move into integration test folder + own source set
 @Disabled
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
-class TmdbApiIntegrationTest {
+class TmdbDetailsIntegrationTest {
 
-    val tmdb3 = buildTmdb3()
+    val storage = TmdbAccountStorage()
+    val tmdb3 = buildTmdb3(tmdbAccountStorage = storage)
 
     @Test
     fun `it should fetch movie from TMDB`() = runBlocking {

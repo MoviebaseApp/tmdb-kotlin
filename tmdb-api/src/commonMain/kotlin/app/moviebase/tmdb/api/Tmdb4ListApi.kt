@@ -13,7 +13,9 @@ class Tmdb4ListApi internal constructor(private val client: HttpClient) {
 
     /**
      * This method will retrieve a list by id.
-     * Private lists can only be accessed by their owners and therefore require a valid user access token.
+     * Note: Private lists can only be accessed by their owners and therefore require a valid user access token.
+     *
+     * @see [Documentation] (https://developers.themoviedb.org/4/list/get-list)
      */
     suspend fun getList(
         listId: Int,

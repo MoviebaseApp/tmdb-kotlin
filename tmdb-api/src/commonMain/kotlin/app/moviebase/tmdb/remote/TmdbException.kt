@@ -1,5 +1,7 @@
 package app.moviebase.tmdb.remote
 
+import app.moviebase.tmdb.model.TmdbErrorResponse
+
 class TmdbException(
     val tmdbResponse: TmdbErrorResponse,
     caused: Throwable? = null

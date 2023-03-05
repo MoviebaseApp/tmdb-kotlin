@@ -18,6 +18,9 @@ object JsonFactory {
         val module = SerializersModule {
             polymorphic(TmdbMediaListItem::class, TmdbShow::class, TmdbShow.serializer())
             polymorphic(TmdbMediaListItem::class, TmdbMovie::class, TmdbMovie.serializer())
+
+//            contextual(LocalDateTime::class, LocalDateTimeIso8601Serializer)
+//            contextual(LocalDate::class, LocalDateIso8601Serializer)
         }
         serializersModule = module
         classDiscriminator = "media_type"

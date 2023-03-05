@@ -3,9 +3,12 @@ package app.moviebase.tmdb.remote
 import app.moviebase.tmdb.TmdbClientConfig
 import app.moviebase.tmdb.TmdbVersion
 import app.moviebase.tmdb.TmdbWebConfig
+import app.moviebase.tmdb.model.TmdbErrorResponse
 import io.ktor.client.*
 import io.ktor.client.network.sockets.*
 import io.ktor.client.plugins.*
+import io.ktor.client.plugins.auth.*
+import io.ktor.client.plugins.auth.providers.*
 import io.ktor.client.plugins.cache.*
 import io.ktor.client.plugins.contentnegotiation.*
 import io.ktor.client.plugins.logging.*
@@ -20,7 +23,8 @@ internal object HttpClientFactory {
 
     fun buildHttpClient(
         version: TmdbVersion,
-        config: TmdbClientConfig
+        config: TmdbClientConfig,
+        useAuthentication: Boolean = false
     ): HttpClient {
         val defaultConfig: HttpClientConfig<*>.() -> Unit = {
             val json = JsonFactory.buildJson()
@@ -36,8 +40,24 @@ internal object HttpClientFactory {
                 json(json)
             }
 
-            // TODO: Install new Auth plugin  for TMDB account
             // see https://ktor.io/docs/auth.html
+            if (useAuthentication) {
+                install(Auth) {
+                    bearer {
+                        // TMDB doesn't have a refresh token
+                        loadTokens {
+                            config.tmdbAuthCredentials?.accessTokenProvider?.invoke()?.let {
+                                BearerTokens(it, "")
+                            }
+                        }
+
+                        sendWithoutRequest { request ->
+                            request.url.host == TmdbWebConfig.TMDB_HOST
+                        }
+                    }
+                }
+            }
+
 
             // see https://ktor.io/docs/response-validation.html
             expectSuccess = config.expectSuccess
