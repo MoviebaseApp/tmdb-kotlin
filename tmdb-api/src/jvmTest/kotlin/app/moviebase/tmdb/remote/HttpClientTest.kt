@@ -19,7 +19,8 @@ fun mockHttpClient(
     val headers = headersOf("Content-Type" to listOf(ContentType.Application.Json.toString()))
 
     install(ContentNegotiation) {
-        json(buildJson())
+        val json = JsonFactory.buildJson()
+        json(json)
     }
 
     engine {
