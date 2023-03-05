@@ -1,8 +1,10 @@
 package app.moviebase.tmdb
 
 internal object TmdbWebConfig {
+    const val TMDB_HOST = "api.themoviedb.org"
+
     const val BASE_URL_TMDB = "https://api.themoviedb.org"
-    const val WEBSITE_BASE_URL = "https://www.themoviedb.org"
+    const val BASE_WEBSITE_URL = "https://www.themoviedb.org"
 
     const val BASE_URL_TMDB_IMAGE = "https://image.tmdb.org/t/p/"
     const val BASE_URL_YOUTUBE_IMAGE = "https://img.youtube.com/vi"
@@ -15,6 +17,7 @@ internal object TmdbWebConfig {
 internal object TmdbUrlParameter {
     const val API_KEY = "api_key"
     const val SESSION_ID = "session_id"
+    const val GUEST_SESSION_ID = "guest_session_id"
     const val ACCESS_TOKEN = "access_token"
 }
 

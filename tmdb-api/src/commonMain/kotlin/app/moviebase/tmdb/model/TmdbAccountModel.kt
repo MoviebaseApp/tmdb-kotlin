@@ -5,35 +5,41 @@ import kotlinx.serialization.Serializable
 
 @Serializable
 data class TmdbAccountDetails(
-    val id: String,
+    @SerialName("id") val id: Int,
     @SerialName("username") val userName: String,
-    val name: String,
-    val avatar: TmdbAvatar
+    @SerialName("name") val name: String?,
+    @SerialName("include_adult") val includeAdult: Boolean,
+    @SerialName("iso_639_1") val language: String,
+    @SerialName("iso_3166_1") val region: String,
+    @SerialName("avatar") val avatar: TmdbAvatar? = null
 )
 
 @Serializable
 data class TmdbAvatar(
-    val gravatar: TmdbGravatar
+    @SerialName("gravatar") val gravatar: TmdbGravatar,
+    @SerialName("tmdb") val tmdb: TmdbGravatar
 )
 
 @Serializable
 data class TmdbGravatar(
-    val hash: String?
+    @SerialName("hash") val hash: String? = null
+)
+
+@Serializable
+data class TmdbAvatarPath(
+    @SerialName("avatar_path") val avatarPath: String? = null
 )
 
 @Serializable
 data class TmdbFavoriteRequestBody(
-    @SerialName("media_type") val mediaType: String,
+    @SerialName("media_type") val mediaType: TmdbMediaType,
     @SerialName("media_id") val mediaId: Int,
     @SerialName("favorite") val favorite: Boolean
 )
 
-
 @Serializable
 data class TmdbWatchlistRequestBody(
-    @SerialName("media_type") val mediaType: String,
+    @SerialName("media_type") val mediaType: TmdbMediaType,
     @SerialName("media_id") val mediaId: Int,
     @SerialName("watchlist") val watchlist: Boolean
 )
-
-

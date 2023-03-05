@@ -1,0 +1,16 @@
+{
+  "avatar": {
+    "gravatar": {
+      "hash": "dsf"
+    },
+    "tmdb": {
+      "avatar_path": null
+    }
+  },
+  "id": 18029486,
+  "iso_639_1": "en",
+  "iso_3166_1": "DE",
+  "name": "name23",
+  "include_adult": false,
+  "username": "someuser"
+}

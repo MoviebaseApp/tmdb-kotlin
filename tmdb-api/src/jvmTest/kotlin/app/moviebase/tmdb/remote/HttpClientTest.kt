@@ -8,6 +8,9 @@ import io.ktor.http.*
 import io.ktor.serialization.kotlinx.json.*
 import java.io.File
 
+/**
+ * See https://ktor.io/docs/http-client-testing.html#usage
+ */
 fun mockHttpClient(
     version: Int,
     responses: Map<String, String>

@@ -1,6 +1,7 @@
 package app.moviebase.tmdb.api
 
 import app.moviebase.tmdb.remote.mockHttpClient
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.runBlocking
 import org.junit.jupiter.api.Test
 
@@ -19,5 +20,8 @@ class Tmdb4AccountApiTest {
     fun `it can get account user lists`() = runBlocking {
         val results = classToTest.getLists("343563", 1)
 
+        assertThat(results).isNotNull()
+        assertThat(results.page).isEqualTo(1)
+        assertThat(results.results).isNotEmpty()
     }
 }

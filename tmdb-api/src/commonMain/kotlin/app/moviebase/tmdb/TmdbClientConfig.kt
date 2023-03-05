@@ -9,8 +9,7 @@ import io.ktor.client.plugins.logging.*
 class TmdbClientConfig {
 
     var tmdbApiKey: String? = null
-    var tmdbAuthenticationToken: String? = null
-    internal var tmdbCredentials: TmdbCredentials? = null
+    internal var tmdbAuthCredentials: TmdbAuthCredentials? = null
 
     var expectSuccess: Boolean = true
     var useCache: Boolean = false
@@ -21,8 +20,8 @@ class TmdbClientConfig {
     internal var httpClientBuilder: (() -> HttpClient)? = null
     internal var httpClientLoggingBlock: (Logging.Config.() -> Unit)? = null
 
-    fun tmdbAccountCredentials(block: TmdbCredentials.() -> Unit) {
-        tmdbCredentials = TmdbCredentials().apply(block)
+    fun userAuthentication(block: TmdbAuthCredentials.() -> Unit) {
+        tmdbAuthCredentials = TmdbAuthCredentials().apply(block)
     }
 
     fun logging(block: Logging.Config.() -> Unit) {
@@ -51,32 +50,31 @@ class TmdbClientConfig {
 
     companion object {
 
-        internal fun buildDefault(
-            tmdbApiKey: String,
-            tmdbAuthenticationToken: String? = null
-        ) = TmdbClientConfig().apply {
+        internal fun withKey(tmdbApiKey: String) = TmdbClientConfig().apply {
             this.tmdbApiKey = tmdbApiKey
-            this.tmdbAuthenticationToken = tmdbAuthenticationToken
         }
     }
 }
 
 @TmdbDsl
-class TmdbCredentials {
+class TmdbAuthCredentials {
+
+    // used in version 4
+    var authenticationToken: String? = null
 
     internal var sessionIdProvider: (() -> String?)? = null
+    internal var guestSessionIdProvider: (() -> String?)? = null
     internal var accessTokenProvider: (() -> String?)? = null
-    internal var requestTokenProvider: (() -> String?)? = null
 
-    fun sessionId(provider: () -> String?) {
+    fun loadSessionId(provider: () -> String?) {
         sessionIdProvider = provider
     }
 
-    fun accessToken(provider: () -> String?) {
-        accessTokenProvider = provider
+    fun loadGuestSessionId(provider: () -> String?) {
+        guestSessionIdProvider = provider
     }
 
-    fun requestToken(provider: () -> String?) {
-        requestTokenProvider = provider
+    fun loadAccessToken(provider: () -> String?) {
+        accessTokenProvider = provider
     }
 }

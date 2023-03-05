@@ -19,10 +19,7 @@ class Tmdb4 internal constructor(
     private val config: TmdbClientConfig
 ) {
 
-    constructor(
-        tmdbApiKey: String,
-        authenticationToken: String? = null
-    ) : this(TmdbClientConfig.buildDefault(tmdbApiKey, authenticationToken))
+    constructor(tmdbApiKey: String) : this(TmdbClientConfig.withKey(tmdbApiKey))
 
     init {
         check(!config.tmdbApiKey.isNullOrBlank()) {
@@ -31,31 +28,30 @@ class Tmdb4 internal constructor(
     }
 
     private val client by lazy {
-        HttpClientFactory.buildHttpClient(TmdbVersion.V4, config).apply {
+        HttpClientFactory.buildHttpClient(
+            version = TmdbVersion.V4,
+            config = config,
+            useAuthentication = true
+        ).apply {
             interceptRequest {
                 it.parameter(TmdbUrlParameter.API_KEY, config.tmdbApiKey)
-
-                config.tmdbCredentials?.accessTokenProvider?.let { token ->
-                    it.header("Authorization", "Bearer $token")
-                }
             }
         }
     }
 
-    private val authClient by lazy {
+    private val clientForAuth by lazy {
         HttpClientFactory.buildHttpClient(TmdbVersion.V4, config).apply {
             interceptRequest {
                 it.parameter(TmdbUrlParameter.API_KEY, config.tmdbApiKey)
-
-                config.tmdbAuthenticationToken?.let { token ->
-                    it.header("Authorization", "Bearer $token")
+                config.tmdbAuthCredentials?.authenticationToken?.let { token ->
+                    it.bearerAuth(token)
                 }
             }
         }
     }
 
     val account by buildApi(::Tmdb4AccountApi)
-    val auth by lazy { Tmdb4AuthenticationApi(authClient) }
+    val auth by lazy { Tmdb4AuthenticationApi(clientForAuth) }
     val list by buildApi(::Tmdb4ListApi)
 
     private inline fun <T> buildApi(crossinline builder: (HttpClient) -> T) = lazy { builder(client) }

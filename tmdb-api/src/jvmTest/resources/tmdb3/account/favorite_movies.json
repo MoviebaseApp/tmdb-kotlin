@@ -1,0 +1,46 @@
+{
+  "page": 1,
+  "results": [
+    {
+      "adult": false,
+      "backdrop_path": "/buamYrukfn58GdKHF3kF7U2F0dq.jpg",
+      "genre_ids": [
+        18,
+        10749
+      ],
+      "id": 1045394,
+      "original_language": "te",
+      "original_title": "బుట్టబొమ్మ",
+      "overview": "A young woman falls in love with a man after dialing his number by mistake. However, when she visits his city to meet him, another stranger enters her life.",
+      "popularity": 3.289,
+      "poster_path": "/7BkOzXTTwSO11AMTp9dO3tuLXOd.jpg",
+      "release_date": "2023-01-26",
+      "title": "Butta Bomma",
+      "video": false,
+      "vote_average": 0.0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/ovM06PdF3M8wvKb06i4sjW3xoww.jpg",
+      "genre_ids": [
+        878,
+        12,
+        28
+      ],
+      "id": 76600,
+      "original_language": "en",
+      "original_title": "Avatar: The Way of Water",
+      "overview": "Set more than a decade after the events of the first film, learn the story of the Sully family (Jake, Neytiri, and their kids), the trouble that follows them, the lengths they go to keep each other safe, the battles they fight to stay alive, and the tragedies they endure.",
+      "popularity": 1363.086,
+      "poster_path": "/t6HIqrRAclMCA60NsSmeqe9RmNV.jpg",
+      "release_date": "2022-12-14",
+      "title": "Avatar: The Way of Water",
+      "video": false,
+      "vote_average": 7.737,
+      "vote_count": 5594
+    }
+  ],
+  "total_pages": 1,
+  "total_results": 2
+}

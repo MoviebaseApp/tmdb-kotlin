@@ -11,6 +11,8 @@ class Tmdb4AccountApi internal constructor(private val client: HttpClient) {
 
     /**
      * Get all of the lists you've created.
+     *
+     * @see [Documentation] (https://developers.themoviedb.org/4/account/get-account-lists)
      */
     suspend fun getLists(accountId: String, page: Int): TmdbListMetaPageResult = client.get {
         endPointAccount(accountId, "lists")
