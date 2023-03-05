@@ -9,7 +9,7 @@ import io.ktor.client.*
 import io.ktor.client.call.*
 import io.ktor.client.request.*
 
-class TmdbMoviesApi(private val client: HttpClient) {
+class TmdbMoviesApi internal constructor(private val client: HttpClient) {
 
     /**
      * Get the primary information about a movie.

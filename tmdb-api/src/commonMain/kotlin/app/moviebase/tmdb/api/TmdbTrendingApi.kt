@@ -9,7 +9,7 @@ import io.ktor.client.*
 import io.ktor.client.call.*
 import io.ktor.client.request.*
 
-class TmdbTrendingApi(private val client: HttpClient) {
+class TmdbTrendingApi internal constructor(private val client: HttpClient) {
 
     suspend fun getTrendingMovies(
         timeWindow: TmdbTimeWindow,
@@ -34,5 +34,4 @@ class TmdbTrendingApi(private val client: HttpClient) {
         parameterRegion(region)
         parameterPage(page)
     }.body()
-
 }

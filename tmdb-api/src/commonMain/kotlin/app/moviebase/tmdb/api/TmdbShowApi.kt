@@ -10,7 +10,7 @@ import io.ktor.client.*
 import io.ktor.client.call.*
 import io.ktor.client.request.*
 
-class TmdbShowApi(private val client: HttpClient) {
+class TmdbShowApi internal constructor(private val client: HttpClient) {
 
     suspend fun getDetails(
         showId: Int,

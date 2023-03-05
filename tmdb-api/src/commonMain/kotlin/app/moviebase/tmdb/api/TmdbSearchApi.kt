@@ -10,7 +10,7 @@ import io.ktor.client.call.*
 import io.ktor.client.request.*
 
 
-class TmdbSearchApi(private val client: HttpClient) {
+class TmdbSearchApi internal constructor(private val client: HttpClient) {
 
     suspend fun findMovies(
         query: String,

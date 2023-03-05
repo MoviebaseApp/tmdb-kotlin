@@ -9,7 +9,7 @@ import io.ktor.client.*
 import io.ktor.client.call.*
 import io.ktor.client.request.*
 
-class Tmdb4ListApi(private val client: HttpClient) {
+class Tmdb4ListApi internal constructor(private val client: HttpClient) {
 
     /**
      * This method will retrieve a list by id.
@@ -115,5 +115,4 @@ class Tmdb4ListApi(private val client: HttpClient) {
     private fun HttpRequestBuilder.parameterSortBy(sortBy: TmdbListSortBy, sortOrder: TmdbSortOrder) {
         parameter("sort_by", sortBy.value + sortOrder.value)
     }
-
 }

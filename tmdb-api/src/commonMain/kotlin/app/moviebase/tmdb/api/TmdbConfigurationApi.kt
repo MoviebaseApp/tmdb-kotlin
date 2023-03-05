@@ -6,7 +6,7 @@ import io.ktor.client.*
 import io.ktor.client.call.*
 import io.ktor.client.request.*
 
-class TmdbConfigurationApi(private val client: HttpClient) {
+class TmdbConfigurationApi internal constructor(private val client: HttpClient) {
 
     /**
      * Get the system wide configuration information.

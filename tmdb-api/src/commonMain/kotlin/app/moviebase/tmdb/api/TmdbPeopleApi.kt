@@ -11,7 +11,7 @@ import io.ktor.client.*
 import io.ktor.client.call.*
 import io.ktor.client.request.*
 
-class TmdbPeopleApi(private val client: HttpClient) {
+class TmdbPeopleApi internal constructor(private val client: HttpClient) {
 
     suspend fun getDetails(
         personId: Int,

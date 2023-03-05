@@ -35,5 +35,4 @@ class TmdbAccountApi internal constructor(private val client: HttpClient) {
     private fun HttpRequestBuilder.endPointAccount(accountId: String, vararg paths: String) {
         endPointV3("account", accountId, *paths)
     }
-
 }

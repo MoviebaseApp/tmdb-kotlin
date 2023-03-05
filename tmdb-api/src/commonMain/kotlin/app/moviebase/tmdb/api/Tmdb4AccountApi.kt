@@ -7,7 +7,7 @@ import io.ktor.client.*
 import io.ktor.client.call.*
 import io.ktor.client.request.*
 
-class Tmdb4AccountApi(private val client: HttpClient) {
+class Tmdb4AccountApi internal constructor(private val client: HttpClient) {
 
     /**
      * Get all of the lists you've created.
@@ -104,5 +104,4 @@ class Tmdb4AccountApi(private val client: HttpClient) {
     private fun HttpRequestBuilder.endPointAccount(accountId: String, vararg paths: String) {
         endPointV4("account", accountId, *paths)
     }
-
 }

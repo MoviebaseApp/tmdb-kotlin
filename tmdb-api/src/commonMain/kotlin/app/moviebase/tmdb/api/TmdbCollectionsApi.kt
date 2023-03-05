@@ -7,11 +7,10 @@ import io.ktor.client.*
 import io.ktor.client.call.*
 import io.ktor.client.request.*
 
-class TmdbCollectionsApi(private val client: HttpClient) {
+class TmdbCollectionsApi internal constructor(private val client: HttpClient) {
 
     suspend fun getDetails(collectionId: Int, language: String? = null): TmdbBelongsToCollection = client.get {
         endPointV3("collection", collectionId.toString())
         parameterLanguage(language)
     }.body()
-
 }
