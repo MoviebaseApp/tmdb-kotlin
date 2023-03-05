@@ -7,7 +7,7 @@ import io.ktor.client.*
 import io.ktor.client.call.*
 import io.ktor.client.request.*
 
-class Tmdb4AuthenticationApi(private val client: HttpClient) {
+class Tmdb4AuthenticationApi internal constructor(private val client: HttpClient) {
 
     suspend fun requestToken(auth: Tmdb4RedirectToBodyAuth): TmdbListMetaPageResult = client.post {
         endPointV4("auth", "request_token")
@@ -20,5 +20,4 @@ class Tmdb4AuthenticationApi(private val client: HttpClient) {
         json()
         setBody(requestToken)
     }.body()
-
 }

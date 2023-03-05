@@ -8,7 +8,7 @@ import io.ktor.client.*
 import io.ktor.client.call.*
 import io.ktor.client.request.*
 
-class TmdbDiscoverApi(private val client: HttpClient) {
+class TmdbDiscoverApi internal constructor(private val client: HttpClient) {
 
     suspend fun discoverByCategory(
         page: Int,

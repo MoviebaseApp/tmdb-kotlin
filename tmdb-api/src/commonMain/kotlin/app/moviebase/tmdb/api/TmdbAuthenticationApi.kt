@@ -8,7 +8,7 @@ import io.ktor.client.*
 import io.ktor.client.call.*
 import io.ktor.client.request.*
 
-class TmdbAuthenticationApi(private val client: HttpClient) {
+class TmdbAuthenticationApi internal constructor(private val client: HttpClient) {
 
     suspend fun requestToken(): TmdbRequestToken = client.get {
         endPointV3("authentication/token/new")
@@ -42,5 +42,4 @@ class TmdbAuthenticationApi(private val client: HttpClient) {
         val requestToken = requestToken().requestToken
         return "https://www.themoviedb.org/authenticate/${requestToken}?redirect_to=$redirectTo"
     }
-
 }

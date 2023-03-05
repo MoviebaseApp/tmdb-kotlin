@@ -302,7 +302,6 @@ sealed class TmdbPersonCredit : TmdbAnyMedia, TmdbBackdropMedia, TmdbPosterMedia
             @SerialName("vote_count") override val voteCount: Int,
             @SerialName("name") override val name: String,
             @SerialName("original_name") override val originalName: String,
-
             @SerialName("character") val character: String,
             @SerialName("credit_id") val creditId: String,
             @SerialName("order") val order: Int? = null,
@@ -330,6 +329,4 @@ sealed class TmdbPersonCredit : TmdbAnyMedia, TmdbBackdropMedia, TmdbPosterMedia
         ) : TmdbPersonCredit.Show()
 
     }
-
 }
-
