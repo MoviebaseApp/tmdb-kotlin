@@ -52,6 +52,7 @@ kotlin {
                 implementation(libs.ktor.mock)
 
                 implementation(libs.kotlinx.coroutines.core)
+                implementation(libs.kotlinx.coroutines.test)
                 implementation(libs.kotlin.junit5)
                 implementation(libs.junit)
                 implementation(libs.junit.jupiter.api)

@@ -3,7 +3,7 @@ package app.moviebase.tmdb.api
 import app.moviebase.tmdb.model.AppendResponse
 import app.moviebase.tmdb.remote.mockHttpClient
 import com.google.common.truth.Truth.assertThat
-import kotlinx.coroutines.runBlocking
+import kotlinx.coroutines.test.runTest
 import org.junit.jupiter.api.Test
 
 
@@ -22,7 +22,7 @@ class TmdbPeopleApiTest {
     val classToTest = TmdbPeopleApi(client)
 
     @Test
-    fun `it can fetch person details`() = runBlocking {
+    fun `it can fetch person details`() = runTest {
         val personDetail = classToTest.getDetails(
             personId = 287,
             language = "en-US",
@@ -42,7 +42,7 @@ class TmdbPeopleApiTest {
     }
 
     @Test
-    fun `it can fetch show credits`() = runBlocking {
+    fun `it can fetch show credits`() = runTest {
         val showCredits = classToTest.getShowCredits(
             personId = 19292,
             language = "en-US"
@@ -53,7 +53,7 @@ class TmdbPeopleApiTest {
     }
 
     @Test
-    fun `it can fetch movie credits`() = runBlocking {
+    fun `it can fetch movie credits`() = runTest {
         val showCredits = classToTest.getMovieCredits(
             personId = 19292,
             language = "en-US"

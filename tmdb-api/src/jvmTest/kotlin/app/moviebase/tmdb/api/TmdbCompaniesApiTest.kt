@@ -3,7 +3,7 @@ package app.moviebase.tmdb.api
 import app.moviebase.tmdb.model.TmdbCompanyId
 import app.moviebase.tmdb.remote.mockHttpClient
 import com.google.common.truth.Truth.assertThat
-import kotlinx.coroutines.runBlocking
+import kotlinx.coroutines.test.runTest
 import org.junit.jupiter.api.Test
 
 class TmdbCompaniesApiTest {
@@ -18,7 +18,7 @@ class TmdbCompaniesApiTest {
     val classToTest = TmdbCompaniesApi(client)
 
     @Test
-    fun `it can get company details`() = runBlocking {
+    fun `it can get company details`() = runTest {
         val companyDetail = classToTest.getDetails(TmdbCompanyId.NETFLIX_INTERNATIONAL_PICTURES)
 
         assertThat(companyDetail.id).isEqualTo(145174)

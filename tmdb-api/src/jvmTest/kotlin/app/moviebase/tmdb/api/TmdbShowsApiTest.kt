@@ -4,7 +4,7 @@ import app.moviebase.tmdb.model.AppendResponse
 import app.moviebase.tmdb.model.TmdbVideoType
 import app.moviebase.tmdb.remote.mockHttpClient
 import com.google.common.truth.Truth.assertThat
-import kotlinx.coroutines.runBlocking
+import kotlinx.coroutines.test.runTest
 import org.junit.jupiter.api.Nested
 import org.junit.jupiter.api.Test
 
@@ -29,7 +29,7 @@ class TmdbShowsApiTest {
     inner class `when fetching show details` {
 
         @Test
-        fun `it can fetch show details`() = runBlocking {
+        fun `it can fetch show details`() = runTest {
             val showDetails = classToTest.getDetails(
                 showId = 96677,
                 language = "en-US",
@@ -64,7 +64,7 @@ class TmdbShowsApiTest {
         }
 
         @Test
-        fun `with images only`() = runBlocking {
+        fun `with images only`() = runTest {
             val showDetails = classToTest.getDetails(
                 showId = 96677,
                 language = "de-DE",
@@ -81,7 +81,7 @@ class TmdbShowsApiTest {
     }
 
     @Test
-    fun `it can fetch aggregate credits`() = runBlocking {
+    fun `it can fetch aggregate credits`() = runTest {
         val aggregateCredits = classToTest.getAggregateCredits(
             showId = 96677,
             language = "en-US",
@@ -92,7 +92,7 @@ class TmdbShowsApiTest {
     }
 
     @Test
-    fun `it can fetch recommendations`() = runBlocking {
+    fun `it can fetch recommendations`() = runTest {
         val recommendations = classToTest.getRecommendations(
             showId = 96677,
             page = 1,
@@ -104,7 +104,7 @@ class TmdbShowsApiTest {
     }
 
     @Test
-    fun `it should return images from show`() = runBlocking {
+    fun `it should return images from show`() = runTest {
         val images = classToTest.getImages(
             showId = 96677,
             language = "en",

@@ -2,7 +2,7 @@ package app.moviebase.tmdb.api
 
 import app.moviebase.tmdb.remote.mockHttpClient
 import com.google.common.truth.Truth.assertThat
-import kotlinx.coroutines.runBlocking
+import kotlinx.coroutines.test.runTest
 import org.junit.jupiter.api.Test
 
 class TmdbSearchApiTest {
@@ -26,7 +26,7 @@ class TmdbSearchApiTest {
     val classToTest = TmdbSearchApi(client)
 
     @Test
-    fun `it can search shows by query Simpsons on 1996`() = runBlocking {
+    fun `it can search shows by query Simpsons on 1996`() = runTest {
         val pageResult = classToTest.findShows("Simpsons", 1, "en", "US",false, firstAirDateYear = 1996)
 
         assertThat(pageResult.page).isEqualTo(1)
@@ -38,7 +38,7 @@ class TmdbSearchApiTest {
     }
 
     @Test
-    fun `it can search shows by query Lupin`() = runBlocking {
+    fun `it can search shows by query Lupin`() = runTest {
         val pageResult = classToTest.findShows("Lupin", 1, "en", "US",false)
 
         assertThat(pageResult.page).isEqualTo(1)
@@ -50,7 +50,7 @@ class TmdbSearchApiTest {
     }
 
     @Test
-    fun `it can search shows by query SWAT`() = runBlocking {
+    fun `it can search shows by query SWAT`() = runTest {
         val pageResult = classToTest.findShows("S.W.A.T.", 1, "en", "US",false)
 
         assertThat(pageResult.page).isEqualTo(1)
@@ -62,7 +62,7 @@ class TmdbSearchApiTest {
     }
 
     @Test
-    fun `it can search movies by query Star Wars with primary release year`() = runBlocking {
+    fun `it can search movies by query Star Wars with primary release year`() = runTest {
         val pageResult = classToTest.findMovies("Star Wars", 1, "en", "US",false, primaryReleaseYear = 1977)
 
         assertThat(pageResult.page).isEqualTo(1)
@@ -75,7 +75,7 @@ class TmdbSearchApiTest {
     }
 
     @Test
-    fun `it can search movies by query Star Wars on year 1977`() = runBlocking {
+    fun `it can search movies by query Star Wars on year 1977`() = runTest {
         val pageResult = classToTest.findMovies("Star Wars", 1, "en", "US",false, year = 1977)
 
         assertThat(pageResult.page).isEqualTo(1)
@@ -88,7 +88,7 @@ class TmdbSearchApiTest {
     }
 
     @Test
-    fun `it can search movies by query Star Wars`() = runBlocking {
+    fun `it can search movies by query Star Wars`() = runTest {
         val pageResult = classToTest.findMovies("Star Wars", 1, "en", "US",false)
 
         assertThat(pageResult.page).isEqualTo(1)
@@ -101,7 +101,7 @@ class TmdbSearchApiTest {
     }
 
     @Test
-    fun `it can search persons by query ka`() = runBlocking {
+    fun `it can search persons by query ka`() = runTest {
         val pageResult = classToTest.findPeople("ka", 1, "en", "US",false)
 
         assertThat(pageResult.page).isEqualTo(1)
@@ -114,7 +114,7 @@ class TmdbSearchApiTest {
     }
 
     @Test
-    fun `it can search companies by query fox`() = runBlocking {
+    fun `it can search companies by query fox`() = runTest {
         val pageResult = classToTest.findCompanies("fox", 1)
 
         assertThat(pageResult.page).isEqualTo(1)
@@ -127,7 +127,7 @@ class TmdbSearchApiTest {
     }
 
     @Test
-    fun `it can search collections by query fast`() = runBlocking {
+    fun `it can search collections by query fast`() = runTest {
         val pageResult = classToTest.findCollections("fast", 1, "en")
 
         assertThat(pageResult.page).isEqualTo(1)
@@ -141,7 +141,7 @@ class TmdbSearchApiTest {
     }
 
     @Test
-    fun `it can search keyword by query future`() = runBlocking {
+    fun `it can search keyword by query future`() = runTest {
         val pageResult = classToTest.findKeywords("future", 1)
 
         assertThat(pageResult.page).isEqualTo(1)
