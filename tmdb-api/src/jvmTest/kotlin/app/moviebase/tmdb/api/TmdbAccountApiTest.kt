@@ -6,7 +6,7 @@ import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.runBlocking
 import org.junit.jupiter.api.Test
 
-class Tmdb3AccountApiTest {
+class TmdbAccountApiTest {
 
     val client = mockHttpClient(
         version = 3,
