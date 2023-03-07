@@ -9,3 +9,5 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
+    # Disable version updates for dependencies because Gradle toml unsupported
+    open-pull-requests-limit: 0
