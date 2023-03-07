@@ -31,8 +31,9 @@ internal object HttpClientFactory {
 
             defaultRequest {
                 url {
-                    host = TmdbWebConfig.BASE_URL_TMDB
-                    path(version.path)
+                    protocol = URLProtocol.HTTPS
+                    host = TmdbWebConfig.TMDB_HOST
+                    path(version.path + "/")
                 }
             }
 

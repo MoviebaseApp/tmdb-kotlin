@@ -1,5 +1,6 @@
 package app.moviebase.tmdb.remote
 
+import app.moviebase.tmdb.TmdbWebConfig
 import io.ktor.client.*
 import io.ktor.client.engine.mock.*
 import io.ktor.client.plugins.*
@@ -16,6 +17,13 @@ fun mockHttpClient(
     responses: Map<String, String>
 ) = HttpClient(MockEngine) {
     val jsonFiles = mutableMapOf<String, String>()
+    defaultRequest {
+        url {
+            protocol = URLProtocol.HTTPS
+            host = TmdbWebConfig.TMDB_HOST
+            url("$version/")
+        }
+    }
     responses.entries.forEach {
         jsonFiles["https://api.themoviedb.org/$version/${it.key}"] = it.value
     }

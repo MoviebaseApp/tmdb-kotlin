@@ -2,6 +2,7 @@ package app.moviebase.tmdb.api
 
 import app.moviebase.tmdb.model.*
 import app.moviebase.tmdb.remote.endPointV3
+import app.moviebase.tmdb.remote.getResponse
 import app.moviebase.tmdb.remote.json
 import io.ktor.client.*
 import io.ktor.client.call.*
@@ -13,9 +14,7 @@ class TmdbAccountApi internal constructor(private val client: HttpClient) {
      * Get your account details.
      * @see [Documentation](https://developers.themoviedb.org/3/account)
      */
-    suspend fun getDetails(): TmdbAccountDetails = client.get {
-        endPointV3("account")
-    }.body()
+    suspend fun getDetails(): TmdbAccountDetails = client.getResponse("account")
 
     suspend fun getFavorites(accountId: Int, mediaType: TmdbMediaType): TmdbMoviePageResult = when (mediaType) {
         TmdbMediaType.MOVIE -> getFavoriteMovies(accountId)
@@ -23,13 +22,9 @@ class TmdbAccountApi internal constructor(private val client: HttpClient) {
         else -> throw IllegalArgumentException("Only movies and shows are supported.")
     }
 
-    suspend fun getFavoriteMovies(accountId: Int): TmdbMoviePageResult = client.get {
-        endPointAccount(accountId, "favorite", "movies")
-    }.body()
+    suspend fun getFavoriteMovies(accountId: Int): TmdbMoviePageResult = client.getResponse(*pathAccount(accountId, "favorite", "movies"))
 
-    suspend fun getFavoriteShows(accountId: Int): TmdbMoviePageResult = client.get {
-        endPointAccount(accountId, "favorite", "tv")
-    }.body()
+    suspend fun getFavoriteShows(accountId: Int): TmdbMoviePageResult = client.getResponse(*pathAccount(accountId, "favorite", "tv"))
 
     /**
      * POST /account/{account_id}/favorite
@@ -59,4 +54,6 @@ class TmdbAccountApi internal constructor(private val client: HttpClient) {
     private fun HttpRequestBuilder.endPointAccount(accountId: Int, vararg paths: String) {
         endPointV3("account", accountId.toString(), *paths)
     }
+
+    private fun pathAccount(accountId: Int, vararg paths: String) = arrayOf("account", accountId.toString(), *paths)
 }
