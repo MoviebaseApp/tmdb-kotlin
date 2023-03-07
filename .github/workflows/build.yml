@@ -34,6 +34,13 @@ jobs:
       - name: Run Tests
         run: ./gradlew jvmTest --parallel
 
+      - name: Upload build outputs
+        if: always()
+        uses: actions/upload-artifact@v3
+        with:
+          name: build-outputs
+          path: app/build/outputs
+
       - name: Upload reports
         if: always()
         uses: actions/upload-artifact@v3

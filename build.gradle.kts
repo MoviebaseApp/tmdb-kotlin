@@ -1,5 +1,9 @@
 plugins {
-    id("io.github.gradle-nexus.publish-plugin") version Versions.nexus
+    alias(libs.plugins.kotlin.serialization) apply false
+    alias(libs.plugins.kotlin.multiplatform) apply false
+    alias(libs.plugins.nexus) apply true
+    alias(libs.plugins.dokka) apply false
+    alias(libs.plugins.ben.manes.versions) apply false
 }
 
 buildscript {
@@ -8,16 +12,16 @@ buildscript {
         google()
         mavenCentral()
     }
-
-    dependencies {
-        classpath(kotlin("gradle-plugin", Versions.kotlin))
-        classpath(kotlin("serialization", Versions.kotlin))
-        classpath(Plugins.dokka)
-    }
 }
 
+
+val versionMajor = 0
+val versionMinor = 8
+val versionPatch = 0
+val useSnapshot = false
+
 group = "app.moviebase"
-version = Versions.versionName
+version = "$versionMajor.$versionMinor.$versionPatch" + if(useSnapshot) "-SNAPSHOT" else ""
 
 nexusPublishing {
     repositories {
