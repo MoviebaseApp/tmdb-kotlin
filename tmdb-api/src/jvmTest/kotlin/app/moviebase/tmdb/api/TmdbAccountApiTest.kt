@@ -3,7 +3,7 @@ package app.moviebase.tmdb.api
 import app.moviebase.tmdb.model.TmdbMediaType
 import app.moviebase.tmdb.remote.mockHttpClient
 import com.google.common.truth.Truth.assertThat
-import kotlinx.coroutines.runBlocking
+import kotlinx.coroutines.test.runTest
 import org.junit.jupiter.api.Test
 
 class TmdbAccountApiTest {
@@ -20,7 +20,7 @@ class TmdbAccountApiTest {
     val classToTest = TmdbAccountApi(client)
 
     @Test
-    fun `it should return request token`() = runBlocking {
+    fun `it should return request token`() = runTest {
         val accountDetails = classToTest.getDetails()
 
         assertThat(accountDetails.userName).isEqualTo("someuser")
@@ -31,7 +31,7 @@ class TmdbAccountApiTest {
     }
 
     @Test
-    fun `it should get favorite movies`() = runBlocking {
+    fun `it should get favorite movies`() = runTest {
         val pageResult = classToTest.getFavorites(18029486, TmdbMediaType.MOVIE)
 
         assertThat(pageResult.page).isEqualTo(1)
@@ -40,7 +40,7 @@ class TmdbAccountApiTest {
     }
 
     @Test
-    fun `when adding movie to favorites it returns a success result`() = runBlocking {
+    fun `when adding movie to favorites it returns a success result`() = runTest {
         val result = classToTest.markFavorite(18029486, TmdbMediaType.MOVIE, 76600, true)
 
         assertThat(result.success).isTrue()

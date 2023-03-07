@@ -7,7 +7,7 @@ import app.moviebase.tmdb.remote.mockHttpClient
 import app.moviebase.tmdb.remote.plusDays
 import app.moviebase.tmdb.remote.plusWeeks
 import com.google.common.truth.Truth.assertThat
-import kotlinx.coroutines.runBlocking
+import kotlinx.coroutines.test.runTest
 import org.junit.jupiter.api.Test
 
 
@@ -39,7 +39,7 @@ class TmdbDiscoverApiTest {
 
 
     @Test
-    fun `it can discover by discover class`() = runBlocking {
+    fun `it can discover by discover class`() = runTest {
         val discover = TmdbDiscover.Movie(
             sortBy = TmdbDiscoverMovieSortBy.POPULARITY,
             sortOrder = TmdbSortOrder.DESC,
@@ -61,7 +61,7 @@ class TmdbDiscoverApiTest {
     }
 
     @Test
-    fun `it can discover movies on dvd`() = runBlocking {
+    fun `it can discover movies on dvd`() = runTest {
         val result = classToTest.discoverByCategory(
             page = 1,
             region = "DE",
@@ -79,7 +79,7 @@ class TmdbDiscoverApiTest {
 
 
     @Test
-    fun `it can discover upcoming movies`() = runBlocking {
+    fun `it can discover upcoming movies`() = runTest {
         val result = classToTest.discoverByCategory(
             page = 1,
             region = "DE",
@@ -94,7 +94,7 @@ class TmdbDiscoverApiTest {
 
 
     @Test
-    fun `it can discover TV shows on a certain network`() = runBlocking {
+    fun `it can discover TV shows on a certain network`() = runTest {
         val result = classToTest.discoverByCategory(
             page = 1,
             region = "DE",
@@ -108,7 +108,7 @@ class TmdbDiscoverApiTest {
     }
 
     @Test
-    fun `it can discover movies on streaming provider netflix`() = runBlocking {
+    fun `it can discover movies on streaming provider netflix`() = runTest {
         val discoverCategory = DiscoverCategory.OnStreaming.Netflix(
             mediaType = TmdbMediaType.MOVIE,
             watchRegion = "DE"
@@ -126,7 +126,7 @@ class TmdbDiscoverApiTest {
     }
 
     @Test
-    fun `it can discover shows on streaming providers`() = runBlocking {
+    fun `it can discover shows on streaming providers`() = runTest {
         val result: TmdbPageResult<out TmdbMediaListItem> = classToTest.discoverByCategory(
             page = 1,
             region = "DE",

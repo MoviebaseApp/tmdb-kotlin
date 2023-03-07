@@ -2,7 +2,7 @@ package app.moviebase.tmdb.api
 
 import app.moviebase.tmdb.remote.mockHttpClient
 import com.google.common.truth.Truth.assertThat
-import kotlinx.coroutines.runBlocking
+import kotlinx.coroutines.test.runTest
 import org.junit.jupiter.api.Test
 
 
@@ -20,7 +20,7 @@ class Tmdb4ListApiTest {
     val classToTest = Tmdb4ListApi(client)
 
     @Test
-    fun `it can fetch list page 1`() = runBlocking {
+    fun `it can fetch list page 1`() = runTest {
         val list = classToTest.getList(listId = 82963, page = 1)
 
         assertThat(list.id).isEqualTo(82963)
@@ -28,7 +28,7 @@ class Tmdb4ListApiTest {
     }
 
     @Test
-    fun `it can fetch list with empty backdrop`() = runBlocking {
+    fun `it can fetch list with empty backdrop`() = runTest {
         val list = classToTest.getList(listId = 932, page = 1)
 
         assertThat(list.id).isEqualTo(932)
@@ -36,7 +36,7 @@ class Tmdb4ListApiTest {
     }
 
     @Test
-    fun `it can fetch list with available content`() = runBlocking {
+    fun `it can fetch list with available content`() = runTest {
         val list = classToTest.getList(listId = 3321, page = 1)
 
         assertThat(list.id).isEqualTo(3321)

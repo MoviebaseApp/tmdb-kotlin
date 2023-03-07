@@ -3,7 +3,7 @@ package app.moviebase.tmdb
 import app.moviebase.tmdb.model.TmdbMovieStatus
 import app.moviebase.tmdb.remote.TmdbException
 import com.google.common.truth.Truth.assertThat
-import kotlinx.coroutines.runBlocking
+import kotlinx.coroutines.test.runTest
 import org.junit.jupiter.api.Disabled
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.TestInstance
@@ -18,7 +18,7 @@ class TmdbDetailsIntegrationTest {
     val tmdb3 = buildTmdb3(tmdbAccountStorage = storage)
 
     @Test
-    fun `it should fetch movie from TMDB`() = runBlocking {
+    fun `it should fetch movie from TMDB`() = runTest {
         val movie = tmdb3.movies.getDetails(429203)
 
         println("movie: $movie")
@@ -29,7 +29,7 @@ class TmdbDetailsIntegrationTest {
 
     @Test
     fun `it throws a TmdbException when the resource is not found on TMDB`() {
-        runBlocking {
+        runTest {
             assertThrows<TmdbException> {
                 tmdb3.movies.getDetails(429203254)
             }
@@ -38,7 +38,7 @@ class TmdbDetailsIntegrationTest {
 
     @Test
     fun `it throws a TmdbException when the API Key is wrong`() {
-        runBlocking {
+        runTest {
             val invalidTmdb = buildTmdb3("00000000000000000")
             assertThrows<TmdbException> {
                 invalidTmdb.movies.getDetails(429203)

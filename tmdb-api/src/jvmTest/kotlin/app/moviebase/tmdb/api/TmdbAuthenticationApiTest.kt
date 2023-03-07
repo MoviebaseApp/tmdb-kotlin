@@ -2,7 +2,7 @@ package app.moviebase.tmdb.api
 
 import app.moviebase.tmdb.remote.mockHttpClient
 import com.google.common.truth.Truth.assertThat
-import kotlinx.coroutines.runBlocking
+import kotlinx.coroutines.test.runTest
 import kotlinx.datetime.*
 import org.junit.jupiter.api.Test
 
@@ -18,7 +18,7 @@ class TmdbAuthenticationApiTest {
     val classToTest = TmdbAuthenticationApi(client)
 
     @Test
-    fun `it should return request token`() = runBlocking {
+    fun `it should return request token`() = runTest {
         val requestToken = classToTest.requestToken()
         val currentDateTime = "2023-03-05T10:38:01Z".toInstant().toLocalDateTime(TimeZone.currentSystemDefault())
 
@@ -29,7 +29,7 @@ class TmdbAuthenticationApiTest {
     }
 
     @Test
-    fun `it build the redirect URL`() = runBlocking {
+    fun `it build the redirect URL`() = runTest {
         val url = classToTest.requestAuthorizationUrl("auth://app")
 
         assertThat(url).isEqualTo("https://www.themoviedb.org/authenticate/57e299f02ff5309efcdab5b2c26c8ca80aadfce7?redirect_to=auth://app")

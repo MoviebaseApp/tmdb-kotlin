@@ -2,7 +2,7 @@ package app.moviebase.tmdb.api
 
 import app.moviebase.tmdb.remote.mockHttpClient
 import com.google.common.truth.Truth.assertThat
-import kotlinx.coroutines.runBlocking
+import kotlinx.coroutines.test.runTest
 import org.junit.jupiter.api.Test
 
 class TmdbConfigurationApiTest {
@@ -17,7 +17,7 @@ class TmdbConfigurationApiTest {
     val api = TmdbConfigurationApi(client)
 
     @Test
-    fun `it can fetch api configuration`() = runBlocking {
+    fun `it can fetch api configuration`() = runTest {
         val config = api.getApiConfiguration()
 
         assertThat(config.changeKeys).isNotEmpty()

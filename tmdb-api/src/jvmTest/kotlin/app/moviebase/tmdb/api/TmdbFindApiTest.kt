@@ -4,7 +4,7 @@ import app.moviebase.tmdb.model.TmdbExternalSource
 import app.moviebase.tmdb.model.TmdbGender
 import app.moviebase.tmdb.remote.mockHttpClient
 import com.google.common.truth.Truth.assertThat
-import kotlinx.coroutines.runBlocking
+import kotlinx.coroutines.test.runTest
 import org.junit.jupiter.api.Test
 
 class TmdbFindApiTest {
@@ -20,7 +20,7 @@ class TmdbFindApiTest {
     val classToTest = TmdbFindApi(client)
 
     @Test
-    fun `it can find movie by IMDB id`() = runBlocking {
+    fun `it can find movie by IMDB id`() = runTest {
         val pageResult = classToTest.find("tt10919380", "en", TmdbExternalSource.IMDB)
 
         assertThat(pageResult.movieResults.size).isEqualTo(1)
@@ -29,7 +29,7 @@ class TmdbFindApiTest {
     }
 
     @Test
-    fun `it can find person with non binary gender by IMDB id`() = runBlocking {
+    fun `it can find person with non binary gender by IMDB id`() = runTest {
         val pageResult = classToTest.find("nm0424060", "en", TmdbExternalSource.IMDB)
 
         assertThat(pageResult.personResults.size).isEqualTo(1)
