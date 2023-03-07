@@ -2,16 +2,14 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 import com.github.benmanes.gradle.versions.updates.DependencyUpdatesTask
 
 plugins {
-    kotlin("multiplatform")
-    kotlin("plugin.serialization")
-    id("org.jetbrains.dokka")
+    alias(libs.plugins.kotlin.multiplatform)
+    alias(libs.plugins.kotlin.serialization)
+    alias(libs.plugins.dokka)
+    alias(libs.plugins.ben.manes.versions)
     id("maven-publish")
     id("signing")
-    id("com.github.ben-manes.versions") version Versions.benManesVersions
 }
 
-group = "app.moviebase"
-version = Versions.versionName
 
 kotlin {
     jvm()
@@ -23,42 +21,42 @@ kotlin {
     sourceSets {
         val commonMain by getting {
             dependencies {
-                implementation(Libs.Kotlin.coroutines)
-                implementation(Libs.Kotlin.kotlinSerialization)
-                implementation(Libs.Kotlin.kotlinxDateTime)
-
-                implementation(Libs.Data.ktorCore)
-                implementation(Libs.Data.ktorJson)
-                implementation(Libs.Data.ktorLogging)
-                implementation(Libs.Data.ktorSerialization)
-                implementation(Libs.Data.ktorContentNegotiation)
-                implementation(Libs.Data.ktorAuth)
+                implementation(libs.kotlinx.coroutines.core)
+                implementation(libs.kotlinx.serialization)
+                implementation(libs.kotlinx.datetime)
+                implementation(libs.ktor.core)
+                implementation(libs.ktor.json)
+                implementation(libs.ktor.logging)
+                implementation(libs.ktor.serialization.json)
+                implementation(libs.ktor.content.negotiation)
+                implementation(libs.ktor.auth)
             }
         }
 
         val commonTest by getting {
             dependencies {
-                implementation(kotlin("test-common"))
-                implementation(kotlin("test-annotations-common"))
+                implementation(libs.kotlin.test.common)
+                implementation(libs.kotlin.test.annotations)
             }
         }
 
         val jvmMain by getting {
             dependencies {
-                implementation(Libs.Data.ktorOkhttp)
+                implementation(libs.ktor.okhttp)
             }
         }
 
         val jvmTest by getting {
             dependencies {
-                implementation(kotlin("test-junit5"))
-                implementation(Libs.Data.ktorOkhttp)
+                implementation(libs.ktor.okhttp)
+                implementation(libs.ktor.mock)
 
-                implementation(Libs.Kotlin.coroutines)
-                implementation(Libs.Testing.jupiter)
-                runtimeOnly(Libs.Testing.jupiterEngine)
-                implementation(Libs.Testing.truth)
-                implementation(Libs.Testing.ktorClientMock)
+                implementation(libs.kotlinx.coroutines.core)
+                implementation(libs.kotlin.junit5)
+                implementation(libs.junit)
+                implementation(libs.junit.jupiter.api)
+                runtimeOnly(libs.junit.jupiter.engine)
+                implementation(libs.truth)
             }
         }
 
