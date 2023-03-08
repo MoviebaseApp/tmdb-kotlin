@@ -8,10 +8,6 @@ insert_final_newline = true
 trim_trailing_whitespace = true
 
 [*.{kt,kts}]
-ktlint_no-semi = disabled
-ktlint_filename = disabled
-ktlint_trailing-comma-on-declaration-site = disabled
-
 ij_kotlin_imports_layout = *
 ij_kotlin_allow_trailing_comma = true
 ij_kotlin_allow_trailing_comma_on_call_site = true

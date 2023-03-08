@@ -1,0 +1,18 @@
+name: Update release
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  update_draft_release:
+    permissions:
+      contents: write
+      pull-requests: write
+    runs-on: ubuntu-latest
+    steps:
+      - name: Release Drafter
+        uses: release-drafter/release-drafter@v5.21.1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
