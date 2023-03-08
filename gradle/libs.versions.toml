@@ -15,6 +15,7 @@ truth = "1.1.3"
 junit = "4.13.2"
 mockito-kotlin = "4.1.0"
 mockito-inline = "5.1.1"
+maven-publish = "0.24.0"
 
 [plugins]
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
@@ -26,6 +27,7 @@ ben-manes-versions = { id = "com.github.ben-manes.versions", version.ref = "ben-
 spotless = { id = "com.diffplug.spotless", version.ref = "spotless" }
 nexus = { id = "io.github.gradle-nexus.publish-plugin", version.ref = "nexus" }
 dokka = { id = "org.jetbrains.dokka", version.ref = "dokka" }
+maven-publish = { id = "com.vanniktech.maven.publish", version.ref = "maven-publish" }
 
 [libraries]
 kotlinx-datetime = { module = "org.jetbrains.kotlinx:kotlinx-datetime", version.ref = "kotlinx-datetime" }
