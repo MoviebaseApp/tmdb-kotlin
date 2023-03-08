@@ -28,10 +28,10 @@ kotlin {
     sourceSets {
         val commonMain by getting {
             dependencies {
-                implementation(libs.kotlinx.coroutines.core)
-                implementation(libs.kotlinx.serialization)
-                implementation(libs.kotlinx.datetime)
-                implementation(libs.ktor.core)
+                api(libs.kotlinx.coroutines.core)
+                api(libs.kotlinx.serialization)
+                api(libs.kotlinx.datetime)
+                api(libs.ktor.core)
                 implementation(libs.ktor.json)
                 implementation(libs.ktor.logging)
                 implementation(libs.ktor.serialization.json)
