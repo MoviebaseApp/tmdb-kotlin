@@ -64,7 +64,6 @@ enum class TmdbShowType(val value: String) {
     }
 }
 
-
 @Serializable
 data class TmdbShowDetail(
     @SerialName("id") override val id: Int,
@@ -72,8 +71,12 @@ data class TmdbShowDetail(
     @SerialName("poster_path") override val posterPath: String?,
     @SerialName("backdrop_path") override val backdropPath: String?,
     val popularity: Float,
-    @SerialName("first_air_date") @Serializable(LocalDateSerializer::class) val firstAirDate: LocalDate? = null,
-    @SerialName("last_air_date") @Serializable(LocalDateSerializer::class) val lastAirDate: LocalDate? = null,
+    @SerialName("first_air_date")
+    @Serializable(LocalDateSerializer::class)
+    val firstAirDate: LocalDate? = null,
+    @SerialName("last_air_date")
+    @Serializable(LocalDateSerializer::class)
+    val lastAirDate: LocalDate? = null,
     @SerialName("genres") val genres: List<TmdbGenre>,
     @SerialName("last_episode_to_air") val lastEpisodeToAir: TmdbEpisode? = null,
     @SerialName("next_episode_to_air") val nextEpisodeToAir: TmdbEpisode? = null,
@@ -101,7 +104,7 @@ data class TmdbShowDetail(
     @SerialName("aggregate_credits") val aggregateCredits: TmdbAggregateCredits? = null,
     @SerialName("videos") val videos: TmdbResult<TmdbVideo>? = null,
     @SerialName("content_ratings") val contentRatings: TmdbResult<TmdbContentRating>? = null,
-    @SerialName("images") val images: TmdbImages? = null,
+    @SerialName("images") val images: TmdbImages? = null
 ) : TmdbAnyMedia, TmdbBackdropMedia, TmdbPosterMedia, TmdbRatingItem
 
 fun TmdbResult<TmdbContentRating>.getContentRating(country: String): String? =
@@ -110,12 +113,14 @@ fun TmdbResult<TmdbContentRating>.getContentRating(country: String): String? =
 @Serializable
 data class TmdbSeason(
     override val id: Int,
-    @SerialName("air_date") @Serializable(LocalDateSerializer::class) val airDate: LocalDate? = null,
+    @SerialName("air_date")
+    @Serializable(LocalDateSerializer::class)
+    val airDate: LocalDate? = null,
     @SerialName("episode_count") val episodeCount: Int? = null,
     val name: String,
     @SerialName("poster_path") override val posterPath: String?,
     @SerialName("season_number") val seasonNumber: Int,
-    val episodes: List<TmdbEpisode>? = null,
+    val episodes: List<TmdbEpisode>? = null
 ) : TmdbAnyMedia, TmdbPosterMedia {
 
     val numberOfEpisodes get() = episodeCount ?: episodes?.size ?: 0
@@ -124,7 +129,9 @@ data class TmdbSeason(
 @Serializable
 data class TmdbSeasonDetail(
     @SerialName("id") override val id: Int,
-    @SerialName("air_date") @Serializable(LocalDateSerializer::class) val airDate: LocalDate? = null,
+    @SerialName("air_date")
+    @Serializable(LocalDateSerializer::class)
+    val airDate: LocalDate? = null,
     @SerialName("episode_count") val episodeCount: Int? = null,
     val name: String,
     @SerialName("poster_path") override val posterPath: String?,
@@ -133,11 +140,10 @@ data class TmdbSeasonDetail(
     val episodes: List<TmdbEpisode>? = null,
     @SerialName("external_ids") val externalIds: TmdbExternalIds,
     @SerialName("videos") val videos: TmdbResult<TmdbVideo>,
-    @SerialName("images") val images: TmdbResult<TmdbImages>,
+    @SerialName("images") val images: TmdbResult<TmdbImages>
 ) : TmdbAnyMedia, TmdbPosterMedia {
 
     val numberOfEpisodes get() = episodeCount ?: episodes?.size ?: 0
-
 }
 
 @Serializable
@@ -145,17 +151,17 @@ data class TmdbEpisode(
     @SerialName("id") override val id: Int,
     @SerialName("episode_number") val episodeNumber: Int,
     @SerialName("season_number") val seasonNumber: Int,
-    @SerialName("air_date") @Serializable(LocalDateSerializer::class) val airDate: LocalDate? = null,
+    @SerialName("air_date")
+    @Serializable(LocalDateSerializer::class)
+    val airDate: LocalDate? = null,
     @SerialName("name") val name: String? = null,
     @SerialName("vote_average") val voteAverage: Float? = null,
     @SerialName("vote_count") val voteCount: Int? = null,
-    @SerialName("still_path") val stillPath: String? = null,
+    @SerialName("still_path") val stillPath: String? = null
 ) : TmdbAnyMedia, TmdbBackdropMedia {
 
     override val backdropPath: String? get() = stillPath
-
 }
-
 
 @Serializable
 data class TmdbEpisodeDetail(
@@ -163,7 +169,9 @@ data class TmdbEpisodeDetail(
     @SerialName("overview") val overview: String,
     @SerialName("episode_number") val episodeNumber: Int,
     @SerialName("season_number") val seasonNumber: Int,
-    @SerialName("air_date") @Serializable(LocalDateSerializer::class) val airDate: LocalDate? = null,
+    @SerialName("air_date")
+    @Serializable(LocalDateSerializer::class)
+    val airDate: LocalDate? = null,
     @SerialName("name") val name: String? = null,
     @SerialName("vote_average") override val voteAverage: Float? = null,
     @SerialName("vote_count") override val voteCount: Int? = null,
@@ -171,7 +179,7 @@ data class TmdbEpisodeDetail(
     @SerialName("images") val images: TmdbResult<TmdbImages>,
     @SerialName("crew") val crew: List<TmdbCrew>,
     @SerialName("guest_stars") val guestStars: List<TmdbCast>,
-    @SerialName("external_ids") val externalIds: TmdbExternalIds,
+    @SerialName("external_ids") val externalIds: TmdbExternalIds
 ) : TmdbAnyMedia, TmdbBackdropMedia, TmdbRatingItem {
     override val backdropPath: String? get() = stillPath
 }

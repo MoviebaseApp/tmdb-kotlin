@@ -49,7 +49,7 @@ object TmdbGenreId {
             TV_MOVIE,
             THRILLER,
             WAR,
-            WESTERM,
+            WESTERM
         )
 
         fun contains(genreId: Int) = ALL.contains(genreId)
@@ -109,11 +109,9 @@ object TmdbGenreId {
             ROMANCE,
             THRILLER,
             WAR,
-            WESTERN,
+            WESTERN
         )
 
         fun contains(genreId: Int) = ALL.contains(genreId)
-
     }
 }
-

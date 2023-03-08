@@ -24,7 +24,7 @@ class TmdbMoviesApi internal constructor(private val client: HttpClient) {
     suspend fun getImages(
         movieId: Int,
         language: String? = null,
-        includeImageLanguage: String? = null,
+        includeImageLanguage: String? = null
     ): TmdbImages = client.getResponse(*moviePath(movieId, "images")) {
         parameterLanguage(language)
         parameterIncludeImageLanguage(includeImageLanguage)

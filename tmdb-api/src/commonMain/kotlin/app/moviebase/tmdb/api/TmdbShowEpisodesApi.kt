@@ -28,7 +28,7 @@ class TmdbShowEpisodesApi(private val client: HttpClient) {
     }.body()
 
     suspend fun getExternalIds(showId: Int, seasonNumber: Int, episodeNumber: Int): TmdbExternalIds = client.get {
-        endPointEpisode(showId, seasonNumber, episodeNumber,"external_ids")
+        endPointEpisode(showId, seasonNumber, episodeNumber, "external_ids")
     }.body()
 
     private fun HttpRequestBuilder.endPointEpisode(showId: Int, seasonNumber: Int, episodeNumber: Int, vararg paths: String) {

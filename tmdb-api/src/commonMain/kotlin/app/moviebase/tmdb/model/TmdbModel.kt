@@ -29,7 +29,6 @@ enum class AppendResponse(val value: String) {
     companion object {
         fun build(appendResponses: Iterable<AppendResponse>) = appendResponses.joinToString(",") { it.value }
     }
-
 }
 
 enum class TmdbSortOrder(val value: String) {
@@ -53,7 +52,6 @@ object TmdbStatusCode {
     const val TOKEN_NOT_GRANTED = 36
 }
 
-
 @Serializable
 data class TmdbResult<T>(
     val results: List<T>
@@ -68,12 +66,11 @@ interface TmdbPageResult<T> {
 
 @Serializable
 data class TmdbErrorResponse(
-    @SerialName("success")  val success: Boolean = false,
+    @SerialName("success") val success: Boolean = false,
     @SerialName("status_code") val statusCode: Int,
     @SerialName("status_message") val statusMessage: String,
     @SerialName("error_message") val errorMessage: String? = null
 )
-
 
 @Serializable
 data class TmdbStatusResult(
@@ -81,7 +78,7 @@ data class TmdbStatusResult(
     @SerialName("error_message") val errorMessage: String? = null,
     @SerialName("id") val id: Int? = null,
     @SerialName("success") val success: Boolean? = null,
-    @SerialName("status_code") val statusCode: Int,
+    @SerialName("status_code") val statusCode: Int
 )
 
 @Serializable
@@ -95,20 +92,19 @@ data class TmdbTranslation(
     @SerialName("iso_3166_1") val iso3166: String,
     @SerialName("iso_639_1") val iso639: String,
     val name: String,
-    @SerialName("english_name") val englishName: String,
+    @SerialName("english_name") val englishName: String
 )
-
 
 @Serializable
 data class TmdbGenre(
     val id: Int,
-    val name: String,
+    val name: String
 )
 
 @Serializable
 data class TmdbKeyword(
     val id: Int,
-    val name: String,
+    val name: String
 )
 
 @Serializable
@@ -118,9 +114,8 @@ data class TmdbExternalIds(
     @SerialName("id") val id: Int? = null, // it is is used in append responses
     @SerialName("facebook_id") val facebook: String? = null,
     @SerialName("instagram_id") val instagram: String? = null,
-    @SerialName("twitter_id") val twitter: String? = null,
+    @SerialName("twitter_id") val twitter: String? = null
 )
-
 
 @Serializable
 enum class TmdbVideoType(val value: String) {
@@ -167,15 +162,14 @@ data class TmdbVideo(
     @SerialName("site") val site: TmdbVideoSite? = null,
     @SerialName("name") val name: String? = null,
     @SerialName("size") val size: Int? = null, // 360, 480, 720, 1080
-    @SerialName("type") val type: TmdbVideoType? = null,
+    @SerialName("type") val type: TmdbVideoType? = null
 )
-
 
 @Serializable
 data class TmdbImages(
     @SerialName("id") val id: Int? = null,
     @SerialName("posters") val posters: List<TmdbFileImage>,
-    @SerialName("backdrops") val backdrops: List<TmdbFileImage>,
+    @SerialName("backdrops") val backdrops: List<TmdbFileImage>
 )
 
 @Serializable
@@ -186,7 +180,7 @@ data class TmdbFileImage(
     @SerialName("width") val width: Int,
     @SerialName("iso_639_1") val iso639: String? = null,
     @SerialName("vote_average") val voteAverage: Float? = null,
-    @SerialName("vote_count") val voteCount: Int? = null,
+    @SerialName("vote_count") val voteCount: Int? = null
 )
 
 @Serializable
@@ -198,7 +192,7 @@ enum class TmdbRequestMediaType(val value: String) {
     ALL("all"),
     MOVIE("movie"),
     TV("tv"),
-    PERSON("person"),
+    PERSON("person")
 }
 
 enum class TmdbTimeWindow(val value: String) {

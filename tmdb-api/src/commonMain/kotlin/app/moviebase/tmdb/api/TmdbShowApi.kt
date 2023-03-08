@@ -35,7 +35,7 @@ class TmdbShowApi internal constructor(private val client: HttpClient) {
     suspend fun getImages(
         showId: Int,
         language: String? = null,
-        includeImageLanguage: String? = null,
+        includeImageLanguage: String? = null
     ): TmdbImages = client.get {
         endPointShow(showId, "images")
         parameterLanguage(language)
@@ -44,7 +44,7 @@ class TmdbShowApi internal constructor(private val client: HttpClient) {
 
     suspend fun getAggregateCredits(
         showId: Int,
-        language: String? = null,
+        language: String? = null
     ): TmdbAggregateCredits = client.get {
         endPointShow(showId, "aggregate_credits")
         parameterLanguage(language)
@@ -53,7 +53,7 @@ class TmdbShowApi internal constructor(private val client: HttpClient) {
     suspend fun getRecommendations(
         showId: Int,
         page: Int,
-        language: String? = null,
+        language: String? = null
     ): TmdbShowPageResult = client.get {
         endPointShow(showId, "recommendations")
         parameterPage(page)

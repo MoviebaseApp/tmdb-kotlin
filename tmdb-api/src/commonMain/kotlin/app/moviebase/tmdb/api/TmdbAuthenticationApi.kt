@@ -46,7 +46,7 @@ class TmdbAuthenticationApi internal constructor(private val client: HttpClient)
         return session.sessionId
     }
 
-    suspend fun acquireGuestSession(userName: String, password: String): String? {
+    suspend fun acquireGuestSession(): String? {
         val session = createGuestSession()
         if (!session.success) return null
 

@@ -7,5 +7,5 @@ data class TmdbSessionCredentials(
     val sessionId: String?,
     val approvedRequestTokenVersion4: String?,
     val accessTokenVersion4: String?,
-    val accountId4: String?,
+    val accountId4: String?
 )

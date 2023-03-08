@@ -28,7 +28,7 @@ enum class TmdbWatchMonetizationType(val value: String) {
     RENT("rent"),
 
     @SerialName("buy")
-    BUY("buy"),
+    BUY("buy")
 }
 
 @Serializable

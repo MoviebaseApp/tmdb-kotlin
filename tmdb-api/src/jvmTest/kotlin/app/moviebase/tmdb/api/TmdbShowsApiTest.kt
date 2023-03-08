@@ -8,14 +8,13 @@ import kotlinx.coroutines.test.runTest
 import org.junit.jupiter.api.Nested
 import org.junit.jupiter.api.Test
 
-
 class TmdbShowsApiTest {
 
     val client = mockHttpClient(
         version = 3,
         responses = mapOf(
             "tv/96677?language=en-US&append_to_response=external_ids,videos,credits,aggregate_credits,reviews,content_ratings,watch/providers"
-                    to "tv/tv_details_96677.json",
+                to "tv/tv_details_96677.json",
             "tv/96677?language=de-DE&append_to_response=images" to "tv/tv_details_96677_with_images.json",
             "tv/96677/images?language=en&include_image_language=en,null" to "tv/tv_images_96677.json",
             "tv/96677/aggregate_credits?language=en-US" to "tv/tv_aggregate_credits_96677.json",
@@ -40,7 +39,7 @@ class TmdbShowsApiTest {
                     AppendResponse.AGGREGATE_CREDITS,
                     AppendResponse.REVIEWS,
                     AppendResponse.CONTENT_RATING,
-                    AppendResponse.WATCH_PROVIDERS,
+                    AppendResponse.WATCH_PROVIDERS
                 )
             )
 
@@ -69,7 +68,7 @@ class TmdbShowsApiTest {
                 showId = 96677,
                 language = "de-DE",
                 appendResponses = listOf(
-                    AppendResponse.IMAGES,
+                    AppendResponse.IMAGES
                 )
             )
 
@@ -84,7 +83,7 @@ class TmdbShowsApiTest {
     fun `it can fetch aggregate credits`() = runTest {
         val aggregateCredits = classToTest.getAggregateCredits(
             showId = 96677,
-            language = "en-US",
+            language = "en-US"
         )
 
         assertThat(aggregateCredits.cast).isNotEmpty()
@@ -96,7 +95,7 @@ class TmdbShowsApiTest {
         val recommendations = classToTest.getRecommendations(
             showId = 96677,
             page = 1,
-            language = "en-US",
+            language = "en-US"
         )
 
         assertThat(recommendations.results).isNotEmpty()

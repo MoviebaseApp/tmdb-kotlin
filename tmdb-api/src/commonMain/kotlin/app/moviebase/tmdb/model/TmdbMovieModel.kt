@@ -80,7 +80,9 @@ data class TmdbMovieDetail(
     val tagline: String,
     val video: Boolean,
     val popularity: Float,
-    @SerialName("release_date") @Serializable(LocalDateSerializer::class) val releaseDate: LocalDate?,
+    @SerialName("release_date")
+    @Serializable(LocalDateSerializer::class)
+    val releaseDate: LocalDate?,
     val revenue: Long,
     @SerialName("release_dates") val releaseDates: TmdbResult<TmdbReleaseDates>? = null,
     @SerialName("production_companies") val productionCompanies: List<TmdbCompany>? = null,
@@ -88,12 +90,11 @@ data class TmdbMovieDetail(
     @SerialName("watch/providers") val watchProviders: TmdbProviderResult? = null,
     @SerialName("credits") val credits: TmdbCredits? = null,
     @SerialName("videos") val videos: TmdbResult<TmdbVideo>? = null,
-    @SerialName("images") val images: TmdbImages? = null,
-): TmdbRatingItem {
+    @SerialName("images") val images: TmdbImages? = null
+) : TmdbRatingItem {
 
     val posterImage get(): TmdbImage? = TmdbImage.poster(posterPath)
     val backdropImage get(): TmdbImage? = TmdbImage.backdrop(backdropPath)
-
 }
 
 fun TmdbResult<TmdbReleaseDates>.getCertification(country: String): String? =
@@ -117,7 +118,9 @@ data class TmdbReleaseDates(
 @Serializable
 data class TmdbReleaseDate(
     @SerialName("iso_639_1") val iso639: String? = null,
-    @SerialName("release_date") @Serializable(LocalDateTimeSerializer::class) val releaseDate: LocalDateTime?,
+    @SerialName("release_date")
+    @Serializable(LocalDateTimeSerializer::class)
+    val releaseDate: LocalDateTime?,
     val certification: String? = null,
     val type: TmdbReleaseType
 )
@@ -133,7 +136,7 @@ data class TmdbBelongsToCollection(
     @SerialName("id") val id: Int,
     @SerialName("name") val name: String,
     @SerialName("backdrop_path") val backdropPath: String? = null,
-    @SerialName("parts") val parts: List<TmdbMovie>,
+    @SerialName("parts") val parts: List<TmdbMovie>
 )
 
 @Serializable
@@ -141,5 +144,5 @@ data class TmdbReview(
     @SerialName("id") val id: String,
     val author: String,
     val content: String,
-    val url: String,
+    val url: String
 )

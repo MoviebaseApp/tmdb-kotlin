@@ -37,7 +37,7 @@ data class Tmdb4List(
     @SerialName("iso_3166_1") val iso3166: String? = null,
     @SerialName("average_rating") val averageRating: Float? = null,
     @SerialName("runtime") val runtime: Int? = null,
-    val name: String,
+    val name: String
 )
 
 @Serializable
@@ -47,15 +47,14 @@ data class Tmdb4Account(
     @SerialName("username") val userName: String
 )
 
-
 @Serializable
 data class Tmdb4ItemsRequest(
-    @SerialName("items") val items: List<Tmdb4ListItem>,
+    @SerialName("items") val items: List<Tmdb4ListItem>
 )
 
 @Serializable
 data class Tmdb4UpdateItemsRequest(
-    @SerialName("items") val items: List<Tmdb4UpdateListItem>,
+    @SerialName("items") val items: List<Tmdb4UpdateListItem>
 )
 
 @Serializable
@@ -68,9 +67,8 @@ data class Tmdb4ListItem(
 data class Tmdb4UpdateListItem(
     @SerialName("media_type") val mediaType: TmdbMediaType,
     @SerialName("media_id") val mediaId: Int,
-    @SerialName("comment") val comment: String,
+    @SerialName("comment") val comment: String
 )
-
 
 @Serializable
 data class Tmdb4ItemStatus(
@@ -80,5 +78,5 @@ data class Tmdb4ItemStatus(
     @SerialName("success") val success: Boolean? = null,
     @SerialName("status_code") val statusCode: Int,
     @SerialName("media_type") val mediaType: TmdbMediaType,
-    @SerialName("media_id") val mediaId: Int,
+    @SerialName("media_id") val mediaId: Int
 )

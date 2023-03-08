@@ -1,12 +1,16 @@
 package app.moviebase.tmdb.remote
 
 import app.moviebase.tmdb.TmdbWebConfig
-import io.ktor.client.*
-import io.ktor.client.engine.mock.*
-import io.ktor.client.plugins.*
-import io.ktor.client.plugins.contentnegotiation.*
-import io.ktor.http.*
-import io.ktor.serialization.kotlinx.json.*
+import io.ktor.client.HttpClient
+import io.ktor.client.engine.mock.MockEngine
+import io.ktor.client.engine.mock.respond
+import io.ktor.client.plugins.contentnegotiation.ContentNegotiation
+import io.ktor.client.plugins.defaultRequest
+import io.ktor.http.ContentType
+import io.ktor.http.URLProtocol
+import io.ktor.http.decodeURLPart
+import io.ktor.http.headersOf
+import io.ktor.serialization.kotlinx.json.json
 import java.io.File
 
 /**

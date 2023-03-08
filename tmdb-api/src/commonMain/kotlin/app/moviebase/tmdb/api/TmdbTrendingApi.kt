@@ -15,7 +15,7 @@ class TmdbTrendingApi internal constructor(private val client: HttpClient) {
         timeWindow: TmdbTimeWindow,
         page: Int,
         language: String? = null,
-        region: String? = null,
+        region: String? = null
     ): TmdbMoviePageResult = client.get {
         endPointV4("trending", TmdbRequestMediaType.MOVIE.value, timeWindow.value)
         parameterLanguage(language)
@@ -27,7 +27,7 @@ class TmdbTrendingApi internal constructor(private val client: HttpClient) {
         timeWindow: TmdbTimeWindow,
         page: Int,
         language: String? = null,
-        region: String? = null,
+        region: String? = null
     ): TmdbShowPageResult = client.get {
         endPointV4("trending", TmdbRequestMediaType.TV.value, timeWindow.value)
         parameterLanguage(language)

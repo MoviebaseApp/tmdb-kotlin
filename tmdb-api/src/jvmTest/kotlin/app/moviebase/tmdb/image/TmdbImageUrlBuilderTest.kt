@@ -5,7 +5,6 @@ import app.moviebase.tmdb.model.TmdbVideoSite
 import com.google.common.truth.Truth.assertThat
 import org.junit.jupiter.api.Test
 
-
 class TmdbImageUrlBuilderTest {
 
     @Test
@@ -44,5 +43,4 @@ class TmdbImageUrlBuilderTest {
 
         assertThat(imageUrl).isEqualTo("https://img.youtube.com/vi/sdfjkds/mqdefault.jpg")
     }
-
 }

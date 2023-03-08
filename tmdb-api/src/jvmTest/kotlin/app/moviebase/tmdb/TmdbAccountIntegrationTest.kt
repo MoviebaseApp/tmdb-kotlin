@@ -22,7 +22,6 @@ class TmdbAccountIntegrationTest {
 
         val tmdb3 = buildTmdb3(tmdbAccountStorage = storage)
 
-
         init {
             tmdbCredentials.sessionId?.let {
                 storage.sessionId = it

@@ -59,7 +59,6 @@ internal object HttpClientFactory {
                 }
             }
 
-
             // see https://ktor.io/docs/response-validation.html
             expectSuccess = config.expectSuccess
             HttpResponseValidator {
@@ -92,7 +91,6 @@ internal object HttpClientFactory {
             if (config.useCache) {
                 // TODO: Set persistent cache
                 install(HttpCache) {
-
                 }
             }
 
@@ -127,14 +125,14 @@ internal object HttpClientFactory {
     }
 
     private val HttpResponse.isTmdbStatusHandled: Boolean
-        get() = status == HttpStatusCode.NotFound
-                || status == HttpStatusCode.Unauthorized
-                || status == HttpStatusCode.InternalServerError
+        get() = status == HttpStatusCode.NotFound ||
+            status == HttpStatusCode.Unauthorized ||
+            status == HttpStatusCode.InternalServerError
 
     private fun Throwable.isTimeoutException(): Boolean {
         val exception = unwrapCancellationException()
         return exception is HttpRequestTimeoutException ||
-                exception is ConnectTimeoutException ||
-                exception is SocketTimeoutException
+            exception is ConnectTimeoutException ||
+            exception is SocketTimeoutException
     }
 }

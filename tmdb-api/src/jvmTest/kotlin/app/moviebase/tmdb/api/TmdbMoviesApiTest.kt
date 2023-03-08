@@ -1,11 +1,15 @@
 package app.moviebase.tmdb.api
 
-import app.moviebase.tmdb.model.*
+import app.moviebase.tmdb.model.AppendResponse
+import app.moviebase.tmdb.model.TmdbReleaseType
+import app.moviebase.tmdb.model.TmdbVideoType
+import app.moviebase.tmdb.model.getCertification
+import app.moviebase.tmdb.model.getReleaseDateBy
+import app.moviebase.tmdb.model.getReleaseDatesBy
 import app.moviebase.tmdb.remote.mockHttpClient
 import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.runTest
 import org.junit.jupiter.api.Test
-
 
 class TmdbMoviesApiTest {
 
@@ -13,10 +17,10 @@ class TmdbMoviesApiTest {
         version = 3,
         responses = mapOf(
             "movie/10140?language=en-US&append_to_response=images,external_ids,videos,release_dates,credits,reviews,content_ratings,watch/providers"
-                    to "movie/movie_details_10140.json",
+                to "movie/movie_details_10140.json",
             "movie/10140/images?language=en" to "movie/movie_images_10140.json",
             "movie/607?language=en-US&append_to_response=external_ids,videos,release_dates,credits,reviews,content_ratings,watch/providers"
-                    to "movie/movie_details_607.json"
+                to "movie/movie_details_607.json"
         )
     )
 
@@ -44,7 +48,7 @@ class TmdbMoviesApiTest {
                 AppendResponse.CREDITS,
                 AppendResponse.REVIEWS,
                 AppendResponse.CONTENT_RATING,
-                AppendResponse.WATCH_PROVIDERS,
+                AppendResponse.WATCH_PROVIDERS
             )
         )
 
@@ -74,7 +78,7 @@ class TmdbMoviesApiTest {
                 AppendResponse.CREDITS,
                 AppendResponse.REVIEWS,
                 AppendResponse.CONTENT_RATING,
-                AppendResponse.WATCH_PROVIDERS,
+                AppendResponse.WATCH_PROVIDERS
             )
         )
 
@@ -86,5 +90,4 @@ class TmdbMoviesApiTest {
         assertThat(releaseDates).hasSize(5)
         assertThat(releaseDate?.type).isEqualTo(TmdbReleaseType.THEATRICAL)
     }
-
 }

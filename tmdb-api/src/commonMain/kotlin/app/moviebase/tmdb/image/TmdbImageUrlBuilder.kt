@@ -22,8 +22,9 @@ object TmdbImageUrlBuilder {
      */
     fun build(imagePath: String, sizeKey: String): String {
         var url = TmdbWebConfig.BASE_URL_TMDB_IMAGE + sizeKey
-        if (!imagePath.startsWith("/"))
+        if (!imagePath.startsWith("/")) {
             url += "/"
+        }
 
         return url + imagePath
     }

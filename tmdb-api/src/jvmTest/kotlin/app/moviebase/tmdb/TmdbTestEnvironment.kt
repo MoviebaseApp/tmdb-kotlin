@@ -1,10 +1,11 @@
 package app.moviebase.tmdb
 
-import io.ktor.client.engine.okhttp.*
-import io.ktor.client.plugins.logging.*
+import io.ktor.client.engine.okhttp.OkHttp
+import io.ktor.client.plugins.logging.LogLevel
+import io.ktor.client.plugins.logging.Logger
 import java.io.FileInputStream
 import java.nio.file.Paths
-import java.util.*
+import java.util.Properties
 
 /**
  * Save properties in your the file local.properties in the root project.
@@ -25,7 +26,7 @@ fun createTmdbSessionCredentials() = TmdbSessionCredentials(
     sessionId = properties.getProperty("TMDB_SESSION_ID"),
     approvedRequestTokenVersion4 = properties.getProperty("TMDB4_APPROVED_REQUEST_TOKEN"),
     accessTokenVersion4 = properties.getProperty("TMDB4_ACCESS_TOKEN"),
-    accountId4 = properties.getProperty("TMDB4_ACCOUNT_ID"),
+    accountId4 = properties.getProperty("TMDB4_ACCOUNT_ID")
 )
 
 fun defaultTmdbConfiguration(

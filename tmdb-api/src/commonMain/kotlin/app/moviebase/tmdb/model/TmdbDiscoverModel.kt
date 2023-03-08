@@ -9,13 +9,13 @@ enum class TmdbDiscoverMovieSortBy(val value: String) {
     PRIMARY_RELEASE_DATE("primary_release_date"),
     ORIGINAL_TITLE("original_title"),
     VOTE_AVERAGE("vote_average"),
-    VOTE_COUNT("vote_count"),
+    VOTE_COUNT("vote_count")
 }
 
 enum class TmdbDiscoverShowSortBy(val value: String) {
     POPULARITY("popularity"),
     VOTE_AVERAGE("vote_average"),
-    FIRST_AIR_DATE("first_air_date"),
+    FIRST_AIR_DATE("first_air_date")
 }
 
 enum class TmdbDiscoverSeparator(val value: String) {
@@ -40,7 +40,6 @@ sealed class TmdbDiscoverTimeRange {
         val firstDate: String? = null,
         val lastDate: String? = null
     ) : TmdbDiscoverTimeRange()
-
 }
 
 sealed class TmdbDiscover {
@@ -78,8 +77,9 @@ sealed class TmdbDiscover {
             params[DiscoverParam.VOTE_COUNT_LTE] = it.toString()
         }
 
-        if (withGenres.isNotEmpty())
+        if (withGenres.isNotEmpty()) {
             params[DiscoverParam.WITH_GENRES] = withGenres.joinToString(withGenreType.value)
+        }
 
         releaseType?.let {
             params[DiscoverParam.Movie.WITH_RELEASE_TYPE] = it.value.toString()
@@ -93,8 +93,9 @@ sealed class TmdbDiscover {
             params[DiscoverParam.WATCH_REGION] = it
         }
 
-        if (withWatchMonetizationTypes.isNotEmpty())
+        if (withWatchMonetizationTypes.isNotEmpty()) {
             params[DiscoverParam.WATCH_REGION] = withWatchMonetizationTypes.joinToString(",") { it.value }
+        }
 
         return params
     }
@@ -114,7 +115,7 @@ sealed class TmdbDiscover {
         override val withWatchProvidersType: TmdbDiscoverSeparator = TmdbDiscoverSeparator.OR,
         override val withWatchProviders: List<Int> = emptyList(),
         override val watchRegion: String? = null,
-        override val withWatchMonetizationTypes: List<TmdbWatchMonetizationType> = emptyList(),
+        override val withWatchMonetizationTypes: List<TmdbWatchMonetizationType> = emptyList()
     ) : TmdbDiscover() {
 
         override fun buildParameters(): Map<String, String?> {
@@ -129,7 +130,6 @@ sealed class TmdbDiscover {
                 is TmdbDiscoverTimeRange.BetweenYears -> {
                     params[DiscoverParam.Movie.RELEASE_DATE_GTE] = releaseDate.firstDayOfYear
                     params[DiscoverParam.Movie.RELEASE_DATE_LTE] = releaseDate.lastDayOfYear
-
                 }
                 is TmdbDiscoverTimeRange.OneYear -> {
                     params[DiscoverParam.Movie.PRIMARY_RELEASE_YEAR] = releaseDate.year.toString()
@@ -145,7 +145,6 @@ sealed class TmdbDiscover {
 
             return params
         }
-
     }
 
     data class Show(
@@ -165,7 +164,7 @@ sealed class TmdbDiscover {
         override val withWatchProvidersType: TmdbDiscoverSeparator = TmdbDiscoverSeparator.OR,
         override val withWatchProviders: List<Int> = emptyList(),
         override val watchRegion: String? = null,
-        override val withWatchMonetizationTypes: List<TmdbWatchMonetizationType> = emptyList(),
+        override val withWatchMonetizationTypes: List<TmdbWatchMonetizationType> = emptyList()
     ) : TmdbDiscover() {
 
         override fun buildParameters(): Map<String, String?> {
@@ -187,7 +186,6 @@ sealed class TmdbDiscover {
                 is TmdbDiscoverTimeRange.BetweenYears -> {
                     params[DiscoverParam.Show.FIRST_AIR_DATE_GTE] = firstAirDate.firstDayOfYear
                     params[DiscoverParam.Show.FIRST_AIR_DATE_LTE] = firstAirDate.lastDayOfYear
-
                 }
                 is TmdbDiscoverTimeRange.OneYear -> {
                     params[DiscoverParam.Show.FIRST_AIR_DATE_YEAR] = firstAirDate.year.toString()
@@ -203,11 +201,8 @@ sealed class TmdbDiscover {
 
             return params
         }
-
     }
-
 }
-
 
 object DiscoverParam {
 
@@ -247,7 +242,6 @@ object DiscoverParam {
         const val WITH_CREW = "with_crew"
         const val WITH_PEOPLE = "with_people"
         const val WITH_ORIGINAL_LANGUAGE = "with_original_language"
-
     }
 
     object Show {
@@ -266,5 +260,4 @@ object DiscoverParam {
         const val WITHOUT_KEYWORDS = "without_keywords"
         const val SCREENED_THEATRICALLY = "screened_theatrically"
     }
-
 }

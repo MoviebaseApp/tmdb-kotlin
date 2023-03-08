@@ -5,7 +5,6 @@ import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.runTest
 import org.junit.jupiter.api.Test
 
-
 class Tmdb4ListApiTest {
 
     val client = mockHttpClient(
@@ -13,7 +12,7 @@ class Tmdb4ListApiTest {
         responses = mapOf(
             "list/82963?page=1" to "list/list_82963.json",
             "list/932?page=1" to "list/list_932.json",
-            "list/3321?page=1" to "list/list_3321.json",
+            "list/3321?page=1" to "list/list_3321.json"
         )
     )
 
@@ -48,5 +47,4 @@ class Tmdb4ListApiTest {
         assertThat(list.name).isEqualTo("Anime Movies")
         assertThat(list.createdBy.name).isEqualTo("Star")
     }
-
 }
