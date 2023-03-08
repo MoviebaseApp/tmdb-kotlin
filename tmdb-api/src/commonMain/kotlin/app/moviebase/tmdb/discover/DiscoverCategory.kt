@@ -6,14 +6,14 @@ import app.moviebase.tmdb.model.TmdbWatchProviderId
 
 sealed class DiscoverCategory {
 
-    object NowPlaying: DiscoverCategory()
-    object Upcoming: DiscoverCategory()
-    data class Popular(val mediaType: TmdbMediaType): DiscoverCategory()
-    data class TopRated(val mediaType: TmdbMediaType): DiscoverCategory()
-    object AiringToday: DiscoverCategory()
-    object OnTv: DiscoverCategory()
-    data class OnDvd(val mediaType: TmdbMediaType): DiscoverCategory()
-    data class Network(val network: Int): DiscoverCategory() {
+    object NowPlaying : DiscoverCategory()
+    object Upcoming : DiscoverCategory()
+    data class Popular(val mediaType: TmdbMediaType) : DiscoverCategory()
+    data class TopRated(val mediaType: TmdbMediaType) : DiscoverCategory()
+    object AiringToday : DiscoverCategory()
+    object OnTv : DiscoverCategory()
+    data class OnDvd(val mediaType: TmdbMediaType) : DiscoverCategory()
+    data class Network(val network: Int) : DiscoverCategory() {
         companion object {
             val NETFLIX = Network(TmdbNetworkId.NETFLIX)
             val AMAZON = Network(TmdbNetworkId.AMAZON)
@@ -21,7 +21,7 @@ sealed class DiscoverCategory {
             val APPLE_TV = Network(TmdbNetworkId.APPLE_TV)
         }
     }
-    data class OnStreaming(val mediaType: TmdbMediaType, val watchRegion: String, val watchProviders: List<Int>): DiscoverCategory() {
+    data class OnStreaming(val mediaType: TmdbMediaType, val watchRegion: String, val watchProviders: List<Int>) : DiscoverCategory() {
         companion object {
             fun Netflix(mediaType: TmdbMediaType, watchRegion: String) = OnStreaming(
                 mediaType,
@@ -48,5 +48,4 @@ sealed class DiscoverCategory {
             )
         }
     }
-
 }

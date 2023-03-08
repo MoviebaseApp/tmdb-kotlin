@@ -1,3 +1,5 @@
+// ktlint-disable filename
+
 package app.moviebase.tmdb.model
 
 enum class TmdbListSortBy(val value: String) {
@@ -8,5 +10,5 @@ enum class TmdbListSortBy(val value: String) {
     POPULARITY("popularity"),
     RELEASE_DATE(" release_date"),
     REVENUE("revenue"),
-    VOTE_COUNT("vote_count"),
+    VOTE_COUNT("vote_count")
 }

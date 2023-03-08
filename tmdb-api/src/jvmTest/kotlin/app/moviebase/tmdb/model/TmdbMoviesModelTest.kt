@@ -22,5 +22,4 @@ class TmdbMoviesModelTest {
 
         assertThat(image).isEqualTo(TmdbImage("/3FHrAeYMogXd6K1e5tUzQAiS7GE.jpg", TmdbImageType.BACKDROP))
     }
-
 }

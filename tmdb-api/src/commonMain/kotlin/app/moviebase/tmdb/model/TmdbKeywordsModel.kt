@@ -12,14 +12,13 @@ data class TmdbKeywordDetail(
     @SerialName("original_language") val originalLanguage: String,
     @SerialName("original_name") val originalName: String,
     @SerialName("overview") val overview: String,
-    @SerialName("poster_path") val posterPath: String?,
-): TmdbSearchable
-
+    @SerialName("poster_path") val posterPath: String?
+) : TmdbSearchable
 
 @Serializable
 data class TmdbKeywordPageResult(
     @SerialName("page") override val page: Int,
     @SerialName("results") override val results: List<TmdbKeywordDetail> = emptyList(),
     @SerialName("total_results") override val totalResults: Int,
-    @SerialName("total_pages") override val totalPages: Int,
+    @SerialName("total_pages") override val totalPages: Int
 ) : TmdbPageResult<TmdbKeywordDetail>

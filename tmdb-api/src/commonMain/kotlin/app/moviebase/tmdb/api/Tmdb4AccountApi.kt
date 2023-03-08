@@ -28,7 +28,7 @@ class Tmdb4AccountApi internal constructor(private val client: HttpClient) {
         accountId: String,
         page: Int,
         sortBy: TmdbListSortBy? = null,
-        sortOrder: TmdbSortOrder = TmdbSortOrder.DESC,
+        sortOrder: TmdbSortOrder = TmdbSortOrder.DESC
     ): TmdbMoviePageResult = client.get {
         endPointAccount(accountId, TmdbRequestMediaType.MOVIE.value, "favorites")
         sortBy?.let { parameterSortBy(it, sortOrder) }
@@ -44,8 +44,8 @@ class Tmdb4AccountApi internal constructor(private val client: HttpClient) {
         accountId: String,
         page: Int,
         sortBy: TmdbListSortBy? = null,
-        sortOrder: TmdbSortOrder = TmdbSortOrder.DESC,
-    ): TmdbShowPageResult  = client.get {
+        sortOrder: TmdbSortOrder = TmdbSortOrder.DESC
+    ): TmdbShowPageResult = client.get {
         endPointAccountList(accountId, TmdbRequestMediaType.TV, "favorites")
         sortBy?.let { parameterSortBy(it, sortOrder) }
         parameterPage(page)
@@ -55,7 +55,7 @@ class Tmdb4AccountApi internal constructor(private val client: HttpClient) {
         accountId: String,
         page: Int,
         sortBy: TmdbListSortBy? = null,
-        sortOrder: TmdbSortOrder = TmdbSortOrder.DESC,
+        sortOrder: TmdbSortOrder = TmdbSortOrder.DESC
     ): TmdbMoviePageResult = client.get {
         endPointAccountList(accountId, TmdbRequestMediaType.MOVIE, "recommendations")
         sortBy?.let { parameterSortBy(it, sortOrder) }
@@ -66,7 +66,7 @@ class Tmdb4AccountApi internal constructor(private val client: HttpClient) {
         accountId: String,
         page: Int,
         sortBy: TmdbListSortBy? = null,
-        sortOrder: TmdbSortOrder = TmdbSortOrder.DESC,
+        sortOrder: TmdbSortOrder = TmdbSortOrder.DESC
     ): TmdbShowPageResult = client.get {
         endPointAccount(accountId, TmdbRequestMediaType.TV.value, "recommendations")
         sortBy?.let { parameterSortBy(it, sortOrder) }
@@ -77,7 +77,7 @@ class Tmdb4AccountApi internal constructor(private val client: HttpClient) {
         accountId: String,
         page: Int,
         sortBy: TmdbListSortBy? = null,
-        sortOrder: TmdbSortOrder = TmdbSortOrder.DESC,
+        sortOrder: TmdbSortOrder = TmdbSortOrder.DESC
     ): TmdbMoviePageResult = client.get {
         endPointAccountList(accountId, TmdbRequestMediaType.MOVIE, "watchlist")
         sortBy?.let { parameterSortBy(it, sortOrder) }
@@ -88,7 +88,7 @@ class Tmdb4AccountApi internal constructor(private val client: HttpClient) {
         accountId: String,
         page: Int,
         sortBy: TmdbListSortBy? = null,
-        sortOrder: TmdbSortOrder = TmdbSortOrder.DESC,
+        sortOrder: TmdbSortOrder = TmdbSortOrder.DESC
     ): TmdbShowPageResult = client.get {
         endPointAccountList(accountId, TmdbRequestMediaType.TV, "watchlist")
         sortBy?.let { parameterSortBy(it, sortOrder) }

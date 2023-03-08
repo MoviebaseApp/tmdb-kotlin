@@ -6,16 +6,15 @@ import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.runTest
 import org.junit.jupiter.api.Test
 
-
 class TmdbPeopleApiTest {
 
     val client = mockHttpClient(
         version = 3,
         responses = mapOf(
             "person/287?language=en-US&append_to_response=external_ids,images,tagged_images,movie_credits,tv_credits"
-                    to "person/person_details_287.json",
+                to "person/person_details_287.json",
             "person/19292/movie_credits?language=en-US" to "person/person_movie_credits_19292.json",
-            "person/19292/tv_credits?language=en-US" to "person/person_tv_credits_19292.json",
+            "person/19292/tv_credits?language=en-US" to "person/person_tv_credits_19292.json"
         )
     )
 
@@ -31,7 +30,7 @@ class TmdbPeopleApiTest {
                 AppendResponse.IMAGES,
                 AppendResponse.TAGGED_IMAGES,
                 AppendResponse.MOVIE_CREDITS,
-                AppendResponse.TV_CREDITS,
+                AppendResponse.TV_CREDITS
             )
         )
 

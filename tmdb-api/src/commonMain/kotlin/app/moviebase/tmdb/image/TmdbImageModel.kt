@@ -16,9 +16,7 @@ data class TmdbImage(
         fun poster(path: String?) = build(path, TmdbImageType.POSTER)
         fun backdrop(path: String?) = build(path, TmdbImageType.BACKDROP)
         fun profile(path: String?) = build(path, TmdbImageType.PROFILE)
-
     }
-
 }
 
 object TmdbImageSize {
@@ -114,5 +112,4 @@ object YoutubeImageSize {
         width <= 320 -> SIZE_MDEFAULT
         else -> SIZE_HQDEFAULT
     }
-
 }

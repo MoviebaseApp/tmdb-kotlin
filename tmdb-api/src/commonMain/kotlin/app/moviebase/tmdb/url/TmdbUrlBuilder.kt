@@ -9,12 +9,12 @@ object TmdbUrlBuilder {
     /**
      * Example: https://www.themoviedb.org/u/msbreviews
      */
-    fun buildUserPage(userId: String) = "${TmdbWebConfig.BASE_WEBSITE_URL}/u/${userId}"
+    fun buildUserPage(userId: String) = "${TmdbWebConfig.BASE_WEBSITE_URL}/u/$userId"
 
     /**
      * Example: https://www.themoviedb.org/review/63501e9ed363e5007a664110
      */
-    fun buildReviewPage(reviewId: Int) = "${TmdbWebConfig.BASE_WEBSITE_URL}/review/${reviewId}"
+    fun buildReviewPage(reviewId: Int) = "${TmdbWebConfig.BASE_WEBSITE_URL}/review/$reviewId"
 
     /**
      * Build the video URL depending on the site the video is from

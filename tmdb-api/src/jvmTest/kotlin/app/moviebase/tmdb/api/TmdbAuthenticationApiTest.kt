@@ -3,7 +3,9 @@ package app.moviebase.tmdb.api
 import app.moviebase.tmdb.remote.mockHttpClient
 import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.runTest
-import kotlinx.datetime.*
+import kotlinx.datetime.TimeZone
+import kotlinx.datetime.toInstant
+import kotlinx.datetime.toLocalDateTime
 import org.junit.jupiter.api.Test
 
 class TmdbAuthenticationApiTest {
@@ -11,7 +13,7 @@ class TmdbAuthenticationApiTest {
     val client = mockHttpClient(
         version = 3,
         responses = mapOf(
-            "authentication/token/new" to "authentication/request_token.json",
+            "authentication/token/new" to "authentication/request_token.json"
         )
     )
 
@@ -34,6 +36,4 @@ class TmdbAuthenticationApiTest {
 
         assertThat(url).isEqualTo("https://www.themoviedb.org/authenticate/57e299f02ff5309efcdab5b2c26c8ca80aadfce7?redirect_to=auth://app")
     }
-
-
 }

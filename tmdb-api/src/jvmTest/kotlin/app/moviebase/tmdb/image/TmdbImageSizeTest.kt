@@ -32,6 +32,4 @@ class TmdbImageSizeTest {
 
         assertThat(sizeKey).isEqualTo("w300")
     }
-
-
 }

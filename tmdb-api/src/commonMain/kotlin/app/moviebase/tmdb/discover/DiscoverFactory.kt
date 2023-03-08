@@ -1,11 +1,15 @@
 package app.moviebase.tmdb.discover
 
-import app.moviebase.tmdb.model.*
+import app.moviebase.tmdb.model.TmdbDiscover
+import app.moviebase.tmdb.model.TmdbDiscoverMovieSortBy
+import app.moviebase.tmdb.model.TmdbDiscoverShowSortBy
+import app.moviebase.tmdb.model.TmdbDiscoverTimeRange
+import app.moviebase.tmdb.model.TmdbMediaType
+import app.moviebase.tmdb.model.TmdbReleaseType
 import app.moviebase.tmdb.remote.currentLocalDate
 import app.moviebase.tmdb.remote.minusWeeks
 import app.moviebase.tmdb.remote.plusDays
 import app.moviebase.tmdb.remote.plusWeeks
-
 
 object DiscoverFactory {
 
@@ -44,7 +48,6 @@ object DiscoverFactory {
             airDateLte = localDate
         )
     }
-
 
     fun createOnTv(): TmdbDiscover.Show {
         val airDateGte = currentLocalDate()
@@ -136,5 +139,4 @@ object DiscoverFactory {
             else -> throw IllegalArgumentException("$mediaType type is not supported for discover")
         }
     }
-
 }

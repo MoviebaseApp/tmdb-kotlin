@@ -28,7 +28,7 @@ import app.moviebase.tmdb.remote.HttpClientFactory
 import app.moviebase.tmdb.remote.TmdbDsl
 import app.moviebase.tmdb.remote.interceptRequest
 import io.ktor.client.HttpClient
-import io.ktor.client.request.*
+import io.ktor.client.request.parameter
 
 @TmdbDsl
 fun Tmdb3(block: TmdbClientConfig.() -> Unit): Tmdb3 {

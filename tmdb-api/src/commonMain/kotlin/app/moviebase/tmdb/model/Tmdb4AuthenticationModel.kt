@@ -32,5 +32,5 @@ data class Tmdb4AccessToken(
     @SerialName("access_token") val accessToken: String,
     @SerialName("success") val success: Boolean,
     @SerialName("status_code") val statusCode: Int,
-    @SerialName("account_id") val accountId: String,
+    @SerialName("account_id") val accountId: String
 )

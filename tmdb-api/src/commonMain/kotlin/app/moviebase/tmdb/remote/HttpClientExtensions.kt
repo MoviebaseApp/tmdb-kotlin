@@ -24,4 +24,3 @@ internal fun HttpClient.interceptRequest(phase: PipelinePhase = HttpRequestPipel
  */
 internal fun HttpClient.interceptResponse(phase: PipelinePhase = HttpResponsePipeline.Parse, interceptor: ResponseInterceptor) =
     responsePipeline.intercept(phase) { interceptor(context) }
-

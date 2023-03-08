@@ -10,7 +10,7 @@ class TmdbConfigurationApiTest {
     val client = mockHttpClient(
         version = 3,
         responses = mapOf(
-            "configuration" to "configuration/configuration.json",
+            "configuration" to "configuration/configuration.json"
         )
     )
 

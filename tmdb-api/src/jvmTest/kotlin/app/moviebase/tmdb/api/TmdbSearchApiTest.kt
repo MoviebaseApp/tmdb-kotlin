@@ -19,7 +19,7 @@ class TmdbSearchApiTest {
             "search/person?query=ka&include_adult=false&page=1&region=US&language=en" to "search/search_person_ka.json",
             "search/company?query=fox&page=1" to "search/search_company_fox.json",
             "search/collection?query=fast&page=1&language=en" to "search/search_collection_fast.json",
-            "search/keyword?query=future&page=1" to "search/search_keyword_future.json",
+            "search/keyword?query=future&page=1" to "search/search_keyword_future.json"
         )
     )
 
@@ -27,7 +27,7 @@ class TmdbSearchApiTest {
 
     @Test
     fun `it can search shows by query Simpsons on 1996`() = runTest {
-        val pageResult = classToTest.findShows("Simpsons", 1, "en", "US",false, firstAirDateYear = 1996)
+        val pageResult = classToTest.findShows("Simpsons", 1, "en", "US", false, firstAirDateYear = 1996)
 
         assertThat(pageResult.page).isEqualTo(1)
         assertThat(pageResult.totalPages).isEqualTo(1)
@@ -39,7 +39,7 @@ class TmdbSearchApiTest {
 
     @Test
     fun `it can search shows by query Lupin`() = runTest {
-        val pageResult = classToTest.findShows("Lupin", 1, "en", "US",false)
+        val pageResult = classToTest.findShows("Lupin", 1, "en", "US", false)
 
         assertThat(pageResult.page).isEqualTo(1)
         assertThat(pageResult.totalPages).isEqualTo(1)
@@ -51,7 +51,7 @@ class TmdbSearchApiTest {
 
     @Test
     fun `it can search shows by query SWAT`() = runTest {
-        val pageResult = classToTest.findShows("S.W.A.T.", 1, "en", "US",false)
+        val pageResult = classToTest.findShows("S.W.A.T.", 1, "en", "US", false)
 
         assertThat(pageResult.page).isEqualTo(1)
         assertThat(pageResult.totalPages).isEqualTo(1)
@@ -63,7 +63,7 @@ class TmdbSearchApiTest {
 
     @Test
     fun `it can search movies by query Star Wars with primary release year`() = runTest {
-        val pageResult = classToTest.findMovies("Star Wars", 1, "en", "US",false, primaryReleaseYear = 1977)
+        val pageResult = classToTest.findMovies("Star Wars", 1, "en", "US", false, primaryReleaseYear = 1977)
 
         assertThat(pageResult.page).isEqualTo(1)
         assertThat(pageResult.totalPages).isEqualTo(1)
@@ -76,7 +76,7 @@ class TmdbSearchApiTest {
 
     @Test
     fun `it can search movies by query Star Wars on year 1977`() = runTest {
-        val pageResult = classToTest.findMovies("Star Wars", 1, "en", "US",false, year = 1977)
+        val pageResult = classToTest.findMovies("Star Wars", 1, "en", "US", false, year = 1977)
 
         assertThat(pageResult.page).isEqualTo(1)
         assertThat(pageResult.totalPages).isEqualTo(1)
@@ -89,7 +89,7 @@ class TmdbSearchApiTest {
 
     @Test
     fun `it can search movies by query Star Wars`() = runTest {
-        val pageResult = classToTest.findMovies("Star Wars", 1, "en", "US",false)
+        val pageResult = classToTest.findMovies("Star Wars", 1, "en", "US", false)
 
         assertThat(pageResult.page).isEqualTo(1)
         assertThat(pageResult.totalPages).isEqualTo(7)
@@ -102,7 +102,7 @@ class TmdbSearchApiTest {
 
     @Test
     fun `it can search persons by query ka`() = runTest {
-        val pageResult = classToTest.findPeople("ka", 1, "en", "US",false)
+        val pageResult = classToTest.findPeople("ka", 1, "en", "US", false)
 
         assertThat(pageResult.page).isEqualTo(1)
         assertThat(pageResult.totalPages).isEqualTo(500)
@@ -152,6 +152,4 @@ class TmdbSearchApiTest {
         assertThat(company.id).isEqualTo(797559)
         assertThat(company.name).isEqualTo("Future Collection")
     }
-
 }
-

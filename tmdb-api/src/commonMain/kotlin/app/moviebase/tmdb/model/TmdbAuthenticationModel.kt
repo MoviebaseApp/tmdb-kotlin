@@ -11,7 +11,9 @@ import kotlinx.serialization.Serializable
 @Serializable
 data class TmdbRequestToken(
     @SerialName("success") val success: Boolean,
-    @SerialName("expires_at") @Serializable(LocalDateTimeTmdbUtcSerializer::class) val expiredAt: LocalDateTime?,
+    @SerialName("expires_at")
+    @Serializable(LocalDateTimeTmdbUtcSerializer::class)
+    val expiredAt: LocalDateTime?,
     @SerialName("request_token") val requestToken: String
 )
 
@@ -27,6 +29,8 @@ data class TmdbSession(
 @Serializable
 data class TmdbGuestSession(
     @SerialName("success") val success: Boolean,
-    @SerialName("expires_at") @Serializable(LocalDateTimeTmdbUtcSerializer::class) val expiredAt: LocalDateTime?,
+    @SerialName("expires_at")
+    @Serializable(LocalDateTimeTmdbUtcSerializer::class)
+    val expiredAt: LocalDateTime?,
     @SerialName("guest_session_id") val guestSessionId: String
 )

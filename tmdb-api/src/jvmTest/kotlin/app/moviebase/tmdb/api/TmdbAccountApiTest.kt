@@ -13,7 +13,7 @@ class TmdbAccountApiTest {
         responses = mapOf(
             "account" to "account/account_details.json",
             "account/18029486/favorite" to "account/mark_favorite_76600.json",
-            "account/18029486/favorite/movies" to "account/favorite_movies.json",
+            "account/18029486/favorite/movies" to "account/favorite_movies.json"
         )
     )
 

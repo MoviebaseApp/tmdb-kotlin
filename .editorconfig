@@ -1,0 +1,7 @@
+root = true
+
+[*.{kt,kts}]
+ktlint_code_style = official
+ktlint_no-semi = disabled
+ktlint_filename = disabled
+ktlint_trailing-comma-on-declaration-site = disabled

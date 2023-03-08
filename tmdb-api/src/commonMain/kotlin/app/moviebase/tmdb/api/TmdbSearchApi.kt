@@ -9,7 +9,6 @@ import io.ktor.client.*
 import io.ktor.client.call.*
 import io.ktor.client.request.*
 
-
 class TmdbSearchApi internal constructor(private val client: HttpClient) {
 
     suspend fun findMovies(
@@ -19,7 +18,7 @@ class TmdbSearchApi internal constructor(private val client: HttpClient) {
         region: String? = null,
         includeAdult: Boolean = false,
         year: Int? = null,
-        primaryReleaseYear: Int? = null,
+        primaryReleaseYear: Int? = null
     ): TmdbMoviePageResult = client.get {
         endSearch(TmdbSearchType.MOVIE)
 
@@ -38,7 +37,7 @@ class TmdbSearchApi internal constructor(private val client: HttpClient) {
         language: String? = null,
         region: String? = null,
         includeAdult: Boolean? = null,
-        firstAirDateYear: Int? = null,
+        firstAirDateYear: Int? = null
     ): TmdbShowPageResult = client.get {
         endSearch(TmdbSearchType.TV)
 
@@ -79,7 +78,7 @@ class TmdbSearchApi internal constructor(private val client: HttpClient) {
     suspend fun findCollections(
         query: String,
         page: Int,
-        language: String? = null,
+        language: String? = null
     ): TmdbCollectionPageResult = client.get {
         endSearch(TmdbSearchType.COLLECTION)
 

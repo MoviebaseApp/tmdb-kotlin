@@ -8,5 +8,4 @@ class TmdbException(
 ) : IllegalStateException("Status code: ${tmdbResponse.statusCode}. Message: \"${tmdbResponse.statusMessage}\"", caused) {
 
     val statusCode get() = tmdbResponse.statusCode
-
 }

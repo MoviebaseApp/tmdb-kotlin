@@ -47,7 +47,7 @@ data class TmdbNetwork(
     @SerialName("headquarters") val headquarters: String? = null,
     @SerialName("homepage") val homepage: String? = null,
     @SerialName("images") val images: NetworkImages? = null,
-    @SerialName("logo_path") val logoPath: String? = null,
+    @SerialName("logo_path") val logoPath: String? = null
 )
 
 @Serializable
