@@ -10,6 +10,14 @@ plugins {
     id("signing")
 }
 
+val versionMajor = 0
+val versionMinor = 9
+val versionPatch = 0
+val useSnapshot = false
+
+group = "app.moviebase"
+version = "$versionMajor.$versionMinor.$versionPatch" + if (useSnapshot) "-SNAPSHOT" else ""
+
 kotlin {
     jvm()
     js(IR) {
