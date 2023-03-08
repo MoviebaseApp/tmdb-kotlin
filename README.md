@@ -1,29 +1,28 @@
 [Website](https://www.themoviedb.org) |
 [Forum](https://www.themoviedb.org/talk/category/5047958519c29526b50017d6) |
 [Documentation](https://www.themoviedb.org/documentation/api) |
-[TMDb 3 API](https://developers.themoviedb.org/3)
-
+[TMDB API](https://developers.themoviedb.org/3)
 
 <a href="https://www.themoviedb.org"><img alt="TMDb" src="doc/images/blue_short.svg" width="600"></a>
 
-***Get movie and TV show content from TMDb in a fast and simple way.***
+***Get movies and TV shows from the largest community database.***
 
-![Github Actions](https://github.com/MoviebaseApp/tmdb-api/actions/workflows/build.yml/badge.svg)
 [![Maven Central](https://img.shields.io/maven-central/v/app.moviebase/tmdb-api?label=Maven%20Central)](https://search.maven.org/artifact/app.moviebase/tmdb-api)
-[![Issues](https://img.shields.io/github/issues/MoviebaseApp/tmdb-api/total)](http://kotlinlang.org)
+![Github Actions](https://github.com/MoviebaseApp/tmdb-api/actions/workflows/build.yml/badge.svg)
 [![Kotlin](https://img.shields.io/badge/kotlin-1.8.20-blue.svg?logo=kotlin)](http://kotlinlang.org)
 [![Gradle](https://img.shields.io/badge/Gradle-8-green?style=flat)](https://gradle.org)
 [![GitHub License](https://img.shields.io/badge/license-Apache%20License%202.0-blue.svg?style=flat)](http://www.apache.org/licenses/LICENSE-2.0)
 
+
 <hr>
 
+# TMDB API
+TMDB API is a **Kotlin Multiplatform** library for fetching movies, TV shows, episodes, and all relevant information.    
 
-# TMDb API
-This library gives access to [TMDb API](https://www.themoviedb.org/documentation/api) version 3 and 4 for mobile, desktop, and web applications. 
-It supports Swift, Kotlin, and JavaScript by setting up as a Kotlin Multiplatform project.
-
-*This library is mainly used and supported by [Moviebase](https://www.moviebase.app).*
-
+* Written in Kotlin native with ktor from the ground up.
+* Support for Android, iOS, desktop, and web applications.
+* High customizable HttpClient configuration
+* Fully supported by [Moviebase for Android](https://play.google.com/store/apps/details?id=com.moviebase)
 
 ## Adding to your project
 
@@ -43,7 +42,7 @@ To use the library in a single-platform project, add a dependency.
 
 ```kotlin
 dependencies {
-    implementation("app.moviebase:tmdb-api:0.8.0")
+    implementation("app.moviebase:tmdb-api:0.9.0")
 }
 ```
 
@@ -52,7 +51,7 @@ In Kotlin Multiplatform projects, add the dependency to your commonMain source-s
 ```kotlin
 commonMain {
     dependencies {
-        implementation("app.moviebase:tmdb-api:0.8.0")
+        implementation("app.moviebase:tmdb-api:0.9.0")
     }
 }
 ``` 
@@ -65,15 +64,48 @@ Add a dependency to the `<dependencies>` element.
 <dependency>
     <groupId>app.moviebase</groupId>
     <artifactId>tmdb-api</artifactId>
-    <version>0.8.0</version>
+    <version>0.9.0</version>
 </dependency>
 ```
 
 
 ## Usage
-Most of the library follows the possibilities and naming at the official [TMDb documentation](https://www.themoviedb.org/documentation/api).
+Most of the library follows the possibilities and naming at the [official documentation](https://www.themoviedb.org/documentation/api). The documentation of the API endpoints is on [version 3](https://developers.themoviedb.org/3) and [version 4](https://developers.themoviedb.org/4).
 
-The documentation of the endpoints can be found in [Version 3](https://developers.themoviedb.org/3) and [Version 4](https://developers.themoviedb.org/4).
+### Configuration
+Build up your TMDB instance to access the APIs. You can configure the entire HttpClient of ktor.
+
+```kotlin
+val tmdb = Tmdb3 {
+    tmdbApiKey = "yourApiKey"
+
+    tmdbAuthCredentials {
+        authenticationToken = "auth token for version 4"
+        val storage = TmdbAccountStorage() // use own class here
+        loadSessionId { storage.sessionId  }
+        loadGuestSessionId { storage.guestSessionId }
+        loadAccessToken { storage.accessToken }
+    }
+    
+    expectSuccess = false // if you want to disable exceptions
+    useCache = true
+    useTimeout = true
+    maxRetriesOnException = 3 // retries when network calls throw an exception    
+
+    // add your own client
+    httpClient(OkHttp) {
+        engine {
+            
+        }
+    }
+
+    httpClient {
+        // for custom HttpClient configuration
+    }
+}
+```
+
+You need to add your own TMDB API key for using the library. The instruction for the creation is in the [TMDB developer guide](https://developers.themoviedb.org).
 
 
 ### Get information
@@ -154,7 +186,7 @@ yourApp://auth/login?request_token=[request_token]&approved=true
 
 ### Build image URL
 
-You can build an image URL via the poster file path and size key. More information on the [TMDb images site](https://developers.themoviedb.org/3/getting-started/images).
+You can build an image URL via the poster file path and size key. More information on the [TMDB images site](https://developers.themoviedb.org/3/getting-started/images).
 
 ```kotlin
 val url = TmdbImageUrlBuilder.build("nBNZadXqJSdt05SHLqgT0HuC5Gm.jpg", "w154")
@@ -188,4 +220,4 @@ val url = TmdbImageUrlBuilder.build(vimeoTmdbVideo) // It will return `https://v
 
 <hr>
 
-*This library uses the TMDb but is not endorsed or certified by TMDb. These services are licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0).*
+*This library uses the TMDB but is not endorsed or certified by TMDB. These services are licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0).*
