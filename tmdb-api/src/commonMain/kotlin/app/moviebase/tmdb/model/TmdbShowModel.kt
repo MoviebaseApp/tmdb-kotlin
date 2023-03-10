@@ -138,9 +138,9 @@ data class TmdbSeasonDetail(
     @SerialName("season_number") val seasonNumber: Int,
     @SerialName("overview") val overview: String,
     val episodes: List<TmdbEpisode>? = null,
-    @SerialName("external_ids") val externalIds: TmdbExternalIds,
-    @SerialName("videos") val videos: TmdbResult<TmdbVideo>,
-    @SerialName("images") val images: TmdbResult<TmdbImages>
+    @SerialName("external_ids") val externalIds: TmdbExternalIds? = null,
+    @SerialName("videos") val videos: TmdbResult<TmdbVideo>? = null,
+    @SerialName("images") val images: TmdbResult<TmdbImages>? = null
 ) : TmdbAnyMedia, TmdbPosterMedia {
 
     val numberOfEpisodes get() = episodeCount ?: episodes?.size ?: 0
@@ -176,10 +176,10 @@ data class TmdbEpisodeDetail(
     @SerialName("vote_average") override val voteAverage: Float? = null,
     @SerialName("vote_count") override val voteCount: Int? = null,
     @SerialName("still_path") val stillPath: String? = null,
-    @SerialName("images") val images: TmdbResult<TmdbImages>,
-    @SerialName("crew") val crew: List<TmdbCrew>,
-    @SerialName("guest_stars") val guestStars: List<TmdbCast>,
-    @SerialName("external_ids") val externalIds: TmdbExternalIds
+    @SerialName("images") val images: TmdbResult<TmdbImages>? = null,
+    @SerialName("crew") val crew: List<TmdbCrew>? = null,
+    @SerialName("guest_stars") val guestStars: List<TmdbCast>? = null,
+    @SerialName("external_ids") val externalIds: TmdbExternalIds? = null
 ) : TmdbAnyMedia, TmdbBackdropMedia, TmdbRatingItem {
     override val backdropPath: String? get() = stillPath
 }
