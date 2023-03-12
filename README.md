@@ -2,7 +2,6 @@
 [Forum](https://www.themoviedb.org/talk/category/5047958519c29526b50017d6) |
 [Documentation](https://www.themoviedb.org/documentation/api) |
 [TMDB API 3](https://developers.themoviedb.org/3)
-[TMDB API 4](https://developers.themoviedb.org/4)
 
 <a href="https://www.themoviedb.org"><img alt="TMDb" src="doc/images/blue_short.svg" width="600"></a>
 
