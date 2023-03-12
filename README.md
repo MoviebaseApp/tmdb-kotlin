@@ -1,7 +1,8 @@
 [Website](https://www.themoviedb.org) |
 [Forum](https://www.themoviedb.org/talk/category/5047958519c29526b50017d6) |
 [Documentation](https://www.themoviedb.org/documentation/api) |
-[TMDB API](https://developers.themoviedb.org/3)
+[TMDB API 3](https://developers.themoviedb.org/3)
+[TMDB API 4](https://developers.themoviedb.org/4)
 
 <a href="https://www.themoviedb.org"><img alt="TMDb" src="doc/images/blue_short.svg" width="600"></a>
 
@@ -9,6 +10,7 @@
 
 [![Maven Central](https://img.shields.io/maven-central/v/app.moviebase/tmdb-api?label=Maven%20Central)](https://search.maven.org/artifact/app.moviebase/tmdb-api)
 ![Github Actions](https://github.com/MoviebaseApp/tmdb-api/actions/workflows/build.yml/badge.svg)
+[![Issues](https://img.shields.io/github/issues/MoviebaseApp/tmdb-api)](https://github.com/MoviebaseApp/tmdb-api/issues)
 [![Kotlin](https://img.shields.io/badge/kotlin-1.8.20-blue.svg?logo=kotlin)](http://kotlinlang.org)
 [![Gradle](https://img.shields.io/badge/Gradle-8-green?style=flat)](https://gradle.org)
 [![GitHub License](https://img.shields.io/badge/license-Apache%20License%202.0-blue.svg?style=flat)](http://www.apache.org/licenses/LICENSE-2.0)
@@ -17,12 +19,17 @@
 <hr>
 
 # TMDB API
-TMDB API is a **Kotlin Multiplatform** library for fetching movies, TV shows, episodes, and all relevant information.    
+TMDB API is a **Kotlin Multiplatform** library for fetching movies, TV shows, episodes, and all relevant information.
 
 * Written in Kotlin native with ktor from the ground up.
 * Support for Android, iOS, desktop, and web applications.
 * High customizable HttpClient configuration
-* Fully supported by [Moviebase for Android](https://play.google.com/store/apps/details?id=com.moviebase)
+
+
+Sample projects:
+
+* [tivi](https://github.com/chrisbanes/tivi)
+* [Moviebase](https://play.google.com/store/apps/details?id=com.moviebase)
 
 ## Adding to your project
 
@@ -42,7 +49,7 @@ To use the library in a single-platform project, add a dependency.
 
 ```kotlin
 dependencies {
-    implementation("app.moviebase:tmdb-api:0.9.0")
+    implementation("app.moviebase:tmdb-api:0.9.1")
 }
 ```
 
@@ -51,10 +58,10 @@ In Kotlin Multiplatform projects, add the dependency to your commonMain source-s
 ```kotlin
 commonMain {
     dependencies {
-        implementation("app.moviebase:tmdb-api:0.9.0")
+        implementation("app.moviebase:tmdb-api:0.9.1")
     }
 }
-``` 
+```
 
 ### Maven
 
@@ -64,7 +71,7 @@ Add a dependency to the `<dependencies>` element.
 <dependency>
     <groupId>app.moviebase</groupId>
     <artifactId>tmdb-api</artifactId>
-    <version>0.9.0</version>
+    <version>0.9.1</version>
 </dependency>
 ```
 
@@ -86,16 +93,16 @@ val tmdb = Tmdb3 {
         loadGuestSessionId { storage.guestSessionId }
         loadAccessToken { storage.accessToken }
     }
-    
+
     expectSuccess = false // if you want to disable exceptions
     useCache = true
     useTimeout = true
-    maxRetriesOnException = 3 // retries when network calls throw an exception    
+    maxRetriesOnException = 3 // retries when network calls throw an exception
 
     // add your own client
     httpClient(OkHttp) {
         engine {
-            
+
         }
     }
 
@@ -215,6 +222,8 @@ val url = TmdbImageUrlBuilder.build(youtubeTmdbVideo) // It will return `https:/
 val vimeoTmdbVideo = TmdbVideo(id = "123", key = "qwerasdf", site = TmdbVideoSite.VIMEO)
 val url = TmdbImageUrlBuilder.build(vimeoTmdbVideo) // It will return `https://vimeo.com/qwerasdf`
 ```
+## Contributing 🤝
+Please feel free to [open an issue](https://github.com/MoviebaseApp/tmdb-api/issues/new/choose) if you have any questions or suggestions. Or participate in the [discussion](https://github.com/MoviebaseApp/tmdb-api/discussions). If you want to contribute, please read the [contribution guidelines](https://github.com/MoviebaseApp/tmdb-api/blob/main/CONTRIBUTING.md) for more information.
 
 <br>
 
