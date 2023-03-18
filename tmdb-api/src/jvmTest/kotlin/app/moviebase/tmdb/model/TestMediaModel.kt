@@ -1,3 +1,5 @@
+// ktlint-disable filename
+
 package app.moviebase.tmdb.model
 
 import kotlinx.datetime.LocalDate

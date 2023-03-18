@@ -1,3 +1,5 @@
+@file:Suppress("ktlint:trailing-comma-on-declaration-site", "ktlint:no-semi")
+
 package app.moviebase.tmdb.model
 
 import app.moviebase.tmdb.core.LocalDateSerializer

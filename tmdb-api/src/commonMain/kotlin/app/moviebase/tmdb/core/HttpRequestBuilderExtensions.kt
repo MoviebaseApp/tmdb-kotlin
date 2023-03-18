@@ -2,8 +2,12 @@ package app.moviebase.tmdb.core
 
 import app.moviebase.tmdb.TmdbWebConfig
 import app.moviebase.tmdb.model.AppendResponse
-import io.ktor.client.request.*
-import io.ktor.http.*
+import io.ktor.client.request.HttpRequestBuilder
+import io.ktor.client.request.parameter
+import io.ktor.http.ContentType
+import io.ktor.http.contentType
+import io.ktor.http.path
+import io.ktor.http.takeFrom
 
 internal fun HttpRequestBuilder.json() {
     contentType(ContentType.Application.Json)
