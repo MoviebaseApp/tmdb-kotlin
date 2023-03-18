@@ -31,13 +31,11 @@ allprojects {
             targetExclude("$buildDir/**/*.kt")
             targetExclude("bin/**/*.kt")
             ktlint(libs.versions.ktlint.get())
-                .setEditorConfigPath("$rootDir/.editorconfig")
         }
         kotlinGradle {
             target("**/*.kts")
             targetExclude("$buildDir/**/*.kts")
             ktlint(libs.versions.ktlint.get())
-                .setEditorConfigPath("$rootDir/.editorconfig")
         }
     }
 
