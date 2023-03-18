@@ -1,7 +1,7 @@
 package app.moviebase.tmdb
 
 import app.moviebase.tmdb.model.TmdbMovieStatus
-import app.moviebase.tmdb.remote.TmdbException
+import app.moviebase.tmdb.core.TmdbException
 import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.runTest
 import org.junit.jupiter.api.Disabled

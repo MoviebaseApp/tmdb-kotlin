@@ -3,10 +3,10 @@ package app.moviebase.tmdb.api
 import app.moviebase.tmdb.model.AppendResponse
 import app.moviebase.tmdb.model.TmdbEpisodeDetail
 import app.moviebase.tmdb.model.TmdbExternalIds
-import app.moviebase.tmdb.remote.endPointV3
-import app.moviebase.tmdb.remote.parameterAppendResponses
-import app.moviebase.tmdb.remote.parameterIncludeImageLanguage
-import app.moviebase.tmdb.remote.parameterLanguage
+import app.moviebase.tmdb.core.endPointV3
+import app.moviebase.tmdb.core.parameterAppendResponses
+import app.moviebase.tmdb.core.parameterIncludeImageLanguage
+import app.moviebase.tmdb.core.parameterLanguage
 import io.ktor.client.*
 import io.ktor.client.call.*
 import io.ktor.client.request.*

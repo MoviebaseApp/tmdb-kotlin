@@ -6,7 +6,7 @@ import app.moviebase.tmdb.model.TmdbVideoType
 import app.moviebase.tmdb.model.getCertification
 import app.moviebase.tmdb.model.getReleaseDateBy
 import app.moviebase.tmdb.model.getReleaseDatesBy
-import app.moviebase.tmdb.remote.mockHttpClient
+import app.moviebase.tmdb.core.mockHttpClient
 import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.runTest
 import org.junit.jupiter.api.Test

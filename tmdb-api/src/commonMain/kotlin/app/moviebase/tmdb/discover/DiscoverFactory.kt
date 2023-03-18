@@ -6,10 +6,10 @@ import app.moviebase.tmdb.model.TmdbDiscoverShowSortBy
 import app.moviebase.tmdb.model.TmdbDiscoverTimeRange
 import app.moviebase.tmdb.model.TmdbMediaType
 import app.moviebase.tmdb.model.TmdbReleaseType
-import app.moviebase.tmdb.remote.currentLocalDate
-import app.moviebase.tmdb.remote.minusWeeks
-import app.moviebase.tmdb.remote.plusDays
-import app.moviebase.tmdb.remote.plusWeeks
+import app.moviebase.tmdb.core.currentLocalDate
+import app.moviebase.tmdb.core.minusWeeks
+import app.moviebase.tmdb.core.plusDays
+import app.moviebase.tmdb.core.plusWeeks
 
 object DiscoverFactory {
 

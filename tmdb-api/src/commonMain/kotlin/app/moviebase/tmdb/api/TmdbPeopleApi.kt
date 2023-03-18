@@ -4,9 +4,9 @@ import app.moviebase.tmdb.model.AppendResponse
 import app.moviebase.tmdb.model.TmdbPersonDetail
 import app.moviebase.tmdb.model.TmdbPersonMovieCredits
 import app.moviebase.tmdb.model.TmdbPersonShowCredits
-import app.moviebase.tmdb.remote.endPointV3
-import app.moviebase.tmdb.remote.parameterAppendResponses
-import app.moviebase.tmdb.remote.parameterLanguage
+import app.moviebase.tmdb.core.endPointV3
+import app.moviebase.tmdb.core.parameterAppendResponses
+import app.moviebase.tmdb.core.parameterLanguage
 import io.ktor.client.*
 import io.ktor.client.call.*
 import io.ktor.client.request.*

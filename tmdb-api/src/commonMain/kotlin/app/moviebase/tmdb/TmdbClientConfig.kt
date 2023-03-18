@@ -1,6 +1,6 @@
 package app.moviebase.tmdb
 
-import app.moviebase.tmdb.remote.TmdbDsl
+import app.moviebase.tmdb.core.TmdbDsl
 import io.ktor.client.*
 import io.ktor.client.engine.*
 import io.ktor.client.plugins.logging.*
