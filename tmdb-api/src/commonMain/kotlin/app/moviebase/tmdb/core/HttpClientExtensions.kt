@@ -6,10 +6,20 @@ import io.ktor.client.request.*
 import io.ktor.client.statement.*
 import io.ktor.util.pipeline.*
 
-internal suspend inline fun <reified T> HttpClient.getResponse(
+internal suspend inline fun <reified T> HttpClient.getByPaths(
     vararg paths: String,
     block: HttpRequestBuilder.() -> Unit = {}
-): T = get(buildPaths(*paths), block).body()
+): T = get(urlString = buildPaths(*paths), block = block).body()
+
+internal suspend inline fun <reified T> HttpClient.postByPaths(
+    vararg paths: String,
+    block: HttpRequestBuilder.() -> Unit = {},
+): T = post(urlString = buildPaths(*paths), block = block).body()
+
+internal suspend inline fun <reified T> HttpClient.deleteByPaths(
+    vararg paths: String,
+    block: HttpRequestBuilder.() -> Unit = {},
+): T = delete(urlString = buildPaths(*paths), block = block).body()
 
 private fun buildPaths(vararg paths: String): String = paths.joinToString(separator = "/")
 
