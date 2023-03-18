@@ -1,7 +1,7 @@
 package app.moviebase.tmdb.api
 
 import app.moviebase.tmdb.model.*
-import app.moviebase.tmdb.core.getResponse
+import app.moviebase.tmdb.core.getByPaths
 import app.moviebase.tmdb.core.parameterAppendResponses
 import app.moviebase.tmdb.core.parameterIncludeImageLanguage
 import app.moviebase.tmdb.core.parameterLanguage
@@ -16,7 +16,7 @@ class TmdbMoviesApi internal constructor(private val client: HttpClient) {
         movieId: Int,
         language: String? = null,
         appendResponses: Iterable<AppendResponse>? = null
-    ): TmdbMovieDetail = client.getResponse(*moviePath(movieId)) {
+    ): TmdbMovieDetail = client.getByPaths(*moviePath(movieId)) {
         parameterLanguage(language)
         parameterAppendResponses(appendResponses)
     }
@@ -25,16 +25,16 @@ class TmdbMoviesApi internal constructor(private val client: HttpClient) {
         movieId: Int,
         language: String? = null,
         includeImageLanguage: String? = null
-    ): TmdbImages = client.getResponse(*moviePath(movieId, "images")) {
+    ): TmdbImages = client.getByPaths(*moviePath(movieId, "images")) {
         parameterLanguage(language)
         parameterIncludeImageLanguage(includeImageLanguage)
     }
 
-    suspend fun getExternalIds(movieId: Int): TmdbExternalIds = client.getResponse(*moviePath(movieId, "external_ids"))
+    suspend fun getExternalIds(movieId: Int): TmdbExternalIds = client.getByPaths(*moviePath(movieId, "external_ids"))
 
-    suspend fun getTranslations(movieId: Int): TmdbTranslations = client.getResponse(*moviePath(movieId, "translations"))
+    suspend fun getTranslations(movieId: Int): TmdbTranslations = client.getByPaths(*moviePath(movieId, "translations"))
 
-    suspend fun getWatchProviders(movieId: Int): TmdbProviderResult = client.getResponse(*moviePath(movieId, "watch", "providers"))
+    suspend fun getWatchProviders(movieId: Int): TmdbProviderResult = client.getByPaths(*moviePath(movieId, "watch", "providers"))
 
     private fun moviePath(movieId: Int, vararg paths: String) = arrayOf("movie", movieId.toString(), *paths)
 }
