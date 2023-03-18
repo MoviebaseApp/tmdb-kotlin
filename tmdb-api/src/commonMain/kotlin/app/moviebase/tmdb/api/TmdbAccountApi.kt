@@ -1,9 +1,9 @@
 package app.moviebase.tmdb.api
 
 import app.moviebase.tmdb.model.*
-import app.moviebase.tmdb.remote.endPointV3
-import app.moviebase.tmdb.remote.getResponse
-import app.moviebase.tmdb.remote.json
+import app.moviebase.tmdb.core.endPointV3
+import app.moviebase.tmdb.core.getResponse
+import app.moviebase.tmdb.core.json
 import io.ktor.client.*
 import io.ktor.client.call.*
 import io.ktor.client.request.*

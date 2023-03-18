@@ -1,4 +1,4 @@
-package app.moviebase.tmdb.remote
+package app.moviebase.tmdb.core
 
 import app.moviebase.tmdb.TmdbClientConfig
 import app.moviebase.tmdb.TmdbVersion

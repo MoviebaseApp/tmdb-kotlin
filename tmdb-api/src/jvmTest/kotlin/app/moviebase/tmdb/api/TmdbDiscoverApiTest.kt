@@ -9,10 +9,10 @@ import app.moviebase.tmdb.model.TmdbMediaType
 import app.moviebase.tmdb.model.TmdbPageResult
 import app.moviebase.tmdb.model.TmdbSortOrder
 import app.moviebase.tmdb.model.TmdbWatchProviderId
-import app.moviebase.tmdb.remote.currentLocalDate
-import app.moviebase.tmdb.remote.mockHttpClient
-import app.moviebase.tmdb.remote.plusDays
-import app.moviebase.tmdb.remote.plusWeeks
+import app.moviebase.tmdb.core.currentLocalDate
+import app.moviebase.tmdb.core.mockHttpClient
+import app.moviebase.tmdb.core.plusDays
+import app.moviebase.tmdb.core.plusWeeks
 import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.runTest
 import org.junit.jupiter.api.Test

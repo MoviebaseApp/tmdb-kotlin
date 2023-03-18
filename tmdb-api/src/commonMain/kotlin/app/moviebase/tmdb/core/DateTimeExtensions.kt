@@ -1,4 +1,4 @@
-package app.moviebase.tmdb.remote
+package app.moviebase.tmdb.core
 
 import kotlinx.datetime.Clock
 import kotlinx.datetime.DateTimeUnit

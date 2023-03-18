@@ -1,10 +1,10 @@
 package app.moviebase.tmdb.api
 
 import app.moviebase.tmdb.model.*
-import app.moviebase.tmdb.remote.getResponse
-import app.moviebase.tmdb.remote.parameterAppendResponses
-import app.moviebase.tmdb.remote.parameterIncludeImageLanguage
-import app.moviebase.tmdb.remote.parameterLanguage
+import app.moviebase.tmdb.core.getResponse
+import app.moviebase.tmdb.core.parameterAppendResponses
+import app.moviebase.tmdb.core.parameterIncludeImageLanguage
+import app.moviebase.tmdb.core.parameterLanguage
 import io.ktor.client.*
 
 class TmdbMoviesApi internal constructor(private val client: HttpClient) {

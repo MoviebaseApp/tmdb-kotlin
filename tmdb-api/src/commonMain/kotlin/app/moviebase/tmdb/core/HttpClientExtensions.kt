@@ -1,4 +1,4 @@
-package app.moviebase.tmdb.remote
+package app.moviebase.tmdb.core
 
 import io.ktor.client.*
 import io.ktor.client.call.*

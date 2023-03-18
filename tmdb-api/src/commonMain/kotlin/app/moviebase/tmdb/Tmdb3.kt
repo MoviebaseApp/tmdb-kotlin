@@ -24,9 +24,9 @@ import app.moviebase.tmdb.api.TmdbShowEpisodeGroupsApi
 import app.moviebase.tmdb.api.TmdbShowEpisodesApi
 import app.moviebase.tmdb.api.TmdbShowSeasonsApi
 import app.moviebase.tmdb.api.TmdbTrendingApi
-import app.moviebase.tmdb.remote.HttpClientFactory
-import app.moviebase.tmdb.remote.TmdbDsl
-import app.moviebase.tmdb.remote.interceptRequest
+import app.moviebase.tmdb.core.HttpClientFactory
+import app.moviebase.tmdb.core.TmdbDsl
+import app.moviebase.tmdb.core.interceptRequest
 import io.ktor.client.HttpClient
 import io.ktor.client.request.parameter
 

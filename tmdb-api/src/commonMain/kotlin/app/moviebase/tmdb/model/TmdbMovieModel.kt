@@ -1,8 +1,8 @@
 package app.moviebase.tmdb.model
 
 import app.moviebase.tmdb.image.TmdbImage
-import app.moviebase.tmdb.remote.LocalDateSerializer
-import app.moviebase.tmdb.remote.LocalDateTimeSerializer
+import app.moviebase.tmdb.core.LocalDateSerializer
+import app.moviebase.tmdb.core.LocalDateTimeSerializer
 import kotlinx.datetime.LocalDate
 import kotlinx.datetime.LocalDateTime
 import kotlinx.serialization.SerialName

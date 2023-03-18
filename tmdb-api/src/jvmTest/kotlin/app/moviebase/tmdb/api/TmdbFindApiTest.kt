@@ -2,7 +2,7 @@ package app.moviebase.tmdb.api
 
 import app.moviebase.tmdb.model.TmdbExternalSource
 import app.moviebase.tmdb.model.TmdbGender
-import app.moviebase.tmdb.remote.mockHttpClient
+import app.moviebase.tmdb.core.mockHttpClient
 import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.runTest
 import org.junit.jupiter.api.Test
