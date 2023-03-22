@@ -64,6 +64,15 @@ class TmdbShowApi internal constructor(private val client: HttpClient) {
         endPointShow(showId, "watch", "providers")
     }.body()
 
+    suspend fun popular(
+        page: Int,
+        language: String? = null,
+    ): TmdbShowPageResult = client.get {
+        endPointV3("tv", "popular")
+        parameterPage(page)
+        parameterLanguage(language)
+    }.body()
+
     private fun HttpRequestBuilder.endPointShow(showId: Int, vararg paths: String) {
         endPointV3("tv", showId.toString(), *paths)
     }

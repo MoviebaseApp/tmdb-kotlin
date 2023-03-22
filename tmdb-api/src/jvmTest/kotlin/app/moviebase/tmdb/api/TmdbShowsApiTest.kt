@@ -18,7 +18,8 @@ class TmdbShowsApiTest {
             "tv/96677?language=de-DE&append_to_response=images" to "tv/tv_details_96677_with_images.json",
             "tv/96677/images?language=en&include_image_language=en,null" to "tv/tv_images_96677.json",
             "tv/96677/aggregate_credits?language=en-US" to "tv/tv_aggregate_credits_96677.json",
-            "tv/96677/recommendations?page=1&language=en-US" to "tv/tv_recommendations_96677.json"
+            "tv/96677/recommendations?page=1&language=en-US" to "tv/tv_recommendations_96677.json",
+            "tv/popular?page=1&language=en-US" to "tv/tv_popular.json",
         )
     )
 
@@ -122,5 +123,16 @@ class TmdbShowsApiTest {
         assertThat(poster.filePath).isEqualTo("/sOUWRai0215iUSMackrZx3Y1j05.jpg")
         assertThat(poster.voteAverage).isEqualTo(5.312f)
         assertThat(poster.voteCount).isEqualTo(1)
+    }
+
+    @Test
+    fun `it can fetch popular shows`() = runTest {
+        val popular = classToTest.popular(
+            page = 1,
+            language = "en-US"
+        )
+
+        assertThat(popular.results).isNotEmpty()
+        assertThat(popular.page).isEqualTo(1)
     }
 }
