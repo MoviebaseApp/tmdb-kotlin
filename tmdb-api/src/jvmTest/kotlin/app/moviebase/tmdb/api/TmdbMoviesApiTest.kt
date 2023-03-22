@@ -20,7 +20,8 @@ class TmdbMoviesApiTest {
                 to "movie/movie_details_10140.json",
             "movie/10140/images?language=en" to "movie/movie_images_10140.json",
             "movie/607?language=en-US&append_to_response=external_ids,videos,release_dates,credits,reviews,content_ratings,watch/providers"
-                to "movie/movie_details_607.json"
+                to "movie/movie_details_607.json",
+            "movie/popular?page=1&language=en-US" to "movie/movie_popular.json",
         )
     )
 
@@ -89,5 +90,16 @@ class TmdbMoviesApiTest {
         assertThat(certification).isEqualTo("U")
         assertThat(releaseDates).hasSize(5)
         assertThat(releaseDate?.type).isEqualTo(TmdbReleaseType.THEATRICAL)
+    }
+
+    @Test
+    fun `it can fetch popular movies`() = runTest {
+        val popular = classToTest.popular(
+            page = 1,
+            language = "en-US"
+        )
+
+        assertThat(popular.results).isNotEmpty()
+        assertThat(popular.page).isEqualTo(1)
     }
 }
