@@ -122,6 +122,7 @@ data class TmdbSeason(
     val name: String,
     @SerialName("poster_path") override val posterPath: String?,
     @SerialName("season_number") val seasonNumber: Int,
+    @SerialName("overview") val overview: String? = null,
     val episodes: List<TmdbEpisode>? = null
 ) : TmdbAnyMedia, TmdbPosterMedia {
 
@@ -151,6 +152,7 @@ data class TmdbSeasonDetail(
 @Serializable
 data class TmdbEpisode(
     @SerialName("id") override val id: Int,
+    @SerialName("overview") val overview: String? = null,
     @SerialName("episode_number") val episodeNumber: Int,
     @SerialName("season_number") val seasonNumber: Int,
     @SerialName("air_date")
@@ -159,7 +161,9 @@ data class TmdbEpisode(
     @SerialName("name") val name: String? = null,
     @SerialName("vote_average") val voteAverage: Float? = null,
     @SerialName("vote_count") val voteCount: Int? = null,
-    @SerialName("still_path") val stillPath: String? = null
+    @SerialName("still_path") val stillPath: String? = null,
+    @SerialName("crew") val crew: List<TmdbCrew>? = null,
+    @SerialName("guest_stars") val guestStars: List<TmdbCast>? = null,
 ) : TmdbAnyMedia, TmdbBackdropMedia {
 
     override val backdropPath: String? get() = stillPath
