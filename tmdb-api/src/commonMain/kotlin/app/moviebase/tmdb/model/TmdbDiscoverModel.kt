@@ -22,6 +22,15 @@ enum class TmdbDiscoverSeparator(val value: String) {
     AND(","), OR("|")
 }
 
+data class TmdbDiscoverFilter<T>(
+    val separator: TmdbDiscoverSeparator = TmdbDiscoverSeparator.AND,
+    val items: Collection<T>
+) {
+    fun build(transform: (T) -> String): String {
+        return items.joinToString(separator = separator.value, transform = transform)
+    }
+}
+
 sealed class TmdbDiscoverTimeRange {
 
     data class BetweenYears(
@@ -45,16 +54,14 @@ sealed class TmdbDiscoverTimeRange {
 sealed class TmdbDiscover {
 
     abstract val sortOrder: TmdbSortOrder
-    abstract val voteAverageGte: Int?
-    abstract val voteAverageLte: Int?
+    abstract val voteAverageGte: Float?
+    abstract val voteAverageLte: Float?
     abstract val voteCountGte: Int?
     abstract val voteCountLte: Int?
 
-    abstract val withGenreType: TmdbDiscoverSeparator
     abstract val withGenres: List<String>
-    abstract val releaseType: TmdbReleaseType?
-    abstract val withWatchProvidersType: TmdbDiscoverSeparator
-    abstract val withWatchProviders: List<Int>
+    abstract val withoutGenres: List<String>
+    abstract val withWatchProviders: TmdbDiscoverFilter<Int>?
     abstract val watchRegion: String? // ISO 3166-1 code
     abstract val withWatchMonetizationTypes: List<TmdbWatchMonetizationType>
 
@@ -78,15 +85,15 @@ sealed class TmdbDiscover {
         }
 
         if (withGenres.isNotEmpty()) {
-            params[DiscoverParam.WITH_GENRES] = withGenres.joinToString(withGenreType.value)
+            params[DiscoverParam.WITH_GENRES] = withGenres.joinToString(",")
         }
 
-        releaseType?.let {
-            params[DiscoverParam.Movie.WITH_RELEASE_TYPE] = it.value.toString()
+        if (withoutGenres.isNotEmpty()) {
+            params[DiscoverParam.WITHOUT_GENRES] = withoutGenres.joinToString(",")
         }
 
-        if (withWatchProviders.isNotEmpty()) {
-            params[DiscoverParam.WITH_WATCH_PROVIDERS] = withWatchProviders.joinToString(withWatchProvidersType.value)
+        withWatchProviders?.let { f ->
+            params[DiscoverParam.WITH_WATCH_PROVIDERS] = f.build { it.toString() }
         }
 
         watchRegion?.let {
@@ -104,16 +111,15 @@ sealed class TmdbDiscover {
         val includeAdult: Boolean? = null,
         val sortBy: TmdbDiscoverMovieSortBy = TmdbDiscoverMovieSortBy.POPULARITY,
         override val sortOrder: TmdbSortOrder = TmdbSortOrder.DESC,
-        override val voteAverageGte: Int? = null,
-        override val voteAverageLte: Int? = null,
+        override val voteAverageGte: Float? = null,
+        override val voteAverageLte: Float? = null,
         override val voteCountGte: Int? = null,
         override val voteCountLte: Int? = null,
-        override val withGenreType: TmdbDiscoverSeparator = TmdbDiscoverSeparator.OR,
         override val withGenres: List<String> = emptyList(),
+        override val withoutGenres: List<String> = emptyList(),
         val releaseDate: TmdbDiscoverTimeRange? = null,
-        override val releaseType: TmdbReleaseType? = null,
-        override val withWatchProvidersType: TmdbDiscoverSeparator = TmdbDiscoverSeparator.OR,
-        override val withWatchProviders: List<Int> = emptyList(),
+        val withReleaseTypes: TmdbDiscoverFilter<TmdbReleaseType>? = null,
+        override val withWatchProviders: TmdbDiscoverFilter<Int>? = null,
         override val watchRegion: String? = null,
         override val withWatchMonetizationTypes: List<TmdbWatchMonetizationType> = emptyList()
     ) : TmdbDiscover() {
@@ -124,6 +130,10 @@ sealed class TmdbDiscover {
 
             includeAdult?.let {
                 params[DiscoverParam.Movie.INCLUDE_ADULT] = it.toString()
+            }
+
+            withReleaseTypes?.let { f ->
+                params[DiscoverParam.Movie.WITH_RELEASE_TYPE] = f.build { it.value.toString() }
             }
 
             when (releaseDate) {
@@ -150,19 +160,18 @@ sealed class TmdbDiscover {
     data class Show(
         val sortBy: TmdbDiscoverShowSortBy = TmdbDiscoverShowSortBy.POPULARITY,
         override val sortOrder: TmdbSortOrder = TmdbSortOrder.DESC,
-        override val voteAverageGte: Int? = null,
-        override val voteAverageLte: Int? = null,
+        override val voteAverageGte: Float? = null,
+        override val voteAverageLte: Float? = null,
         override val voteCountGte: Int? = null,
         override val voteCountLte: Int? = null,
-        override val withGenreType: TmdbDiscoverSeparator = TmdbDiscoverSeparator.OR,
         override val withGenres: List<String> = emptyList(),
+        override val withoutGenres: List<String> = emptyList(),
         val firstAirDate: TmdbDiscoverTimeRange? = null,
         val airDateGte: String? = null,
         val airDateLte: String? = null,
         val network: Int? = null,
-        override val releaseType: TmdbReleaseType? = null,
-        override val withWatchProvidersType: TmdbDiscoverSeparator = TmdbDiscoverSeparator.OR,
-        override val withWatchProviders: List<Int> = emptyList(),
+        val withStatus: TmdbDiscoverFilter<TmdbShowStatus>? = null,
+        override val withWatchProviders: TmdbDiscoverFilter<Int>? = null,
         override val watchRegion: String? = null,
         override val withWatchMonetizationTypes: List<TmdbWatchMonetizationType> = emptyList()
     ) : TmdbDiscover() {
@@ -180,6 +189,10 @@ sealed class TmdbDiscover {
 
             network?.let {
                 params[DiscoverParam.Show.WITH_NETWORKS] = network.toString()
+            }
+
+            withStatus?.let { f ->
+                params[DiscoverParam.Show.WITH_STATUS] = f.build { it.filterKey.toString() }
             }
 
             when (firstAirDate) {
@@ -255,6 +268,7 @@ object DiscoverParam {
         const val TIMEZONE = "timezone"
 
         const val WITH_NETWORKS = "with_networks"
+        const val WITH_STATUS = "with_status"
         const val INCLUDE_NULL_FIRST_AIR_DATES = "include_null_first_air_dates"
         const val WITH_ORIGINAL_LANGUAGE = "with_original_language"
         const val WITHOUT_KEYWORDS = "without_keywords"
