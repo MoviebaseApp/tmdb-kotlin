@@ -13,6 +13,8 @@ import app.moviebase.tmdb.core.currentLocalDate
 import app.moviebase.tmdb.core.mockHttpClient
 import app.moviebase.tmdb.core.plusDays
 import app.moviebase.tmdb.core.plusWeeks
+import app.moviebase.tmdb.model.TmdbDiscoverFilter
+import app.moviebase.tmdb.model.TmdbDiscoverSeparator
 import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.runTest
 import org.junit.jupiter.api.Test
@@ -26,7 +28,7 @@ class TmdbDiscoverApiTest {
     val client = mockHttpClient(
         version = 3,
         responses = mapOf(
-            "discover/movie?page=1&language=de&region=DE&vote_count.gte=200&release_date.lte=2021-12-31&vote_average.gte=5&sort_by=popularity.desc&release_date.gte=2020-01-01"
+            "discover/movie?page=1&language=de&region=DE&vote_count.gte=200&release_date.lte=2021-12-31&vote_average.gte=5.1&sort_by=popularity.desc&release_date.gte=2020-01-01"
                 to "discover/discover_movie.json",
             "discover/movie?page=1&language=de&region=DE&with_release_type=5&sort_by=release_date.desc"
                 to "discover/discover_movie_on_dvd.json",
@@ -48,7 +50,7 @@ class TmdbDiscoverApiTest {
         val discover = TmdbDiscover.Movie(
             sortBy = TmdbDiscoverMovieSortBy.POPULARITY,
             sortOrder = TmdbSortOrder.DESC,
-            voteAverageGte = 5,
+            voteAverageGte = 5.1f,
             voteCountGte = 200,
             releaseDate = TmdbDiscoverTimeRange.BetweenYears(from = 2020, to = 2021)
         )
@@ -137,12 +139,15 @@ class TmdbDiscoverApiTest {
             category = DiscoverCategory.OnStreaming(
                 TmdbMediaType.SHOW,
                 "DE",
-                listOf(
-                    TmdbWatchProviderId.NETFLIX,
-                    TmdbWatchProviderId.AMAZON_PRIME_VIDEO,
-                    TmdbWatchProviderId.AMAZON_PRIME_VIDEO_2,
-                    TmdbWatchProviderId.DISNEY_PLUS,
-                    TmdbWatchProviderId.APPLE_TV_PLUS
+                TmdbDiscoverFilter(
+                    TmdbDiscoverSeparator.OR,
+                    listOf(
+                        TmdbWatchProviderId.NETFLIX,
+                        TmdbWatchProviderId.AMAZON_PRIME_VIDEO,
+                        TmdbWatchProviderId.AMAZON_PRIME_VIDEO_2,
+                        TmdbWatchProviderId.DISNEY_PLUS,
+                        TmdbWatchProviderId.APPLE_TV_PLUS
+                    )
                 )
             )
         )

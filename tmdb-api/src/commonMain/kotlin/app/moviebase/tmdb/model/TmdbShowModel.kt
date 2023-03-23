@@ -8,24 +8,24 @@ import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
 @Serializable
-enum class TmdbShowStatus(val value: String) {
+enum class TmdbShowStatus(val value: String, val filterKey: Int) {
     @SerialName("Returning Series")
-    RETURNING_SERIES("Returning Series"),
+    RETURNING_SERIES("Returning Series", 0),
 
     @SerialName("In Production")
-    IN_PRODUCTION("In Production"),
+    IN_PRODUCTION("In Production", 2),
 
     @SerialName("Planned")
-    PLANNED("Planned"),
+    PLANNED("Planned", 1),
 
     @SerialName("Canceled")
-    CANCELED("Canceled"),
+    CANCELED("Canceled", 4),
 
     @SerialName("Ended")
-    ENDED("Ended"),
+    ENDED("Ended", 3),
 
     @SerialName("Pilot")
-    PILOT("Pilot");
+    PILOT("Pilot", 5);
 
     companion object {
         fun find(value: String?) = values().find { it.value == value }

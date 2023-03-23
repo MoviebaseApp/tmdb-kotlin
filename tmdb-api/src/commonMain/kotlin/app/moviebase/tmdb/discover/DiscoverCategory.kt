@@ -1,5 +1,6 @@
 package app.moviebase.tmdb.discover
 
+import app.moviebase.tmdb.model.TmdbDiscoverFilter
 import app.moviebase.tmdb.model.TmdbMediaType
 import app.moviebase.tmdb.model.TmdbNetworkId
 import app.moviebase.tmdb.model.TmdbWatchProviderId
@@ -21,30 +22,30 @@ sealed class DiscoverCategory {
             val APPLE_TV = Network(TmdbNetworkId.APPLE_TV)
         }
     }
-    data class OnStreaming(val mediaType: TmdbMediaType, val watchRegion: String, val watchProviders: List<Int>) : DiscoverCategory() {
+    data class OnStreaming(val mediaType: TmdbMediaType, val watchRegion: String, val watchProviders: TmdbDiscoverFilter<Int>) : DiscoverCategory() {
         companion object {
             fun Netflix(mediaType: TmdbMediaType, watchRegion: String) = OnStreaming(
                 mediaType,
                 watchRegion,
-                listOf(TmdbWatchProviderId.NETFLIX)
+                TmdbDiscoverFilter(items = listOf(TmdbWatchProviderId.NETFLIX))
             )
 
             fun AmazonPrimeVideo(mediaType: TmdbMediaType, watchRegion: String) = OnStreaming(
                 mediaType,
                 watchRegion,
-                listOf(TmdbWatchProviderId.AMAZON_PRIME_VIDEO)
+                TmdbDiscoverFilter(items = listOf(TmdbWatchProviderId.AMAZON_PRIME_VIDEO))
             )
 
             fun AppleTv(mediaType: TmdbMediaType, watchRegion: String) = OnStreaming(
                 mediaType,
                 watchRegion,
-                listOf(TmdbWatchProviderId.APPLE_TV_PLUS)
+                TmdbDiscoverFilter(items = listOf(TmdbWatchProviderId.APPLE_TV_PLUS))
             )
 
             fun DisneyPlus(mediaType: TmdbMediaType, watchRegion: String) = OnStreaming(
                 mediaType,
                 watchRegion,
-                listOf(TmdbWatchProviderId.DISNEY_PLUS)
+                TmdbDiscoverFilter(items = listOf(TmdbWatchProviderId.DISNEY_PLUS))
             )
         }
     }
