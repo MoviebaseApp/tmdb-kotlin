@@ -1,0 +1,448 @@
+{
+    "page": 1,
+    "results": [
+        {
+            "adult": false,
+            "backdrop_path": "/6Lw54zxm6BAEKJeGlabyzzR5Juu.jpg",
+            "id": 82856,
+            "name": "The Mandalorian",
+            "original_language": "en",
+            "original_name": "The Mandalorian",
+            "overview": "After the fall of the Galactic Empire, lawlessness has spread throughout the galaxy. A lone gunfighter makes his way through the outer reaches, earning his keep as a bounty hunter.",
+            "poster_path": "/eU1i6eHXlzMOlEq0ku1Rzq7Y4wA.jpg",
+            "media_type": "tv",
+            "genre_ids": [
+                10765,
+                10759,
+                18
+            ],
+            "popularity": 1055.464,
+            "first_air_date": "2019-11-12",
+            "vote_average": 8.487,
+            "vote_count": 8761,
+            "origin_country": [
+                "US"
+            ]
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/nTvM4mhqNlHIvUkI1gVnW6XP7GG.jpg",
+            "id": 85937,
+            "name": "Demon Slayer: Kimetsu no Yaiba",
+            "original_language": "ja",
+            "original_name": "鬼滅の刃",
+            "overview": "It is the Taisho Period in Japan. Tanjiro, a kindhearted boy who sells charcoal for a living, finds his family slaughtered by a demon. To make matters worse, his younger sister Nezuko, the sole survivor, has been transformed into a demon herself. Though devastated by this grim reality, Tanjiro resolves to become a “demon slayer” so that he can turn his sister back into a human, and kill the demon that massacred his family.",
+            "poster_path": "/xUfRZu2mi8jH6SzQEJGP6tjBuYj.jpg",
+            "media_type": "tv",
+            "genre_ids": [
+                16,
+                10759,
+                10765
+            ],
+            "popularity": 319.018,
+            "first_air_date": "2019-04-06",
+            "vote_average": 8.7,
+            "vote_count": 4973,
+            "origin_country": [
+                "JP"
+            ]
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/uDgy6hyPd82kOHh6I95FLtLnj6p.jpg",
+            "id": 100088,
+            "name": "The Last of Us",
+            "original_language": "en",
+            "original_name": "The Last of Us",
+            "overview": "Twenty years after modern civilization has been destroyed, Joel, a hardened survivor, is hired to smuggle Ellie, a 14-year-old girl, out of an oppressive quarantine zone. What starts as a small job soon becomes a brutal, heartbreaking journey, as they both must traverse the United States and depend on each other for survival.",
+            "poster_path": "/uKvVjHNqB5VmOrdxqAt2F7J78ED.jpg",
+            "media_type": "tv",
+            "genre_ids": [
+                18
+            ],
+            "popularity": 1375.028,
+            "first_air_date": "2023-01-15",
+            "vote_average": 8.761,
+            "vote_count": 3137,
+            "origin_country": [
+                "US"
+            ]
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/u7OpeS4eckBSR1wFxFTuyy3FjHE.jpg",
+            "id": 154385,
+            "name": "BEEF",
+            "original_language": "en",
+            "original_name": "BEEF",
+            "overview": "A road rage incident between two strangers — a failing contractor and an unfulfilled entrepreneur — sparks a feud that brings out their darkest impulses.",
+            "poster_path": "/4b4v7RnPhNyPEaVGFarEuo74r8W.jpg",
+            "media_type": "tv",
+            "genre_ids": [
+                35,
+                18
+            ],
+            "popularity": 197.063,
+            "first_air_date": "2023-04-06",
+            "vote_average": 8.611,
+            "vote_count": 27,
+            "origin_country": [
+                "US"
+            ]
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/26uCzg0yigXqjcM9dCGCDihoXLM.jpg",
+            "id": 129552,
+            "name": "The Night Agent",
+            "original_language": "en",
+            "original_name": "The Night Agent",
+            "overview": "While monitoring an emergency line, a vigilant FBI agent answers a call that plunges him into a deadly conspiracy involving a mole at the White House.",
+            "poster_path": "/xjsx6rGEgHl2tUqkimo6Bz2KzVo.jpg",
+            "media_type": "tv",
+            "genre_ids": [
+                18,
+                9648
+            ],
+            "popularity": 779.64,
+            "first_air_date": "2023-03-23",
+            "vote_average": 8.0,
+            "vote_count": 155,
+            "origin_country": [
+                "US"
+            ]
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/rqbCbjB19amtOtFQbb3K2lgm2zv.jpg",
+            "id": 1429,
+            "name": "Attack on Titan",
+            "original_language": "ja",
+            "original_name": "進撃の巨人",
+            "overview": "Several hundred years ago, humans were nearly exterminated by Titans. Titans are typically several stories tall, seem to have no intelligence, devour human beings and, worst of all, seem to do it for the pleasure rather than as a food source. A small percentage of humanity survived by walling themselves in a city protected by extremely high walls, even taller than the biggest Titans. Flash forward to the present and the city has not seen a Titan in over 100 years. Teenage boy Eren and his foster sister Mikasa witness something horrific as the city walls are destroyed by a Colossal Titan that appears out of thin air. As the smaller Titans flood the city, the two kids watch in horror as their mother is eaten alive. Eren vows that he will murder every single Titan and take revenge for all of mankind.",
+            "poster_path": "/sHim6U0ANsbzxcmNRYuIubBVQaz.jpg",
+            "media_type": "tv",
+            "genre_ids": [
+                10765,
+                16,
+                10759
+            ],
+            "popularity": 145.496,
+            "first_air_date": "2013-04-07",
+            "vote_average": 8.653,
+            "vote_count": 5111,
+            "origin_country": [
+                "JP"
+            ]
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/7vCSrzwqS5PEm0i5mHlkDfjHcnX.jpg",
+            "id": 136283,
+            "name": "The Glory",
+            "original_language": "ko",
+            "original_name": "더 글로리",
+            "overview": "After a childhood marked by pain and violence, a woman puts a carefully planned revenge scheme in motion.",
+            "poster_path": "/6jOpyXVzQyYL4QB12VRpHUxdwg1.jpg",
+            "media_type": "tv",
+            "genre_ids": [
+                18
+            ],
+            "popularity": 253.905,
+            "first_air_date": "2022-12-30",
+            "vote_average": 8.6,
+            "vote_count": 339,
+            "origin_country": [
+                "KR"
+            ]
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/ejEIt6TmywGov56dWDx0XWPP2NR.jpg",
+            "id": 156819,
+            "name": "Rabbit Hole",
+            "original_language": "en",
+            "original_name": "Rabbit Hole",
+            "overview": "Nothing is what it seems when John Weir, a master of deception in the world of corporate espionage, is framed for murder by powerful forces with the ability to influence and control populations.",
+            "poster_path": "/zb5MArsrMxK4mSSLzUmbfcXAc60.jpg",
+            "media_type": "tv",
+            "genre_ids": [
+                18
+            ],
+            "popularity": 397.736,
+            "first_air_date": "2023-03-26",
+            "vote_average": 7.13,
+            "vote_count": 27,
+            "origin_country": [
+                "US"
+            ]
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/htZNH4PJwJCfiw6dbtpyXCuglXz.jpg",
+            "id": 95558,
+            "name": "The Power",
+            "original_language": "en",
+            "original_name": "The Power",
+            "overview": "The world of The Power is our world, but for one twist of nature. Suddenly teenage girls develop the power to electrocute people at will. Following remarkable characters from London to Seattle, Nigeria to Eastern Europe, the Power evolves from a tingle in teenagers’ collarbones to a complete reversal of power balance.",
+            "poster_path": "/pTeb4EsTy3hoVFpg9FnLIF3glZ5.jpg",
+            "media_type": "tv",
+            "genre_ids": [
+                10765,
+                9648,
+                18
+            ],
+            "popularity": 85.379,
+            "first_air_date": "2023-03-30",
+            "vote_average": 7.2,
+            "vote_count": 16,
+            "origin_country": [
+                "US"
+            ]
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/a6ptrTUH1c5OdWanjyYtAkOuYD0.jpg",
+            "id": 37854,
+            "name": "One Piece",
+            "original_language": "ja",
+            "original_name": "ワンピース",
+            "overview": "Years ago, the fearsome Pirate King, Gol D. Roger was executed leaving a huge pile of treasure and the famous \"One Piece\" behind. Whoever claims the \"One Piece\" will be named the new King of the Pirates.\n\nMonkey D. Luffy, a boy who consumed a \"Devil Fruit,\" decides to follow in the footsteps of his idol, the pirate Shanks, and find the One Piece. It helps, of course, that his body has the properties of rubber and that he's surrounded by a bevy of skilled fighters and thieves to help him along the way.\n\nLuffy will do anything to get the One Piece and become King of the Pirates!",
+            "poster_path": "/e3NBGiAifW9Xt8xD5tpARskjccO.jpg",
+            "media_type": "tv",
+            "genre_ids": [
+                10759,
+                35,
+                16
+            ],
+            "popularity": 138.292,
+            "first_air_date": "1999-10-20",
+            "vote_average": 8.711,
+            "vote_count": 3683,
+            "origin_country": [
+                "JP"
+            ]
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/2HNbarpx0odHmPFh8A4ZPTxhend.jpg",
+            "id": 76331,
+            "name": "Succession",
+            "original_language": "en",
+            "original_name": "Succession",
+            "overview": "Follow the lives of the Roy family as they contemplate their future once their aging father begins to step back from the media and entertainment conglomerate they control.",
+            "poster_path": "/7HW47XbkNQ5fiwQFYGWdw9gs144.jpg",
+            "media_type": "tv",
+            "genre_ids": [
+                18
+            ],
+            "popularity": 171.617,
+            "first_air_date": "2018-06-03",
+            "vote_average": 8.151,
+            "vote_count": 578,
+            "origin_country": [
+                "US"
+            ]
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/dJ8yrSokdTMnhKJw06MllSfCegb.jpg",
+            "id": 83121,
+            "name": "Kaguya-sama: Love Is War",
+            "original_language": "ja",
+            "original_name": "かぐや様は告らせたい～天才たちの恋愛頭脳戦～",
+            "overview": "Considered a genius due to having the highest grades in the country, Miyuki Shirogane leads the prestigious Shuchiin Academy's student council as its president, working alongside the beautiful and wealthy vice president Kaguya Shinomiya. The two are often regarded as the perfect couple by students despite them not being in any sort of romantic relationship.",
+            "poster_path": "/5khbC6AuNgnvnoDbjIMKCOhEtIc.jpg",
+            "media_type": "tv",
+            "genre_ids": [
+                16,
+                35,
+                18
+            ],
+            "popularity": 111.177,
+            "first_air_date": "2019-01-12",
+            "vote_average": 8.695,
+            "vote_count": 603,
+            "origin_country": [
+                "JP"
+            ]
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/cfAikf2oculqqanLUFv76Yw3PEg.jpg",
+            "id": 195359,
+            "name": "Transatlantic",
+            "original_language": "de",
+            "original_name": "Transatlantic",
+            "overview": "Two Americans and their allies form a scrappy rescue operation in 1940 Marseilles to help artists, writers and other refugees fleeing Europe during WWII.",
+            "poster_path": "/pCqUcxfxIAalYyaoDqMli8xtb1d.jpg",
+            "media_type": "tv",
+            "genre_ids": [
+                18,
+                10768
+            ],
+            "popularity": 93.085,
+            "first_air_date": "2023-04-07",
+            "vote_average": 6.9,
+            "vote_count": 18,
+            "origin_country": [
+                "DE"
+            ]
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/4QmOm19sSqX86THCfktvlcabGHs.jpg",
+            "id": 117488,
+            "name": "Yellowjackets",
+            "original_language": "en",
+            "original_name": "Yellowjackets",
+            "overview": "This equal parts survival epic, psychological horror story and coming-of-age drama tells the saga of a team of wildly talented high school girls soccer players who become the (un)lucky survivors of a plane crash deep in the remote northern wilderness. The series chronicles their descent from a complicated but thriving team to savage clans, while also tracking the lives they’ve attempted to piece back together nearly 25 years later.",
+            "poster_path": "/o4Ql7oU2W3U8RyeDoSREDdKvTlq.jpg",
+            "media_type": "tv",
+            "genre_ids": [
+                18,
+                9648
+            ],
+            "popularity": 207.632,
+            "first_air_date": "2021-11-14",
+            "vote_average": 7.529,
+            "vote_count": 436,
+            "origin_country": [
+                "US"
+            ]
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/3gcfAQ2sBCqEAhPc5vJchACLpLi.jpg",
+            "id": 85949,
+            "name": "Star Trek: Picard",
+            "original_language": "en",
+            "original_name": "Star Trek: Picard",
+            "overview": "Set twenty years after the events of Star Trek Nemesis, we follow the now-retired Admiral Picard into the next chapter of his life.",
+            "poster_path": "/bONYUEn7iMFCebhDuqNG7hqqwoO.jpg",
+            "media_type": "tv",
+            "genre_ids": [
+                10765,
+                10759
+            ],
+            "popularity": 176.281,
+            "first_air_date": "2020-01-23",
+            "vote_average": 7.271,
+            "vote_count": 1422,
+            "origin_country": [
+                "US"
+            ]
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/2OMB0ynKlyIenMJWI2Dy9IWT4c.jpg",
+            "id": 1399,
+            "name": "Game of Thrones",
+            "original_language": "en",
+            "original_name": "Game of Thrones",
+            "overview": "Seven noble families fight for control of the mythical land of Westeros. Friction between the houses leads to full-scale war. All while a very ancient evil awakens in the farthest north. Amidst the war, a neglected military order of misfits, the Night's Watch, is all that stands between the realms of men and icy horrors beyond.",
+            "poster_path": "/7WUHnWGx5OO145IRxPDUkQSh4C7.jpg",
+            "media_type": "tv",
+            "genre_ids": [
+                10765,
+                18,
+                10759
+            ],
+            "popularity": 535.905,
+            "first_air_date": "2011-04-17",
+            "vote_average": 8.437,
+            "vote_count": 20895,
+            "origin_country": [
+                "US"
+            ]
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/m8st3y2bJAPLO6q3f2PmW1x3FtS.jpg",
+            "id": 220538,
+            "name": "War Sailor",
+            "original_language": "no",
+            "original_name": "Krigsseileren",
+            "overview": "When WWII erupts, two sailors on a Norwegian merchant ship face brutal conditions as they fight to survive a conflict they were never asked to join. Based on true stories of Norwegian merchant sailors and their families during and after World War II.",
+            "poster_path": "/fVeJkFAWjKxlfbD8Rt4foBqL71h.jpg",
+            "media_type": "tv",
+            "genre_ids": [
+                18
+            ],
+            "popularity": 74.371,
+            "first_air_date": "2023-04-02",
+            "vote_average": 8.552,
+            "vote_count": 29,
+            "origin_country": [
+                "NO"
+            ]
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/gEQkOMmnJcoh9Hh1vk7fpVYnksR.jpg",
+            "id": 97546,
+            "name": "Ted Lasso",
+            "original_language": "en",
+            "original_name": "Ted Lasso",
+            "overview": "Ted Lasso, an American football coach, moves to England when he’s hired to manage a soccer team—despite having no experience. With cynical players and a doubtful town, will he get them to see the Ted Lasso Way?",
+            "poster_path": "/5fhZdwP1DVJ0FyVH6vrFdHwpXIn.jpg",
+            "media_type": "tv",
+            "genre_ids": [
+                35,
+                18
+            ],
+            "popularity": 250.079,
+            "first_air_date": "2020-08-14",
+            "vote_average": 8.5,
+            "vote_count": 936,
+            "origin_country": [
+                "GB"
+            ]
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/1Ep6YHL5QcrNC1JN6RYalWRPopi.jpg",
+            "id": 86031,
+            "name": "Dr. STONE",
+            "original_language": "ja",
+            "original_name": "Dr.STONE",
+            "overview": "One fateful day, all of humanity was petrified by a blinding flash of light. After several millennia, high schooler Taiju awakens and finds himself lost in a world of statues. However, he's not alone! His science-loving friend Senku's been up and running for a few months and he's got a grand plan in mind, to kickstart civilization with the power of science!",
+            "poster_path": "/xbZQ3fDl0y5mt0ARwfeyrgQ4JTw.jpg",
+            "media_type": "tv",
+            "genre_ids": [
+                10759,
+                16
+            ],
+            "popularity": 32.659,
+            "first_air_date": "2019-07-05",
+            "vote_average": 8.6,
+            "vote_count": 1152,
+            "origin_country": [
+                "JP"
+            ]
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/gk59zeyg5nB3XXWZ4LuV3yI5VI2.jpg",
+            "id": 125462,
+            "name": "Journey to the Center of the Earth",
+            "original_language": "es",
+            "original_name": "Viaje al centro de la Tierra",
+            "overview": "Diego and his friends spend the summer at the camp run by Pompilio Calderón, an eccentric explorer. There they find a medallion that belonged to Pola, Diego's grandmother. Following in her footsteps, they will experience incredible adventures in a parallel dimension as they try to save the planet from disaster.",
+            "poster_path": "/z0s0th8B0ccWfQ3bm3bqYnXsGoI.jpg",
+            "media_type": "tv",
+            "genre_ids": [
+                10759
+            ],
+            "popularity": 78.295,
+            "first_air_date": "2023-04-05",
+            "vote_average": 7.444,
+            "vote_count": 9,
+            "origin_country": [
+                "MX"
+            ]
+        }
+    ],
+    "total_pages": 1000,
+    "total_results": 20000
+}
