@@ -1,0 +1,429 @@
+{
+    "page": 1,
+    "results": [
+        {
+            "adult": false,
+            "backdrop_path": "/ytdebEE0ndYLSTEctPgh8e0vaBs.jpg",
+            "id": 76600,
+            "title": "Avatar: The Way of Water",
+            "original_language": "en",
+            "original_title": "Avatar: The Way of Water",
+            "overview": "Set more than a decade after the events of the first film, learn the story of the Sully family (Jake, Neytiri, and their kids), the trouble that follows them, the lengths they go to keep each other safe, the battles they fight to stay alive, and the tragedies they endure.",
+            "poster_path": "/t6HIqrRAclMCA60NsSmeqe9RmNV.jpg",
+            "media_type": "movie",
+            "genre_ids": [
+                878,
+                12,
+                28
+            ],
+            "popularity": 8112.525,
+            "release_date": "2022-12-14",
+            "video": false,
+            "vote_average": 7.75,
+            "vote_count": 6832
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/wybmSmviUXxlBmX44gtpow5Y9TB.jpg",
+            "id": 594767,
+            "title": "Shazam! Fury of the Gods",
+            "original_language": "en",
+            "original_title": "Shazam! Fury of the Gods",
+            "overview": "Billy Batson and his foster siblings, who transform into superheroes by saying \"Shazam!\", are forced to get back into action and fight the Daughters of Atlas, who they must stop from using a weapon that could destroy the world.",
+            "poster_path": "/A3ZbZsmsvNGdprRi2lKgGEeVLEH.jpg",
+            "media_type": "movie",
+            "genre_ids": [
+                28,
+                35,
+                14
+            ],
+            "popularity": 2123.685,
+            "release_date": "2023-03-15",
+            "video": false,
+            "vote_average": 6.965,
+            "vote_count": 592
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/eSVu1FvGPy86TDo4hQbpuHx55DJ.jpg",
+            "id": 700391,
+            "title": "65",
+            "original_language": "en",
+            "original_title": "65",
+            "overview": "After a catastrophic crash on an unknown planet, pilot Mills quickly discovers he's actually stranded on Earth…65 million years ago. Now, with only one chance at rescue, Mills and the only other survivor, Koa, must make their way across an unknown terrain riddled with dangerous prehistoric creatures in an epic fight to survive.",
+            "poster_path": "/rzRb63TldOKdKydCvWJM8B6EkPM.jpg",
+            "media_type": "movie",
+            "genre_ids": [
+                878,
+                12,
+                53,
+                28
+            ],
+            "popularity": 699.201,
+            "release_date": "2023-03-02",
+            "video": false,
+            "vote_average": 6.369,
+            "vote_count": 354
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/rV54txX9Whz7o66qoPz0VDLTvUU.jpg",
+            "id": 677179,
+            "title": "Creed III",
+            "original_language": "en",
+            "original_title": "Creed III",
+            "overview": "After dominating the boxing world, Adonis Creed has been thriving in both his career and family life. When a childhood friend and former boxing prodigy, Damien Anderson, resurfaces after serving a long sentence in prison, he is eager to prove that he deserves his shot in the ring. The face-off between former friends is more than just a fight. To settle the score, Adonis must put his future on the line to battle Damien — a fighter who has nothing to lose.",
+            "poster_path": "/vJU3rXSP9hwUuLeq8IpfsJShLOk.jpg",
+            "media_type": "movie",
+            "genre_ids": [
+                18,
+                28
+            ],
+            "popularity": 9069.418,
+            "release_date": "2023-03-01",
+            "video": false,
+            "vote_average": 7.296,
+            "vote_count": 856
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/i8dshLvq4LE3s0v8PrkDdUyb1ae.jpg",
+            "id": 603692,
+            "title": "John Wick: Chapter 4",
+            "original_language": "en",
+            "original_title": "John Wick: Chapter 4",
+            "overview": "With the price on his head ever increasing, John Wick uncovers a path to defeating The High Table. But before he can earn his freedom, Wick must face off against a new enemy with powerful alliances across the globe and forces that turn old friends into foes.",
+            "poster_path": "/vZloFAK7NmvMGKE7VkF5UHaz0I.jpg",
+            "media_type": "movie",
+            "genre_ids": [
+                28,
+                53,
+                80
+            ],
+            "popularity": 2685.644,
+            "release_date": "2023-03-22",
+            "video": false,
+            "vote_average": 8.042,
+            "vote_count": 894
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/9n2tJBplPbgR2ca05hS5CKXwP2c.jpg",
+            "id": 502356,
+            "title": "The Super Mario Bros. Movie",
+            "original_language": "en",
+            "original_title": "The Super Mario Bros. Movie",
+            "overview": "While working underground to fix a water main, Brooklyn plumbers—and brothers—Mario and Luigi are transported down a mysterious pipe and wander into a magical new world. But when the brothers are separated, Mario embarks on an epic quest to find Luigi.",
+            "poster_path": "/qNBAXBIQlnOThrVvA6mA2B5ggV6.jpg",
+            "media_type": "movie",
+            "genre_ids": [
+                16,
+                12,
+                10751,
+                14,
+                35
+            ],
+            "popularity": 10058.912,
+            "release_date": "2023-04-05",
+            "video": false,
+            "vote_average": 7.54,
+            "vote_count": 439
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/bT3IpP7OopgiVuy6HCPOWLuaFAd.jpg",
+            "id": 638974,
+            "title": "Murder Mystery 2",
+            "original_language": "en",
+            "original_title": "Murder Mystery 2",
+            "overview": "After starting their own detective agency, Nick and Audrey Spitz land a career-making case when their billionaire pal is kidnapped from his wedding.",
+            "poster_path": "/wdffZv8gIiWy6xr4t7hWBWtUwpl.jpg",
+            "media_type": "movie",
+            "genre_ids": [
+                35,
+                9648,
+                28
+            ],
+            "popularity": 3481.393,
+            "release_date": "2023-03-26",
+            "video": false,
+            "vote_average": 6.439,
+            "vote_count": 533
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/4avmIRBBOs9b4DKoenf8SWWJJP7.jpg",
+            "id": 726759,
+            "title": "Tetris",
+            "original_language": "en",
+            "original_title": "Tetris",
+            "overview": "In 1988, American video game salesman Henk Rogers discovers the video game Tetris. When he sets out to bring the game to the world, he enters a dangerous web of lies and corruption behind the Iron Curtain.",
+            "poster_path": "/4F2QwCOYHJJjecSvdOjStuVLkpu.jpg",
+            "media_type": "movie",
+            "genre_ids": [
+                53,
+                36,
+                18
+            ],
+            "popularity": 460.301,
+            "release_date": "2023-03-15",
+            "video": false,
+            "vote_average": 7.79,
+            "vote_count": 310
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/7TdVWAO7vV9j1OLDq1hQJS3pb4U.jpg",
+            "id": 739405,
+            "title": "Operation Fortune: Ruse de Guerre",
+            "original_language": "en",
+            "original_title": "Operation Fortune: Ruse de Guerre",
+            "overview": "Special agent Orson Fortune and his team of operatives recruit one of Hollywood's biggest movie stars to help them on an undercover mission when the sale of a deadly new weapons technology threatens to disrupt the world order.",
+            "poster_path": "/cOaQU5o7mznZTFb4Xs9c1QlwTze.jpg",
+            "media_type": "movie",
+            "genre_ids": [
+                28,
+                53,
+                35
+            ],
+            "popularity": 328.351,
+            "release_date": "2023-01-04",
+            "video": false,
+            "vote_average": 6.645,
+            "vote_count": 383
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/aityu1Gma509jInlspHstEt8Jg0.jpg",
+            "id": 736790,
+            "title": "Chupa",
+            "original_language": "en",
+            "original_title": "Chupa",
+            "overview": "While visiting family in Mexico, a lonely boy befriends a mythical creature hiding on his grandfather's ranch and embarks on the adventure of a lifetime.",
+            "poster_path": "/ra3xm8KFAkwK0CdbPRkfYADJYTB.jpg",
+            "media_type": "movie",
+            "genre_ids": [
+                12,
+                14,
+                10751
+            ],
+            "popularity": 137.872,
+            "release_date": "2023-04-07",
+            "video": false,
+            "vote_average": 6.786,
+            "vote_count": 49
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/fh7aM10THQzivGU7kAkgKrgzot4.jpg",
+            "id": 493529,
+            "title": "Dungeons \u0026 Dragons: Honor Among Thieves",
+            "original_language": "en",
+            "original_title": "Dungeons \u0026 Dragons: Honor Among Thieves",
+            "overview": "A charming thief and a band of unlikely adventurers undertake an epic heist to retrieve a lost relic, but things go dangerously awry when they run afoul of the wrong people.",
+            "poster_path": "/6LuXaihVIoJ5FeSiFb7CZMtU7du.jpg",
+            "media_type": "movie",
+            "genre_ids": [
+                12,
+                14,
+                35
+            ],
+            "popularity": 549.701,
+            "release_date": "2023-03-23",
+            "video": false,
+            "vote_average": 7.569,
+            "vote_count": 290
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/tYcmm8XtzRdcT6kliCbHuWwLCwB.jpg",
+            "id": 849869,
+            "title": "Kill Boksoon",
+            "original_language": "ko",
+            "original_title": "길복순",
+            "overview": "At work, she's a renowned assassin. At home, she's a single mom to a teenage daughter. Killing? That's easy. It's parenting that's the hard part.",
+            "poster_path": "/taYgn3RRpCGlTGdaGQvnSIOzXFy.jpg",
+            "media_type": "movie",
+            "genre_ids": [
+                28,
+                53,
+                80
+            ],
+            "popularity": 501.549,
+            "release_date": "2023-02-17",
+            "video": false,
+            "vote_average": 6.911,
+            "vote_count": 90
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/8YFL5QQVPy3AgrEQxNYVSgiPEbe.jpg",
+            "id": 640146,
+            "title": "Ant-Man and the Wasp: Quantumania",
+            "original_language": "en",
+            "original_title": "Ant-Man and the Wasp: Quantumania",
+            "overview": "Super-Hero partners Scott Lang and Hope van Dyne, along with with Hope's parents Janet van Dyne and Hank Pym, and Scott's daughter Cassie Lang, find themselves exploring the Quantum Realm, interacting with strange new creatures and embarking on an adventure that will push them beyond the limits of what they thought possible.",
+            "poster_path": "/ngl2FKBlU4fhbdsrtdom9LVLBXw.jpg",
+            "media_type": "movie",
+            "genre_ids": [
+                878,
+                12,
+                28
+            ],
+            "popularity": 1100.238,
+            "release_date": "2023-02-15",
+            "video": false,
+            "vote_average": 6.315,
+            "vote_count": 1202
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/5deKXeVmu3G8821gV8DtKHmRd6r.jpg",
+            "id": 958196,
+            "title": "Inside",
+            "original_language": "en",
+            "original_title": "Inside",
+            "overview": "An art thief becomes trapped in a New York penthouse after his heist goes awry. Imprisoned with nothing but priceless works of art, he must use all his cunning and invention to survive.",
+            "poster_path": "/rpeFbH71EQVJmNuA9KSboR3YaZS.jpg",
+            "media_type": "movie",
+            "genre_ids": [
+                18,
+                53
+            ],
+            "popularity": 101.108,
+            "release_date": "2023-03-09",
+            "video": false,
+            "vote_average": 6.404,
+            "vote_count": 47
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/vSUls0b7dNhC7tJoExF1MBYWWyh.jpg",
+            "id": 816904,
+            "title": "Mummies",
+            "original_language": "es",
+            "original_title": "Momias",
+            "overview": "Through a series of unfortunate events, three mummies end up in present-day London and embark on a wacky and hilarious journey in search of an old ring belonging to the Royal Family, stolen by ambitious archaeologist Lord Carnaby.",
+            "poster_path": "/qVdrYN8qu7xUtsdEFeGiIVIaYd.jpg",
+            "media_type": "movie",
+            "genre_ids": [
+                16,
+                35,
+                10751,
+                12,
+                14
+            ],
+            "popularity": 3562.319,
+            "release_date": "2023-01-05",
+            "video": false,
+            "vote_average": 7.142,
+            "vote_count": 127
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/a2tys4sD7xzVaogPntGsT1ypVoT.jpg",
+            "id": 804150,
+            "title": "Cocaine Bear",
+            "original_language": "en",
+            "original_title": "Cocaine Bear",
+            "overview": "Inspired by a true story, an oddball group of cops, criminals, tourists and teens converge in a Georgia forest where a 500-pound black bear goes on a murderous rampage after unintentionally ingesting cocaine.",
+            "poster_path": "/gOnmaxHo0412UVr1QM5Nekv1xPi.jpg",
+            "media_type": "movie",
+            "genre_ids": [
+                53,
+                35,
+                80
+            ],
+            "popularity": 2548.887,
+            "release_date": "2023-02-22",
+            "video": false,
+            "vote_average": 6.5,
+            "vote_count": 700
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/r7Dfg9aRZ78gJsmDlCirIIlNH3d.jpg",
+            "id": 785084,
+            "title": "The Whale",
+            "original_language": "en",
+            "original_title": "The Whale",
+            "overview": "A reclusive English teacher suffering from severe obesity attempts to reconnect with his estranged teenage daughter for one last chance at redemption.",
+            "poster_path": "/jQ0gylJMxWSL490sy0RrPj1Lj7e.jpg",
+            "media_type": "movie",
+            "genre_ids": [
+                18
+            ],
+            "popularity": 622.736,
+            "release_date": "2022-12-09",
+            "video": false,
+            "vote_average": 8.053,
+            "vote_count": 1916
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/ouB7hwclG7QI3INoYJHaZL4vOaa.jpg",
+            "id": 315162,
+            "title": "Puss in Boots: The Last Wish",
+            "original_language": "en",
+            "original_title": "Puss in Boots: The Last Wish",
+            "overview": "Puss in Boots discovers that his passion for adventure has taken its toll: He has burned through eight of his nine lives, leaving him with only one life left. Puss sets out on an epic journey to find the mythical Last Wish and restore his nine lives.",
+            "poster_path": "/kuf6dutpsT0vSVehic3EZIqkOBt.jpg",
+            "media_type": "movie",
+            "genre_ids": [
+                16,
+                10751,
+                14,
+                12,
+                35
+            ],
+            "popularity": 2628.997,
+            "release_date": "2022-12-07",
+            "video": false,
+            "vote_average": 8.308,
+            "vote_count": 5100
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/ss0Os3uWJfQAENILHZUdX8Tt1OC.jpg",
+            "id": 545611,
+            "title": "Everything Everywhere All at Once",
+            "original_language": "en",
+            "original_title": "Everything Everywhere All at Once",
+            "overview": "An aging Chinese immigrant is swept up in an insane adventure, where she alone can save what's important to her by connecting with the lives she could have led in other universes.",
+            "poster_path": "/w3LxiVYdWWRvEVdn5RYq6jIqkb1.jpg",
+            "media_type": "movie",
+            "genre_ids": [
+                28,
+                12,
+                878
+            ],
+            "popularity": 248.763,
+            "release_date": "2022-03-24",
+            "video": false,
+            "vote_average": 7.865,
+            "vote_count": 4347
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/oCKZAdUROqdlTcUOstqJ1gM8JQt.jpg",
+            "id": 615777,
+            "title": "Babylon",
+            "original_language": "en",
+            "original_title": "Babylon",
+            "overview": "A tale of outsized ambition and outrageous excess, tracing the rise and fall of multiple characters in an era of unbridled decadence and depravity during Hollywood's transition from silent films and to sound films in the late 1920s.",
+            "poster_path": "/wjOHjWCUE0YzDiEzKv8AfqHj3ir.jpg",
+            "media_type": "movie",
+            "genre_ids": [
+                18,
+                35
+            ],
+            "popularity": 253.759,
+            "release_date": "2022-12-22",
+            "video": false,
+            "vote_average": 7.538,
+            "vote_count": 1553
+        }
+    ],
+    "total_pages": 1000,
+    "total_results": 20000
+}
