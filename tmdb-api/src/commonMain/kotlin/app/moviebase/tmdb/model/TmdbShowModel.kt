@@ -101,7 +101,7 @@ data class TmdbShowDetail(
     @SerialName("vote_average") override val voteAverage: Float,
     @SerialName("vote_count") override val voteCount: Int,
     @SerialName("external_ids") val externalIds: TmdbExternalIds? = null,
-    @SerialName("watch/providers") val watchProviders: TmdbProviderResult? = null,
+    @SerialName("watch/providers") val watchProviders: TmdbWatchProviderResult? = null,
     @SerialName("credits") val credits: TmdbCredits? = null,
     @SerialName("aggregate_credits") val aggregateCredits: TmdbAggregateCredits? = null,
     @SerialName("videos") val videos: TmdbResult<TmdbVideo>? = null,

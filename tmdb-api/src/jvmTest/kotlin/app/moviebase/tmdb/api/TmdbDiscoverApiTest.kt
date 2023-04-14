@@ -142,11 +142,11 @@ class TmdbDiscoverApiTest {
                 TmdbDiscoverFilter(
                     TmdbDiscoverSeparator.OR,
                     listOf(
-                        TmdbWatchProviderId.NETFLIX,
-                        TmdbWatchProviderId.AMAZON_PRIME_VIDEO,
-                        TmdbWatchProviderId.AMAZON_PRIME_VIDEO_2,
-                        TmdbWatchProviderId.DISNEY_PLUS,
-                        TmdbWatchProviderId.APPLE_TV_PLUS
+                        TmdbWatchProviderId.Flatrate.NETFLIX,
+                        TmdbWatchProviderId.Flatrate.AMAZON_PRIME_VIDEO_TIER_A,
+                        TmdbWatchProviderId.Flatrate.AMAZON_PRIME_VIDEO_TIER_B,
+                        TmdbWatchProviderId.Flatrate.DISNEY_PLUS,
+                        TmdbWatchProviderId.Flatrate.APPLE_TV_PLUS
                     )
                 )
             )
