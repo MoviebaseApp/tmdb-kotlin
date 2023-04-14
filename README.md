@@ -17,8 +17,8 @@
 
 <hr>
 
-# TMDB API
-TMDB API is a **Kotlin Multiplatform** library for fetching movies, TV shows, episodes, and all relevant information.
+# TMDB Kotlin
+TMDB Kotlin is a **Kotlin Multiplatform** library for fetching movies, TV shows, episodes, and all relevant information.
 
 * Written in Kotlin native with ktor from the ground up.
 * Support for Android, iOS, desktop, and web applications.
