@@ -38,7 +38,7 @@ class TmdbMoviesApi internal constructor(private val client: HttpClient) {
 
     suspend fun getTranslations(movieId: Int): TmdbTranslations = client.getByPaths(*moviePath(movieId, "translations"))
 
-    suspend fun getWatchProviders(movieId: Int): TmdbProviderResult = client.getByPaths(*moviePath(movieId, "watch", "providers"))
+    suspend fun getWatchProviders(movieId: Int): TmdbWatchProviderResult = client.getByPaths(*moviePath(movieId, "watch", "providers"))
 
     suspend fun popular(
         page: Int,

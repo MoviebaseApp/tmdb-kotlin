@@ -4,13 +4,21 @@ import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
 object TmdbWatchProviderId {
-    const val NETFLIX = 8
-    const val AMAZON_PRIME_VIDEO = 9
-    const val AMAZON_PRIME_VIDEO_2 = 119 // duplicate provider ID available
-    const val AMAZON_VIDEO = 10
-    const val APPLE_ITUNES = 2
-    const val APPLE_TV_PLUS = 350
-    const val DISNEY_PLUS = 337
+
+    object Flatrate {
+        const val NETFLIX = 8
+        const val AMAZON_PRIME_VIDEO_TIER_A = 9
+        const val AMAZON_PRIME_VIDEO_TIER_B = 119
+        const val APPLE_TV_PLUS = 350
+        const val DISNEY_PLUS = 337
+    }
+
+    object Buy {
+        const val APPLE_ITUNES = 2
+        const val GOOGLE_PLAY_MOVIES = 3
+        const val AMAZON_VIDEO = 10
+        const val MICROSOFT_STORE = 68
+    }
 }
 
 @Serializable
@@ -32,7 +40,7 @@ enum class TmdbWatchMonetizationType(val value: String) {
 }
 
 @Serializable
-data class TmdbProviderResult(
+data class TmdbWatchProviderResult(
     val id: Int? = null,
     val results: Map<String, TmdbProviders>
 )

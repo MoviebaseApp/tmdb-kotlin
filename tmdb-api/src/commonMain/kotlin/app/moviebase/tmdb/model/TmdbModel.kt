@@ -112,11 +112,15 @@ data class TmdbKeyword(
 @Serializable
 data class TmdbExternalIds(
     @SerialName("imdb_id") val imdbId: String? = null,
+    @SerialName("freebase_mid") val freebaseMid: String? = null,
+    @SerialName("freebase_id") val freebaseId: String? = null,
     @SerialName("tvdb_id") val tvdbId: Int? = null,
+    @SerialName("tvrage_id") val tvrageId: Int? = null,
     @SerialName("id") val id: Int? = null, // it is is used in append responses
     @SerialName("facebook_id") val facebook: String? = null,
     @SerialName("instagram_id") val instagram: String? = null,
-    @SerialName("twitter_id") val twitter: String? = null
+    @SerialName("twitter_id") val twitter: String? = null,
+    @SerialName("wikidata_id") val wikidata: String? = null,
 )
 
 @Serializable

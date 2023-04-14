@@ -60,7 +60,7 @@ class TmdbShowApi internal constructor(private val client: HttpClient) {
         parameterLanguage(language)
     }.body()
 
-    suspend fun getWatchProviders(showId: Int): TmdbProviderResult = client.get {
+    suspend fun getWatchProviders(showId: Int): TmdbWatchProviderResult = client.get {
         endPointShow(showId, "watch", "providers")
     }.body()
 
