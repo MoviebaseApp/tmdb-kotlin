@@ -191,6 +191,15 @@ data class TmdbTaggedImage(
 )
 
 @Serializable
+data class TmdbShowCreatedBy(
+    @SerialName("id") val id: Int,
+    @SerialName("credit_id") val creditId: String? = null,
+    @SerialName("gender") val gender: TmdbGender? = null,
+    @SerialName("name") val name: String,
+    @SerialName("profile_path") val profilePath: String? = null,
+)
+
+@Serializable
 data class TmdbImagePageResult(
     @SerialName("page") override val page: Int,
     @SerialName("results") override val results: List<TmdbTaggedImage> = emptyList(),

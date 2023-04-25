@@ -17,7 +17,7 @@ class TmdbShowSeasonsApi(private val client: HttpClient) {
         language: String? = null,
         appendResponses: Iterable<AppendResponse>? = null,
         includeImageLanguages: String? = null
-    ): TmdbSeason = client.get {
+    ): TmdbSeasonDetail = client.get {
         endPointSeason(showId, seasonNumber)
         parameterLanguage(language)
         parameterAppendResponses(appendResponses)
