@@ -106,7 +106,8 @@ data class TmdbShowDetail(
     @SerialName("aggregate_credits") val aggregateCredits: TmdbAggregateCredits? = null,
     @SerialName("videos") val videos: TmdbResult<TmdbVideo>? = null,
     @SerialName("content_ratings") val contentRatings: TmdbResult<TmdbContentRating>? = null,
-    @SerialName("images") val images: TmdbImages? = null
+    @SerialName("images") val images: TmdbImages? = null,
+    @SerialName("created_by") val createdBy: List<TmdbShowCreatedBy>? = null
 ) : TmdbAnyMedia, TmdbBackdropMedia, TmdbPosterMedia, TmdbRatingItem
 
 fun TmdbResult<TmdbContentRating>.getContentRating(country: String): String? =
