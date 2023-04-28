@@ -123,9 +123,9 @@ internal object HttpClientFactory {
 
     private suspend fun Json.decodeTmdbErrorResponse(response: HttpResponse): TmdbErrorResponse? {
         if (!response.isTmdbStatusHandled) return null
-        val exceptionResponseText = response.bodyAsText()
 
         return try {
+            val exceptionResponseText = response.bodyAsText()
             decodeFromString(TmdbErrorResponse.serializer(), exceptionResponseText)
         } catch (t: Throwable) {
             // if we don't get a TMDB error response, skip the handling

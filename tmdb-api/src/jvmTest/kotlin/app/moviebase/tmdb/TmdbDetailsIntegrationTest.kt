@@ -45,4 +45,13 @@ class TmdbDetailsIntegrationTest {
             }
         }
     }
+
+    @Test
+    fun `it fetches unavailable watch providers`() {
+        runTest {
+            assertThrows<TmdbException> {
+                tmdb3.show.getWatchProviders(119713)
+            }
+        }
+    }
 }

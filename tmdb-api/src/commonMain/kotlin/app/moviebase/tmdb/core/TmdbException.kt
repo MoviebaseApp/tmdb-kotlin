@@ -2,6 +2,7 @@ package app.moviebase.tmdb.core
 
 import app.moviebase.tmdb.model.TmdbErrorResponse
 
+@Suppress("MemberVisibilityCanBePrivate")
 class TmdbException(
     val tmdbResponse: TmdbErrorResponse,
     caused: Throwable? = null
