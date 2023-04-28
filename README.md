@@ -48,7 +48,7 @@ To use the library in a single-platform project, add a dependency.
 
 ```kotlin
 dependencies {
-    implementation("app.moviebase:tmdb-api:0.9.2")
+    implementation("app.moviebase:tmdb-api:1.0.0")
 }
 ```
 
@@ -57,7 +57,7 @@ In Kotlin Multiplatform projects, add the dependency to your commonMain source-s
 ```kotlin
 commonMain {
     dependencies {
-        implementation("app.moviebase:tmdb-api:0.9.2")
+        implementation("app.moviebase:tmdb-api:1.0.0")
     }
 }
 ```
@@ -70,7 +70,7 @@ Add a dependency to the `<dependencies>` element.
 <dependency>
     <groupId>app.moviebase</groupId>
     <artifactId>tmdb-api</artifactId>
-    <version>0.9.2</version>
+    <version>1.0.0</version>
 </dependency>
 ```
 
@@ -85,7 +85,7 @@ Build up your TMDB instance to access the APIs. You can configure the entire Htt
 val tmdb = Tmdb3 {
     tmdbApiKey = "yourApiKey"
 
-    tmdbAuthCredentials {
+    userAuthentication {
         authenticationToken = "auth token for version 4"
         val storage = TmdbAccountStorage() // use own class here
         loadSessionId { storage.sessionId  }
