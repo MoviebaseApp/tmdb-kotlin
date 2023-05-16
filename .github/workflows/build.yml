@@ -13,7 +13,7 @@ on:
 jobs:
 
   build:
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
     timeout-minutes: 30
 
     steps:
@@ -35,8 +35,8 @@ jobs:
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
 
-      - name: Run Tests
-        run: ./gradlew jvmTest --parallel
+      - name: Build and run tests
+        run: ./gradlew assemble jvmTest --parallel
 
       - name: Upload build outputs
         if: always()
@@ -64,7 +64,7 @@ jobs:
   publish:
     needs: [build]
     if: github.event_name == 'push'
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
     timeout-minutes: 30
     steps:
       - name: Checkout
