@@ -11,11 +11,14 @@ object TmdbWatchProviderId {
         const val AMAZON_PRIME_VIDEO_TIER_B = 119
         const val APPLE_TV_PLUS = 350
         const val DISNEY_PLUS = 337
+        const val HBO_MAX = 384
+        const val HULU = 15
+        const val PARAMOUNT = 531
     }
 
     object Buy {
         const val APPLE_ITUNES = 2
-        const val GOOGLE_PLAY_MOVIES = 3
+        const val GOOGLE_PLAY = 3
         const val AMAZON_VIDEO = 10
         const val MICROSOFT_STORE = 68
     }
