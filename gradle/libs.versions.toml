@@ -1,5 +1,5 @@
 [versions]
-kotlin = "1.8.10"
+kotlin = "1.9.0"
 spotless = "6.20.0"
 ben-manes-versions = "0.47.0"
 dokka = "1.8.20"
