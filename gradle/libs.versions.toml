@@ -12,7 +12,7 @@ ktlint = "0.48.2"
 junit-jupiter = "5.10.0"
 truth = "1.1.5"
 junit = "4.13.2"
-mockito-kotlin = "4.1.0"
+mockito-kotlin = "5.1.0"
 mockito-inline = "5.2.0"
 maven-publish = "0.25.3"
 
