@@ -52,7 +52,9 @@ data class TmdbWatchProviderResult(
 data class TmdbProviders(
     val link: String,
     val flatrate: List<TmdbProvider> = emptyList(),
-    val buy: List<TmdbProvider> = emptyList()
+    val buy: List<TmdbProvider> = emptyList(),
+    val rent: List<TmdbProvider> = emptyList(),
+    val free: List<TmdbProvider> = emptyList()
 )
 
 @Serializable
