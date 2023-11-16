@@ -144,7 +144,7 @@ data class TmdbSeasonDetail(
     val episodes: List<TmdbEpisode>? = null,
     @SerialName("external_ids") val externalIds: TmdbExternalIds? = null,
     @SerialName("videos") val videos: TmdbResult<TmdbVideo>? = null,
-    @SerialName("images") val images: TmdbResult<TmdbImages>? = null
+    @SerialName("images") val images: TmdbImages? = null
 ) : TmdbAnyMedia, TmdbPosterMedia {
 
     val numberOfEpisodes get() = episodeCount ?: episodes?.size ?: 0
