@@ -10,7 +10,7 @@
 [![Maven Central](https://img.shields.io/maven-central/v/app.moviebase/tmdb-api?label=Maven%20Central)](https://search.maven.org/artifact/app.moviebase/tmdb-api)
 ![Github Actions](https://github.com/MoviebaseApp/tmdb-api/actions/workflows/build.yml/badge.svg)
 [![Issues](https://img.shields.io/github/issues/MoviebaseApp/tmdb-api)](https://github.com/MoviebaseApp/tmdb-api/issues)
-[![Kotlin](https://img.shields.io/badge/kotlin-1.8.10-blue.svg?logo=kotlin)](http://kotlinlang.org)
+[![Kotlin](https://img.shields.io/badge/kotlin-1.9.20-blue.svg?logo=kotlin)](http://kotlinlang.org)
 [![Gradle](https://img.shields.io/badge/Gradle-8-green?style=flat)](https://gradle.org)
 [![GitHub License](https://img.shields.io/badge/license-Apache%20License%202.0-blue.svg?style=flat)](http://www.apache.org/licenses/LICENSE-2.0)
 [![GitHub Account](https://img.shields.io/static/v1?label=GitHub&message=chrisnkrueger&color=C51162)](https://github.com/chrisnkrueger)
@@ -48,7 +48,7 @@ To use the library in a single-platform project, add a dependency.
 
 ```kotlin
 dependencies {
-    implementation("app.moviebase:tmdb-api:1.0.0")
+    implementation("app.moviebase:tmdb-api:1.2.0")
 }
 ```
 
@@ -57,7 +57,7 @@ In Kotlin Multiplatform projects, add the dependency to your commonMain source-s
 ```kotlin
 commonMain {
     dependencies {
-        implementation("app.moviebase:tmdb-api:1.0.0")
+        implementation("app.moviebase:tmdb-api:1.2.0")
     }
 }
 ```
@@ -70,7 +70,7 @@ Add a dependency to the `<dependencies>` element.
 <dependency>
     <groupId>app.moviebase</groupId>
     <artifactId>tmdb-api</artifactId>
-    <version>1.0.0</version>
+    <version>1.2.0</version>
 </dependency>
 ```
 
