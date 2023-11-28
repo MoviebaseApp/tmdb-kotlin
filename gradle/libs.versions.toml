@@ -1,6 +1,6 @@
 [versions]
 kotlin = "1.9.20"
-spotless = "6.20.0"
+spotless = "6.23.0"
 ben-manes-versions = "0.50.0"
 dokka = "1.9.10"
 nexus = "1.3.0"
