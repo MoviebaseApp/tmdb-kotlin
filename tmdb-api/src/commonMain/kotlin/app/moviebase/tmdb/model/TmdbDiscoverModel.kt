@@ -31,43 +31,43 @@ data class TmdbDiscoverFilter<T>(
     }
 }
 
-sealed class TmdbDiscoverTimeRange {
+sealed interface TmdbDiscoverTimeRange {
 
     data class BetweenYears(
         private val from: Int,
         private val to: Int
-    ) : TmdbDiscoverTimeRange() {
+    ) : TmdbDiscoverTimeRange {
         val firstDayOfYear: String get() = LocalDate(from, 1, 1).toString()
         val lastDayOfYear: String get() = LocalDate(to, 12, 31).toString()
     }
 
     data class OneYear(
         val year: Int
-    ) : TmdbDiscoverTimeRange()
+    ) : TmdbDiscoverTimeRange
 
     data class Custom(
         val firstDate: String? = null,
         val lastDate: String? = null
-    ) : TmdbDiscoverTimeRange()
+    ) : TmdbDiscoverTimeRange
 }
 
-sealed class TmdbDiscover {
+sealed interface TmdbDiscover {
 
-    abstract val sortOrder: TmdbSortOrder
-    abstract val voteAverageGte: Float?
-    abstract val voteAverageLte: Float?
-    abstract val voteCountGte: Int?
-    abstract val voteCountLte: Int?
+    val sortOrder: TmdbSortOrder
+    val voteAverageGte: Float?
+    val voteAverageLte: Float?
+    val voteCountGte: Int?
+    val voteCountLte: Int?
 
-    abstract val withGenres: List<String>
-    abstract val withoutGenres: List<String>
-    abstract val withWatchProviders: TmdbDiscoverFilter<Int>?
-    abstract val watchRegion: String? // ISO 3166-1 code
-    abstract val withWatchMonetizationTypes: List<TmdbWatchMonetizationType>
+    val withGenres: List<String>
+    val withoutGenres: List<String>
+    val withWatchProviders: TmdbDiscoverFilter<Int>?
+    val watchRegion: String? // ISO 3166-1 code
+    val withWatchMonetizationTypes: List<TmdbWatchMonetizationType>
 
-    abstract fun buildParameters(): Map<String, String?>
+    fun buildParameters(): Map<String, String?>
 
-    protected fun newParameterMap(): HashMap<String, String?> {
+    fun newParameterMap(): HashMap<String, String?> {
         val params = HashMap<String, String?>()
         voteAverageGte?.let {
             params[DiscoverParam.VOTE_AVERAGE_GTE] = it.toString()
@@ -122,7 +122,7 @@ sealed class TmdbDiscover {
         override val withWatchProviders: TmdbDiscoverFilter<Int>? = null,
         override val watchRegion: String? = null,
         override val withWatchMonetizationTypes: List<TmdbWatchMonetizationType> = emptyList()
-    ) : TmdbDiscover() {
+    ) : TmdbDiscover {
 
         override fun buildParameters(): Map<String, String?> {
             val params = newParameterMap()
@@ -174,7 +174,7 @@ sealed class TmdbDiscover {
         override val withWatchProviders: TmdbDiscoverFilter<Int>? = null,
         override val watchRegion: String? = null,
         override val withWatchMonetizationTypes: List<TmdbWatchMonetizationType> = emptyList()
-    ) : TmdbDiscover() {
+    ) : TmdbDiscover {
 
         override fun buildParameters(): Map<String, String?> {
             val params = newParameterMap()

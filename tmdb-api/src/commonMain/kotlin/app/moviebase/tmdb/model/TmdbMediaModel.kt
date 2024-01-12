@@ -51,11 +51,11 @@ interface TmdbRatingItem {
  */
 @Polymorphic
 @Serializable
-sealed class TmdbMediaListItem : TmdbAnyMedia, TmdbBackdropMedia, TmdbPosterMedia, TmdbRatingItem {
-    abstract val overview: String
-    abstract val genresIds: List<Int>
-    abstract val popularity: Float
-    abstract val originalLanguage: String
+sealed interface TmdbMediaListItem : TmdbAnyMedia, TmdbBackdropMedia, TmdbPosterMedia, TmdbRatingItem {
+    val overview: String
+    val genresIds: List<Int>
+    val popularity: Float
+    val originalLanguage: String
 }
 
 @Serializable
@@ -77,7 +77,7 @@ data class TmdbMovie(
     @SerialName("vote_count") override val voteCount: Int,
     @SerialName("video") val video: Boolean,
     @SerialName("vote_average") override val voteAverage: Float
-) : TmdbMediaListItem(), TmdbSearchable
+) : TmdbMediaListItem, TmdbSearchable
 
 @Serializable
 data class TmdbMoviePageResult(
@@ -105,7 +105,7 @@ data class TmdbShow(
     @SerialName("vote_count") override val voteCount: Int,
     @SerialName("name") val name: String,
     @SerialName("original_name") val originalName: String
-) : TmdbMediaListItem(), TmdbSearchable
+) : TmdbMediaListItem, TmdbSearchable
 
 @Serializable
 data class TmdbShowPageResult(
