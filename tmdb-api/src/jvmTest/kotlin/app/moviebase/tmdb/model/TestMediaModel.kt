@@ -1,4 +1,4 @@
-// ktlint-disable filename
+@file:Suppress("ktlint")
 
 package app.moviebase.tmdb.model
 

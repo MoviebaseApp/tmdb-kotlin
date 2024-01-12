@@ -60,7 +60,7 @@ data class TmdbCredits(
     }
 }
 
-interface TmdbAnyPerson : TmdbAnyMedia, TmdbProfileMedia {
+interface TmdbAnyPerson : TmdbAnyItem, TmdbProfileMedia {
     val name: String
     val popularity: Float?
 }
@@ -70,25 +70,6 @@ data class TmdbAggregateCredits(
     @SerialName("cast") val cast: List<TmdbAggregateCast>,
     @SerialName("crew") val crew: List<TmdbAggregateCrew>
 )
-
-@Serializable
-data class TmdbPerson(
-    @SerialName("adult") val adult: Boolean = false,
-    @SerialName("gender") val gender: TmdbGender,
-    @SerialName("id") override val id: Int,
-    @SerialName("known_for_department") val knownForDepartment: String? = null,
-    @SerialName("name") override val name: String,
-    @SerialName("profile_path") override val profilePath: String? = null,
-    @SerialName("popularity") override val popularity: Float? = null
-) : TmdbAnyPerson, TmdbSearchable
-
-@Serializable
-data class TmdbPersonPageResult(
-    @SerialName("page") override val page: Int,
-    @SerialName("results") override val results: List<TmdbPerson> = emptyList(),
-    @SerialName("total_results") override val totalResults: Int,
-    @SerialName("total_pages") override val totalPages: Int
-) : TmdbPageResult<TmdbPerson>
 
 @Serializable
 data class TmdbPersonDetail(
@@ -224,7 +205,7 @@ data class TmdbPersonShowCredits(
     @SerialName("crew") val crew: List<TmdbPersonCredit.Show.Crew>
 )
 
-sealed interface TmdbPersonCredit : TmdbAnyMedia, TmdbBackdropMedia, TmdbPosterMedia {
+sealed interface TmdbPersonCredit : TmdbAnyItem, TmdbBackdropItem, TmdbPosterItem {
 
     val voteAverage: Float
     val voteCount: Int

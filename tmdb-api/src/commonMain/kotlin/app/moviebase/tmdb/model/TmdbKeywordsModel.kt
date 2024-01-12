@@ -5,10 +5,10 @@ import kotlinx.serialization.Serializable
 
 @Serializable
 data class TmdbKeywordDetail(
-    val adult: Boolean,
+    @SerialName("adult") val adult: Boolean,
     @SerialName("backdrop_path") val backdropPath: String?,
-    val id: Int,
-    val name: String,
+    @SerialName("id") override val id: Int,
+    @SerialName("name") val name: String,
     @SerialName("original_language") val originalLanguage: String,
     @SerialName("original_name") val originalName: String,
     @SerialName("overview") val overview: String,

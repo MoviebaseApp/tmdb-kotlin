@@ -9,7 +9,8 @@ enum class TmdbSearchType(val value: String) {
     KEYWORD("keyword"),
     PERSON("person"),
     MOVIE("movie"),
-    TV("tv")
+    TV("tv"),
+    MULTI("multi"),
 }
 
 @Serializable
@@ -19,4 +20,6 @@ data class TmdbFindResults(
     @SerialName("person_results") val personResults: List<TmdbPerson> = emptyList()
 )
 
-interface TmdbSearchable
+interface TmdbSearchable {
+    val id: Int
+}

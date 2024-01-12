@@ -12,8 +12,10 @@ class TmdbFindApiTest {
     val client = mockHttpClient(
         version = 3,
         responses = mapOf(
-            "find/tt10919380?language=en&external_source=imdb_id" to "find/find_movie_tt10919380.json",
-            "find/nm0424060?language=en&external_source=imdb_id" to "find/find_person_nm0424060.json"
+            "find/tt10919380?language=en&external_source=imdb_id"
+                to "find/find_movie_tt10919380.json",
+            "find/nm0424060?language=en&external_source=imdb_id"
+                to "find/find_person_nm0424060.json"
         )
     )
 

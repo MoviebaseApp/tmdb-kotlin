@@ -1,7 +1,10 @@
+
 package app.moviebase.tmdb.api
 
 import app.moviebase.tmdb.core.mockHttpClient
 import com.google.common.truth.Truth.assertThat
+import kotlin.test.assertEquals
+import kotlin.test.assertTrue
 import kotlinx.coroutines.test.runTest
 import org.junit.jupiter.api.Test
 
@@ -10,16 +13,28 @@ class TmdbSearchApiTest {
     val client = mockHttpClient(
         version = 3,
         responses = mapOf(
-            "search/tv?query=Lupin&include_adult=false&page=1&region=US&language=en" to "search/search_tv_lupin.json",
-            "search/tv?query=Simpsons&include_adult=false&page=1&region=US&language=en&first_air_date_year=1996" to "search/search_tv_simpsons.json",
-            "search/tv?query=S.W.A.T.&include_adult=false&page=1&region=US&language=en" to "search/search_tv_SWAT.json",
-            "search/movie?query=Star+Wars&include_adult=false&page=1&region=US&language=en" to "search/search_movie_star_wars.json",
-            "search/movie?query=Star+Wars&include_adult=false&page=1&region=US&language=en&year=1977" to "search/search_movie_star_wars_1977.json",
-            "search/movie?query=Star+Wars&include_adult=false&page=1&region=US&language=en&primary_release_year=1977" to "search/search_movie_star_wars_1977.json",
-            "search/person?query=ka&include_adult=false&page=1&region=US&language=en" to "search/search_person_ka.json",
-            "search/company?query=fox&page=1" to "search/search_company_fox.json",
-            "search/collection?query=fast&page=1&language=en" to "search/search_collection_fast.json",
-            "search/keyword?query=future&page=1" to "search/search_keyword_future.json"
+            "search/tv?query=Lupin&include_adult=false&page=1&region=US&language=en"
+              to "search/search_tv_lupin.json",
+            "search/tv?query=Simpsons&include_adult=false&page=1&region=US&language=en&first_air_date_year=1996"
+              to "search/search_tv_simpsons.json",
+            "search/tv?query=S.W.A.T.&include_adult=false&page=1&region=US&language=en"
+              to "search/search_tv_SWAT.json",
+            "search/movie?query=Star+Wars&include_adult=false&page=1&region=US&language=en"
+              to "search/search_movie_star_wars.json",
+            "search/movie?query=Star+Wars&include_adult=false&page=1&region=US&language=en&year=1977"
+              to "search/search_movie_star_wars_1977.json",
+            "search/movie?query=Star+Wars&include_adult=false&page=1&region=US&language=en&primary_release_year=1977"
+              to "search/search_movie_star_wars_1977.json",
+            "search/person?query=ka&include_adult=false&page=1&region=US&language=en"
+              to "search/search_person_ka.json",
+            "search/company?query=fox&page=1"
+              to "search/search_company_fox.json",
+            "search/collection?query=fast&page=1&language=en"
+              to "search/search_collection_fast.json",
+            "search/keyword?query=future&page=1"
+              to "search/search_keyword_future.json",
+            "search/multi?query=Brad&include_adult=false&page=1&region=US&language=en"
+              to "search/search_multi_brad.json"
         )
     )
 
@@ -35,6 +50,21 @@ class TmdbSearchApiTest {
         assertThat(pageResult.results).isNotEmpty()
         val show = pageResult.results.first()
         assertThat(show.id).isEqualTo(22983)
+    }
+
+    @Test
+    fun `it can do a multi search with person and movie results by query brad`() = runTest {
+        val pageResult = classToTest.findMulti("Brad", 1, "en", "US", false)
+
+        assertEquals(1, pageResult.page)
+        assertEquals(289, pageResult.totalPages)
+        assertEquals(5771, pageResult.totalResults)
+        assertTrue(pageResult.results.isNotEmpty())
+
+        val show = pageResult.results.first()
+        assertThat(show.id).isEqualTo(2126)
+
+        val person = pageResult.results[1]
     }
 
     @Test

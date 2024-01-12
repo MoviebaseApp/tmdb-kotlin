@@ -1,3 +1,5 @@
+@file:Suppress("ktlint")
+
 package app.moviebase.tmdb.api
 
 import app.moviebase.tmdb.model.AppendResponse
@@ -13,8 +15,10 @@ class TmdbPeopleApiTest {
         responses = mapOf(
             "person/287?language=en-US&append_to_response=external_ids,images,tagged_images,movie_credits,tv_credits"
                 to "person/person_details_287.json",
-            "person/19292/movie_credits?language=en-US" to "person/person_movie_credits_19292.json",
-            "person/19292/tv_credits?language=en-US" to "person/person_tv_credits_19292.json"
+            "person/19292/movie_credits?language=en-US"
+                to "person/person_movie_credits_19292.json",
+            "person/19292/tv_credits?language=en-US"
+                to "person/person_tv_credits_19292.json"
         )
     )
 

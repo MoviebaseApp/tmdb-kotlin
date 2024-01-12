@@ -24,8 +24,11 @@ sealed interface DiscoverCategory {
         }
     }
 
-    data class OnStreaming(val mediaType: TmdbMediaType, val watchRegion: String, val watchProviders: TmdbDiscoverFilter<Int>) :
-        DiscoverCategory {
+    data class OnStreaming(
+        val mediaType: TmdbMediaType,
+        val watchRegion: String,
+        val watchProviders: TmdbDiscoverFilter<Int>
+    ) : DiscoverCategory {
         companion object {
             fun Netflix(mediaType: TmdbMediaType, watchRegion: String) = OnStreaming(
                 mediaType,
