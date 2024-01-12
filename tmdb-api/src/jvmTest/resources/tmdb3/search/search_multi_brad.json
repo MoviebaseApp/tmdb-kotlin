@@ -1,0 +1,922 @@
+{
+    "page": 1,
+    "results": [
+        {
+            "adult": false,
+            "backdrop_path": "/pEjsb26MKpLzvGcg9OtLptXpNyH.jpg",
+            "id": 2126,
+            "name": "The Brady Bunch",
+            "original_language": "en",
+            "original_name": "The Brady Bunch",
+            "overview": "When widower Mike Brady marries a lovely lady widow Carol Ann, their two families become one. These are the misadventures of this new couple, their six children, a dog named Tiger, and quirky housekeeper Alice.",
+            "poster_path": "/fnTz1POoEhO31KyEDyj1K4HsGVx.jpg",
+            "media_type": "tv",
+            "genre_ids": [
+                35
+            ],
+            "popularity": 588.05,
+            "first_air_date": "1969-09-26",
+            "vote_average": 6.722,
+            "vote_count": 126,
+            "origin_country": [
+                "US"
+            ]
+        },
+        {
+            "adult": false,
+            "backdrop_path": null,
+            "id": 1163787,
+            "title": "Brad",
+            "original_language": "en",
+            "original_title": "Brad",
+            "overview": "Nearly 50 years of life. Family, friends, lovers, trials and tribulations can come into every single day. Brad is a celebration of life and love, while also being a story of separation and age in life itself.",
+            "poster_path": "/fUdSdxEMPY7zLOKaPo0pEGwW8DN.jpg",
+            "media_type": "movie",
+            "genre_ids": [
+                99,
+                18
+            ],
+            "popularity": 0.717,
+            "release_date": "2023-08-11",
+            "video": false,
+            "vote_average": 0,
+            "vote_count": 0
+        },
+        {
+            "adult": false,
+            "id": 4443325,
+            "name": "Brad",
+            "original_name": "Brad",
+            "media_type": "person",
+            "popularity": 0.6,
+            "gender": 0,
+            "known_for_department": "Acting",
+            "profile_path": null,
+            "known_for": [
+                {
+                    "adult": false,
+                    "backdrop_path": null,
+                    "id": 1221241,
+                    "title": "portage place",
+                    "original_language": "en",
+                    "original_title": "portage place",
+                    "overview": "Eight & Chrussy meet up with Brad at Portage Place Mall, Treaty 1 Territory, Turtle Island.",
+                    "poster_path": "/ho6LXndWQDGr5sWYPf85vMY1k7G.jpg",
+                    "media_type": "movie",
+                    "genre_ids": [],
+                    "popularity": 0.6,
+                    "release_date": "2018-12-13",
+                    "video": false,
+                    "vote_average": 5,
+                    "vote_count": 1
+                }
+            ]
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/mftJfg0Z7Zhf0CVkYybqiaSjeV0.jpg",
+            "id": 30001,
+            "name": "The Brady Brides",
+            "original_language": "en",
+            "original_name": "The Brady Brides",
+            "overview": "Marcia and Jan Brady marry their sweethearts -- total opposites -- and both couples move in together in this spin-off of The Brady Bunch, which features recurring appearances by Carol and Alice.",
+            "poster_path": "/oTo59GZFylMwWs4gcdqJDA9mSrf.jpg",
+            "media_type": "tv",
+            "genre_ids": [
+                35
+            ],
+            "popularity": 126.954,
+            "first_air_date": "1981-02-06",
+            "vote_average": 7.5,
+            "vote_count": 2,
+            "origin_country": [
+                "US"
+            ]
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/ddjjHuDq4sNX94jN2P8wuTHnBrW.jpg",
+            "id": 5656,
+            "name": "The Ray Bradbury Theater",
+            "original_language": "en",
+            "original_name": "The Ray Bradbury Theater",
+            "overview": "A Canadian-produced fantastic anthology series scripted by famed science-fiction author Ray Bradbury. Many of the teleplays were based upon Bradbury's novels and short stories.",
+            "poster_path": "/fFgcmn91k9zrlHm9WmQ1lCDD9Hs.jpg",
+            "media_type": "tv",
+            "genre_ids": [
+                10765,
+                18
+            ],
+            "popularity": 89.092,
+            "first_air_date": "1985-05-21",
+            "vote_average": 7.033,
+            "vote_count": 30,
+            "origin_country": [
+                "US"
+            ]
+        },
+        {
+            "adult": false,
+            "id": 287,
+            "name": "Brad Pitt",
+            "original_name": "Brad Pitt",
+            "media_type": "person",
+            "popularity": 42.243,
+            "gender": 2,
+            "known_for_department": "Acting",
+            "profile_path": "/sra9JWUaXGs4NlAueA7CpuYzLCk.jpg",
+            "known_for": [
+                {
+                    "adult": false,
+                    "backdrop_path": "/1Jpkm9qZcsT0mSyVXgs4VlGjPNI.jpg",
+                    "id": 16869,
+                    "title": "Inglourious Basterds",
+                    "original_language": "en",
+                    "original_title": "Inglourious Basterds",
+                    "overview": "In Nazi-occupied France during World War II, a group of Jewish-American soldiers known as \"The Basterds\" are chosen specifically to spread fear throughout the Third Reich by scalping and brutally killing Nazis. The Basterds, lead by Lt. Aldo Raine soon cross paths with a French-Jewish teenage girl who runs a movie theater in Paris which is targeted by the soldiers.",
+                    "poster_path": "/7sfbEnaARXDDhKm0CZ7D7uc2sbo.jpg",
+                    "media_type": "movie",
+                    "genre_ids": [
+                        18,
+                        53,
+                        10752
+                    ],
+                    "popularity": 62.674,
+                    "release_date": "2009-08-21",
+                    "video": false,
+                    "vote_average": 8.216,
+                    "vote_count": 21171
+                },
+                {
+                    "adult": false,
+                    "backdrop_path": "/cRLeBlvfSttbsgOcQ0KG8Dorzqk.jpg",
+                    "id": 72190,
+                    "title": "World War Z",
+                    "original_language": "en",
+                    "original_title": "World War Z",
+                    "overview": "Life for former United Nations investigator Gerry Lane and his family seems content. Suddenly, the world is plagued by a mysterious infection turning whole human populations into rampaging mindless zombies. After barely escaping the chaos, Lane is persuaded to go on a mission to investigate this disease. What follows is a perilous trek around the world where Lane must brave horrific dangers and long odds to find answers before human civilization falls.",
+                    "poster_path": "/1SWBSYJsnyhdNRfLI1T6RsCxAQ4.jpg",
+                    "media_type": "movie",
+                    "genre_ids": [
+                        28,
+                        18,
+                        27,
+                        878,
+                        53
+                    ],
+                    "popularity": 82.074,
+                    "release_date": "2013-06-21",
+                    "video": false,
+                    "vote_average": 6.81,
+                    "vote_count": 14648
+                },
+                {
+                    "adult": false,
+                    "backdrop_path": "/hZkgoQYus5vegHoetLkCJzb17zJ.jpg",
+                    "id": 550,
+                    "title": "Fight Club",
+                    "original_language": "en",
+                    "original_title": "Fight Club",
+                    "overview": "A ticking-time-bomb insomniac and a slippery soap salesman channel primal male aggression into a shocking new form of therapy. Their concept catches on, with underground \"fight clubs\" forming in every town, until an eccentric gets in the way and ignites an out-of-control spiral toward oblivion.",
+                    "poster_path": "/pB8BM7pdSp6B6Ih7QZ4DrQ3PmJK.jpg",
+                    "media_type": "movie",
+                    "genre_ids": [
+                        18
+                    ],
+                    "popularity": 98.591,
+                    "release_date": "1999-10-15",
+                    "video": false,
+                    "vote_average": 8.44,
+                    "vote_count": 27834
+                }
+            ]
+        },
+        {
+            "adult": false,
+            "backdrop_path": null,
+            "id": 93893,
+            "name": "It's Alive! With Brad",
+            "original_language": "en",
+            "original_name": "It's Alive! With Brad",
+            "overview": "Join Bon Appétit test kitchen manager, Brad Leone, on a wild, roundabout and marginally scientific adventure exploring fermented foods and more. From cultured butter and kombucha, to kimchi and miso, to beer and tepache, learn how to make fermented and live foods yourself.",
+            "poster_path": "/qP70zysGKOsZWbioeBqCxTecVAt.jpg",
+            "media_type": "tv",
+            "genre_ids": [
+                99,
+                35
+            ],
+            "popularity": 21.985,
+            "first_air_date": "2016-10-21",
+            "vote_average": 10,
+            "vote_count": 2,
+            "origin_country": [
+                "US"
+            ]
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/gt07Tw1IMbHbYpkJTCtqCEj0J8W.jpg",
+            "id": 1033548,
+            "title": "Brad Pitt: More Than a Pretty Face",
+            "original_language": "fr",
+            "original_title": "Brad Pitt, la revanche d'un blond",
+            "overview": "Brad Pitt is a singular actor in Hollywood's glamorous world, breaking through his \"playboy image\" and embodying American cinema's renewal. At the beginning there was a humble Midwestern aware of being a smokescreen for the illusions of his time, who has managed to keep control of his image to better serve the most talented directors of our time. To name but a few: David Fincher, Quentin Tarantino, the Coen brothers, Terrence Malick, James Gray and soon Damien Chazelle. This documentary dives into the brain of a complex, brilliant and endearing personality, far from the cliché of a world-famous movie icon to discover the hidden side of the most handsome man in the world.",
+            "poster_path": "/lVpi5vYqpEcHn74YqWQhihKz0yk.jpg",
+            "media_type": "movie",
+            "genre_ids": [
+                99,
+                10770
+            ],
+            "popularity": 5.435,
+            "release_date": "2022-10-09",
+            "video": false,
+            "vote_average": 7.2,
+            "vote_count": 10
+        },
+        {
+            "adult": false,
+            "id": 18,
+            "name": "Brad Garrett",
+            "original_name": "Brad Garrett",
+            "media_type": "person",
+            "popularity": 20.983,
+            "gender": 2,
+            "known_for_department": "Acting",
+            "profile_path": "/813ffbpoaoaJRdoe1yrbivboWKp.jpg",
+            "known_for": [
+                {
+                    "adult": false,
+                    "backdrop_path": "/eCynaAOgYYiw5yN5lBwz3IxqvaW.jpg",
+                    "id": 12,
+                    "title": "Finding Nemo",
+                    "original_language": "en",
+                    "original_title": "Finding Nemo",
+                    "overview": "Nemo, an adventurous young clownfish, is unexpectedly taken from his Great Barrier Reef home to a dentist's office aquarium. It's up to his worrisome father Marlin and a friendly but forgetful fish Dory to bring Nemo home -- meeting vegetarian sharks, surfer dude turtles, hypnotic jellyfish, hungry seagulls, and more along the way.",
+                    "poster_path": "/eHuGQ10FUzK1mdOY69wF5pGgEf5.jpg",
+                    "media_type": "movie",
+                    "genre_ids": [
+                        16,
+                        10751
+                    ],
+                    "popularity": 92.253,
+                    "release_date": "2003-05-30",
+                    "video": false,
+                    "vote_average": 7.823,
+                    "vote_count": 18356
+                },
+                {
+                    "adult": false,
+                    "backdrop_path": "/xgDj56UWyeWQcxQ44f5A3RTWuSs.jpg",
+                    "id": 2062,
+                    "title": "Ratatouille",
+                    "original_language": "en",
+                    "original_title": "Ratatouille",
+                    "overview": "Remy, a resident of Paris, appreciates good food and has quite a sophisticated palate. He would love to become a chef so he can create and enjoy culinary masterpieces to his heart's delight. The only problem is, Remy is a rat. When he winds up in the sewer beneath one of Paris' finest restaurants, the rodent gourmet finds himself ideally placed to realize his dream.",
+                    "poster_path": "/t3vaWRPSf6WjDSamIkKDs1iQWna.jpg",
+                    "media_type": "movie",
+                    "genre_ids": [
+                        16,
+                        35,
+                        10751,
+                        14
+                    ],
+                    "popularity": 94.538,
+                    "release_date": "2007-06-29",
+                    "video": false,
+                    "vote_average": 7.813,
+                    "vote_count": 16053
+                },
+                {
+                    "adult": false,
+                    "backdrop_path": "/cWczNud8Y8i8ab0Z4bxos4myWYO.jpg",
+                    "id": 38757,
+                    "title": "Tangled",
+                    "original_language": "en",
+                    "original_title": "Tangled",
+                    "overview": "When the kingdom's most wanted-and most charming-bandit Flynn Rider hides out in a mysterious tower, he's taken hostage by Rapunzel, a beautiful and feisty tower-bound teen with 70 feet of magical, golden hair. Flynn's curious captor, who's looking for her ticket out of the tower where she's been locked away for years, strikes a deal with the handsome thief and the unlikely duo sets off on an action-packed escapade, complete with a super-cop horse, an over-protective chameleon and a gruff gang of pub thugs.",
+                    "poster_path": "/ym7Kst6a4uodryxqbGOxmewF235.jpg",
+                    "media_type": "movie",
+                    "genre_ids": [
+                        16,
+                        10751
+                    ],
+                    "popularity": 102.882,
+                    "release_date": "2010-11-24",
+                    "video": false,
+                    "vote_average": 7.6,
+                    "vote_count": 10768
+                }
+            ]
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/eRfANc4xSRNaR8E9fUI9hdLkCWB.jpg",
+            "id": 425980,
+            "title": "Brad's Status",
+            "original_language": "en",
+            "original_title": "Brad's Status",
+            "overview": "Although Brad has a satisfying career, a sweet wife and a comfortable life in suburban Sacramento, things aren't quite what he imagined during his college glory days. When he accompanies his musical prodigy son on a university tour, he can't help comparing his life with those of his four best college friends who seemingly have more wealthy and glamorous lives. But when circumstances force him to reconnect with his former friends, Brad begins to question whether he has really failed or if their lives are actually more flawed than they appear.",
+            "poster_path": "/uXiNpvig7EMq18VyNBUTlWrmN0q.jpg",
+            "media_type": "movie",
+            "genre_ids": [
+                35,
+                18
+            ],
+            "popularity": 10.534,
+            "release_date": "2017-09-15",
+            "video": false,
+            "vote_average": 6.263,
+            "vote_count": 363
+        },
+        {
+            "adult": false,
+            "id": 51329,
+            "name": "Bradley Cooper",
+            "original_name": "Bradley Cooper",
+            "media_type": "person",
+            "popularity": 34.067,
+            "gender": 2,
+            "known_for_department": "Acting",
+            "profile_path": "/lq68RaE8zK4lNaB49RWOukyorgn.jpg",
+            "known_for": [
+                {
+                    "adult": false,
+                    "backdrop_path": "/2o0PKGmnSgCGkzoSePNAqse8Ure.jpg",
+                    "id": 18785,
+                    "title": "The Hangover",
+                    "original_language": "en",
+                    "original_title": "The Hangover",
+                    "overview": "When three friends finally come to after a raucous night of bachelor-party revelry, they find a baby in the closet and a tiger in the bathroom. But they can't seem to locate their best friend, Doug – who's supposed to be tying the knot. Launching a frantic search for Doug, the trio perseveres through a nasty hangover to try to make it to the church on time.",
+                    "poster_path": "/uluhlXubGu1VxU63X9VHCLWDAYP.jpg",
+                    "media_type": "movie",
+                    "genre_ids": [
+                        35
+                    ],
+                    "popularity": 91.632,
+                    "release_date": "2009-06-05",
+                    "video": false,
+                    "vote_average": 7.316,
+                    "vote_count": 16103
+                },
+                {
+                    "adult": false,
+                    "backdrop_path": "/rl95VDEP3nsUQmGzE0S1S7y6T0N.jpg",
+                    "id": 190859,
+                    "title": "American Sniper",
+                    "original_language": "en",
+                    "original_title": "American Sniper",
+                    "overview": "U.S. Navy SEAL Chris Kyle takes his sole mission—protect his comrades—to heart and becomes one of the most lethal snipers in American history. His pinpoint accuracy not only saves countless lives but also makes him a prime target of insurgents. Despite grave danger and his struggle to be a good husband and father to his family back in the States, Kyle serves four tours of duty in Iraq. However, when he finally returns home, he finds that he cannot leave the war behind.",
+                    "poster_path": "/i1U46OwMc6vlm7OoSUKfqUH615e.jpg",
+                    "media_type": "movie",
+                    "genre_ids": [
+                        10752,
+                        28
+                    ],
+                    "popularity": 54.544,
+                    "release_date": "2014-12-25",
+                    "video": false,
+                    "vote_average": 7.429,
+                    "vote_count": 12294
+                },
+                {
+                    "adult": false,
+                    "backdrop_path": "/92Ppi99LkZFHUgpxwYRxcKZVZNH.jpg",
+                    "id": 82693,
+                    "title": "Silver Linings Playbook",
+                    "original_language": "en",
+                    "original_title": "Silver Linings Playbook",
+                    "overview": "After spending eight months in a mental institution, a former teacher moves back in with his parents and tries to reconcile with his ex-wife.",
+                    "poster_path": "/y7iOVneBvITlBdhy6tVqXVOa1Js.jpg",
+                    "media_type": "movie",
+                    "genre_ids": [
+                        18,
+                        35,
+                        10749
+                    ],
+                    "popularity": 33.346,
+                    "release_date": "2012-11-16",
+                    "video": false,
+                    "vote_average": 7.135,
+                    "vote_count": 11509
+                }
+            ]
+        },
+        {
+            "adult": false,
+            "id": 1460120,
+            "name": "Millie Brady",
+            "original_name": "Millie Brady",
+            "media_type": "person",
+            "popularity": 15.554,
+            "gender": 1,
+            "known_for_department": "Acting",
+            "profile_path": "/8IBIRaUl4QyttlieUfKVBR2Ia5J.jpg",
+            "known_for": [
+                {
+                    "adult": false,
+                    "backdrop_path": "/sVkjgKq8cwKm95LCyfrLldLbQIG.jpg",
+                    "id": 274857,
+                    "title": "King Arthur: Legend of the Sword",
+                    "original_language": "en",
+                    "original_title": "King Arthur: Legend of the Sword",
+                    "overview": "When the child Arthur’s father is murdered, Vortigern, Arthur’s uncle, seizes the crown. Robbed of his birthright and with no idea who he truly is, Arthur comes up the hard way in the back alleys of the city. But once he pulls the sword Excalibur from the stone, his life is turned upside down and he is forced to acknowledge his true legacy... whether he likes it or not.",
+                    "poster_path": "/9kKXH6eJpzoFGhCbTN3FVwSQK3n.jpg",
+                    "media_type": "movie",
+                    "genre_ids": [
+                        28,
+                        18,
+                        14
+                    ],
+                    "popularity": 48.81,
+                    "release_date": "2017-05-12",
+                    "video": false,
+                    "vote_average": 6.543,
+                    "vote_count": 5429
+                },
+                {
+                    "adult": false,
+                    "backdrop_path": "/xPq3LDgamUT1aKLTeGJk9ccwfwr.jpg",
+                    "id": 276907,
+                    "title": "Legend",
+                    "original_language": "en",
+                    "original_title": "Legend",
+                    "overview": "Suave, charming and volatile, Reggie Kray and his unstable twin brother Ronnie start to leave their mark on the London underworld in the 1960s. Using violence to get what they want, the siblings orchestrate robberies and murders while running nightclubs and protection rackets. With police Detective Leonard \"Nipper\" Read hot on their heels, the brothers continue their rapid rise to power and achieve tabloid notoriety.",
+                    "poster_path": "/4shf5Alq4KWCKqrAAQe0JGJHYp5.jpg",
+                    "media_type": "movie",
+                    "genre_ids": [
+                        80,
+                        53
+                    ],
+                    "popularity": 49.032,
+                    "release_date": "2015-11-20",
+                    "video": false,
+                    "vote_average": 7.031,
+                    "vote_count": 3606
+                },
+                {
+                    "adult": false,
+                    "backdrop_path": "/oT9oOVLsXr1iWr1dtgQ2AqYqUoM.jpg",
+                    "id": 58431,
+                    "title": "Pride and Prejudice and Zombies",
+                    "original_language": "en",
+                    "original_title": "Pride and Prejudice and Zombies",
+                    "overview": "A zombie outbreak has fallen upon the land in this reimagining of Jane Austen's classic tale of the tangled relationships between lovers from different social classes in 19th century England. Feisty heroine Elizabeth Bennet is a master of martial arts and weaponry and the handsome Mr. Darcy is a fierce zombie killer, yet the epitome of upper class prejudice. As the zombie outbreak intensifies, they must swallow their pride and join forces on the blood-soaked battlefield in order to conquer the undead once and for all.",
+                    "poster_path": "/jsJlOhVHiz1xXr36616EI8tJ4b2.jpg",
+                    "media_type": "movie",
+                    "genre_ids": [
+                        10749,
+                        27,
+                        35,
+                        53
+                    ],
+                    "popularity": 33.953,
+                    "release_date": "2016-02-05",
+                    "video": false,
+                    "vote_average": 6.149,
+                    "vote_count": 2061
+                }
+            ]
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/oJxikl1ZgTI1fepwGvVs7dggBXk.jpg",
+            "id": 12606,
+            "title": "A Very Brady Sequel",
+            "original_language": "en",
+            "original_title": "A Very Brady Sequel",
+            "overview": "A man claiming to be Carol Brady's long-lost first husband, Roy Martin, shows up at the suburban Brady residence one evening. An impostor, the man is actually determined to steal the Bradys' familiar horse statue, a $20-million ancient Asian artifact.",
+            "poster_path": "/7xqOkzAQvXCLkDtmlWU6HZnOhru.jpg",
+            "media_type": "movie",
+            "genre_ids": [
+                10751,
+                35
+            ],
+            "popularity": 9.438,
+            "release_date": "1996-08-23",
+            "video": false,
+            "vote_average": 5.829,
+            "vote_count": 149
+        },
+        {
+            "adult": false,
+            "id": 11180,
+            "name": "David Bradley",
+            "original_name": "David Bradley",
+            "media_type": "person",
+            "popularity": 22.477,
+            "gender": 2,
+            "known_for_department": "Acting",
+            "profile_path": "/7yOYTDfO50PS187J9e5ojG4Fglt.jpg",
+            "known_for": [
+                {
+                    "adult": false,
+                    "backdrop_path": "/hziiv14OpD73u9gAak4XDDfBKa2.jpg",
+                    "id": 671,
+                    "title": "Harry Potter and the Philosopher's Stone",
+                    "original_language": "en",
+                    "original_title": "Harry Potter and the Philosopher's Stone",
+                    "overview": "Harry Potter has lived under the stairs at his aunt and uncle's house his whole life. But on his 11th birthday, he learns he's a powerful wizard—with a place waiting for him at the Hogwarts School of Witchcraft and Wizardry. As he learns to harness his newfound powers with the help of the school's kindly headmaster, Harry uncovers the truth about his parents' deaths—and about the villain who's to blame.",
+                    "poster_path": "/wuMc08IPKEatf9rnMNXvIDxqP4W.jpg",
+                    "media_type": "movie",
+                    "genre_ids": [
+                        12,
+                        14
+                    ],
+                    "popularity": 175.491,
+                    "release_date": "2001-11-16",
+                    "video": false,
+                    "vote_average": 7.915,
+                    "vote_count": 25937
+                },
+                {
+                    "adult": false,
+                    "backdrop_path": "/obKmfNexgL4ZP5cAmzdL4KbHHYX.jpg",
+                    "id": 673,
+                    "title": "Harry Potter and the Prisoner of Azkaban",
+                    "original_language": "en",
+                    "original_title": "Harry Potter and the Prisoner of Azkaban",
+                    "overview": "Year three at Hogwarts means new fun and challenges as Harry learns the delicate art of approaching a Hippogriff, transforming shape-shifting Boggarts into hilarity and even turning back time. But the term also brings danger: soul-sucking Dementors hover over the school, an ally of the accursed He-Who-Cannot-Be-Named lurks within the castle walls, and fearsome wizard Sirius Black escapes Azkaban. And Harry will confront them all.",
+                    "poster_path": "/aWxwnYoe8p2d2fcxOqtvAtJ72Rw.jpg",
+                    "media_type": "movie",
+                    "genre_ids": [
+                        12,
+                        14
+                    ],
+                    "popularity": 140.483,
+                    "release_date": "2004-06-04",
+                    "video": false,
+                    "vote_average": 8.019,
+                    "vote_count": 20459
+                },
+                {
+                    "adult": false,
+                    "backdrop_path": "/1stUIsjawROZxjiCMtqqXqgfZWC.jpg",
+                    "id": 672,
+                    "title": "Harry Potter and the Chamber of Secrets",
+                    "original_language": "en",
+                    "original_title": "Harry Potter and the Chamber of Secrets",
+                    "overview": "Cars fly, trees fight back, and a mysterious house-elf comes to warn Harry Potter at the start of his second year at Hogwarts. Adventure and danger await when bloody writing on a wall announces: The Chamber Of Secrets Has Been Opened. To save Hogwarts will require all of Harry, Ron and Hermione’s magical abilities and courage.",
+                    "poster_path": "/sdEOH0992YZ0QSxgXNIGLq1ToUi.jpg",
+                    "media_type": "movie",
+                    "genre_ids": [
+                        12,
+                        14
+                    ],
+                    "popularity": 128.907,
+                    "release_date": "2002-11-15",
+                    "video": false,
+                    "vote_average": 7.718,
+                    "vote_count": 20844
+                }
+            ]
+        },
+        {
+            "adult": false,
+            "id": 1370,
+            "name": "Brad Dourif",
+            "original_name": "Brad Dourif",
+            "media_type": "person",
+            "popularity": 25.638,
+            "gender": 2,
+            "known_for_department": "Acting",
+            "profile_path": "/z2LYR7Ickql7g5hnWJSIAWMPD4o.jpg",
+            "known_for": [
+                {
+                    "adult": false,
+                    "backdrop_path": "/oje9d0EXQyQcxsqHQor4xFVGjrd.jpg",
+                    "id": 510,
+                    "title": "One Flew Over the Cuckoo's Nest",
+                    "original_language": "en",
+                    "original_title": "One Flew Over the Cuckoo's Nest",
+                    "overview": "A petty criminal fakes insanity to serve his sentence in a mental ward rather than prison. He soon finds himself as a leader to the other patients—and an enemy to the cruel, domineering nurse who runs the ward.",
+                    "poster_path": "/3jcbDmRFiQ83drXNOvRDeKHxS0C.jpg",
+                    "media_type": "movie",
+                    "genre_ids": [
+                        18
+                    ],
+                    "popularity": 69.398,
+                    "release_date": "1975-11-19",
+                    "video": false,
+                    "vote_average": 8.422,
+                    "vote_count": 9853
+                },
+                {
+                    "adult": false,
+                    "backdrop_path": "/356j50BKkfGMocj2wGfTPYaSIcN.jpg",
+                    "id": 11249,
+                    "title": "Seed of Chucky",
+                    "original_language": "en",
+                    "original_title": "Seed of Chucky",
+                    "overview": "This time around, Chucky and his homicidal honey, Tiffany, are brought back to life by their orphan offspring, Glen. Then the horror goes Hollywood as Chucky unleashes his own brand of murderous mayhem!",
+                    "poster_path": "/vd9K93gQ9whMKjXzADZanxWpIXM.jpg",
+                    "media_type": "movie",
+                    "genre_ids": [
+                        35,
+                        27,
+                        53
+                    ],
+                    "popularity": 33.18,
+                    "release_date": "2004-11-12",
+                    "video": false,
+                    "vote_average": 5.434,
+                    "vote_count": 1489
+                },
+                {
+                    "adult": false,
+                    "backdrop_path": "/nS4picOwj15APKzJeBCk6EBcMG5.jpg",
+                    "id": 121,
+                    "title": "The Lord of the Rings: The Two Towers",
+                    "original_language": "en",
+                    "original_title": "The Lord of the Rings: The Two Towers",
+                    "overview": "Frodo and Sam are trekking to Mordor to destroy the One Ring of Power while Gimli, Legolas and Aragorn search for the orc-captured Merry and Pippin. All along, nefarious wizard Saruman awaits the Fellowship members at the Orthanc Tower in Isengard.",
+                    "poster_path": "/5VTN0pR8gcqV3EPUHHfMGnJYN9L.jpg",
+                    "media_type": "movie",
+                    "genre_ids": [
+                        12,
+                        14,
+                        28
+                    ],
+                    "popularity": 92.82,
+                    "release_date": "2002-12-18",
+                    "video": false,
+                    "vote_average": 8.39,
+                    "vote_count": 20688
+                }
+            ]
+        },
+        {
+            "adult": false,
+            "id": 18647,
+            "name": "Bradford Dillman",
+            "original_name": "Bradford Dillman",
+            "media_type": "person",
+            "popularity": 8.27,
+            "gender": 2,
+            "known_for_department": "Acting",
+            "profile_path": "/o86FOgoC3gWy44KFMdyKb8G4O0F.jpg",
+            "known_for": [
+                {
+                    "adult": false,
+                    "backdrop_path": "/bGrxhhnMhQBGF661zP0nBTcgTnp.jpg",
+                    "id": 24831,
+                    "title": "Piranha",
+                    "original_language": "en",
+                    "original_title": "Piranha",
+                    "overview": "When flesh-eating piranhas are accidently released into a summer resort's rivers, the guests become their next meal.",
+                    "poster_path": "/foW9pFj3edI8xMjdA5o3r3SpqrR.jpg",
+                    "media_type": "movie",
+                    "genre_ids": [
+                        27,
+                        35,
+                        878
+                    ],
+                    "popularity": 25.058,
+                    "release_date": "1978-08-03",
+                    "video": false,
+                    "vote_average": 5.9,
+                    "vote_count": 598
+                },
+                {
+                    "adult": false,
+                    "backdrop_path": "/6JxJminJvYIVXbTakYJkbnga14P.jpg",
+                    "id": 1687,
+                    "title": "Escape from the Planet of the Apes",
+                    "original_language": "en",
+                    "original_title": "Escape from the Planet of the Apes",
+                    "overview": "The world is shocked by the appearance of three talking chimpanzees, who arrived mysteriously in a spacecraft. Intrigued by their intelligence, humans use them for research - until the apes attempt to escape.",
+                    "poster_path": "/AnbLVdUEroTfHTUVAJCxkL4R0IH.jpg",
+                    "media_type": "movie",
+                    "genre_ids": [
+                        28,
+                        878
+                    ],
+                    "popularity": 24.814,
+                    "release_date": "1971-05-20",
+                    "video": false,
+                    "vote_average": 6.307,
+                    "vote_count": 937
+                },
+                {
+                    "adult": false,
+                    "backdrop_path": "/kKZnEBLLrfdQQX7GjCq9lCEhchy.jpg",
+                    "id": 10650,
+                    "title": "Sudden Impact",
+                    "original_language": "en",
+                    "original_title": "Sudden Impact",
+                    "overview": "When a young rape victim takes justice into her own hands and becomes a serial killer, it's up to Dirty Harry Callahan, on suspension from the SFPD, to bring her to justice.",
+                    "poster_path": "/ilJAikUtoJKd5f4GceMI0cmnlvD.jpg",
+                    "media_type": "movie",
+                    "genre_ids": [
+                        53,
+                        80,
+                        28
+                    ],
+                    "popularity": 22.824,
+                    "release_date": "1983-12-08",
+                    "video": false,
+                    "vote_average": 6.557,
+                    "vote_count": 821
+                }
+            ]
+        },
+        {
+            "adult": false,
+            "id": 154689,
+            "name": "Bradley James",
+            "original_name": "Bradley James",
+            "media_type": "person",
+            "popularity": 16.463,
+            "gender": 2,
+            "known_for_department": "Acting",
+            "profile_path": "/djYjl9kE2VPSO3qLnC8Jo3aD8d2.jpg",
+            "known_for": [
+                {
+                    "adult": false,
+                    "backdrop_path": "/dxyUN2kMhr0gMBKQpE79Z4sWAp5.jpg",
+                    "id": 346672,
+                    "title": "Underworld: Blood Wars",
+                    "original_language": "en",
+                    "original_title": "Underworld: Blood Wars",
+                    "overview": "Vampire death dealer Selene fends off brutal attacks from both the Lycan clan and the Vampire faction that betrayed her. With her only allies, David and his father Thomas, she must stop the eternal war between Lycans and Vampires, even if it means she has to make the ultimate sacrifice.",
+                    "poster_path": "/v1ciDCWMG47gdT4kMyjyQbnLQQn.jpg",
+                    "media_type": "movie",
+                    "genre_ids": [
+                        14,
+                        28,
+                        53,
+                        27
+                    ],
+                    "popularity": 43.361,
+                    "release_date": "2017-01-06",
+                    "video": false,
+                    "vote_average": 5.849,
+                    "vote_count": 3467
+                },
+                {
+                    "adult": false,
+                    "backdrop_path": "/tCjXy1iCsr2BVlNczafnkZ40LPn.jpg",
+                    "id": 60866,
+                    "name": "iZombie",
+                    "original_language": "en",
+                    "original_name": "iZombie",
+                    "overview": "A medical student who becomes a zombie joins a Coroner's Office in order to gain access to the brains she must reluctantly eat so that she can maintain her humanity. But every brain she eats, she also inherits their memories and must now solve their deaths with help from the Medical examiner and a police detective.",
+                    "poster_path": "/q4nqNwAhzVR7JuYctrWJvUWz3xR.jpg",
+                    "media_type": "tv",
+                    "genre_ids": [
+                        18,
+                        80,
+                        10765
+                    ],
+                    "popularity": 462.553,
+                    "first_air_date": "2015-03-17",
+                    "vote_average": 7.792,
+                    "vote_count": 2679,
+                    "origin_country": [
+                        "US"
+                    ]
+                },
+                {
+                    "adult": false,
+                    "backdrop_path": "/Ast1yAVp6shrWeC6KCtayWgZGcM.jpg",
+                    "id": 7225,
+                    "name": "Merlin",
+                    "original_language": "en",
+                    "original_name": "Merlin",
+                    "overview": "The unlikely friendship between Merlin, a young man gifted with extraordinary magical powers, and Prince Arthur, heir to the crown of Camelot.",
+                    "poster_path": "/8eR5Jg7CxsuCOEBU5wW0opObxpi.jpg",
+                    "media_type": "tv",
+                    "genre_ids": [
+                        10759,
+                        18,
+                        10765
+                    ],
+                    "popularity": 174.135,
+                    "first_air_date": "2008-09-20",
+                    "vote_average": 7.814,
+                    "vote_count": 840,
+                    "origin_country": [
+                        "GB"
+                    ]
+                }
+            ]
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/sxQnSjF7OBVkvOJE0ySXZz1XDss.jpg",
+            "id": 399798,
+            "title": "Brad Williams: Fun Size",
+            "original_language": "en",
+            "original_title": "Brad Williams: Fun Size",
+            "overview": "Comedian Brad Williams' standup topics include his experiences as a little person and how to please your woman in bed.",
+            "poster_path": "/rYmWwVII6JMnJMxJXHyXWBrhqpH.jpg",
+            "media_type": "movie",
+            "genre_ids": [
+                35
+            ],
+            "popularity": 1.265,
+            "release_date": "2015-05-08",
+            "video": false,
+            "vote_average": 7.7,
+            "vote_count": 10
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/aeksAhU6dZl0Fclm3dBRt6cKBmD.jpg",
+            "id": 942922,
+            "title": "80 for Brady",
+            "original_language": "en",
+            "original_title": "80 for Brady",
+            "overview": "A quartet of elderly best friends decide to live life to the fullest by taking a wild trip to the Super Bowl LI to see their hero Tom Brady play.",
+            "poster_path": "/jixBLmH4gQuTKTenZr89egvqZbW.jpg",
+            "media_type": "movie",
+            "genre_ids": [
+                35,
+                18
+            ],
+            "popularity": 15.546,
+            "release_date": "2023-02-03",
+            "video": false,
+            "vote_average": 6.671,
+            "vote_count": 120
+        },
+        {
+            "adult": false,
+            "id": 107734,
+            "name": "Orla Brady",
+            "original_name": "Orla Brady",
+            "media_type": "person",
+            "popularity": 9.097,
+            "gender": 1,
+            "known_for_department": "Acting",
+            "profile_path": "/9qgDEuoAzblmIxE8mFdE91wJsNr.jpg",
+            "known_for": [
+                {
+                    "adult": false,
+                    "backdrop_path": "/sDiGcjWhSu42dCw0jQmBInAkDZ9.jpg",
+                    "id": 379149,
+                    "title": "The Foreigner",
+                    "original_language": "en",
+                    "original_title": "The Foreigner",
+                    "overview": "Quan is a humble London businessman whose long-buried past erupts in a revenge-fueled vendetta when the only person left for him to love – his teenage daughter – dies in an Irish Republican Army car bombing. His relentless search to find the terrorists leads to a cat-and-mouse conflict with a British government official whose own past may hold the clues to the identities of the elusive killers.",
+                    "poster_path": "/rwM4hzrmc5HiWfQD9ls9DL4QgGl.jpg",
+                    "media_type": "movie",
+                    "genre_ids": [
+                        28,
+                        53
+                    ],
+                    "popularity": 39.712,
+                    "release_date": "2017-10-13",
+                    "video": false,
+                    "vote_average": 6.972,
+                    "vote_count": 2455
+                },
+                {
+                    "adult": false,
+                    "backdrop_path": "/vGgvaOcms6ZNRFuZblfUKhyB2As.jpg",
+                    "id": 47450,
+                    "name": "Into the Badlands",
+                    "original_language": "en",
+                    "original_name": "Into the Badlands",
+                    "overview": "In a land controlled by feudal barons, a great warrior and a young boy embark on a journey across a dangerous land to find enlightenment. \n\nA genre-bending martial arts series very loosely based on the classic Chinese tale Journey to the West.",
+                    "poster_path": "/jtceMKMxHSriLFUGAUfqHsW7uCo.jpg",
+                    "media_type": "tv",
+                    "genre_ids": [
+                        10759,
+                        18
+                    ],
+                    "popularity": 111.294,
+                    "first_air_date": "2015-11-15",
+                    "vote_average": 7.579,
+                    "vote_count": 653,
+                    "origin_country": [
+                        "US"
+                    ]
+                },
+                {
+                    "adult": false,
+                    "backdrop_path": "/qPvvbMIe8pOHGQ0e8bq1Ely7qGL.jpg",
+                    "id": 32573,
+                    "name": "Strike Back",
+                    "original_language": "en",
+                    "original_name": "Strike Back",
+                    "overview": "The series follows John Porter, a former British Special Forces soldier, who is drafted back into service by Section 20, a fictional branch of the Secret Intelligence Service.",
+                    "poster_path": "/rFy3EOZrRymjkalih7W3v8kSVWr.jpg",
+                    "media_type": "tv",
+                    "genre_ids": [
+                        18,
+                        10759
+                    ],
+                    "popularity": 181.305,
+                    "first_air_date": "2010-05-05",
+                    "vote_average": 7.4,
+                    "vote_count": 319,
+                    "origin_country": [
+                        "GB"
+                    ]
+                }
+            ]
+        }
+    ],
+    "total_pages": 289,
+    "total_results": 5771
+}

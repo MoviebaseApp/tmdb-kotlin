@@ -12,9 +12,11 @@ class TmdbSeasonApiTest {
     val client = mockHttpClient(
         version = 3,
         responses = mapOf(
-            "tv/63333/season/1?append_to_response=release_dates,images,credits,tv_credits,external_ids&include_image_language=" to "tv/tv_season_63333_season_1.json",
-            "tv/19849/season/1?append_to_response=credits,tv_credits" to "tv/tv_season_19849_season_1.json",
-            ),
+            "tv/63333/season/1?append_to_response=release_dates,images,credits,tv_credits,external_ids&include_image_language="
+                to "tv/tv_season_63333_season_1.json",
+            "tv/19849/season/1?append_to_response=credits,tv_credits"
+                to "tv/tv_season_19849_season_1.json",
+        ),
     )
     val classToTest = TmdbShowSeasonsApi(client)
 

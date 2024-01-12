@@ -108,7 +108,7 @@ data class TmdbShowDetail(
     @SerialName("content_ratings") val contentRatings: TmdbResult<TmdbContentRating>? = null,
     @SerialName("images") val images: TmdbImages? = null,
     @SerialName("created_by") val createdBy: List<TmdbShowCreatedBy>? = null
-) : TmdbAnyMedia, TmdbBackdropMedia, TmdbPosterMedia, TmdbRatingItem
+) : TmdbAnyItem, TmdbBackdropItem, TmdbPosterItem, TmdbRatingItem
 
 fun TmdbResult<TmdbContentRating>.getContentRating(country: String): String? =
     results.firstOrNull { it.iso3166 == country }?.rating
@@ -125,7 +125,7 @@ data class TmdbSeason(
     @SerialName("season_number") val seasonNumber: Int,
     @SerialName("overview") val overview: String? = null,
     val episodes: List<TmdbEpisode>? = null
-) : TmdbAnyMedia, TmdbPosterMedia {
+) : TmdbAnyItem, TmdbPosterItem {
 
     val numberOfEpisodes get() = episodeCount ?: episodes?.size ?: 0
 }
@@ -145,7 +145,7 @@ data class TmdbSeasonDetail(
     @SerialName("external_ids") val externalIds: TmdbExternalIds? = null,
     @SerialName("videos") val videos: TmdbResult<TmdbVideo>? = null,
     @SerialName("images") val images: TmdbImages? = null
-) : TmdbAnyMedia, TmdbPosterMedia {
+) : TmdbAnyItem, TmdbPosterItem {
 
     val numberOfEpisodes get() = episodeCount ?: episodes?.size ?: 0
 }
@@ -165,7 +165,7 @@ data class TmdbEpisode(
     @SerialName("still_path") val stillPath: String? = null,
     @SerialName("crew") val crew: List<TmdbCrew>? = null,
     @SerialName("guest_stars") val guestStars: List<TmdbCast>? = null,
-) : TmdbAnyMedia, TmdbBackdropMedia {
+) : TmdbAnyItem, TmdbBackdropItem {
 
     override val backdropPath: String? get() = stillPath
 }
@@ -187,7 +187,7 @@ data class TmdbEpisodeDetail(
     @SerialName("crew") val crew: List<TmdbCrew>? = null,
     @SerialName("guest_stars") val guestStars: List<TmdbCast>? = null,
     @SerialName("external_ids") val externalIds: TmdbExternalIds? = null
-) : TmdbAnyMedia, TmdbBackdropMedia, TmdbRatingItem {
+) : TmdbAnyItem, TmdbBackdropItem, TmdbRatingItem {
     override val backdropPath: String? get() = stillPath
 }
 

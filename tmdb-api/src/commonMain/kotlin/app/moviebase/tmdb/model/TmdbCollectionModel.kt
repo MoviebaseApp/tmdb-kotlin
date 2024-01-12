@@ -6,7 +6,7 @@ import kotlinx.serialization.Serializable
 @Serializable
 data class TmdbCollection(
     @SerialName("adult") val adult: Boolean,
-    @SerialName("id") val id: Int,
+    @SerialName("id") override val id: Int,
     @SerialName("name") val name: String,
     @SerialName("backdrop_path") val backdropPath: String? = null,
     @SerialName("original_language") val originalLanguage: String,

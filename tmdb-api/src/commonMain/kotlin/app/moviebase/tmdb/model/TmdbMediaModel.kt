@@ -22,16 +22,16 @@ enum class TmdbMediaType(val value: String) {
     EPISODE("episode")
 }
 
-interface TmdbAnyMedia {
+interface TmdbAnyItem {
     val id: Int
 }
 
-interface TmdbBackdropMedia {
+interface TmdbBackdropItem {
     val backdropPath: String?
     val backdropImage get(): TmdbImage? = TmdbImage.backdrop(backdropPath)
 }
 
-interface TmdbPosterMedia {
+interface TmdbPosterItem {
     val posterPath: String?
     val posterImage get(): TmdbImage? = TmdbImage.poster(posterPath)
 }
@@ -51,12 +51,24 @@ interface TmdbRatingItem {
  */
 @Polymorphic
 @Serializable
-sealed interface TmdbMediaListItem : TmdbAnyMedia, TmdbBackdropMedia, TmdbPosterMedia, TmdbRatingItem {
+sealed interface TmdbMediaListItem : TmdbAnyItem, TmdbBackdropItem, TmdbPosterItem, TmdbRatingItem {
     val overview: String
     val genresIds: List<Int>
     val popularity: Float
     val originalLanguage: String
 }
+
+@Polymorphic
+@Serializable
+sealed interface TmdbSearchableListItem : TmdbAnyItem, TmdbSearchable
+
+@Serializable
+data class TmdbMultiPageResult(
+    @SerialName("page") override val page: Int,
+    @SerialName("results") override val results: List<TmdbSearchableListItem> = emptyList(),
+    @SerialName("total_results") override val totalResults: Int,
+    @SerialName("total_pages") override val totalPages: Int
+) : TmdbPageResult<TmdbSearchableListItem>
 
 @Serializable
 @SerialName("movie")
@@ -77,7 +89,7 @@ data class TmdbMovie(
     @SerialName("vote_count") override val voteCount: Int,
     @SerialName("video") val video: Boolean,
     @SerialName("vote_average") override val voteAverage: Float
-) : TmdbMediaListItem, TmdbSearchable
+) : TmdbMediaListItem, TmdbSearchableListItem
 
 @Serializable
 data class TmdbMoviePageResult(
@@ -105,7 +117,7 @@ data class TmdbShow(
     @SerialName("vote_count") override val voteCount: Int,
     @SerialName("name") val name: String,
     @SerialName("original_name") val originalName: String
-) : TmdbMediaListItem, TmdbSearchable
+) : TmdbMediaListItem, TmdbSearchableListItem
 
 @Serializable
 data class TmdbShowPageResult(
@@ -114,3 +126,23 @@ data class TmdbShowPageResult(
     @SerialName("total_results") override val totalResults: Int,
     @SerialName("total_pages") override val totalPages: Int
 ) : TmdbPageResult<TmdbShow>
+
+@Serializable
+@SerialName("person")
+data class TmdbPerson(
+    @SerialName("adult") val adult: Boolean,
+    @SerialName("gender") val gender: TmdbGender,
+    @SerialName("id") override val id: Int,
+    @SerialName("known_for_department") val knownForDepartment: String? = null,
+    @SerialName("name") override val name: String,
+    @SerialName("profile_path") override val profilePath: String? = null,
+    @SerialName("popularity") override val popularity: Float
+) : TmdbAnyPerson, TmdbSearchableListItem
+
+@Serializable
+data class TmdbPersonPageResult(
+    @SerialName("page") override val page: Int,
+    @SerialName("results") override val results: List<TmdbPerson> = emptyList(),
+    @SerialName("total_results") override val totalResults: Int,
+    @SerialName("total_pages") override val totalPages: Int
+) : TmdbPageResult<TmdbPerson>

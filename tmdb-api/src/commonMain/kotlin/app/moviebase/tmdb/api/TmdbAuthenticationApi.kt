@@ -5,9 +5,10 @@ import app.moviebase.tmdb.model.TmdbRequestToken
 import app.moviebase.tmdb.model.TmdbSession
 import app.moviebase.tmdb.core.endPointV3
 import app.moviebase.tmdb.url.TmdbAuthenticationUrlBuilder
-import io.ktor.client.*
-import io.ktor.client.call.*
-import io.ktor.client.request.*
+import io.ktor.client.HttpClient
+import io.ktor.client.call.body
+import io.ktor.client.request.get
+import io.ktor.client.request.parameter
 
 class TmdbAuthenticationApi internal constructor(private val client: HttpClient) {
 

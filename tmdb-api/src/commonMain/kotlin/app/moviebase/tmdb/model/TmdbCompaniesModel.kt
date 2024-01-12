@@ -17,7 +17,7 @@ object TmdbCompanyId {
 
 @Serializable
 data class TmdbCompany(
-    @SerialName("id") val id: Int,
+    @SerialName("id") override val id: Int,
     @SerialName("logo_path") val logoPath: String? = null,
     @SerialName("name") val name: String? = null,
     @SerialName("origin_country") val originCountry: String? = null // e. g. US

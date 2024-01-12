@@ -1,8 +1,8 @@
 package app.moviebase.tmdb.image
 
 import app.moviebase.tmdb.TmdbWebConfig
-import app.moviebase.tmdb.model.TmdbBackdropMedia
-import app.moviebase.tmdb.model.TmdbPosterMedia
+import app.moviebase.tmdb.model.TmdbBackdropItem
+import app.moviebase.tmdb.model.TmdbPosterItem
 import app.moviebase.tmdb.model.TmdbVideo
 
 object TmdbImageUrlBuilder {
@@ -53,13 +53,13 @@ object TmdbImageUrlBuilder {
         return listOf(largestUrl, originalUrl)
     }
 
-    fun buildPoster(image: TmdbPosterMedia, width: Int): String? {
+    fun buildPoster(image: TmdbPosterItem, width: Int): String? {
         val posterPath = image.posterPath ?: return null
         val sizeKey = TmdbImageSize.getPosterSizeKey(width)
         return build(posterPath, sizeKey)
     }
 
-    fun buildBackdrop(image: TmdbBackdropMedia, width: Int): String? {
+    fun buildBackdrop(image: TmdbBackdropItem, width: Int): String? {
         val posterPath = image.backdropPath ?: return null
         val sizeKey = TmdbImageSize.getBackdropSizeKey(width)
         return build(posterPath, sizeKey)

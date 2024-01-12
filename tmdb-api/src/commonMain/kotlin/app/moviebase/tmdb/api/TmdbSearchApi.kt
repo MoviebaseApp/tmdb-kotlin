@@ -11,6 +11,26 @@ import io.ktor.client.request.*
 
 class TmdbSearchApi internal constructor(private val client: HttpClient) {
 
+    /**
+     * Use multi search when you want to search for movies, TV shows and people in a single request.
+     * See https://developer.themoviedb.org/reference/search-multi
+     */
+    suspend fun findMulti(
+        query: String,
+        page: Int,
+        language: String? = null,
+        region: String? = null,
+        includeAdult: Boolean = false,
+    ): TmdbMultiPageResult = client.get {
+        endSearch(TmdbSearchType.MULTI)
+
+        parameterQuery(query)
+        parameterIncludeAdult(includeAdult)
+        parameterPage(page)
+        parameterRegion(region)
+        parameterLanguage(language)
+    }.body()
+
     suspend fun findMovies(
         query: String,
         page: Int,
