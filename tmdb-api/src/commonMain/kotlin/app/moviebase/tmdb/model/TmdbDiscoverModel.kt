@@ -59,8 +59,8 @@ sealed interface TmdbDiscover {
     val voteCountGte: Int?
     val voteCountLte: Int?
 
-    val withGenres: List<String>
-    val withoutGenres: List<String>
+    val withGenres: TmdbDiscoverFilter<String>?
+    val withoutGenres: TmdbDiscoverFilter<String>?
     val withWatchProviders: TmdbDiscoverFilter<Int>?
     val watchRegion: String? // ISO 3166-1 code
     val withWatchMonetizationTypes: List<TmdbWatchMonetizationType>
@@ -84,12 +84,12 @@ sealed interface TmdbDiscover {
             params[DiscoverParam.VOTE_COUNT_LTE] = it.toString()
         }
 
-        if (withGenres.isNotEmpty()) {
-            params[DiscoverParam.WITH_GENRES] = withGenres.joinToString(",")
+        withGenres?.let{
+            params[DiscoverParam.WITH_GENRES] = it.items.joinToString(it.separator.value)
         }
 
-        if (withoutGenres.isNotEmpty()) {
-            params[DiscoverParam.WITHOUT_GENRES] = withoutGenres.joinToString(",")
+       withoutGenres?.let {
+            params[DiscoverParam.WITHOUT_GENRES] = it.items.joinToString(it.separator.value)
         }
 
         withWatchProviders?.let { f ->
@@ -115,8 +115,8 @@ sealed interface TmdbDiscover {
         override val voteAverageLte: Float? = null,
         override val voteCountGte: Int? = null,
         override val voteCountLte: Int? = null,
-        override val withGenres: List<String> = emptyList(),
-        override val withoutGenres: List<String> = emptyList(),
+        override val withGenres: TmdbDiscoverFilter<String>? = null,
+        override val withoutGenres: TmdbDiscoverFilter<String>? = null,
         val releaseDate: TmdbDiscoverTimeRange? = null,
         val withReleaseTypes: TmdbDiscoverFilter<TmdbReleaseType>? = null,
         override val withWatchProviders: TmdbDiscoverFilter<Int>? = null,
@@ -164,8 +164,8 @@ sealed interface TmdbDiscover {
         override val voteAverageLte: Float? = null,
         override val voteCountGte: Int? = null,
         override val voteCountLte: Int? = null,
-        override val withGenres: List<String> = emptyList(),
-        override val withoutGenres: List<String> = emptyList(),
+        override val withGenres: TmdbDiscoverFilter<String>? = null,
+        override val withoutGenres: TmdbDiscoverFilter<String>? = null,
         val firstAirDate: TmdbDiscoverTimeRange? = null,
         val airDateGte: String? = null,
         val airDateLte: String? = null,
