@@ -36,7 +36,7 @@ interface TmdbPosterItem {
     val posterImage get(): TmdbImage? = TmdbImage.poster(posterPath)
 }
 
-interface TmdbProfileMedia {
+interface TmdbProfileItem {
     val profilePath: String?
     val profileImage get(): TmdbImage? = TmdbImage.profile(profilePath)
 }
