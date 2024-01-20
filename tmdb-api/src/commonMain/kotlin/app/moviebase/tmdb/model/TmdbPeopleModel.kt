@@ -60,7 +60,7 @@ data class TmdbCredits(
     }
 }
 
-interface TmdbAnyPerson : TmdbAnyItem, TmdbProfileMedia {
+interface TmdbAnyPerson : TmdbAnyItem, TmdbProfileItem {
     val name: String
     val popularity: Float?
 }
