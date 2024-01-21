@@ -31,7 +31,7 @@ enum class TmdbReleaseType(val value: Int) {
     TV(6);
 
     companion object {
-        fun find(value: Int?) = values().find { it.value == value }
+        fun find(value: Int?) = entries.find { it.value == value }
     }
 }
 
@@ -56,7 +56,7 @@ enum class TmdbMovieStatus(val value: String) {
     CANCELED("Canceled");
 
     companion object {
-        fun find(value: String?) = values().find { it.value == value }
+        fun find(value: String?) = entries.find { it.value == value }
     }
 }
 
