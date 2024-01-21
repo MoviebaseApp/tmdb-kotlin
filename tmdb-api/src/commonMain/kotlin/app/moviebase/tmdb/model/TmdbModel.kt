@@ -20,6 +20,8 @@ enum class AppendResponse(val value: String) {
     REVIEWS("reviews"),
     CREDITS("credits"),
     AGGREGATE_CREDITS("aggregate_credits"),
+    COMBINED_CREDITS("combined_credits"),
+    TRANSLATIONS("translations"),
     IMAGES("images"),
     TAGGED_IMAGES("tagged_images"),
     EXTERNAL_IDS("external_ids"),
@@ -119,8 +121,10 @@ data class TmdbExternalIds(
     @SerialName("id") val id: Int? = null, // it is is used in append responses
     @SerialName("facebook_id") val facebook: String? = null,
     @SerialName("instagram_id") val instagram: String? = null,
+    @SerialName("tiktok_id") val tiktok: String? = null,
     @SerialName("twitter_id") val twitter: String? = null,
     @SerialName("wikidata_id") val wikidata: String? = null,
+    @SerialName("youtube_id") val youtube: String? = null,
 )
 
 @Serializable

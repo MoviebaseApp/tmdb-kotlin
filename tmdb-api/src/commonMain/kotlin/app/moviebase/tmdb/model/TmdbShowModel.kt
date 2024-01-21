@@ -28,7 +28,7 @@ enum class TmdbShowStatus(val value: String, val filterKey: Int) {
     PILOT("Pilot", 5);
 
     companion object {
-        fun find(value: String?) = values().find { it.value == value }
+        fun find(value: String?) = entries.find { it.value == value }
     }
 }
 
@@ -62,7 +62,7 @@ enum class TmdbShowType(val value: String) {
     VIDEO("Video");
 
     companion object {
-        fun find(value: String?) = values().find { it.value == value }
+        fun find(value: String?) = entries.find { it.value == value }
     }
 }
 
@@ -115,15 +115,16 @@ fun TmdbResult<TmdbContentRating>.getContentRating(country: String): String? =
 
 @Serializable
 data class TmdbSeason(
-    override val id: Int,
+    @SerialName("id") override val id: Int,
     @SerialName("air_date")
     @Serializable(LocalDateSerializer::class)
     val airDate: LocalDate? = null,
     @SerialName("episode_count") val episodeCount: Int? = null,
-    val name: String,
+    @SerialName("name") val name: String,
     @SerialName("poster_path") override val posterPath: String?,
     @SerialName("season_number") val seasonNumber: Int,
     @SerialName("overview") val overview: String? = null,
+    @SerialName("episodes")
     val episodes: List<TmdbEpisode>? = null
 ) : TmdbAnyItem, TmdbPosterItem {
 
@@ -137,10 +138,12 @@ data class TmdbSeasonDetail(
     @Serializable(LocalDateSerializer::class)
     val airDate: LocalDate? = null,
     @SerialName("episode_count") val episodeCount: Int? = null,
-    val name: String,
+    @SerialName("name") val name: String,
     @SerialName("poster_path") override val posterPath: String?,
     @SerialName("season_number") val seasonNumber: Int,
     @SerialName("overview") val overview: String,
+    @SerialName("vote_average") val voteAverage: Float? = null,
+    @SerialName("episodes")
     val episodes: List<TmdbEpisode>? = null,
     @SerialName("external_ids") val externalIds: TmdbExternalIds? = null,
     @SerialName("videos") val videos: TmdbResult<TmdbVideo>? = null,
