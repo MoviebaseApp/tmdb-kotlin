@@ -61,6 +61,36 @@ enum class TmdbMovieStatus(val value: String) {
 }
 
 @Serializable
+@SerialName("movie")
+data class TmdbMovie(
+    @SerialName("poster_path") override val posterPath: String?,
+    @SerialName("adult") val adult: Boolean = false,
+    @SerialName("overview") override val overview: String,
+    @SerialName("release_date")
+    @Serializable(LocalDateSerializer::class)
+    val releaseDate: LocalDate? = null,
+    @SerialName("genre_ids") override val genresIds: List<Int>,
+    @SerialName("id") override val id: Int,
+    @SerialName("original_title") val originalTitle: String,
+    @SerialName("original_language") override val originalLanguage: String,
+    @SerialName("title") val title: String,
+    @SerialName("backdrop_path") override val backdropPath: String?,
+    @SerialName("popularity") override val popularity: Float,
+    @SerialName("vote_count") override val voteCount: Int,
+    @SerialName("video") val video: Boolean,
+    @SerialName("vote_average") override val voteAverage: Float
+) : TmdbMediaListItem, TmdbSearchableListItem
+
+@Serializable
+data class TmdbMoviePageResult(
+    @SerialName("page") override val page: Int,
+    @SerialName("results") override val results: List<TmdbMovie> = emptyList(),
+    @SerialName("total_results") override val totalResults: Int,
+    @SerialName("total_pages") override val totalPages: Int
+) : TmdbPageResult<TmdbMovie>
+
+
+@Serializable
 data class TmdbMovieDetail(
     val adult: Boolean,
     @SerialName("backdrop_path") val backdropPath: String?,

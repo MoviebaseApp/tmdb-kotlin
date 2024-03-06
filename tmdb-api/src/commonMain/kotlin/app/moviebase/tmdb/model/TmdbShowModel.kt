@@ -67,6 +67,35 @@ enum class TmdbShowType(val value: String) {
 }
 
 @Serializable
+@SerialName("tv")
+data class TmdbShow(
+    @SerialName("poster_path") override val posterPath: String?,
+    @SerialName("popularity") override val popularity: Float,
+    @SerialName("id") override val id: Int,
+    @SerialName("adult") val adult: Boolean = false,
+    @SerialName("backdrop_path") override val backdropPath: String?,
+    @SerialName("vote_average") override val voteAverage: Float,
+    @SerialName("overview") override val overview: String,
+    @SerialName("first_air_date")
+    @Serializable(LocalDateSerializer::class)
+    val firstAirDate: LocalDate? = null,
+    @SerialName("origin_country") val originCountry: List<String>,
+    @SerialName("genre_ids") override val genresIds: List<Int>,
+    @SerialName("original_language") override val originalLanguage: String,
+    @SerialName("vote_count") override val voteCount: Int,
+    @SerialName("name") val name: String,
+    @SerialName("original_name") val originalName: String
+) : TmdbMediaListItem, TmdbSearchableListItem
+
+@Serializable
+data class TmdbShowPageResult(
+    @SerialName("page") override val page: Int,
+    @SerialName("results") override val results: List<TmdbShow> = emptyList(),
+    @SerialName("total_results") override val totalResults: Int,
+    @SerialName("total_pages") override val totalPages: Int
+) : TmdbPageResult<TmdbShow>
+
+@Serializable
 data class TmdbShowDetail(
     @SerialName("id") override val id: Int,
     val name: String,
