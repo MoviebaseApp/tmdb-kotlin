@@ -3,6 +3,7 @@ package app.moviebase.tmdb.model
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
+@SerialName("collection")
 @Serializable
 data class TmdbCollection(
     @SerialName("adult") val adult: Boolean,
@@ -13,7 +14,7 @@ data class TmdbCollection(
     @SerialName("original_name") val originalName: String,
     @SerialName("overview") val overview: String,
     @SerialName("poster_path") val posterPath: String?
-) : TmdbSearchable
+) : TmdbSearchable, TmdbSearchableListItem
 
 @Serializable
 data class TmdbCollectionPageResult(
