@@ -4,8 +4,8 @@ package app.moviebase.tmdb.api
 
 import app.moviebase.tmdb.core.mockHttpClient
 import app.moviebase.tmdb.model.AppendResponse
+import app.moviebase.tmdb.model.TmdbDepartment
 import app.moviebase.tmdb.model.TmdbGender
-import app.moviebase.tmdb.model.TmdbGenre
 import com.google.common.truth.Truth.assertThat
 import kotlin.test.assertEquals
 import kotlin.test.assertTrue
@@ -79,7 +79,7 @@ class TmdbPeopleApiTest {
         assertEquals("https://www.unhcr.org/pages/49c3646c56.html", personDetail.homepage)
         assertEquals(11701, personDetail.id)
         assertEquals("nm0001401", personDetail.imdbId)
-        assertEquals("Acting", personDetail.knownForDepartment)
+        assertEquals(TmdbDepartment.ACTING, personDetail.knownForDepartment)
         assertEquals("Angelina Jolie", personDetail.name)
         assertEquals("Los Angeles, California, USA ", personDetail.placeOfBirth)
         assertEquals(41.859f, personDetail.popularity)
