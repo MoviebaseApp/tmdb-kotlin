@@ -79,7 +79,7 @@ data class TmdbPerson(
     @SerialName("adult") val adult: Boolean,
     @SerialName("gender") val gender: TmdbGender,
     @SerialName("id") override val id: Int,
-    @SerialName("known_for_department") val knownForDepartment: String? = null,
+    @SerialName("known_for_department") val knownForDepartment: TmdbDepartment? = null,
     @SerialName("name") override val name: String,
     @SerialName("profile_path") override val profilePath: String? = null,
     @SerialName("popularity") override val popularity: Float
@@ -104,7 +104,7 @@ data class TmdbPersonDetail(
     @SerialName("homepage") val homepage: String? = null,
     @SerialName("id") override val id: Int,
     @SerialName("imdb_id") val imdbId: String? = null,
-    @SerialName("known_for_department") val knownForDepartment: String? = null,
+    @SerialName("known_for_department") val knownForDepartment: TmdbDepartment? = null,
     @SerialName("name") override val name: String,
     @SerialName("place_of_birth") val placeOfBirth: String? = null,
     @SerialName("popularity") override val popularity: Float? = null,
@@ -123,7 +123,7 @@ data class TmdbCrew(
     @SerialName("adult") val adult: Boolean = false,
     @SerialName("gender") val gender: TmdbGender = TmdbGender.UNKNOWN,
     @SerialName("id") override val id: Int,
-    @SerialName("known_for_department") val knownForDepartment: String? = null,
+    @SerialName("known_for_department") val knownForDepartment: TmdbDepartment? = null,
     @SerialName("name") override val name: String,
     @SerialName("original_name") val originalName: String? = null,
     @SerialName("popularity") override val popularity: Float? = null,
@@ -138,7 +138,7 @@ data class TmdbCast(
     @SerialName("adult") val adult: Boolean = false,
     @SerialName("gender") val gender: TmdbGender,
     @SerialName("id") override val id: Int,
-    @SerialName("known_for_department") val knownForDepartment: String? = null,
+    @SerialName("known_for_department") val knownForDepartment: TmdbDepartment? = null,
     @SerialName("name") override val name: String,
     @SerialName("original_name") val originalName: String? = null,
     @SerialName("popularity") override val popularity: Float? = null,
@@ -154,7 +154,7 @@ data class TmdbAggregateCast(
     @SerialName("adult") val adult: Boolean = false,
     @SerialName("gender") val gender: TmdbGender,
     @SerialName("id") val id: Int,
-    @SerialName("known_for_department") val knownForDepartment: String? = null,
+    @SerialName("known_for_department") val knownForDepartment: TmdbDepartment? = null,
     @SerialName("name") val name: String,
     @SerialName("original_name") val originalName: String? = null,
     @SerialName("popularity") val popularity: Float? = null,
@@ -169,7 +169,7 @@ data class TmdbAggregateCrew(
     @SerialName("adult") val adult: Boolean = false,
     @SerialName("gender") val gender: TmdbGender,
     @SerialName("id") override val id: Int,
-    @SerialName("known_for_department") val knownForDepartment: String? = null,
+    @SerialName("known_for_department") val knownForDepartment: TmdbDepartment? = null,
     @SerialName("name") override val name: String,
     @SerialName("original_name") val originalName: String? = null,
     @SerialName("popularity") override val popularity: Float? = null,
@@ -236,7 +236,7 @@ data class TmdbImagePageResult(
 
 @Serializable
 data class TmdbTaggedMedia(
-    @SerialName("backdrop_path") val backdropPath: String?,
+    @SerialName("backdrop_path") val backdropPath: String? = null,
 )
 
 @Serializable
@@ -323,4 +323,52 @@ sealed interface TmdbPersonCredit : TmdbAnyItem, TmdbBackdropItem, TmdbPosterIte
         @SerialName("department") override val department: String? = null,
         @SerialName("job") override val job: String? = null,
     ) : TmdbPersonCredit
+}
+
+
+@Serializable
+enum class TmdbDepartment(val value: String) {
+
+    @SerialName("Acting")
+    ACTING("Acting"),
+
+    @SerialName("Writing")
+    WRITING("Writing"),
+
+    @SerialName("Sound")
+    SOUND("Sound"),
+
+    @SerialName("Production")
+    PRODUCTION("Production"),
+
+    @SerialName("Art")
+    ART("Art"),
+
+    @SerialName("Directing")
+    DIRECTING("Directing"),
+
+    @SerialName("Creator")
+    CREATOR("Creator"),
+
+    @SerialName("Costume & Make-Up")
+    COSTUME_AND_MAKEUP("Costume & Make-Up"),
+
+    @SerialName("Camera")
+    CAMERA("Camera"),
+
+    @SerialName("Visual Effects")
+    VISUAL_EFFECTS("Visual Effects"),
+
+    @SerialName("Lighting")
+    LIGHTING("Lighting"),
+
+    @SerialName("Editing")
+    EDITING("Editing"),
+
+    @SerialName("Crew")
+    CREW("Crew");
+
+    companion object {
+        fun of(value: String?) = entries.find { it.value == value }
+    }
 }
