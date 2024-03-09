@@ -129,7 +129,7 @@ data class TmdbCrew(
     @SerialName("popularity") override val popularity: Float? = null,
     @SerialName("profile_path") override val profilePath: String? = null,
     @SerialName("credit_id") val creditId: String,
-    @SerialName("department") val department: String,
+    @SerialName("department") val department: TmdbDepartment? = null,
     @SerialName("job") val job: String,
 ) : TmdbAnyPerson
 
@@ -175,7 +175,7 @@ data class TmdbAggregateCrew(
     @SerialName("popularity") override val popularity: Float? = null,
     @SerialName("profile_path") override val profilePath: String? = null,
     @SerialName("jobs") val jobs: List<TmdbJob>,
-    @SerialName("department") val department: String,
+    @SerialName("department") val department: TmdbDepartment? = null,
     @SerialName("total_episode_count") val totalEpisodeCount: Int,
 ) : TmdbAnyPerson
 
@@ -269,7 +269,7 @@ sealed interface TmdbPersonCredit : TmdbAnyItem, TmdbBackdropItem, TmdbPosterIte
     val character: String?
     val creditId: String?
     val order: Int?
-    val department: String?
+    val department: TmdbDepartment?
     val job: String?
 
     @Serializable
@@ -294,7 +294,7 @@ sealed interface TmdbPersonCredit : TmdbAnyItem, TmdbBackdropItem, TmdbPosterIte
         @SerialName("character") override val character: String? = null,
         @SerialName("credit_id") override val creditId: String? = null,
         @SerialName("order") override val order: Int? = null,
-        @SerialName("department") override val department: String? = null,
+        @SerialName("department") override val department: TmdbDepartment? = null,
         @SerialName("job") override val job: String? = null,
     ) : TmdbPersonCredit
 
@@ -320,7 +320,7 @@ sealed interface TmdbPersonCredit : TmdbAnyItem, TmdbBackdropItem, TmdbPosterIte
         @SerialName("character") override val character: String? = null,
         @SerialName("credit_id") override val creditId: String? = null,
         @SerialName("order") override val order: Int? = null,
-        @SerialName("department") override val department: String? = null,
+        @SerialName("department") override val department: TmdbDepartment? = null,
         @SerialName("job") override val job: String? = null,
     ) : TmdbPersonCredit
 }
