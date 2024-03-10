@@ -1,15 +1,8 @@
 package app.moviebase.tmdb.model
 
-@Deprecated("Use TmdbGenreId.Movie instead")
-object TmdbMovieGenreId {
-    const val ACTION = 28
-    const val ADVENTURE = 12
-}
-
 object TmdbGenreId {
 
     object Movie {
-
         const val ACTION = 28
         const val ADVENTURE = 12
         const val ANIMATION = 16
@@ -28,7 +21,7 @@ object TmdbGenreId {
         const val TV_MOVIE = 10770
         const val THRILLER = 53
         const val WAR = 10752
-        const val WESTERM = 37
+        const val WESTERN = 37
 
         val ALL = setOf(
             ACTION,
@@ -49,15 +42,13 @@ object TmdbGenreId {
             TV_MOVIE,
             THRILLER,
             WAR,
-            WESTERM
+            WESTERN,
         )
 
         fun contains(genreId: Int) = ALL.contains(genreId)
     }
 
     object Show {
-        const val ACTION = 28
-        const val ADVENTURE = 12
         const val ACTION_ADVENTURE = 10759
         const val ANIMATION = 16
         const val COMEDY = 35
@@ -65,27 +56,17 @@ object TmdbGenreId {
         const val DOCUMENTARY = 99
         const val DRAMA = 18
         const val FAMILY = 10751
-        const val FANTASY = 14
         const val KIDS = 10762
         const val MYSTERY = 9648
-        const val HISTORY = 36
-        const val HORROR = 27
-        const val MUSIC = 10402
         const val NEWS = 10763
         const val REALITY = 10764
         const val SCIENCE_FICTION_FANTASY = 10765
-        const val SCIENCE_FICTION = 878
         const val SOAP = 10766
         const val TALK = 10767
         const val WAR_POLITICS = 10768
-        const val ROMANCE = 10749
-        const val THRILLER = 53
-        const val WAR = 10752
         const val WESTERN = 37
 
         val ALL = setOf(
-            ACTION,
-            ADVENTURE,
             ACTION_ADVENTURE,
             ANIMATION,
             COMEDY,
@@ -93,23 +74,15 @@ object TmdbGenreId {
             DOCUMENTARY,
             DRAMA,
             FAMILY,
-            FANTASY,
             KIDS,
             MYSTERY,
-            HISTORY,
-            HORROR,
-            MUSIC,
             NEWS,
             REALITY,
             SCIENCE_FICTION_FANTASY,
-            SCIENCE_FICTION,
             SOAP,
             TALK,
             WAR_POLITICS,
-            ROMANCE,
-            THRILLER,
-            WAR,
-            WESTERN
+            WESTERN,
         )
 
         fun contains(genreId: Int) = ALL.contains(genreId)
