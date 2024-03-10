@@ -325,7 +325,6 @@ sealed interface TmdbPersonCredit : TmdbAnyItem, TmdbBackdropItem, TmdbPosterIte
     ) : TmdbPersonCredit
 }
 
-
 @Serializable
 enum class TmdbDepartment(val value: String) {
 
@@ -364,6 +363,9 @@ enum class TmdbDepartment(val value: String) {
 
     @SerialName("Editing")
     EDITING("Editing"),
+
+    @SerialName("Actors")
+    ACTORS("Actors"),
 
     @SerialName("Crew")
     CREW("Crew");
