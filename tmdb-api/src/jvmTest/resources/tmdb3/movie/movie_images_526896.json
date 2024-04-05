@@ -1,0 +1,712 @@
+{
+    "adult": false,
+    "backdrop_path": "/gG9fTyDL03fiKnOpf2tr01sncnt.jpg",
+    "belongs_to_collection": null,
+    "budget": 75000000,
+    "genres": [
+        {
+            "id": 28,
+            "name": "Action"
+        },
+        {
+            "id": 878,
+            "name": "Science Fiction"
+        },
+        {
+            "id": 14,
+            "name": "Fantasy"
+        }
+    ],
+    "homepage": "https://www.sonypictures.com/movies/morbius",
+    "id": 526896,
+    "imdb_id": "tt5108870",
+    "original_language": "en",
+    "original_title": "Morbius",
+    "overview": "Dangerously ill with a rare blood disorder, and determined to save others suffering his same fate, Dr. Michael Morbius attempts a desperate gamble. What at first appears to be a radical success soon reveals itself to be a remedy potentially worse than the disease.",
+    "popularity": 108.266,
+    "poster_path": "/6JjfSchsU6daXk2AKX8EEBjO3Fm.jpg",
+    "production_companies": [
+        {
+            "id": 5,
+            "logo_path": "/71BqEFAF4V3qjjMPCpLuyJFB9A.png",
+            "name": "Columbia Pictures",
+            "origin_country": "US"
+        },
+        {
+            "id": 53462,
+            "logo_path": null,
+            "name": "Matt Tolmach Productions",
+            "origin_country": "US"
+        },
+        {
+            "id": 14439,
+            "logo_path": null,
+            "name": "Arad Productions",
+            "origin_country": "US"
+        }
+    ],
+    "production_countries": [
+        {
+            "iso_3166_1": "US",
+            "name": "United States of America"
+        }
+    ],
+    "release_date": "2022-03-30",
+    "revenue": 167635712,
+    "runtime": 105,
+    "spoken_languages": [
+        {
+            "english_name": "English",
+            "iso_639_1": "en",
+            "name": "English"
+        },
+        {
+            "english_name": "Greek",
+            "iso_639_1": "el",
+            "name": "ελληνικά"
+        },
+        {
+            "english_name": "Norwegian",
+            "iso_639_1": "no",
+            "name": "Norsk"
+        },
+        {
+            "english_name": "Spanish",
+            "iso_639_1": "es",
+            "name": "Español"
+        }
+    ],
+    "status": "Released",
+    "tagline": "A new Marvel legend arrives.",
+    "title": "Morbius",
+    "video": false,
+    "vote_average": 6.05,
+    "vote_count": 4020,
+    "release_dates": {
+        "results": [
+            {
+                "iso_3166_1": "AS",
+                "release_dates": [
+                    {
+                        "certification": "",
+                        "descriptors": [],
+                        "iso_639_1": "",
+                        "note": "",
+                        "release_date": "2022-05-16T00:00:00.000Z",
+                        "type": 4
+                    }
+                ]
+            },
+            {
+                "iso_3166_1": "AU",
+                "release_dates": [
+                    {
+                        "certification": "M",
+                        "descriptors": [],
+                        "iso_639_1": "",
+                        "note": "",
+                        "release_date": "2022-03-31T00:00:00.000Z",
+                        "type": 3
+                    }
+                ]
+            },
+            {
+                "iso_3166_1": "BR",
+                "release_dates": [
+                    {
+                        "certification": "14",
+                        "descriptors": [],
+                        "iso_639_1": "",
+                        "note": "",
+                        "release_date": "2022-03-31T00:00:00.000Z",
+                        "type": 3
+                    }
+                ]
+            },
+            {
+                "iso_3166_1": "CZ",
+                "release_dates": [
+                    {
+                        "certification": "12+",
+                        "descriptors": [],
+                        "iso_639_1": "",
+                        "note": "",
+                        "release_date": "2022-03-31T00:00:00.000Z",
+                        "type": 3
+                    }
+                ]
+            },
+            {
+                "iso_3166_1": "DE",
+                "release_dates": [
+                    {
+                        "certification": "12",
+                        "descriptors": [],
+                        "iso_639_1": "",
+                        "note": "",
+                        "release_date": "2022-03-31T00:00:00.000Z",
+                        "type": 3
+                    },
+                    {
+                        "certification": "12",
+                        "descriptors": [],
+                        "iso_639_1": "",
+                        "note": "",
+                        "release_date": "2022-05-14T00:00:00.000Z",
+                        "type": 4
+                    },
+                    {
+                        "certification": "12",
+                        "descriptors": [],
+                        "iso_639_1": "",
+                        "note": "",
+                        "release_date": "2022-06-23T00:00:00.000Z",
+                        "type": 5
+                    }
+                ]
+            },
+            {
+                "iso_3166_1": "DK",
+                "release_dates": [
+                    {
+                        "certification": "",
+                        "descriptors": [],
+                        "iso_639_1": "",
+                        "note": "",
+                        "release_date": "2022-03-31T00:00:00.000Z",
+                        "type": 3
+                    }
+                ]
+            },
+            {
+                "iso_3166_1": "EE",
+                "release_dates": [
+                    {
+                        "certification": "",
+                        "descriptors": [],
+                        "iso_639_1": "",
+                        "note": "",
+                        "release_date": "2022-04-01T00:00:00.000Z",
+                        "type": 3
+                    }
+                ]
+            },
+            {
+                "iso_3166_1": "ES",
+                "release_dates": [
+                    {
+                        "certification": "",
+                        "descriptors": [],
+                        "iso_639_1": "",
+                        "note": "Cine Callao",
+                        "release_date": "2022-03-23T00:00:00.000Z",
+                        "type": 1
+                    },
+                    {
+                        "certification": "12",
+                        "descriptors": [],
+                        "iso_639_1": "",
+                        "note": "",
+                        "release_date": "2022-04-01T00:00:00.000Z",
+                        "type": 3
+                    }
+                ]
+            },
+            {
+                "iso_3166_1": "FI",
+                "release_dates": [
+                    {
+                        "certification": "",
+                        "descriptors": [],
+                        "iso_639_1": "",
+                        "note": "",
+                        "release_date": "2022-04-01T00:00:00.000Z",
+                        "type": 3
+                    }
+                ]
+            },
+            {
+                "iso_3166_1": "FR",
+                "release_dates": [
+                    {
+                        "certification": "TP",
+                        "descriptors": [],
+                        "iso_639_1": "",
+                        "note": "",
+                        "release_date": "2022-03-30T00:00:00.000Z",
+                        "type": 3
+                    },
+                    {
+                        "certification": "12",
+                        "descriptors": [],
+                        "iso_639_1": "",
+                        "note": "VOD",
+                        "release_date": "2022-07-28T00:00:00.000Z",
+                        "type": 4
+                    },
+                    {
+                        "certification": "12",
+                        "descriptors": [],
+                        "iso_639_1": "",
+                        "note": "OCS",
+                        "release_date": "2022-10-12T00:00:00.000Z",
+                        "type": 4
+                    },
+                    {
+                        "certification": "12",
+                        "descriptors": [],
+                        "iso_639_1": "",
+                        "note": "4K Ultra HD / Blu-ray / DVD",
+                        "release_date": "2022-08-03T00:00:00.000Z",
+                        "type": 5
+                    }
+                ]
+            },
+            {
+                "iso_3166_1": "GB",
+                "release_dates": [
+                    {
+                        "certification": "15",
+                        "descriptors": [],
+                        "iso_639_1": "",
+                        "note": "",
+                        "release_date": "2022-03-31T00:00:00.000Z",
+                        "type": 3
+                    }
+                ]
+            },
+            {
+                "iso_3166_1": "GR",
+                "release_dates": [
+                    {
+                        "certification": "K-15",
+                        "descriptors": [],
+                        "iso_639_1": "",
+                        "note": "",
+                        "release_date": "2022-03-31T00:00:00.000Z",
+                        "type": 3
+                    }
+                ]
+            },
+            {
+                "iso_3166_1": "GU",
+                "release_dates": [
+                    {
+                        "certification": "",
+                        "descriptors": [],
+                        "iso_639_1": "",
+                        "note": "",
+                        "release_date": "2022-05-17T00:00:00.000Z",
+                        "type": 4
+                    }
+                ]
+            },
+            {
+                "iso_3166_1": "HK",
+                "release_dates": [
+                    {
+                        "certification": "IIB",
+                        "descriptors": [],
+                        "iso_639_1": "",
+                        "note": "",
+                        "release_date": "2022-03-31T00:00:00.000Z",
+                        "type": 3
+                    }
+                ]
+            },
+            {
+                "iso_3166_1": "HU",
+                "release_dates": [
+                    {
+                        "certification": "16",
+                        "descriptors": [],
+                        "iso_639_1": "",
+                        "note": "",
+                        "release_date": "2022-03-31T00:00:00.000Z",
+                        "type": 3
+                    },
+                    {
+                        "certification": "16",
+                        "descriptors": [],
+                        "iso_639_1": "",
+                        "note": "TVOD",
+                        "release_date": "2022-07-29T00:00:00.000Z",
+                        "type": 4
+                    },
+                    {
+                        "certification": "16",
+                        "descriptors": [],
+                        "iso_639_1": "",
+                        "note": "4K Ultra HD / Blu-ray / DVD",
+                        "release_date": "2022-07-29T00:00:00.000Z",
+                        "type": 5
+                    }
+                ]
+            },
+            {
+                "iso_3166_1": "IE",
+                "release_dates": [
+                    {
+                        "certification": "15A",
+                        "descriptors": [],
+                        "iso_639_1": "",
+                        "note": "",
+                        "release_date": "2022-03-31T00:00:00.000Z",
+                        "type": 3
+                    }
+                ]
+            },
+            {
+                "iso_3166_1": "IL",
+                "release_dates": [
+                    {
+                        "certification": "14",
+                        "descriptors": [],
+                        "iso_639_1": "",
+                        "note": "",
+                        "release_date": "2022-03-31T00:00:00.000Z",
+                        "type": 3
+                    },
+                    {
+                        "certification": "",
+                        "descriptors": [],
+                        "iso_639_1": "",
+                        "note": "Netflix",
+                        "release_date": "2023-03-04T00:00:00.000Z",
+                        "type": 3
+                    }
+                ]
+            },
+            {
+                "iso_3166_1": "IN",
+                "release_dates": [
+                    {
+                        "certification": "",
+                        "descriptors": [],
+                        "iso_639_1": "",
+                        "note": "",
+                        "release_date": "2022-04-01T00:00:00.000Z",
+                        "type": 3
+                    }
+                ]
+            },
+            {
+                "iso_3166_1": "IT",
+                "release_dates": [
+                    {
+                        "certification": "",
+                        "descriptors": [],
+                        "iso_639_1": "",
+                        "note": "",
+                        "release_date": "2022-03-31T00:00:00.000Z",
+                        "type": 3
+                    }
+                ]
+            },
+            {
+                "iso_3166_1": "JP",
+                "release_dates": [
+                    {
+                        "certification": "",
+                        "descriptors": [],
+                        "iso_639_1": "",
+                        "note": "",
+                        "release_date": "2022-04-01T00:00:00.000Z",
+                        "type": 3
+                    }
+                ]
+            },
+            {
+                "iso_3166_1": "KR",
+                "release_dates": [
+                    {
+                        "certification": "15",
+                        "descriptors": [],
+                        "iso_639_1": "",
+                        "note": "",
+                        "release_date": "2022-03-30T00:00:00.000Z",
+                        "type": 3
+                    }
+                ]
+            },
+            {
+                "iso_3166_1": "MP",
+                "release_dates": [
+                    {
+                        "certification": "",
+                        "descriptors": [],
+                        "iso_639_1": "",
+                        "note": "",
+                        "release_date": "2022-05-17T00:00:00.000Z",
+                        "type": 4
+                    }
+                ]
+            },
+            {
+                "iso_3166_1": "MX",
+                "release_dates": [
+                    {
+                        "certification": "B",
+                        "descriptors": [],
+                        "iso_639_1": "",
+                        "note": "",
+                        "release_date": "2022-03-30T00:00:00.000Z",
+                        "type": 3
+                    }
+                ]
+            },
+            {
+                "iso_3166_1": "NL",
+                "release_dates": [
+                    {
+                        "certification": "",
+                        "descriptors": [],
+                        "iso_639_1": "",
+                        "note": "",
+                        "release_date": "2022-04-21T00:00:00.000Z",
+                        "type": 3
+                    },
+                    {
+                        "certification": "",
+                        "descriptors": [],
+                        "iso_639_1": "",
+                        "note": "",
+                        "release_date": "2022-04-20T00:00:00.000Z",
+                        "type": 3
+                    }
+                ]
+            },
+            {
+                "iso_3166_1": "NZ",
+                "release_dates": [
+                    {
+                        "certification": "M",
+                        "descriptors": [],
+                        "iso_639_1": "",
+                        "note": "",
+                        "release_date": "2022-03-31T00:00:00.000Z",
+                        "type": 3
+                    }
+                ]
+            },
+            {
+                "iso_3166_1": "PH",
+                "release_dates": [
+                    {
+                        "certification": "",
+                        "descriptors": [],
+                        "iso_639_1": "",
+                        "note": "",
+                        "release_date": "2022-03-30T00:00:00.000Z",
+                        "type": 3
+                    }
+                ]
+            },
+            {
+                "iso_3166_1": "PR",
+                "release_dates": [
+                    {
+                        "certification": "PG-13",
+                        "descriptors": [],
+                        "iso_639_1": "",
+                        "note": "",
+                        "release_date": "2022-03-31T00:00:00.000Z",
+                        "type": 3
+                    },
+                    {
+                        "certification": "PG-13",
+                        "descriptors": [],
+                        "iso_639_1": "",
+                        "note": "Disney+",
+                        "release_date": "2024-03-01T00:00:00.000Z",
+                        "type": 4
+                    },
+                    {
+                        "certification": "PG-13",
+                        "descriptors": [],
+                        "iso_639_1": "",
+                        "note": "",
+                        "release_date": "2022-05-17T00:00:00.000Z",
+                        "type": 4
+                    },
+                    {
+                        "certification": "PG-13",
+                        "descriptors": [],
+                        "iso_639_1": "",
+                        "note": "4K Ultra HD / Blu-ray / DVD",
+                        "release_date": "2022-06-14T00:00:00.000Z",
+                        "type": 5
+                    },
+                    {
+                        "certification": "R",
+                        "descriptors": [],
+                        "iso_639_1": "en",
+                        "note": "FX",
+                        "release_date": "2024-03-20T00:00:00.000Z",
+                        "type": 6
+                    }
+                ]
+            },
+            {
+                "iso_3166_1": "RO",
+                "release_dates": [
+                    {
+                        "certification": "",
+                        "descriptors": [],
+                        "iso_639_1": "",
+                        "note": "",
+                        "release_date": "2022-04-01T00:00:00.000Z",
+                        "type": 3
+                    }
+                ]
+            },
+            {
+                "iso_3166_1": "SE",
+                "release_dates": [
+                    {
+                        "certification": "",
+                        "descriptors": [],
+                        "iso_639_1": "",
+                        "note": "",
+                        "release_date": "2022-03-30T00:00:00.000Z",
+                        "type": 3
+                    }
+                ]
+            },
+            {
+                "iso_3166_1": "SG",
+                "release_dates": [
+                    {
+                        "certification": "PG13",
+                        "descriptors": [],
+                        "iso_639_1": "",
+                        "note": "",
+                        "release_date": "2022-03-31T00:00:00.000Z",
+                        "type": 3
+                    }
+                ]
+            },
+            {
+                "iso_3166_1": "TH",
+                "release_dates": [
+                    {
+                        "certification": "13",
+                        "descriptors": [],
+                        "iso_639_1": "",
+                        "note": "",
+                        "release_date": "2022-03-31T00:00:00.000Z",
+                        "type": 3
+                    }
+                ]
+            },
+            {
+                "iso_3166_1": "TR",
+                "release_dates": [
+                    {
+                        "certification": "",
+                        "descriptors": [],
+                        "iso_639_1": "",
+                        "note": "",
+                        "release_date": "2022-04-01T00:00:00.000Z",
+                        "type": 3
+                    }
+                ]
+            },
+            {
+                "iso_3166_1": "TW",
+                "release_dates": [
+                    {
+                        "certification": "12+",
+                        "descriptors": [],
+                        "iso_639_1": "",
+                        "note": "",
+                        "release_date": "2022-04-01T00:00:00.000Z",
+                        "type": 3
+                    }
+                ]
+            },
+            {
+                "iso_3166_1": "US",
+                "release_dates": [
+                    {
+                        "certification": "PG-13",
+                        "descriptors": [],
+                        "iso_639_1": "",
+                        "note": "",
+                        "release_date": "2022-04-01T00:00:00.000Z",
+                        "type": 3
+                    },
+                    {
+                        "certification": "PG-13",
+                        "descriptors": [],
+                        "iso_639_1": "",
+                        "note": "",
+                        "release_date": "2022-05-17T00:00:00.000Z",
+                        "type": 4
+                    },
+                    {
+                        "certification": "PG-13",
+                        "descriptors": [],
+                        "iso_639_1": "",
+                        "note": "Netflix",
+                        "release_date": "2022-09-07T00:00:00.000Z",
+                        "type": 4
+                    },
+                    {
+                        "certification": "PG-13",
+                        "descriptors": [],
+                        "iso_639_1": "",
+                        "note": "Disney+",
+                        "release_date": "2024-03-01T00:00:00.000Z",
+                        "type": 4
+                    },
+                    {
+                        "certification": "PG-13",
+                        "descriptors": [],
+                        "iso_639_1": "",
+                        "note": "4K Ultra HD / Blu-ray / DVD",
+                        "release_date": "2022-06-14T00:00:00.000Z",
+                        "type": 5
+                    },
+                    {
+                        "certification": "R",
+                        "descriptors": [],
+                        "iso_639_1": "",
+                        "note": "FX",
+                        "release_date": "2024-03-20T00:00:00.000Z",
+                        "type": 6
+                    }
+                ]
+            },
+            {
+                "iso_3166_1": "VI",
+                "release_dates": [
+                    {
+                        "certification": "PG-13",
+                        "descriptors": [],
+                        "iso_639_1": "",
+                        "note": "Disney+",
+                        "release_date": "2024-03-01T00:00:00.000Z",
+                        "type": 4
+                    },
+                    {
+                        "certification": "PG-13",
+                        "descriptors": [],
+                        "iso_639_1": "",
+                        "note": "",
+                        "release_date": "2022-05-17T00:00:00.000Z",
+                        "type": 4
+                    },
+                    {
+                        "certification": "R",
+                        "descriptors": [],
+                        "iso_639_1": "",
+                        "note": "FX",
+                        "release_date": "2024-03-20T00:00:00.000Z",
+                        "type": 6
+                    }
+                ]
+            }
+        ]
+    }
+}

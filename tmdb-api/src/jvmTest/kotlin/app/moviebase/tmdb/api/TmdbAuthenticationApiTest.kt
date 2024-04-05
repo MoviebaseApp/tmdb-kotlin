@@ -22,7 +22,7 @@ class TmdbAuthenticationApiTest {
     @Test
     fun `it should return request token`() = runTest {
         val requestToken = classToTest.requestToken()
-        val currentDateTime = "2023-03-05T10:38:01Z".toInstant().toLocalDateTime(TimeZone.currentSystemDefault())
+        val currentDateTime = "2023-03-05T10:38:01Z".toInstant()
 
         assertThat(requestToken.success).isTrue()
         // 2007-12-31T23:59:01

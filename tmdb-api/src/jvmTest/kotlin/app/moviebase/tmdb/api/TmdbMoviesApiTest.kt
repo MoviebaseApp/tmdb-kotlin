@@ -10,7 +10,9 @@ import app.moviebase.tmdb.model.getReleaseDateBy
 import app.moviebase.tmdb.model.getReleaseDatesBy
 import app.moviebase.tmdb.core.mockHttpClient
 import com.google.common.truth.Truth.assertThat
+import kotlin.test.assertNotNull
 import kotlinx.coroutines.test.runTest
+import kotlinx.datetime.toInstant
 import org.junit.jupiter.api.Test
 
 class TmdbMoviesApiTest {
@@ -24,6 +26,8 @@ class TmdbMoviesApiTest {
                 to "movie/movie_images_10140.json",
             "movie/607?language=en-US&append_to_response=external_ids,videos,release_dates,credits,reviews,content_ratings,watch/providers"
                 to "movie/movie_details_607.json",
+            "movie/526896?language=en-US&append_to_response=release_dates"
+                to "movie/movie_images_526896.json",
             "movie/popular?page=1&language=en-US"
                 to "movie/movie_popular.json",
         )
@@ -94,6 +98,31 @@ class TmdbMoviesApiTest {
         assertThat(certification).isEqualTo("U")
         assertThat(releaseDates).hasSize(5)
         assertThat(releaseDate?.type).isEqualTo(TmdbReleaseType.THEATRICAL)
+    }
+    @Test
+    fun `it can serialize release dates correctly`() = runTest {
+        val movieDetails = classToTest.getDetails(
+            movieId = 526896,
+            language = "en-US",
+            appendResponses = listOf(
+                AppendResponse.RELEASES_DATES,
+            )
+        )
+
+        val releaseDates = movieDetails.releaseDates?.getReleaseDatesBy("US")
+        assertThat(releaseDates).hasSize(6)
+
+        val expectedReleaseDates = listOf(
+            "2022-04-01T00:00:00.000Z",
+            "2022-05-17T00:00:00.000Z",
+            "2022-09-07T00:00:00.000Z",
+            "2024-03-01T00:00:00.000Z",
+            "2022-06-14T00:00:00.000Z",
+            "2024-03-20T00:00:00.000Z"
+        ).map { it.toInstant() }
+
+        val releaseDateInstants = releaseDates?.map { it.releaseDate }
+        assertThat(releaseDateInstants).isEqualTo(expectedReleaseDates)
     }
 
     @Test

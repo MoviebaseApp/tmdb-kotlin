@@ -1,6 +1,7 @@
 package app.moviebase.tmdb.model
 
-import app.moviebase.tmdb.core.LocalDateTimeTmdbUtcSerializer
+import app.moviebase.tmdb.core.TmdbInstantSerializer
+import kotlinx.datetime.Instant
 import kotlinx.datetime.LocalDateTime
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
@@ -12,8 +13,8 @@ import kotlinx.serialization.Serializable
 data class TmdbRequestToken(
     @SerialName("success") val success: Boolean,
     @SerialName("expires_at")
-    @Serializable(LocalDateTimeTmdbUtcSerializer::class)
-    val expiredAt: LocalDateTime?,
+    @Serializable(TmdbInstantSerializer::class)
+    val expiredAt: Instant?,
     @SerialName("request_token") val requestToken: String
 )
 
@@ -30,7 +31,7 @@ data class TmdbSession(
 data class TmdbGuestSession(
     @SerialName("success") val success: Boolean,
     @SerialName("expires_at")
-    @Serializable(LocalDateTimeTmdbUtcSerializer::class)
-    val expiredAt: LocalDateTime?,
+    @Serializable(TmdbInstantSerializer::class)
+    val expiredAt: Instant?,
     @SerialName("guest_session_id") val guestSessionId: String
 )
