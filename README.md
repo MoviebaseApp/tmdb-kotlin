@@ -29,6 +29,7 @@ Sample projects:
 
 * [tivi](https://github.com/chrisbanes/tivi)
 * [Moviebase](https://play.google.com/store/apps/details?id=com.moviebase)
+* [StreamGuide](https://play.google.com/store/apps/details?id=app.streamguide)
 
 ## Adding to your project
 
@@ -48,7 +49,7 @@ To use the library in a single-platform project, add a dependency.
 
 ```kotlin
 dependencies {
-    implementation("app.moviebase:tmdb-api:1.3.2")
+    implementation("app.moviebase:tmdb-api:1.3.3")
 }
 ```
 
@@ -57,7 +58,7 @@ In Kotlin Multiplatform projects, add the dependency to your commonMain source-s
 ```kotlin
 commonMain {
     dependencies {
-        implementation("app.moviebase:tmdb-api:1.3.2")
+        implementation("app.moviebase:tmdb-api:1.3.3")
     }
 }
 ```
