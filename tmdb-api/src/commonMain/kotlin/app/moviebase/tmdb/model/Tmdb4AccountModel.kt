@@ -1,7 +1,7 @@
 package app.moviebase.tmdb.model
 
-import app.moviebase.tmdb.core.LocalDateTimeSerializer
-import kotlinx.datetime.LocalDateTime
+import app.moviebase.tmdb.core.TmdbInstantSerializer
+import kotlinx.datetime.Instant
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
@@ -15,11 +15,11 @@ data class Tmdb4ListMeta(
     @SerialName("public") val publicInt: Int,
     val name: String,
     @SerialName("updated_at")
-    @Serializable(LocalDateTimeSerializer::class)
-    val updatedAt: LocalDateTime?,
+    @Serializable(TmdbInstantSerializer::class)
+    val updatedAt: Instant?,
     @SerialName("created_at")
-    @Serializable(LocalDateTimeSerializer::class)
-    val createdAt: LocalDateTime?,
+    @Serializable(TmdbInstantSerializer::class)
+    val createdAt: Instant?,
     @SerialName("sort_by") val sortBy: Int,
     @SerialName("backdrop_path") val backdropPath: String? = null,
     @SerialName("runtime") val runtime: Int? = null,

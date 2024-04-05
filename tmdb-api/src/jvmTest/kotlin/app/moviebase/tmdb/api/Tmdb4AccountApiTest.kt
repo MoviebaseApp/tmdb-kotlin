@@ -3,6 +3,7 @@ package app.moviebase.tmdb.api
 import app.moviebase.tmdb.core.mockHttpClient
 import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.runTest
+import kotlinx.datetime.toInstant
 import org.junit.jupiter.api.Test
 
 class Tmdb4AccountApiTest {
@@ -22,6 +23,12 @@ class Tmdb4AccountApiTest {
 
         assertThat(results).isNotNull()
         assertThat(results.page).isEqualTo(1)
+        assertThat(results.totalResults).isEqualTo(20)
         assertThat(results.results).isNotEmpty()
+
+        val result = results.results.first()
+        assertThat(result.id).isEqualTo(44676)
+        assertThat(result.updatedAt).isEqualTo("2021-11-20T19:26:52Z".toInstant())
+        assertThat(result.createdAt).isEqualTo("2018-01-08T18:03:08Z".toInstant())
     }
 }
