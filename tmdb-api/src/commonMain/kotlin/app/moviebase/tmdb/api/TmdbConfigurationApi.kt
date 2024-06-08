@@ -1,7 +1,7 @@
 package app.moviebase.tmdb.api
 
-import app.moviebase.tmdb.core.endPointV3
 import app.moviebase.tmdb.model.TmdbConfiguration
+import app.moviebase.tmdb.core.endPointV3
 import app.moviebase.tmdb.model.TmdbConfigurationCountry
 import io.ktor.client.*
 import io.ktor.client.call.*
