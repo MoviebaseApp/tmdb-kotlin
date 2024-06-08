@@ -10,7 +10,8 @@ class TmdbConfigurationApiTest {
     val client = mockHttpClient(
         version = 3,
         responses = mapOf(
-            "configuration" to "configuration/configuration.json"
+            "configuration" to "configuration/configuration.json",
+            "configuration/countries" to "configuration/countries.json"
         )
     )
 
@@ -30,4 +31,10 @@ class TmdbConfigurationApiTest {
         assertThat(config.images.profileSizes).isNotEmpty()
         assertThat(config.images.stillSizes).isNotEmpty()
     }
+
+    @Test
+    fun `it can fetch configuration countries`() = runTest {
+        assertThat(api.getCountries()).isNotEmpty()
+    }
+
 }
