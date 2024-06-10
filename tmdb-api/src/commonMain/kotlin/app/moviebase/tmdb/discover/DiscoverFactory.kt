@@ -113,7 +113,7 @@ object DiscoverFactory {
      */
     fun createNetwork(network: Int): TmdbDiscover.Show {
         return TmdbDiscover.Show(
-            network = network,
+            withNetworks = TmdbDiscoverFilter(items = setOf(network)),
             sortBy = TmdbDiscoverShowSortBy.POPULARITY,
         )
     }
