@@ -169,7 +169,7 @@ sealed interface TmdbDiscover {
         val firstAirDate: TmdbDiscoverTimeRange? = null,
         val airDateGte: String? = null,
         val airDateLte: String? = null,
-        val network: Int? = null,
+        val withNetworks: TmdbDiscoverFilter<Int>? = null,
         val withStatus: TmdbDiscoverFilter<TmdbShowStatus>? = null,
         override val withWatchProviders: TmdbDiscoverFilter<Int>? = null,
         override val watchRegion: String? = null,
@@ -187,8 +187,8 @@ sealed interface TmdbDiscover {
                 params[DiscoverParam.Show.AIR_DATE_LTE] = airDateLte
             }
 
-            network?.let {
-                params[DiscoverParam.Show.WITH_NETWORKS] = network.toString()
+            withNetworks?.let { f ->
+                params[DiscoverParam.Show.WITH_NETWORKS] = f.build { it.toString() }
             }
 
             withStatus?.let { f ->
