@@ -17,6 +17,7 @@ object TmdbNetworkId {
     const val CBS = 16
     const val HISTORY = 65
     const val THE_CW = 71
+    const val PARAMOUNT = 4330
 
     const val ESPN = 29
     const val LIFETIME = 34
