@@ -128,7 +128,35 @@
     }
   ],
   "id": 96677,
-  "logos": [],
+  "logos": [
+      {
+          "aspect_ratio": 3.168,
+          "height": 250,
+          "iso_639_1": "fr",
+          "file_path": "/1JrVoNHy7VTJCKV60sDJGCcBL1H.png",
+          "vote_average": 5.312,
+          "vote_count": 1,
+          "width": 792
+      },
+      {
+          "aspect_ratio": 3.257,
+          "height": 206,
+          "iso_639_1": "fr",
+          "file_path": "/tTXclx8r0ctDJx3QkiMVaWGchEd.png",
+          "vote_average": 5.172,
+          "vote_count": 1,
+          "width": 671
+      },
+      {
+          "aspect_ratio": 4.087,
+          "height": 207,
+          "iso_639_1": "uk",
+          "file_path": "/nS5kcjU94pMSjdNRP2m2dVlhVM2.png",
+          "vote_average": 0.0,
+          "vote_count": 0,
+          "width": 846
+      }
+  ],
   "posters": [
     {
       "aspect_ratio": 0.667,

@@ -21,7 +21,24 @@
   ],
   "id": 10140,
   "logos": [
-
+      {
+          "aspect_ratio": 2.664,
+          "height": 372,
+          "iso_639_1": "en",
+          "file_path": "/oVy4qtKNJRI1q8NHZPpNM02g2FH.png",
+          "vote_average": 5.312,
+          "vote_count": 1,
+          "width": 991
+      },
+      {
+          "aspect_ratio": 2.97,
+          "height": 862,
+          "iso_639_1": "en",
+          "file_path": "/1I62ZqyJFG1uicLURKUTu9LzsHU.png",
+          "vote_average": 0,
+          "vote_count": 0,
+          "width": 2560
+      }
   ],
   "posters": [
     {

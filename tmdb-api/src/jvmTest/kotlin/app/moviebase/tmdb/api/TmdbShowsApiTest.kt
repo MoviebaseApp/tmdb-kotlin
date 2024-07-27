@@ -79,6 +79,7 @@ class TmdbShowsApiTest {
             assertThat(images).isNotNull()
             assertThat(images?.posters).isNotEmpty()
             assertThat(images?.backdrops).isNotEmpty()
+            assertThat(images?.logos).isNotEmpty()
         }
     }
 
@@ -116,6 +117,7 @@ class TmdbShowsApiTest {
         assertThat(images.id).isEqualTo(96677)
         assertThat(images.backdrops.size).isEqualTo(14)
         assertThat(images.posters.size).isEqualTo(3)
+        assertThat(images.logos.size).isEqualTo(3)
 
         val poster = images.posters.first()
         assertThat(poster.height).isEqualTo(1500)
