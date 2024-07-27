@@ -42,6 +42,7 @@ class TmdbMoviesApiTest {
         assertThat(images.id).isEqualTo(10140)
         assertThat(images.backdrops.size).isEqualTo(2)
         assertThat(images.posters.size).isEqualTo(14)
+        assertThat(images.logos.size).isEqualTo(2)
     }
 
     @Test
