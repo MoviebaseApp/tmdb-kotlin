@@ -49,6 +49,20 @@ class TmdbShowsApiTest {
         }
 
         @Test
+        fun `it leaves an appended season id null instead of coercing it to zero`() = runTest {
+            val result = classToTest.getDetailsWithSeasons(
+                showId = 94664,
+                seasonNumbers = listOf(1, 2, 3),
+                language = "en",
+            )
+
+            assertThat(result.seasons.getValue(1).id).isNull()
+            assertThat(result.seasons.getValue(2).id).isNull()
+            assertThat(result.show.seasons.map { it.seasonNumber to it.id })
+                .containsAtLeast(1 to 134338, 2 to 334394)
+        }
+
+        @Test
         fun `it omits a requested season that does not exist`() = runTest {
             val result = classToTest.getDetailsWithSeasons(
                 showId = 94664,

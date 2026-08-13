@@ -95,7 +95,7 @@ data class TmdbMovieDetail(
     @SerialName("budget") val budget: Long = 0,
     @SerialName("genres") val genres: List<TmdbGenre> = emptyList(),
     @SerialName("homepage") val homepage: String? = null,
-    @SerialName("id") val id: Int = 0,
+    @SerialName("id") val id: Int,
     @SerialName("imdb_id") val imdbId: String? = null,
     @SerialName("origin_country") val originCountry: List<String> = emptyList(),
     @SerialName("title") val title: String? = null,

@@ -96,7 +96,7 @@ data class TmdbShowPageResult(
 
 @Serializable
 data class TmdbShowDetail(
-    @SerialName("id") override val id: Int = 0,
+    @SerialName("id") override val id: Int,
     @SerialName("adult") val adult: Boolean = false,
     val name: String? = null,
     @SerialName("poster_path") override val posterPath: String? = null,
@@ -177,16 +177,21 @@ data class TmdbSeason(
     val numberOfEpisodes get() = episodeCount ?: episodes?.size ?: 0
 }
 
+/**
+ * [id] is nullable because TMDB omits it from every season appended through
+ * `append_to_response=season/N`, while the standalone `/tv/{id}/season/{n}` endpoint returns it.
+ * Resolve it from [TmdbShowDetail.seasons] when it is absent.
+ */
 @Serializable
 data class TmdbSeasonDetail(
-    @SerialName("id") override val id: Int = 0,
+    @SerialName("id") val id: Int? = null,
     @SerialName("air_date")
     @Serializable(LocalDateSerializer::class)
     val airDate: LocalDate? = null,
     @SerialName("episode_count") val episodeCount: Int? = null,
     @SerialName("name") val name: String? = null,
     @SerialName("poster_path") override val posterPath: String? = null,
-    @SerialName("season_number") val seasonNumber: Int = 0,
+    @SerialName("season_number") val seasonNumber: Int,
     @SerialName("overview") val overview: String? = null,
     @SerialName("vote_average") override val voteAverage: Float? = null,
     @SerialName("vote_count") override val voteCount: Int? = null,
@@ -196,7 +201,7 @@ data class TmdbSeasonDetail(
     @SerialName("images") val images: TmdbImages? = null,
     @SerialName("credits") val credits: TmdbCredits? = null,
     @SerialName("translations") val translations: TmdbSeasonTranslations? = null,
-) : TmdbAnyItem, TmdbPosterItem, TmdbRatingItem {
+) : TmdbPosterItem, TmdbRatingItem {
 
     val numberOfEpisodes get() = episodeCount ?: episodes?.size ?: 0
 }
@@ -221,7 +226,7 @@ data class TmdbSeasonTranslationData(
 
 @Serializable
 data class TmdbEpisode(
-    @SerialName("id") override val id: Int = 0,
+    @SerialName("id") override val id: Int,
     @SerialName("overview") val overview: String? = null,
     @SerialName("episode_number") val episodeNumber: Int,
     @SerialName("season_number") val seasonNumber: Int,
@@ -242,11 +247,11 @@ data class TmdbEpisode(
 
 @Serializable
 data class TmdbEpisodeDetail(
-    @SerialName("id") override val id: Int = 0,
+    @SerialName("id") override val id: Int,
     @SerialName("runtime") val runtime: Int? = null,
     @SerialName("overview") val overview: String? = null,
-    @SerialName("episode_number") val episodeNumber: Int = -1,
-    @SerialName("season_number") val seasonNumber: Int = -1,
+    @SerialName("episode_number") val episodeNumber: Int,
+    @SerialName("season_number") val seasonNumber: Int,
     @SerialName("air_date")
     @Serializable(LocalDateSerializer::class)
     val airDate: LocalDate? = null,
