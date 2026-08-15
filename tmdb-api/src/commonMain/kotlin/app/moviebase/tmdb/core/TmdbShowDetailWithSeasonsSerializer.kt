@@ -17,8 +17,11 @@ private val SEASON_KEY = Regex("""^season/(\d+)$""")
  * TMDB returns appended seasons as dynamic top-level keys (`season/1`, `season/2`), which cannot be
  * declared as fields. Decode the payload once, read [TmdbShowDetail] from the same object, then pull
  * out whichever `season/N` keys are present.
+ *
+ * Must stay an `object`: Kotlin/Native resolves a class-level `@Serializable(with = ...)` through
+ * `findAssociatedObject`, which yields null for a class and breaks decoding on iOS only.
  */
-internal class TmdbShowDetailWithSeasonsSerializer : KSerializer<TmdbShowDetailWithSeasons> {
+internal object TmdbShowDetailWithSeasonsSerializer : KSerializer<TmdbShowDetailWithSeasons> {
 
     override val descriptor: SerialDescriptor = buildClassSerialDescriptor("TmdbShowDetailWithSeasons")
 
