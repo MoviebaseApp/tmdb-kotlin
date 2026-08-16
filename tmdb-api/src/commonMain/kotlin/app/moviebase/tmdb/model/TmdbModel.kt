@@ -1,6 +1,7 @@
 package app.moviebase.tmdb.model
 
 import app.moviebase.tmdb.TmdbPaging
+import app.moviebase.tmdb.core.NullableIntSerializer
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
@@ -127,8 +128,12 @@ data class TmdbExternalIds(
     @SerialName("imdb_id") val imdbId: String? = null,
     @SerialName("freebase_mid") val freebaseMid: String? = null,
     @SerialName("freebase_id") val freebaseId: String? = null,
-    @SerialName("tvdb_id") val tvdbId: Int? = null,
-    @SerialName("tvrage_id") val tvrageId: Int? = null,
+    @SerialName("tvdb_id")
+    @Serializable(NullableIntSerializer::class)
+    val tvdbId: Int? = null,
+    @SerialName("tvrage_id")
+    @Serializable(NullableIntSerializer::class)
+    val tvrageId: Int? = null,
     @SerialName("id") val id: Int? = null, // it is is used in append responses
     @SerialName("facebook_id") val facebook: String? = null,
     @SerialName("instagram_id") val instagram: String? = null,
