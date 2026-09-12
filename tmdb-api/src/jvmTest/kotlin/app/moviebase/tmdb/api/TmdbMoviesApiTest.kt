@@ -31,6 +31,8 @@ class TmdbMoviesApiTest {
                 to "movie/movie_details_37799.json",
             "movie/popular?page=1&language=en-US"
                 to "movie/movie_popular.json",
+            "movie/603/watch/providers"
+                to "movie/movie_watch_providers_603.json",
         )
     )
 
@@ -171,5 +173,15 @@ class TmdbMoviesApiTest {
 
         assertThat(movieDetails.originCountry.size).isEqualTo(1)
         assertThat(movieDetails.originCountry.first()).isEqualTo("US")
+    }
+
+    @Test
+    fun `it should decode every watch provider monetization type`() = runTest {
+        val providers = classToTest.getWatchProviders(603).results
+
+        assertThat(providers.getValue("US").rent.map { it.providerName }).contains("Apple TV Store")
+        assertThat(providers.getValue("US").buy).isNotEmpty()
+        assertThat(providers.getValue("NZ").free.map { it.providerName }).containsExactly("MĀORI+")
+        assertThat(providers.getValue("NZ").ads.map { it.providerName }).containsExactly("TVNZ+")
     }
 }
